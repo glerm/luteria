@@ -1,0 +1,338 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[Adorno 1974]{adorno1974filosofia}
+\abntrefinfo{Adorno}{ADORNO}{1974}
+{ADORNO, T. \emph{Filosofia da M{\'{u}}sica Nova}. S{\~a}o Paulo: Perspectiva,
+  1974.}
+
+\bibitem[Antokoletz 1984]{antokoletz1984music}
+\abntrefinfo{Antokoletz}{ANTOKOLETZ}{1984}
+{ANTOKOLETZ, E. \emph{The music of B{\'e}la Bart{\'o}k: a study of tonality and
+  progression in twentieth-century music}. [S.l.]: Univ of California Press,
+  1984.}
+
+\bibitem[Babbitt 1958]{babbitt1958cares}
+\abntrefinfo{Babbitt}{BABBITT}{1958}
+{BABBITT, M. Who cares if you listen?
+\emph{High Fidelity}, v.~8, n.~2, p. 38--40, 1958.}
+
+\bibitem[Bernstein 1976]{bernstein1976unanswered}
+\abntrefinfo{Bernstein}{BERNSTEIN}{1976}
+{BERNSTEIN, L. \emph{The unanswered question: Six talks at Harvard}. [S.l.]:
+  Harvard University Press, 1976.}
+
+\bibitem[Bird, Klein e Loper 2009]{bird2009natural}
+\abntrefinfo{Bird, Klein e Loper}{BIRD; KLEIN; LOPER}{2009}
+{BIRD, S.; KLEIN, E.; LOPER, E. \emph{Natural language processing with Python}.
+  [S.l.]: O{'}Reilly Media, Inc., 2009.}
+
+\bibitem[Bresson, Agon e Assayag 2011]{bresson2011openmusic}
+\abntrefinfo{Bresson, Agon e Assayag}{BRESSON; AGON; ASSAYAG}{2011}
+{BRESSON, J.; AGON, C.; ASSAYAG, G. Openmusic: visual programming environment
+  for music composition, analysis and research. In:  ACM. \emph{Proceedings of
+  the 19th ACM international conference on Multimedia}. [S.l.], 2011. p.
+  743--746.}
+
+\bibitem[Cage 2002]{cagekostelanetz2002conversing}
+\abntrefinfo{Cage}{CAGE}{2002}
+{CAGE, J. Conversing with cage.
+In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.]: Routledge, 2002.}
+
+\bibitem[Chomsky 1957]{chomsky1957syntactic}
+\abntrefinfo{Chomsky}{CHOMSKY}{1957}
+{CHOMSKY, N. Syntactic structures.
+Mouton, 1957.}
+
+\bibitem[Chomsky 1965]{chomsky1965aspects}
+\abntrefinfo{Chomsky}{CHOMSKY}{1965}
+{CHOMSKY, N. \emph{Aspects of the Theory of Syntax}. [S.l.]: MIT press, 1965.}
+
+\bibitem[Cope 2004]{cope2004virtual}
+\abntrefinfo{Cope}{COPE}{2004}
+{COPE, D. \emph{Virtual Music: Computer Synthesis of Musical Style}. [S.l.]:
+  MIT Press, 2004.}
+
+\bibitem[Cortazar 1963]{cortazar1963}
+\abntrefinfo{Cortazar}{CORTAZAR}{1963}
+{CORTAZAR, J. \emph{O Jogo Da Amarelinha}. [S.l.]: Editora Civilizacao
+  Brasileira, 1963.}
+
+\bibitem[Cramer 2005]{cramer2005words}
+\abntrefinfo{Cramer}{CRAMER}{2005}
+{CRAMER, F. \emph{Words Made Flesh: Code, Culture, Imagination}. Holanda: Piet
+  Zwart Institute, 2005.}
+
+\bibitem[Downey 2009]{downey2009python}
+\abntrefinfo{Downey}{DOWNEY}{2009}
+{DOWNEY, A. \emph{Python for software design: how to think like a computer
+  scientist}. [S.l.]: Cambridge University Press, 2009.}
+
+\bibitem[Forte 1973]{forte1973structure}
+\abntrefinfo{Forte}{FORTE}{1973}
+{FORTE, A. \emph{The structure of atonal music}. [S.l.]: Yale University Press,
+  1973.}
+
+\bibitem[Godwin 1979]{godwin1979athanasius}
+\abntrefinfo{Godwin}{GODWIN}{1979}
+{GODWIN, J. \emph{Athanasius Kircher: a renaissance man and the quest for lost
+  knowledge}. Londres: Thames and Hudson, 1979.}
+
+\bibitem[Hofstadter 2000]{hofstadter2000godel}
+\abntrefinfo{Hofstadter}{HOFSTADTER}{2000}
+{HOFSTADTER, D.~R. \emph{Godel, Escher, Bach: An Eternal Golden Braid}. [S.l.]:
+  Penguin Books, Limited, 2000.}
+
+\bibitem[Hofstadter 2004]{hofstadter2004virtualstaringemmy}
+\abntrefinfo{Hofstadter}{HOFSTADTER}{2004}
+{HOFSTADTER, D.~R. Staring emmy straight in th eye - and doing my best not to
+  flinch. In:  COPE, D. (Ed.). \emph{Virtual Music: Computer Synthesis of
+  Musical Style}. Cambridge: MIT Press, 2004.}
+
+\bibitem[Iazzetta 2009]{iazzetta2009musica}
+\abntrefinfo{Iazzetta}{IAZZETTA}{2009}
+{IAZZETTA, F. \emph{M{\'u}sica e media{\c{c}}{\~a}o tecnol{\'o}gica}. S{\~a}o
+  Paulo: Perspectiva-Fapesp, 2009.}
+
+\bibitem[Kircher 1650]{kircher1650}
+\abntrefinfo{Kircher}{KIRCHER}{1650}
+{KIRCHER, A. Musurgia universalis, sive ars magna consoni et dissoni.
+Francesco Corbelletti, Roma, 1650.}
+
+\bibitem[Kurzweil 2005]{kurzweil2005singularity}
+\abntrefinfo{Kurzweil}{KURZWEIL}{2005}
+{KURZWEIL, R. \emph{The singularity is near: When humans transcend biology}.
+  [S.l.]: Penguin, 2005.}
+
+\bibitem[Langton 1997]{langton1997artificial}
+\abntrefinfo{Langton}{LANGTON}{1997}
+{LANGTON, C.~G. \emph{Artificial life: An overview}. [S.l.]: Mit Press, 1997.}
+
+\bibitem[Laske 1977]{laske1977music}
+\abntrefinfo{Laske}{LASKE}{1977}
+{LASKE, O.-E. \emph{Music, memory, and thought: Explorations in cognitive
+  musicology}. [S.l.]: Music Department, University of Pittsburgh, 1977.}
+
+\bibitem[Lendvai e Bush 1971]{lendvai1971bela}
+\abntrefinfo{Lendvai e Bush}{LENDVAI; BUSH}{1971}
+{LENDVAI, E.; BUSH, A. \emph{B{\'e}la Bart{\'o}k: an analysis of his music}.
+  [S.l.]: Kahn \& Averill London, 1971.}
+
+\bibitem[Lerdahl 1988]{lerdahl1988tps}
+\abntrefinfo{Lerdahl}{LERDAHL}{1988}
+{LERDAHL, F. Tonal pitch space.
+\emph{Music Perception: An Interdisciplinary Journal}, University of California
+  Press, v.~5, n.~3, p. pp. 315--349, 1988.
+ISSN 07307829.
+Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/40285402}.}
+
+\bibitem[Lerdahl 1992]{lerdahl1992cognitive}
+\abntrefinfo{Lerdahl}{LERDAHL}{1992}
+{LERDAHL, F. Cognitive constraints on compositional systems.
+\emph{Contemporary Music Review}, Taylor \& Francis, v.~6, n.~2, p. 97--121,
+  1992.}
+
+\bibitem[Lerdahl 2009]{lerdahl2009genesis}
+\abntrefinfo{Lerdahl}{LERDAHL}{2009}
+{LERDAHL, F. Genesis and architecture of the gttm project.
+JSTOR, 2009.}
+
+\bibitem[Lerdahl e Jackendoff 1983]{lerdahl1983generative}
+\abntrefinfo{Lerdahl e Jackendoff}{LERDAHL; JACKENDOFF}{1983}
+{LERDAHL, F.; JACKENDOFF, R.~S. \emph{A generative theory of tonal music}.
+  [S.l.]: MIT press, 1983.}
+
+\bibitem[Lerdahl e Krumhansl 2007]{2007lerdahl-krumhansl}
+\abntrefinfo{Lerdahl e Krumhansl}{LERDAHL; KRUMHANSL}{2007}
+{LERDAHL, F.; KRUMHANSL, C.~L. Modeling tonal tension.
+\emph{Music Perception: An Interdisciplinary Journal}, University of California
+  Press, v.~24, n.~4, p. pp. 329--366, 2007.
+ISSN 07307829.
+Dispon{\'\i}vel em:
+  \url{http://www.jstor.org/stable/10.1525/mp.2007.24.4.329}.}
+
+\bibitem[Lester 1989]{lester1989analytic}
+\abntrefinfo{Lester}{LESTER}{1989}
+{LESTER, J. Analytic approaches to twentieth-century music.
+WW Norton \& Company, 1989.}
+
+\bibitem[Lindblom e Sundberg 1970]{lindblom1970towards}
+\abntrefinfo{Lindblom e Sundberg}{LINDBLOM; SUNDBERG}{1970}
+{LINDBLOM, B.; SUNDBERG, J. \emph{Towards a generative theory of melody}.
+  [S.l.]: Department of Phonetics, Institute of Linguistics, University of
+  Stockholm, 1970.}
+
+\bibitem[Marshall 1946]{marshall1946analysis}
+\abntrefinfo{Marshall}{MARSHALL}{1946}
+{MARSHALL, W.~E.
+\emph{An Analysis Of The Mikrokosmos Of B{\'e}la Bart{\'o}k}.
+Tese (Doutorado), 1946.}
+
+\bibitem[Minsky 2007]{minsky2007emotion}
+\abntrefinfo{Minsky}{MINSKY}{2007}
+{MINSKY, M. \emph{The Emotion Machine: Commonsense Thinking, Artificial
+  Intelligence, and the Future of the Human Mind}. [S.l.]: Simon \& Schuster,
+  2007.}
+
+\bibitem[Moorer 1972]{moorer1972music}
+\abntrefinfo{Moorer}{MOORER}{1972}
+{MOORER, J.~A. Music and computer composition.
+\emph{Communications of the ACM}, ACM, v.~15, n.~2, p. 104--113, 1972.}
+
+\bibitem[Nattiez 2003]{nattiezcomparaccao}
+\abntrefinfo{Nattiez}{NATTIEZ}{2003}
+{NATTIEZ, J.-J. A compara{\c{c}}{\~{a}}o das an{\'{a}}lises sob o ponto de
+  vista semiol{\'{o}}gico (a prop{\'{o}}sito do tema da sinfonia em sol menor,
+  k. 550, de mozart).
+\emph{Per Musi{--}Revista de Performance Musical}, p. 5--40, 2003.}
+
+\bibitem[Nattiez e Dunsby 1977]{nattiez1977fondements}
+\abntrefinfo{Nattiez e Dunsby}{NATTIEZ; DUNSBY}{1977}
+{NATTIEZ, J.-J.; DUNSBY, J.~M. Fondements d'une s{\'e}miologie de la musique.
+\emph{Perspectives of New Music}, JSTOR, p. 226--233, 1977.}
+
+\bibitem[Nattiez e Sampaio 2004]{nattiez2004modelos}
+\abntrefinfo{Nattiez e Sampaio}{NATTIEZ; SAMPAIO}{2004}
+{NATTIEZ, J.-J.; SAMPAIO, R. d. L.~P. Modelos ling{\"u}{\'\i}sticos e
+  an{\'a}lise das estruturas musicais.
+\emph{Per Musi}, v.~9, p. 5--46, 2004.}
+
+\bibitem[Nierhaus 2009]{nierhaus2009algorithmic}
+\abntrefinfo{Nierhaus}{NIERHAUS}{2009}
+{NIERHAUS, G. \emph{Algorithmic composition: paradigms of automated music
+  generation}. [S.l.]: Springer, 2009.}
+
+\bibitem[Pessis-Pasternak 1993]{pessis1993caos}
+\abntrefinfo{Pessis-Pasternak}{PESSIS-PASTERNAK}{1993}
+{PESSIS-PASTERNAK, G. \emph{Do caos {\`{a}} intelig{\^{e}}ncia artificial}.
+  [S.l.]: Unesp, 1993.}
+
+\bibitem[Puckette 2006]{puckettecomputing}
+\abntrefinfo{Puckette}{PUCKETTE}{2006}
+{PUCKETTE, M. The om composer's book 1.
+In:  \underline{\ \ \ \ \ \ \ \ }. Paris, France: Delatour, 2006. cap.
+  Computing while composing, p. x--xiv.}
+
+\bibitem[Puckette et al. 1996]{puckette1996pure}
+\abntrefinfo{Puckette et al.}{PUCKETTE et al.}{1996}
+{PUCKETTE, M. et al. Pure data: another integrated computer music environment.
+\emph{Proceedings of the Second Intercollege Computer Music Concerts},
+  Citeseer, p. 37--41, 1996.}
+
+\bibitem[Rahn 2004]{rahn2004swerve}
+\abntrefinfo{Rahn}{RAHN}{2004}
+{RAHN, J. The swerve and the flow: Music's relationship to mathematics.
+\emph{Perspectives of New Music}, Perspectives of New Music, v.~42, n.~1, p.
+  pp. 130--148, 2004.
+ISSN 00316016.
+Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/25164542}.}
+
+\bibitem[Roads 1978]{roads1978composing}
+\abntrefinfo{Roads}{ROADS}{1978}
+{ROADS, C. Composing grammars.
+\emph{international Computer Music Conference}, UCSD, San Diego, 1978.}
+
+\bibitem[Roads 1979]{roads1979grammars}
+\abntrefinfo{Roads}{ROADS}{1979}
+{ROADS, C. Grammars as representations for music.
+\emph{Computer Music Journal}, JSTOR, p. 48--55, 1979.}
+
+\bibitem[Roads 1996]{curtis1996computer}
+\abntrefinfo{Roads}{ROADS}{1996}
+{ROADS, C. \emph{The computer music tutorial}. [S.l.]: MIT press, 1996.}
+
+\bibitem[Roads 2004]{roads2004microsound}
+\abntrefinfo{Roads}{ROADS}{2004}
+{ROADS, C. \emph{Microsound}. [S.l.]: MIT press, 2004.}
+
+\bibitem[Rossum e Jr 1995]{van1995python}
+\abntrefinfo{Rossum e Jr}{ROSSUM; JR}{1995}
+{ROSSUM, G. V.; JR, F.~L. D. \emph{Python reference manual}. [S.l.]: Centrum
+  voor Wiskunde en Informatica Amsterdam, 1995.}
+
+\bibitem[Russolo 2009]{russolo2009arte}
+\abntrefinfo{Russolo}{RUSSOLO}{2009}
+{RUSSOLO, L. \emph{L'arte dei rumori}. [S.l.]: Nuovi Equilibri, 2009.}
+
+\bibitem[Ruwet 1975]{ruwet1975theorie}
+\abntrefinfo{Ruwet}{RUWET}{1975}
+{RUWET, N. Th{\'e}orie et m{\'e}thodes dans les {\'e}tudes musicales.
+\emph{Musique en jeu}, v.~17, p. 11--35, 1975.}
+
+\bibitem[Schwanauer e Levitt 1993]{schwanauer1993machine}
+\abntrefinfo{Schwanauer e Levitt}{SCHWANAUER; LEVITT}{1993}
+{SCHWANAUER, S.~M.; LEVITT, D.~A. \emph{Machine models of music}. [S.l.]: MIT
+  Press, 1993.}
+
+\bibitem[Smoliar 1976]{smoliar1976music}
+\abntrefinfo{Smoliar}{SMOLIAR}{1976}
+{SMOLIAR, S.~W. Music programs: An approach to music theory through
+  computational linguistics.
+\emph{Journal of Music Theory}, JSTOR, p. 105--131, 1976.}
+
+\bibitem[Stockhausen 1996]{stockhausen1996situacao}
+\abntrefinfo{Stockhausen}{STOCKHAUSEN}{1996}
+{STOCKHAUSEN, K. A situa{\c{c}}{\~a}o do metier, a composi{\c{c}}{\~a}o do som.
+\emph{M{\'u}sica Eletroac{\'u}stica, Hist{\'o}ria e est{\'e}ticas. S{\~a}o
+  Paulo: Editora da Universidade de S{\~a}o Paulo}, 1996.}
+
+\bibitem[Straus 2004]{straus2004}
+\abntrefinfo{Straus}{STRAUS}{2004}
+{STRAUS, J.~N. \emph{Introduction to Post-Tonal Theory (3rd Edition)}. [S.l.]:
+  Pearson, 2004.}
+
+\bibitem[Suchoff 1971]{suchoff1971guide}
+\abntrefinfo{Suchoff}{SUCHOFF}{1971}
+{SUCHOFF, B. \emph{Guide to Bart{\'o}k's Mikrokosmos}. [S.l.]: Boosey and
+  Hawkes, 1971.}
+
+\bibitem[Suchoff 2004]{suchoff2004bartok}
+\abntrefinfo{Suchoff}{SUCHOFF}{2004}
+{SUCHOFF, B. \emph{Bart{\'o}k's Mikrokosmos: Genesis, Pedagogy, and Style}.
+  [S.l.]: Scarecrow Press, 2004.}
+
+\bibitem[Temperley 2004]{temperley2004cognition}
+\abntrefinfo{Temperley}{TEMPERLEY}{2004}
+{TEMPERLEY, D. \emph{The cognition of basic musical structures}. [S.l.]: MIT
+  press, 2004.}
+
+\bibitem[Turing 1936]{turing1936computable}
+\abntrefinfo{Turing}{TURING}{1936}
+{TURING, A.~M. On computable numbers, with an application to the
+  entscheidungsproblem.
+\emph{Journal of Math}, v.~58, p. 345--363, 1936.}
+
+\bibitem[Turing 1950]{turing1950computing}
+\abntrefinfo{Turing}{TURING}{1950}
+{TURING, A.~M. Computing machinery and intelligence.
+\emph{Mind}, JSTOR, p. 433--460, 1950.}
+
+\bibitem[Wiener et al. 1948]{wiener1948cybernetics}
+\abntrefinfo{Wiener et al.}{WIENER et al.}{1948}
+{WIENER, N. et al. \emph{Cybernetics}. New York: J. Wiley, 1948.}
+
+\bibitem[Winograd 1968]{winograd1968linguistics}
+\abntrefinfo{Winograd}{WINOGRAD}{1968}
+{WINOGRAD, T. Linguistics and the computer analysis of tonal harmony.
+\emph{Journal of Music Theory}, JSTOR, p. 2--49, 1968.}
+
+\bibitem[Wolfram 2002]{wolfram2002new}
+\abntrefinfo{Wolfram}{WOLFRAM}{2002}
+{WOLFRAM, S. \emph{A new kind of science}. [S.l.]: Wolfram media Champaign,
+  2002.}
+
+\bibitem[Xenakis 1992]{xenakis1992formalized}
+\abntrefinfo{Xenakis}{XENAKIS}{1992}
+{XENAKIS, I. \emph{Formalized music: thought and mathematics in composition}.
+  [S.l.]: Pendragon Press, 1992.}
+
+\bibitem[Zielinski 2006]{zielinski2006arqueologia}
+\abntrefinfo{Zielinski}{ZIELINSKI}{2006}
+{ZIELINSKI, S. \emph{Arqueologia da m{\'{i}}dia: em busca do tempo remoto das
+  t{\'{e}}cnicas do ver e do ouvir}. S{\~a}o Paulo: Annablume, 2006.}
+
+\end{thebibliography}

@@ -1,0 +1,30 @@
+What's Key for Key? The Krumhansl-Schmuckler Key-Finding Algorithm Reconsidered
+
+An Algorithm for Harmonic Analysis
+
+Pitch-Class Set Multiplication in Theory and Practice
+
+Calculating Tonal Tension
+
+Prolonging the Inevitable
+
+Tonality and Paranoia: A Reply to Boros
+
+Reflections on Leonard Meyer
+
+Tonal Pitch Space ( + David Neumeyer )
+
+Modeling Tonal Tension
+
+Boulez and the Spectralists between Descartes and Rameau: Who Said What about Whom?
+
+Dynamic Techniques for Genetic Algorithm-Based Music Systems
+
+Scores, Programs, and Time Representation: The Sheet Object in OpenMusic
+
+A Formal Theory of Generalized Tonal Functions
+
+Some Compositional Uses of Projective Geometry
+
+
+

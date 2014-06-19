@@ -1,0 +1,63 @@
+\changetocdepth {4}
+\select@language {brazil}
+\contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o}{15}{chapter*.7}
+\contentsline {part}{\partnumberline {I}Problematiza\IeC {\c c}\IeC {\~a}o Computacional}{19}{part.1}
+\contentsline {chapter}{\chapternumberline {1}Considera\IeC {\c c}\IeC {\~o}es hist\IeC {\'o}ricas e filos\IeC {\'o}ficas sobre M\IeC {\'u}sica Algor\IeC {\'\i }timica}{21}{chapter.1}
+\contentsline {section}{\numberline {1.1}Aut\IeC {\^o}matos Musicais}{21}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Arqueologia dos Aut\IeC {\^o}matos}{21}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Jogo de dados musicais}{22}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Criptoest\IeC {\'e}tica e Estoc\IeC {\'a}stica}{22}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Complexidade e Emerg\IeC {\^e}ncia de Padr\IeC {\~o}es}{23}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.5}Intelig\IeC {\^e}ncia Artificial Musical}{23}{subsection.1.1.5}
+\contentsline {subsection}{\numberline {1.1.6}Os Problemas do \IeC {\textquotedblleft }Conceito como Algoritmo\IeC {\textquotedblright } e do \IeC {\textquotedblleft }Algoritmo como conceito\IeC {\textquotedblright }}{25}{subsection.1.1.6}
+\contentsline {chapter}{\chapternumberline {2}Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}{29}{chapter.2}
+\contentsline {section}{\numberline {2.1}Linguagens Dataflow}{29}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}OM}{29}{subsection.2.1.1}
+\contentsline {paragraph}{\numberline {2.1.1.0.1}chord-seq}{30}{paragraph.2.1.1.0.1}
+\contentsline {paragraph}{\numberline {2.1.1.0.2}classe permutation}{31}{paragraph.2.1.1.0.2}
+\contentsline {paragraph}{\numberline {2.1.1.0.3}classe math}{31}{paragraph.2.1.1.0.3}
+\contentsline {subsection}{\numberline {2.1.2}PD}{31}{subsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.2.1}biblioteca Maxlib}{32}{subsubsection.2.1.2.1}
+\contentsline {subsubsection}{\numberline {2.1.2.2}biblioteca RTC-lib}{32}{subsubsection.2.1.2.2}
+\contentsline {subsubsection}{\numberline {2.1.2.3}objeto [probalizer]}{32}{subsubsection.2.1.2.3}
+\contentsline {chapter}{\chapternumberline {3}Arquivos e Scripts para Segmenta\IeC {\c c}\IeC {\~a}o de Dados Musicais}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}MIDI}{33}{section.3.1}
+\contentsline {section}{\numberline {3.2}Lilypond}{35}{section.3.2}
+\contentsline {section}{\numberline {3.3}MusicXML}{35}{section.3.3}
+\contentsline {section}{\numberline {3.4}Bibliotecas Python auxiliares}{36}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Abjad}{36}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Music 21}{36}{subsection.3.4.2}
+\contentsline {part}{\partnumberline {II}Paradigmas para uma An\IeC {\'a}lise Musical P\IeC {\'o}s-Tonal}{37}{part.2}
+\contentsline {chapter}{\chapternumberline {4}Formaliza\IeC {\c c}\IeC {\~a}o lingu\IeC {\'\i }stica de gram\IeC {\'a}ticas musicais }{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}Gram\IeC {\'a}ticas Musicais Comput\IeC {\'a}veis}{40}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Simb\IeC {\'o}lico e Ic\IeC {\^o}nico}{41}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Gram\IeC {\'a}tica Gerativa da M\IeC {\'u}sica Tonal (GTTM)}{42}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Regras de boa formatividade dos agrupamentos (GWFRs)}{44}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Regras de prefer\IeC {\^e}ncia para agrupamentos (GPRs)}{45}{subsubsection.4.2.1.1}
+\contentsline {subsection}{\numberline {4.2.2}Regras de boa-forma\IeC {\c c}\IeC {\~a}o m\IeC {\'e}trica (MWFRs )}{48}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Regras de prefer\IeC {\^e}ncia M\IeC {\'e}trica (MPFRs) }{50}{subsubsection.4.2.2.1}
+\contentsline {subsection}{\numberline {4.2.3}Regras de redu\IeC {\c c}\IeC {\~a}o do intervalo-temporal}{50}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}Redu\IeC {\c c}\IeC {\~a}o de regras de boa-forma\IeC {\c c}\IeC {\~a}o para intervalos-temporais ( TSRWFRs )}{51}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}Regras de Prefer\IeC {\^e}ncia para Redu\IeC {\c c}\IeC {\~a}o de Intervalo-Temporal(TSRPR) }{51}{subsubsection.4.2.3.2}
+\contentsline {subsection}{\numberline {4.2.4}Regras de boa-forma\IeC {\c c}\IeC {\~a}o da redu\IeC {\c c}\IeC {\~a}o prolongacional (PRWFRs) }{52}{subsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.4.1}Regras de prefer\IeC {\^e}ncia para redu\IeC {\c c}\IeC {\~o}es prolongacionais (PRPRs)}{53}{subsubsection.4.2.4.1}
+\contentsline {section}{\numberline {4.3}Restri\IeC {\c c}\IeC {\~o}es Cognitivas dos Sistemas Composicionais}{55}{section.4.3}
+\contentsline {chapter}{\chapternumberline {5}Teoria de Grupos e Alturas Crom\IeC {\'a}ticas}{59}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}Analises}{61}{chapter.6}
+\contentsline {section}{\numberline {6.1}Analise de Mikrokosmos 113 Bela Bartok}{61}{section.6.1}
+\contentsline {part}{\partnumberline {III}Luteria Composicional}{65}{part.3}
+\contentsline {chapter}{\chapternumberline {7}Aplica\IeC {\c c}\IeC {\~a}o de estruturas sugeridas pelas an\IeC {\'a}lises musicais em procedimentos algor\IeC {\'\i }tmicos cl\IeC {\'a}ssicos}{67}{chapter.7}
+\vspace {\cftbeforepartskip }
+\contentsline {chapter}{Conclus\IeC {\~a}o}{69}{chapter*.12}
+\vspace {\cftbeforepartskip }
+\contentsline {chapter}{Refer\^encias}{71}{section*.15}
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\contentsline {part}{Ap\^endices}{75}{section*.16}
+\contentsline {appendix}{\chapternumberline {A}Reposit\IeC {\'o}rio de C\IeC {\'o}digos}{77}{appendix.A}
+\contentsline {subsection}{\numberline {A.0.1}Biblioteca de Algoritmos}{77}{subsection.A.0.1}
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\contentsline {part}{Anexos}{79}{section*.17}
+\contentsline {appendix}{\chapternumberline {A}Tabela de Pitch Class Set de Allen Forte}{81}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {B}Regras da Teoria Gerativa da Musica Tonal}{85}{appendix.anexochapback.2}
+\vspace {\cftbeforepartskip }

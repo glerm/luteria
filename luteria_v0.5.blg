@@ -1,0 +1,67 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: luteria_v0.5.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: mestrado_glerm.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--faltando school em marshall1946analysis
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex2.googlecode.com                           |
++---------------------------------------------------------+
+You've used 63 entries,
+            6711 wiz_defined-function locations,
+            1513 strings with 16371 characters,
+and the built_in function-call counts, 45054 in all, are:
+= -- 3537
+> -- 1184
+< -- 170
++ -- 596
+- -- 381
+* -- 2878
+:= -- 6228
+add.period$ -- 200
+call.type$ -- 63
+change.case$ -- 459
+chr.to.int$ -- 90
+cite$ -- 63
+duplicate$ -- 2725
+empty$ -- 3765
+format.name$ -- 1767
+if$ -- 10495
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 1136
+newline$ -- 288
+num.names$ -- 311
+pop$ -- 1416
+preamble$ -- 1
+purify$ -- 203
+quote$ -- 0
+skip$ -- 2774
+stack$ -- 1
+substring$ -- 1775
+swap$ -- 1145
+text.length$ -- 37
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 5
+warning$ -- 1
+while$ -- 425
+width$ -- 0
+write$ -- 935
+(There was 1 warning)

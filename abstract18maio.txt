@@ -1,0 +1,22 @@
+Luteria Composicional de algoritmos pós-tonais
+
+Esta pesquisa visa documentar um catálogo de experimentos composicionais constituído de pequenas peças musicais e seus algoritmos geradores.
+
+Documentamos o processo teórico e técnico para organizar uma biblioteca de objetos e procedimentos para "Composição assistida por Computador" que produz material para partituras baseadas em critérios estabelecidos por dados quantitativos de análises musicais de peças pós-tonais.
+
+Estaremos preocupados em princípio apenas com questões da escrita para piano, abstraindo a questão do timbre nas sonoridades restritas a este instrumento.
+
+Os procedimentos composicionais utilizados são derivados de alguns parâmetros e sugestões estruturais encontrados em em abordagens analíticas baseadas em teorias dos conjuntos e classes de alturas cromáticas ("pitch class set theory") conforme formalizadas por Allen Forte (1973), John Rahn (1980) e Joseph N. Straus (2004).
+
+Descrevemos um percurso de problematização da história da música algorítmica, das ferramentas computacionais, dos formatos de arquivo utilizadas e das técnicas de segmentação de análises musicais investigadas que nos levou ao formato desta pesquisa.
+
+Exemplificamos em algoritmos geradores algumas ideias composicionais inspirados em
+apontamentos de duas análises musicais propostas Joel Lester em seu livro "Abordagens analíticas para a música do século XX"(LESTER, 1989): "La cathédrale engloutie"de Claude Debussy e "Diminished Fifth"a peça n. 101 da suíte Mikrokosmos de Béla Bartók.
+
+Deixamos um legado de código aberto para continuidades possíveis deste trabalho.
+
+Palavras-chaves: Música algorítmica. Pós-tonalismo. Teoria dos conjuntos. Pitch class
+theory. Luteria. Composição assistida por computador. Cibernética. Software livre. Cognição musical.
+
+
+
