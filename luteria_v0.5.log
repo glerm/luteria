@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.3.6)  19 JUN 2014 12:46
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.3.6)  19 JUN 2014 13:31
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -954,8 +954,8 @@ File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
-Package color Info: Redefining color blue on input line 144.
-Package hyperref Info: Option `colorlinks' set `true' on input line 161.
+Package color Info: Redefining color blue on input line 145.
+Package hyperref Info: Option `colorlinks' set `true' on input line 162.
 \luteria_v0.5@idxfile=\write4
 \openout4 = `luteria_v0.5.idx'.
 
@@ -1019,26 +1019,26 @@ LaTeX Warning: Label `fig_grafico' multiply defined.
 )
 \openout1 = `luteria_v0.5.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 184.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 185.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 184.
+Package hyperref Info: Link coloring ON on input line 185.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -1050,22 +1050,22 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 184.
-LaTeX Info: Redefining \ref on input line 184.
-LaTeX Info: Redefining \pageref on input line 184.
-LaTeX Info: Redefining \nameref on input line 184.
-LaTeX Info: Redefining \degres on input line 184.
+LaTeX Info: Redefining \nameref on input line 185.
+LaTeX Info: Redefining \ref on input line 185.
+LaTeX Info: Redefining \pageref on input line 185.
+LaTeX Info: Redefining \nameref on input line 185.
+LaTeX Info: Redefining \degres on input line 185.
 
 Package frenchb.ldf Warning: The definition of \@makecaption has been changed,
 (frenchb.ldf)                frenchb will NOT customise it;
-(frenchb.ldf)                reported on input line 184.
+(frenchb.ldf)                reported on input line 185.
 
-LaTeX Info: Redefining \dots on input line 184.
+LaTeX Info: Redefining \dots on input line 185.
 
 Package frenchb.ldf Warning: Setting CompactItemize=false for compatibility
-(frenchb.ldf)                with enumitem package, on input line 184.
+(frenchb.ldf)                with enumitem package, on input line 185.
 
-LaTeX Info: Redefining \up on input line 184.
+LaTeX Info: Redefining \up on input line 185.
 \myptabbox=\box33
 \myptabboxwidth=\skip200
 Package lastpage Info: Please have a look at the pageslts package at
@@ -1074,7 +1074,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 184.
+(lastpage)             ! on input line 185.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count181
@@ -1103,7 +1103,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 184.
+LaTeX Info: Redefining \microtypecontext on input line 185.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1119,7 +1119,7 @@ File: mt-cmr.cfg 2009/11/09 v2.0 microtype config. file: Computer Modern Roman
 (RS)
 )
 \c@lstlisting=\count187
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 197.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 198.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
@@ -1129,84 +1129,84 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 206.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 207.
 
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 206.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 207.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 206
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 207
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 206
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 207
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 206.
+(Font)              <12> on input line 207.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 206.
+(Font)              <8> on input line 207.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 206.
+(Font)              <6> on input line 207.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206 
+l.207 
        [1
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Overfull \hbox (16.44858pt too wide) in paragraph at lines 236--239
+Overfull \hbox (16.44858pt too wide) in paragraph at lines 237--240
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--239
+Underfull \hbox (badness 10000) in paragraph at lines 237--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--247
+Underfull \hbox (badness 10000) in paragraph at lines 241--248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 250.
+(Font)              <10> on input line 251.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 250.
+(Font)              <7> on input line 251.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 250.
+(Font)              <5> on input line 251.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.297 
+l.298 
        [2] [3
 
 ] [4
@@ -1253,20 +1253,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 
-LaTeX Warning: Reference `gerativas' on page 22 undefined on input line 589.
+LaTeX Warning: Reference `gerativas' on page 22 undefined on input line 590.
 
 
 Underfull \vbox (badness 8170) has occurred while \output is active []
 
  [22]
 [23]
-Underfull \hbox (badness 1924) in paragraph at lines 642--643
+Underfull \hbox (badness 1924) in paragraph at lines 643--644
  []\T1/lmr/bx/n/10 Questão\T1/lmr/m/n/10 (+20) : Um com-pu-ta-dor será ca-paz d
 e to-car mú-si-cas be-las?
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--649
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
  \T1/lmr/m/n/10 (+20) soa?
  []
 
@@ -1277,7 +1277,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 648--649
 File: OMPD/chord-seq-sem-titulo.png Graphic file (type png)
 
 <use OMPD/chord-seq-sem-titulo.png>
-Package pdftex.def Info: OMPD/chord-seq-sem-titulo.png used on input line 749.
+Package pdftex.def Info: OMPD/chord-seq-sem-titulo.png used on input line 750.
 (pdftex.def)             Requested size: 299.11676pt x 291.58867pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1288,7 +1288,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34]
-Underfull \hbox (badness 5756) in paragraph at lines 846--846
+Underfull \hbox (badness 5756) in paragraph at lines 847--847
  [] [] [][]\T1/lmr/m/n/10 (+20) Tutorial ofi-cial de lilypond-scheme: [][]$<[]h
 ttp : / / lilypond . org / doc / v2 . 16 / Documentation / source /
  []
@@ -1296,19 +1296,19 @@ ttp : / / lilypond . org / doc / v2 . 16 / Documentation / source /
 <score/lilypond.pdf, id=519, 321.2pt x 256.96pt>
 File: score/lilypond.pdf Graphic file (type pdf)
  <use score/lilypond.pdf>
-Package pdftex.def Info: score/lilypond.pdf used on input line 853.
+Package pdftex.def Info: score/lilypond.pdf used on input line 854.
 (pdftex.def)             Requested size: 240.89941pt x 192.71951pt.
 
 <score/musicxml.pdf, id=522, 481.8pt x 377.41pt>
 File: score/musicxml.pdf Graphic file (type pdf)
  <use score/musicxml.pdf>
-Package pdftex.def Info: score/musicxml.pdf used on input line 869.
+Package pdftex.def Info: score/musicxml.pdf used on input line 870.
 (pdftex.def)             Requested size: 240.8994pt x 188.70453pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35 <./score/lilypond.pdf>]
-Overfull \hbox (15.24796pt too wide) in paragraph at lines 877--878
+Overfull \hbox (15.24796pt too wide) in paragraph at lines 878--879
 []\T1/lmr/m/n/12 (-20) Pela sua na-tu-reza de có-digo aberto alto-nível de ori-
 en-ta-ção a ob-je-tos, Python([][]ROSSUM;
  []
@@ -1332,10 +1332,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: gttm/GTTM_rules.pdf Graphic file (type pdf)
 
 <use gttm/GTTM_rules.pdf>
-Package pdftex.def Info: gttm/GTTM_rules.pdf used on input line 1020.
+Package pdftex.def Info: gttm/GTTM_rules.pdf used on input line 1021.
 (pdftex.def)             Requested size: 422.5224pt x 128.47968pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1027--1036
+Underfull \hbox (badness 10000) in paragraph at lines 1028--1037
  \T1/lmr/m/n/10 (+20) si-cal:
  []
 
@@ -1344,20 +1344,20 @@ File: gttm/lilypondGROUPmozartGTTM.png Graphic file (type png)
 
 <use gttm/lilypondGROUPmozartGTTM.png>
 Package pdftex.def Info: gttm/lilypondGROUPmozartGTTM.png used on input line 10
-44.
+45.
 (pdftex.def)             Requested size: 499.11008pt x 80.39963pt.
 
-Overfull \hbox (44.11008pt too wide) in paragraph at lines 1044--1045
+Overfull \hbox (44.11008pt too wide) in paragraph at lines 1045--1046
  [] 
  []
 
 [44 <./gttm/GTTM_rules.pdf> <./gttm/lilypondGROUPmozartGTTM.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1059--1063
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1064
  []\T1/lmr/m/n/10 (+20) GWFR 2 ^^PUma peça con-tem um grupo^^Q
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1059--1063
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1064
  \T1/lmr/m/n/10 (+20) GWFR 3 ^^PUm grupo deve con-ter gru-pos me-no-res^^Q
  []
 
@@ -1365,35 +1365,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 1059--1063
 File: gttm/GWFR_fig33.png Graphic file (type png)
 
 <use gttm/GWFR_fig33.png>
-Package pdftex.def Info: gttm/GWFR_fig33.png used on input line 1070.
+Package pdftex.def Info: gttm/GWFR_fig33.png used on input line 1071.
 (pdftex.def)             Requested size: 310.21358pt x 40.75285pt.
  [45 <./gttm/GWFR_fig33.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1118--1123
+Underfull \hbox (badness 10000) in paragraph at lines 1119--1124
  \T1/lmr/m/n/10 (+20) n3-n4].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1118--1123
+Underfull \hbox (badness 10000) in paragraph at lines 1119--1124
  \T1/lmr/m/n/10 (+20) teira de seg-mento se:
  []
 
 
-Underfull \hbox (badness 6842) in paragraph at lines 1118--1123
+Underfull \hbox (badness 6842) in paragraph at lines 1119--1124
  \T1/lmr/m/n/10 (+20) n3 é me-nor do que desde fi-nal de n3 ao iní-cio de n4.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1144--1150
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1151
  \T1/lmr/m/n/10 (+20) en-tre n1-n2 ou n3-n4,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1144--1150
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1151
  \T1/lmr/m/n/10 (+20) que en-tre n1-n2 ou n3-n4,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1144--1150
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1151
  \T1/lmr/m/n/10 (+20) maior de que en-tre n1-n2 ou n3-n4,
  []
 
@@ -1401,10 +1401,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1144--1150
 File: mikro/OM_gttm_GPR02-03.png Graphic file (type png)
 
 <use mikro/OM_gttm_GPR02-03.png>
-Package pdftex.def Info: mikro/OM_gttm_GPR02-03.png used on input line 1155.
+Package pdftex.def Info: mikro/OM_gttm_GPR02-03.png used on input line 1156.
 (pdftex.def)             Requested size: 403.00464pt x 280.04556pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1168--1173
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1174
  \T1/lmr/m/n/10 (+20) gru-pos
  []
 
@@ -1412,7 +1412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1168--1173
 <gttm/GWFRfig32.png, id=778, 721.69624pt x 108.405pt>
 File: gttm/GWFRfig32.png Graphic file (type png)
  <use gttm/GWFRfig32.png>
-Package pdftex.def Info: gttm/GWFRfig32.png used on input line 1181.
+Package pdftex.def Info: gttm/GWFRfig32.png used on input line 1182.
 (pdftex.def)             Requested size: 360.84724pt x 54.20236pt.
 
 <gestalt/gestalt_elision_overlay.pdf, id=787, 803.0pt x 297.11pt>
@@ -1420,14 +1420,14 @@ File: gestalt/gestalt_elision_overlay.pdf Graphic file (type pdf)
 
 <use gestalt/gestalt_elision_overlay.pdf>
 Package pdftex.def Info: gestalt/gestalt_elision_overlay.pdf used on input line
- 1190.
+ 1191.
 (pdftex.def)             Requested size: 200.74951pt x 74.27731pt.
  [48 <./gttm/GWFRfig32.png> <./gestalt/gestalt_elision_overlay.pdf>]
 <gttm/GTTM-m21-metes.png, id=803, 792.9625pt x 241.90375pt>
 File: gttm/GTTM-m21-metes.png Graphic file (type png)
 
 <use gttm/GTTM-m21-metes.png>
-Package pdftex.def Info: gttm/GTTM-m21-metes.png used on input line 1214.
+Package pdftex.def Info: gttm/GTTM-m21-metes.png used on input line 1215.
 (pdftex.def)             Requested size: 356.82982pt x 108.85567pt.
 
 Underfull \vbox (badness 1688) has occurred while \output is active []
@@ -1437,39 +1437,39 @@ Underfull \vbox (badness 1688) has occurred while \output is active []
 File: gttm/ramificacoes_arvore.pdf Graphic file (type pdf)
 
 <use gttm/ramificacoes_arvore.pdf>
-Package pdftex.def Info: gttm/ramificacoes_arvore.pdf used on input line 1292.
+Package pdftex.def Info: gttm/ramificacoes_arvore.pdf used on input line 1293.
 (pdftex.def)             Requested size: 256.95937pt x 88.32977pt.
  [51 <./gttm/ramificacoes_arvore.pdf>]
 [52]
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1408
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1409
  \T1/lmr/m/n/10 (+20) cada peça que fun-ci-ona como uma ca-beça pro-lon-ga-ci-o
 -nal".
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1408
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1409
  \T1/lmr/m/n/10 (+20) [e]i nas se-guin-tes va-ri-a-ções:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1408
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1409
  \T1/lmr/m/n/10 (+20) no-tas me-ló-di-cas dos dois even-tos fo-rem idên-ti-cas.
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1408
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1409
  \T1/lmr/m/n/10 (+20) idên-ti-cas mas o baixo e/ou no-tas me-ló-di-cas di-fe-re
 m.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1408
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1409
  \T1/lmr/m/n/10 (+20) tos são di-fe-ren-tes."
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1408
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1409
  \T1/lmr/m/n/10 (+20) nal".
  []
 
@@ -1477,84 +1477,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 1400--1408
 File: gttm/prolongacional.pdf Graphic file (type pdf)
 
 <use gttm/prolongacional.pdf>
-Package pdftex.def Info: gttm/prolongacional.pdf used on input line 1436.
+Package pdftex.def Info: gttm/prolongacional.pdf used on input line 1437.
 (pdftex.def)             Requested size: 230.46445pt x 103.99005pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [53]
-Overfull \hbox (3.0471pt too wide) in paragraph at lines 1457--1458
+Overfull \hbox (3.0471pt too wide) in paragraph at lines 1458--1459
 []\T1/lmr/m/n/12 (-20) Lerdahl(1996) pro-põe um mo-delo de cál-culo para me-dir
  a in-ten-si-dade do relaxamento-
  []
 
-[54 <./gttm/prolongacional.pdf>] [55]
+[54 <./gttm/prolongacional.pdf>]
+Underfull \vbox (badness 1102) has occurred while \output is active []
+
+ [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56]
-<gttm/GTTM_TPS_rules.pdf, id=922, 819.06pt x 377.41pt>
+<gttm/GTTM_TPS_rules.pdf, id=928, 819.06pt x 377.41pt>
 File: gttm/GTTM_TPS_rules.pdf Graphic file (type pdf)
 
 <use gttm/GTTM_TPS_rules.pdf>
-Package pdftex.def Info: gttm/GTTM_TPS_rules.pdf used on input line 1574.
+Package pdftex.def Info: gttm/GTTM_TPS_rules.pdf used on input line 1582.
 (pdftex.def)             Requested size: 409.52899pt x 188.70453pt.
  [57 <./gttm/GTTM_TPS_rules.pdf>] [58
 
 ] [59]
 [60
 
-] <mikro/mikro113-intro.png, id=966, 1219.55624pt x 285.065pt>
+] <mikro/mikro113-intro.png, id=972, 1219.55624pt x 285.065pt>
 File: mikro/mikro113-intro.png Graphic file (type png)
 
 <use mikro/mikro113-intro.png>
-Package pdftex.def Info: mikro/mikro113-intro.png used on input line 1646.
+Package pdftex.def Info: mikro/mikro113-intro.png used on input line 1654.
 (pdftex.def)             Requested size: 426.85107pt x 99.77423pt.
 
-<mikro/mikro113_GTTM_tree.png, id=967, 982.67125pt x 459.7175pt>
+<mikro/mikro113_GTTM_tree.png, id=973, 982.67125pt x 459.7175pt>
 File: mikro/mikro113_GTTM_tree.png Graphic file (type png)
 
 <use mikro/mikro113_GTTM_tree.png>
-Package pdftex.def Info: mikro/mikro113_GTTM_tree.png used on input line 1656.
+Package pdftex.def Info: mikro/mikro113_GTTM_tree.png used on input line 1664.
 (pdftex.def)             Requested size: 442.19798pt x 206.87096pt.
 
-<mikro/A.png, id=968, 377.9721pt x 395.3169pt>
+<mikro/A.png, id=974, 377.9721pt x 395.3169pt>
 File: mikro/A.png Graphic file (type png)
  <use mikro/A.png>
-Package pdftex.def Info: mikro/A.png used on input line 1674.
+Package pdftex.def Info: mikro/A.png used on input line 1682.
 (pdftex.def)             Requested size: 226.785pt x 237.19196pt.
 
-Overfull \hbox (44.78778pt too wide) in paragraph at lines 1674--1676
+Overfull \hbox (44.78778pt too wide) in paragraph at lines 1682--1684
  [][] 
  []
 
-<mikro/B.png, id=969, 375.0813pt x 395.3169pt>
+<mikro/B.png, id=975, 375.0813pt x 395.3169pt>
 File: mikro/B.png Graphic file (type png)
  <use mikro/B.png>
-Package pdftex.def Info: mikro/B.png used on input line 1681.
+Package pdftex.def Info: mikro/B.png used on input line 1689.
 (pdftex.def)             Requested size: 225.0505pt x 237.19196pt.
 
-Overfull \hbox (43.05328pt too wide) in paragraph at lines 1681--1683
+Overfull \hbox (43.05328pt too wide) in paragraph at lines 1689--1691
  [][] 
  []
 
-<mikro/C.png, id=970, 375.804pt x 403.2666pt>
+<mikro/C.png, id=976, 375.804pt x 403.2666pt>
 File: mikro/C.png Graphic file (type png)
  <use mikro/C.png>
-Package pdftex.def Info: mikro/C.png used on input line 1692.
+Package pdftex.def Info: mikro/C.png used on input line 1700.
 (pdftex.def)             Requested size: 225.48413pt x 241.96182pt.
 
-Overfull \hbox (43.48691pt too wide) in paragraph at lines 1692--1694
+Overfull \hbox (43.48691pt too wide) in paragraph at lines 1700--1702
  [][] 
  []
 
-<mikro/D.png, id=971, 433.62pt x 433.62pt>
+<mikro/D.png, id=977, 433.62pt x 433.62pt>
 File: mikro/D.png Graphic file (type png)
  <use mikro/D.png>
-Package pdftex.def Info: mikro/D.png used on input line 1699.
+Package pdftex.def Info: mikro/D.png used on input line 1707.
 (pdftex.def)             Requested size: 260.17401pt x 260.17401pt.
 
-Overfull \hbox (78.17679pt too wide) in paragraph at lines 1699--1701
+Overfull \hbox (78.17679pt too wide) in paragraph at lines 1707--1709
  [][] 
  []
 
@@ -1562,20 +1565,20 @@ Overfull \hbox (78.17679pt too wide) in paragraph at lines 1699--1701
 Underfull \vbox (badness 1048) has occurred while \output is active []
 
  [61 <./mikro/mikro113-intro.png> <./mikro/mikro113_GTTM_tree.png>]
-<mikro/mikrokosmos113-prolongational.pdf, id=977, 578.16pt x 305.14pt>
+<mikro/mikrokosmos113-prolongational.pdf, id=983, 578.16pt x 305.14pt>
 File: mikro/mikrokosmos113-prolongational.pdf Graphic file (type pdf)
 
 <use mikro/mikrokosmos113-prolongational.pdf>
 Package pdftex.def Info: mikro/mikrokosmos113-prolongational.pdf used on input 
-line 1710.
+line 1718.
 (pdftex.def)             Requested size: 433.61893pt x 228.85442pt.
 
-<mikro/mikro_melodia_pitch_space.png, id=978, 752.8125pt x 550.055pt>
+<mikro/mikro_melodia_pitch_space.png, id=984, 752.8125pt x 550.055pt>
 File: mikro/mikro_melodia_pitch_space.png Graphic file (type png)
 
 <use mikro/mikro_melodia_pitch_space.png>
 Package pdftex.def Info: mikro/mikro_melodia_pitch_space.png used on input line
- 1721.
+ 1729.
 (pdftex.def)             Requested size: 338.76248pt x 247.52246pt.
  [62 <./mikro/A.png> <./mikro/B.png> <./mikro/C.png> <./mikro/D.png>] [63 <./mi
 kro/mikrokosmos113-prolongational.pdf> <./mikro/mikro_melodia_pitch_space.png>]
@@ -1608,12 +1611,12 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 [79
 
 ] [80]
-Overfull \hbox (151.9409pt too wide) in paragraph at lines 1862--1915
+Overfull \hbox (151.9409pt too wide) in paragraph at lines 1870--1923
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 31.49922pt on input line 1915.
+LaTeX Warning: Float too large for page by 31.49922pt on input line 1923.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1625,7 +1628,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 
-LaTeX Warning: Float too large for page by 16.99924pt on input line 1974.
+LaTeX Warning: Float too large for page by 16.99924pt on input line 1982.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1643,36 +1646,31 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `luteria_v0.5.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1991.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1991.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1999.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1999.
  (./luteria_v0.5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1991.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1991.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1999.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1999.
 
+Package rerunfilecheck Info: File `luteria_v0.5.brf' has not changed.
+(rerunfilecheck)             Checksum: 6E9B3B29165D3780989C29D9C7AAF2FE;9790.
 
-
-Package rerunfilecheck Warning: File `luteria_v0.5.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `luteria_v0.5.brf':
-(rerunfilecheck)             Before: ECAC9969CEBA7689FE4A7E41D744F20B;9735
-(rerunfilecheck)             After:  61B416B9577150077E91CCA33F12634C;9735.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1991.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1999.
  ) 
 Here is how much of TeX's memory you used:
- 16028 strings out of 493485
- 239188 string characters out of 3143527
- 550803 words of memory out of 3000000
- 18582 multiletter control sequences out of 15000+200000
+ 16040 strings out of 493485
+ 239417 string characters out of 3143527
+ 551096 words of memory out of 3000000
+ 18592 multiletter control sequences out of 15000+200000
  92666 words of font info for 166 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 39i,13n,40p,1008b,1308s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,13n,40p,1011b,1308s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/l
@@ -1689,10 +1687,10 @@ mf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 s17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.
 pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qbkb.pfb>
-Output written on luteria_v0.5.pdf (87 pages, 1113237 bytes).
+Output written on luteria_v0.5.pdf (87 pages, 1114244 bytes).
 PDF statistics:
- 1560 PDF objects out of 1728 (max. 8388607)
- 1373 compressed objects within 14 object streams
- 298 named destinations out of 1000 (max. 500000)
+ 1568 PDF objects out of 1728 (max. 8388607)
+ 1381 compressed objects within 14 object streams
+ 300 named destinations out of 1000 (max. 500000)
  28250 words of extra memory for PDF output out of 29859 (max. 10000000)
 
