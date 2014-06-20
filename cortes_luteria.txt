@@ -1,0 +1,104 @@
+TIME-SPAN --------------------------
+
+\begin{citacao} 
+1. "Cada grupo em uma peça é um intervalo-temporal dentro da segmentação de intervalo de tempo da peça" 
+2. "Na estrutura de agrupamento de nível interior:
+a) "Cada batida B de nível métrico menor determina o intervalo-temporal TB extendido de B mas não incluso na próxima batida de nível menor 
+b) Cada batida de B de nível métrico Li determina um tempo-de-intervalo regular de todas as batidas no nível Li-1 de B para cima mas não incluindo (i) e a próxima batida B' do nível Li ou (ii) uma fronteira de agrupamento, o que vier antes 
+c) Se uma fronteira de grupo G intervem entre B e a batida precedente no mesmo nível, B determina um intervalo-temporal aumentado T'B, que é o intervalo de G para o final do intervalo-temporal regular TB.
+ \cite{lerdahl1983generative}
+\end{citacao}
+
+
+
+d) Retenção cadencial (p. 159) 
+TSRWFR4 "Se uma cadência de dois elementos é diretamente subordinada a cabeça e um intervalo-temporal T, o final é diretamente subordinado a [e] e o penúltimo é diretamente subordinado ao final" 
+ \cite{lerdahl1983generative}
+\end{citacao}
+
+
+\begin{citacao}
+TSRPR1 (Posição métrica)  "Na possibilidade de escolhas para a cabeça de um intervalo-temporal T, prefira aquela que é relativamente forte na posição métrica" 
+TSRPR2 (Harmonia Local) "Na possibilidade de escolhas sobre a cabeça do intervalo-temporal T, prefira o seguinte: 
+a) Consonância intrínsseca relativa 
+b) Relativamente próxima da tônica local" 
+TSRPR3 (Registros Extremos) "Na possibilidade de escolhas para a cabeça de intervalo-temporal, prefira raramente uma escolha com: 
+a) Uma altura melódica mais aguda 
+b) Uma altura de baixo mais grave 
+TSRPR4 (Paralelismo) "Se dois ou mais intervalos-tonais podem ser construídos motivicamente e/ou ritmicamente paralelos, preferivelmente atribua a eles cabeças paralelas" 
+TSRPR5 (Estabilidade Métrica) "na escolha de uma cabeça de intervalo-temporal T, prefira a escolha que resulta mais estável de uma estrutura métrica" 
+TSRPR6 (Estabilidade Prolongacional) "Na escolha de uma cabeça de intervalo-temporal T, prefira escolha que resulta mais estável de uma estrutura prolongacional" 
+TSRPR7 (Retenção Cadencial) (p. 170) 
+TSRPR8 (Ínicio Estrutural) "Se para um intervalo-temporal T há um grupo G mais largo contendo T para qual a cabeça de T pode funcionar como um ínicio estrutural, então prefira a cabeça de T para um evento relativamente próximo do ínicio de T (e logo ao ínicio de G também). 
+TSRPR9 "Na escolha de uma cabeça de uma peça prefira o final estrutural ao início estrutural." 
+ \cite{lerdahl1983generative}
+\end{citacao}
+
+
+PROLONGACIONAL --------------------------------
+
+\begin{citacao}
+PRWFR1 "Há um único evento no agrupamento da camada de base de cada peça que funciona como uma cabeça prolongacional".\linebreak
+PRWFR2 "Um evento [e]i pode ser uma elaboração direta de outra altura [e]i nas seguintes variações:\linebreak
+a) [e]i é um prolongamento forte de [e]j se as notas raíz, notas do baixo, e notas melódicas dos dois eventos forem idênticas.\linebreak
+b) [e]i é um prologamento fraco de [e]j se as notas raíz dos dois eventos são idênticas mas o baixo e/ou notas melódicas diferem. \linebreak
+c) [e]i é uma progressão para e de [e]j se as raízes harmônicas de dois eventos são diferentes."\linebreak
+PRWFR3 "Cada evento no agrupamento da camada base é também uma cabeça prolongacional de uma elaboração recursiva da cabeça prolongacional".\linebreak
+PRWFR4 (Ramos que não se cruzam) "Um evento [e]i é uma elaboração direta de um evento e[j], cada evento [e]i e [e]j devem ser uma elaboração direta de [e]i , [e]j, e também algum evento entre eles. 
+ \cite[ p.144-145]{lerdahl1983generative}
+\end{citacao}
+
+
+
+
+\begin{citacao}
+PRPR1 (Importância de intervalo-temporal) "Ao escolher o evento prolongacional mais importante [e]k de uma região prolongacional ([e]i - [e]j ), prefira fortemente uma escolha na qual [e]k é relativamente importante para o intervalo-temporal." 
+
+PRPR2 (Segmentação de intervalo-temporal) "Deixe [e]k ser a região mais importante prolongacionalmente ([e]i - [e]j). Se um intervalo-temporal que contém [e]i e [e]k mas não [e]j, prefira ma redução prolongacional e que [e]k é uma elaboração de [e]i; funciona similarmente com os papéis de [e]i e [ej invertidos." 
+ \cite{lerdahl1983generative}
+\end{citacao}
+
+The interaction principle itself may still be too techni-
+cal to be tested empirically at this point; but its larger
+context, the perception of hierarchical pitch structures,
+is a topic of considerable interest to music psychology.
+GTTM’s prolongational component, however, presents
+difficulties in this regard. Quantification of predictions
+of the metrical and time-span components can be
+accomplished by counting metrical or time-span levels
+(Palmer and Krumhansl, 1987), and grouping preference
+rules are amenable to quantification (see Frankland and
+Cohen, 2004, for a partial effort in this direction; also
+Temperley, 2001).
+\cite[p. 191]{lerdahl2009genesis}
+
+
+GTTM addresses prolongational organization not as an aesthetic ideal, as in Schenkerian analy-
+sis, but as a psychological phenomenon describable by
+nested patterns of tension and relaxation. Tension depends
+on hierarchical position: a tonic chord in root position
+is relaxed; another chord or region is relatively tense in
+relation to the tonic; a nonharmonic tone is tense in
+relation to its harmonic context. This component
+assigns prolongational structure by a cognitively moti-
+vated rule system that proceeds from grouping and
+meter through time-span segmentation and reduction.
+These steps are necessary because prolongational con-
+nections depend not only on degrees of pitch similarity
+and stability but also on the rhythmic position of events.
+\cite{lerdahl2009genesis}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%% resoluçao
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Exemplo da aplicação da PRPR2}
+	\begin{center}
+	    \includegraphics[scale=0.35]{gttm/prolongacional.pdf}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+

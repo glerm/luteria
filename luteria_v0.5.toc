@@ -36,28 +36,26 @@
 \contentsline {subsubsection}{\numberline {4.2.1.1}Regras de prefer\IeC {\^e}ncia para agrupamentos (GPRs)}{45}{subsubsection.4.2.1.1}
 \contentsline {subsection}{\numberline {4.2.2}Regras de boa-forma\IeC {\c c}\IeC {\~a}o m\IeC {\'e}trica (MWFRs )}{48}{subsection.4.2.2}
 \contentsline {subsubsection}{\numberline {4.2.2.1}Regras de prefer\IeC {\^e}ncia M\IeC {\'e}trica (MPFRs) }{50}{subsubsection.4.2.2.1}
-\contentsline {subsection}{\numberline {4.2.3}Regras de redu\IeC {\c c}\IeC {\~a}o do intervalo-temporal}{50}{subsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.3.1}Redu\IeC {\c c}\IeC {\~a}o de regras de boa-forma\IeC {\c c}\IeC {\~a}o para intervalos-temporais ( TSRWFRs )}{51}{subsubsection.4.2.3.1}
-\contentsline {subsubsection}{\numberline {4.2.3.2}Regras de Prefer\IeC {\^e}ncia para Redu\IeC {\c c}\IeC {\~a}o de Intervalo-Temporal(TSRPR) }{51}{subsubsection.4.2.3.2}
-\contentsline {subsection}{\numberline {4.2.4}Regras de boa-forma\IeC {\c c}\IeC {\~a}o da redu\IeC {\c c}\IeC {\~a}o prolongacional (PRWFRs) }{52}{subsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.4.1}Regras de prefer\IeC {\^e}ncia para redu\IeC {\c c}\IeC {\~o}es prolongacionais (PRPRs)}{53}{subsubsection.4.2.4.1}
-\contentsline {section}{\numberline {4.3}Restri\IeC {\c c}\IeC {\~o}es Cognitivas dos Sistemas Composicionais}{55}{section.4.3}
-\contentsline {chapter}{\chapternumberline {5}Teoria de Grupos e Alturas Crom\IeC {\'a}ticas}{59}{chapter.5}
-\contentsline {chapter}{\chapternumberline {6}Analises}{61}{chapter.6}
-\contentsline {section}{\numberline {6.1}Analise de Mikrokosmos 113 Bela Bartok}{61}{section.6.1}
-\contentsline {part}{\partnumberline {III}Luteria Composicional}{65}{part.3}
-\contentsline {chapter}{\chapternumberline {7}Aplica\IeC {\c c}\IeC {\~a}o de estruturas sugeridas pelas an\IeC {\'a}lises musicais em procedimentos algor\IeC {\'\i }tmicos cl\IeC {\'a}ssicos}{67}{chapter.7}
+\contentsline {section}{\numberline {4.3}Segmenta\IeC {\c c}\IeC {\~a}o temporal de eventos cadenciais e a redu\IeC {\c c}\IeC {\~a}o prolongacional na GTTM}{50}{section.4.3}
+\contentsline {subsubsection}{\numberline {4.3.0.2}Calculando a tens\IeC {\~a}o e o Espa\IeC {\c c}o das alturas tonais (TPS) }{51}{subsubsection.4.3.0.2}
+\contentsline {section}{\numberline {4.4}Cogni\IeC {\c c}\IeC {\~a}o das Estruturas Musicais B\IeC {\'a}sicas (CBMS)}{52}{section.4.4}
+\contentsline {section}{\numberline {4.5}Restri\IeC {\c c}\IeC {\~o}es Cognitivas versus Segmenta\IeC {\c c}\IeC {\~a}o Atonal}{53}{section.4.5}
+\contentsline {chapter}{\chapternumberline {5}Teoria de Grupos e Alturas Crom\IeC {\'a}ticas}{57}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}Analises}{59}{chapter.6}
+\contentsline {section}{\numberline {6.1}Analise de Mikrokosmos 113 Bela Bartok}{59}{section.6.1}
+\contentsline {part}{\partnumberline {III}Luteria Composicional}{63}{part.3}
+\contentsline {chapter}{\chapternumberline {7}Aplica\IeC {\c c}\IeC {\~a}o de estruturas sugeridas pelas an\IeC {\'a}lises musicais em procedimentos algor\IeC {\'\i }tmicos cl\IeC {\'a}ssicos}{65}{chapter.7}
 \vspace {\cftbeforepartskip }
-\contentsline {chapter}{Conclus\IeC {\~a}o}{69}{chapter*.12}
+\contentsline {chapter}{Conclus\IeC {\~a}o}{67}{chapter*.12}
 \vspace {\cftbeforepartskip }
-\contentsline {chapter}{Refer\^encias}{71}{section*.15}
+\contentsline {chapter}{Refer\^encias}{69}{section*.15}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {part}{Ap\^endices}{75}{section*.16}
-\contentsline {appendix}{\chapternumberline {A}Reposit\IeC {\'o}rio de C\IeC {\'o}digos}{77}{appendix.A}
-\contentsline {subsection}{\numberline {A.0.1}Biblioteca de Algoritmos}{77}{subsection.A.0.1}
+\contentsline {part}{Ap\^endices}{73}{section*.16}
+\contentsline {appendix}{\chapternumberline {A}Reposit\IeC {\'o}rio de C\IeC {\'o}digos}{75}{appendix.A}
+\contentsline {subsection}{\numberline {A.0.1}Biblioteca de Algoritmos}{75}{subsection.A.0.1}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
-\contentsline {part}{Anexos}{79}{section*.17}
-\contentsline {appendix}{\chapternumberline {A}Tabela de Pitch Class Set de Allen Forte}{81}{appendix.anexochapback.1}
-\contentsline {appendix}{\chapternumberline {B}Regras da Teoria Gerativa da Musica Tonal}{85}{appendix.anexochapback.2}
+\contentsline {part}{Anexos}{77}{section*.17}
+\contentsline {appendix}{\chapternumberline {A}Tabela de Pitch Class Set de Allen Forte}{79}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {B}Regras da Teoria Gerativa da Musica Tonal}{83}{appendix.anexochapback.2}
 \vspace {\cftbeforepartskip }
