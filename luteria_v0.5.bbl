@@ -10,6 +10,18 @@
 {ADORNO, T. \emph{Filosofia da M{\'{u}}sica Nova}. S{\~a}o Paulo: Perspectiva,
   1974.}
 
+\bibitem[Andreatta 2014]{AndreataOMtutorial}
+\abntrefinfo{Andreatta}{ANDREATTA}{2014}
+{ANDREATTA, M. \emph{OM Pitch Class Set Tutorial}. 2014.
+Dispon{\'\i}vel em:
+  \url{http://recherche.ircam.fr/equipes/repmus/OpenMusic/user-doc/DocFiles/znTutorial/}.}
+
+\bibitem[Andreatta e Agon 2003]{andreatta2003implementing}
+\abntrefinfo{Andreatta e Agon}{ANDREATTA; AGON}{2003}
+{ANDREATTA, M.; AGON, C. Implementing algebraic methods in openmusic. In:
+  \emph{Proceedings of the International Computer Music Conference,
+  Singaphore}. [S.l.: s.n.], 2003.}
+
 \bibitem[Antokoletz 1984]{antokoletz1984music}
 \abntrefinfo{Antokoletz}{ANTOKOLETZ}{1984}
 {ANTOKOLETZ, E. \emph{The music of B{\'e}la Bart{\'o}k: a study of tonality and
@@ -25,11 +37,6 @@
 \abntrefinfo{Bernstein}{BERNSTEIN}{1976}
 {BERNSTEIN, L. \emph{The unanswered question: Six talks at Harvard}. [S.l.]:
   Harvard University Press, 1976.}
-
-\bibitem[Bird, Klein e Loper 2009]{bird2009natural}
-\abntrefinfo{Bird, Klein e Loper}{BIRD; KLEIN; LOPER}{2009}
-{BIRD, S.; KLEIN, E.; LOPER, E. \emph{Natural language processing with Python}.
-  [S.l.]: O{'}Reilly Media, Inc., 2009.}
 
 \bibitem[Bresson, Agon e Assayag 2011]{bresson2011openmusic}
 \abntrefinfo{Bresson, Agon e Assayag}{BRESSON; AGON; ASSAYAG}{2011}
@@ -67,6 +74,11 @@ Mouton, 1957.}
 {CRAMER, F. \emph{Words Made Flesh: Code, Culture, Imagination}. Holanda: Piet
   Zwart Institute, 2005.}
 
+\bibitem[Debril 2014]{DebrilOM}
+\abntrefinfo{Debril}{DEBRIL}{2014}
+{DEBRIL, D. \emph{OM Pitch Class Set Tutorial FR}. 2014.
+Dispon{\'\i}vel em: \url{http://www.deb8076.eu/AnalyseBeethovenST/index.html}.}
+
 \bibitem[Downey 2009]{downey2009python}
 \abntrefinfo{Downey}{DOWNEY}{2009}
 {DOWNEY, A. \emph{Python for software design: how to think like a computer
@@ -76,6 +88,11 @@ Mouton, 1957.}
 \abntrefinfo{Forte}{FORTE}{1973}
 {FORTE, A. \emph{The structure of atonal music}. [S.l.]: Yale University Press,
   1973.}
+
+\bibitem[Forte 1978]{forte1978harmonic}
+\abntrefinfo{Forte}{FORTE}{1978}
+{FORTE, A. \emph{The harmonic organization of the rite of spring}. [S.l.]: Yale
+  University Press, 1978.}
 
 \bibitem[Godwin 1979]{godwin1979athanasius}
 \abntrefinfo{Godwin}{GODWIN}{1979}
@@ -261,14 +278,6 @@ Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/25164542}.}
 \abntrefinfo{Roads}{ROADS}{1979}
 {ROADS, C. Grammars as representations for music.
 \emph{Computer Music Journal}, JSTOR, p. 48--55, 1979.}
-
-\bibitem[Roads 1996]{curtis1996computer}
-\abntrefinfo{Roads}{ROADS}{1996}
-{ROADS, C. \emph{The computer music tutorial}. [S.l.]: MIT press, 1996.}
-
-\bibitem[Roads 2004]{roads2004microsound}
-\abntrefinfo{Roads}{ROADS}{2004}
-{ROADS, C. \emph{Microsound}. [S.l.]: MIT press, 2004.}
 
 \bibitem[Rossum e Jr 1995]{van1995python}
 \abntrefinfo{Rossum e Jr}{ROSSUM; JR}{1995}

@@ -938,7 +938,7 @@ Sua influência na teoria musical pode ser encontrada em muitas tentativas de ap
 
 Inspirou as formalizações rígidas de modelos da musicologia da cognição inspirados na linguística na “Teoria Gerativa da Música Tonal” \cite{lerdahl1983generative} - um trabalho interdisciplinar do linguista Ray Jackendoff com o musicólogo Fred Lerdahl que detalharemos mais adiante.
 
-Uma abordagem curiosa para comparação desta mesma época é a de Leonard Berstein na série de palestras “Unswared Question” \cite{bernstein1976unanswered}. Sua especulação empírica foi bastante alegórica e demonstrada inventivamente ao piano em seu registro em vídeo. Bersnstein fez comparações das estruturas de ordenamento das frases escritas e faladas com montagens de sessões motívicas de peças clássicas e chega a fazer algumas metáforas entre classes gramaticais e funções de acordes. Este tipo de metáfora parece ser de fato uma das motivações iniciais da pesquisa neste campo, porém muita coisa foi problematizada neste campo, que nos anos seguintes deu origem a organização de uma disciplina hoje conhecida por "cognição musical".
+Uma abordagem curiosa para comparação desta mesma época é a de Leonard Berstein na série de palestras “Unswared Question” \cite{bernstein1976unanswered}. Sua especulação empírica foi bastante alegórica e demonstrada inventivamente ao piano em seu registro em vídeo. Bersnstein fez comparações das estruturas de ordenamento das frases escritas e faladas com montagens de sessões motívicas de peças clássicas e chega a fazer algumas metáforas entre classes gramaticais e funções de acordes. Este tipo de metáfora parece ser de fato uma das motivações iniciais da pesquisa neste campo, porém muita coisa foi problematizada de maneira mais rigorosa, buscando métodos quantitativos, e nos anos seguintes contribuiu para as bases de organização de uma disciplina hoje conhecida por "cognição musical".
 
 Pelo bem ou pelo mal, a abordagem de Bernstein parece estar muito mais para o universo das analogias poéticas livres do que a busca por uma formalização strictu sensu \cite{lerdahl2009genesis} como a que se sucedeu nas derivações das gramáticas gerativas musicais \cite{lerdahl1983generative,temperley2004cognition} ou em formulações algébricas e algoritmicas que Curtis \citeonline{roads1979grammars} já apontava em seus estudos da época.
 
@@ -954,41 +954,11 @@ O interessante deste panorama é que coloca lado a lado perspectivas mais empír
 
 Segundo Roads, \citeonline{moorer1972music} e \citeonline{winograd1968linguistics} chegam a realizar alguns experimentos computacionais. \citeonline{smoliar1976music} toca num ponto tecnologicamente complexo para a época: a segmentação de arquivos sonoros diretamente a partir de gravações. 
 
-\citeonline{laske1977music} propõe analogias com a fonologia (relação entre sintaxe e sons da palavra falada) com uma recente “sonologia” (relação de uma sintaxe musical e os sons musicais). A dupla\citeonline{lerdahl1983generative}  investe numa normatização bastante inspirada nas segmentações propostas por Chomsky e procura problematizar aspectos de uma cognição musical tonal, que teria bases culturais sólidas na tradição ocidental, que veremos na \autoref{GTTM}.
+\citeonline{laske1977music} propõe analogias com a fonologia (relação entre sintaxe e sons da palavra falada) com uma recente “sonologia” (relação de uma sintaxe musical e os sons musicais). A dupla\citeonline{lerdahl1983generative}  investe numa normatização bastante inspirada nas segmentações propostas por Chomsky e procura problematizar aspectos de uma cognição musical tonal, que teria bases culturais sólidas na tradição ocidental, que veremos a seguir na \autoref{GTTM}.
 
 
-% ---
-\subsection{Simbólico e Icônico}
-% ---
 
-O ensaio “Grammars as Representation for Music”\cite{roads1979grammars} tem uma particularidade importante. Roads viria a ser nas décadas seguintes um prolífico teórico da Computer Music \cite{curtis1996computer,roads2004microsound} . Sua orientação já é visível na sua exposição do assunto naquela época. Roads estava preocupado com a possibilidade do modelo de análise sintática proposto por Chomsky servir também como uma formalização computacional para algritmos musicais, e na própria fundamentação da música como linguagem natural, como ocorreu com as línguas escritas na disciplina que hoje é conhecida por “Processamento de Lingagem natural”\cite{bird2009natural}
-
-Roads inicia propondo uma terminologia para a representação musical opondo os termos “simbólico” e “icônico”. 
-
-\pagebreak
-\begin{description}
-
-\item[Simbólico] poderia ser entendido como a representação abstrata de elementos e suas transformações como por exemplo a nomenclatura dos acordes, seus graus funcionais numa análise de cadências (com a notação de números romanos) ou a descrição de sessões de uma peça em “A-A'-B-A”. 
-
-\item[Icônico] seria uma representação topológica de um dado físico como por exemplo as tabelas númericas guardadas na memória de um computador que representem exatamente as frequências que fisicamente o auto-falante terá de reproduzir.
-\end{description}
-
-Roads demonstra uma preocupação rigorosa e interdisciplinar entre as possibilidades de design de novas linguages de programação, compiladores e outros formalismos algoritmicos a partir desta possibilidade de representação e operação transformacional sobre ícones e símbolos musicais, e faz um esforço para colocar a perspectiva do trabalho de formalização das gramáticas para dentro das dicussões da época.
-
-Para isso faz um detalhamento da taxonomia da hierarquia de tipos proposta por \citeonline{chomsky1957syntactic} conhecida também como “Hierarquia de Chomsky-Schützenberger”\footnote{reconhecendo a contribuição do matemático Marcel-Paul Schützenberger na formalização destas teorias}. Esta exposição dos tipos de gramática também é revista mais recentemente no enciclopédico “Paradigms of Algorithm composition” de \citeonline{nierhaus2009algorithmic}.
-
-As camadas são geralmente detalhadas como subconjuntos uma das outras desta maneira:
-
-Tipo 0 – Gramática Livre ou Irrestrita:
-
-Tipo 1 – Gramática Sensível a Contexto:
-
-Tipo 2 – Gramática Livre de Contexto:
-
-Tipo 3 – Gramática Regular:
-
-
-Roads ainda coloca atuando sobre as 4 categorias hierárquicas a necessidade de operá-las por uma gramática transformacional e uma gramática regulativa.
+\chapter{Teorias Cognitivistas para uma Segmentação Tonal}
 
 \section{Gramática Gerativa da Música Tonal (GTTM)}
 \label{GTTM}
@@ -1274,6 +1244,30 @@ Decidimos portanto não entrar em detalhes destes dois escopos mais frágeis da 
 
 
 
+\begin{citacao}
+The tonal hierarchy- hence an implicit pitch space- appears in GTTM
+in incomplete form under the rubric of verbally stated stability conditions.
+The theory claims that listeners cannot infer complex event hierarchies
+without having access to such conditions, which are the main source for
+ranking the relative stability of events within embedded temporal regions.
+These regions in turn derive directly or indirectly from the grouping and
+metrical structures. Figure 1 illustrates schematically that the time-span re-
+duction derives from the rhythmic components and the stability conditions,
+and the prolongational reduction derives from the time-span reduction and
+the stability conditions. In short, both a rhythmic framework and criteria
+for pitch stability are needed if the listener is to hear events in a dominating-
+subordinating manner.\cite{lerdahl1988tps}
+\end{citacao}
+
+(a) octave (root) level:
+(b) fifths level:
+(c) triadic level:
+(d) diatonic level:
+(e) chromatic level:
+
+
+lerdahl testa a teoria TPS em \cite{2007lerdahl-krumhansl}
+
 
 
 
@@ -1305,6 +1299,18 @@ O artigo aplica a fórmula para medida de tensão e relaxamento em alguns compas
 
 \section{Cognição das Estruturas Musicais Básicas (CBMS)}
 
+
+
+\begin{citacao}
+Before beginning to discuss the grammar of grouping structure, we must enter an important caveat. At the present stage of development of the theory, we are treating all music as essentially homophonic; that is, we assume that a single grouping analysis suffices for all voices of a piece. For the more contrapuntal varieties of tonal music, where this condition does not obtain, our theory is inadequate. We consider an extension of the theory to account for polyphonic music to be of great importance. However, we will not attempt to treat such music here except by approximation.\cite{lerdahl1983generative}
+\end{citacao}
+
+
+
+\subsubsection{Solfejo das Classes de Alturas Tonais}
+
+Temperley justifica esta abordagem por estar buscando um agrupamento das classes de altura que considere os cromatismos fora de uma escala como notas de passagem ou ornamentais dentro de uma função tonal.
+
 A inferência de tonalidade proposta por Lerdahl é inspirada no modelo cognitivista de "distâncias percebidas entre as alturas"(lerdahl 1996 pg.359 paragrafo 3) proposto por Krumsahl(1982,1990), que entre outras propostas constrói histogramas de referência de um "perfil tonal"(krum 1982) dada pelas notas presentes em um segmento.
 
 imagem temperley pg.154
@@ -1324,6 +1330,7 @@ No entanto antes de pensar estas inferências tonais em peças pós-tonais gosta
 \cite{temperley1999s}
 
 
+\subsubsection{Algoritmo dos Perfis de Tonalidade}
  
 Krumhansl Schmuckler 
 
@@ -1335,6 +1342,23 @@ r=
 {\sqrt{ \sum{ (x-\overline{x})^2 } \sum{ (y-\overline{y})^2 } } }
 $
 }
+
+For a number of years, it was recognized that the Krumhansl–Kessler key profiles are
+similar—but not identical—to the frequency of occurrence for scale degrees in the
+actual music. In her landmark 1990 book, Krumhansl argued that this similarity impli-
+cates learning-from-exposure. The psychological schemas for the major and minor key
+profiles are cognitive reflections of an objective statistical regularity in Western musical
+practice. Unfortunately, the evidence seemed imperfect. As we have seen, the domi-
+nant is the most frequently occurring pitch in both the major and minor modes, yet
+the Krumhansl and Kessler profiles consistently rate the tonic higher than the domi-
+nant. In addition, the second and fourth scale degrees (supertonic and subdominant)
+are rated significantly less highly than the actual presence of these tones would
+suggest. Why do the Krumhansl–Kessler “key profile” distributions differ from the
+pitch-class distributions of the music itself?
+
+
+
+
 
 
 \section{Restrições Cognitivas versus Segmentação Atonal}
@@ -1352,7 +1376,7 @@ Cabe pensar aqui aquilo que nattiez diferencia como estésica externa e estésic
 
 Trabalharemos no capítulo seguinte uma abordagem sobre as alturas cromáticas que parte de outros princípios de agrupamento, buscando fórmulas composicionais algorítmicas por meio de uma abordagem que rompe com a normatização  da cultura tonal clássica e busca novos critérios para observar transformações nas alturas e seus agrupamentos.
 
-
+\begin{citacao}
 Where does a compositional grammar come from? The answer varies, but a few
 generalizations may be helpful. Let us distinguish between a "natural" and an
 "artificial" compositional grammar. A natural grammar arises spontaneously in
@@ -1365,20 +1389,14 @@ grammar will tend to dominate in a culture that utilizes musical notation, that 
 self-conscious, and that separates musical activity into composer, performer,
 and listener.
 \cite[p. 100-101]{lerdahl1992cognitive}
+\end{citacao}
 
 
 
 
 
 
-David Temperley(2001, 2007) toma como ponto de partida a computabilidade de algumas destas regras e chega a usar uma taxonomia similar.  
 
-
-
-Before beginning to discuss the grammar of grouping structure, we must enter an important caveat. At the present stage of development of the theory, we are treating all music as essentially homophonic; that is, we assume that a single grouping analysis suffices for all voices of a piece. For the more contrapuntal varieties of tonal music, where this condition does not obtain, our theory is inadequate. We consider an extension of the theory to account for polyphonic music to be of great importance. However, we will not attempt to treat such music here except by approximation.\cite{lerdahl1983generative}
-
-
-Talvez seja relevante considerar da teroria de temperley o a sua preocupação com outros parametros: contraponto,, harmonia...
 
 Temperley adopts the plan outlined by Krumhansl and Schmuckler (de- 
 scribed in Krumhansl, 1990): (1) segment a composition into small sections, (2) tally 
@@ -1392,32 +1410,6 @@ ceived key of that segment.
 
 Lerdahl logo em seguida flerta com musica atonal, etc... \cite{lerdahl1992cognitive} antes de buscar sua atualização da teoria após a influencia das teorias de Forte, Babbit e outros na musicologia americana influencia da teoria de grupos (o que foge um pouco de nosso escopo)  e sim no próximo capitulo buscar um entendimento básico da eoria de grupos blabla
 
-
-The tonal hierarchy- hence an implicit pitch space- appears in GTTM
-in incomplete form under the rubric of verbally stated stability conditions.
-The theory claims that listeners cannot infer complex event hierarchies
-without having access to such conditions, which are the main source for
-ranking the relative stability of events within embedded temporal regions.
-These regions in turn derive directly or indirectly from the grouping and
-metrical structures. Figure 1 illustrates schematically that the time-span re-
-duction derives from the rhythmic components and the stability conditions,
-and the prolongational reduction derives from the time-span reduction and
-the stability conditions. In short, both a rhythmic framework and criteria
-for pitch stability are needed if the listener is to hear events in a dominating-
-subordinating manner.\cite{lerdahl1988tps}
-
-
-(a) octave (root) level:
-(b) fifths level:
-(c) triadic level:
-(d) diatonic level:
-(e) chromatic level:
-
-
-
-
-
-lerdahl testa a teoria TPS em \cite{2007lerdahl-krumhansl}
 
 abaixo um esquema feito por ele no seu artigo de revisão da GTTM
 %%%%%%%%%%%%%%%%%% tonal pitch space
@@ -1441,15 +1433,47 @@ Angular melodies of Schoenberg, Webern, or Mozart are more naturalistic than con
 
 
 
-\chapter{Teoria de Grupos e Alturas Cromáticas}
+\chapter{Teorias de Grupos das Classes de Alturas para uma Segmentação Atonal }
 \label{modelos}
 
+Vimos na teoria do "solfejo das classes de altura"\cite[p. 115]{temperley2004cognition} de David \citeonline{temperley2004cognition} a categorização de uma divisão de grupos de altura que ele denomina "Altura de Classes Tonais"\cite[p. 115]{temperley2004cognition}. Neste capítulo exploramos teorias pós-tonais que são geralmente evitadas pela abordagem cognitivista por partirem de princípios de agrupamento que não são argumentados por uma funcionalidade tonal normativa, mas sim pela formalização de relações de simetria, similaridade e transformação entre os doze intervalos cromáticos que trariam o sentido musical por outros tipos de fruição da forma musical. 
 
-\cite{straus2004}
+Na teoria de grupos de classes de altura ("Pitch Class Theory") os intervalos são tratados de maneira neutra em relação a qualquer centro tonal pré-determinado e parte-se do princípio de que agrupamentos de alturas podem gerar estruturas de derivadas por uma espécie de parentesco intervalar, incluindo a similaridade por inversão ou retrógrado destes como veremos mais adiante. 
 
+Estas teorias são fortemente influenciadas pela ideia de serialismo formalizada pelo dodecafonismo frequentemente atribuído a Arnold Shoenberg e seus pupilos da segunda escola de Vienna, mas é bom lembrar que o pensamento serial é um pensamento composicional que pode também ser encontrado em compositores muito anteriores a estas formalizações, portanto podemos encontrar esta abordagem analítica sendo usada para destacar aspectos de composições de outros contextos que não o restrito ao repertório atonal clássico, como faz por exemplo Joel \citeonline{lester1989analytic} em sua didática para análises de um repertório pós-tonal do ínicio do século XX ou Allen Forte na sua tese sobre a "Sagração da Primavera" de Stravinski\cite{forte1978harmonic}.
+
+\begin{citacao}
 It was, of course, Allen Forte who in the USA pioneered the analytical with a taxonomy of pc-set application of concepts from mathematics, first arose also in serial Babbittian types (the concept theory), and following as
 some inclusion and with relations abstract up (such similarity relations) meant for analytical use. Forte's "set theory" (as it is somewhat misleadingly known, because it deals with sets of pitch classes) has had its own
 ramifications and influence. In particular, Forte's own analyses of individual pieces of music have led many others to do likewise, and Forte's initial idea of similarity relations (as distinct from equivalence relations) among pitch-class sets has seen a flourishing theoretical industry grow around it, after seminal articles by Morris, Rahn, and Lewin appeared in 1980.\cite{rahn2004swerve}
+\end{citacao}
+
+
+
+Com formalização de uma teoria de grupos de classes de alturas pela geração de musicólogos e compositores seriais da segunda metade do século XX e com os avanços exponenciais da computação nas últimas décadas estas teorias vão sendo testadas e aplicadas computacionalmente a ponto de já constituírem uma área bastante específica da musicologia contemporânea. 
+
+Um exemplo de interesse do presente trabalho é a classe de objetos "Math Tools"\cite{andreatta2003implementing,AndreataOMtutorial,DebrilOM} da linguagem de programação OpenMusic, que organiza em orientação a objetos muitos dos conceitos que veremos logo a seguir. 
+
+
+
+
+
+
+
+
+\section{Formulas de canonizaç~ao e transformaç~ao dos intervalos}
+
+
+
+\citeonline{straus2004}
+
+
+
+
+
+
+
+\subsection{Forma Prima}
 
 \begin{citacao}
 Two Algorithms for Computing the Prime Form
@@ -1472,7 +1496,7 @@ Pitch Class Set	Forte Prime	Rahn Prime
 
 
 % ---
-\chapter{Analises}
+\chapter{Analises aplicadas}
 % ---
 \label{experimetosanalises}
 
