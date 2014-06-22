@@ -32,27 +32,27 @@
 \contentsline {section}{\numberline {4.1}Gram\IeC {\'a}ticas Musicais Comput\IeC {\'a}veis}{40}{section.4.1}
 \contentsline {chapter}{\chapternumberline {5}Teorias Cognitivistas para uma Segmenta\IeC {\c c}\IeC {\~a}o Tonal}{43}{chapter.5}
 \contentsline {section}{\numberline {5.1}Gram\IeC {\'a}tica Gerativa da M\IeC {\'u}sica Tonal (GTTM)}{43}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Regras de boa formatividade dos agrupamentos (GWFRs)}{45}{subsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.1.1}Regras de prefer\IeC {\^e}ncia para agrupamentos (GPRs)}{46}{subsubsection.5.1.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Regras de boa-forma\IeC {\c c}\IeC {\~a}o m\IeC {\'e}trica (MWFRs )}{49}{subsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.2.1}Regras de prefer\IeC {\^e}ncia M\IeC {\'e}trica (MPFRs) }{51}{subsubsection.5.1.2.1}
-\contentsline {section}{\numberline {5.2}Segmenta\IeC {\c c}\IeC {\~a}o temporal de eventos cadenciais e a redu\IeC {\c c}\IeC {\~a}o prolongacional na GTTM}{51}{section.5.2}
-\contentsline {subsubsection}{\numberline {5.2.0.2}Calculando a tens\IeC {\~a}o e o Espa\IeC {\c c}o das alturas tonais (TPS) }{52}{subsubsection.5.2.0.2}
-\contentsline {section}{\numberline {5.3}Cogni\IeC {\c c}\IeC {\~a}o das Estruturas Musicais B\IeC {\'a}sicas (CBMS)}{53}{section.5.3}
-\contentsline {subsubsection}{\numberline {5.3.0.3}Solfejo das Classes de Alturas Tonais}{53}{subsubsection.5.3.0.3}
-\contentsline {subsubsection}{\numberline {5.3.0.4}Algoritmo dos Perfis de Tonalidade}{54}{subsubsection.5.3.0.4}
-\contentsline {section}{\numberline {5.4}Restri\IeC {\c c}\IeC {\~o}es Cognitivas versus Segmenta\IeC {\c c}\IeC {\~a}o Atonal}{55}{section.5.4}
-\contentsline {chapter}{\chapternumberline {6}Teorias de Grupos das Classes de Alturas para uma Segmenta\IeC {\c c}\IeC {\~a}o Atonal }{59}{chapter.6}
-\contentsline {section}{\numberline {6.1}Formulas de canoniza\IeC {\c c}~ao e transforma\IeC {\c c}~ao dos intervalos}{60}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Forma Prima}{60}{subsection.6.1.1}
-\contentsline {chapter}{\chapternumberline {7}Analises aplicadas}{61}{chapter.7}
-\contentsline {section}{\numberline {7.1}Analise de Mikrokosmos 113 Bela Bartok}{61}{section.7.1}
-\contentsline {part}{\partnumberline {III}Luteria Composicional}{65}{part.3}
-\contentsline {chapter}{\chapternumberline {8}Aplica\IeC {\c c}\IeC {\~a}o de estruturas sugeridas pelas an\IeC {\'a}lises musicais em procedimentos algor\IeC {\'\i }tmicos cl\IeC {\'a}ssicos}{67}{chapter.8}
+\contentsline {subsection}{\numberline {5.1.1}Regras de boa formatividade dos agrupamentos (GWFRs)}{44}{subsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}Regras de prefer\IeC {\^e}ncia para agrupamentos (GPRs)}{45}{subsubsection.5.1.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Regras de boa-forma\IeC {\c c}\IeC {\~a}o m\IeC {\'e}trica (MWFRs )}{48}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Regras de prefer\IeC {\^e}ncia M\IeC {\'e}trica (MPFRs) }{50}{subsubsection.5.1.2.1}
+\contentsline {section}{\numberline {5.2}Segmenta\IeC {\c c}\IeC {\~a}o temporal de eventos cadenciais e a redu\IeC {\c c}\IeC {\~a}o prolongacional na GTTM}{50}{section.5.2}
+\contentsline {subsubsection}{\numberline {5.2.0.2}Calculando a tens\IeC {\~a}o e o Espa\IeC {\c c}o das alturas tonais (TPS) }{51}{subsubsection.5.2.0.2}
+\contentsline {section}{\numberline {5.3}Cogni\IeC {\c c}\IeC {\~a}o das Estruturas Musicais B\IeC {\'a}sicas (CBMS)}{52}{section.5.3}
+\contentsline {subsubsection}{\numberline {5.3.0.3}Solfejo das Classes de Alturas Tonais}{52}{subsubsection.5.3.0.3}
+\contentsline {subsubsection}{\numberline {5.3.0.4}Algoritmo dos Perfis de Tonalidade}{53}{subsubsection.5.3.0.4}
+\contentsline {section}{\numberline {5.4}Restri\IeC {\c c}\IeC {\~o}es Cognitivas versus Segmenta\IeC {\c c}\IeC {\~a}o Atonal}{54}{section.5.4}
+\contentsline {chapter}{\chapternumberline {6}Teorias de Grupos das Classes de Alturas para uma Segmenta\IeC {\c c}\IeC {\~a}o Atonal }{57}{chapter.6}
+\contentsline {section}{\numberline {6.1}F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}{58}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Forma Prima}{58}{subsection.6.1.1}
+\contentsline {chapter}{\chapternumberline {7}Analises aplicadas}{59}{chapter.7}
+\contentsline {section}{\numberline {7.1}Analise de Mikrokosmos 113 Bela Bartok}{59}{section.7.1}
+\contentsline {part}{\partnumberline {III}Luteria Composicional}{63}{part.3}
+\contentsline {chapter}{\chapternumberline {8}Aplica\IeC {\c c}\IeC {\~a}o de estruturas sugeridas pelas an\IeC {\'a}lises musicais em procedimentos algor\IeC {\'\i }tmicos cl\IeC {\'a}ssicos}{65}{chapter.8}
 \vspace {\cftbeforepartskip }
-\contentsline {chapter}{Conclus\IeC {\~a}o}{69}{chapter*.12}
+\contentsline {chapter}{Conclus\IeC {\~a}o}{67}{chapter*.12}
 \vspace {\cftbeforepartskip }
-\contentsline {chapter}{Refer\^encias}{71}{section*.15}
+\contentsline {chapter}{Refer\^encias}{69}{section*.15}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \contentsline {part}{Ap\^endices}{75}{section*.16}
 \contentsline {appendix}{\chapternumberline {A}Reposit\IeC {\'o}rio de C\IeC {\'o}digos}{77}{appendix.A}

@@ -552,349 +552,6 @@ Todos os códigos e uma reflexão sobre as ferramentas e formatos estão no \aut
 
 
 
-% ----------------------------------------------------------
-% PARTE
-% ----------------------------------------------------------
-\part{Problematização Computacional}
-\label{computacional}
-% ----------------------------------------------------------
-
-
-
-
-\chapter{Considerações históricas e filosóficas sobre Música Algorítimica}
-
-
-\section{Autômatos Musicais}
-
-\subsection{Arqueologia dos Autômatos}
-
-Na Arqueologia da Mídia" proposta por \citeonline[p. 15-39]{zielinski2006arqueologia} encontramos alguns exemplos interessantes de tentativas de criação de tabelas de combinações semânticas que proliferavam com o espírito científico seminal da Renascença, inspirados em invenções matemáticas da Antiguidade. 
-
-Gramáticas e alfabetos eram colocados em máquinas mecânicas de automatização de tabelas de dicionários e donde a partir de regras sintáticas geravam estruturas da fala e escrita. 
-
-Em "Words made Flesh", Florian \citeonline[p. 25]{cramer2005words} demonstra também como "a continuidade do projeto pitagórico" está na origem do imaginário sobre máquinas pensantes: o que estava em jogo era um acesso ao mecanismo lógico do caldeirão de palavras, números e símbolos donde regras de permutação formariam consciências como entidades linguísticas.
-
-O sistema chamado “Ars magna” proposto por Raimundus Lullus no século XIII viria mais tarde influenciar  os oráculos de memória (Ars Memoria) de Giordano Bruno e o trabalho “De Arte Combinatória” do matemático Leibniz no século XVII. Tais mecanismos já apresentavam as características de uma utopia de “representação total do conhecimento” \cite[p. 26]{zielinski2006arqueologia} .
-
-Também no século XVII o jesuíta Athanasius Kircher constrói tratado musical “Musurgia Universalis” \cite{kircher1650}, todo ilustrado, onde projeta máquinas como realejos e órgãos automáticos de moto contínuo, movidos a água ou vapor como a Arca Musarithmica e o Organum Mathematicum. 
-
-Kircher criava jogos de combinação de contraponto, escalas, cabala, alquimia, astronomia e tudo mais que conseguisse relacionar na tentativa de criptografar e descriptografar um sistema universal de relação entre os corpos celestes e orgânicos. Ele chega a trabalhar com a tentativa de recombinar estilos musicais e regras composicionais litúrgicas como madrigal, moteto, fuga e monodia. Relações melódico-rítmicas entre diferentes vozes.\cite{godwin1979athanasius}
-
-\subsection{Jogo de dados musicais}
-
-No século XVIII temos um clássico da história dos jogos computacionais  “Musikalisches Würfelspiel” , literalmente traduzível por “Jogo de Dados Musicais”, porém na maioria das vezes referido como “O Jogo de dados de Mozart”. 
-
-Este experimento é muito interessante como ilustração didática da composição automatizada pois é relativamente simples de entender. Basicamente o lance de dados monta blocos separados a priori, que articulam funções tonais fixas e que possuem ornamentos já típicos de um estilo.
- 
-A articulação destes blocos supõe uma espécie de estrutura gramatical generativa com "regras bem formadas" a partir de uma suposta expectativa tonal comum ao estilo. Discutiremos mais adiante na \autoref{gerativas} esta ideia de uma suposta normatividade que a cultura tonal imprimiu em nossa escuta.
-
-Havia nestes experimentos dos séculos anteriores um embrião de operações de criptografia muito similares a operações de transformações semânticas hoje operadas por algoritmos computacionais e que derivam do momento em que estas utopias foram finalmente concretizadas na velocidade da luz que operam os bits. 
-
-
-\subsection{Criptoestética e Estocástica}
-
-Na virada do século XIX para o XX, com o advento das máquinas de cálculo mecânica complexas e as derivações do autômato proposto pelo matemático Alan \citeonline{turing1936computable} foi possível concretizar na era eletrônica vindoura a ideia de construir linguagem a partir da manipulação de um conjunto finito de símbolos.
-
-De certa maneira é possível estabelecer algum parentesco entre os “Musikalisches Würfelspiel” e aquela que é considerada a primeira composição gerada por computador: A “Suíte Illiac” de Lejaren Hiller e Leonard Isaacson. 
-
-Composta através de métodos de matrizes de probabilidades com modelos de Markov \cite[p. 67-82]{nierhaus2009algorithmic}, a suíte era um experimento de quatro movimentos que implementava progressivamente a partir de sorteios as regras de contraponto, ritmo e forma musical, experimentando também algumas ideias de simetria propostas pelo serialismo que se estabelecia na época. \cite[p. 12]{schwanauer1993machine}
-
-A partir daquele momento o computador passa a ser peça essencial para a aplicação de formalismos matemáticos que surgiam tanto na organização das alturas, escalas e acordes quanto na criação de novos timbres, que agora também poderiam ser serializados e passariam definitivamente a fazer parte do "metier composicional"\cite{stockhausen1996situacao} .
-
-
-\subsection{Complexidade e Emergência de Padrões}
-
-É importante também pensar na história da música computacional em paralelo com avanços que vinham acontecendo desde o estabelecimento da cibernética como ciência da organização dos sistemas informacionais complexos e projeto político e industrial da tecnocracia vindoura. 
-
-Durante o pós-guerra Norbert Wiener escreve seu livro "Cibernética"\cite{wiener1948cybernetics}, que inspira o termo que hoje é disciplina de fronteira entre ciência da computação e ciências sociais. Com o subtítulo - “estudo do controle e comunicação no animal e na máquina” - o livro marca o início das especulações científicas sobre simulações do comportamento individual e coletivo em computadores.
-
-Emerge dali uma ciência da codificação e decodificação linguística que é fruto da convergência de trabalhos interdisciplinares entre filosofia da linguagem e matemática que aconteciam no início do século 20 \cite[p. 45-62]{nierhaus2009algorithmic}.
-
-Vale lembrar que naquelas primeiras décadas do século também surge de maneira mais sistematizada o discurso musical do serialismo \cite{adorno1974filosofia}, num momento também paralelo ao rompimento estético mais radical proposto pelos futuristas e sua demanda por uma música influenciada pelo ruído das máquinas da grandes cidades industriais que surgiam. \cite{russolo2009arte}
-
-Nas décadas seguintes, a estética cibernética encontra na indústria da computação civil vindoura do pós-guerra um terreno fértil para desenvolver e aplicar tais sistemas formais abstratos da vanguarda modernista da virada do século, agora tendo em mãos os computadores mainframes dos laboratórios universitários. 
-
-O mainframe Illiac é considerado um dos primeiros computadores adquiridos por uma universidade norte-americana e foi baseado na arquitetura de Von Neumann (que já utilizava memória de armazenamento prevista pela “Máquina de Turing Universal” ).
-
-Von Neumann já especulava sobre os algoritmos de autômatos celulares e nestes via possibilidades de estudar uma abstração lógica para sistemas auto-reprodutivos similares a abstração de sistemas “vivos” \cite[p. 13]{langton1997artificial}.
-
-Tais ideias serão essenciais mais adiante quando a computabilidade dos chamados “padrões de emergência” torna-se viável e contribui para o desenvolvimento de áreas como aprendizado de máquina e simulações físicas de alta complexidade.
-
-\subsection{Inteligência Artificial Musical}
-
-O termo “Inteligência Artificial” não está necessariamente preocupado em provar algum tipo de subjetividade da máquina ou mesmo a natureza do que chamamos emoções. Apesar de alguns teóricos contemporâneos insistirem na discussão do que chamam de singularidade de uma “inteligência artificial forte”  \cite{kurzweil2005singularity}, o termo surge nas especulações de Alan Turing sobre o que seriam “máquinas inteligentes” \cite{turing1936computable} e contribui para estabelecer parâmetros de observação dos chamados “sistemas complexos”.
-
-\begin{citacao}
-
-"(...) desde os anos 30, com Gödel e Turing, edificou-se um teoria dos algoritmos extremamente fecunda que pôde, depois, definir de maneira rigorosa um conceito de complexidade, o qual serve de modelo para outras disciplinas." \cite[p. 108]{pessis1993caos}
-
-\end{citacao}
-
-Em seu texto clássico sobre o tema, Alan Turing, um dos notórios matemáticos precursores da cibernética, fazia a famosa pergunta: “as máquinas podem pensar?”. Porém já naquele momento antecipava o paradoxo linguístico desta especulação:
-
-\begin{citacao}
-“Se  quiséssemos encontrar o significado das palavras "máquina" e "pensar"  analisando o modo como estas são normalmente  utilizadas, seria difícil  escapar à conclusão  de  que o significado e a resposta  para a questão “Podem as máquinas pensar?" deveria ser visto como um estudo estatístico, tal como  quando se ouve pesquisas de opinião pública.  O que é um absurdo. Em vez de  procurar tal definição, irei substituir a questão por outra, intimamente  ligada   com  a  primeira  e  expressa  em  palavras  relativamente claras”.1 \cite[grifo nosso.]{turing1950computing}
-\end{citacao}
-
-Por outro lado sempre houve um certo romantismo dos que insistem em pensar a relativização de aspectos cognitivos atribuídos ao conceito abstrato de “emoções humanas”. Douglas Hofstadter, ganhador do prêmio Pulitzer com seu curioso livro de especulações sobre I.A. - uma espécie de jogo de vertigem para definição de axiomas sobre criatividade linguística - “Göedel, Escher e Bach” \cite{hofstadter2000godel}, é um crítico convidado entre outros especialistas para fazer comentários sobre a obra do compositor algorítmico David Cope, em seu livro “Virtual Music”\cite{cope2004virtual}, e faz uma afirmação curiosa sobre como imaginava na década de 70 o que seria uma I.A. “criativa”:
-
-\begin{citacao}
-\textbf{Questão}: Um computador será capaz de tocar músicas belas?\linebreak\textbf{Especulação}: Sim, mas não em breve. Música é uma linguagem de emoções, e \textbf{até que os programas tenham emoções complexas como as nossas não existe maneira de um programa escrever algo belo.} 2 \cite[p.36 grifos nossos]{hofstadter2004virtualstaringemmy}
-\end{citacao} 
-
-Sobre o jogo de xadrez - um clássico do desafio entre humanos e máquinas, supostamente vencido pelo mainframe da IBM Deepblue contra Kasparov em 1996 - Douglas deixa um depoimento ainda mais alegórico sobre sua perspectiva nos anos 70:
-
-\begin{citacao}
-\textbf{Questão}: Existirá um programa de xadrez capaz de vencer qualquer pessoa?\linebreak\textbf{Especulação}: Não. Existirão muitos programas que podem vencer alguém no xadrez, mas eles não serão exclusivamente jogadores de xadrez. Eles serão programas de inteligência geral, e \textbf{serão temperamentais como pessoas} - ‘Você quer jogar xadrez?’ \textbf{‘Não, estou enjoado de xadrez. Vamos conversar sobre poesia.’.} Este é o tipo de programa que poderá vencer qualquer pessoa.  \cite[p.34 grifos nossos]{hofstadter2004virtualstaringemmy}
-
-\end{citacao}
-
-O efeito nostálgico de tal ideia chega a ser cômico mas muita gente que não se interessa sobre o assunto de música ou arte generativa por computadores em geral irá responder que não se interessa pelo mesmo motivo - computadores “não tem sentimento” por isso não podem ser usados em atividades criativas como música, desenho ou literatura. Por isso ainda existem pesquisadores como Marvin Minsky: um exemplo de cientista que aposta na ideia de definir a “computabilidade das emoções” \cite{minsky2007emotion}. 
-
-Porém a questão que interessa a esta pesquisa não é a de “superação da espécie humana” ou “a máquina com sentimentos” e sim de poder observar através de sistemas complexos como determinadas regras simples que podem ser dadas como condições iniciais para uma situação “criativa” são capazes de gerar resultados emergentes extremamente complexos \cite{wolfram2002new}, sejam estes originais ou similares a padrões existentes anteriormente na natureza. 
-
-Uma outra abordagem possível seria diferente da que busca padrões originais, mas sim padrões extremamente similares a padrões já formalizados. Este é o escopo do presente trabalho. Trataremos deste tema com mais profundidade na \autoref{analises}.
-
-
-\subsection{Os Problemas do “Conceito como Algoritmo” e do “Algoritmo como conceito”}
-
-A partir dos anos 80, com a popularização dos computadores pessoais, os algoritmos computacionais passam a fazer parte do imaginário popular.
-
-É de se esperar portanto, que cada vez mais o algoritmo ou a ferramenta computacional apareçam como parte a ser problematizada dentro do processo artístico. Mas como esta estetização do algoritmo pode ser pensada dentro da música?
-
-Em uma das tentativas de definir a estética perseguida em seus rigorosos estudos de formalismo matemático musical, o compositor Iannis Xenakis faz a seguinte afirmação: 
-
-\begin{citacao}
-"Para esta proposta a qualificação entre “bonito” ou “feio” não faz sentido para o som, nem para a música que deriva disto, mas sim a \textbf{quantidade de inteligência} carregada pelos sons deve ser o verdadeiro critério para a validade de uma música particular."1 \cite[ p.4, grifos nossos.]{xenakis1992formalized} 
-\end{citacao}
-
-
-Dentro da possibilidade de pensar algoritmos cada vez mais conceitualmente indissociáveis das músicas que estes produzem, poderíamos polarizar as composições musicais derivadas deste tipo de processo em em três tipos de resultados:
-
-\begin{alineas}
-
-\item Resultados que satisfazem por surpreender com os padrões inesperados que emergem, não necessariamente musicais, mas interessantes por serem formalismos de alta complexidade e que demandam erudição computacional para ser desfrutados como criação.;
-
-\item Resultados onde a aplicação de um procedimento automatizado está em função exclusivamente de um conceito estético, filosófico, político onde a música será mero lastro do processo, sendo apreciada a posteriori pelo conteúdo processual que carrega como contexto.;
-
-\item Resultados que procuram controlar e isolar algum tipo de auto-similaridade consistente e conscientemente estruturada a partir de lastros da teoria musical tradicional, após refinados tratamentos entre os padrões emergentes, formalizando algum tipo de estilo atingido no equilíbrio do sistema.;
-
-\end{alineas}
-
-No caso “a” os resultados sonoros algumas vezes chegam a importar menos do que o conceito que levou até sua formalização algorítmica. Muitas vezes são usados como estetização de alguma prova de conceito de uma formalização matemática.
-
-No caso “b” temos um exemplo contemporâneo interessante deste tipo de postura, com peças que fazem  músicas a partir de dados da bolsa de valores, ou cumprir todas as músicas da carreira dos Beatles em um segundo: o compositor Johanes Kreidler. 
-
-O compositor e programador afirma em uma palestra proferida em Harvard em 2013, chamada “Sentences of Musical Concept-Art”, entre seus 19 aforismas frases como - “Só é musica o que é não-musical”, “A máquina de conceitos hoje está acima do algoritmo” e finaliza concluindo - “Da conceitualização emerge a contextualização”.\footnote{https://www.youtube.com/watch?v=cUIzq52kuP4}
-
-Pensando o caso “c”, talvez o mais próximo do escopo do presente trabalho, partimos da suposição de que há e talvez sempre continue existindo este interesse na tal  “consolidação  de conhecimentos existentes” \cite{iazzetta2009musica}, ou no mínimo uma curiosidade por tais estruturas a ponto de poder afirmar sua negação consciente. 
-
-As fórmulas estruturais anteriores sempre despertam curiosidade das novas gerações que ainda não as vasculharam, e mesmo que alguém pregue algum tipo de enterro de todas civilizações musicais já conhecidas, sempre sobrará algum arqueólogo ou “arqueomusicólogo” buscando o mistério de alguma origem perdida.
-
-Mesmo dentre os padrões caóticos dos algoritmos inspirados em teorias de autopoesis e da cibernética, surgem equilíbrios mensuráveis de padrões emergentes que poderiam gerar periodicidade motívica e auto-similaridade. Há uma consideração interessante de John Cage sobre a relação entre chance e disciplina que pode ilustrar bem o que buscamos:
-
-\begin{citacao}
-“A maioria das pessoas acha que estou interessado em aleatoriedade não percebe que eu uso aleatoriedade como uma disciplina. Eles acham que eu a uso como uma maneira de desistir de fazer escolhas. 
-\textbf{Mas minhas escolhas consistem em escolher que questões perguntar.}” \cite[ p.17, grifos nosso]{cagekostelanetz2002conversing}
-\end{citacao}
-
-Devido aos limites de escopo deste trabalho estamos mais interessados explorar e discutir  resultados “que questões perguntar” para uma possível teoria e prática .  
-
-\chapter{Composição Assistida por Computador}
-
-
-The field of computer music can be thought of as having two fundamental branches, one concerned with the manipulation of musical sounds, and the other concerned with symbolic representations of music. The two are iconized by Max Mathews’s MUSIC program and Lejaren Hiller’s ILIAC Suite, both of 1957, although both have important antecedents. The two branches might provisionally be given the names “Computer Generated Music” (Denis Baggi’s term for it) and “Computer Aided Composition”— or CGM and CAC for short. 
-\cite[pg. ]{puckettecomputing}
-
-
-
-
-
-\section{Linguagens Dataflow}
-\label{ferramentas}
-
-As linguagens de programação PureData e OpenMusic tem ao menos duas coisas em comum: ambas utilizam o paradigma de programação dataflow – uma representação gráfica dos algoritmos que deixa os programas similares a caixas conectadas por cabos, estimulando a imaginação para algo mais tátil do que cálculos abstratos.
-
-Ambas também são linguagens surgidas a partir de projetos surgidos no IRCAM (Institut de Recherche et Coordination Acoustique/Musique) a instituição francesa que tem entre seus idealizadores o compositor Pierre Boulez e é pioneira em pesquisas computacionais guiadas por processos composicionais. São descendentes diretas da primeira geração de linguagens musicais dataflow: Patchwork (OM) e Max (PD).
-
-Considerando que são ainda muito utilizadas por pesquisadores de Composição Assistida por Computador (CAC) e Música Algorítmica, estas já podem já de alguma forma serem consideradas linguagens de computação musical com relevância histórica o suficiente para no mínimo servirem de base para novas invenções.
-
-
-
-
-\subsection{OM}
-
-\begin{citacao}
-"Enquanto a maioria das “linguagens de programação musical” lidam principalmente com processamento de sinal e síntese
-sonora, uma abordagem original adotada pelo time de representação musical do IRCAM no fim dos anos 80 foi
-particularmente um foco na nas estruturas simbólicas e processos musicais, isto é, aspectos tradicionalmente
-ignorados ou deixados de lado dos ambientes computacionais."\cite{bresson2011openmusic}
-\end{citacao}
-
-Em suma, o OpenMusic teve ( pelo menos em seus primeiros anos ) uma intenção mais voltada para processos preocupados com a continuidade dos sistemas derivados dos estudos eruditos de intervalos, acordes, harmonia que estavam na base das preocupações do serialismo integral. O OM sempre foi um dos software amplamente utilizados para tal fim, e isto reflete diretamente em sua interface e cultura de uso.
-
-
-O OM é um framework que tende a uma programação orientada pela reflexão em tempo diferido, isto é, estimula a composição por escolha entre diversos resultados permutados e decupados em um tempo de escuta.
-
-Organiza materiais basicamente orientado pela escrita e fortemente pensado dentro do esquema de intervalos melódicos
-harmônicos derivados da notação moderna para música orquestral, utilizando sequenciadores bastante similares ao pentagrama de pauta sem ( “chord-seq”) ou com figuras de compasso (com o sequeciador “voice” ).
-
-\subsubsubsection{chord-seq}
-
-
-
-\begin{figure}[!h]
-	\caption{\label{fig_grafico}Exemplo da aplicação da PRPR2}
-	\begin{center}
-	    \includegraphics[scale=0.5]{OMPD/chord-seq-sem-titulo.png}
-	\end{center}
-	\legend{Fonte: autor }
-\end{figure}
-
-
-
-\subsubsubsection{classe permutation}
-
-\subsubsubsection{classe math}
-
-\subsection{PD}
-
-OM is almost certainly now the world’s dominant
-platform for doing CAC research and practice, de-
-spite the presence of several other approaches (includ-
-ing one, by Karlheinz Essl, that runs within Max).
-Is this because OM’s design is the best, or is it that
-OM has benefitted from the presence at IRCAM of
-so many willing composers, such as the ones repre-
-sented in this book? The two rival explanations are
-impossible to extricate from one another.
-\cite{puckettecomputing}
-
-Já o Puredata, nas palavras de seu idealizador:
-
-\begin{citacao}
-Um novo sistema de software, chamado Puredata, está em seus primeiros estágios de desenvolvimento. Seu design almeja remediar algumas deficiências do programa Max e preservar algumas de suas vantagens. A mais importante fraqueza do Max é a dificuldade de manter estruturas de dados compostas de um tipo que possa ser acessado quando analisando e resintetizando sons  ou quando gravando e modificando sequencias de diferentes tipos. Também, tem sido difícil integrar sinais que não sejam de áudio (vídeo por exemplo, e também espectro sonoro ) dentro do rígido sistema de “objetos til” (~) do Max.\cite{puckette1996pure}
-\end{citacao}
- 
-
-Interessante perceber que já no final dos anos 90 o PD já tinha como alvo a vindoura possibilidade de uma música performática feita com os computadores domésticos que começavam a popularizar-se, preocupando-se com aspectos de melhor performance de processamento de áudio, uso de video sincronizado e representação em tempo real de dados do de processamento sonoro, apontando para a possiblidade de outros tipos de representação da música. 
-
-A música partiturável não era a grande preocupação e nem seus procedimentos de composição eram tão importantes quantos os aspectos relacionados ao espectro sonoro e a possibilidade de manipulação de eventos audiovisuais em tempo real.
-
-Uma diferença prática das abordagens padrão destes sistemas: O PD não incentiva a priori o uso de algum score derivado da escala cromática, e sim parte da idéia de frequências absolutas de 0hz ao limite de sua placa de som. É orientado por controles de eventos (“bangs”) de tempo não-linear.
-
-Além disso, os objetos tilde (~) fazem processamento de síntese sonora em tempo real, basta você plugá-los a qualquer momento em um objeto que representa sua placa de som processando vetores numéricos indicando a pressão e descompressão do seu auto-falante em estado bruto, o [dac~]. No OM é sempre necessário compilar (“verificar”) os patches para depois ouvi-los em sequenciadores de eventos ou players de áudio.
-
-Miller Puckette comenta num artigo de 2006 que o uso de procedimentos 
-
-I would like to see some of the techniques now only available in OM become usable some day within
-real-time environments. This is clearly a huge undertaking, since the style of programming currently used
-in real-time applications is so different from that in OM. But there would be much gained if this became
-possible. In the meantime it’s possible to send messages back and forth between OM and some lower latency process that takes care of real-time performance. 
-\cite{puckettecomputing}
-
-
-
-\subsubsection{biblioteca Maxlib}
-
-\subsubsection{biblioteca RTC-lib}
-
-\subsubsection{objeto [probalizer]}
-
-
-
-% ----------------------------------------------------------
-\chapter{Arquivos e Scripts para Segmentação de Dados Musicais}
-% ----------------------------------------------------------
-\label{formatos}
-
-\section{MIDI}
-
-Por muito tempo o formato MIDI ficou estigmatizado por ser associado aos timbres genéricos da indústria de sintetizadores populares dos anos 80 e 90 e pelas primeiras placas de som e softwares sequenciadores de eventos ou partituras dos computadores pessoais. 
-Na verdade o formato não carrega parâmetros de timbres em seus metadados. Arquivo MIDI valores básicos de expressão e alturas cromáticas do gestual de uma performance instrumental, permitindo que esta seja posteriormente associada a qualquer timbre.
-
-A mensagem MIDI básica carrega informação sobre:
-
-\begin{enumerate}
-
-\item O canal onde vai atuar permitindo mixar diversos instrumentos em polifonia.
-
-\item O programa que indica o timbre.
-
-\item NoteOn/NoteOff - Nota soando , nota sem soar. o MIDI manda duas informações básicas sobre o envelope da nota. Uma primeira nota com a força inicial e o uma segunda com a mesma nota e força zero, para silenciá-la.
-
-\item "Velocity" ou expressão: força com qual a nota é tocada.
-
-\item Canal de controle para uso de escala de 127 passos que tem uso dependente da implementação da aplicação. Por exemplo, parâmetros de equalização timbre. Na prática o canal de controle é geralmente usado para receber dados de potenciômetros ou sensores analógicos e assinalado a qualquer tipo de parâmetro.
-
-\item Pitch Bend - Parâmetro para atuar diretamente na afinação de uma nota em tempo real, de modo similar ao gesto de bend de instrumentos de cordas. A especificação midi permie que este controle tenha uma granulação de 16.384 pontos e geralmente é usada para um slide que cobre duas oitavas.
-
-\item Mensagens exclusivas de sistema (SysEx) geralmente usadas por aplicações para ações independentes do gesto musical, por exemplo informar ao sistema onde onde buscar arquivos temporários de uma sessão.
-\end{enumerate}
-
-É importante ter em mente que os arquivos MIDI, por ser há mais 35 é um padrão ainda em uso, gerou um legado relevante de arquivos baseados em repertório clássico para a reconstituição de corpus de peças partituradas. Porém não são descritores capazes de garantir a boa formatação de seus dados como figuras de compasso de uma pauta tradicional, já que os arquivos MIDI não carregam informações sobre as figuras, apenas sobre suas durações, alturas e expressão. Quando importados para programas de notação ou convertidos para formatos destes, os arquivos MIDI irão passar por uma segmentação arbitrária e determinada pelo algoritmo "parser"\footnote{definir parser} que vai converter determinada duração em determinada métrica quantizada, normalmente diferente das articulações de quais as músicas foram digitalizadas.
-
-
-Veremos a seguir outros arquivos mais específicos para este fim e quando necessário será feita a conversão entre os tipos.
-
-
-
-\pagebreak
-
-\section{Lilypond}
-
-O objetivo principal aqui é a formatação de uma notação partitural avançada e otimizada para impressão em papel. Permite também a utilização de elementos de notação mais exótica, inclusão de texto, dedilhados, nomenclatura de acordes, sinais de expressão, e customização de elementos a partir de módulos. Facilita a otmização da disposição e dimensão das fontes dos objetos e possui uma linguagem script própria dialeto da sintaxe scheme\footnote{Tutorial oficial de lilypond-scheme: \url{http://lilypond.org/doc/v2.16/Documentation/source/Documentation/extending/introduction-to-scheme}}.
-
-
-
-\begin{figure}[htb]
-	\caption{\label{fig_grafico}Gerador de um acorde Dó maior (dó4 e4 g5) na clave de sol em Lilypond}
-	\begin{center}
-	    \includegraphics[scale=0.75]{score/lilypond.pdf}
-	\end{center}
-	%\legend{Fonte: autor}
-\end{figure}
-
-
-
-
-\section{MusicXML}
-
-O uso geral do formato MusicXML é similar ao Lilypond - formatação de partituras. No entanto, enquanto Lilypond é um sistema completo fechado em si próprio, o MusicXML é um formato com a intenção de tornar-se um padrão intercambiável entre diferentes aplicações de partitura\footnote{ Lista atualizada de aplicações compatíveis com o formato MusicXML: \url{http://www.musicxml.com/software/} }.
-
-
-\begin{figure}[htb]
-	\caption{\label{fig_grafico}Gerador de uma nota dó4 na clave de sol em MusicXML}
-	\begin{center}
-	    \includegraphics[scale=0.5]{score/musicxml.pdf}
-	\end{center}
-	%\legend{Fonte: autor}
-\end{figure}
-
-\pagebreak
-\section{Bibliotecas Python auxiliares}
-
-Pela sua natureza de código aberto alto-nível de orientação a objetos, Python\cite{van1995python} é uma linguagem script que tem sido amplamente adotada e ampliada por bibliotecas para as mais diversas aplicações científicas.\cite{downey2009python}
-
-Aliada ao uso de algumas bibliotecas específicas para arquivos de segmentação partitural, Python mostra-se uma ferramenta prática para formatação dinâmica de partituras prontas para impressão ou para auxiliar a análise de dados quantitativos de corpus de partituras.
-
-Falaremos a seguir de duas dessas bibliotecas utilizadas como ferramenta auxiliar nesta pesquisa:
-
-
-\subsection{Abjad}
-
-É uma biblioteca voltada para a formatação de clichês em notação partitural pronta para impressão em papel, baseada na manipulação de templates no formato lilypond. A biblioteca apresenta alguns templates baseados em peças de Bártok, Ligeti, Ferneyhough e Mozart.
-
-
-
-\subsection{Music 21}
-
-
-
-
-
-
 
 
 
@@ -1374,6 +1031,16 @@ Importante levar em conta portanto que a GTTM e suas derivações insistem sempr
 
 Cabe pensar aqui aquilo que nattiez diferencia como estésica externa e estésica indutiva(nattiez pg.18-20). \textbf{Estésica externa} é aquela baseada em critérios que entrariam na análise por via de uma comprovação de pesquisa de campo, buscando legitimar que os paradigmas apontados são estatisticamente comuns para a percepção de um determinado grupo de ouvintes. Já a \textbf{estésica indutiva} seria determinada por uma inferência explícita e autoral do musicólogo, que aponta aquilo que segundo seus próprios critérios poderia ser percebido como relevante e importante numa escuta. Poderia-se inclusive argumentar um interesse declaradamente apenas estrutural, por aquilo que Nattiez chama de "nível neutro", "análise imanente" ou "análise material" - onde estruturas presentes são destacadas mesmo que possa-se argumentar que foram ali colocadas de maneira inconsciente pelo compositor ou que são imperceptíveis para o ouvinte médio.
 
+\begin{citacao}
+(...)it would be fascinating to see what results we would obtain from comparing sets which would describe units previously segmented by a paradigmatic analysis at the neutral level. If we do feel compelled to rely on this preliminary analysis, in effect, the kaleidoscope which
+the analyst will discover in atonal works will effectively be the fruit of magical operations,
+not because the composer hid them there, but because the musicologist, through sleight
+of hand, was acting like a magician!
+\cite{nattiez2003allen}
+\end{citacao}
+
+
+
 Trabalharemos no capítulo seguinte uma abordagem sobre as alturas cromáticas que parte de outros princípios de agrupamento, buscando fórmulas composicionais algorítmicas por meio de uma abordagem que rompe com a normatização  da cultura tonal clássica e busca novos critérios para observar transformações nas alturas e seus agrupamentos.
 
 \begin{citacao}
@@ -1421,11 +1088,23 @@ abaixo um esquema feito por ele no seu artigo de revisão da GTTM
 	\legend{Fonte: \cite[ tradução do autor.]{lerdahl2009genesis} }
 \end{figure}
 
-
 \begin{citacao}
-The ideological desperation of the Lerdahl–Jackendoff commitment to tonality as somehow embedded in human nature is exposed in the simple activity of natural speech. People in normal conversation speak in atonal cadences because to do otherwise would be personally tiresome as well as expose them to ridicule.
-Angular melodies of Schoenberg, Webern, or Mozart are more naturalistic than conventionalsong. Formal speech is explicitly atonal.
+How does the theoretical description of pitch-class and interval-class content relate to the listener's organization of pitches at the musical surface? The relationship often seems
+remote. The very notions "pitch class" and "interval class" are abstractions from
+the pitch and interval content of a musical passage. And the various concepts
+invoked for set equivalence or similarity (inversional equivalence, normal form,
+interval vectors, Z-relatedness, the R relations, the inclusion relation, the K and
+Kh complexes) also create a distancing from the surface. There is nothing wrong
+with this in principle: all theories generalize from phenomena. The question is
+whether these particular abstractions reflect and illuminate our hearing. The little
+experimental research that has been done on such matters (...) has not been very encouraging.
+\cite{lerdahl1989atonal}
 \end{citacao}
+
+Diante destes posicionamentos consideramos essencial um estudo comparado da abordagem cognitivista com este este contraponto das teorias de classes da altura, justamente por estas partirem de outros pressupostos. Faremos um percurso por estas teorias no próximo capítulo.
+
+
+
 
 
 
@@ -1491,134 +1170,6 @@ Pitch Class Set	Forte Prime	Rahn Prime
 
 
 % ---
-\chapter{Analises aplicadas}
-% ---
-\label{experimetosanalises}
-
-mikro 131 133 simetria
-\cite[pgs.198-200]{antokoletz1984music}
-
-mikro 101 109 150 polimodalismo octatonismo 
-\cite[pgs.250-254]{antokoletz1984music}
-
-
-
-"Diminished Fifth" a obra nº101 da suíte Mikrokosmos de Béla Bartók.\cite[pgs.112,116-117,135-136]{lester1989analytic}.
-
-
-
-
-
-
-
-
-\section{Analise de Mikrokosmos 113 Bela Bartok}
-
-%\begin{comment}
-%%%%%%%%%%%%%%%intro mikro
-\begin{figure}[htb]
-	\caption{\label{fig_grafico}Legatto das melodias sugere a segmentação}
-	\begin{center}
-	    \includegraphics[scale=0.35]{mikro/mikro113-intro.png}
-	\end{center}
-	%\legend{Fonte: autor}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%segmentação mikro
-\begin{figure}[htb]
-	\caption{\label{fig_grafico}Segmentação em árvore prolongacional de Mikrokosmos 113 ao estilo GTTM}
-	\begin{center}
-	    \includegraphics[scale=0.45]{mikro/mikro113_GTTM_tree.png}
-	\end{center}
-	\legend{Fonte: autor}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-
-
-%%%%%%%%%%%%%%pitch por secção%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[htb]
-% \label{ }
- \centering
-  \begin{minipage}{0.4\textwidth}
-    \centering
-    \caption{Secção A} \label{fig_minipage_imagem1}
-    \includegraphics[scale=0.6]{mikro/A.png}
-    %\legend{ }
-  \end{minipage}
-  \hfill
-  \begin{minipage}{0.4\textwidth}
-    \centering
-    \caption{Secção B} \label{fig_minipage_grafico2}
-    \includegraphics[scale=0.6]{mikro/B.png}
-    %\legend{ }
-  \end{minipage}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%
-\begin{figure}[htb]
-% \label{ }
- \centering
-  \begin{minipage}{0.4\textwidth}
-    \centering
-    \caption{Secção C} \label{fig_minipage_imagem1}
-    \includegraphics[scale=0.6]{mikro/C.png}
-    %\legend{ }
-  \end{minipage}
-  \hfill
-  \begin{minipage}{0.4\textwidth}
-    \centering
-    \caption{Secção D} \label{fig_minipage_grafico2}
-    \includegraphics[scale=0.6]{mikro/D.png}
-    %\legend{ }
-  \end{minipage}
-\end{figure}
-\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%% analise das seções por condução de vozes
-\begin{figure}[htb]
-	\caption{\label{fig_grafico}Análise das seções por condução de vozes}
-	\begin{center}
-	    \includegraphics[scale=0.75]{mikro/mikrokosmos113-prolongational.pdf}
-	\end{center}
-	\legend{Fonte: autor}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%pitch space melodia
-\begin{figure}[htb]
-	\caption{\label{fig_grafico}Pitch space melodia}
-	\begin{center}
-	    \includegraphics[scale=0.45]{mikro/mikro_melodia_pitch_space.png}
-	\end{center}
-	\legend{Fonte: autor}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\end{comment}
-
-
-
-
-
-\part{Luteria Composicional}
-\label{composicional}
-
-\chapter{Aplicação de estruturas sugeridas pelas análises musicais em procedimentos algorítmicos clássicos}
-
-
-
-
-% ----------------------------------------------------------
-% Finaliza a parte no bookmark do PDF
-% para que se inicie o bookmark na raiz
-% e adiciona espaço de parte no Sumário
-% ----------------------------------------------------------
-\phantompart
 
 % ---
 % Conclusão (outro exemplo de capítulo sem numeração e presente no sumário)
