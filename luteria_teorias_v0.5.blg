@@ -27,45 +27,45 @@ Warning--faltando school em marshall1946analysis
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 45 entries,
+You've used 46 entries,
             6711 wiz_defined-function locations,
-            1428 strings with 14413 characters,
-and the built_in function-call counts, 35541 in all, are:
-= -- 3067
-> -- 825
-< -- 307
-+ -- 600
-- -- 265
-* -- 2255
-:= -- 4817
-add.period$ -- 142
-call.type$ -- 45
-change.case$ -- 326
-chr.to.int$ -- 74
-cite$ -- 45
-duplicate$ -- 2447
-empty$ -- 2623
-format.name$ -- 1227
-if$ -- 7991
+            1434 strings with 14545 characters,
+and the built_in function-call counts, 36279 in all, are:
+= -- 3119
+> -- 841
+< -- 311
++ -- 605
+- -- 270
+* -- 2306
+:= -- 4914
+add.period$ -- 145
+call.type$ -- 46
+change.case$ -- 333
+chr.to.int$ -- 78
+cite$ -- 46
+duplicate$ -- 2491
+empty$ -- 2683
+format.name$ -- 1250
+if$ -- 8163
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 795
-newline$ -- 217
-num.names$ -- 220
-pop$ -- 969
+missing$ -- 812
+newline$ -- 222
+num.names$ -- 225
+pop$ -- 987
 preamble$ -- 1
-purify$ -- 144
+purify$ -- 147
 quote$ -- 0
-skip$ -- 2507
+skip$ -- 2548
 stack$ -- 1
-substring$ -- 1566
-swap$ -- 1018
-text.length$ -- 42
+substring$ -- 1616
+swap$ -- 1043
+text.length$ -- 45
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 3
 warning$ -- 1
-while$ -- 318
+while$ -- 327
 width$ -- 0
-write$ -- 682
+write$ -- 699
 (There were 3 warnings)
