@@ -59,6 +59,8 @@
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 \usepackage{url}
+\usepackage[table,xcdraw]{xcolor}
+
 % ---
 		
 % ---
@@ -916,6 +918,17 @@ for pitch stability are needed if the listener is to hear events in a dominating
 subordinating manner.\cite{lerdahl1988tps}
 \end{citacao}
 
+
+%%%%%%%%%%%%%%%%%% tree
+\begin{figure}[htb]
+	\caption{\label{fig_grafico}Espaço tonal diatônico proposto por Fred \citeonline{lerdahl1988tps,lerdahl1996calculating} }
+	\begin{center}
+	    \includegraphics[scale=0.5]{lerdahl/diatonic_pitchspace_p322.png}
+	\end{center}
+	\legend{Fonte: \cite[p. 322]{lerdahl1996calculating} }
+\end{figure}
+
+
 (a) octave (root) level:
 (b) fifths level:
 (c) triadic level:
@@ -926,8 +939,6 @@ subordinating manner.\cite{lerdahl1988tps}
 lerdahl testa a teoria TPS em \cite{2007lerdahl-krumhansl}
 
 
-
-
 %%%%%%%%%%%%%%%%%% tree
 \begin{figure}[htb]
 	\caption{\label{fig_grafico}Notação analítica proposta pela GTTM para a ramificação dos intervalos-temporais.}
@@ -936,6 +947,37 @@ lerdahl testa a teoria TPS em \cite{2007lerdahl-krumhansl}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
+
+%%%%%%%%%%%%%%%%%% tree
+\begin{figure}[htb]
+	\caption{\label{fig_grafico}Forças tonais nos prolongamentos revistas por Fred \citeonline{lerdahl1988tps} }
+	\begin{center}
+	    \includegraphics[scale=0.6]{lerdahl/prolongation_calculating.png}
+	\end{center}
+	\legend{Fonte: \cite[p. 322]{lerdahl1996calculating} }
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%%%%% tree
+\begin{figure}[htb]
+	\caption{\label{fig_grafico}Exemplo de aplicação da fórmula das distâncias }
+	\begin{center}
+	    \includegraphics[scale=0.5]{lerdahl/distance_algo_lerdahl_p323.png}
+	\end{center}
+	\legend{Fonte: \cite[p. 323]{lerdahl1996calculating} }
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%% tree
+\begin{figure}[htb]
+	\caption{\label{fig_grafico}Aplicação da fórmula das distâncias para medida comparativa de forças numa condução de vozes }
+	\begin{center}
+	    \includegraphics[scale=0.4]{lerdahl/tensao_tonal.png}
+	\end{center}
+	\legend{Fonte: \cite[p. 325]{lerdahl1996calculating} }
+\end{figure}
+
 
 
 
@@ -1119,15 +1161,6 @@ Importante levar em conta portanto que a GTTM e suas derivações insistem sempr
 
 Cabe pensar aqui aquilo que nattiez diferencia como estésica externa e estésica indutiva(nattiez pg.18-20). \textbf{Estésica externa} é aquela baseada em critérios que entrariam na análise por via de uma comprovação de pesquisa de campo, buscando legitimar que os paradigmas apontados são estatisticamente comuns para a percepção de um determinado grupo de ouvintes. Já a \textbf{estésica indutiva} seria determinada por uma inferência explícita e autoral do musicólogo, que aponta aquilo que segundo seus próprios critérios poderia ser percebido como relevante e importante numa escuta. Poderia-se inclusive argumentar um interesse declaradamente apenas estrutural, por aquilo que Nattiez chama de "nível neutro", "análise imanente" ou "análise material" - onde estruturas presentes são destacadas mesmo que possa-se argumentar que foram ali colocadas de maneira inconsciente pelo compositor ou que são imperceptíveis para o ouvinte médio.
 
-\begin{citacao}
-(...)it would be fascinating to see what results we would obtain from comparing sets which would describe units previously segmented by a paradigmatic analysis at the neutral level. If we do feel compelled to rely on this preliminary analysis, in effect, the kaleidoscope which
-the analyst will discover in atonal works will effectively be the fruit of magical operations,
-not because the composer hid them there, but because the musicologist, through sleight
-of hand, was acting like a magician!
-\cite{nattiez2003allen}
-\end{citacao}
-
-
 
 Trabalharemos no capítulo seguinte uma abordagem sobre as alturas cromáticas que parte de outros princípios de agrupamento, buscando fórmulas composicionais algorítmicas por meio de uma abordagem que rompe com a normatização  da cultura tonal clássica e busca novos critérios para observar transformações nas alturas e seus agrupamentos.
 
@@ -1227,15 +1260,112 @@ Um exemplo de interesse do presente trabalho é a classe de objetos "Math Tools"
 
 
 
-\citeonline{straus2004}
+
+
+a equivalência enarmônica das oitavas
+
+diferença entre NPC e TPC \cite[p. 118]{temperley2004cognition}
+
+os intervalos também passam a não serem mais nomeados funcionamente (exemplo quarta aumentada e quinta diminuta )
+
+mostrar formula do modulo em pd, om e python
+
+
+Os intervalos são distâncias, nas teorias de classes de alturas estas distâncias podem estar categorizadas como intervalos ordenados - usando número negativos para os intervalos descendentes, ou não-ordenados - considerando intervalos equivalentes independentes de suas direções.\cite[pg. 6]{straus2004}
+
+
+Isso cria imediatamente uma relação de parentesco entre pares em todos intervalos da escala cromática exceto para os trítonos, intervalos de sexta ordem, que está equidistante de 0 e 12 e portanto não possui uma inversão propriamente dita, mas sim tem o papel de cortar ao meio este espelhamento.
+
+grafico que mostra essa relação 
 
 
 
 
+\subsection{Vetor intervalar}
+
+A operação obtenção do vetor intervalar é a primeira das reduções sugeridas para propor uma similaridade entre agrupamentos que seja neutra quanto inversões e oitavas.
+
+Tomemos um exemplo de um cluster C-D-E-Bb.
+
+mostrar score no open music
+
+Este trecho pode ser reduzido a sequencia de alturas [0,2,4,10]
+
+Organizamos seus intervalos fazendo todas as combinações possíveis entre estas distâncias:
 
 
 
-\subsection{Forma Prima}
+
+$ inversões = \left\{
+  \begin{array}{l l}
+    2-0 = 2\\
+    4-0 = 4\\
+    10-0 = 10 \\
+     \\
+    4-2 = 2\\
+    10-2= 8 \\
+     \\
+    10-4= 6
+  \end{array} \right.
+$
+
+O vetor de intervalos pode ser reduzido então a uma contagem que coloca no mesmo grupo os intervalos que são inversões dos primeiros 5 intervalos possíveis, já que seus pares apos o trito no são considerados espelhamentos. No exemplo acima temos 10 que é a inversão de 2 e 8 que é a inversão de 4. Portanto nosso vetor fica assim:
+
+
+\begin{table}[h]
+\begin{tabular}{|
+>{\columncolor[HTML]{FD6864}}l |
+>{\columncolor[HTML]{F8A102}}l |
+>{\columncolor[HTML]{F8FF00}}l |
+>{\columncolor[HTML]{34FF34}}l |
+>{\columncolor[HTML]{00D2CB}}l |
+>{\columncolor[HTML]{EE00EE}}l |}
+\hline
+1 & 2 & 3 & 4 & 5 & 6 \\ \hline
+0 & 3 & 0 & 2 & 0 & 1 \\ \hline
+\end{tabular}
+\end{table}
+
+Pode-se dizer então que a classe de alturas [0,2,4,10] possui o vetor intervalar <0,3,0,2,0,1>.
+
+
+\subsection{Forma Normal} 
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Redução de um segmento do Microkosmos 101 de Bártok para um cluster de 4 alturas. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/reducao_acorde.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Forma Normal. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/forma_normal.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+
+\subsection{Forma Prima} 
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Fórmulas de agrupamento de classes de altura. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/forma_prima_forte_vector.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+
 
 \begin{citacao}
 Two Algorithms for Computing the Prime Form
@@ -1254,6 +1384,46 @@ Pitch Class Set	Forte Prime	Rahn Prime
 6-31	(0,1,3,5,8,9)	(0,1,4,5,7,9)
 7-20	(0,1,2,4,7,8,9)	(0,1,2,5,6,7,9)
 8-26	(0,1,2,4,5,7,9,10)	(0,1,3,4,5,7,8,10)
+\end{citacao}
+
+
+\subsection{Singularidades nos agrupamentos }
+
+
+\subsection{Relaçao Z entre grupos de classes de alturas}
+
+\begin{citacao}
+But none of these arguments would carry any weight with me if
+I could only hear the correspondences that Forte describes. I can
+discover these connections between Z-related collections only by sub-
+jecting them to an analytical scrutiny that has nothing whatever to do
+with my intuitive experience as a listener or as a composer. Or, to
+speak more candidly, by allowing Professor Forte to conduct this
+analytical scrutiny for me. 
+\cite[p. 168]{perle1990pitch}
+\end{citacao}
+
+
+\subsection{Arbitrariedade e indução na segmentação atonal}
+
+\begin{citacao}
+A resposta é que você não pode saber com antecedência.
+Você tem que entrar no mundo da peça – ouvindo, tocando, e cantando – até que você
+obtenha um senso de quais idéias musicais são fundamentais e recorrentes. No processo,
+você encontrar-se-á movendo-se em torno de um tipo familiar de círculo conceitual. Você
+não pode saber quais são as principais idéias até que você as veja recorrer; mas você não
+pode encontrar recorrências até que você saiba quais são as idéias principais. A única
+solução prática é bisbilhotar a peça, propondo e testando hipóteses conforme você
+prossegue. 
+\cite{straus2004}
+\end{citacao}
+
+\begin{citacao}
+(...)it would be fascinating to see what results we would obtain from comparing sets which would describe units previously segmented by a paradigmatic analysis at the neutral level. If we do feel compelled to rely on this preliminary analysis, in effect, the kaleidoscope which
+the analyst will discover in atonal works will effectively be the fruit of magical operations,
+not because the composer hid them there, but because the musicologist, through sleight
+of hand, was acting like a magician!
+\cite{nattiez2003allen}
 \end{citacao}
 
 
