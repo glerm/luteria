@@ -14,9 +14,9 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: mestrado_glerm.bib
 Warning--entry type for "AndreataOMtutorial" isn't style-file defined
---line 41 of file mestrado_glerm.bib
+--line 53 of file mestrado_glerm.bib
 Warning--entry type for "DebrilOM" isn't style-file defined
---line 50 of file mestrado_glerm.bib
+--line 62 of file mestrado_glerm.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -27,45 +27,45 @@ Warning--faltando school em marshall1946analysis
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 48 entries,
+You've used 51 entries,
             6711 wiz_defined-function locations,
-            1443 strings with 14699 characters,
-and the built_in function-call counts, 37695 in all, are:
-= -- 3221
-> -- 871
-< -- 313
-+ -- 615
-- -- 280
-* -- 2398
-:= -- 5106
-add.period$ -- 151
-call.type$ -- 48
-change.case$ -- 347
-chr.to.int$ -- 80
-cite$ -- 48
-duplicate$ -- 2575
-empty$ -- 2805
-format.name$ -- 1296
-if$ -- 8491
+            1464 strings with 15150 characters,
+and the built_in function-call counts, 41392 in all, are:
+= -- 3626
+> -- 918
+< -- 399
++ -- 709
+- -- 295
+* -- 2621
+:= -- 5565
+add.period$ -- 163
+call.type$ -- 51
+change.case$ -- 367
+chr.to.int$ -- 89
+cite$ -- 51
+duplicate$ -- 2939
+empty$ -- 2995
+format.name$ -- 1365
+if$ -- 9256
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 846
-newline$ -- 232
-num.names$ -- 235
-pop$ -- 1023
+missing$ -- 899
+newline$ -- 248
+num.names$ -- 250
+pop$ -- 1077
 preamble$ -- 1
-purify$ -- 153
+purify$ -- 162
 quote$ -- 0
-skip$ -- 2632
+skip$ -- 2986
 stack$ -- 1
-substring$ -- 1714
-swap$ -- 1085
-text.length$ -- 47
+substring$ -- 1913
+swap$ -- 1233
+text.length$ -- 54
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 3
 warning$ -- 1
-while$ -- 345
+while$ -- 370
 width$ -- 0
-write$ -- 731
+write$ -- 784
 (There were 3 warnings)

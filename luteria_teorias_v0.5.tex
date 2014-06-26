@@ -1287,13 +1287,20 @@ A operação obtenção do vetor intervalar é a primeira das reduções sugerid
 
 Tomemos um exemplo de um cluster C-D-E-Bb.
 
-mostrar score no open music
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}[0,2,4,10] }
+	\begin{center}
+	    \includegraphics[scale=0.6]{OM_settheory/vetor02410.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
 
 Este trecho pode ser reduzido a sequencia de alturas [0,2,4,10]
 
 Organizamos seus intervalos fazendo todas as combinações possíveis entre estas distâncias:
-
-
 
 
 $ inversões = \left\{
@@ -1328,10 +1335,10 @@ O vetor de intervalos pode ser reduzido então a uma contagem que coloca no mesm
 
 Pode-se dizer então que a classe de alturas [0,2,4,10] possui o vetor intervalar <0,3,0,2,0,1>.
 
-
+\pagebreak
 \subsection{Forma Normal} 
 
-\begin{figure}[!h]
+\begin{figure}[h]
 	\caption{\label{fig_grafico}Redução de um segmento do Microkosmos 101 de Bártok para um cluster de 4 alturas. }
 	\begin{center}
 	    \includegraphics[scale=0.7]{OM_settheory/reducao_acorde.png}
@@ -1341,7 +1348,7 @@ Pode-se dizer então que a classe de alturas [0,2,4,10] possui o vetor intervala
 
 
 
-\begin{figure}[!h]
+\begin{figure}[h]
 	\caption{\label{fig_grafico}Forma Normal. }
 	\begin{center}
 	    \includegraphics[scale=0.7]{OM_settheory/forma_normal.png}
@@ -1351,11 +1358,11 @@ Pode-se dizer então que a classe de alturas [0,2,4,10] possui o vetor intervala
 
 
 
-
+\pagebreak
 \subsection{Forma Prima} 
 
 
-\begin{figure}[!h]
+\begin{figure}[h]
 	\caption{\label{fig_grafico}Fórmulas de agrupamento de classes de altura. }
 	\begin{center}
 	    \includegraphics[scale=0.7]{OM_settheory/forma_prima_forte_vector.png}
@@ -1389,42 +1396,164 @@ Pitch Class Set	Forte Prime	Rahn Prime
 
 \subsection{Singularidades nos agrupamentos }
 
+Algumas propriedades entre os grupos de classes de alturas são muito interessantes como princípio composicional, e mesmo quando não tao obvias em primeiras audições, ao menos ajudam garantir alguma coerência estrutural conceitual. George Perle argumenta sobre "funções motívicas" em grupos de de alturas\cite[ p.60-85]{perle1991serial} e observa algumas estratégias de compositores para aproveitar algumas propriedades encontradas em relações internas das series. Perle no entanto mostra-se cético a formalização de nomenclaturas analíticas derivadas da classificação de Allen Forte e sua aplicação em argumentações para análises de composições que tenham sido compostas antes fórmulas tornarem-se ferramentas musicológicas.\cite{perle1990pitch}
 
-\subsection{Relaçao Z entre grupos de classes de alturas}
+Levantaremos aqui algumas destas propriedades conforme o resumo didático proposto por \cite{straus2004}, sem ainda estarmos certos de sua efetividade para analises mas interessados na formalização computacional possível destas para processos composicionais.
+
+\pagebreak
+\subsubsection{Notas Comuns sob transposição}
+
+Tomemos o seguinte exemplo: Dado um grupo em sua forma prima [0,2,5] (ou "4-10" na forma cardinal ) quando transpomos para o intervalo 2 e seu inverso 10, obtemos duas notas iguais para cada um destes grupos.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Notas comuns na transposição. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/notas_comuns_2e10.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+Isso acontece porque o vetor de intervalos para esta forma é <1,2,2,0,1,0> e podemos observar que há uma fórmula geral que prova que o número de incidências comuns de uma determinada classe de alturas em sua transposição será o número de repetições deste intervalo em seu vetor original. Neste caso por exemplo temos duas incidências do intervalo de classe 2 portanto as transposições T2 e T10 terão duas notas em comum com T0.
+
+Há uma exceção a esta regra:
+ 
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Notas comuns na transposição com trítono. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/notas_comuns_tritono.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+É preciso observar que para o caso do trítono a inversão é simétrica, portanto para cada trítono teremos duas notas em comum. Como no exemplo acima: 10 e 4 geram as duas simétricas 4 e 10 e portanto um trítono gerou duas notas em comum e assim por diante.
+
+Interessante pensar também que o vetor de intervalos irá determinar transposições onde não existem notas nenhumas em comum. Composicionalmente isso pode ser visto como uma possibilidade de transpor para uma sessão totalmente distinta da anterior, criando algum discurso com estas transições.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Notas Comuns sob inversão}
+
+\subsubsection{Simetria Transpositiva}
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}A simetria transpositiva é obtida através de um padrão de intervalos palíndromo. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/palindrome1.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}A forma circular é mais geral do que a numérica para a visualização do padrão de simetrias. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/palindrome2.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+
+
+\subsubsection{Complemento}
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}O complemento contém todas alturas cromáticas que o conjunto original não possui. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/complemento.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+
+
+\subsubsection{Relação Z entre grupos de classes de alturas}
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Dois conjuntos Z-relacionados possuem os mesmos intervalos sem serem inversões ou transposições um dos outros. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/Z_related.png}
+	\end{center}
+	\legend{Fonte: autor (adaptado de exemplo do tutorial MathTools do OM) }
+\end{figure}
+
+
+
+
+
+
+George Perle exemplifica a relação Z como uma das relações que não são intuitivas em sua rotina composicional:
+
+
+
+
 
 \begin{citacao}
+Mas nenhum destes argumentos teria qualquer peso para mim se eu pudesse ao menos escutar as correspondências que Forte descreve. Eu posso descobrir estas conexões entre coleções Z-relacionadas somente sujeitando-as a um escrutínio analítico que não tem nada a ver com minha experiência intuitiva como ouvinte ou compositor. Ou, para falar de maneira mais sincera, permitir que o Professor Forte conduza seu escrutínio analítico para mim.
+\cite[p.168]{perle1990pitch}\footnote{
 But none of these arguments would carry any weight with me if
-I could only hear the correspondences that Forte describes. I can
+I could only hear thes correspondences that Forte describes. I can
 discover these connections between Z-related collections only by sub-
 jecting them to an analytical scrutiny that has nothing whatever to do
 with my intuitive experience as a listener or as a composer. Or, to
 speak more candidly, by allowing Professor Forte to conduct this
 analytical scrutiny for me. 
-\cite[p. 168]{perle1990pitch}
+\cite[p.168]{perle1990pitch}}
 \end{citacao}
 
+Perguntamo-nos se este tipo de afirmação não seria um tanto arbitrária, afinal as diferenças entre terças maiores e menores não são também no fundo resultado de uma exposição cultural associativa a esta nomenclatura e consequentemente a sua geometria e particularidade numérica em relação a uma funcionalidade dentro dos grupos diatônicos a quais pertencem? Se tudo entao e um condicionamento cultural da escuta por onde buscar novas escutas?
 
-\subsection{Arbitrariedade e indução na segmentação atonal}
+Parece que de alguma maneira a relação Z acaba por nomear uma sonoridade por uma particularidade entre relação numérica e geométrica curiosa, e no mínimo serve como mnemônico de uma relação entre estas sonoridades.
+
+\subsection{Arbitrariedade e indução  na segmentação atonal}
+
+Encontrar estas relações em composições anteriores a sua formalização é que obviamente é um problema para uma estésica indutiva\cite{nattiez2001tripartite} que se vale de todos esforços documentais para provar o quanto esta atitude composicional já existiu inconscientemente em gestos instrumentais não condicionados pela geometria constatada.
+
+
+Esta questão sobre arbitrariedade na busca por estas particularidades de relações entre grupos em análises de peças principalmente anteriores a estas formulações nos parecem no fundo uma aporia. Esforços foram feitos de todas as maneiras para comprovar a tanto a eficacia quanto a ineficácia do sistema para aplicação em analises, como por exemplo a tese \citeonline{haimo1996atonality} buscando "falácias" no esquema analítico clássico de teoria de grupos quando confrontado com anotações originais de Arnold Shoenberg.
+
+\cite{straus2004} sentencia:
 
 \begin{citacao}
 A resposta é que você não pode saber com antecedência.
 Você tem que entrar no mundo da peça – ouvindo, tocando, e cantando – até que você
-obtenha um senso de quais idéias musicais são fundamentais e recorrentes. No processo,
+obtenha um senso de quais ideias musicais são fundamentais e recorrentes. No processo,
 você encontrar-se-á movendo-se em torno de um tipo familiar de círculo conceitual. Você
-não pode saber quais são as principais idéias até que você as veja recorrer; mas você não
-pode encontrar recorrências até que você saiba quais são as idéias principais. A única
+não pode saber quais são as principais ideias até que você as veja recorrer; mas você não
+pode encontrar recorrências até que você saiba quais são as ideias principais. A única
 solução prática é bisbilhotar a peça, propondo e testando hipóteses conforme você
 prossegue. 
 \cite{straus2004}
 \end{citacao}
 
+Nattiez\cite{nattiez2003allen} faz uma crítica minuciosa da aplicação da teoria de grupos das classes de altura derivada do trabalho de Allen Forte, em busca de uma descrição estésica que justifique a aplicação de toda a formalização de seu nível neutro de nomenclaturas e chega a seguinte conclusão:
+
+
 \begin{citacao}
-(...)it would be fascinating to see what results we would obtain from comparing sets which would describe units previously segmented by a paradigmatic analysis at the neutral level. If we do feel compelled to rely on this preliminary analysis, in effect, the kaleidoscope which
-the analyst will discover in atonal works will effectively be the fruit of magical operations,
-not because the composer hid them there, but because the musicologist, through sleight
-of hand, was acting like a magician!
-\cite{nattiez2003allen}
+(...)seria fascinante ver que resultados obteríamos comparando grupos quais descreveriam unidades previamente segmentadas por uma análise paradigmática num nível neutro. Se nos sentimos intimidados a confiar nas análises preliminares, com efeito, o caleidoscópio com qual o analista vai descobrir trabalhos atonais vai efetivamente ser fruto de operações mágicas, não porque o compositor escondeu-as ali, mas porque o musicologista, através do truque com as mãos, esta agindo como um mágico!\cite[ p.16]{nattiez2003allen}\footnote{(...)it would be fascinating to see what results we would obtain from comparing sets which would describe units previously segmented by a paradigmatic analysis at the neutral level. If we do feel compelled to rely on this preliminary analysis, in effect, the kaleidoscope which the analyst will discover in atonal works will effectively be the fruit of magical operations, not because the composer hid them there, but because the musicologist, through sleight of hand, was acting like a magician!
+\cite[ p.16]{nattiez2003allen}}
 \end{citacao}
+
+
+
+
+
 
 
 % ---
