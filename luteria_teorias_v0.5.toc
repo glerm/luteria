@@ -11,11 +11,11 @@
 \contentsline {subsection}{\numberline {2.1.2}Regras de boa-forma\IeC {\c c}\IeC {\~a}o m\IeC {\'e}trica (MWFRs )}{30}{subsection.2.1.2}
 \contentsline {subsubsection}{\numberline {2.1.2.1}Regras de prefer\IeC {\^e}ncia M\IeC {\'e}trica (MPFRs) }{32}{subsubsection.2.1.2.1}
 \contentsline {section}{\numberline {2.2}Segmenta\IeC {\c c}\IeC {\~a}o temporal de eventos cadenciais e a redu\IeC {\c c}\IeC {\~a}o prolongacional na GTTM}{32}{section.2.2}
-\contentsline {subsubsection}{\numberline {2.2.0.2}Calculando a tens\IeC {\~a}o e o Espa\IeC {\c c}o das alturas tonais (TPS) }{33}{subsubsection.2.2.0.2}
+\contentsline {subsubsection}{\numberline {2.2.0.2}Calculando a tens\IeC {\~a}o e o Espa\IeC {\c c}o das alturas tonais (TPS) }{34}{subsubsection.2.2.0.2}
 \contentsline {section}{\numberline {2.3}Cogni\IeC {\c c}\IeC {\~a}o das Estruturas Musicais B\IeC {\'a}sicas (CBMS)}{35}{section.2.3}
-\contentsline {subsubsection}{\numberline {2.3.0.3}Solfejo Enarm\IeC {\^o}nico das Classes de Alturas Tonais}{36}{subsubsection.2.3.0.3}
-\contentsline {subsubsection}{\numberline {2.3.0.4}Algoritmo dos Perfis de Tonalidade}{37}{subsubsection.2.3.0.4}
-\contentsline {section}{\numberline {2.4}Restri\IeC {\c c}\IeC {\~o}es Cognitivas versus Segmenta\IeC {\c c}\IeC {\~a}o Atonal}{39}{section.2.4}
+\contentsline {subsubsection}{\numberline {2.3.0.3}Solfejo Enarm\IeC {\^o}nico das Classes de Alturas Tonais}{37}{subsubsection.2.3.0.3}
+\contentsline {subsubsection}{\numberline {2.3.0.4}Algoritmo dos Perfis de Tonalidade}{38}{subsubsection.2.3.0.4}
+\contentsline {section}{\numberline {2.4}Restri\IeC {\c c}\IeC {\~o}es Cognitivas versus Segmenta\IeC {\c c}\IeC {\~a}o Atonal}{40}{section.2.4}
 \contentsline {chapter}{\chapternumberline {3}Teorias de Grupos das Classes de Alturas para uma Segmenta\IeC {\c c}\IeC {\~a}o Atonal }{45}{chapter.3}
 \contentsline {section}{\numberline {3.1}F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}{46}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Vetor intervalar}{46}{subsection.3.1.1}
