@@ -625,7 +625,7 @@ Segundo Roads, \citeonline{moorer1972music} e \citeonline{winograd1968linguistic
 Jean Jaques Nattiez, em seu ensaio sobre música e linguística \cite{nattiez2004modelos} relativiza também o êxito do texto de Lerdahl e Jackendoff, porém reconhece uma importância  que despertou nossa curiosidade por uma pequena revisão nas regras propostas por esta obra, o que faremos logo a seguir.
 
 \begin{citacao}
-Porque, se a obra de Lerdahl e Jackendoff não conheceu um amplo reconhecimento sob o ponto de vista da análise das obras stricto sensu, em compensação, a psicologia cognitiva da música, que sabemos estar em plena efervescência, (…) Na medida em que 51 das 56 regras propostas são dadas como universais \cite[ p.345-352]{lerdahl1983generative}, os autores lançam aos etnomusicólogos um grande e salutar desafio que ainda não foi levado em consideração. A importância de um trabalho não se mede unicamente por seu caráter inovador e pelo valor dos modelos propostos, o que, por certo, ocorre neste caso, mas também pelo campo de investigações novas que propõe.
+Porque, se a obra de Lerdahl e Jackendoff não conheceu um amplo reconhecimento sob o ponto de vista da análise das obras stricto sensu, em compensação, a psicologia cognitiva da música, que sabemos estar em plena efervescência, (...) Na medida em que 51 das 56 regras propostas são dadas como universais \cite[ p.345-352]{lerdahl1983generative}, os autores lançam aos etnomusicólogos um grande e salutar desafio que ainda não foi levado em consideração. A importância de um trabalho não se mede unicamente por seu caráter inovador e pelo valor dos modelos propostos, o que, por certo, ocorre neste caso, mas também pelo campo de investigações novas que propõe.
 \cite{nattiez2004modelos}
 \end{citacao}
 
@@ -880,7 +880,7 @@ difficulties in this regard. \cite[p. 191]{lerdahl2009genesis}}
 
 
 
-O desenvolvimento da teoria de espaço tonal\cite{lerdahl1988tps} foi fortemente baseado nas pesquisas de quantificação das condições para estabilidade da percepção de contextos tonais argumentada por Carol Krumhansl em seu artigo "Perceptual structures of tonal music"\cite{krumhansl1983perceptual} e posteriormente fundamentada em mais profundidade no livro "Cognitive structures of pitch"\cite{krumhansl1990cognitive}. Como veremos mais adiante este trabalho também influenciou os algoritmos de harmonia e tonalidade de David Temperley em seu "Cognitive Basic Music Structures"\cite{temperley2004cognition}. 
+Posteriormente ao GTTM, Lerdahl investe esforços no desenvolvimento da teoria de espaço tonal\cite{lerdahl1988tps}, que foi fortemente baseado nas pesquisas de quantificação das condições para estabilidade da percepção de contextos tonais argumentada por Carol Krumhansl em seu artigo "Perceptual structures of tonal music"\cite{krumhansl1983perceptual} e fundamentada em mais profundidade no livro "Cognitive structures of pitch"\cite{krumhansl1990cognitive}. Como veremos mais adiante este trabalho também influenciou os algoritmos de harmonia e tonalidade de David Temperley em seu "Cognitive Basic Music Structures"\cite{temperley2004cognition}. 
 
 Mais recentemente, Lerdahl atualiza sua teoria do espeço tonal\cite{lerdahl2001tonal} buscando alguns argumentos novos sobre transformações cromáticas algébricas fundamentadas pela corrente musicológica "Neo-Riemaniana"\cite{cohn1998introduction,lewin2007generalized} e escreve com Krumhansl um artigo chamado "Modeling Tonal Tension"\cite{2007lerdahl-krumhansl} buscando legitimar sua teoria através de testes cognitivos com uma audiência.
 
@@ -891,7 +891,7 @@ event in relation to the reference point. On the assumption that the listener un
 the shortest path selects events yielding the smallest available distances from superordinate events at each stage of prolongational reduction. \cite[p. 191]{lerdahl2009genesis}}
 \end{citacao}
 
-Decidimos portanto não entrar em detalhes destes dois escopos mais frágeis da GTTM e focaremos diretamente em derivações posteriores que os problematizam em outros termos. Tomaremos dos estudos de Lerdahl posteriores ao GTTM  por enquanto apenas seu conceito de tensão e estabilidade desenvolvido em sua "teoria do espaço tonal"("Tonal Pitch Space", doravante referida como TPS) na próxima sessão. Em seguida apresentamos uma alternativa derivada da GTTM, elaborada por David Temperley e implmentada computacionalmente em seu trabalho "Cognition of Basic Musical Structures"\cite{temperley2004cognition}.
+Considerando esta atualização da teoria optamos por não entrar em detalhes destes dois escopos mais frágeis da GTTM e focamos diretamente em derivações posteriores que os problematizam em outros termos. Tomamos dos estudos de Lerdahl posteriores ao GTTM  por enquanto apenas seu conceito de tensão e estabilidade desenvolvido em sua "teoria do espaço tonal"("Tonal Pitch Space", doravante referida como TPS) na próxima sessão. Em seguida apresentamos uma alternativa derivada da GTTM, elaborada por David Temperley e implmentada computacionalmente em seu trabalho "Cognition of Basic Musical Structures"\cite{temperley2004cognition}.
 
 
 
@@ -899,8 +899,69 @@ Decidimos portanto não entrar em detalhes destes dois escopos mais frágeis da 
 \subsubsection{Calculando a tensão e o Espaço das alturas tonais (TPS) }
 
 
+Para a segmentação prolongacional da GTTM \citeonline{lerdahl1983generative} já argumentavam regras de formação que determinariam ramificações semelhantes as usadas por Chomsky\cite{chomsky1957syntactic} para construir as implicações de um segmento em outro. Como nas frases escritas, a ideia deriva da constatação de que adjetivos qualificam substantivos, pronomes conjugam verbos e assim por diante. Estas estruturas sintáticas determinam uma boa-formação da frase, de maneira que mesmo antes de inferirmos significado nesta temos uma estrutura onde as funções estão bem definidas. A troca de um verbo por outro por exemplo, contanto que conjugados na mesma pessoa do sujeito da frase, muda seu sentido mas não sua sintaxe.
 
-\begin{citacao}
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}"Ideias verdes descoloridas dormem furiosamente"\cite{chomsky1957syntactic}}
+	\begin{center}
+	    \includegraphics[scale=0.45]{gttm/colorless.png}
+	\end{center}
+	\legend{Fonte: wikimedia.org}
+\end{figure}
+
+A frase \textbf{"Ideias verdes descoloridas dormem furiosamente"} é usada por \citeonline{chomsky1957syntactic} em sua argumentação sobre a construção de uma frase onde a ordem correta e implicação funcional das palavras determina sentido mas não uma semântica estrita. Mesmo a tradução para português já revela uma problemática básica para os algoritmos de tradutores textuais - se traduzirmos literalmente palavra por palavra não teremos uma frase bem construída: \textbf{"Descoloridas verde ideias dormem furiosamente"}.
+
+A analogia de um segmento musical implicando ou sendo implicado por outro é usada na GTTM da seguinte maneira:
+
+%%%%%%%%%%%%%%%%%% tree
+\begin{figure}[htb]
+	\caption{\label{fig_grafico}Notação analítica proposta pela GTTM para a ramificação dos intervalos-temporais.}
+	\begin{center}
+	    \includegraphics[scale=0.5]{gttm/ramificacoes_arvore.pdf}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Notação em árvore proposta pela GTTM apicada na melodia inicial de Mikrokosmos 113 de Bártok.}
+	\begin{center}
+	    \includegraphics[scale=0.45]{mikro/mikro113_GTTM_tree.png}
+	\end{center}
+	\legend{Fonte: autor}
+\end{figure}
+
+Na GTTM\cite[pg. 182]{lerdahl1983generative} é argumentada uma notação com círculos brancos para prolongamentos fortes e pretos para prolongamentos fracos. Em seu artigo "Calculating Tonal Tension"\cite{lerdahl1996calculating} elabora com mais rigor o desenvolvimento de um critério para determinar numericamente estas forças. 
+
+
+
+%%%%%%%%%%%%%%%%%% tree
+\begin{figure}[htb]
+	\caption{\label{fig_grafico}Forças tonais nos prolongamentos revistas por Fred \citeonline{lerdahl1988tps} }
+	\begin{center}
+	    \includegraphics[scale=0.7]{lerdahl/prolongation_calculating.png}
+	\end{center}
+	\legend{Fonte: \cite[p. 322]{lerdahl1996calculating} }
+\end{figure}
+
+A fórmula determina um peso para a transformação da condução de vozes para arbitrar uma escala de valores numéricos entre os adjetivo "forte" e "fraco" que permite especular uma computabilidade destes movimentos de tensão e relaxamento.
+
+$
+d(x \to y) = i+j+k
+$
+
+%%%%%%%%%%%%%%%%%% tree
+\begin{figure}[htb]
+	\caption{\label{fig_grafico}Exemplo de aplicação da fórmula das distâncias }
+	\begin{center}
+	    \includegraphics[scale=0.5]{lerdahl/distance_algo_lerdahl_p323.png}
+	\end{center}
+	\legend{Fonte: \cite[p. 323]{lerdahl1996calculating} }
+\end{figure}
+
+
+
+
 The tonal hierarchy- hence an implicit pitch space- appears in GTTM
 in incomplete form under the rubric of verbally stated stability conditions.
 The theory claims that listeners cannot infer complex event hierarchies
@@ -913,7 +974,7 @@ and the prolongational reduction derives from the time-span reduction and
 the stability conditions. In short, both a rhythmic framework and criteria
 for pitch stability are needed if the listener is to hear events in a dominating-
 subordinating manner.\cite{lerdahl1988tps}
-\end{citacao}
+
 
 
 %%%%%%%%%%%%%%%%%% tree
@@ -936,34 +997,7 @@ subordinating manner.\cite{lerdahl1988tps}
 lerdahl testa a teoria TPS em \cite{2007lerdahl-krumhansl}
 
 
-%%%%%%%%%%%%%%%%%% tree
-\begin{figure}[htb]
-	\caption{\label{fig_grafico}Notação analítica proposta pela GTTM para a ramificação dos intervalos-temporais.}
-	\begin{center}
-	    \includegraphics[scale=0.5]{gttm/ramificacoes_arvore.pdf}
-	\end{center}
-	\legend{Fonte: autor }
-\end{figure}
 
-%%%%%%%%%%%%%%%%%% tree
-\begin{figure}[htb]
-	\caption{\label{fig_grafico}Forças tonais nos prolongamentos revistas por Fred \citeonline{lerdahl1988tps} }
-	\begin{center}
-	    \includegraphics[scale=0.6]{lerdahl/prolongation_calculating.png}
-	\end{center}
-	\legend{Fonte: \cite[p. 322]{lerdahl1996calculating} }
-\end{figure}
-
-
-
-%%%%%%%%%%%%%%%%%% tree
-\begin{figure}[htb]
-	\caption{\label{fig_grafico}Exemplo de aplicação da fórmula das distâncias }
-	\begin{center}
-	    \includegraphics[scale=0.5]{lerdahl/distance_algo_lerdahl_p323.png}
-	\end{center}
-	\legend{Fonte: \cite[p. 323]{lerdahl1996calculating} }
-\end{figure}
 
 
 %%%%%%%%%%%%%%%%%% tree
