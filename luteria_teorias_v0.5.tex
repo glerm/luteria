@@ -931,100 +931,88 @@ A analogia de um segmento musical implicando ou sendo implicado por outro é usa
 	\legend{Fonte: autor}
 \end{figure}
 
-Na GTTM\cite[pg. 182]{lerdahl1983generative} é argumentada uma notação com círculos brancos para prolongamentos fortes e pretos para prolongamentos fracos. Em seu artigo "Calculating Tonal Tension"\cite{lerdahl1996calculating} elabora com mais rigor o desenvolvimento de um critério para determinar numericamente estas forças. 
 
+\pagebreak
+Na GTTM\cite[pg. 182]{lerdahl1983generative} é argumentada uma notação com círculos brancos para prolongamentos fortes e pretos para prolongamentos fracos. 
 
+Em seu artigo "Calculating Tonal Tension"\cite{lerdahl1996calculating} elabora com mais rigor o desenvolvimento de um critério para determinar numericamente estas forças e decidir prolongamentos que prevalecem nas reduções ou argumentar momentos de mudança de contexto tonal. 
 
 %%%%%%%%%%%%%%%%%% tree
 \begin{figure}[htb]
 	\caption{\label{fig_grafico}Forças tonais nos prolongamentos revistas por Fred \citeonline{lerdahl1988tps} }
 	\begin{center}
-	    \includegraphics[scale=0.7]{lerdahl/prolongation_calculating.png}
+	    \includegraphics[scale=0.6]{lerdahl/prolongation_calculating.png}
 	\end{center}
 	\legend{Fonte: \cite[p. 322]{lerdahl1996calculating} }
 \end{figure}
 
 A fórmula determina um peso para a transformação da condução de vozes para arbitrar uma escala de valores numéricos entre os adjetivo "forte" e "fraco" que permite especular uma computabilidade destes movimentos de tensão e relaxamento.
 
+Lerdahl utliza o modelo de espaço derivado de \citeonline{deutsch1981internal} , que hierarquiza as alturas em níveis cromático, diatônico, triádico, quintas e oitavas.
+
+
+O exemplo usado é o início da Sonata K.282 de Mozart, demonstrando as tonalidades a partir do I grau de Eb maior. 
+
+$ \left\{
+  \begin{array}{l l}
+    Nível Oitava:[3]\to[Eb]\to Tonalidade\\
+    Nível Quinta:[3,10]\to[Eb,Bb]\to Dominante\\
+    Nível Tríadico:[3,7,10]\to[Eb,G,Bb]\to Tríade\;Maior \\
+    Nível Diatônico:[3,5,7,10,0,2] \to Escala\;de\;Eb\; Maior \\
+    Nível Diatônico:[0...11] \to Sequencia\;cromática\;completa \\
+  \end{array} \right.
 $
-d(x \to y) = i+j+k
-$
 
-%%%%%%%%%%%%%%%%%% tree
-\begin{figure}[htb]
-	\caption{\label{fig_grafico}Exemplo de aplicação da fórmula das distâncias }
-	\begin{center}
-	    \includegraphics[scale=0.5]{lerdahl/distance_algo_lerdahl_p323.png}
-	\end{center}
-	\legend{Fonte: \cite[p. 323]{lerdahl1996calculating} }
-\end{figure}
-
-
-
-
-The tonal hierarchy- hence an implicit pitch space- appears in GTTM
-in incomplete form under the rubric of verbally stated stability conditions.
-The theory claims that listeners cannot infer complex event hierarchies
-without having access to such conditions, which are the main source for
-ranking the relative stability of events within embedded temporal regions.
-These regions in turn derive directly or indirectly from the grouping and
-metrical structures. Figure 1 illustrates schematically that the time-span re-
-duction derives from the rhythmic components and the stability conditions,
-and the prolongational reduction derives from the time-span reduction and
-the stability conditions. In short, both a rhythmic framework and criteria
-for pitch stability are needed if the listener is to hear events in a dominating-
-subordinating manner.\cite{lerdahl1988tps}
-
-
-
+\pagebreak
 %%%%%%%%%%%%%%%%%% tree
 \begin{figure}[htb]
 	\caption{\label{fig_grafico}Espaço tonal diatônico proposto por Fred \citeonline{lerdahl1988tps,lerdahl1996calculating} }
 	\begin{center}
-	    \includegraphics[scale=0.5]{lerdahl/diatonic_pitchspace_p322.png}
+	    \includegraphics[scale=0.4]{lerdahl/diatonic_pitchspace_p322.png}
 	\end{center}
 	\legend{Fonte: \cite[p. 322]{lerdahl1996calculating} }
 \end{figure}
 
-
-(a) octave (root) level:
-(b) fifths level:
-(c) triadic level:
-(d) diatonic level:
-(e) chromatic level:
+Para decidir quais graus do prolongamento são mais fortes a ponto de permanecerem em reduções e figurarem como tensão e relaxamento, \citeonline[pg.232]{lerdahl1996calculating} utiliza a fórmula 
+$
+d(x \to y) = i+j+k
+$
 
 
-lerdahl testa a teoria TPS em \cite{2007lerdahl-krumhansl}
+$ onde\left\{
+  \begin{array}{l l}
+i=passos\;entre\;tonalidades\;por\;ciclo\;de\;quintas \\
+j=passos\;entre\;acordes\;por\;ciclo\;de\;quintas \\
+k=graus\;cromáticos\;em\;comum \\
 
-
-
-
+  \end{array} \right.
+$
 
 %%%%%%%%%%%%%%%%%% tree
 \begin{figure}[htb]
-	\caption{\label{fig_grafico}Aplicação da fórmula das distâncias para medida comparativa de forças numa condução de vozes }
+	\caption{\label{fig_grafico}Prolongamentos na Sinfonia K.238 }
 	\begin{center}
-	    \includegraphics[scale=0.4]{lerdahl/tensao_tonal.png}
+	    \includegraphics[scale=0.6]{lerdahl/calculating_prolongamento.png}
 	\end{center}
-	\legend{Fonte: \cite[p. 325]{lerdahl1996calculating} }
+	\legend{Fonte: \cite[p. 323]{lerdahl1996calculating} }
 \end{figure}
 
+\pagebreak
+%%%%%%%%%%%%%%%%%% tree
+\begin{figure}[htb]
+	\caption{\label{fig_grafico}Exemplo de aplicação da fórmula das distâncias }
+	\begin{center}
+	    \includegraphics[scale=0.6]{lerdahl/pitchspace-K282.png}
+	\end{center}
+	\legend{Fonte: \cite[p. 323]{lerdahl1996calculating} }
+\end{figure}
 
+No caso $(6 \to 7)$ temos \textbf{2} passos pelo ciclo de quintas para chegar de $(V \to ii)$, \textbf{1} passo para chegar de $(I \to V)$ e 8 graus cromáticos em comum. Uma distancia de "tensão tonal" igual a \textbf{11}.
 
+No caso $(7 \to 8)$ temos \textbf{1} passos pelo ciclo de quintas para chegar de $(V \to i)$, \textbf{0} passos para chegar de $(ii \to ii)$ e 4 graus cromáticos em comum. Uma distancia de "tensão tonal" igual a \textbf{5}.
 
+Toma-se o menor como equivalente a "menor distancia" na tensão tonal, portanto prevalece o movimento $(7 \to 8)$. 
 
-
-
-
-Lerdahl(1996) propõe um modelo de cálculo para medir a intensidade do relaxamento-tensão entre os agrupamentos prolongacionais em todos seus níveis, buscando um modelo quantitativo para inferir os graus.
-
-
-figura prolongamentos
-
-
-O modelo mediria a distância entre.... (demonstrar o exemplo do calculating)
-
-O artigo aplica a fórmula para medida de tensão e relaxamento em alguns compassos da sonata K.282 de Mozart(lerdahl 1996 pg.tal). Questionamos se tal ideia de tensão e relaxamento é aplicável nas músicas pós-tonais, onde a condução de vozes pode não estar tão condicionada a esta ideia de prolongamento em função de uma tensão-resolução mas sim a um conceito de agrupamento de sonoridades por outros critérios. 
 
 
 \section{Cognição das Estruturas Musicais Básicas (CBMS)}
@@ -1040,6 +1028,14 @@ Decidimos iniciar o percurso pelas regras da CBMS pelos dois grupos de regras qu
 
 \subsubsection{Solfejo Enarmônico das Classes de Alturas Tonais}
 
+A questão do solfejo enarmônico é central para a implementação algorítmica dos seis sistemas de regras proposto por Temperley.
+
+A CBMS parte de uma reflexão sobre representações geométricas do ciclo de quintas, concluindo que representações cíclicas e modulares do ciclo("Neutral Pitch Class") não podem dar conta de uma medida funcional da denominação dos semitons.
+
+Para além de declarações de tonalidade na escrita tradicional de armaduras de clave, Temperley leva em consideração aquilo que há de autoral na ortografia\cite[p.123]{temperley2004cognition}  dos compositores e que poderia confirmar a função do cromatismos dentro do discurso tonal cognoscível para o sistema argumentado pelas CBMS.
+
+A CBMS justifica esta abordagem por estar buscando um agrupamento das classes de altura que considere os cromatismos fora de uma escala como notas de passagem ou ornamentais dentro de uma função tonal.
+
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Ciclo de dominantes e subdominantes em modo circular }
 	\begin{center}
@@ -1049,13 +1045,7 @@ Decidimos iniciar o percurso pelas regras da CBMS pelos dois grupos de regras qu
 \end{figure}
 
 
-
-
-Temperley justifica esta abordagem por estar buscando um agrupamento das classes de altura que considere os cromatismos fora de uma escala como notas de passagem ou ornamentais dentro de uma função tonal.
-
-A inferência de tonalidade proposta por Lerdahl é inspirada no modelo cognitivista de "distâncias percebidas entre as alturas"(lerdahl 1996 pg.359 paragrafo 3) proposto por Krumsahl(1982,1990), que entre outras propostas constrói histogramas de referência de um "perfil tonal"(krum 1982) dada pelas notas presentes em um segmento.
-
-imagem temperley pg.154
+A CBMS propõe uma medida para esta denominação baseada no que chama de "linha de quintas"
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Linha enarmônica das quintas proposta por Temperley. }
@@ -1066,6 +1056,8 @@ imagem temperley pg.154
 \end{figure}
 
 
+O argumento é de que a linha sugere possíveis cromatismos através de uma provável modulação desejada para mover-se até tonalidades vizinhas.
+
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Escala de Dó maior na linha enarmônica das quintas proposta por Temperley. }
 	\begin{center}
@@ -1074,6 +1066,7 @@ imagem temperley pg.154
 	\legend{Fonte: \cite[pg. 127]{temperley2004cognition} }
 \end{figure}
 
+Mais adiante em uma aplicação proposta para a analise da influência do modalismo no rock, Temperley propõe uma ideia que chama de "supermodo", uma combinação de modos vizinhos, expandindo o espaço tonal para um campo estendido onde as notas cromáticas teriam funções de afirmar os modos.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Escalas modais na linha enarmônica das quintas proposta por Temperley. }
@@ -1095,6 +1088,7 @@ imagem temperley pg.154
 \end{figure}
 
 
+\subsubsubsection{Regras de Preferência para o Solfejo Enarmônico}
 
 
 

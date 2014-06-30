@@ -14,8 +14,9 @@
 \contentsline {subsubsection}{\numberline {2.2.0.2}Calculando a tens\IeC {\~a}o e o Espa\IeC {\c c}o das alturas tonais (TPS) }{34}{subsubsection.2.2.0.2}
 \contentsline {section}{\numberline {2.3}Cogni\IeC {\c c}\IeC {\~a}o das Estruturas Musicais B\IeC {\'a}sicas (CBMS)}{38}{section.2.3}
 \contentsline {subsubsection}{\numberline {2.3.0.3}Solfejo Enarm\IeC {\^o}nico das Classes de Alturas Tonais}{39}{subsubsection.2.3.0.3}
+\contentsline {paragraph}{\numberline {2.3.0.3.1}Regras de Prefer\IeC {\^e}ncia para o Solfejo Enarm\IeC {\^o}nico}{40}{paragraph.2.3.0.3.1}
 \contentsline {subsubsection}{\numberline {2.3.0.4}Algoritmo dos Perfis de Tonalidade}{40}{subsubsection.2.3.0.4}
-\contentsline {section}{\numberline {2.4}Restri\IeC {\c c}\IeC {\~o}es Cognitivas versus Segmenta\IeC {\c c}\IeC {\~a}o Atonal}{42}{section.2.4}
+\contentsline {section}{\numberline {2.4}Restri\IeC {\c c}\IeC {\~o}es Cognitivas versus Segmenta\IeC {\c c}\IeC {\~a}o Atonal}{43}{section.2.4}
 \contentsline {chapter}{\chapternumberline {3}Teorias de Grupos das Classes de Alturas para uma Segmenta\IeC {\c c}\IeC {\~a}o Atonal }{47}{chapter.3}
 \contentsline {section}{\numberline {3.1}F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}{48}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Vetor intervalar}{48}{subsection.3.1.1}
