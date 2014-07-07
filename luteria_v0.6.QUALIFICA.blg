@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: luteria_teorias_v0.5.aux
+The top-level auxiliary file: luteria_v0.6.QUALIFICA.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -11,6 +11,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated field_info (elt_size=4) to 10865 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: mestrado_glerm.bib
 Warning--entry type for "AndreataOMtutorial" isn't style-file defined
@@ -27,45 +28,45 @@ Warning--faltando school em marshall1946analysis
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 58 entries,
+You've used 85 entries,
             6711 wiz_defined-function locations,
-            1493 strings with 15743 characters,
-and the built_in function-call counts, 46094 in all, are:
-= -- 3955
-> -- 1041
-< -- 406
-+ -- 753
-- -- 335
-* -- 2926
-:= -- 6213
-add.period$ -- 184
-call.type$ -- 58
-change.case$ -- 417
-chr.to.int$ -- 99
-cite$ -- 58
-duplicate$ -- 3215
-empty$ -- 3408
-format.name$ -- 1550
-if$ -- 10361
+            1624 strings with 18867 characters,
+and the built_in function-call counts, 64008 in all, are:
+= -- 5229
+> -- 1554
+< -- 414
++ -- 936
+- -- 501
+* -- 4073
+:= -- 8717
+add.period$ -- 273
+call.type$ -- 85
+change.case$ -- 614
+chr.to.int$ -- 129
+cite$ -- 85
+duplicate$ -- 4211
+empty$ -- 5070
+format.name$ -- 2321
+if$ -- 14647
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1025
-newline$ -- 280
-num.names$ -- 285
-pop$ -- 1225
+missing$ -- 1519
+newline$ -- 395
+num.names$ -- 421
+pop$ -- 1853
 preamble$ -- 1
-purify$ -- 184
+purify$ -- 271
 quote$ -- 0
-skip$ -- 3254
+skip$ -- 4243
 stack$ -- 1
-substring$ -- 2121
-swap$ -- 1360
-text.length$ -- 60
+substring$ -- 2720
+swap$ -- 1767
+text.length$ -- 67
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 3
+type$ -- 6
 warning$ -- 1
-while$ -- 422
+while$ -- 598
 width$ -- 0
-write$ -- 892
+write$ -- 1285
 (There were 3 warnings)

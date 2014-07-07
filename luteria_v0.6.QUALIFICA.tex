@@ -516,7 +516,7 @@ Os problemas computacionais considerados no percurso compõe "uma suíte de obje
 
 Documentamos também com alguns scripts Python auxiliares para formatação e segmentação de partituras (em formatos midi, musicxml ou lilypond, dependendo do caso).
 
-O percurso deste trabalho se dá em 3 etapas: \autoref{computacional}:Problematização Computacional, \autoref{analises}:Paradigmas para uma Análise Musical Pós-Tonal e \autoref{composicional}:Luteria Composicional.
+O percurso deste trabalho se dá em 3 etapas: \autoref{computacional}:Implementação Computacional, \autoref{analises}:Paradigmas para uma Análise Musical Pós-Tonal e \autoref{composicional}:Luteria Composicional.
 
 
 Na \autoref{computacional} trabalhamos uma pequena reflexão histórica da música algorítmica, fazendo um paralelo entre a sistematização das gramáticas musicais descendentes da tradição pitagórica e as especulações da cibernética que levaram ao desenvolvimento das áreas de inteligência artificial, vida artificial e estudos de complexidade e padrões de emergência.  
@@ -741,19 +741,17 @@ Por outro lado, mesmo com todo rigor metodológico, seria preciso pensar todas c
 
 Além do “respiro” passamos a levar em consideração alguns critérios de modificação do som como altura, força do ataque, gestual da articulação e o envelope de duração nas emendas dos segmentos.
 
+Mais abaixo ilustramos algumas destas regras demonstrando como podem ser observadas em uma estrutura "chord-seq" da linguagem Open Music.
+
 \begin{citacao}
-GPR3 (Mudança) Considere uma sequencia de notas [n1-n2], a transição [n2-n3] deve ser ouvida como um grupo de fronteira se marcado por:
-a) registro – a transição n2-n3 envolve uma maior distância intervalar de que entre n1-n2 ou n3-n4,\linebreak
-b) dinâmica - a transição n2-n3 envolve uma mudança dinâmica maior de que entre n1-n2 ou n3-n4,\linebreak
-c) articulação - a transição n2-n3 envolve uma mudança de articulação maior de que entre n1-n2 ou n3-n4,\linebreak
-d) duração - há diferença de durações  entr n2-n3 enquanto n1-n2 ou n3-n4 permanecem com durações similares,
+\textbf{GPR3 (Mudança)} Considere uma sequencia de notas [n1-n2], a transição [n2-n3] deve ser ouvida como um grupo de fronteira se marcado por: \textbf{a) registro} – a transição n2-n3 envolve uma maior distância intervalar de que entre n1-n2 ou n3-n4, \textbf{b) dinâmica} - a transição n2-n3 envolve uma mudança dinâmica maior de que entre n1-n2 ou n3-n4, \textbf{c) articulação} - a transição n2-n3 envolve uma mudança de articulação maior de que entre n1-n2 ou n3-n4, \textbf{d) duração} - há diferença de durações  entr n2-n3 enquanto n1-n2 ou n3-n4 permanecem com durações similares,
 \cite{lerdahl1983generative}
 \end{citacao}
 
 \begin{figure}[htb]
 	\caption{\label{fig_grafico}Open Music 01}
 	\begin{center}
-	    \includegraphics[scale=0.5]{mikro/OM_gttm_GPR02-03.png}
+	    \includegraphics[scale=0.6]{mikro/OM_gttm_GPR02-03.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
@@ -968,9 +966,9 @@ $
 	\legend{Fonte: \cite[p. 322]{lerdahl1996calculating} }
 \end{figure}
 
-Para decidir quais graus do prolongamento são mais fortes a ponto de permanecerem em reduções e figurarem como tensão e relaxamento, \citeonline[pg.232]{lerdahl1996calculating} utiliza a fórmula 
+Para decidir quais graus do prolongamento são mais fortes a ponto de permanecerem em reduções e figurarem como tensão e relaxamento, \citeonline[pg.232]{lerdahl1996calculating} utiliza a fórmula: 
 $
-d(x \to y) = i+j+k
+distância(x \to y) = i+j+k
 $
 
 
@@ -982,7 +980,7 @@ k=graus\;cromáticos\;em\;comum \\
 
   \end{array} \right.
 $
-
+\pagebreak
 %%%%%%%%%%%%%%%%%% tree
 \begin{figure}[htb]
 	\caption{\label{fig_grafico}Prolongamentos na Sinfonia K.238 }
@@ -992,7 +990,8 @@ $
 	\legend{Fonte: \cite[p. 323]{lerdahl1996calculating} }
 \end{figure}
 
-\pagebreak
+Lerdahl numera as cadências e determina algumas preferências para a decisão de quais segmentos são tensão e relaxamento nos prologamentos, através da sua fórmula para medida das distâncias.
+
 %%%%%%%%%%%%%%%%%% tree
 \begin{figure}[htb]
 	\caption{\label{fig_grafico}Exemplo de aplicação da fórmula das distâncias }
@@ -1001,6 +1000,8 @@ $
 	\end{center}
 	\legend{Fonte: \cite[p. 323]{lerdahl1996calculating} }
 \end{figure}
+
+
 
 No caso $(6 \to 7)$ temos \textbf{2} passos pelo ciclo de quintas para chegar de $(V \to ii)$, \textbf{1} passo para chegar de $(I \to V)$ e 8 graus cromáticos em comum. Uma distancia de "tensão tonal" igual a \textbf{11}.
 
@@ -1591,6 +1592,205 @@ Nattiez\cite{nattiez2003allen} faz uma crítica minuciosa da aplicação da teor
 
 
 
+% ----------------------------------------------------------
+% PARTE
+% ----------------------------------------------------------
+\part{Implmentação Computacional}
+\label{computacional}
+% ----------------------------------------------------------
+
+
+\chapter{Composição Assistida por Computador}
+
+\begin{citacao}
+The field of computer music can be thought of as having two fundamental branches, one concerned with the manipulation of musical sounds, and the other concerned with symbolic representations of music. The two are iconized by Max Mathews’s MUSIC program and Lejaren Hiller’s ILIAC Suite, both of 1957, although both have important antecedents. The two branches might provisionally be given the names “Computer Generated Music” (Denis Baggi’s term for it) and “Computer Aided Composition”— or CGM and CAC for short. 
+\cite[pg. ]{puckettecomputing}
+\end{citacao}
+
+
+
+
+\section{Linguagens Dataflow}
+\label{ferramentas}
+
+As linguagens de programação PureData e OpenMusic tem ao menos duas coisas em comum: ambas utilizam o paradigma de programação dataflow – uma representação gráfica dos algoritmos que deixa os programas similares a caixas conectadas por cabos, estimulando a imaginação para algo mais tátil do que cálculos abstratos.
+
+Ambas também são linguagens surgidas a partir de projetos surgidos no IRCAM (Institut de Recherche et Coordination Acoustique/Musique) a instituição francesa que tem entre seus idealizadores o compositor Pierre Boulez e é pioneira em pesquisas computacionais guiadas por processos composicionais. São descendentes diretas da primeira geração de linguagens musicais dataflow: Patchwork (OM) e Max (PD).
+
+Considerando que são ainda muito utilizadas por pesquisadores de Composição Assistida por Computador (CAC) e Música Algorítmica, estas já podem já de alguma forma serem consideradas linguagens de computação musical com relevância histórica o suficiente para no mínimo servirem de base para novas invenções.
+
+
+
+
+\subsection{OM}
+
+\begin{citacao}
+"Enquanto a maioria das “linguagens de programação musical” lidam principalmente com processamento de sinal e síntese
+sonora, uma abordagem original adotada pelo time de representação musical do IRCAM no fim dos anos 80 foi
+particularmente um foco na nas estruturas simbólicas e processos musicais, isto é, aspectos tradicionalmente
+ignorados ou deixados de lado dos ambientes computacionais."\cite{bresson2011openmusic}
+\end{citacao}
+
+Em suma, o OpenMusic teve ( pelo menos em seus primeiros anos ) uma intenção mais voltada para processos preocupados com a continuidade dos sistemas derivados dos estudos eruditos de intervalos, acordes, harmonia que estavam na base das preocupações do serialismo integral. O OM sempre foi um dos software amplamente utilizados para tal fim, e isto reflete diretamente em sua interface e cultura de uso.
+
+
+O OM é um framework que tende a uma programação orientada pela reflexão em tempo diferido, isto é, estimula a composição por escolha entre diversos resultados permutados e decupados em um tempo de escuta.
+
+Organiza materiais basicamente orientado pela escrita e fortemente pensado dentro do esquema de intervalos melódicos
+harmônicos derivados da notação moderna para música orquestral, utilizando sequenciadores bastante similares ao pentagrama de pauta sem ( “chord-seq”) ou com figuras de compasso (com o sequeciador “voice” ).
+
+\subsubsubsection{chord-seq}
+
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Objeto Chord-Seq do Opem Music}
+	\begin{center}
+	    \includegraphics[scale=0.6]{OMPD/chord-seq-sem-titulo.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+\subsubsubsection{classe permutation}
+
+\subsubsubsection{classe math}
+
+\subsection{PD}
+
+OM is almost certainly now the world’s dominant
+platform for doing CAC research and practice, de-
+spite the presence of several other approaches (includ-
+ing one, by Karlheinz Essl, that runs within Max).
+Is this because OM’s design is the best, or is it that
+OM has benefitted from the presence at IRCAM of
+so many willing composers, such as the ones repre-
+sented in this book? The two rival explanations are
+impossible to extricate from one another.
+\cite{puckettecomputing}
+
+Já o Puredata, nas palavras de seu idealizador:
+
+\begin{citacao}
+Um novo sistema de software, chamado Puredata, está em seus primeiros estágios de desenvolvimento. Seu design almeja remediar algumas deficiências do programa Max e preservar algumas de suas vantagens. A mais importante fraqueza do Max é a dificuldade de manter estruturas de dados compostas de um tipo que possa ser acessado quando analisando e resintetizando sons  ou quando gravando e modificando sequencias de diferentes tipos. Também, tem sido difícil integrar sinais que não sejam de áudio (vídeo por exemplo, e também espectro sonoro ) dentro do rígido sistema de “objetos til” (~) do Max.\cite{puckette1996pure}
+\end{citacao}
+ 
+
+Interessante perceber que já no final dos anos 90 o PD já tinha como alvo a vindoura possibilidade de uma música performática feita com os computadores domésticos que começavam a popularizar-se, preocupando-se com aspectos de melhor performance de processamento de áudio, uso de video sincronizado e representação em tempo real de dados do de processamento sonoro, apontando para a possiblidade de outros tipos de representação da música. 
+
+A música partiturável não era a grande preocupação e nem seus procedimentos de composição eram tão importantes quantos os aspectos relacionados ao espectro sonoro e a possibilidade de manipulação de eventos audiovisuais em tempo real.
+
+Uma diferença prática das abordagens padrão destes sistemas: O PD não incentiva a priori o uso de algum score derivado da escala cromática, e sim parte da idéia de frequências absolutas de 0hz ao limite de sua placa de som. É orientado por controles de eventos (“bangs”) de tempo não-linear.
+
+Além disso, os objetos tilde (~) fazem processamento de síntese sonora em tempo real, basta você plugá-los a qualquer momento em um objeto que representa sua placa de som processando vetores numéricos indicando a pressão e descompressão do seu auto-falante em estado bruto, o [dac~]. No OM é sempre necessário compilar (“verificar”) os patches para depois ouvi-los em sequenciadores de eventos ou players de áudio.
+
+Miller Puckette comenta num artigo de 2006 que o uso de procedimentos 
+
+I would like to see some of the techniques now only available in OM become usable some day within
+real-time environments. This is clearly a huge undertaking, since the style of programming currently used
+in real-time applications is so different from that in OM. But there would be much gained if this became
+possible. In the meantime it’s possible to send messages back and forth between OM and some lower latency process that takes care of real-time performance. 
+\cite{puckettecomputing}
+
+
+
+\subsubsection{biblioteca Maxlib}
+
+\subsubsection{biblioteca RTC-lib}
+
+\subsubsection{objeto [probalizer]}
+
+
+
+% ----------------------------------------------------------
+\chapter{Arquivos e Scripts para Segmentação de Dados Musicais}
+% ----------------------------------------------------------
+\label{formatos}
+
+\section{MIDI}
+
+Por muito tempo o formato MIDI ficou estigmatizado por ser associado aos timbres genéricos da indústria de sintetizadores populares dos anos 80 e 90 e pelas primeiras placas de som e softwares sequenciadores de eventos ou partituras dos computadores pessoais. 
+Na verdade o formato não carrega parâmetros de timbres em seus metadados. Arquivo MIDI valores básicos de expressão e alturas cromáticas do gestual de uma performance instrumental, permitindo que esta seja posteriormente associada a qualquer timbre.
+
+A mensagem MIDI básica carrega informação sobre:
+
+\begin{enumerate}
+
+\item O canal onde vai atuar permitindo mixar diversos instrumentos em polifonia.
+
+\item O programa que indica o timbre.
+
+\item NoteOn/NoteOff - Nota soando , nota sem soar. o MIDI manda duas informações básicas sobre o envelope da nota. Uma primeira nota com a força inicial e o uma segunda com a mesma nota e força zero, para silenciá-la.
+
+\item "Velocity" ou expressão: força com qual a nota é tocada.
+
+\item Canal de controle para uso de escala de 127 passos que tem uso dependente da implementação da aplicação. Por exemplo, parâmetros de equalização timbre. Na prática o canal de controle é geralmente usado para receber dados de potenciômetros ou sensores analógicos e assinalado a qualquer tipo de parâmetro.
+
+\item Pitch Bend - Parâmetro para atuar diretamente na afinação de uma nota em tempo real, de modo similar ao gesto de bend de instrumentos de cordas. A especificação midi permie que este controle tenha uma granulação de 16.384 pontos e geralmente é usada para um slide que cobre duas oitavas.
+
+\item Mensagens exclusivas de sistema (SysEx) geralmente usadas por aplicações para ações independentes do gesto musical, por exemplo informar ao sistema onde onde buscar arquivos temporários de uma sessão.
+\end{enumerate}
+
+É importante ter em mente que os arquivos MIDI, por ser há mais 35 é um padrão ainda em uso, gerou um legado relevante de arquivos baseados em repertório clássico para a reconstituição de corpus de peças partituradas. Porém não são descritores capazes de garantir a boa formatação de seus dados como figuras de compasso de uma pauta tradicional, já que os arquivos MIDI não carregam informações sobre as figuras, apenas sobre suas durações, alturas e expressão. Quando importados para programas de notação ou convertidos para formatos destes, os arquivos MIDI irão passar por uma segmentação arbitrária e determinada pelo algoritmo "parser"\footnote{definir parser} que vai converter determinada duração em determinada métrica quantizada, normalmente diferente das articulações de quais as músicas foram digitalizadas.
+
+
+Veremos a seguir outros arquivos mais específicos para este fim e quando necessário será feita a conversão entre os tipos.
+
+
+
+\pagebreak
+
+\section{Lilypond}
+
+O objetivo principal aqui é a formatação de uma notação partitural avançada e otimizada para impressão em papel. Permite também a utilização de elementos de notação mais exótica, inclusão de texto, dedilhados, nomenclatura de acordes, sinais de expressão, e customização de elementos a partir de módulos. Facilita a otmização da disposição e dimensão das fontes dos objetos e possui uma linguagem script própria dialeto da sintaxe scheme\footnote{Tutorial oficial de lilypond-scheme: \url{http://lilypond.org/doc/v2.16/Documentation/source/Documentation/extending/introduction-to-scheme}}.
+
+
+
+\begin{figure}[htb]
+	\caption{\label{fig_grafico}Gerador de um acorde Dó maior (dó4 e4 g5) na clave de sol em Lilypond}
+	\begin{center}
+	    \includegraphics[scale=0.75]{score/lilypond.pdf}
+	\end{center}
+	%\legend{Fonte: autor}
+\end{figure}
+
+
+
+
+\section{MusicXML}
+
+O uso geral do formato MusicXML é similar ao Lilypond - formatação de partituras. No entanto, enquanto Lilypond é um sistema completo fechado em si próprio, o MusicXML é um formato com a intenção de tornar-se um padrão intercambiável entre diferentes aplicações de partitura\footnote{ Lista atualizada de aplicações compatíveis com o formato MusicXML: \url{http://www.musicxml.com/software/} }.
+
+
+\begin{figure}[htb]
+	\caption{\label{fig_grafico}Gerador de uma nota dó4 na clave de sol em MusicXML}
+	\begin{center}
+	    \includegraphics[scale=0.5]{score/musicxml.pdf}
+	\end{center}
+	%\legend{Fonte: autor}
+\end{figure}
+
+\pagebreak
+\section{Bibliotecas Python auxiliares}
+
+Pela sua natureza de código aberto alto-nível de orientação a objetos, Python\cite{van1995python} é uma linguagem script que tem sido amplamente adotada e ampliada por bibliotecas para as mais diversas aplicações científicas.\cite{downey2009python}
+
+Aliada ao uso de algumas bibliotecas específicas para arquivos de segmentação partitural, Python mostra-se uma ferramenta prática para formatação dinâmica de partituras prontas para impressão ou para auxiliar a análise de dados quantitativos de corpus de partituras.
+
+Falaremos a seguir de duas dessas bibliotecas utilizadas como ferramenta auxiliar nesta pesquisa:
+
+
+\subsection{Abjad}
+
+É uma biblioteca voltada para a formatação de clichês em notação partitural pronta para impressão em papel, baseada na manipulação de templates no formato lilypond. A biblioteca apresenta alguns templates baseados em peças de Bártok, Ligeti, Ferneyhough e Mozart.
+
+
+
+\subsection{Music 21}
+
+
+
 
 % ---
 
@@ -1614,13 +1814,14 @@ A busca por regras gerativas\cite{roads1979grammars} que pudessem formalizar alg
 
 Por um lado revisamos uma corrente teórica que enumera estruturas operantes nas expectativas da música tonal, sobre aquele repertório considerado como prática comum nas análises funcionais das cadências, modulações, prolongamentos, tensão e relaxamento. Tais teorias argumentam que esta normatização é derivada de um condicionamento cultural na escuta da música ocidental e procura justificar suas regras de "boa-formação" ou "preferência"\cite{lerdahl1983generative,temperley2004cognition} legitimando as fórmulas a partir de teorias como as teses linguísticas das estruturas de sintaxe derivadas da fala\cite{chomsky1957syntactic} e pesquisas de campo em cognição musical básica das relações entre intervalos e percepção subjetiva das alturas em seu espaço tonal inferido pelo ouvinte\cite{krumhansl1990cognitive,lerdahl2001tonal}. 
 
-Por outro lado nos chamou atenção que paralelo a fundamentação destas teorias, nas últimas décadas do século XX, estruturou-se uma "teoria das classes de altura"\cite{forte1973structure,rahn1980basic,perle1990pitch,straus2004} baseada numa catalogação de combinações de intervalos formando compostos sonoros singulares e as possíveis estruturações e articulações destes. Ali operariam critérios não necessariamente tão amarrados na funcionalidade dos esquemas de tensão e relaxamento que operam as formas "tonalizantes" da prática comum, e vertiginosamente é preciso admitir que cada composição pode comportar um sistema totalmente idiossincrático. Ao contrário da corrente cognitivista, uma criatividade autoral do analista neste caso admite que as formas estão ali porque foram apontadas, não porque foram intuídas pelo compositor (podem ter sido atingidas inconscientemente). Também não buscam justificar expectativas do ouvinte.\cite{babbitt1958cares}
+Por outro lado nos chamou atenção que paralelo a fundamentação destas teorias, nas últimas décadas do século XX, estruturou-se com a sedimentação de uma tradição pós-tonal iniciada nas suas primeiras décadas, uma "teoria de grupos das classes de altura"\cite{forte1973structure,rahn1980basic,perle1990pitch,straus2004} baseada numa catalogação de combinações de intervalos formando compostos sonoros singulares e as possíveis estruturações e articulações entre estes. Ali operariam critérios não necessariamente tão amarrados na funcionalidade dos esquemas de tensão e relaxamento das formas "tonalizantes". Mesmo que vertiginosamente, é preciso admitir que cada composição já pode comportar um sistema totalmente idiossincrático. Ao contrário da corrente cognitivista, neste caso uma criatividade autoral do analista assume que as formas estão emergindo ali a príncipio porque foram apontadas, e não necessáriamente porque foram intuídas pelo compositor. Também não buscam justificar expectativas do ouvinte que guiariam a normatização de uma busca composicional da "boa forma" pré-concebida.\cite{babbitt1958cares}
 
-Dadas estas duas perspectivas pretendemos continuar este trabalho com uma organização dos algoritmos em bibliotecas das linguagens de programação apontadas no capítulo x, incluindo aí boas práticas nas linguagens almejando um bom uso destas teorias em processos composicionais. Nos interessa testar algumas destas tecnologias e os limites práticos destas implementações, deixando um legado tecnicamente viável e acessível, utilizando ferramentas e bibliotecas de software livre.
+Dadas estas duas perspectivas pretendemos continuar este trabalho com uma organização dos algoritmos sugeridos por estas em bibliotecas das linguagens de programação apontadas na \autoref{computacional}, incluindo aí apontar boas práticas nas linguagens almejando um bom uso destas teorias em processos composicionais. Nos interessa testar os limites práticos destas implementações, deixando um legado tecnicamente viável e acessível, utilizando ferramentas e bibliotecas auxiliares disponíveis em software livre.
 
-Utilizaremos um corpus de peças do repertório pianístico e pedagógico de peças da suíte Mikrokosmos de Béla Bártok que será revisado no formato musicxml, buscando respeitar a grafia das partituras orginais. 
+Utilizaremos um corpus de peças do repertório pianístico e pedagógico de peças da suíte Mikrokosmos de Béla Bártok que será revisado no formato musicxml para o estudo computacional, buscando respeitar a grafia das partituras orginais. 
+
 Partiremos de pistas já deixadas por autores que aprofundaram o tema \cite{marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}.
-Mais do que encontrar alguma nova abordagem sobre estas peças, interessa a demonstração de algumas regras gerativas observadas para em seguida serem utilizados de maneira mais livre em procedimentos composicionais.
+Mais do que encontrar alguma nova abordagem analítica sobre estas peças, interessa a demonstração de algumas regras gerativas observadas para em seguida serem utilizados de maneira mais livre em procedimentos composicionais.
 
 
 
