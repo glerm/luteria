@@ -5,11 +5,6 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
-\bibitem[Adorno 1974]{adorno1974filosofia}
-\abntrefinfo{Adorno}{ADORNO}{1974}
-{ADORNO, T. \emph{Filosofia da M{\'{u}}sica Nova}. S{\~a}o Paulo: Perspectiva,
-  1974.}
-
 \bibitem[Andreatta 2014]{AndreataOMtutorial}
 \abntrefinfo{Andreatta}{ANDREATTA}{2014}
 {ANDREATTA, M. \emph{OM Pitch Class Set Tutorial}. 2014.
@@ -51,11 +46,6 @@ ISBN 2752100523.}
   the 19th ACM international conference on Multimedia}. [S.l.], 2011. p.
   743--746.}
 
-\bibitem[Cage 2002]{cagekostelanetz2002conversing}
-\abntrefinfo{Cage}{CAGE}{2002}
-{CAGE, J. Conversing with cage.
-In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.]: Routledge, 2002.}
-
 \bibitem[Chomsky 1957]{chomsky1957syntactic}
 \abntrefinfo{Chomsky}{CHOMSKY}{1957}
 {CHOMSKY, N. Syntactic structures.
@@ -71,20 +61,10 @@ Mouton, 1957.}
   perspective.
 \emph{Journal of Music Theory}, JSTOR, p. 167--180, 1998.}
 
-\bibitem[Cope 2004]{cope2004virtual}
-\abntrefinfo{Cope}{COPE}{2004}
-{COPE, D. \emph{Virtual Music: Computer Synthesis of Musical Style}. [S.l.]:
-  MIT Press, 2004.}
-
 \bibitem[Cortazar 1963]{cortazar1963}
 \abntrefinfo{Cortazar}{CORTAZAR}{1963}
 {CORTAZAR, J. \emph{O Jogo Da Amarelinha}. [S.l.]: Editora Civilizacao
   Brasileira, 1963.}
-
-\bibitem[Cramer 2005]{cramer2005words}
-\abntrefinfo{Cramer}{CRAMER}{2005}
-{CRAMER, F. \emph{Words Made Flesh: Code, Culture, Imagination}. Holanda: Piet
-  Zwart Institute, 2005.}
 
 \bibitem[Debril 2014]{DebrilOM}
 \abntrefinfo{Debril}{DEBRIL}{2014}
@@ -113,11 +93,6 @@ Dispon{\'\i}vel em: \url{http://www.deb8076.eu/AnalyseBeethovenST/index.html}.}
 {FORTE, A. \emph{The harmonic organization of the rite of spring}. [S.l.]: Yale
   University Press, 1978.}
 
-\bibitem[Godwin 1979]{godwin1979athanasius}
-\abntrefinfo{Godwin}{GODWIN}{1979}
-{GODWIN, J. \emph{Athanasius Kircher: a renaissance man and the quest for lost
-  knowledge}. Londres: Thames and Hudson, 1979.}
-
 \bibitem[Guigue 1995]{guigue1995analise}
 \abntrefinfo{Guigue}{GUIGUE}{1995}
 {GUIGUE, D. Para uma an{\'a}lise orientada a objetos.
@@ -140,26 +115,10 @@ Dispon{\'\i}vel em: \url{http://www.deb8076.eu/AnalyseBeethovenST/index.html}.}
   tonal music.
 \emph{Danish Yearbook of Musicology}, v.~2010, n.~38, p. 33--55, 2011.}
 
-\bibitem[Hofstadter 2000]{hofstadter2000godel}
-\abntrefinfo{Hofstadter}{HOFSTADTER}{2000}
-{HOFSTADTER, D.~R. \emph{Godel, Escher, Bach: An Eternal Golden Braid}. [S.l.]:
-  Penguin Books, Limited, 2000.}
-
-\bibitem[Hofstadter 2004]{hofstadter2004virtualstaringemmy}
-\abntrefinfo{Hofstadter}{HOFSTADTER}{2004}
-{HOFSTADTER, D.~R. Staring emmy straight in th eye - and doing my best not to
-  flinch. In:  COPE, D. (Ed.). \emph{Virtual Music: Computer Synthesis of
-  Musical Style}. Cambridge: MIT Press, 2004.}
-
 \bibitem[Iazzetta 2009]{iazzetta2009musica}
 \abntrefinfo{Iazzetta}{IAZZETTA}{2009}
 {IAZZETTA, F. \emph{M{\'u}sica e media{\c{c}}{\~a}o tecnol{\'o}gica}. S{\~a}o
   Paulo: Perspectiva-Fapesp, 2009.}
-
-\bibitem[Kircher 1650]{kircher1650}
-\abntrefinfo{Kircher}{KIRCHER}{1650}
-{KIRCHER, A. Musurgia universalis, sive ars magna consoni et dissoni.
-Francesco Corbelletti, Roma, 1650.}
 
 \bibitem[Krumhansl 1983]{krumhansl1983perceptual}
 \abntrefinfo{Krumhansl}{KRUMHANSL}{1983}
@@ -170,15 +129,6 @@ Francesco Corbelletti, Roma, 1650.}
 \abntrefinfo{Krumhansl}{KRUMHANSL}{1990}
 {KRUMHANSL, C.~L. \emph{Cognitive foundations of musical pitch}. [S.l.]: Oxford
   University Press New York, 1990.}
-
-\bibitem[Kurzweil 2005]{kurzweil2005singularity}
-\abntrefinfo{Kurzweil}{KURZWEIL}{2005}
-{KURZWEIL, R. \emph{The singularity is near: When humans transcend biology}.
-  [S.l.]: Penguin, 2005.}
-
-\bibitem[Langton 1997]{langton1997artificial}
-\abntrefinfo{Langton}{LANGTON}{1997}
-{LANGTON, C.~G. \emph{Artificial life: An overview}. [S.l.]: Mit Press, 1997.}
 
 \bibitem[Laske 1977]{laske1977music}
 \abntrefinfo{Laske}{LASKE}{1977}
@@ -266,12 +216,6 @@ Tese (Doutorado), 1946.}
   structures.
 \emph{Musicae Scientae}, v.~6, n.~2, p. 287--302, 2002.}
 
-\bibitem[Minsky 2007]{minsky2007emotion}
-\abntrefinfo{Minsky}{MINSKY}{2007}
-{MINSKY, M. \emph{The Emotion Machine: Commonsense Thinking, Artificial
-  Intelligence, and the Future of the Human Mind}. [S.l.]: Simon \& Schuster,
-  2007.}
-
 \bibitem[Moorer 1972]{moorer1972music}
 \abntrefinfo{Moorer}{MOORER}{1972}
 {MOORER, J.~A. Music and computer composition.
@@ -306,11 +250,6 @@ Dispon{\'\i}vel em: \url{http://www.unirio.br/conferir}.}
   an{\'a}lise das estruturas musicais.
 \emph{Per Musi}, v.~9, p. 5--46, 2004.}
 
-\bibitem[Nierhaus 2009]{nierhaus2009algorithmic}
-\abntrefinfo{Nierhaus}{NIERHAUS}{2009}
-{NIERHAUS, G. \emph{Algorithmic composition: paradigms of automated music
-  generation}. [S.l.]: Springer, 2009.}
-
 \bibitem[Perle 1990]{perle1990pitch}
 \abntrefinfo{Perle}{PERLE}{1990}
 {PERLE, G. Pitch-class set analysis: An evaluation.
@@ -322,11 +261,6 @@ Dispon{\'\i}vel em: \url{http://www.unirio.br/conferir}.}
   of Schoenberg, Berg, and Webern}. University of California Press, 1991.
 ISBN 9780520074309. Dispon{\'\i}vel em:
   \url{http://books.google.com.br/books?id=4C8RjEaBRf4C}.}
-
-\bibitem[Pessis-Pasternak 1993]{pessis1993caos}
-\abntrefinfo{Pessis-Pasternak}{PESSIS-PASTERNAK}{1993}
-{PESSIS-PASTERNAK, G. \emph{Do caos {\`{a}} intelig{\^{e}}ncia artificial}.
-  [S.l.]: Unesp, 1993.}
 
 \bibitem[Puckette 2006]{puckettecomputing}
 \abntrefinfo{Puckette}{PUCKETTE}{2006}
@@ -367,31 +301,26 @@ Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/25164542}.}
 {ROSSUM, G. V.; JR, F.~L. D. \emph{Python reference manual}. [S.l.]: Centrum
   voor Wiskunde en Informatica Amsterdam, 1995.}
 
-\bibitem[Russolo 2009]{russolo2009arte}
-\abntrefinfo{Russolo}{RUSSOLO}{2009}
-{RUSSOLO, L. \emph{L'arte dei rumori}. [S.l.]: Nuovi Equilibri, 2009.}
-
 \bibitem[Ruwet 1975]{ruwet1975theorie}
 \abntrefinfo{Ruwet}{RUWET}{1975}
 {RUWET, N. Th{\'e}orie et m{\'e}thodes dans les {\'e}tudes musicales.
 \emph{Musique en jeu}, v.~17, p. 11--35, 1975.}
 
-\bibitem[Schwanauer e Levitt 1993]{schwanauer1993machine}
-\abntrefinfo{Schwanauer e Levitt}{SCHWANAUER; LEVITT}{1993}
-{SCHWANAUER, S.~M.; LEVITT, D.~A. \emph{Machine models of music}. [S.l.]: MIT
-  Press, 1993.}
+\bibitem[Schaeffer 1966]{shaeffer1966traite}
+\abntrefinfo{Schaeffer}{SCHAEFFER}{1966}
+{SCHAEFFER, P. \emph{Traite des objets musicaux. Essai interdisciplines.}
+  Paris: Ed. du Seuil, 1966.}
+
+\bibitem[Smalley 1997]{smalley1997spectromorphology}
+\abntrefinfo{Smalley}{SMALLEY}{1997}
+{SMALLEY, D. Spectromorphology: explaining sound-shapes.
+\emph{Organised sound}, Cambridge Univ Press, v.~2, n.~02, p. 107--126, 1997.}
 
 \bibitem[Smoliar 1976]{smoliar1976music}
 \abntrefinfo{Smoliar}{SMOLIAR}{1976}
 {SMOLIAR, S.~W. Music programs: An approach to music theory through
   computational linguistics.
 \emph{Journal of Music Theory}, JSTOR, p. 105--131, 1976.}
-
-\bibitem[Stockhausen 1996]{stockhausen1996situacao}
-\abntrefinfo{Stockhausen}{STOCKHAUSEN}{1996}
-{STOCKHAUSEN, K. A situa{\c{c}}{\~a}o do metier, a composi{\c{c}}{\~a}o do som.
-\emph{M{\'u}sica Eletroac{\'u}stica, Hist{\'o}ria e est{\'e}ticas. S{\~a}o
-  Paulo: Editora da Universidade de S{\~a}o Paulo}, 1996.}
 
 \bibitem[Straus 2004]{straus2004}
 \abntrefinfo{Straus}{STRAUS}{2004}
@@ -424,39 +353,14 @@ Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/25164542}.}
 {TEMPERLEY, D. \emph{The cognition of basic musical structures}. [S.l.]: MIT
   press, 2004.}
 
-\bibitem[Turing 1936]{turing1936computable}
-\abntrefinfo{Turing}{TURING}{1936}
-{TURING, A.~M. On computable numbers, with an application to the
-  entscheidungsproblem.
-\emph{Journal of Math}, v.~58, p. 345--363, 1936.}
-
-\bibitem[Turing 1950]{turing1950computing}
-\abntrefinfo{Turing}{TURING}{1950}
-{TURING, A.~M. Computing machinery and intelligence.
-\emph{Mind}, JSTOR, p. 433--460, 1950.}
-
-\bibitem[Wiener et al. 1948]{wiener1948cybernetics}
-\abntrefinfo{Wiener et al.}{WIENER et al.}{1948}
-{WIENER, N. et al. \emph{Cybernetics}. New York: J. Wiley, 1948.}
+\bibitem[Tenney e Polansky 1980]{tenney1980temporal}
+\abntrefinfo{Tenney e Polansky}{TENNEY; POLANSKY}{1980}
+{TENNEY, J.; POLANSKY, L. Temporal gestalt perception in music.
+\emph{Journal of Music Theory}, JSTOR, p. 205--241, 1980.}
 
 \bibitem[Winograd 1968]{winograd1968linguistics}
 \abntrefinfo{Winograd}{WINOGRAD}{1968}
 {WINOGRAD, T. Linguistics and the computer analysis of tonal harmony.
 \emph{Journal of Music Theory}, JSTOR, p. 2--49, 1968.}
-
-\bibitem[Wolfram 2002]{wolfram2002new}
-\abntrefinfo{Wolfram}{WOLFRAM}{2002}
-{WOLFRAM, S. \emph{A new kind of science}. [S.l.]: Wolfram media Champaign,
-  2002.}
-
-\bibitem[Xenakis 1992]{xenakis1992formalized}
-\abntrefinfo{Xenakis}{XENAKIS}{1992}
-{XENAKIS, I. \emph{Formalized music: thought and mathematics in composition}.
-  [S.l.]: Pendragon Press, 1992.}
-
-\bibitem[Zielinski 2006]{zielinski2006arqueologia}
-\abntrefinfo{Zielinski}{ZIELINSKI}{2006}
-{ZIELINSKI, S. \emph{Arqueologia da m{\'{i}}dia: em busca do tempo remoto das
-  t{\'{e}}cnicas do ver e do ouvir}. S{\~a}o Paulo: Annablume, 2006.}
 
 \end{thebibliography}

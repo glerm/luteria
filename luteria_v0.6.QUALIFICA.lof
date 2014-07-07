@@ -1,38 +1,37 @@
 \select@language {brazil}
 \contentsline {figure}{\numberline {1}{\ignorespaces Fluxograma de \citeonline {lerdahl2009genesis} para a GTTM}}{24}{figure.2.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces Agrupamento de motivos do in\IeC {\'\i }cio da sinfonia K550 de Mozart.}}{25}{figure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Exemplos de agrupamentos \IeC {\textquotedblleft }mal formados\IeC {\textquotedblright } de acordo com a regra GWFR5}}{25}{figure.2.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Open Music 01}}{27}{figure.2.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Elisao ou Contra\IeC {\c c}\IeC {\~a}o}}{28}{figure.2.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Formaliza\IeC {\c c}\IeC {\~a}o visual dos problemas de elis\IeC {\~a}o e sobreposi\IeC {\c c}\IeC {\~a}o de camadas na GTTM. \cite [ p.69]{lerdahl1983generative}}}{28}{figure.2.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o anal\IeC {\'\i }tica proposta pela GTTM que marca uma hierarquia das batidas por subdivis\IeC {\~o}es de pulsos}}{29}{figure.2.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces "Ideias verdes descoloridas dormem furiosamente"\cite {chomsky1957syntactic}}}{33}{figure.2.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o anal\IeC {\'\i }tica proposta pela GTTM para a ramifica\IeC {\c c}\IeC {\~a}o dos intervalos-temporais.}}{33}{figure.2.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o em \IeC {\'a}rvore proposta pela GTTM apicada na melodia inicial de Mikrokosmos 113 de B\IeC {\'a}rtok.}}{34}{figure.2.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces For\IeC {\c c}as tonais nos prolongamentos revistas por Fred \citeonline {lerdahl1988tps} }}{35}{figure.2.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Espa\IeC {\c c}o tonal diat\IeC {\^o}nico proposto por Fred \citeonline {lerdahl1988tps,lerdahl1996calculating} }}{35}{figure.2.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Prolongamentos na Sinfonia K.238 }}{36}{figure.2.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Exemplo de aplica\IeC {\c c}\IeC {\~a}o da f\IeC {\'o}rmula das dist\IeC {\^a}ncias }}{36}{figure.2.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Ciclo de dominantes e subdominantes em modo circular }}{38}{figure.2.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Linha enarm\IeC {\^o}nica das quintas proposta por Temperley. }}{38}{figure.2.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Escala de D\IeC {\'o} maior na linha enarm\IeC {\^o}nica das quintas proposta por Temperley. }}{38}{figure.2.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Escalas modais na linha enarm\IeC {\^o}nica das quintas proposta por Temperley. }}{39}{figure.2.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces "Supermodo" combinando os modos da figura anterior na linha enarm\IeC {\^o}nica das quintas proposta por Temperley. }}{39}{figure.2.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Escala de D\IeC {\'o} maior - R\IeC {\'e} como centro de gravidade. }}{40}{figure.2.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Perfis de tonalidade propostos por Carol \citeonline {krumhansl1990cognitive} - comparativo entre tonalidades pr\IeC {\'o}ximas ou distantes. }}{41}{figure.2.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Perfis de tonalidade propostos por Carol \citeonline {krumhansl1990cognitive} - histograma demonstrado por \citeonline {temperley2004cognition}. }}{42}{figure.2.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Perfis de tonalidade para Do maior e Do menor modificados por \citeonline {temperley2004cognition}. }}{43}{figure.2.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Extens\IeC {\~a}o das regras de GTTM na obra \IeC {\textquotedblleft }Tonal Pitch Space\IeC {\textquotedblright } propostas por \citeonline {lerdahl2009genesis} }}{44}{figure.2.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces [0,2,4,10] }}{49}{figure.3.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Redu\IeC {\c c}\IeC {\~a}o de um segmento do Microkosmos 101 de B\IeC {\'a}rtok para um cluster de 4 alturas. }}{50}{figure.3.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces Forma Normal. }}{51}{figure.3.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces F\IeC {\'o}rmulas de agrupamento de classes de altura. }}{52}{figure.3.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces Notas comuns na transposi\IeC {\c c}\IeC {\~a}o. }}{54}{figure.3.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces Notas comuns na transposi\IeC {\c c}\IeC {\~a}o com tr\IeC {\'\i }tono. }}{55}{figure.3.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces A simetria transpositiva \IeC {\'e} obtida atrav\IeC {\'e}s de um padr\IeC {\~a}o de intervalos pal\IeC {\'\i }ndromo. }}{55}{figure.3.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces A forma circular \IeC {\'e} mais geral do que a num\IeC {\'e}rica para a visualiza\IeC {\c c}\IeC {\~a}o do padr\IeC {\~a}o de simetrias. }}{56}{figure.3.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces O complemento cont\IeC {\'e}m todas alturas crom\IeC {\'a}ticas que o conjunto original n\IeC {\~a}o possui. }}{57}{figure.3.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces Dois conjuntos Z-relacionados possuem os mesmos intervalos sem serem invers\IeC {\~o}es ou transposi\IeC {\c c}\IeC {\~o}es um dos outros. }}{57}{figure.3.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces Objeto Chord-Seq do Opem Music}}{64}{figure.4.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces Gerador de um acorde D\IeC {\'o} maior (d\IeC {\'o}4 e4 g5) na clave de sol em Lilypond}}{69}{figure.5.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces Gerador de uma nota d\IeC {\'o}4 na clave de sol em MusicXML}}{70}{figure.5.37}
+\contentsline {figure}{\numberline {3}{\ignorespaces Exemplos de agrupamentos \IeC {\textquotedblleft }mal formados\IeC {\textquotedblright } de acordo com a regra GWFR5}}{26}{figure.2.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Formaliza\IeC {\c c}\IeC {\~a}o visual dos problemas de elis\IeC {\~a}o e sobreposi\IeC {\c c}\IeC {\~a}o de camadas na GTTM. \cite [ p.69]{lerdahl1983generative}}}{27}{figure.2.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Open Music}}{28}{figure.2.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o anal\IeC {\'\i }tica proposta pela GTTM que marca uma hierarquia das batidas por subdivis\IeC {\~o}es de pulsos}}{29}{figure.2.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces "Ideias verdes descoloridas dormem furiosamente"\cite {chomsky1957syntactic}}}{33}{figure.2.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o anal\IeC {\'\i }tica proposta pela GTTM para a ramifica\IeC {\c c}\IeC {\~a}o dos intervalos-temporais.}}{33}{figure.2.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o em \IeC {\'a}rvore proposta pela GTTM apicada na melodia inicial de Mikrokosmos 113 de B\IeC {\'a}rtok.}}{34}{figure.2.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces For\IeC {\c c}as tonais nos prolongamentos revistas por Fred \citeonline {lerdahl1988tps} }}{35}{figure.2.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Espa\IeC {\c c}o tonal diat\IeC {\^o}nico proposto por Fred \citeonline {lerdahl1988tps,lerdahl1996calculating} }}{35}{figure.2.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Prolongamentos na Sinfonia K.238 }}{36}{figure.2.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Exemplo de aplica\IeC {\c c}\IeC {\~a}o da f\IeC {\'o}rmula das dist\IeC {\^a}ncias }}{36}{figure.2.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Ciclo de dominantes e subdominantes em modo circular }}{38}{figure.2.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Linha enarm\IeC {\^o}nica das quintas proposta por Temperley. }}{38}{figure.2.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Escala de D\IeC {\'o} maior na linha enarm\IeC {\^o}nica das quintas proposta por Temperley. }}{38}{figure.2.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Escalas modais na linha enarm\IeC {\^o}nica das quintas proposta por Temperley. }}{39}{figure.2.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces "Supermodo" combinando os modos da figura anterior na linha enarm\IeC {\^o}nica das quintas proposta por Temperley. }}{39}{figure.2.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Escala de D\IeC {\'o} maior - R\IeC {\'e} como centro de gravidade. }}{40}{figure.2.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Perfis de tonalidade propostos por Carol \citeonline {krumhansl1990cognitive} - comparativo entre tonalidades pr\IeC {\'o}ximas ou distantes. }}{41}{figure.2.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Perfis de tonalidade propostos por Carol \citeonline {krumhansl1990cognitive} - histograma demonstrado por \citeonline {temperley2004cognition}. }}{42}{figure.2.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Perfis de tonalidade para Do maior e Do menor modificados por \citeonline {temperley2004cognition}. }}{43}{figure.2.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Extens\IeC {\~a}o das regras de GTTM na obra \IeC {\textquotedblleft }Tonal Pitch Space\IeC {\textquotedblright } propostas por \citeonline {lerdahl2009genesis} }}{44}{figure.2.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces [0,2,4,10] }}{49}{figure.3.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Redu\IeC {\c c}\IeC {\~a}o de um segmento do Microkosmos 101 de B\IeC {\'a}rtok para um cluster de 4 alturas. }}{50}{figure.3.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Forma Normal. }}{51}{figure.3.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces F\IeC {\'o}rmulas de agrupamento de classes de altura. }}{52}{figure.3.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces Notas comuns na transposi\IeC {\c c}\IeC {\~a}o. }}{54}{figure.3.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Notas comuns na transposi\IeC {\c c}\IeC {\~a}o com tr\IeC {\'\i }tono. }}{55}{figure.3.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces A simetria transpositiva \IeC {\'e} obtida atrav\IeC {\'e}s de um padr\IeC {\~a}o de intervalos pal\IeC {\'\i }ndromo. }}{55}{figure.3.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces A forma circular \IeC {\'e} mais geral do que a num\IeC {\'e}rica para a visualiza\IeC {\c c}\IeC {\~a}o do padr\IeC {\~a}o de simetrias. }}{56}{figure.3.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces O complemento cont\IeC {\'e}m todas alturas crom\IeC {\'a}ticas que o conjunto original n\IeC {\~a}o possui. }}{57}{figure.3.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces Dois conjuntos Z-relacionados possuem os mesmos intervalos sem serem invers\IeC {\~o}es ou transposi\IeC {\c c}\IeC {\~o}es um dos outros. }}{57}{figure.3.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Objeto Chord-Seq do Opem Music}}{64}{figure.4.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces Gerador de um acorde D\IeC {\'o} maior (d\IeC {\'o}4 e4 g5) na clave de sol em Lilypond}}{69}{figure.5.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces Gerador de uma nota d\IeC {\'o}4 na clave de sol em MusicXML}}{70}{figure.5.36}
