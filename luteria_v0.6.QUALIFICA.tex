@@ -857,8 +857,8 @@ difficulties in this regard. \cite[p. 191]{lerdahl2009genesis}}
 
 Posteriormente ao GTTM, Lerdahl investe esforços no desenvolvimento da teoria de espaço tonal\cite{lerdahl1988tps}, que foi fortemente baseado nas pesquisas de quantificação das condições para estabilidade da percepção de contextos tonais argumentada por Carol Krumhansl em seu artigo "Perceptual structures of tonal music"\cite{krumhansl1983perceptual} e fundamentada em mais profundidade no livro "Cognitive structures of pitch"\cite{krumhansl1990cognitive}. Como veremos mais adiante este trabalho também influenciou os algoritmos de harmonia e tonalidade de David Temperley em seu "Cognitive Basic Music Structures"\cite{temperley2004cognition}. 
 
+\pagebreak
 Mais recentemente, Lerdahl atualiza sua teoria do espeço tonal\cite{lerdahl2001tonal} buscando alguns argumentos novos sobre transformações cromáticas algébricas fundamentadas pela corrente musicológica "Neo-Riemaniana"\cite{cohn1998introduction,lewin2007generalized} e escreve com Krumhansl um artigo chamado "Modeling Tonal Tension"\cite{2007lerdahl-krumhansl} buscando legitimar sua teoria através de testes cognitivos com uma audiência.
-
 
 \begin{citacao}
 A ideia é que a distância cognitiva de um evento de um ponto dado de referência mede a instabilidade do evento em relação a este ponto de referência. Na suposição que o ouvinte inconscientemente busca uma interpretação mais estável de uma passagem musical, o principio TPS ["Espaço de Alturas Tonais"] do menor caminho seleciona eventos revelando as menores distâncias disponíveis para superordenar eventos em cada estágio da redução prolongacional.\cite[p. 191]{lerdahl2009genesis}\footnote{The idea is that the cognitive distance of an event from a given reference point measures the instability of that
@@ -866,11 +866,21 @@ event in relation to the reference point. On the assumption that the listener un
 the shortest path selects events yielding the smallest available distances from superordinate events at each stage of prolongational reduction. \cite[p. 191]{lerdahl2009genesis}}
 \end{citacao}
 
+%%%%%%%%%%%%%%%%%% tonal pitch space
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Extensão das regras de GTTM na obra “Tonal Pitch Space” propostas por \citeonline{lerdahl2009genesis} }
+	\begin{center}
+	    \includegraphics[scale=0.5]{gttm/GTTM_TPS_rules.pdf}
+	\end{center}
+	\legend{Fonte: \cite[ tradução do autor.]{lerdahl2009genesis} }
+\end{figure}
+
+
 Considerando esta atualização da teoria optamos por não entrar em detalhes destes dois escopos mais frágeis da GTTM e focamos diretamente em derivações posteriores que os problematizam em outros termos. Tomamos dos estudos de Lerdahl posteriores ao GTTM  por enquanto apenas seu conceito de tensão e estabilidade desenvolvido em sua "teoria do espaço tonal"("Tonal Pitch Space", doravante referida como TPS) na próxima sessão. Em seguida apresentamos uma alternativa derivada da GTTM, elaborada por David Temperley e implmentada computacionalmente em seu trabalho "Cognition of Basic Musical Structures"\cite{temperley2004cognition}.
 
 
 
-
+\pagebreak
 \subsubsection{Calculando a tensão e o Espaço das alturas tonais (TPS) }
 
 
@@ -886,13 +896,12 @@ Para a segmentação prolongacional da GTTM \citeonline{lerdahl1983generative} j
 
 A frase \textbf{"Ideias verdes descoloridas dormem furiosamente"} é usada por \citeonline{chomsky1957syntactic} em sua argumentação sobre a construção de uma frase onde a ordem correta e implicação funcional das palavras determina sentido mas não uma semântica estrita. Mesmo a tradução para português já revela uma problemática básica para os algoritmos de tradutores textuais - se traduzirmos literalmente palavra por palavra não teremos uma frase bem construída: \textbf{"Descoloridas verde ideias dormem furiosamente"}.
 
-A analogia de um segmento musical implicando ou sendo implicado por outro é usada na GTTM da seguinte maneira:
 
 %%%%%%%%%%%%%%%%%% tree
-\begin{figure}[htb]
-	\caption{\label{fig_grafico}Notação analítica proposta pela GTTM para a ramificação dos intervalos-temporais.}
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}A analogia de um segmento musical implicando ou sendo implicado por outro é usada na GTTM.}
 	\begin{center}
-	    \includegraphics[scale=0.5]{gttm/ramificacoes_arvore.pdf}
+	    \includegraphics[scale=0.4]{gttm/ramificacoes_arvore.pdf}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
@@ -901,46 +910,33 @@ A analogia de um segmento musical implicando ou sendo implicado por outro é usa
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Notação em árvore proposta pela GTTM apicada na melodia inicial de Mikrokosmos 113 de Bártok.}
 	\begin{center}
-	    \includegraphics[scale=0.45]{mikro/mikro113_GTTM_tree.png}
+	    \includegraphics[scale=0.4]{mikro/mikro113_GTTM_tree.png}
 	\end{center}
 	\legend{Fonte: autor}
-\end{figure}
-
+\end{figure} 
 
 \pagebreak
-Na GTTM\cite[pg. 182]{lerdahl1983generative} é argumentada uma notação com círculos brancos para prolongamentos fortes e pretos para prolongamentos fracos. 
-
-Em seu artigo "Calculating Tonal Tension"\cite{lerdahl1996calculating} elabora com mais rigor o desenvolvimento de um critério para determinar numericamente estas forças e decidir prolongamentos que prevalecem nas reduções ou argumentar momentos de mudança de contexto tonal. 
+Na GTTM\cite[pg. 182]{lerdahl1983generative} é argumentada uma notação com círculos brancos para prolongamentos fortes e pretos para prolongamentos fracos. No entanto naquele momento ainda não havia uma argumento quantitativo rigoroso para medir estas forças.
 
 %%%%%%%%%%%%%%%%%% tree
-\begin{figure}[htb]
+\begin{figure}[!h]
 	\caption{\label{fig_grafico}Forças tonais nos prolongamentos revistas por Fred \citeonline{lerdahl1988tps} }
 	\begin{center}
-	    \includegraphics[scale=0.6]{lerdahl/prolongation_calculating.png}
+	    \includegraphics[scale=0.5]{lerdahl/prolongation_calculating.png}
 	\end{center}
 	\legend{Fonte: \cite[p. 322]{lerdahl1996calculating} }
 \end{figure}
 
+
+Em seus artigos "Tonal Pitch Space"\cite{lerdahl1988tps} e "Calculating Tonal Tension"\cite{lerdahl1996calculating} elabora com mais rigor o desenvolvimento de um critério para determinar numericamente estas forças e decidir prolongamentos que prevalecem nas reduções ou argumentar momentos de mudança de contexto tonal. 
+
+
 A fórmula determina um peso para a transformação da condução de vozes para arbitrar uma escala de valores numéricos entre os adjetivo "forte" e "fraco" que permite especular uma computabilidade destes movimentos de tensão e relaxamento.
 
-Lerdahl utliza o modelo de espaço derivado de \citeonline{deutsch1981internal} , que hierarquiza as alturas em níveis cromático, diatônico, triádico, quintas e oitavas.
+Lerdahl utliza o modelo de espaço derivado de \citeonline{deutsch1981internal} , que hierarquiza as alturas em níveis cromático, diatônico, triádico, quintas e oitavas. Distribui as alturas normalizadas em grupos de classe de alturas, desconsiderando o registro de oitava, para em seguida comparar as regiões.
 
-
-O exemplo usado é o início da Sonata K.282 de Mozart, demonstrando as tonalidades a partir do I grau de Eb maior. 
-
-$ \left\{
-  \begin{array}{l l}
-    Nível Oitava:[3]\to[Eb]\to Tonalidade\\
-    Nível Quinta:[3,10]\to[Eb,Bb]\to Dominante\\
-    Nível Tríadico:[3,7,10]\to[Eb,G,Bb]\to Tríade\;Maior \\
-    Nível Diatônico:[3,5,7,10,0,2] \to Escala\;de\;Eb\; Maior \\
-    Nível Diatônico:[0...11] \to Sequencia\;cromática\;completa \\
-  \end{array} \right.
-$
-
-\pagebreak
 %%%%%%%%%%%%%%%%%% tree
-\begin{figure}[htb]
+\begin{figure}[!h]
 	\caption{\label{fig_grafico}Espaço tonal diatônico proposto por Fred \citeonline{lerdahl1988tps,lerdahl1996calculating} }
 	\begin{center}
 	    \includegraphics[scale=0.4]{lerdahl/diatonic_pitchspace_p322.png}
@@ -948,9 +944,22 @@ $
 	\legend{Fonte: \cite[p. 322]{lerdahl1996calculating} }
 \end{figure}
 
+O exemplo usado é o início da Sonata K.282 de Mozart, demonstrando as tonalidades a partir do I grau de Eb maior. 
+
+$ Eb:I\left\{
+  \begin{array}{l l}
+    Nível Oitava:[3]\to[Eb]\to Tonalidade\\
+    Nível Quinta:[3,10]\to[Eb,Bb]\to Dominante\\
+    Nível Tríadico:[3,7,10]\to[Eb,G,Bb]\to Tríade\;Maior \\
+    Nível Diatônico:[3,5,7,10,0,2] \to Escala\;de\;Eb\; Maior \\
+    Nível Diatônico:[0...11] \to Sequencia\;cromática\;completa \\
+    
+  \end{array} \right.
+$
+
 Para decidir quais graus do prolongamento são mais fortes a ponto de permanecerem em reduções e figurarem como tensão e relaxamento, \citeonline[pg.232]{lerdahl1996calculating} utiliza a fórmula: 
 $
-distância(x \to y) = i+j+k
+distância(x \to y) = i+j+k \\
 $
 
 
@@ -964,7 +973,7 @@ k=graus\;cromáticos\;em\;comum \\
 $
 \pagebreak
 %%%%%%%%%%%%%%%%%% tree
-\begin{figure}[htb]
+\begin{figure}[!h]
 	\caption{\label{fig_grafico}Prolongamentos na Sinfonia K.238 }
 	\begin{center}
 	    \includegraphics[scale=0.6]{lerdahl/calculating_prolongamento.png}
@@ -975,17 +984,17 @@ $
 Lerdahl numera as cadências e determina algumas preferências para a decisão de quais segmentos são tensão e relaxamento nos prologamentos, através da sua fórmula para medida das distâncias.
 
 %%%%%%%%%%%%%%%%%% tree
-\begin{figure}[htb]
+\begin{figure}[!h]
 	\caption{\label{fig_grafico}Exemplo de aplicação da fórmula das distâncias }
 	\begin{center}
-	    \includegraphics[scale=0.6]{lerdahl/pitchspace-K282.png}
+	    \includegraphics[scale=0.7]{lerdahl/pitchspace-K282.png}
 	\end{center}
 	\legend{Fonte: \cite[p. 323]{lerdahl1996calculating} }
 \end{figure}
 
 
 
-No caso $(6 \to 7)$ temos \textbf{2} passos pelo ciclo de quintas para chegar de $(V \to ii)$, \textbf{1} passo para chegar de $(I \to V)$ e 8 graus cromáticos em comum. Uma distancia de "tensão tonal" igual a \textbf{11}.
+No caso $(6 \to 7)$ temos \textbf{2} passos pelo ciclo de quintas para chegar de $(V \to ii)$, \textbf{1} passo para chegar de $(I \to V)$ e 8 graus cromáticos em comum. Uma distancia de "tensão tonal" igual a \textbf{11}.\pagebreak
 
 No caso $(7 \to 8)$ temos \textbf{1} passos pelo ciclo de quintas para chegar de $(V \to i)$, \textbf{0} passos para chegar de $(ii \to ii)$ e 4 graus cromáticos em comum. Uma distancia de "tensão tonal" igual a \textbf{5}.
 
@@ -997,7 +1006,7 @@ Toma-se o menor como equivalente a "menor distancia" na tensão tonal, portanto 
 
 A teoria elaborada por David \citeonline{temperley2004cognition} em seu livro "Cognição das Estruturas Musicais Básicas"\footnote{"Cognitive Theory of Basic Musical Structures" doravante tratado por CBMS. } foi declaradamente inspirada na GTTM. Seu esquema de enumeração de regras "bem formadas" e regras de "preferência" é tão similar que pode ser considerado uma tentantiva de continuidade desta.
 
-Temperley divide as regras em seis grupos: estrutura métrica, frase melódica, estrutura contrapontual, solfejo enarmônico das classes de altura tonais, estrutura harmônica, estrutura de tonalidade.
+Temperley divide as regras em seis grupos: \textbf{estrutura métrica, frase melódica, estrutura contrapontual, solfejo enarmônico das classes de altura tonais, estrutura harmônica, estrutura de tonalidade.}
 
 As regras de estrutura métrica são bastante similares\footnote{Colocamos no apêndice um quadro comparativo das regras feito por David \citeonline{meredith2002review} em sua crítica do livro.  } e as regras de frase melódica e estrutura contrapontual são uma proposta próxima das regras de agrupamento da GTTM, porém levando em conta algumas ideias para interação polifônica e determinando métodos para pensar contorno melódico e o fluxo das vozes. 
 
@@ -1008,33 +1017,21 @@ Decidimos iniciar o percurso pelas regras da CBMS pelos dois grupos de regras qu
 
 A questão do solfejo enarmônico é central para a implementação algorítmica dos seis sistemas de regras proposto por Temperley.
 
-A CBMS parte de uma reflexão sobre representações geométricas do ciclo de quintas, concluindo que representações cíclicas e modulares do ciclo("Neutral Pitch Class") não podem dar conta de uma medida funcional da denominação dos semitons.
-
-Para além de declarações de tonalidade na escrita tradicional de armaduras de clave, Temperley leva em consideração aquilo que há de autoral na ortografia\cite[p.123]{temperley2004cognition}  dos compositores e que poderia confirmar a função do cromatismos dentro do discurso tonal cognoscível para o sistema argumentado pelas CBMS.
-
-A CBMS justifica esta abordagem por estar buscando um agrupamento das classes de altura que considere os cromatismos fora de uma escala como notas de passagem ou ornamentais dentro de uma função tonal.
+A CBMS parte de uma reflexão sobre representações geométricas do ciclo de quintas, concluindo que representações cíclicas e modulares do ciclo("Neutral Pitch Class") não são suficientes para o que chama "Tonal Pitch Class", uma representação que dê conta dos contextos funcionais que diferenciam as enarmonias conforme o seu papel em determinado contexto: nota sensível, nota de passagem, modulação para tonalidade relativa, resolução de dominante, etc.\footnote{Para além de declarações de tonalidade na escrita tradicional de armaduras de clave, Temperley leva em consideração aquilo que há de autoral na ortografia\cite[p.123]{temperley2004cognition}  dos compositores e que poderia confirmar a função do cromatismos dentro do discurso tonal cognoscível para o sistema argumentado pelas CBMS.}
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Ciclo de dominantes e subdominantes em modo circular }
 	\begin{center}
-	    \includegraphics[scale=0.4]{CBMS/quintas.png}
+	    \includegraphics[scale=0.6]{CBMS/quintas.png}
 	\end{center}
-	\legend{Fonte: \cite[ tradução do autor.]{lerdahl2009genesis} }
+	\legend{Fonte: wikisource.org }
 \end{figure}
 
 
-A CBMS propõe uma medida para esta denominação baseada no que chama de "linha de quintas"
-
-\begin{figure}[!h]
-	\caption{\label{fig_grafico}Linha enarmônica das quintas proposta por Temperley. }
-	\begin{center}
-	    \includegraphics[scale=0.6]{CBMS/line_fifhts-p136.png}
-	\end{center}
-	\legend{Fonte: \cite[pg. 116]{temperley2004cognition} }
-\end{figure}
-
+Considerando a representação geométrica circular das classes de nota problemática para enarmonia, por ser cíclica e não representar o deslocamento de intervalos dentro da distância superior a um âmbito limitado de oitava, a  CBMS propõe uma medida para esta denominação baseada no que chama de "linha de quintas".
 
 O argumento é de que a linha sugere possíveis cromatismos através de uma provável modulação desejada para mover-se até tonalidades vizinhas.
+
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Escala de Dó maior na linha enarmônica das quintas proposta por Temperley. }
@@ -1044,10 +1041,25 @@ O argumento é de que a linha sugere possíveis cromatismos através de uma prov
 	\legend{Fonte: \cite[pg. 127]{temperley2004cognition} }
 \end{figure}
 
+\pagebreak
+Nas regras de preferência para o Solfejo enarmônico  CBMS problematiza o que chama de "Centro de Gravidade Tonal"\footnote{(COG)-"Center of gravity"\cite[ p.125]{temperley2004cognition}}.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Escala de Dó maior - Ré como centro de gravidade. }
+	\begin{center}
+	    \includegraphics[scale=0.6]{CBMS/COG_re_lineoffifths.png}
+	\end{center}
+	\legend{Fonte: \cite[pg. 127]{temperley2004cognition} }
+\end{figure}
+
+
+Considerando que cada centro de gravidade vai ficando mais complexo a cada modulação de tonalidade. A regra de preferência da variância das alturas\footnote{"Tonal Pitch Rule 1" - (TPR1)\cite[ p.125]{temperley2004cognition}} determina a aproximação onde, por exemplo, para a escala de Dó maior teremos o centro em Ré.
+
+
 Mais adiante em uma aplicação proposta para a analise da influência do modalismo no rock, Temperley propõe uma ideia que chama de "supermodo", uma combinação de modos vizinhos, expandindo o espaço tonal para um campo estendido onde as notas cromáticas teriam funções de afirmar os modos.
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Escalas modais na linha enarmônica das quintas proposta por Temperley. }
+	\caption{\label{fig_grafico}Escalas modais na linha enarmônica das quintas proposta por Temperley e o supermodo resultante de sua combinação. }
 	\begin{center}
 	    \includegraphics[scale=0.6]{CBMS/modosrockgregos_temperley.png}
 	\end{center}
@@ -1057,26 +1069,7 @@ Mais adiante em uma aplicação proposta para a analise da influência do modali
 
 
 
-\begin{figure}[!h]
-	\caption{\label{fig_grafico}"Supermodo" combinando os modos da figura anterior na linha enarmônica das quintas proposta por Temperley. }
-	\begin{center}
-	    \includegraphics[scale=0.6]{CBMS/supermodo_temperley.png}
-	\end{center}
-	\legend{Fonte: \cite[pg. 260]{temperley2004cognition} }
-\end{figure}
 
-
-Nas regras de preferência para o Solfejo enarmônico  CBMS problematiza o que chama de "Centro de Gravidade Tonal"\footnote{(COG)-"Center of gravity"\cite[ p.125]{temperley2004cognition}}.
-
-Considerando que cada centro de gravidade vai ficando mais complexo a cada modulação de tonalidade. A regra de preferência da variância das alturas\footnote{"Tonal Pitch Rule 1" - (TPR1)\cite[ p.125]{temperley2004cognition}} determina a aproximação onde, por exemplo, para a escala de Dó maior teremos o centro em Ré.
-
-\begin{figure}[!h]
-	\caption{\label{fig_grafico}Escala de Dó maior - Ré como centro de gravidade. }
-	\begin{center}
-	    \includegraphics[scale=0.6]{CBMS/COG_re_lineoffifths.png}
-	\end{center}
-	\legend{Fonte: \cite[pg. 127]{temperley2004cognition} }
-\end{figure}
 
 As regras de variância na condução de vozes\footnote{"Tonal Pitch Rule 2" - (TPR1)\cite[ p.129]{temperley2004cognition}} determinam critérios para considerar as passagens cromáticas dentro da condução de vozes, já que neste caso é preciso uma "nota de passagem" que não está como pivô de modulação ou sensível de resolução mas como um ornamento de passagem cromática. A CBMS propõe que se um evento está distante do centro de gravidade neste contexto deve portanto estar a no mínimo cinco passos da classe de altura do evento relacionado\cite[ p.130]{temperley1997algorithm}
 
@@ -1087,10 +1080,10 @@ A regra anterior expõe um caso onde claramente não apenas o contexto é determ
 A CBMS estabelece regras específicas para inferir contexto harmônico, mas em nossa abordagem preferimos antes explorar sua argumentação para a estrutura de tonalidade, buscando as raízes dos argumentos que sustentam tal teoria harmônica. 
 
 
-
+\pagebreak
 \subsubsection{Algoritmo dos Perfis de Tonalidade}
 
-
+\lipsum[30]
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Perfis de tonalidade propostos por Carol \citeonline{krumhansl1990cognitive} - comparativo entre tonalidades próximas ou distantes. }
@@ -1149,6 +1142,16 @@ Segundo tal proposta e as re-elaborações sugeridas por Temperley(2001) pg.173-
 
 No entanto antes de pensar estas inferências tonais em peças pós-tonais gostaríamos de problematizar abordagens que não estão tão condicionadas por uma suposta cognição tonal predominante. Discutiremos o problema logo a seguir.\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html}} 
 
+Temperley adopts the plan outlined by Krumhansl and Schmuckler (de- 
+scribed in Krumhansl, 1990): (1) segment a composition into small sections, (2) tally 
+the tones within a segment (weighting each pitch class by its total duration as well 
+as by other possible measures of salience), (3) mathematically correlate the vector 
+of tone tallies with the tone-profile vectors for all twenty-four major and minor keys, 
+and (4) select the highest correlation as the best candidate for representing the per- 
+ceived key of that segment. 
+
+
+
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Perfis de tonalidade para Do maior e Do menor modificados por \citeonline{temperley2004cognition}. }
@@ -1166,69 +1169,29 @@ No entanto antes de pensar estas inferências tonais em peças pós-tonais gosta
 
 
 
-
+\pagebreak
 \section{Restrições Cognitivas versus Segmentação Atonal}
 
 
-Quase 10 anos após a publicação da GTTM Lerdahl publica um ensaio chamado \textbf{"Restrições cognitivas nos sistemas composicionais"}\cite{lerdahl1992cognitive}\footnote{
-Aesthetic Claim 1: The best music utilizes the full potential of our
-cognitive resources. Aesthetic Claim 2: The best music arises from an alliance of a compos-
-itional grammar with the listening grammar. \cite{lerdahl1992cognitive}
-}, ancorando observações em uma aproximação bastante conservadora e crítica da música serial, tomando como caso a peça "Le Marteau Sans Maitre" de Pierre Boulez, e defendendo a tese de que uma música tão distante dos perfis cognitivos básicos da musica tonal seria inapreensível para os sentidos\footnote{Conferir também o ensaio de Milton \citeonline{babbitt1958cares} chamado "Who Cares If you Listen" que argumenta os pressupostos que sustentariam uma pesquisa \textbf{despreocupada da escuta leiga} e que necessita o suporte da ciência para abrir novas fronteiras no desconhecido, assim como ocorre com as ciências exatas não-aplicadas. }. 
+Quase 10 anos após a publicação da GTTM Lerdahl publica um ensaio chamado \textbf{"Restrições cognitivas nos sistemas composicionais"}\cite{lerdahl1992cognitive}, ancorando observações em uma aproximação bastante conservadora e crítica da música serial, tomando como caso a peça "Le Marteau Sans Maitre" de Pierre Boulez, e defendendo a tese de que uma música tão distante dos perfis cognitivos básicos da musica tonal seria inapreensível para os sentidos\footnote{Conferir também o ensaio de Milton \citeonline{babbitt1958cares} chamado "Who Cares If you Listen" que argumenta os pressupostos que sustentariam uma pesquisa \textbf{despreocupada da escuta leiga} e que necessita o suporte da ciência para abrir novas fronteiras no desconhecido, assim como ocorre com as ciências exatas não-aplicadas. }. 
 
-Importante levar em conta portanto que a GTTM e suas derivações insistem sempre numa afirmação de uma suposta preferência cognitiva regida pelos princípios "atrativos" tonais, o que pode ser interessante em teorias pós-tonais para pensar ambiguidade de sistemas que induzem uma intenção auditiva politonal, mas não parece ser suficiente para pensar critérios que considerem uma busca auditiva pelas sonoridades de grupos de intervalos não organizados a partir da suposta ordem dos "espaços de alturas tonais"(lerdal 1988,2001) intuídos pela cognição de uma escuta ocidentalizada ou ocidentalizante.
+É importante levar em conta que a GTTM e suas derivações insistiram sempre numa afirmação de uma suposta preferência cognitiva regida pelos princípios "atrativos" tonais, o que pode ser interessante em teorias pós-tonais para pensar ambiguidade de sistemas que induzem uma intenção auditiva politonal, \textbf{mas não parece ser suficiente }para pensar critérios que considerem uma busca auditiva pelas sonoridades de grupos de intervalos não organizados a partir da suposta ordem dos "espaços de alturas tonais"\cite{lerdahl1988tps} intuídos pela cognição de uma escuta ocidentalizada ou ocidentalizante.
 
-Cabe pensar aqui aquilo que nattiez diferencia como estésica externa e estésica indutiva(nattiez pg.18-20). \textbf{Estésica externa} é aquela baseada em critérios que entrariam na análise por via de uma comprovação de pesquisa de campo, buscando legitimar que os paradigmas apontados são estatisticamente comuns para a percepção de um determinado grupo de ouvintes. Já a \textbf{estésica indutiva} seria determinada por uma inferência explícita e autoral do musicólogo, que aponta aquilo que segundo seus próprios critérios poderia ser percebido como relevante e importante numa escuta. Poderia-se inclusive argumentar um interesse declaradamente apenas estrutural, por aquilo que Nattiez chama de "nível neutro", "análise imanente" ou "análise material" - onde estruturas presentes são destacadas mesmo que possa-se argumentar que foram ali colocadas de maneira inconsciente pelo compositor ou que são imperceptíveis para o ouvinte médio.
+Cabe pensar aqui aquilo que \citeonline[pg.18-20]{nattiez2001tripartite} diferencia como estésica externa e estésica indutiva. 
 
+\textbf{Estésica externa} é aquela baseada em critérios que entrariam na análise por via de uma comprovação de pesquisa de campo, buscando legitimar que os paradigmas apontados são estatisticamente comuns para a percepção de um determinado grupo de ouvintes. 
 
-Trabalharemos no capítulo seguinte uma abordagem sobre as alturas cromáticas que parte de outros princípios de agrupamento, buscando fórmulas composicionais algorítmicas por meio de uma abordagem que rompe com a normatização  da cultura tonal clássica e busca novos critérios para observar transformações nas alturas e seus agrupamentos.
+Já a \textbf{estésica indutiva} seria determinada por uma inferência explícita e autoral do musicólogo, que aponta aquilo que segundo seus próprios critérios poderia ser percebido como relevante e importante numa escuta. 
 
-\begin{citacao}
-Where does a compositional grammar come from? The answer varies, but a few
-generalizations may be helpful. Let us distinguish between a "natural" and an
-"artificial" compositional grammar. A natural grammar arises spontaneously in
-a musical culture. An artificial grammar is the conscious invention of an indi-
-vidual or group within a culture. The two mix fruitfully in a complex and long-
-lived musical culture such as that of Western tonality. A natural grammar will
-dominate in a culture emphasizing improvisation and encouraging active partici-
-pation of the community in all the varieties of musical behaviour. An artificial
-grammar will tend to dominate in a culture that utilizes musical notation, that is
-self-conscious, and that separates musical activity into composer, performer,
-and listener.
-\cite[p. 100-101]{lerdahl1992cognitive}
-\end{citacao}
+Mas seria possível trabalhar um interesse apenas estrutural no material, isolado de seu contexto de condicionamento da escuta ou intenção do compositor? Nattiez chama de \textbf{"nível neutro"}, \textbf{"análise imanente"} ou \textbf{"análise material"} as estruturas em estado bruto. Dados quantitativos ainda isoladas de seu contexto argumentativo. 
 
+A teoria de grupos e classes de alturas sempre foi evitada pela linha descendente da pesquisa da GTTM, justamente por não parecer tão preocupada em afirmar seus pressupostos em pesquisas de campo sobre cognição. Por estar preocupada apenas com o \textbf{"nível neutro"} quando a aplicada em análises sempre acabaria induzindo seus apontamentos em critérios subjetivamente determinados pelo musicólogo. Por outro lado a normatização que as teorias derivadas da GTTM impõe parecem tender a uma limitação estanque. Por que limitar a percepção naquilo que supostamente seria a percepção do ouvinte médio? Não seria produtivo propor outros modos de escuta, mesmo que ainda não estejam condicionados?
 
-
-
-
-
-
-
-Temperley adopts the plan outlined by Krumhansl and Schmuckler (de- 
-scribed in Krumhansl, 1990): (1) segment a composition into small sections, (2) tally 
-the tones within a segment (weighting each pitch class by its total duration as well 
-as by other possible measures of salience), (3) mathematically correlate the vector 
-of tone tallies with the tone-profile vectors for all twenty-four major and minor keys, 
-and (4) select the highest correlation as the best candidate for representing the per- 
-ceived key of that segment. 
-
-
-
-Lerdahl logo em seguida flerta com musica atonal, etc... \cite{lerdahl1992cognitive} antes de buscar sua atualização da teoria após a influencia das teorias de Forte, Babbit e outros na musicologia americana influencia da teoria de grupos (o que foge um pouco de nosso escopo)  e sim no próximo capitulo buscar um entendimento básico da eoria de grupos blabla
-
-
-abaixo um esquema feito por ele no seu artigo de revisão da GTTM
-%%%%%%%%%%%%%%%%%% tonal pitch space
-\begin{figure}[!h]
-	\caption{\label{fig_grafico}Extensão das regras de GTTM na obra “Tonal Pitch Space” propostas por \citeonline{lerdahl2009genesis} }
-	\begin{center}
-	    \includegraphics[scale=0.5]{gttm/GTTM_TPS_rules.pdf}
-	\end{center}
-	\legend{Fonte: \cite[ tradução do autor.]{lerdahl2009genesis} }
-\end{figure}
+Em seu artigo sobre critérios para uma análise da música atonal \citeonline{lerdahl1989atonal} afirma:
 
 \begin{citacao}
+Como a descrição teórica da classe de alturas e conteúdo da classe de intervalos relaciona-se com a organização das alturas na superfície musical? A relação frequentemente parece remota. As noções de "classe de altura" e "classe de intervalo" são abstrações da altura e intervalo de uma passagem musical. E os vários conceitos invocados para equivalência entre grupos ou similaridade (equivalência por inversão, forma normal, vetores de intervalo, relação Z, relação R, relação de inclusão, complexos K e Kh) também criam um distanciamento da superfície. Não há nada errado com este princípio: todas as teorias generalizam desde o fenômeno. A questão é se realmente estas abstrações em particular refletem e iluminam nossa escuta. A pouca pesquisa de campo feita nestes assuntos (...) não tem sido muito encorajadora."\cite{lerdahl1989atonal}
+\footnote{
 How does the theoretical description of pitch-class and interval-class content relate to the listener's organization of pitches at the musical surface? The relationship often seems
 remote. The very notions "pitch class" and "interval class" are abstractions from
 the pitch and interval content of a musical passage. And the various concepts
@@ -1238,18 +1201,10 @@ Kh complexes) also create a distancing from the surface. There is nothing wrong
 with this in principle: all theories generalize from phenomena. The question is
 whether these particular abstractions reflect and illuminate our hearing. The little
 experimental research that has been done on such matters (...) has not been very encouraging.
-\cite{lerdahl1989atonal}
+\cite{lerdahl1989atonal}}
 \end{citacao}
 
-Diante destes posicionamentos consideramos essencial um estudo comparado da abordagem cognitivista com este este contraponto das teorias de classes da altura, justamente por estas partirem de outros pressupostos. Faremos um percurso por estas teorias no próximo capítulo.
-
-
-
-
-
-
-
-
+Consideramos esta negação arbitrária e suspeita. Se as teorias de classes de alturas são tão distantes da realidade da escuta por que continuam sendo cada vez mais formalizadas? Nos pareceu essencial um estudo comparado da abordagem cognitivista com este este contraponto das teorias de classes da altura, justamente por estas partirem de outros pressupostos. Faremos um percurso por estas teorias no próximo capítulo.
 
 
 \chapter{Teorias de Grupos das Classes de Alturas para uma Segmentação Atonal }
@@ -1262,8 +1217,8 @@ Na teoria de grupos de classes de altura ("Pitch Class Theory") os intervalos s�
 Estas teorias são fortemente influenciadas pela ideia de serialismo formalizada pelo dodecafonismo frequentemente atribuído a Arnold Shoenberg e seus pupilos da segunda escola de Vienna, mas é bom lembrar que o pensamento serial é um pensamento composicional que pode também ser encontrado em compositores muito anteriores a estas formalizações, portanto podemos encontrar esta abordagem analítica sendo usada para destacar aspectos de composições de outros contextos que não o restrito ao repertório atonal clássico, como faz por exemplo Joel \citeonline{lester1989analytic} em sua didática para análises de um repertório pós-tonal do ínicio do século XX ou Allen Forte na sua tese sobre a "Sagração da Primavera" de Stravinski\cite{forte1978harmonic}.
 
 \begin{citacao}
-It was, of course, Allen Forte who in the USA pioneered the analytical with a taxonomy of pc-set application of concepts from mathematics, first arose also in serial Babbittian types (the concept theory), and following as some inclusion and with relations abstract up (such similarity relations) meant for analytical use. Forte's "set theory" (as it is somewhat misleadingly known, because it deals with sets of pitch classes) has had its own
-ramifications and influence. In particular, Forte's own analyses of individual pieces of music have led many others to do likewise, and Forte's initial idea of similarity relations (as distinct from equivalence relations) among pitch-class sets has seen a flourishing theoretical industry grow around it, after seminal articles by Morris, Rahn, and Lewin appeared in 1980.\cite{rahn2004swerve}
+Foi, obviamente, Allen Forte quem foi o pioneiro das análises com a taxonomia dos grupos de classes de alturas aplicadas em conceitos da matemática, primeiro surgindo em tipos de Milton Babbit (a teoria conceitual), e em seguida com a inclusão e abstração de relações (como as relações de similaridade) construídas para uso analítico. A "teoria de grupos" de Forte (...) tem tido suas próprias ramificações e influência. Em particular, as próprias análises de Forte de peças individuais tem levado muitos outros a fazerem de maneira parecida, e a ideia inicial de Forte das relações de similaridade ( diferentes das relações de equivalência) sobre os grupos de classes de alturas tem visto florescer uma indústria teórica em torno disto, depois que os artigos seminais de Morris, Rahn  Lewin apareceram em 1980.\cite{rahn2004swerve}\footnote{
+It was, of course, Allen Forte who in the USA pioneered the analytical with a taxonomy of pc-set application of concepts from mathematics, first arose also in serial Babbittian types (the concept theory), and following as some inclusion and with relations abstract up (such similarity relations) meant for analytical use. Forte's "set theory" (...) has had its own ramifications and influence. In particular, Forte's own analyses of individual pieces of music have led many others to do likewise, and Forte's initial idea of similarity relations (as distinct from equivalence relations) among pitch-class sets has seen a flourishing theoretical industry grow around it, after seminal articles by Morris, Rahn, and Lewin appeared in 1980.\cite{rahn2004swerve}}
 \end{citacao}
 
 
@@ -1419,7 +1374,7 @@ Algumas propriedades entre os grupos de classes de alturas são muito interessan
 
 Levantaremos aqui algumas destas propriedades conforme o resumo didático proposto por \cite{straus2004}, sem ainda estarmos certos de sua efetividade para analises mas interessados na formalização computacional possível destas para processos composicionais.
 
-\pagebreak
+
 \subsubsection{Notas Comuns sob transposição}
 
 Tomemos o seguinte exemplo: Dado um grupo em sua forma prima [0,2,5] (ou "4-10" na forma cardinal ) quando transpomos para o intervalo 2 e seu inverso 10, obtemos duas notas iguais para cada um destes grupos.
@@ -1452,56 +1407,49 @@ Interessante pensar também que o vetor de intervalos irá determinar transposi�
 
 
 
-
-
-
-
-
-
-
-
-
-
 \subsubsection{Notas Comuns sob inversão}
 
+\lipsum[13]
+
 \subsubsection{Simetria Transpositiva}
+
+\lipsum[14]
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}A simetria transpositiva é obtida através de um padrão de intervalos palíndromo. }
 	\begin{center}
-	    \includegraphics[scale=0.7]{OM_settheory/palindrome1.png}
+	    \includegraphics[scale=0.6]{OM_settheory/palindrome1.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
+
+
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}A forma circular é mais geral do que a numérica para a visualização do padrão de simetrias. }
 	\begin{center}
-	    \includegraphics[scale=0.7]{OM_settheory/palindrome2.png}
+	    \includegraphics[scale=0.6]{OM_settheory/palindrome2.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
 
-
-
-
+\pagebreak
 \subsubsection{Complemento}
-
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}O complemento contém todas alturas cromáticas que o conjunto original não possui. }
 	\begin{center}
-	    \includegraphics[scale=0.7]{OM_settheory/complemento.png}
+	    \includegraphics[scale=0.6]{OM_settheory/complemento.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
-
-
-
+\lipsum[1]
 
 \subsubsection{Relação Z entre grupos de classes de alturas}
+
+\lipsum[17]
 
 
 \begin{figure}[!h]
@@ -1518,10 +1466,7 @@ Interessante pensar também que o vetor de intervalos irá determinar transposi�
 
 
 George Perle exemplifica a relação Z como uma das relações que não são intuitivas em sua rotina composicional:
-
-
-
-
+\pagebreak
 
 \begin{citacao}
 Mas nenhum destes argumentos teria qualquer peso para mim se eu pudesse ao menos escutar as correspondências que Forte descreve. Eu posso descobrir estas conexões entre coleções Z-relacionadas somente sujeitando-as a um escrutínio analítico que não tem nada a ver com minha experiência intuitiva como ouvinte ou compositor. Ou, para falar de maneira mais sincera, permitir que o Professor Forte conduza seu escrutínio analítico para mim.
@@ -1584,9 +1529,12 @@ Nattiez\cite{nattiez2003allen} faz uma crítica minuciosa da aplicação da teor
 
 \chapter{Composição Assistida por Computador}
 
+\lipsum[2]
+
 \begin{citacao}
-The field of computer music can be thought of as having two fundamental branches, one concerned with the manipulation of musical sounds, and the other concerned with symbolic representations of music. The two are iconized by Max Mathews’s MUSIC program and Lejaren Hiller’s ILIAC Suite, both of 1957, although both have important antecedents. The two branches might provisionally be given the names “Computer Generated Music” (Denis Baggi’s term for it) and “Computer Aided Composition”— or CGM and CAC for short. 
-\cite[pg. ]{puckettecomputing}
+O campo da computer music pode ser pensado como tendo dois ramos fundamentais, um preocupado com a manipulação de sons musicais, e outra preocupada com a com a representação simbólica da música. (...) Os dois ramos podem provisoriamente serem chamados pelos nomes "Musica Gerada Por Computador" (o termo de Denis Baggi) e "Composição assistida por computador" - ou pelos acrônimos MGC e CAC."\cite[pg. ix]{puckettecomputing}\footnote{
+The field of computer music can be thought of as having two fundamental branches, one concerned with the manipulation of musical sounds, and the other concerned with symbolic representations of music. (...) The two branches might provisionally be given the names “Computer Generated Music” (Denis Baggi’s term for it) and “Computer Aided Composition”— or CGM and CAC for short.\cite[pg. ix]{puckettecomputing}}
+
 \end{citacao}
 
 
@@ -1637,7 +1585,11 @@ harmônicos derivados da notação moderna para música orquestral, utilizando s
 
 \subsubsubsection{classe permutation}
 
+\lipsum[4]
+
 \subsubsubsection{classe math}
+
+\lipsum[5]
 
 \subsection{PD}
 
@@ -1676,12 +1628,13 @@ possible. In the meantime it’s possible to send messages back and forth betwee
 \cite{puckettecomputing}
 
 
-
-\subsubsection{biblioteca Maxlib}
-
 \subsubsection{biblioteca RTC-lib}
 
+\lipsum[2]
+
 \subsubsection{objeto [probalizer]}
+
+\lipsum[6]
 
 
 
@@ -1771,7 +1724,7 @@ Falaremos a seguir de duas dessas bibliotecas utilizadas como ferramenta auxilia
 
 \subsection{Music 21}
 
-
+\lipsum[11]
 
 
 % ---
