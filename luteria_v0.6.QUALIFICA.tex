@@ -1529,7 +1529,11 @@ Nattiez\cite{nattiez2003allen} faz uma crítica minuciosa da aplicação da teor
 
 \chapter{Composição Assistida por Computador}
 
-\lipsum[2]
+O objeto de estudo desta pesquisa são os algoritmos de manipulação de dados de uma superfície musical normatizada para a escala de temperamento igual, de doze tons ou "12-TET"\cite[ p.76]{sethares2005tuning}, tradicionalmente usada nas partituras da prática comum. Estamos abstraindo no momento as questões como timbre, microtonalismo, afinações ou qualquer outros aspectos não formalizáveis em partitura tradicional. 
+
+Curiosamente, a chamada "computer music"\cite{curtis1996computer} que derivou dos primeiros mainframes e seus métodos estocásticos de compositores como Hiller e Xenakis, parece cada vez mais seduzir para um estudo da música que inicia pela morfologia do espectro sonoro, onde impera o "microsom"\cite{roads2004microsound} manipulado nos níveis limite da psicoacústica. Interessa em nossa abordagem repensar um pouco os limites desta manipulação simbólica de escalas e aglomerados de alturas, antes de mergulhar nas possibilidades expandidas. 
+
+O criador da linguagem PureData, categoriza esta diferença no prefacio do "Open Music Composer's Book 1"\cite{OM_book01_2006}:
 
 \begin{citacao}
 O campo da computer music pode ser pensado como tendo dois ramos fundamentais, um preocupado com a manipulação de sons musicais, e outra preocupada com a com a representação simbólica da música. (...) Os dois ramos podem provisoriamente serem chamados pelos nomes "Musica Gerada Por Computador" (o termo de Denis Baggi) e "Composição assistida por computador" - ou pelos acrônimos MGC e CAC."\cite[pg. ix]{puckettecomputing}\footnote{
@@ -1549,6 +1553,7 @@ Ambas também são linguagens surgidas a partir de projetos surgidos no IRCAM (I
 
 Considerando que são ainda muito utilizadas por pesquisadores de Composição Assistida por Computador (CAC) e Música Algorítmica, estas já podem já de alguma forma serem consideradas linguagens de computação musical com relevância histórica o suficiente para no mínimo servirem de base para novas invenções.
 
+Utilizamos nesta pesquisa ambas as linguagens testando suas limitações e disponibilidade de bibliotecas já prontas e bem documentadas. 
 
 
 
@@ -1569,27 +1574,66 @@ O OM é um framework que tende a uma programação orientada pela reflexão em t
 Organiza materiais basicamente orientado pela escrita e fortemente pensado dentro do esquema de intervalos melódicos
 harmônicos derivados da notação moderna para música orquestral, utilizando sequenciadores bastante similares ao pentagrama de pauta sem ( “chord-seq”) ou com figuras de compasso (com o sequeciador “voice” ).
 
-\subsubsubsection{chord-seq}
+\subsubsection{chord-seq}
 
+A linguagem OpenMusic tem objetos avançados para a manipulação e sequenciamento de estruturas em representação partitural. Desde objetos gráficos para representação da nota em pauta, acordes isolados ou mesmo estruturas em árvore para construção de ritmos compostos ("mktree") e polifonia ("voice"). Estes objetos podem ser organizados em macro estruturas de sequenciamento, como as "maquettes" e "sheets"\cite{bresson2008scores}.
 
+Importante destacar aqui o funcionamento do objeto \textbf{"chord-seq"}  para o detalhamento de como opera a lógica dos encadeamentos de acordes, que por trás dos objetos gráficos são entendidos como listas Lisp\footnote{ Para detalhes sobre a linguagem de programação LISP, c.f. \cite{graham1995ansi}} aninhadas, utilizando uma escala de "midicents" onde entre cada semitom da escala cromática e possível também uma divisão de 100 microtons. (por exemplo: ao invés de representar um Dó com o número 12, 24, 48, etc. será reresentado por 1200, 2400, 4800,etc.). Na figura abaixo detalhamos o funcionamento das entradas e saídas de um objeto "chord-seq".
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Objeto Chord-Seq do Opem Music}
 	\begin{center}
-	    \includegraphics[scale=0.6]{OMPD/chord-seq-sem-titulo.png}
+	    \includegraphics[scale=0.7]{OMPD/chord-seq-sem-titulo.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
 
 
-\subsubsubsection{classe permutation}
+\subsubsection{Listas de dados}
 
-\lipsum[4]
+O OM implementa uma série de operações sobre as listas de dados estruturadas. Abaixo selecionamos algumas funções básicas que auxiliam na manipulação dos dados dentro do OM.
 
-\subsubsubsection{classe math}
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Operações com listas no OMs}
+	\begin{center}
+	    \includegraphics[scale=0.7]{OMPD/OM-listas01.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
 
-\lipsum[5]
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Operações com listas no OMs}
+	\begin{center}
+	    \includegraphics[scale=0.7]{OMPD/OM-listas01.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+\subsubsection{Operações combinatórias e operações sobre grupos de classes de altura }
+
+O OM possui também algumas classes já preparadas especialmente para organizar series, permutar, ordenar, embaralhar e inclusive uma classe chamada "math", que antecipa e organiza uma serie de operações básicas sobre grupos de classes de altura, como extração do vetor intervalar, classificação de conjuntos de Allen Forte e uma representação gráfica da geometria das classes de altura, o objeto "n-cerle"\cite{andreatta2003implementing}. Alguns objetos desta classe foram testados nas demonstrações do \autoref{modelos}.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Alguns objetos para operações combinatórias e operações em grupos de classes de altura no OMs}
+	\begin{center}
+	    \includegraphics[scale=0.7]{OMPD/series-OM.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+O OM também incorpora dentro de seus sequenciadores de nota um procedimento para segmentar articulações com fins de análise, preparando-os para uma classificação de grupos de alturas com a estrutura de dados do objeto "n-cercle"\cite{bresson2012new}.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Segmentação em Chord-Seq de OpenMusic}
+	\begin{center}
+	    \includegraphics[scale=0.4]{OMPD/segmentaOM.png}
+	\end{center}
+	\legend{Fonte: \cite{bresson2012new} }
+\end{figure}
+
+
 
 \subsection{PD}
 
@@ -1607,7 +1651,7 @@ impossible to extricate from one another.
 Já o Puredata, nas palavras de seu idealizador:
 
 \begin{citacao}
-Um novo sistema de software, chamado Puredata, está em seus primeiros estágios de desenvolvimento. Seu design almeja remediar algumas deficiências do programa Max e preservar algumas de suas vantagens. A mais importante fraqueza do Max é a dificuldade de manter estruturas de dados compostas de um tipo que possa ser acessado quando analisando e resintetizando sons  ou quando gravando e modificando sequencias de diferentes tipos. Também, tem sido difícil integrar sinais que não sejam de áudio (vídeo por exemplo, e também espectro sonoro ) dentro do rígido sistema de “objetos til” (~) do Max.\cite{puckette1996pure}
+Um novo sistema de software, chamado Puredata, está em seus primeiros estágios de desenvolvimento. Seu design almeja remediar algumas deficiências do programa Max e preservar algumas de suas vantagens. A mais importante fraqueza do Max é a dificuldade de manter estruturas de dados compostas de um tipo que possa ser acessado quando analisando e ressintetizando sons  ou quando gravando e modificando sequencias de diferentes tipos. Também, tem sido difícil integrar sinais que não sejam de áudio (vídeo por exemplo, e também espectro sonoro ) dentro do rígido sistema de “objetos til” (~) do Max.\cite{puckette1996pure}
 \end{citacao}
  
 
@@ -1709,7 +1753,7 @@ O uso geral do formato MusicXML é similar ao Lilypond - formatação de partitu
 \pagebreak
 \section{Bibliotecas Python auxiliares}
 
-Pela sua natureza de código aberto alto-nível de orientação a objetos, Python\cite{van1995python} é uma linguagem script que tem sido amplamente adotada e ampliada por bibliotecas para as mais diversas aplicações científicas.\cite{downey2009python}
+Pela sua natureza de código aberto alto-nível de orientação a objetos, Python\cite{van1995python} é uma linguagem script que tem sido amplamente adotada e ampliada por bibliotecas para as mais diversas aplicações científicas e artísticas.\cite{downey2009python,Kroger201208}
 
 Aliada ao uso de algumas bibliotecas específicas para arquivos de segmentação partitural, Python mostra-se uma ferramenta prática para formatação dinâmica de partituras prontas para impressão ou para auxiliar a análise de dados quantitativos de corpus de partituras.
 
@@ -1718,13 +1762,15 @@ Falaremos a seguir de duas dessas bibliotecas utilizadas como ferramenta auxilia
 
 \subsection{Abjad}
 
-É uma biblioteca voltada para a formatação de clichês em notação partitural pronta para impressão em papel, baseada na manipulação de templates no formato lilypond. A biblioteca apresenta alguns templates baseados em peças de Bártok, Ligeti, Ferneyhough e Mozart.
+É uma biblioteca voltada para a formatação de clichês em notação partitural pronta para impressão em papel, baseada na manipulação de templates no formato lilypond. A biblioteca apresenta alguns templates baseados em peças de Bártok, Ligeti, Ferneyhough e Mozart.\footnote{http://abjad.mbrsi.org/examples/index.html}
 
 
 
 \subsection{Music 21}
 
-\lipsum[11]
+É uma biblioteca projetada para trabalhar com manipulação e análise de corpus de arquivos partituráveis\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleCorpus.html}. Prepara a conversão entre diversos arquivos de dados musicais (midi, humdrum, lilypond, abc)\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleConverter.html}, mas nativamente trabalha com uma estrutura de dados baseada em musicxml.
+
+Music21 tem uma abordagem voltada para uma "musicologia assistida por computador" e já tem incorporada em suas classes algumas ferramentas comuns a esta prática como: numeração de grau funcional de acorde\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleRoman.html}, numeração de classes de altura usando a classificação de Allen Forte\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleChord.html?\#music21.chord.Chord.forteClassNumber}
 
 
 % ---
@@ -1752,8 +1798,7 @@ Por um lado revisamos uma corrente teórica que enumera estruturas operantes nas
 Por outro lado nos chamou atenção que paralelo a fundamentação destas teorias, nas últimas décadas do século XX (e a partir da sedimentação de uma tradição pós-tonal iniciada nas suas primeiras décadas) formalizou-se uma "teoria de grupos das classes de altura"\cite{forte1973structure,rahn1980basic,perle1990pitch,straus2004} baseada numa catalogação de combinações de intervalos formando compostos sonoros singulares e as possíveis estruturações e articulações entre estes. Ali operariam critérios não necessariamente tão amarrados na funcionalidade dos esquemas de tensão e relaxamento das formas "tonalizantes". Mesmo que vertiginosamente, é preciso admitir que cada composição já pode comportar um sistema totalmente idiossincrático. Ao contrário da corrente cognitivista, neste caso uma criatividade autoral do analista assume que as formas estão emergindo ali a príncipio porque foram apontadas, e não necessáriamente porque foram intuídas pelo compositor. Também não buscam justificar expectativas do ouvinte que guiariam a normatização de uma busca composicional da "boa forma" pré-concebida.\cite{babbitt1958cares}
 
 Dadas estas duas perspectivas pretendemos continuar este trabalho com uma organização dos algoritmos sugeridos por estas em bibliotecas das linguagens de programação apontadas na \autoref{computacional}, incluindo aí apontar boas práticas nas linguagens almejando um bom uso destas teorias em processos composicionais. Nos interessa testar os limites práticos destas implementações, deixando um legado tecnicamente viável e acessível, utilizando ferramentas e bibliotecas auxiliares disponíveis em software livre.
-\linebreak
-\pagebreak
+
 
 Utilizaremos para exemplificar o uso das regras observadas em contextos tonais e pós-tonais alguns aspectos dos algoritmos atuando em um corpus de peças do repertório da suíte Mikrokosmos de Béla Bártok que será revisado no formato musicxml para o estudo computacional, buscando respeitar a grafia das partituras orginais. 
 

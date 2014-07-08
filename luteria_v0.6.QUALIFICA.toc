@@ -32,29 +32,29 @@
 \contentsline {chapter}{\chapternumberline {4}Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}{61}{chapter.4}
 \contentsline {section}{\numberline {4.1}Linguagens Dataflow}{61}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}OM}{62}{subsection.4.1.1}
-\contentsline {paragraph}{\numberline {4.1.1.0.1}chord-seq}{62}{paragraph.4.1.1.0.1}
-\contentsline {paragraph}{\numberline {4.1.1.0.2}classe permutation}{62}{paragraph.4.1.1.0.2}
-\contentsline {paragraph}{\numberline {4.1.1.0.3}classe math}{62}{paragraph.4.1.1.0.3}
-\contentsline {subsection}{\numberline {4.1.2}PD}{63}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.2.1}biblioteca RTC-lib}{64}{subsubsection.4.1.2.1}
-\contentsline {subsubsection}{\numberline {4.1.2.2}objeto [probalizer]}{65}{subsubsection.4.1.2.2}
-\contentsline {chapter}{\chapternumberline {5}Arquivos e Scripts para Segmenta\IeC {\c c}\IeC {\~a}o de Dados Musicais}{67}{chapter.5}
-\contentsline {section}{\numberline {5.1}MIDI}{67}{section.5.1}
-\contentsline {section}{\numberline {5.2}Lilypond}{69}{section.5.2}
-\contentsline {section}{\numberline {5.3}MusicXML}{69}{section.5.3}
-\contentsline {section}{\numberline {5.4}Bibliotecas Python auxiliares}{70}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Abjad}{70}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Music 21}{70}{subsection.5.4.2}
-\contentsline {chapter}{Conclus\IeC {\~a}o}{71}{chapter*.10}
+\contentsline {subsubsection}{\numberline {4.1.1.1}chord-seq}{62}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}Listas de dados}{64}{subsubsection.4.1.1.2}
+\contentsline {subsubsection}{\numberline {4.1.1.3}Opera\IeC {\c c}\IeC {\~o}es combinat\IeC {\'o}rias e opera\IeC {\c c}\IeC {\~o}es sobre grupos de classes de altura }{65}{subsubsection.4.1.1.3}
+\contentsline {subsection}{\numberline {4.1.2}PD}{66}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}biblioteca RTC-lib}{68}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}objeto [probalizer]}{68}{subsubsection.4.1.2.2}
+\contentsline {chapter}{\chapternumberline {5}Arquivos e Scripts para Segmenta\IeC {\c c}\IeC {\~a}o de Dados Musicais}{69}{chapter.5}
+\contentsline {section}{\numberline {5.1}MIDI}{69}{section.5.1}
+\contentsline {section}{\numberline {5.2}Lilypond}{71}{section.5.2}
+\contentsline {section}{\numberline {5.3}MusicXML}{71}{section.5.3}
+\contentsline {section}{\numberline {5.4}Bibliotecas Python auxiliares}{72}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Abjad}{72}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Music 21}{72}{subsection.5.4.2}
+\contentsline {chapter}{Conclus\IeC {\~a}o}{75}{chapter*.10}
 \vspace {\cftbeforepartskip }
-\contentsline {chapter}{Refer\^encias}{75}{section*.13}
+\contentsline {chapter}{Refer\^encias}{77}{section*.13}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {part}{Ap\^endices}{79}{section*.14}
-\contentsline {appendix}{\chapternumberline {A}Reposit\IeC {\'o}rio de C\IeC {\'o}digos}{81}{appendix.A}
-\contentsline {subsection}{\numberline {A.0.3}Biblioteca de Algoritmos}{81}{subsection.A.0.3}
+\contentsline {part}{Ap\^endices}{83}{section*.14}
+\contentsline {appendix}{\chapternumberline {A}Reposit\IeC {\'o}rio de C\IeC {\'o}digos}{85}{appendix.A}
+\contentsline {subsection}{\numberline {A.0.3}Biblioteca de Algoritmos}{85}{subsection.A.0.3}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
-\contentsline {part}{Anexos}{83}{section*.15}
-\contentsline {appendix}{\chapternumberline {A}Tabela de Pitch Class Set de Allen Forte}{85}{appendix.anexochapback.1}
-\contentsline {appendix}{\chapternumberline {B}Regras da Teoria Gerativa da Musica Tonal}{89}{appendix.anexochapback.2}
+\contentsline {part}{Anexos}{87}{section*.15}
+\contentsline {appendix}{\chapternumberline {A}Tabela de Pitch Class Set de Allen Forte}{89}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {B}Regras da Teoria Gerativa da Musica Tonal}{93}{appendix.anexochapback.2}
 \vspace {\cftbeforepartskip }

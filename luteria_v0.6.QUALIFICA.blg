@@ -11,12 +11,13 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated field_info (elt_size=4) to 10106 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: mestrado_glerm.bib
 Warning--entry type for "AndreataOMtutorial" isn't style-file defined
---line 97 of file mestrado_glerm.bib
+--line 151 of file mestrado_glerm.bib
 Warning--entry type for "DebrilOM" isn't style-file defined
---line 106 of file mestrado_glerm.bib
+--line 160 of file mestrado_glerm.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -27,45 +28,45 @@ Warning--faltando school em marshall1946analysis
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 66 entries,
+You've used 74 entries,
             6711 wiz_defined-function locations,
-            1538 strings with 16852 characters,
-and the built_in function-call counts, 52435 in all, are:
-= -- 4436
-> -- 1249
-< -- 415
-+ -- 829
-- -- 400
-* -- 3370
-:= -- 7052
-add.period$ -- 213
-call.type$ -- 66
-change.case$ -- 491
-chr.to.int$ -- 110
-cite$ -- 66
-duplicate$ -- 3547
-empty$ -- 3935
-format.name$ -- 1853
-if$ -- 11882
+            1577 strings with 17654 characters,
+and the built_in function-call counts, 59127 in all, are:
+= -- 5040
+> -- 1405
+< -- 490
++ -- 955
+- -- 450
+* -- 3789
+:= -- 7946
+add.period$ -- 243
+call.type$ -- 74
+change.case$ -- 550
+chr.to.int$ -- 124
+cite$ -- 74
+duplicate$ -- 4054
+empty$ -- 4413
+format.name$ -- 2085
+if$ -- 13372
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1171
-newline$ -- 316
-num.names$ -- 325
-pop$ -- 1412
+missing$ -- 1321
+newline$ -- 353
+num.names$ -- 365
+pop$ -- 1597
 preamble$ -- 1
-purify$ -- 213
+purify$ -- 239
 quote$ -- 0
-skip$ -- 3590
+skip$ -- 4081
 stack$ -- 1
-substring$ -- 2397
-swap$ -- 1520
-text.length$ -- 68
+substring$ -- 2631
+swap$ -- 1718
+text.length$ -- 73
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 4
 warning$ -- 1
-while$ -- 484
+while$ -- 537
 width$ -- 0
-write$ -- 1017
+write$ -- 1140
 (There were 3 warnings)

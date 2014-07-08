@@ -5,6 +5,13 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Agon 2006]{OM_book01_2006}
+\abntrefinfo{Agon}{AGON}{2006}
+{AGON, C. \emph{The OM Composer's book 1}. Musique/sciences. Delatour France,
+  2006.
+ISBN 9782752100283. Dispon{\'\i}vel em:
+  \url{http://amazon.com/o/ASIN/2752100280/}.}
+
 \bibitem[Andreatta 2014]{AndreataOMtutorial}
 \abntrefinfo{Andreatta}{ANDREATTA}{2014}
 {ANDREATTA, M. \emph{OM Pitch Class Set Tutorial}. 2014.
@@ -39,12 +46,25 @@ ISBN 2752100523.}
 {BERNSTEIN, L. \emph{The unanswered question: Six talks at Harvard}. [S.l.]:
   Harvard University Press, 1976.}
 
+\bibitem[Bresson e Agon 2008]{bresson2008scores}
+\abntrefinfo{Bresson e Agon}{BRESSON; AGON}{2008}
+{BRESSON, J.; AGON, C. Scores, programs, and time representation: The sheet
+  object in openmusic.
+\emph{Computer Music Journal}, MIT Press, v.~32, n.~4, p. 31--47, 2008.}
+
 \bibitem[Bresson, Agon e Assayag 2011]{bresson2011openmusic}
 \abntrefinfo{Bresson, Agon e Assayag}{BRESSON; AGON; ASSAYAG}{2011}
 {BRESSON, J.; AGON, C.; ASSAYAG, G. Openmusic: visual programming environment
   for music composition, analysis and research. In:  ACM. \emph{Proceedings of
   the 19th ACM international conference on Multimedia}. [S.l.], 2011. p.
   743--746.}
+
+\bibitem[Bresson e P{\'e}rez-Sancho 2012]{bresson2012new}
+\abntrefinfo{Bresson e P{\'e}rez-Sancho}{BRESSON; P{\'E}REZ-SANCHO}{2012}
+{BRESSON, J.; P{\'E}REZ-SANCHO, C. New framework for score segmentation and
+  analysis in openmusic.
+\emph{Proceedings Sound and Music Computing Conference}, Copenhagen, Denmark,
+  2012.}
 
 \bibitem[Chomsky 1957]{chomsky1957syntactic}
 \abntrefinfo{Chomsky}{CHOMSKY}{1957}
@@ -93,6 +113,10 @@ Dispon{\'\i}vel em: \url{http://www.deb8076.eu/AnalyseBeethovenST/index.html}.}
 {FORTE, A. \emph{The harmonic organization of the rite of spring}. [S.l.]: Yale
   University Press, 1978.}
 
+\bibitem[Graham 1995]{graham1995ansi}
+\abntrefinfo{Graham}{GRAHAM}{1995}
+{GRAHAM, P. \emph{ANSI common lisp}. [S.l.]: Prentice Hall Press, 1995.}
+
 \bibitem[Guigue 1995]{guigue1995analise}
 \abntrefinfo{Guigue}{GUIGUE}{1995}
 {GUIGUE, D. Para uma an{\'a}lise orientada a objetos.
@@ -119,6 +143,13 @@ Dispon{\'\i}vel em: \url{http://www.deb8076.eu/AnalyseBeethovenST/index.html}.}
 \abntrefinfo{Iazzetta}{IAZZETTA}{2009}
 {IAZZETTA, F. \emph{M{\'u}sica e media{\c{c}}{\~a}o tecnol{\'o}gica}. S{\~a}o
   Paulo: Perspectiva-Fapesp, 2009.}
+
+\bibitem[Kroger 2012]{Kroger201208}
+\abntrefinfo{Kroger}{KROGER}{2012}
+{KROGER, P. \emph{Music for Geeks and Nerds}. CreateSpace Independent
+  Publishing Platform, 2012.
+ISBN 9781478345381. Dispon{\'\i}vel em:
+  \url{http://musicforgeeksandnerds.com}.}
 
 \bibitem[Krumhansl 1983]{krumhansl1983perceptual}
 \abntrefinfo{Krumhansl}{KRUMHANSL}{1983}
@@ -296,6 +327,14 @@ Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/25164542}.}
 {ROADS, C. Grammars as representations for music.
 \emph{Computer Music Journal}, JSTOR, p. 48--55, 1979.}
 
+\bibitem[Roads 1996]{curtis1996computer}
+\abntrefinfo{Roads}{ROADS}{1996}
+{ROADS, C. \emph{The computer music tutorial}. [S.l.]: MIT press, 1996.}
+
+\bibitem[Roads 2004]{roads2004microsound}
+\abntrefinfo{Roads}{ROADS}{2004}
+{ROADS, C. \emph{Microsound}. [S.l.]: MIT press, 2004.}
+
 \bibitem[Rossum e Jr 1995]{van1995python}
 \abntrefinfo{Rossum e Jr}{ROSSUM; JR}{1995}
 {ROSSUM, G. V.; JR, F.~L. D. \emph{Python reference manual}. [S.l.]: Centrum
@@ -310,6 +349,11 @@ Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/25164542}.}
 \abntrefinfo{Schaeffer}{SCHAEFFER}{1966}
 {SCHAEFFER, P. \emph{Traite des objets musicaux. Essai interdisciplines.}
   Paris: Ed. du Seuil, 1966.}
+
+\bibitem[Sethares 2005]{sethares2005tuning}
+\abntrefinfo{Sethares}{SETHARES}{2005}
+{SETHARES, W. \emph{Tuning, Timbre, Spectrum, Scale}. [S.l.]: Springer, 2005.
+ISBN 9781852337971.}
 
 \bibitem[Smalley 1997]{smalley1997spectromorphology}
 \abntrefinfo{Smalley}{SMALLEY}{1997}

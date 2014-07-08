@@ -162,31 +162,41 @@
 \backcite {nattiez2003allen}{{58}{3.1.5}{subsection.3.1.5}}
 \backcite {nattiez2003allen}{{58}{3.1.5}{subsection.3.1.5}}
 \backcite {nattiez2003allen}{{58}{3}{Hfootnote.20}}
+\backcite {sethares2005tuning}{{61}{4}{chapter.4}}
+\backcite {curtis1996computer}{{61}{4}{chapter.4}}
+\backcite {roads2004microsound}{{61}{4}{chapter.4}}
+\backcite {OM_book01_2006}{{61}{4}{chapter.4}}
 \backcite {puckettecomputing}{{61}{4}{chapter.4}}
 \backcite {puckettecomputing}{{61}{1}{Hfootnote.21}}
 \backcite {bresson2011openmusic}{{62}{4.1.1}{subsection.4.1.1}}
-\backcite {puckettecomputing}{{63}{4.1.2}{subsection.4.1.2}}
-\backcite {puckette1996pure}{{64}{4.1.2}{subsection.4.1.2}}
-\backcite {puckettecomputing}{{64}{4.1.2}{subsection.4.1.2}}
-\backcite {van1995python}{{70}{5.4}{section.5.4}}
-\backcite {downey2009python}{{70}{5.4}{section.5.4}}
-\backcite {roads1979grammars}{{71}{5.4.2}{chapter*.10}}
-\backcite {lerdahl1983generative,temperley2004cognition}{{71}{5.4.2}{chapter*.10}}
-\backcite {lerdahl1983generative,temperley2004cognition}{{71}{5.4.2}{chapter*.10}}
-\backcite {chomsky1957syntactic}{{71}{5.4.2}{chapter*.10}}
-\backcite {krumhansl1990cognitive,lerdahl2001tonal}{{71}{5.4.2}{chapter*.10}}
-\backcite {krumhansl1990cognitive,lerdahl2001tonal}{{71}{5.4.2}{chapter*.10}}
-\backcite {forte1973structure,rahn1980basic,perle1990pitch,straus2004}{{71}{5.4.2}{chapter*.10}}
-\backcite {forte1973structure,rahn1980basic,perle1990pitch,straus2004}{{71}{5.4.2}{chapter*.10}}
-\backcite {forte1973structure,rahn1980basic,perle1990pitch,straus2004}{{71}{5.4.2}{chapter*.10}}
-\backcite {forte1973structure,rahn1980basic,perle1990pitch,straus2004}{{71}{5.4.2}{chapter*.10}}
-\backcite {babbitt1958cares}{{71}{5.4.2}{chapter*.10}}
-\backcite {marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}{{73}{5.4.2}{chapter*.10}}
-\backcite {marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}{{73}{5.4.2}{chapter*.10}}
-\backcite {marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}{{73}{5.4.2}{chapter*.10}}
-\backcite {marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}{{73}{5.4.2}{chapter*.10}}
-\backcite {marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}{{73}{5.4.2}{chapter*.10}}
-\backcite {marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}{{73}{5.4.2}{chapter*.10}}
-\backcite {guigue2012}{{73}{5.4.2}{chapter*.10}}
-\backcite {shaeffer1966traite}{{73}{5.4.2}{chapter*.10}}
-\backcite {smalley1997spectromorphology}{{73}{5.4.2}{chapter*.10}}
+\backcite {bresson2008scores}{{62}{4.1.1.1}{subsubsection.4.1.1.1}}
+\backcite {graham1995ansi}{{63}{2}{Hfootnote.22}}
+\backcite {andreatta2003implementing}{{65}{4.1.1.3}{subsubsection.4.1.1.3}}
+\backcite {bresson2012new}{{66}{4.1.1.3}{figure.4.35}}
+\backcite {bresson2012new}{{66}{36}{figure.4.36}}
+\backcite {puckettecomputing}{{67}{4.1.2}{subsection.4.1.2}}
+\backcite {puckette1996pure}{{67}{4.1.2}{subsection.4.1.2}}
+\backcite {puckettecomputing}{{67}{4.1.2}{subsection.4.1.2}}
+\backcite {van1995python}{{72}{5.4}{section.5.4}}
+\backcite {downey2009python,Kroger201208}{{72}{5.4}{section.5.4}}
+\backcite {downey2009python,Kroger201208}{{72}{5.4}{section.5.4}}
+\backcite {roads1979grammars}{{75}{5.4.2}{chapter*.10}}
+\backcite {lerdahl1983generative,temperley2004cognition}{{75}{5.4.2}{chapter*.10}}
+\backcite {lerdahl1983generative,temperley2004cognition}{{75}{5.4.2}{chapter*.10}}
+\backcite {chomsky1957syntactic}{{75}{5.4.2}{chapter*.10}}
+\backcite {krumhansl1990cognitive,lerdahl2001tonal}{{75}{5.4.2}{chapter*.10}}
+\backcite {krumhansl1990cognitive,lerdahl2001tonal}{{75}{5.4.2}{chapter*.10}}
+\backcite {forte1973structure,rahn1980basic,perle1990pitch,straus2004}{{75}{5.4.2}{chapter*.10}}
+\backcite {forte1973structure,rahn1980basic,perle1990pitch,straus2004}{{75}{5.4.2}{chapter*.10}}
+\backcite {forte1973structure,rahn1980basic,perle1990pitch,straus2004}{{75}{5.4.2}{chapter*.10}}
+\backcite {forte1973structure,rahn1980basic,perle1990pitch,straus2004}{{75}{5.4.2}{chapter*.10}}
+\backcite {babbitt1958cares}{{75}{5.4.2}{chapter*.10}}
+\backcite {marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}{{76}{5.4.2}{chapter*.10}}
+\backcite {marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}{{76}{5.4.2}{chapter*.10}}
+\backcite {marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}{{76}{5.4.2}{chapter*.10}}
+\backcite {marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}{{76}{5.4.2}{chapter*.10}}
+\backcite {marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}{{76}{5.4.2}{chapter*.10}}
+\backcite {marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}{{76}{5.4.2}{chapter*.10}}
+\backcite {guigue2012}{{76}{5.4.2}{chapter*.10}}
+\backcite {shaeffer1966traite}{{76}{5.4.2}{chapter*.10}}
+\backcite {smalley1997spectromorphology}{{76}{5.4.2}{chapter*.10}}
