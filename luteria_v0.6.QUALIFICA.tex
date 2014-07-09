@@ -1634,52 +1634,74 @@ O OM também incorpora dentro de seus sequenciadores de nota um procedimento par
 \end{figure}
 
 
-
+\pagebreak
 \subsection{PD}
 
-OM is almost certainly now the world’s dominant
-platform for doing CAC research and practice, de-
-spite the presence of several other approaches (includ-
-ing one, by Karlheinz Essl, that runs within Max).
-Is this because OM’s design is the best, or is it that
-OM has benefitted from the presence at IRCAM of
-so many willing composers, such as the ones repre-
-sented in this book? The two rival explanations are
-impossible to extricate from one another.
-\cite{puckettecomputing}
-
-Já o Puredata, nas palavras de seu idealizador:
+Desde o início de seu desenvolvimento o PureData surge como um software preocupado em resolver problemas de processamento digital de sinal, antes mesmo de sua versão comercial Max\footnote{http://cycling74.com/} ter sua versão "MSP", baseada neste primeiro estágio do PureData. 
 
 \begin{citacao}
-Um novo sistema de software, chamado Puredata, está em seus primeiros estágios de desenvolvimento. Seu design almeja remediar algumas deficiências do programa Max e preservar algumas de suas vantagens. A mais importante fraqueza do Max é a dificuldade de manter estruturas de dados compostas de um tipo que possa ser acessado quando analisando e ressintetizando sons  ou quando gravando e modificando sequencias de diferentes tipos. Também, tem sido difícil integrar sinais que não sejam de áudio (vídeo por exemplo, e também espectro sonoro ) dentro do rígido sistema de “objetos til” (~) do Max.\cite{puckette1996pure}
+Um novo sistema de software, chamado Puredata, está em seus primeiros estágios de desenvolvimento. Seu design almeja remediar algumas deficiências do programa Max e preservar algumas de suas vantagens. A mais importante fraqueza do Max é a dificuldade de manter estruturas de dados compostas de um tipo que possa ser acessado quando analisando e ressintetizando sons  ou quando gravando e modificando sequencias de diferentes tipos. Também, tem sido difícil integrar sinais que não sejam de áudio (vídeo por exemplo, e também espectro sonoro ) dentro do rígido sistema de “objetos til” ($\sim$ ) do Max.\cite{puckette1996pure}
 \end{citacao}
  
 
-Interessante perceber que já no final dos anos 90 o PD já tinha como alvo a vindoura possibilidade de uma música performática feita com os computadores domésticos que começavam a popularizar-se, preocupando-se com aspectos de melhor performance de processamento de áudio, uso de video sincronizado e representação em tempo real de dados do de processamento sonoro, apontando para a possiblidade de outros tipos de representação da música. 
-
-A música partiturável não era a grande preocupação e nem seus procedimentos de composição eram tão importantes quantos os aspectos relacionados ao espectro sonoro e a possibilidade de manipulação de eventos audiovisuais em tempo real.
-
-Uma diferença prática das abordagens padrão destes sistemas: O PD não incentiva a priori o uso de algum score derivado da escala cromática, e sim parte da idéia de frequências absolutas de 0hz ao limite de sua placa de som. É orientado por controles de eventos (“bangs”) de tempo não-linear.
-
-Além disso, os objetos tilde (~) fazem processamento de síntese sonora em tempo real, basta você plugá-los a qualquer momento em um objeto que representa sua placa de som processando vetores numéricos indicando a pressão e descompressão do seu auto-falante em estado bruto, o [dac~]. No OM é sempre necessário compilar (“verificar”) os patches para depois ouvi-los em sequenciadores de eventos ou players de áudio.
-
-Miller Puckette comenta num artigo de 2006 que o uso de procedimentos 
-
-I would like to see some of the techniques now only available in OM become usable some day within
-real-time environments. This is clearly a huge undertaking, since the style of programming currently used
-in real-time applications is so different from that in OM. But there would be much gained if this became
-possible. In the meantime it’s possible to send messages back and forth between OM and some lower latency process that takes care of real-time performance. 
-\cite{puckettecomputing}
+Interessante perceber que já no final dos anos 90 o PD já tinha como alvo a vindoura possibilidade de uma música performática feita com os computadores domésticos que começavam a popularizar-se, preocupando-se com aspectos de melhor performance de processamento de áudio, uso de video sincronizado e representação em tempo real de dados do de processamento sonoro, apontando para a possibilidade de outros tipos de representação da música. Seu tutorial nativo e todo focado na didática do processamento digital de sinal.\cite{puckette2007theory}  
 
 
-\subsubsection{biblioteca RTC-lib}
+A música partiturada em scores tradicionais nunca foi uma grande preocupação no PD. Podemos encontrar nativamente uma proposta de estrutura de dados mais próxima dos scores eletroacústicos, como o de "Artikulation" de Ligeti ou "Studie II" de Stockhausen.\footnote{ c.f. "Solitude" de Hans C. Steiner:  \url{http://http://vimeo.com/16175509}}.
 
-\lipsum[2]
+
+Apesar disso, vale lembrar também que assim como o Max, o PD tem uma serie de objetos preparados para lidar com o protocolo MIDI. Existem também várias bibliotecas de terceiros (distribuídas no pacote "Extended" ) que foram criadas pensando em manipulação de dados estruturados como semitons da escala de temperamento igual. Vejamos a seguir.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Manipulação de arquivos MIDI no PD.}
+	\begin{center}
+	    \includegraphics[scale=0.6]{OMPD/PD-midifile_write_-mrpeach.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+
+
+\subsubsection{Biblioteca [RTC-lib]}
+
+
+A biblioteca "Real Time Composition" de Karheinz Essl, implementa algumas operações inspiradas em procedimentos seriais, algumas funções inclusive com nomes similares as do Open Music.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Objetos da biblioteca "Real Time Composition" para PD.}
+	\begin{center}
+	    \includegraphics[scale=0.7]{OMPD/PD-RTC.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+\subsubsection{Biblioteca de manipulação de listas [list-abs]}
+
+Biblioteca que implementa diversas funções para busca, substituição, operações matemáticas, conversões de tipos, permutações e composições de listas de dados em forma de mensagens PD.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Objetos da biblioteca "list-abs" para PD.}
+	\begin{center}
+	    \includegraphics[scale=0.7]{OMPD/PD-list-abs.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
 
 \subsubsection{objeto [probalizer]}
 
-\lipsum[6]
+Interessante implementação gráfica de histogramas que podem ser alimentados em tempo real, gerando números dentro da mesma probabilidade, encontrado na biblioteca [Unauthorized].
 
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Objeto [probalizer].}
+	\begin{center}
+	    \includegraphics[scale=0.5]{OMPD/Probalizador-PD-OSC-OM.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
 
 
 % ----------------------------------------------------------
@@ -1799,14 +1821,15 @@ Por outro lado nos chamou atenção que paralelo a fundamentação destas teoria
 
 Dadas estas duas perspectivas pretendemos continuar este trabalho com uma organização dos algoritmos sugeridos por estas em bibliotecas das linguagens de programação apontadas na \autoref{computacional}, incluindo aí apontar boas práticas nas linguagens almejando um bom uso destas teorias em processos composicionais. Nos interessa testar os limites práticos destas implementações, deixando um legado tecnicamente viável e acessível, utilizando ferramentas e bibliotecas auxiliares disponíveis em software livre.
 
-
 Utilizaremos para exemplificar o uso das regras observadas em contextos tonais e pós-tonais alguns aspectos dos algoritmos atuando em um corpus de peças do repertório da suíte Mikrokosmos de Béla Bártok que será revisado no formato musicxml para o estudo computacional, buscando respeitar a grafia das partituras orginais. 
 
 Partiremos de pistas já deixadas por autores que aprofundaram o tema \cite{marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}.
 
 Mais do que encontrar alguma nova abordagem analítica sobre estas peças, buscaremos a demonstração de algumas regras gerativas observadas para em seguida serem utilizados de maneira mais livre em procedimentos composicionais que gerem motivos partiturados e sugestões de encadeamento destes.
 
-Vale lembrar de que estamos convencidos de que uma abordagem analítica que desconsidere paramêtros determinantes sobre a sonoridade\cite{guigue2012} dos aglomerados de alturas como parte intencional e determinante na composição estará incompleta. Também acreditamos que é limitador ignorar a tipo-morfologia\cite{shaeffer1966traite} e espectro-morfologia\cite{smalley1997spectromorphology} dos timbres atuantes numa situação real de gravação, performance partiturada ou improviso sobre as estruturas geradas. Interessa-nos refletir estes aspectos em alguma continuidade deste trabalho, no entanto ficam no momento fora do seu escopo.
+Composições produzidas durante esta pesquisa estão disponíveis para download\footnote{\url{https://soundcloud.com/organismo/sets/fragmentos-de-algofragmentos}}. Também estão disponíveis os códigos que estão sendo trabalhados\footnote{\url{https://github.com/glerm/luteriaOM} , \url{https://github.com/glerm/Derivas_OpenMusic} e \url{https://github.com/glerm/AutomatosGeradores} }. A próxima etapa será modularizar e comentar os códigos, detalhando os processos de maneira mais didática.
+
+Vale lembrar de que estamos convencidos de que uma abordagem analítica que desconsidere paramêtros determinantes sobre a sonoridade\cite{guigue2012} dos aglomerados de alturas como parte intencional e determinante na composição estará incompleta. Também acreditamos que é limitador ignorar a tipo-morfologia\cite{shaeffer1966traite} e espectro-morfologia\cite{smalley1997spectromorphology} dos timbres atuantes numa situação real de gravação, performance partiturada ou improviso sobre as estruturas geradas. Interessa-nos refletir estes aspectos em alguma continuidade deste trabalho.
 
 
 
@@ -1837,67 +1860,67 @@ Vale lembrar de que estamos convencidos de que uma abordagem analítica que desc
 % ---
 % Inicia os apêndices
 % ---
-\begin{apendicesenv}
+%\begin{apendicesenv}
 
 % Imprime uma página indicando o início dos apêndices
-\partapendices
+%\partapendices
 
 
 
 
 %%%%
 
-\chapter{Repositório de Códigos}
-\label{codigo}
+%\chapter{Repositório de Códigos}
+%\label{codigo}
 
 
-\subsection{Biblioteca de Algoritmos}
-
-
-
-\lstset{frameround=fttt,language=Python,showspaces=false,
-showtabs=true,tab=\rightarrowfill}
-\begin{lstlisting}[frame=trBL]
-def mod12(n):
-	return n % 12
-
-def note_name(number):
-	notes = "C  D E F G A B".split()
-	return notes[mod12(number)]
-	
-for i in intervalos:
-	if (i in maiores):
-		if (i == (4,7)):
-			tipos.append(("maior",0))
-		if (i == (5,9)):
-			tipos.append(("maior",1))
-		if (i == (3,8)):
-			tipos.append(("maior",2))
- 
-	if (i in menores):
-		if (i == (3,7)):
-			tipos.append(("menor",0))
-		if (i == (5,8)):
-			tipos.append(("menor",1))
-		if (i == (4,9)):
-			tipos.append(("menor",2))
-	if (i in aumentados):
-			tipos.append(("aumentado","not"))
-	if (i in diminutos):
-		if (i == (3,6)):
-			tipos.append(("diminuto",0))
-		if (i == (6,9)):
-			tipos.append(("diminuto",1))
-		if (i == (3,9)):
-			tipos.append(("diminuto",2))
- 
-\end{lstlisting}
+%\subsection{Biblioteca de Algoritmos}
 
 
 
+%\lstset{frameround=fttt,language=Python,showspaces=false,
+%showtabs=true,tab=\rightarrowfill}
+%\begin{lstlisting}[frame=trBL]
+%def mod12(n):
+%	return n % 12
+%
+%def note_name(number):
+%	notes = "C  D E F G A B".split()
+%	return notes[mod12(number)]
+%	
+%for i in intervalos:
+%	if (i in maiores):
+%		if (i == (4,7)):
+%			tipos.append(("maior",0))
+%		if (i == (5,9)):
+%			tipos.append(("maior",1))
+%		if (i == (3,8)):
+%			tipos.append(("maior",2))
+% 
+%	if (i in menores):
+%		if (i == (3,7)):
+%			tipos.append(("menor",0))
+%		if (i == (5,8)):
+%			tipos.append(("menor",1))
+%		if (i == (4,9)):
+%			tipos.append(("menor",2))
+%	if (i in aumentados):
+%			tipos.append(("aumentado","not"))
+%	if (i in diminutos):
+%		if (i == (3,6)):
+%			tipos.append(("diminuto",0))
+%		if (i == (6,9)):
+%			tipos.append(("diminuto",1))
+%		if (i == (3,9)):
+%			tipos.append(("diminuto",2))
+% 
+%\end{lstlisting}
 
 
-\end{apendicesenv}
+
+
+
+%\end{apendicesenv}
 % ---
 
 
