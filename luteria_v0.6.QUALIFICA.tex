@@ -1086,6 +1086,7 @@ A CBMS estabelece regras específicas para inferir contexto harmônico, mas em n
 
 \pagebreak
 \subsubsection{Algoritmo dos Perfis de Tonalidade}
+\label{perfiltonal}
 
 \lipsum[30]
 
@@ -1572,7 +1573,6 @@ ignorados ou deixados de lado dos ambientes computacionais."\cite{bresson2011ope
 
 Em suma, o OpenMusic teve ( pelo menos em seus primeiros anos ) uma intenção mais voltada para processos preocupados com a continuidade dos sistemas derivados dos estudos eruditos de intervalos, acordes, harmonia que estavam na base das preocupações do serialismo integral. O OM sempre foi um dos software amplamente utilizados para tal fim, e isto reflete diretamente em sua interface e cultura de uso.
 
-
 O OM é um framework que tende a uma programação orientada pela reflexão em tempo diferido, isto é, estimula a composição por escolha entre diversos resultados permutados e decupados em um tempo de escuta.
 
 Organiza materiais basicamente orientado pela escrita e fortemente pensado dentro do esquema de intervalos melódicos
@@ -1641,14 +1641,14 @@ O OM também incorpora dentro de seus sequenciadores de nota um procedimento par
 \pagebreak
 \subsection{PD}
 
-Desde o início de seu desenvolvimento o PureData surge como um software preocupado em resolver problemas de processamento digital de sinal, antes mesmo de sua versão comercial Max\footnote{http://cycling74.com/} ter sua versão "MSP", baseada neste primeiro estágio do PureData. 
+Desde o início de seu desenvolvimento o PureData surge como um software preocupado em resolver problemas de processamento digital de sinal de maneira estruturada, paralelo ao momento que sua versão comercial Max\footnote{http://cycling74.com/} desenvolvia sua versão "MSP" para processamento de áudio digital, baseada neste primeiro estágio do PD. 
 
 \begin{citacao}
 Um novo sistema de software, chamado Puredata, está em seus primeiros estágios de desenvolvimento. Seu design almeja remediar algumas deficiências do programa Max e preservar algumas de suas vantagens. A mais importante fraqueza do Max é a dificuldade de manter estruturas de dados compostas de um tipo que possa ser acessado quando analisando e ressintetizando sons  ou quando gravando e modificando sequencias de diferentes tipos. Também, tem sido difícil integrar sinais que não sejam de áudio (vídeo por exemplo, e também espectro sonoro ) dentro do rígido sistema de “objetos til” ($\sim$ ) do Max.\cite{puckette1996pure}
 \end{citacao}
  
 
-Interessante perceber que já no final dos anos 90 o PD já tinha como alvo a vindoura possibilidade de uma música performática feita com os computadores domésticos que começavam a popularizar-se, preocupando-se com aspectos de melhor performance de processamento de áudio, uso de video sincronizado e representação em tempo real de dados do de processamento sonoro, apontando para a possibilidade de outros tipos de representação da música. Seu tutorial nativo e todo focado na didática do processamento digital de sinal.\cite{puckette2007theory}  
+Interessante perceber que já no final dos anos 90 o PD já tinha como alvo a vindoura possibilidade de uma música performática feita com os computadores domésticos que começavam a popularizar-se, preocupando-se com aspectos de melhor performance de processamento de áudio, uso de video sincronizado e representação em tempo real de dados de processamento sonoro, apontando para a possibilidade de outros tipos de representação da música. Seu tutorial nativo é todo focado na didática do processamento digital de sinal.\cite{puckette2007theory}  
 
 
 A música partiturada em scores tradicionais nunca foi uma grande preocupação no PD. Podemos encontrar nativamente uma proposta de estrutura de dados mais próxima dos scores eletroacústicos, como o de "Artikulation" de Ligeti ou "Studie II" de Stockhausen.\footnote{ c.f. "Solitude" de Hans C. Steiner:  \url{http://http://vimeo.com/16175509}}.
@@ -1796,7 +1796,7 @@ Falaremos a seguir de duas dessas bibliotecas utilizadas como ferramenta auxilia
 
 É uma biblioteca projetada para trabalhar com manipulação e análise de corpus de arquivos partituráveis\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleCorpus.html}. Prepara a conversão entre diversos arquivos de dados musicais (midi, humdrum, lilypond, abc)\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleConverter.html}, mas nativamente trabalha com uma estrutura de dados baseada em musicxml.
 
-Music21 tem uma abordagem voltada para uma "musicologia assistida por computador" e já tem incorporada em suas classes algumas ferramentas comuns a esta prática como: numeração de grau funcional de acorde\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleRoman.html}, numeração de classes de altura usando a classificação de Allen Forte\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleChord.html?\#music21.chord.Chord.forteClassNumber}
+Music21 tem uma abordagem voltada para uma "musicologia assistida por computador" e já tem incorporada em suas classes algumas ferramentas comuns a esta prática como: numeração de grau funcional de acorde\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleRoman.html}, numeração de classes de altura usando a classificação de Allen Forte\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleChord.html?\#music21.chord.Chord.forteClassNumber}} e a implementação dos algoritmos de detecção de tonalidade\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html}} elaborado por \citeonline{krumhansl1990cognitive} e aperfeiçoado por \citeonline{temperley2004cognition}, descritos nesta pesquisa.\footnote{\autoref{perfiltonal}}
 
 
 % ---
@@ -1824,9 +1824,9 @@ Por um lado revisamos uma corrente teórica que enumera estruturas operantes nas
 
 Por outro lado nos chamou atenção que paralelo a fundamentação destas teorias, nas últimas décadas do século XX (e a partir da sedimentação de uma tradição pós-tonal iniciada nas suas primeiras décadas) formalizou-se uma "teoria de grupos das classes de altura"\cite{forte1973structure,rahn1980basic,perle1990pitch,straus2004} baseada numa catalogação de combinações de intervalos formando compostos sonoros singulares e as possíveis estruturações e articulações entre estes. Ali operariam critérios não necessariamente tão amarrados na funcionalidade dos esquemas de tensão e relaxamento das formas "tonalizantes". Mesmo que vertiginosamente, é preciso admitir que cada composição já pode comportar um sistema totalmente idiossincrático. Ao contrário da corrente cognitivista, neste caso uma criatividade autoral do analista assume que as formas estão emergindo ali a príncipio porque foram apontadas, e não necessáriamente porque foram intuídas pelo compositor. Também não buscam justificar expectativas do ouvinte que guiariam a normatização de uma busca composicional da "boa forma" pré-concebida.\cite{babbitt1958cares}
 
-Dadas estas duas perspectivas pretendemos continuar este trabalho com uma organização dos algoritmos sugeridos por estas em bibliotecas das linguagens de programação apontadas na \autoref{computacional}, incluindo aí apontar boas práticas nas linguagens almejando um bom uso destas teorias em processos composicionais. Nos interessa testar os limites práticos destas implementações, deixando um legado tecnicamente viável e acessível, utilizando ferramentas e bibliotecas auxiliares disponíveis em software livre.
+Dadas estas duas perspectivas pretendemos continuar este trabalho com uma organização dos algoritmos sugeridos por estas em bibliotecas das linguagens de programação apontadas na \autoref{computacional}, incluindo aí aprofundar e apontar boas práticas nas linguagens almejando um bom uso destas teorias em processos composicionais. Nos interessa testar os limites práticos destas implementações, deixando um legado tecnicamente viável e acessível, utilizando ferramentas e bibliotecas auxiliares disponíveis em software livre.
 
-Utilizaremos para exemplificar o uso das regras observadas em contextos tonais e pós-tonais alguns aspectos dos algoritmos atuando em um corpus de peças do repertório da suíte Mikrokosmos de Béla Bártok que será revisado no formato musicxml para o estudo computacional, buscando respeitar a grafia das partituras orginais. 
+Utilizaremos para exemplificar o uso das regras observadas em contextos tonais e pós-tonais alguns aspectos dos algoritmos atuando em um corpus de peças do repertório da suíte Mikrokosmos de Béla Bártok que será revisado no formato musicxml para o estudo computacional, buscando respeitar a grafia das partituras originais. 
 
 Partiremos de pistas já deixadas por autores que aprofundaram o tema \cite{marshall1946analysis,suchoff1971guide, lendvai1971bela,antokoletz1984music,suchoff2004bartok,lester1989analytic}.
 
