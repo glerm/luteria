@@ -1018,7 +1018,7 @@ Decidimos iniciar o percurso pelas regras da CBMS pelos dois grupos de regras qu
 
 
 \subsubsection{Solfejo Enarmônico das Classes de Alturas Tonais}
-
+\label{solfejo}
 A questão do solfejo enarmônico é central para a implementação algorítmica dos seis sistemas de regras proposto por Temperley.
 
 A CBMS parte de uma reflexão sobre representações geométricas do ciclo de quintas, concluindo que representações cíclicas e modulares do ciclo("Neutral Pitch Class") não são suficientes para o que chama "Tonal Pitch Class", uma representação que dê conta dos contextos funcionais que diferenciam as enarmonias conforme o seu papel em determinado contexto: nota sensível, nota de passagem, modulação para tonalidade relativa, resolução de dominante, etc.\footnote{Para além de declarações de tonalidade na escrita tradicional de armaduras de clave, Temperley leva em consideração aquilo que há de autoral na ortografia\cite[p.123]{temperley2004cognition}  dos compositores e que poderia confirmar a função do cromatismos dentro do discurso tonal cognoscível para o sistema argumentado pelas CBMS.}
@@ -1056,9 +1056,7 @@ Nas regras de preferência para o Solfejo enarmônico  CBMS problematiza o que c
 	\legend{Fonte: \cite[pg. 127]{temperley2004cognition} }
 \end{figure}
 
-
 Considerando que cada centro de gravidade vai ficando mais complexo a cada modulação de tonalidade. A regra de preferência da variância das alturas\footnote{"Tonal Pitch Rule 1" - (TPR1)\cite[ p.125]{temperley2004cognition}} determina a aproximação onde, por exemplo, para a escala de Dó maior teremos o centro em Ré.
-
 
 Mais adiante em uma aplicação proposta para a analise da influência do modalismo no rock, Temperley propõe uma ideia que chama de "supermodo", uma combinação de modos vizinhos, expandindo o espaço tonal para um campo estendido onde as notas cromáticas teriam funções de afirmar os modos.
 
@@ -1231,31 +1229,27 @@ It was, of course, Allen Forte who in the USA pioneered the analytical with a ta
 
 Com formalização de uma teoria de grupos de classes de alturas pela geração de musicólogos e compositores seriais da segunda metade do século XX e com os avanços exponenciais da computação nas últimas décadas estas teorias vão sendo testadas e aplicadas a ponto de já constituírem uma área bastante específica da musicologia contemporânea.\cite{aroundset2013}
 
-Um exemplo de interesse do presente trabalho é a classe de objetos "Math Tools"\cite{andreatta2003implementing,AndreataOMtutorial,DebrilOM} da linguagem de programação OpenMusic, que organiza em orientação a objetos muitos dos conceitos que veremos logo a seguir. 
+Um exemplo de interesse do presente trabalho é a classe de objetos "Math Tools"\cite{andreatta2003implementing,AndreataOMtutorial,DebrilOM} da linguagem de programação OpenMusic\footnote{ver \autoref{OMmath}}, que organiza em orientação a objetos muitos dos conceitos que veremos logo a seguir. 
 
 
 
 \section{Fórmulas de agrupamento e transformação dos intervalos}
 
+A teoria de grupos de classes de altura utiliza como base de suas formulações a relação entre os 12 semitons da escala cromática de forma modular: considerando alturas de mesma oitava como sujeitas a mesmas propriedades intervalares, podendo argumentar relações independentes de registro. Exemplo: O Dó grave representado no protocolo MIDI pelo valor 24 tem uma relação de equivalência com o Dó agudo de valor 72. A fórmula é simples: ambos quando divididos por 12 apresentam resto 0. A nota Ré, por exemplo, sempre apresentaria o resto 2, e assim por diante. Dizemos por tanto que pertencem a uma mesma classe de altura.
 
+Diferente de quando argumentada uma enarmonia funcional\footnote{ver \autoref{solfejo} } (como por exemplo D\# $\to$ Eb ) a teoria de grupos e classes de altura não toma como princípio ideias do tipo "terça maior ou menor", "nota sensível" ou "nota de passagem" pois vai partir de uma relação direta entre os aglomerados sonoros, buscando similaridades e equivalências sem estar tão presa as formas de prolongamento normatizadas pelo tonalismo clássico.\cite{lerdahl1989atonal,straus1987problem}
 
+Os intervalos são antes de funções, distâncias. Nas teorias de classes de alturas estas distâncias podem estar categorizadas como intervalos ordenados - usando número negativos para os intervalos descendentes, ou não-ordenados - considerando intervalos equivalentes independentes de suas direções.\cite[pg. 6]{straus2004}
 
+Isso cria imediatamente uma relação interessante de parentesco entre pares em todos intervalos da escala cromática exceto para os trítonos, intervalos de sexta ordem, que está equidistante de 0 e 12 e portanto não possui uma inversão propriamente dita, mas sim tem o papel de cortar ao meio este espelhamento.
 
-a equivalência enarmônica das oitavas
-
-diferença entre NPC e TPC \cite[p. 118]{temperley2004cognition}
-
-os intervalos também passam a não serem mais nomeados funcionamente (exemplo quarta aumentada e quinta diminuta )
-
-mostrar formula do modulo em pd, om e python
-
-
-Os intervalos são distâncias, nas teorias de classes de alturas estas distâncias podem estar categorizadas como intervalos ordenados - usando número negativos para os intervalos descendentes, ou não-ordenados - considerando intervalos equivalentes independentes de suas direções.\cite[pg. 6]{straus2004}
-
-
-Isso cria imediatamente uma relação de parentesco entre pares em todos intervalos da escala cromática exceto para os trítonos, intervalos de sexta ordem, que está equidistante de 0 e 12 e portanto não possui uma inversão propriamente dita, mas sim tem o papel de cortar ao meio este espelhamento.
-
-grafico que mostra essa relação 
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Equivalência de intervalos por inversão }
+	\begin{center}
+	    \includegraphics[scale=0.3]{algo/equivalencia_inversa.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
 
 
 
@@ -1314,7 +1308,7 @@ O vetor de intervalos pode ser reduzido então a uma contagem que coloca no mesm
 
 Pode-se dizer então que a classe de alturas [0,2,4,10] possui o vetor intervalar <0,3,0,2,0,1>.
 
-\pagebreak
+
 \subsection{Forma Normal} 
 
 \begin{figure}[h]
@@ -1616,7 +1610,7 @@ O OM implementa uma série de operações sobre as listas de dados estruturadas.
 
 
 \subsubsection{Operações combinatórias e operações sobre grupos de classes de altura }
-
+\label{OMmath}
 O OM possui também algumas classes já preparadas especialmente para organizar series, permutar, ordenar, embaralhar e inclusive uma classe chamada "math", que antecipa e organiza uma serie de operações básicas sobre grupos de classes de altura, como extração do vetor intervalar, classificação de conjuntos de Allen Forte e uma representação gráfica da geometria das classes de altura, o objeto "n-cerle"\cite{andreatta2003implementing}. Alguns objetos desta classe foram testados nas demonstrações do \autoref{modelos}.
 
 \begin{figure}[!h]
