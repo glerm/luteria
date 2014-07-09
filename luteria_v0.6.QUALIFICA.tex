@@ -382,7 +382,7 @@
 
 Esta pesquisa visa problematizar e sistematizar um catálogo de experimentos constituído de pequenas peças musicais e seus algoritmos geradores, objetivando a construção de uma biblioteca de objetos para composição assistida por computador que gere partituras baseadas em pequenas regras extraídas de análises.
 
-Formalizamos tais aspectos através de um estudo comparado de dois paradigmas de análise musical aplicáveis a estas peças: "A Teoria Gerativa da Música Tonal"\cite{lerdahl1983generative} com algumas de suas continuidades propostas \cite{lerdahl2009genesis,temperley2004cognition} e a teoria dos conjuntos e classes de alturas cromáticas.\cite{forte1973structure,straus2004}
+Formalizamos tais aspectos através de um estudo comparado de dois paradigmas de análise musical aplicáveis a estas peças: "A Teoria Gerativa da Música Tonal"\cite{lerdahl1983generative} com algumas de suas continuidades propostas \cite{lerdahl2009genesis,temperley2001cognition} e a teoria dos conjuntos e classes de alturas cromáticas.\cite{forte1973structure,straus2004}
 
 Os procedimentos utilizados são derivados de aspectos intervalares singulares encontrados em algumas peças da suíte Mikrokosmos do compositor Béla Bartók. Este repertório foi escolhido devido a seu reconhecido contexto como composições pianísticas e pedagógicas situadas nas fronteiras da pós-tonalidade. 
 
@@ -524,7 +524,7 @@ Na \autoref{analises} buscamos organizar tal processo criativo especializando um
 
 A partir desta perspectivas encontramos duas correntes analíticas que nos chamaram atenção por serem relativamente contemporâneas entre si e que partem de diferentes princípios. 
 
-No primeiro caso derivamos da \textit{"Teoria Gerativa da Música Tonal"}\cite{lerdahl1983generative} e alguns desdobramentos mais recentes como a \textit{"Cognição das Estruturas Musicais Básicas"}\cite{temperley2004cognition} para buscar algoritmos que definam critérios quantitativos para análises tomem em consideração a normatização operada pela música tonal ocidental na percepção do seu ouvinte médio. Estas teorias flertam com argumentos da psicologia cognitivista da música\cite{krumhansl1990cognitive} para justificar seus pressupostos.
+No primeiro caso derivamos da \textit{"Teoria Gerativa da Música Tonal"}\cite{lerdahl1983generative} e alguns desdobramentos mais recentes como a \textit{"Cognição das Estruturas Musicais Básicas"}\cite{temperley2001cognition} para buscar algoritmos que definam critérios quantitativos para análises tomem em consideração a normatização operada pela música tonal ocidental na percepção do seu ouvinte médio. Estas teorias flertam com argumentos da psicologia cognitivista da música\cite{krumhansl1990cognitive} para justificar seus pressupostos.
 
 No segundo caso encontramos a corrente musicológica que trabalha sobre um mapeamento dos agrupamentos de classes de alturas, organizando taxonomias \cite{forte1973structure}, descrevendo operações de transformação\cite{straus2004} e buscando critérios mais autorais para apontar singularidades em composições\cite{lester1989analytic,straus2004} que não necessariamente operam sobre os pressupostos de uma expectativa de tonalidade explícita.
 
@@ -598,7 +598,7 @@ Inspirou as formalizações rígidas de modelos da musicologia da cognição ins
 
 Uma abordagem curiosa para comparação desta mesma época é a de Leonard Berstein na série de palestras “Unswared Question” \cite{bernstein1976unanswered}. Sua especulação empírica foi bastante alegórica e demonstrada inventivamente ao piano em seu registro em vídeo. Bersnstein fez comparações das estruturas de ordenamento das frases escritas e faladas com montagens de sessões motívicas de peças clássicas e chega a fazer algumas metáforas entre classes gramaticais e funções de acordes. Este tipo de metáfora parece ser de fato uma das motivações iniciais da pesquisa neste campo, porém muita coisa foi problematizada de maneira mais rigorosa, buscando métodos quantitativos, e nos anos seguintes contribuiu para as bases de organização de uma disciplina hoje conhecida por "cognição musical".
 
-Pelo bem ou pelo mal, a abordagem de Bernstein parece estar muito mais para o universo das analogias poéticas livres do que a busca por uma formalização strictu sensu \cite{lerdahl2009genesis} como a que se sucedeu nas derivações das gramáticas gerativas musicais \cite{lerdahl1983generative,temperley2004cognition} ou em formulações algébricas e algoritmicas que Curtis \citeonline{roads1979grammars} já apontava em seus estudos da época.
+Pelo bem ou pelo mal, a abordagem de Bernstein parece estar muito mais para o universo das analogias poéticas livres do que a busca por uma formalização strictu sensu \cite{lerdahl2009genesis} como a que se sucedeu nas derivações das gramáticas gerativas musicais \cite{lerdahl1983generative,temperley2001cognition} ou em formulações algébricas e algoritmicas que Curtis \citeonline{roads1979grammars} já apontava em seus estudos da época.
 
  
 
@@ -859,7 +859,7 @@ difficulties in this regard. \cite[p. 191]{lerdahl2009genesis}}
 
 
 
-Posteriormente ao GTTM, Lerdahl investe esforços no desenvolvimento da teoria de espaço tonal\cite{lerdahl1988tps}, que foi fortemente baseado nas pesquisas de quantificação das condições para estabilidade da percepção de contextos tonais argumentada por Carol Krumhansl em seu artigo "Perceptual structures of tonal music"\cite{krumhansl1983perceptual} e fundamentada em mais profundidade no livro "Cognitive structures of pitch"\cite{krumhansl1990cognitive}. Como veremos mais adiante este trabalho também influenciou os algoritmos de harmonia e tonalidade de David Temperley em seu "Cognitive Basic Music Structures"\cite{temperley2004cognition}. 
+Posteriormente ao GTTM, Lerdahl investe esforços no desenvolvimento da teoria de espaço tonal\cite{lerdahl1988tps}, que foi fortemente baseado nas pesquisas de quantificação das condições para estabilidade da percepção de contextos tonais argumentada por Carol Krumhansl em seu artigo "Perceptual structures of tonal music"\cite{krumhansl1983perceptual} e fundamentada em mais profundidade no livro "Cognitive structures of pitch"\cite{krumhansl1990cognitive}. Como veremos mais adiante este trabalho também influenciou os algoritmos de harmonia e tonalidade de David Temperley em seu "Cognitive Basic Music Structures"\cite{temperley2001cognition}. 
 
 \pagebreak
 Mais recentemente, Lerdahl atualiza sua teoria do espeço tonal\cite{lerdahl2001tonal} buscando alguns argumentos novos sobre transformações cromáticas algébricas fundamentadas pela corrente musicológica "Neo-Riemaniana"\cite{cohn1998introduction,lewin2007generalized} e escreve com Krumhansl um artigo chamado "Modeling Tonal Tension"\cite{2007lerdahl-krumhansl} buscando legitimar sua teoria através de testes cognitivos com uma audiência.
@@ -880,7 +880,7 @@ the shortest path selects events yielding the smallest available distances from 
 \end{figure}
 
 
-Considerando esta atualização da teoria optamos por não entrar em detalhes destes dois escopos mais frágeis da GTTM e focamos diretamente em derivações posteriores que os problematizam em outros termos. Tomamos dos estudos de Lerdahl posteriores ao GTTM  por enquanto apenas seu conceito de tensão e estabilidade desenvolvido em sua "teoria do espaço tonal"("Tonal Pitch Space", doravante referida como TPS) na próxima sessão. Em seguida apresentamos uma alternativa derivada da GTTM, elaborada por David Temperley e implmentada computacionalmente em seu trabalho "Cognition of Basic Musical Structures"\cite{temperley2004cognition}.
+Considerando esta atualização da teoria optamos por não entrar em detalhes destes dois escopos mais frágeis da GTTM e focamos diretamente em derivações posteriores que os problematizam em outros termos. Tomamos dos estudos de Lerdahl posteriores ao GTTM  por enquanto apenas seu conceito de tensão e estabilidade desenvolvido em sua "teoria do espaço tonal"("Tonal Pitch Space", doravante referida como TPS) na próxima sessão. Em seguida apresentamos uma alternativa derivada da GTTM, elaborada por David Temperley e implmentada computacionalmente em seu trabalho "Cognition of Basic Musical Structures"\cite{temperley2001cognition}.
 
 
 
@@ -952,11 +952,11 @@ O exemplo usado é o início da Sonata K.282 de Mozart, demonstrando as tonalida
 
 $ Eb:I\left\{
   \begin{array}{l l}
-    Nível Oitava:[3]\to[Eb]\to Tonalidade\\
-    Nível Quinta:[3,10]\to[Eb,Bb]\to Dominante\\
-    Nível Tríadico:[3,7,10]\to[Eb,G,Bb]\to Tríade\;Maior \\
-    Nível Diatônico:[3,5,7,10,0,2] \to Escala\;de\;Eb\; Maior \\
-    Nível Diatônico:[0...11] \to Sequencia\;cromática\;completa \\
+    Nível\;Oitava:[3]\to[Eb]\to Tonalidade\\
+    Nível\;Quinta:[3,10]\to[Eb,Bb]\to Dominante\\
+    Nível\;Tríadico:[3,7,10]\to[Eb,G,Bb]\to Tríade\;Maior \\
+    Nível\;Diatônico:[3,5,7,10,0,2] \to Escala\;de\;Eb\; Maior \\
+    Nível\;Diatônico:[0...11] \to Sequencia\;cromática\;completa \\
     
   \end{array} \right.
 $
@@ -1008,7 +1008,7 @@ Toma-se o menor como equivalente a "menor distancia" na tensão tonal, portanto 
 
 \section{Cognição das Estruturas Musicais Básicas (CBMS)}
 
-A teoria elaborada por David \citeonline{temperley2004cognition} em seu livro "Cognição das Estruturas Musicais Básicas"\footnote{"Cognitive Theory of Basic Musical Structures" doravante tratado por CBMS. } foi declaradamente inspirada na GTTM. Seu esquema de enumeração de regras "bem formadas" e regras de "preferência" é tão similar que pode ser considerado uma tentantiva de continuidade desta.
+A teoria elaborada por David \citeonline{temperley2001cognition} em seu livro "Cognição das Estruturas Musicais Básicas"\footnote{"Cognitive Theory of Basic Musical Structures" doravante tratado por CBMS. } foi declaradamente inspirada na GTTM. Seu esquema de enumeração de regras "bem formadas" e regras de "preferência" é tão similar que pode ser considerado uma tentantiva de continuidade desta.
 
 Temperley divide as regras em seis grupos: \textbf{estrutura métrica, frase melódica, estrutura contrapontual, solfejo enarmônico das classes de altura tonais, estrutura harmônica, estrutura de tonalidade.}
 
@@ -1021,7 +1021,7 @@ Decidimos iniciar o percurso pelas regras da CBMS pelos dois grupos de regras qu
 \label{solfejo}
 A questão do solfejo enarmônico é central para a implementação algorítmica dos seis sistemas de regras proposto por Temperley.
 
-A CBMS parte de uma reflexão sobre representações geométricas do ciclo de quintas, concluindo que representações cíclicas e modulares do ciclo("Neutral Pitch Class") não são suficientes para o que chama "Tonal Pitch Class", uma representação que dê conta dos contextos funcionais que diferenciam as enarmonias conforme o seu papel em determinado contexto: nota sensível, nota de passagem, modulação para tonalidade relativa, resolução de dominante, etc.\footnote{Para além de declarações de tonalidade na escrita tradicional de armaduras de clave, Temperley leva em consideração aquilo que há de autoral na ortografia\cite[p.123]{temperley2004cognition}  dos compositores e que poderia confirmar a função do cromatismos dentro do discurso tonal cognoscível para o sistema argumentado pelas CBMS.}
+A CBMS parte de uma reflexão sobre representações geométricas do ciclo de quintas, concluindo que representações cíclicas e modulares do ciclo("Neutral Pitch Class") não são suficientes para o que chama "Tonal Pitch Class", uma representação que dê conta dos contextos funcionais que diferenciam as enarmonias conforme o seu papel em determinado contexto: nota sensível, nota de passagem, modulação para tonalidade relativa, resolução de dominante, etc.\footnote{Para além de declarações de tonalidade na escrita tradicional de armaduras de clave, Temperley leva em consideração aquilo que há de autoral na ortografia\cite[p.123]{temperley2001cognition}  dos compositores e que poderia confirmar a função do cromatismos dentro do discurso tonal cognoscível para o sistema argumentado pelas CBMS.}
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Ciclo de dominantes e subdominantes em modo circular }
@@ -1042,21 +1042,21 @@ O argumento é de que a linha sugere possíveis cromatismos através de uma prov
 	\begin{center}
 	    \includegraphics[scale=0.6]{CBMS/jonico_lineoffifths.png}
 	\end{center}
-	\legend{Fonte: \cite[pg. 127]{temperley2004cognition} }
+	\legend{Fonte: \cite[pg. 127]{temperley2001cognition} }
 \end{figure}
 
 \pagebreak
-Nas regras de preferência para o Solfejo enarmônico  CBMS problematiza o que chama de "Centro de Gravidade Tonal"\footnote{(COG)-"Center of gravity"\cite[ p.125]{temperley2004cognition}}.
+Nas regras de preferência para o Solfejo enarmônico  CBMS problematiza o que chama de "Centro de Gravidade Tonal"\footnote{(COG)-"Center of gravity"\cite[ p.125]{temperley2001cognition}}.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Escala de Dó maior - Ré como centro de gravidade. }
 	\begin{center}
 	    \includegraphics[scale=0.6]{CBMS/COG_re_lineoffifths.png}
 	\end{center}
-	\legend{Fonte: \cite[pg. 127]{temperley2004cognition} }
+	\legend{Fonte: \cite[pg. 127]{temperley2001cognition} }
 \end{figure}
 
-Considerando que cada centro de gravidade vai ficando mais complexo a cada modulação de tonalidade. A regra de preferência da variância das alturas\footnote{"Tonal Pitch Rule 1" - (TPR1)\cite[ p.125]{temperley2004cognition}} determina a aproximação onde, por exemplo, para a escala de Dó maior teremos o centro em Ré.
+Considerando que cada centro de gravidade vai ficando mais complexo a cada modulação de tonalidade. A regra de preferência da variância das alturas\footnote{"Tonal Pitch Rule 1" - (TPR1)\cite[ p.125]{temperley2001cognition}} determina a aproximação onde, por exemplo, para a escala de Dó maior teremos o centro em Ré.
 
 Mais adiante em uma aplicação proposta para a analise da influência do modalismo no rock, Temperley propõe uma ideia que chama de "supermodo", uma combinação de modos vizinhos, expandindo o espaço tonal para um campo estendido onde as notas cromáticas teriam funções de afirmar os modos.
 
@@ -1065,7 +1065,7 @@ Mais adiante em uma aplicação proposta para a analise da influência do modali
 	\begin{center}
 	    \includegraphics[scale=0.6]{CBMS/modosrockgregos_temperley.png}
 	\end{center}
-	\legend{Fonte: \cite[pg. 260]{temperley2004cognition} }
+	\legend{Fonte: \cite[pg. 260]{temperley2001cognition} }
 \end{figure}
 
 
@@ -1073,9 +1073,9 @@ Mais adiante em uma aplicação proposta para a analise da influência do modali
 
 
 
-As regras de variância na condução de vozes\footnote{"Tonal Pitch Rule 2" - (TPR1)\cite[ p.129]{temperley2004cognition}} determinam critérios para considerar as passagens cromáticas dentro da condução de vozes, já que neste caso é preciso uma "nota de passagem" que não está como pivô de modulação ou sensível de resolução mas como um ornamento de passagem cromática. A CBMS propõe que se um evento está distante do centro de gravidade neste contexto deve portanto estar a no mínimo cinco passos da classe de altura do evento relacionado\cite[ p.130]{temperley1997algorithm}
+As regras de variância na condução de vozes\footnote{"Tonal Pitch Rule 2" - (TPR2)\cite[ p.129]{temperley2001cognition}} determinam critérios para considerar as passagens cromáticas dentro da condução de vozes, já que neste caso é preciso uma "nota de passagem" que não está como pivô de modulação ou sensível de resolução mas como um ornamento de passagem cromática. A CBMS propõe que se um evento está distante do centro de gravidade neste contexto deve portanto estar a no mínimo cinco passos da classe de altura do evento relacionado\cite[ p.130]{temperley1997algorithm}
 
-A última regra de preferência para o solfejo harmônico trata do reconhecimento de notas que estão figurando funcionalmente em acordes, determinando contexto cadencial.\footnote{"Tonal Pitch Rule 3" - (TPR1)\cite[ p.131]{temperley2004cognition}}
+A última regra de preferência para o solfejo harmônico trata do reconhecimento de notas que estão figurando funcionalmente em acordes, determinando contexto cadencial.\footnote{"Tonal Pitch Rule 3" - (TPR3)\cite[ p.131]{temperley2001cognition}}
 
 A regra anterior expõe um caso onde claramente não apenas o contexto é determinado pela escolha da relação individual entre as alturas  mas a identidade destas alturas é determinada pelo contexto harmônico. 
 
@@ -1086,33 +1086,46 @@ A CBMS estabelece regras específicas para inferir contexto harmônico, mas em n
 \subsubsection{Algoritmo dos Perfis de Tonalidade}
 \label{perfiltonal}
 
-\lipsum[30]
+Temperley problematiza os algoritmos de busca por tonalidade lembrando que identificar um solfejo de notas em uma passagem melódica não será suficiente se não soubermos qual o contexto de tonalidade da passagem\cite[p.167]{temperley2001cognition}.
+
+Para isto inicia uma busca por um estudo comparado entre algumas abordagens da percepção de tonalidade, pela psicologia cognitivista da música. \cite{cuddy1979melody,brown1994musical,deutsch1981internal,longuet1971interpreting}
+
+Decide focar no algoritmo de "Krumhansl-Schmuckler"\footnote{c.f. implementação em \url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html\#music21.analysis.discrete.KrumhanslSchmuckler}} 
+surgido da pesquisa de Carol \citeonline{krumhansl1983perceptual} e aprofundado em seu "Cognitive foundations of musical pitch"\cite{krumhansl1990cognitive}.
+
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Perfis de tonalidade propostos por Carol \citeonline{krumhansl1990cognitive} - comparativo entre tonalidades próximas ou distantes. }
+	\caption{\label{fig_grafico}Perfis de tonalidade propostos por Carol \citeonline{krumhansl1983perceptual} - comparativo entre tonalidades próximas e distantes. }
 	\begin{center}
-	    \includegraphics[scale=0.6]{CBMS/probeones_krumhansl_p36.png}
+	    \includegraphics[scale=0.63]{CBMS/probeones_krumhansl_p36.png}
 	\end{center}
 	\legend{Fonte: \cite[pg. 36]{krumhansl1990cognitive} }
 \end{figure}
 
-
-
- 
-Krumhansl Schmuckler 
-
-
+Krumhansl argumenta sobre o que chama "perfis-tonais", histogramas que servem como uma referência para calculo estatístico a partir de uma amostra de ouvintes pesquisados sobre a tendência a "adaptar"\cite[p.173]{temperley2001cognition} notas de uma escala cromática como ornamentos dentro de um determinado contexto tonal.
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Perfis de tonalidade propostos por Carol \citeonline{krumhansl1990cognitive} - histograma demonstrado por \citeonline{temperley2004cognition}. }
+	\caption{\label{fig_grafico}Perfis de tonalidade propostos por Carol \citeonline{krumhansl1990cognitive} - histograma demonstrado por \citeonline{temperley2001cognition}. }
 	\begin{center}
 	    \includegraphics[scale=0.6]{CBMS/krumhansl_temperley_p174.png}
 	\end{center}
-	\legend{Fonte: \cite[pg. 174]{temperley2004cognition} }
+	\legend{Fonte: \cite[pg. 174]{temperley2001cognition} }
 \end{figure}
 
 
+A fórmula funciona da seguinte maneira\footnote{c.f. uma prova real detalhada da fórmula orginal em \cite[p.37]{krumhansl1990cognitive} }:
+
+
+$ \left\{
+  \begin{array}{l l}
+x = valores\;individuais\;do\;histograma\;orginal \\
+\overline{x} = media\;de\;todos\;valores\;do\;histograma\;original \\
+y = valores\;de\;um\;histograma\;a\;ser\;comparado - retirado\;de\;trecho\;musical \\
+\overline{y} = media\;de\;todos\;os\;valores\;do\;histograma\;usado\;em\;y \\
+    
+  \end{array} \right.
+$
 
 
 \scalebox{2}{%
@@ -1122,53 +1135,23 @@ r=
 {\sqrt{ \sum{ (x-\overline{x})^2 } \sum{ (y-\overline{y})^2 } } }
 $
 }
+\linebreak
+\linebreak
+A escala cromática tem um padrão para o contexto de Dó maior e Dó menor, que para ser transposto para outras tonalidades bastando mover a ordem das alturas (por exemplo em Dó sustenido este passa a valer 6.35, Ré passa a valer 2.23 e assim por diante).
+\pagebreak
 
-For a number of years, it was recognized that the Krumhansl–Kessler key profiles are
-similar—but not identical—to the frequency of occurrence for scale degrees in the
-actual music. In her landmark 1990 book, Krumhansl argued that this similarity impli-
-cates learning-from-exposure. The psychological schemas for the major and minor key
-profiles are cognitive reflections of an objective statistical regularity in Western musical
-practice. Unfortunately, the evidence seemed imperfect. As we have seen, the domi-
-nant is the most frequently occurring pitch in both the major and minor modes, yet
-the Krumhansl and Kessler profiles consistently rate the tonic higher than the domi-
-nant. In addition, the second and fourth scale degrees (supertonic and subdominant)
-are rated significantly less highly than the actual presence of these tones would
-suggest. Why do the Krumhansl–Kessler “key profile” distributions differ from the
-pitch-class distributions of the music itself?
+Temperley propõe uma atualizações neste algoritmo\cite[pg.173-181]{temperley2001cognition}\footnote{c.f. implementação na biblioteca music21 em \url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html?\#temperleykostkapayne}} elaborando as seguintes modificações: aumentar a diferença entre os graus diatônicos e cromáticos, compensar um peso maior para a nota sensível ("leading tone") aumentando o peso da sétima maior e diminuindo da sétima menor\cite[p.182]{temperley2001cognition}, zerar alturas não presentes no vetor de comparação\cite[p.180]{temperley2001cognition}, diminuir o peso de alturas que estejam mais distantes na linha de quintas.\cite{temperley2001cognition}\footnote{c.f. \autoref{solfejo}}
 
-Vejamos por exemplo o perfil do histograma para algumas segmentações de classes de alturas de Mikrokosmos 113[nota m21]:
-
-
-
-
-Segundo tal proposta e as re-elaborações sugeridas por Temperley(2001) pg.173-181, poderíamos tentar inferir uma tonalidade "cognitiva" que permeie os segmentos da peça, buscando agrupar algumas famílias de "eixos paradigmáticos"(nattiez, tripartite, pg.26) a partir de certa tendência que mesmo em dado cromatismo teríamos de associar o segmento a certa tonalidade.
-
-No entanto antes de pensar estas inferências tonais em peças pós-tonais gostaríamos de problematizar abordagens que não estão tão condicionadas por uma suposta cognição tonal predominante. Discutiremos o problema logo a seguir.\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html}} 
-
-Temperley adopts the plan outlined by Krumhansl and Schmuckler (de- 
-scribed in Krumhansl, 1990): (1) segment a composition into small sections, (2) tally 
-the tones within a segment (weighting each pitch class by its total duration as well 
-as by other possible measures of salience), (3) mathematically correlate the vector 
-of tone tallies with the tone-profile vectors for all twenty-four major and minor keys, 
-and (4) select the highest correlation as the best candidate for representing the per- 
-ceived key of that segment. 
-
-
+O resultado são dois novos histogramas para os modos maior e menor:
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Perfis de tonalidade para Do maior e Do menor modificados por \citeonline{temperley2004cognition}. }
+	\caption{\label{fig_grafico}Perfis de tonalidade para Do maior e Do menor modificados por \citeonline{temperley2001cognition}. }
 	\begin{center}
 	    \includegraphics[scale=0.6]{CBMS/temperley_mod_keyprofile.png}
 	\end{center}
-	\legend{Fonte: \cite[pg. 174]{temperley2004cognition} }
+	\legend{Fonte: \cite[pg. 174]{temperley2001cognition} }
 \end{figure}
-
-
-
-
-
-\cite{temperley1999s}
 
 
 
@@ -1213,7 +1196,7 @@ Consideramos esta negação arbitrária e suspeita. Se as teorias de classes de 
 \chapter{Teorias de Grupos das Classes de Alturas para uma Segmentação Atonal }
 \label{modelos}
 
-Vimos na teoria do "solfejo das classes de altura"\cite[p. 115]{temperley2004cognition} de David \citeonline{temperley2004cognition} a categorização de uma divisão de grupos de altura que ele denomina "Altura de Classes Tonais"\cite[p. 115]{temperley2004cognition}. Neste capítulo exploramos teorias pós-tonais que são geralmente evitadas pela abordagem cognitivista por partirem de princípios de agrupamento que não são argumentados por uma funcionalidade tonal normativa, mas sim pela formalização de relações de simetria, similaridade e transformação entre os doze intervalos cromáticos que trariam o sentido musical por outros tipos de fruição da forma musical. 
+Vimos na teoria do "solfejo das classes de altura"\cite[p. 115]{temperley2001cognition} de David \citeonline{temperley2001cognition} a categorização de uma divisão de grupos de altura que ele denomina "Altura de Classes Tonais"\cite[p. 115]{temperley2001cognition}. Neste capítulo exploramos teorias pós-tonais que são geralmente evitadas pela abordagem cognitivista por partirem de princípios de agrupamento que não são argumentados por uma funcionalidade tonal normativa, mas sim pela formalização de relações de simetria, similaridade e transformação entre os doze intervalos cromáticos que trariam o sentido musical por outros tipos de fruição da forma musical. 
 
 Na teoria de grupos de classes de altura ("Pitch Class Theory") os intervalos são tratados de maneira neutra em relação a qualquer centro tonal pré-determinado e parte-se do princípio de que agrupamentos de alturas podem gerar estruturas de derivadas por uma espécie de parentesco intervalar, incluindo a similaridade por inversão ou retrógrado destes como veremos mais adiante. 
 
@@ -1790,7 +1773,7 @@ Falaremos a seguir de duas dessas bibliotecas utilizadas como ferramenta auxilia
 
 É uma biblioteca projetada para trabalhar com manipulação e análise de corpus de arquivos partituráveis\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleCorpus.html}. Prepara a conversão entre diversos arquivos de dados musicais (midi, humdrum, lilypond, abc)\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleConverter.html}, mas nativamente trabalha com uma estrutura de dados baseada em musicxml.
 
-Music21 tem uma abordagem voltada para uma "musicologia assistida por computador" e já tem incorporada em suas classes algumas ferramentas comuns a esta prática como: numeração de grau funcional de acorde\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleRoman.html}, numeração de classes de altura usando a classificação de Allen Forte\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleChord.html?\#music21.chord.Chord.forteClassNumber}} e a implementação dos algoritmos de detecção de tonalidade\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html}} elaborado por \citeonline{krumhansl1990cognitive} e aperfeiçoado por \citeonline{temperley2004cognition}, descritos nesta pesquisa.\footnote{\autoref{perfiltonal}}
+Music21 tem uma abordagem voltada para uma "musicologia assistida por computador" e já tem incorporada em suas classes algumas ferramentas comuns a esta prática como: numeração de grau funcional de acorde\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleRoman.html}, numeração de classes de altura usando a classificação de Allen Forte\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleChord.html?\#music21.chord.Chord.forteClassNumber}} e a implementação dos algoritmos de detecção de tonalidade\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html}} elaborado por \citeonline{krumhansl1990cognitive} e aperfeiçoado por \citeonline{temperley2001cognition}, descritos nesta pesquisa.\footnote{\autoref{perfiltonal}}
 
 
 % ---
@@ -1814,7 +1797,7 @@ Music21 tem uma abordagem voltada para uma "musicologia assistida por computador
 
 A busca por regras gerativas\cite{roads1979grammars} que pudessem formalizar algoritmos a partir de análises musicais de dados quantitativos capazes de segmentar e isolar parâmetros nos levou a encontrar uma interessante diferença entre duas abordagens analíticas que nos parecem complementares, apesar de contraditórias em certos aspectos.
 
-Por um lado revisamos uma corrente teórica que enumera estruturas operantes nas expectativas da música tonal, sobre aquele repertório considerado como prática comum nas análises funcionais das cadências, modulações, prolongamentos, tensão e relaxamento. Tais teorias argumentam que esta normatização é derivada de um condicionamento cultural na escuta da música ocidental e procura justificar suas regras de "boa-formação" ou "preferência"\cite{lerdahl1983generative,temperley2004cognition} legitimando as fórmulas a partir de teorias como as teses linguísticas das estruturas de sintaxe derivadas da fala\cite{chomsky1957syntactic} e pesquisas de campo em cognição musical básica das relações entre intervalos e percepção subjetiva das alturas em seu espaço tonal inferido pelo ouvinte\cite{krumhansl1990cognitive,lerdahl2001tonal}. 
+Por um lado revisamos uma corrente teórica que enumera estruturas operantes nas expectativas da música tonal, sobre aquele repertório considerado como prática comum nas análises funcionais das cadências, modulações, prolongamentos, tensão e relaxamento. Tais teorias argumentam que esta normatização é derivada de um condicionamento cultural na escuta da música ocidental e procura justificar suas regras de "boa-formação" ou "preferência"\cite{lerdahl1983generative,temperley2001cognition} legitimando as fórmulas a partir de teorias como as teses linguísticas das estruturas de sintaxe derivadas da fala\cite{chomsky1957syntactic} e pesquisas de campo em cognição musical básica das relações entre intervalos e percepção subjetiva das alturas em seu espaço tonal inferido pelo ouvinte\cite{krumhansl1990cognitive,lerdahl2001tonal}. 
 
 Por outro lado nos chamou atenção que paralelo a fundamentação destas teorias, nas últimas décadas do século XX (e a partir da sedimentação de uma tradição pós-tonal iniciada nas suas primeiras décadas) formalizou-se uma "teoria de grupos das classes de altura"\cite{forte1973structure,rahn1980basic,perle1990pitch,straus2004} baseada numa catalogação de combinações de intervalos formando compostos sonoros singulares e as possíveis estruturações e articulações entre estes. Ali operariam critérios não necessariamente tão amarrados na funcionalidade dos esquemas de tensão e relaxamento das formas "tonalizantes". Mesmo que vertiginosamente, é preciso admitir que cada composição já pode comportar um sistema totalmente idiossincrático. Ao contrário da corrente cognitivista, neste caso uma criatividade autoral do analista assume que as formas estão emergindo ali a príncipio porque foram apontadas, e não necessáriamente porque foram intuídas pelo compositor. Também não buscam justificar expectativas do ouvinte que guiariam a normatização de uma busca composicional da "boa forma" pré-concebida.\cite{babbitt1958cares}
 

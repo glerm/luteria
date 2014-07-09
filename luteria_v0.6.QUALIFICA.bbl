@@ -66,6 +66,12 @@ ISBN 2752100523.}
 \emph{Proceedings Sound and Music Computing Conference}, Copenhagen, Denmark,
   2012.}
 
+\bibitem[Brown, Butler e Jones 1994]{brown1994musical}
+\abntrefinfo{Brown, Butler e Jones}{BROWN; BUTLER; JONES}{1994}
+{BROWN, H.; BUTLER, D.; JONES, M.~R. Musical and temporal influences on key
+  discovery.
+\emph{Music Perception}, JSTOR, p. 371--407, 1994.}
+
 \bibitem[Chomsky 1957]{chomsky1957syntactic}
 \abntrefinfo{Chomsky}{CHOMSKY}{1957}
 {CHOMSKY, N. Syntactic structures.
@@ -80,6 +86,13 @@ Mouton, 1957.}
 {COHN, R. Introduction to neo-riemannian theory: a survey and a historical
   perspective.
 \emph{Journal of Music Theory}, JSTOR, p. 167--180, 1998.}
+
+\bibitem[Cuddy, Cohen e Miller 1979]{cuddy1979melody}
+\abntrefinfo{Cuddy, Cohen e Miller}{CUDDY; COHEN; MILLER}{1979}
+{CUDDY, L.~L.; COHEN, A.~J.; MILLER, J. Melody recognition: The experimental
+  application of musical rules.
+\emph{Canadian Journal of Psychology/Revue canadienne de psychologie},
+  University of Toronto Press, v.~33, n.~3, p.~148, 1979.}
 
 \bibitem[Debril 2014]{DebrilOM}
 \abntrefinfo{Debril}{DEBRIL}{2014}
@@ -229,6 +242,11 @@ WW Norton \& Company, 1989.}
 {LINDBLOM, B.; SUNDBERG, J. \emph{Towards a generative theory of melody}.
   [S.l.]: Department of Phonetics, Institute of Linguistics, University of
   Stockholm, 1970.}
+
+\bibitem[Longuet-Higgins e Steedman 1971]{longuet1971interpreting}
+\abntrefinfo{Longuet-Higgins e Steedman}{LONGUET-HIGGINS; STEEDMAN}{1971}
+{LONGUET-HIGGINS, H.~C.; STEEDMAN, M.~J. On interpreting bach.
+\emph{Machine intelligence}, v.~6, p. 221--241, 1971.}
 
 \bibitem[Marshall 1946]{marshall1946analysis}
 \abntrefinfo{Marshall}{MARSHALL}{1946}
@@ -399,10 +417,10 @@ ISBN 9781852337971.}
   algorithm reconsidered.
 \emph{Music Perception}, JSTOR, p. 65--100, 1999.}
 
-\bibitem[Temperley 2004]{temperley2004cognition}
-\abntrefinfo{Temperley}{TEMPERLEY}{2004}
+\bibitem[Temperley 2001]{temperley2001cognition}
+\abntrefinfo{Temperley}{TEMPERLEY}{2001}
 {TEMPERLEY, D. \emph{The cognition of basic musical structures}. [S.l.]: MIT
-  press, 2004.}
+  press, 2001.}
 
 \bibitem[Tenney e Polansky 1980]{tenney1980temporal}
 \abntrefinfo{Tenney e Polansky}{TENNEY; POLANSKY}{1980}
