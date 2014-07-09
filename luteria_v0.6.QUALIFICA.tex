@@ -494,7 +494,7 @@ Detalhamos questões computacionais para esta implementação e deixamos um lega
 
 Desde o momento que o computador sai do estúdio experimental dos aparelhos caros e institucionais e possibilita o processamento de dados em tempo real em gadgets que cabem no nosso bolso (e cada vez mais até dentro dos nossos corpos) fala-se constantemente na possibilidade de interação com a transformação de dados audiovisuais por uma computabilidade da escritura composicional ou do gestual performático. 
 
-Em seu livro sobre mediação tecnológica contemporânea na composição Fernando \citeonline{iazzetta2009musica} fala sobre um tipo de luteria que surge do experimento de estúdio migrando para os computadores pessoais, onde a criação dos instrumentos (que na verdade são códigos, procedimentos computacionais, "patches") agora já faria parte do processo composicional:
+Em seu livro sobre mediação tecnológica contemporânea na composição Fernando \citeonline{iazzetta2009musica} fala sobre um tipo de luteria que surge do experimento de estúdio migrando para os computadores pessoais, onde a criação dos instrumentos (que na verdade são códigos, procedimentos computacionais, "patches") agora já fariam parte do processo composicional:
 
 
 \begin{citacao}
@@ -509,27 +509,28 @@ Por outro lado, o fechamento deste processo em "microteorias composicionais deri
 \textbf{O discurso enfatizando o caráter inovador que acompanha cada novo invento geralmente esconde o quanto nossos avanços representam uma consolidação  de conhecimentos existentes, mais do que saltos progressivos}”. \cite[p. 151-153, grifo nosso.]{iazzetta2009musica}
 \end{citacao}
 
-Esta pesquisa propõe um recorte específico de alguns procedimentos composicionais emergentes na primeira metade do século XX que apesar de estarem no limite experimental do cromatismo e sua relação com centros de atração tonais ou modais ainda não experimentavam o deleite das possibilidades que o serialismo integral, a computer music e a música eletrônica aproveitaram na primeira geração de mainframes das universidades e grandes centros de pesquisa.
+Esta pesquisa propõe um recorte específico de alguns procedimentos composicionais emergentes na primeira metade do século XX, que estão no limite entre um politonalismo e um atonalismo, sob a luz de teorias que influenciaram a criação de algoritmos de análise musical assistida por computador nas décadas mais recentes. 
 
+Os problemas computacionais considerados no percurso compõe "uma suíte de objetos e funções" organizados em bibliotecas para as linguagens de programação musical OpenMusic e Puredata, facilitando um estudo comparado das implementações dos procedimentos algorítmicos em diferentes sintaxes. As composições geradas pelo processo geram nova reflexão sobre o automatismo e interação dentro de seus procedimentos.
 
-Os problemas computacionais considerados no percurso compõe "uma suíte de objetos e funções" organizados em bibliotecas para as linguagens de programação musical OpenMusic e Puredata, facilitando um estudo comparado das implementações dos procedimentos algorítmicos em diferentes sintaxes.
+Complementamos com a documentação de scripts Python auxiliares para formatação e segmentação de partituras (em formatos midi, musicxml ou lilypond, dependendo do caso).
 
-Documentamos também com alguns scripts Python auxiliares para formatação e segmentação de partituras (em formatos midi, musicxml ou lilypond, dependendo do caso).
+O percurso deste trabalho se dá em duas etapas: \autoref{analises}:\textbf{Paradigmas para uma Análise Musical Pós-Tonal} e \autoref{computacional}:\textbf{Implementação Computacional}.
 
-O percurso deste trabalho se dá em 3 etapas: \autoref{computacional}:Implementação Computacional, \autoref{analises}:Paradigmas para uma Análise Musical Pós-Tonal e \autoref{composicional}:Luteria Composicional.
+Na \autoref{analises} buscamos organizar tal processo criativo especializando uma epistemologia das gramáticas musicais a partir da influência que a linguística teve na musicologia. Iniciamos atentos para as teorias derivadas da pesquisa \citeonline{chomsky1957syntactic} e sua aplicação no processamento de linguagens naturais. Buscamos aspectos que direcionaram pesquisas musicológicas para a possibilidade de aplicar regras analíticas em sistemas computáveis.
 
+A partir desta perspectivas encontramos duas correntes analíticas que nos chamaram atenção por serem relativamente contemporâneas entre si e que partem de diferentes princípios. 
 
-Na \autoref{computacional} trabalhamos uma pequena reflexão histórica da música algorítmica, fazendo um paralelo entre a sistematização das gramáticas musicais descendentes da tradição pitagórica e as especulações da cibernética que levaram ao desenvolvimento das áreas de inteligência artificial, vida artificial e estudos de complexidade e padrões de emergência.  
+No primeiro caso derivamos da \textit{"Teoria Gerativa da Música Tonal"}\cite{lerdahl1983generative} e alguns desdobramentos mais recentes como a \textit{"Cognição das Estruturas Musicais Básicas"}\cite{temperley2004cognition} para buscar algoritmos que definam critérios quantitativos para análises tomem em consideração a normatização operada pela música tonal ocidental na percepção do seu ouvinte médio. Estas teorias flertam com argumentos da psicologia cognitivista da música\cite{krumhansl1990cognitive} para justificar seus pressupostos.
 
-Na \autoref{analises} buscamos organizar tal processo criativo especializando uma epistemologia das gramáticas musicais a partir da influência que a linguística teve na musicologia. Atenção para as teorias derivadas da pesquisa \citeonline{chomsky1957syntactic} e sua aplicação no processamento de linguagens naturais. Buscamos aspectos que direcionaram pesquisas musicológicas para a possibilidade de aplicar regras analíticas em sistemas computáveis.
+No segundo caso encontramos a corrente musicológica que trabalha sobre um mapeamento dos agrupamentos de classes de alturas, organizando taxonomias \cite{forte1973structure}, descrevendo operações de transformação\cite{straus2004} e buscando critérios mais autorais para apontar singularidades em composições\cite{lester1989analytic,straus2004} que não necessariamente operam sobre os pressupostos de uma expectativa de tonalidade explícita.
 
-Fazemos um mergulho na pesquisa das gramáticas gerativas, sobretudo em um estudo de caso sobre a "Teoria Gerativa da Música Tonal"(GTTM) e seus desdobramentos. 
+Na \autoref{computacional} trabalhamos uma reflexão sobre procedimentos, formatos de arquivos e bibliotecas de linguagem de programação para uma "Composição Assistida por Computador" usadas durante esta pesquisa. Bases para implementação dos estudos da \autoref{analises}.
+\linebreak
+\linebreak
+\linebreak
+E finalmente na conclusão\footnote{ ver \autoref{conclusao}} deste trabalho utilizaremos algumas ideias e particularidades retiradas dos procedimento analíticos detalhadas na \autoref{analises} para construir algumas composições musicais que aplicam estas estruturas das analises usando as implementações computacionais que nos pareceram mais estáveis e bem documentadas.
 
-Para concluir esta parte, documentamos alguns experimentos computacionais de analise musical de peças da suíte Mikrokosmos que aplicam as regras que fundamentamos neste percurso.
-
-E finalmente na \autoref{composicional} utilizamos algumas ideias e particularidades retiradas dos procedimento analíticos detalhadas na \autoref{analises} para construir algumas composições musicais que aplicam estas estruturas das analises em algoritmos clássicos da música algorítmica, gerando material para debate sobre o ciclo que percorremos.
-
-Todos os códigos e uma reflexão sobre as ferramentas e formatos estão no \autoref{ferramentas} , \autoref{formatos} e \autoref{codigo}.
 
 
 
@@ -1809,6 +1810,7 @@ Music21 tem uma abordagem voltada para uma "musicologia assistida por computador
 % ---
 \chapter*[Conclusão]{Conclusão}
 \addcontentsline{toc}{chapter}{Conclusão}
+\label{conclusao}
 % ---
 
 %\lipsum[31-33]
@@ -1827,7 +1829,7 @@ Partiremos de pistas já deixadas por autores que aprofundaram o tema \cite{mars
 
 Mais do que encontrar alguma nova abordagem analítica sobre estas peças, buscaremos a demonstração de algumas regras gerativas observadas para em seguida serem utilizados de maneira mais livre em procedimentos composicionais que gerem motivos partiturados e sugestões de encadeamento destes.
 
-Composições produzidas durante esta pesquisa estão disponíveis para download\footnote{\url{https://soundcloud.com/organismo/sets/fragmentos-de-algofragmentos}}. Também estão disponíveis os códigos que estão sendo trabalhados\footnote{\url{https://github.com/glerm/luteriaOM} , \url{https://github.com/glerm/Derivas_OpenMusic} e \url{https://github.com/glerm/AutomatosGeradores} }. A próxima etapa será modularizar e comentar os códigos, detalhando os processos de maneira mais didática.
+Composições produzidas durante esta pesquisa estão disponíveis para download\footnote{\url{http://http://vimeo.com/16175509}}. Também estão disponíveis os códigos que estão sendo trabalhados\footnote{\url{https://github.com/glerm/luteriaOM} , \url{https://github.com/glerm/Derivas_OpenMusic} e \url{https://github.com/glerm/AutomatosGeradores} }. A próxima etapa será modularizar e comentar os códigos, detalhando os processos de maneira mais didática.
 
 Vale lembrar de que estamos convencidos de que uma abordagem analítica que desconsidere paramêtros determinantes sobre a sonoridade\cite{guigue2012} dos aglomerados de alturas como parte intencional e determinante na composição estará incompleta. Também acreditamos que é limitador ignorar a tipo-morfologia\cite{shaeffer1966traite} e espectro-morfologia\cite{smalley1997spectromorphology} dos timbres atuantes numa situação real de gravação, performance partiturada ou improviso sobre as estruturas geradas. Interessa-nos refletir estes aspectos em alguma continuidade deste trabalho.
 
