@@ -21,11 +21,11 @@
 \contentsline {subsection}{\numberline {3.1.1}Vetor intervalar}{49}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Forma Normal}{50}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Forma Prima}{51}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Singularidades nos agrupamentos }{52}{subsection.3.1.4}
-\contentsline {subsubsection}{\numberline {3.1.4.1}Notas Comuns sob transposi\IeC {\c c}\IeC {\~a}o}{53}{subsubsection.3.1.4.1}
-\contentsline {subsubsection}{\numberline {3.1.4.2}Simetria Transpositiva}{54}{subsubsection.3.1.4.2}
-\contentsline {subsubsection}{\numberline {3.1.4.3}Complemento}{55}{subsubsection.3.1.4.3}
-\contentsline {subsubsection}{\numberline {3.1.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{56}{subsubsection.3.1.4.4}
+\contentsline {subsection}{\numberline {3.1.4}Singularidades nos agrupamentos }{51}{subsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.4.1}Notas Comuns sob transposi\IeC {\c c}\IeC {\~a}o}{52}{subsubsection.3.1.4.1}
+\contentsline {subsubsection}{\numberline {3.1.4.2}Simetria Transpositiva}{53}{subsubsection.3.1.4.2}
+\contentsline {subsubsection}{\numberline {3.1.4.3}Complemento}{54}{subsubsection.3.1.4.3}
+\contentsline {subsubsection}{\numberline {3.1.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{55}{subsubsection.3.1.4.4}
 \contentsline {subsection}{\numberline {3.1.5}Arbitrariedade e indu\IeC {\c c}\IeC {\~a}o na segmenta\IeC {\c c}\IeC {\~a}o atonal}{57}{subsection.3.1.5}
 \contentsline {part}{\partnumberline {II}Implementa\IeC {\c c}\IeC {\~a}o Computacional}{59}{part.2}
 \contentsline {chapter}{\chapternumberline {4}Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}{61}{chapter.4}

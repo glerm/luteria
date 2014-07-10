@@ -1323,6 +1323,7 @@ Para a redução de uma forma normal partimos do cluster sem repetições, coloc
 \pagebreak
 \subsection{Forma Prima} 
 
+A forma prima é um procedimento para simplificar ainda mais a forma normal, encontrando "a mais normal das normais"\cite[p.47]{straus2004} e reduzindo vetores que possuem os mesmos intervalos ou são inversões e transposições a um vetor primário. Para isso uma forma normal é transposta até que possua o zero em sua primeira posição. Assim é feito também com sua inversão. A forma mais compacta à esquerda será a forma prima. Allen \citeonline{forte1973structure} desenvolveu uma taxonomia a partir das formas primas que tem sido utilizada como forma canônica para representação de grupos de classes de altura.\footnote{A biblioteca "math" do OpenMusic possui o objeto "p-form" para encontrar os agrupamentos de Forte. A tabela original está no livro "The Structure of Atonal Music"\cite[p.179-181]{forte1973structure}}
 
 \begin{figure}[h]
 	\caption{\label{fig_grafico}Fórmulas de agrupamento de classes de altura. }
@@ -1336,24 +1337,24 @@ Para a redução de uma forma normal partimos do cluster sem repetições, coloc
 
 
 
-\begin{citacao}
-Two Algorithms for Computing the Prime Form
+%\begin{citacao}
+%Two Algorithms for Computing the Prime Form
 
-There are two algorithms for computing the prime form of a Pitch Class Set. The first was introduced by Allen Forte in The Structure of Atonal Music and the second is used by John Rahn in his book Basic Atonal Theory and is also used by Joseph N. Straus in his Introduction to Post-Tonal Theory.
+%There are two algorithms for computing the prime form of a Pitch Class Set. The first was introduced by Allen Forte %in The Structure of Atonal Music and the second is used by John Rahn in his book Basic Atonal Theory and is also %used by Joseph N. Straus in his Introduction to Post-Tonal Theory.
 
-The difference between the two algorithms is apparent when examining Pitch Class Set 6-31. The Prime Form using the Forte algorithm is (0,1,3,5,8,9), and the prime form using the Rahn algorithm is (0,1,4,5,7,9). As you can see, the Forte algorithm puts a priority on making the small numbers smaller (i.e. 3 instead of 4), whereas the Rahn algorithm wants the larger numbers to be smaller (i.e. 7 instead of 8).
+%The difference between the two algorithms is apparent when examining Pitch Class Set 6-31. The Prime Form using the %Forte algorithm is (0,1,3,5,8,9), and the prime form using the Rahn algorithm is (0,1,4,5,7,9). As you can see, the %Forte algorithm puts a priority on making the small numbers smaller (i.e. 3 instead of 4), whereas the Rahn %algorithm wants the larger numbers to be smaller (i.e. 7 instead of 8).
 
-Which is better? Well, it depends on who you ask. Computer programmers and computer music people will typically prefer the Rahn algorithm because it is computationally more elegant. However, the Forte algorithm has the more established pedigree, and so it tends to be preferred by academics.
+%Which is better? Well, it depends on who you ask. Computer programmers and computer music people will typically %prefer the Rahn algorithm because it is computationally more elegant. However, the Forte algorithm has the more %established pedigree, and so it tends to be preferred by academics.
 
-Fortunately, this is usually a minor issue because it only affects the following 5 sets:
+%Fortunately, this is usually a minor issue because it only affects the following 5 sets:
 
-Pitch Class Set	Forte Prime	Rahn Prime
-5-20	(0,1,3,7,8)	(0,1,5,6,8)
-6-Z29	(0,1,3,6,8,9)	(0,2,3,6,7,9)
-6-31	(0,1,3,5,8,9)	(0,1,4,5,7,9)
-7-20	(0,1,2,4,7,8,9)	(0,1,2,5,6,7,9)
-8-26	(0,1,2,4,5,7,9,10)	(0,1,3,4,5,7,8,10)
-\end{citacao}
+%Pitch Class Set	Forte Prime	Rahn Prime
+%5-20	(0,1,3,7,8)	(0,1,5,6,8)
+%6-Z29	(0,1,3,6,8,9)	(0,2,3,6,7,9)
+%6-31	(0,1,3,5,8,9)	(0,1,4,5,7,9)
+%7-20	(0,1,2,4,7,8,9)	(0,1,2,5,6,7,9)
+%8-26	(0,1,2,4,5,7,9,10)	(0,1,3,4,5,7,8,10)
+%\end{citacao}
 
 
 \subsection{Singularidades nos agrupamentos }
