@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.6)  9 JUL 2014 18:07
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.6)  9 JUL 2014 22:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1349,7 +1349,7 @@ Underfull \vbox (badness 1867) has occurred while \output is active []
  [20]
 [21] [22
 
-] [23] <gttm/GTTM_rules.pdf, id=514, 845.04686pt x 256.96pt>
+] [23] <gttm/GTTM_rules.pdf, id=506, 845.04686pt x 256.96pt>
 File: gttm/GTTM_rules.pdf Graphic file (type pdf)
 
 <use gttm/GTTM_rules.pdf>
@@ -1364,7 +1364,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 657--666
 Underfull \vbox (badness 1616) has occurred while \output is active []
 
  [24 <./gttm/GTTM_rules.pdf>]
-<gttm/lilypondGROUPmozartGTTM.png, id=538, 1109.14375pt x 178.6675pt>
+<gttm/lilypondGROUPmozartGTTM.png, id=530, 1109.14375pt x 178.6675pt>
 File: gttm/lilypondGROUPmozartGTTM.png Graphic file (type png)
 
 <use gttm/lilypondGROUPmozartGTTM.png>
@@ -1377,14 +1377,14 @@ Overfull \hbox (44.11008pt too wide) in paragraph at lines 677--678
  []
 
 [25 <./gttm/lilypondGROUPmozartGTTM.png>]
-<gttm/GWFR_fig33.png, id=551, 886.31125pt x 116.435pt>
+<gttm/GWFR_fig33.png, id=543, 886.31125pt x 116.435pt>
 File: gttm/GWFR_fig33.png Graphic file (type png)
 
 <use gttm/GWFR_fig33.png>
 Package pdftex.def Info: gttm/GWFR_fig33.png used on input line 701.
 (pdftex.def)             Requested size: 310.21358pt x 40.75285pt.
 
-<gestalt/gestalt_elision_overlay.pdf, id=570, 803.0pt x 297.11pt>
+<gestalt/gestalt_elision_overlay.pdf, id=562, 803.0pt x 297.11pt>
 File: gestalt/gestalt_elision_overlay.pdf Graphic file (type pdf)
 
 <use gestalt/gestalt_elision_overlay.pdf>
@@ -1395,7 +1395,7 @@ Package pdftex.def Info: gestalt/gestalt_elision_overlay.pdf used on input line
 Underfull \vbox (badness 2181) has occurred while \output is active []
 
  [27 <./gestalt/gestalt_elision_overlay.pdf>]
-<mikro/OM_gttm_GPR02-03.png, id=601, 806.01125pt x 560.0925pt>
+<mikro/OM_gttm_GPR02-03.png, id=593, 806.01125pt x 560.0925pt>
 File: mikro/OM_gttm_GPR02-03.png Graphic file (type png)
 
 <use mikro/OM_gttm_GPR02-03.png>
@@ -1407,7 +1407,7 @@ Overfull \hbox (28.61047pt too wide) in paragraph at lines 763--764
  []
 
 [28 <./mikro/OM_gttm_GPR02-03.png>]
-<gttm/GTTM-m21-metes.png, id=609, 792.9625pt x 241.90375pt>
+<gttm/GTTM-m21-metes.png, id=601, 792.9625pt x 241.90375pt>
 File: gttm/GTTM-m21-metes.png Graphic file (type png)
 
 <use gttm/GTTM-m21-metes.png>
@@ -1417,20 +1417,20 @@ Package pdftex.def Info: gttm/GTTM-m21-metes.png used on input line 792.
 Underfull \vbox (badness 6173) has occurred while \output is active []
 
  [31]
-<gttm/GTTM_TPS_rules.pdf, id=675, 819.06pt x 377.41pt>
+<gttm/GTTM_TPS_rules.pdf, id=667, 819.06pt x 377.41pt>
 File: gttm/GTTM_TPS_rules.pdf Graphic file (type pdf)
 
 <use gttm/GTTM_TPS_rules.pdf>
 Package pdftex.def Info: gttm/GTTM_TPS_rules.pdf used on input line 877.
 (pdftex.def)             Requested size: 409.52899pt x 188.70453pt.
  [32 <./gttm/GTTM_TPS_rules.pdf>]
-<gttm/colorless.png, id=708, 702.625pt x 602.25pt>
+<gttm/colorless.png, id=699, 702.625pt x 602.25pt>
 File: gttm/colorless.png Graphic file (type png)
  <use gttm/colorless.png>
 Package pdftex.def Info: gttm/colorless.png used on input line 896.
 (pdftex.def)             Requested size: 316.17833pt x 271.01pt.
 
-<gttm/ramificacoes_arvore.pdf, id=711, 513.92pt x 176.66pt>
+<gttm/ramificacoes_arvore.pdf, id=702, 513.92pt x 176.66pt>
 File: gttm/ramificacoes_arvore.pdf Graphic file (type pdf)
 
 <use gttm/ramificacoes_arvore.pdf>
@@ -1440,7 +1440,7 @@ Package pdftex.def Info: gttm/ramificacoes_arvore.pdf used on input line 908.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<mikro/mikro113_GTTM_tree.png, id=712, 982.67125pt x 459.7175pt>
+<mikro/mikro113_GTTM_tree.png, id=703, 982.67125pt x 459.7175pt>
 File: mikro/mikro113_GTTM_tree.png Graphic file (type png)
 
 <use mikro/mikro113_GTTM_tree.png>
@@ -1454,7 +1454,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33 <./gttm/colorless.png>]
-<lerdahl/prolongation_calculating.png, id=724, 885.3075pt x 190.7125pt>
+<lerdahl/prolongation_calculating.png, id=716, 885.3075pt x 190.7125pt>
 File: lerdahl/prolongation_calculating.png Graphic file (type png)
 
 <use lerdahl/prolongation_calculating.png>
@@ -1463,7 +1463,7 @@ e 929.
 (pdftex.def)             Requested size: 442.65266pt x 95.356pt.
  [34 <./gttm/ramificacoes_arvore.pdf> <./mikro/mikro113_GTTM_tree.png> <./lerda
 hl/prolongation_calculating.png>]
-<lerdahl/diatonic_pitchspace_p322.png, id=755, 597.23125pt x 188.705pt>
+<lerdahl/diatonic_pitchspace_p322.png, id=747, 597.23125pt x 188.705pt>
 File: lerdahl/diatonic_pitchspace_p322.png Graphic file (type png)
 
 <use lerdahl/diatonic_pitchspace_p322.png>
@@ -1512,7 +1512,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 964--968
 
 LaTeX Warning: Command \' invalid in math mode on input line 974.
 
-<lerdahl/calculating_prolongamento.png, id=762, 629.35126pt x 457.71pt>
+<lerdahl/calculating_prolongamento.png, id=754, 629.35126pt x 457.71pt>
 File: lerdahl/calculating_prolongamento.png Graphic file (type png)
 
 <use lerdahl/calculating_prolongamento.png>
@@ -1523,7 +1523,7 @@ ne 983.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35 <./lerdahl/diatonic_pitchspace_p322.png (PNG copy)>]
-<lerdahl/pitchspace-K282.png, id=777, 423.5825pt x 159.59625pt>
+<lerdahl/pitchspace-K282.png, id=769, 423.5825pt x 159.59625pt>
 File: lerdahl/pitchspace-K282.png Graphic file (type png)
 
 <use lerdahl/pitchspace-K282.png>
@@ -1533,7 +1533,7 @@ Package pdftex.def Info: lerdahl/pitchspace-K282.png used on input line 994.
 Underfull \vbox (badness 1527) has occurred while \output is active []
 
  [36 <./lerdahl/calculating_prolongamento.png (PNG copy)> <./lerdahl/pitchspace
--K282.png (PNG copy)>] <CBMS/quintas.png, id=795, 602.25pt x 602.25pt>
+-K282.png (PNG copy)>] <CBMS/quintas.png, id=787, 602.25pt x 602.25pt>
 File: CBMS/quintas.png Graphic file (type png)
 
 <use CBMS/quintas.png>
@@ -1543,7 +1543,7 @@ Package pdftex.def Info: CBMS/quintas.png used on input line 1029.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[37] <CBMS/jonico_lineoffifths.png, id=804, 775.89874pt x 72.27pt>
+[37] <CBMS/jonico_lineoffifths.png, id=796, 775.89874pt x 72.27pt>
 File: CBMS/jonico_lineoffifths.png Graphic file (type png)
 
 <use CBMS/jonico_lineoffifths.png>
@@ -1555,7 +1555,7 @@ Overfull \hbox (10.54283pt too wide) in paragraph at lines 1043--1044
  []
 
 [38 <./CBMS/quintas.png> <./CBMS/jonico_lineoffifths.png>]
-<CBMS/COG_re_lineoffifths.png, id=817, 775.89874pt x 72.27pt>
+<CBMS/COG_re_lineoffifths.png, id=809, 775.89874pt x 72.27pt>
 File: CBMS/COG_re_lineoffifths.png Graphic file (type png)
 
 <use CBMS/COG_re_lineoffifths.png>
@@ -1566,7 +1566,7 @@ Overfull \hbox (10.54283pt too wide) in paragraph at lines 1054--1055
  [] 
  []
 
-<CBMS/modosrockgregos_temperley.png, id=825, 640.3925pt x 403.5075pt>
+<CBMS/modosrockgregos_temperley.png, id=817, 640.3925pt x 403.5075pt>
 File: CBMS/modosrockgregos_temperley.png Graphic file (type png)
 
 <use CBMS/modosrockgregos_temperley.png>
@@ -1578,7 +1578,7 @@ ley.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40]
-<CBMS/probeones_krumhansl_p36.png, id=873, 368.37625pt x 556.0775pt>
+<CBMS/probeones_krumhansl_p36.png, id=865, 368.37625pt x 556.0775pt>
 File: CBMS/probeones_krumhansl_p36.png Graphic file (type png)
 
 <use CBMS/probeones_krumhansl_p36.png>
@@ -1586,7 +1586,7 @@ Package pdftex.def Info: CBMS/probeones_krumhansl_p36.png used on input line 11
 00.
 (pdftex.def)             Requested size: 232.07825pt x 350.33067pt.
  [41 <./CBMS/probeones_krumhansl_p36.png>] <CBMS/krumhansl_temperley_p174.png, 
-id=900, 515.9275pt x 411.5375pt>
+id=892, 515.9275pt x 411.5375pt>
 File: CBMS/krumhansl_temperley_p174.png Graphic file (type png)
 
 <use CBMS/krumhansl_temperley_p174.png>
@@ -1612,7 +1612,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1137--1142
 Underfull \vbox (badness 2080) has occurred while \output is active []
 
  [42 <./CBMS/krumhansl_temperley_p174.png>]
-<CBMS/temperley_mod_keyprofile.png, id=933, 515.9275pt x 439.6425pt>
+<CBMS/temperley_mod_keyprofile.png, id=925, 515.9275pt x 439.6425pt>
 File: CBMS/temperley_mod_keyprofile.png Graphic file (type png)
 
 <use CBMS/temperley_mod_keyprofile.png>
@@ -1629,7 +1629,7 @@ Underfull \vbox (badness 4242) has occurred while \output is active []
 [45] [46
 
 ] [47] [48]
-<algo/equivalencia_inversa.png, id=1031, 1170.3725pt x 239.89626pt>
+<algo/equivalencia_inversa.png, id=1023, 1170.3725pt x 239.89626pt>
 File: algo/equivalencia_inversa.png Graphic file (type png)
 
 <use algo/equivalencia_inversa.png>
@@ -1637,7 +1637,7 @@ Package pdftex.def Info: algo/equivalencia_inversa.png used on input line 1232.
 
 (pdftex.def)             Requested size: 351.11446pt x 71.96942pt.
 
-<OM_settheory/vetor02410.png, id=1032, 262.9825pt x 121.45375pt>
+<OM_settheory/vetor02410.png, id=1024, 262.9825pt x 121.45375pt>
 File: OM_settheory/vetor02410.png Graphic file (type png)
 
 <use OM_settheory/vetor02410.png>
@@ -1648,34 +1648,31 @@ Package pdftex.def Info: OM_settheory/vetor02410.png used on input line 1251.
 LaTeX Warning: Command \~ invalid in math mode on input line 1262.
 
 [49 <./algo/equivalencia_inversa.png> <./OM_settheory/vetor02410.png>]
-<OM_settheory/reducao_acorde.png, id=1037, 292.09125pt x 396.48125pt>
+<OM_settheory/reducao_acorde.png, id=1029, 292.09125pt x 396.48125pt>
 File: OM_settheory/reducao_acorde.png Graphic file (type png)
 
 <use OM_settheory/reducao_acorde.png>
 Package pdftex.def Info: OM_settheory/reducao_acorde.png used on input line 130
-0.
+3.
 (pdftex.def)             Requested size: 204.46246pt x 277.53497pt.
 
-<OM_settheory/forma_normal.png, id=1038, 480.79625pt x 405.515pt>
+<OM_settheory/forma_normal.png, id=1030, 480.79625pt x 405.515pt>
 File: OM_settheory/forma_normal.png Graphic file (type png)
 
 <use OM_settheory/forma_normal.png>
-Package pdftex.def Info: OM_settheory/forma_normal.png used on input line 1310.
+Package pdftex.def Info: OM_settheory/forma_normal.png used on input line 1316.
 
 (pdftex.def)             Requested size: 336.55507pt x 283.85855pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50 <./OM_settheory/reducao_acorde.png>]
-<OM_settheory/forma_prima_forte_vector.png, id=1044, 424.58624pt x 579.16376pt>
+[50 <./OM_settheory/reducao_acorde.png>]
+<OM_settheory/forma_prima_forte_vector.png, id=1036, 424.58624pt x 579.16376pt>
 File: OM_settheory/forma_prima_forte_vector.png Graphic file (type png)
 <use OM_settheory/forma_prima_forte_vector.png>
 Package pdftex.def Info: OM_settheory/forma_prima_forte_vector.png used on inpu
-t line 1324.
+t line 1330.
 (pdftex.def)             Requested size: 297.20834pt x 405.41187pt.
 
 
@@ -1685,101 +1682,82 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 1655) has occurred while \output is active []
 
  [52 <./OM_settheory/forma_prima_forte_vector.png>]
-<OM_settheory/notas_comuns_2e10.png, id=1062, 378.41376pt x 302.12875pt>
+<OM_settheory/notas_comuns_2e10.png, id=1056, 378.41376pt x 302.12875pt>
 File: OM_settheory/notas_comuns_2e10.png Graphic file (type png)
 
 <use OM_settheory/notas_comuns_2e10.png>
 Package pdftex.def Info: OM_settheory/notas_comuns_2e10.png used on input line 
-1367.
+1373.
 (pdftex.def)             Requested size: 264.88782pt x 211.48868pt.
 
-<OM_settheory/notas_comuns_tritono.png, id=1063, 446.66875pt x 351.3125pt>
+<OM_settheory/notas_comuns_tritono.png, id=1057, 446.66875pt x 351.3125pt>
 File: OM_settheory/notas_comuns_tritono.png Graphic file (type png)
 
 <use OM_settheory/notas_comuns_tritono.png>
 Package pdftex.def Info: OM_settheory/notas_comuns_tritono.png used on input li
-ne 1381.
+ne 1387.
 (pdftex.def)             Requested size: 312.66599pt x 245.91707pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[53 <./OM_settheory/notas_comuns_2e10.png>]
-<OM_settheory/palindrome1.png, id=1069, 313.17pt x 354.32375pt>
+<OM_settheory/palindrome1.png, id=1058, 313.17pt x 354.32375pt>
 File: OM_settheory/palindrome1.png Graphic file (type png)
 
 <use OM_settheory/palindrome1.png>
-Package pdftex.def Info: OM_settheory/palindrome1.png used on input line 1403.
+Package pdftex.def Info: OM_settheory/palindrome1.png used on input line 1404.
 (pdftex.def)             Requested size: 187.90344pt x 212.59589pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<OM_settheory/palindrome2.png, id=1070, 308.15125pt x 360.34625pt>
+ [53 <./OM_settheory/notas_comuns_2e10.png>]
+<OM_settheory/palindrome2.png, id=1064, 308.15125pt x 360.34625pt>
 File: OM_settheory/palindrome2.png Graphic file (type png)
 
 <use OM_settheory/palindrome2.png>
-Package pdftex.def Info: OM_settheory/palindrome2.png used on input line 1413.
+Package pdftex.def Info: OM_settheory/palindrome2.png used on input line 1414.
 (pdftex.def)             Requested size: 184.89217pt x 216.20941pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [54 <./OM_settheory/notas_comuns_tritono.png>]
-<OM_settheory/complemento.png, id=1075, 313.17pt x 329.23pt>
+[54 <./OM_settheory/notas_comuns_tritono.png> <./OM_settheory/palindrome1.png>]
+<OM_settheory/complemento.png, id=1069, 313.17pt x 329.23pt>
 File: OM_settheory/complemento.png Graphic file (type png)
 
 <use OM_settheory/complemento.png>
-Package pdftex.def Info: OM_settheory/complemento.png used on input line 1425.
+Package pdftex.def Info: OM_settheory/complemento.png used on input line 1429.
 (pdftex.def)             Requested size: 187.90344pt x 197.53952pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[55 <./OM_settheory/palindrome1.png> <./OM_settheory/palindrome2.png>]
-<OM_settheory/Z_related.png, id=1080, 480.79625pt x 367.3725pt>
+ [55 <./OM_settheory/palindrome2.png> <./OM_settheory/complemento.png>]
+<OM_settheory/Z_related.png, id=1074, 480.79625pt x 367.3725pt>
 File: OM_settheory/Z_related.png Graphic file (type png)
 
 <use OM_settheory/Z_related.png>
-Package pdftex.def Info: OM_settheory/Z_related.png used on input line 1440.
+Package pdftex.def Info: OM_settheory/Z_related.png used on input line 1443.
 (pdftex.def)             Requested size: 336.55507pt x 257.15898pt.
+ [56 <./OM_settheory/Z_related.png>] [57]
+[58] [59
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [56 <./OM_settheory/complemento.png>] [57 <./OM_settheory/Z_related.png>] [58]
- [59
-
-]
-[60] [61
+] [60] [61
 
 ] [62]
-<OMPD/chord-seq-sem-titulo.png, id=1165, 598.235pt x 583.17876pt>
+<OMPD/chord-seq-sem-titulo.png, id=1159, 598.235pt x 583.17876pt>
 File: OMPD/chord-seq-sem-titulo.png Graphic file (type png)
 
 <use OMPD/chord-seq-sem-titulo.png>
-Package pdftex.def Info: OMPD/chord-seq-sem-titulo.png used on input line 1567.
+Package pdftex.def Info: OMPD/chord-seq-sem-titulo.png used on input line 1565.
 
 (pdftex.def)             Requested size: 418.76164pt x 408.22235pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [63 <./OMPD/chord-seq-sem-titulo.png (PNG copy)>]
-<OMPD/OM-listas01.png, id=1172, 625.33624pt x 681.54625pt>
+<OMPD/OM-listas01.png, id=1166, 625.33624pt x 681.54625pt>
 File: OMPD/OM-listas01.png Graphic file (type png)
 
 <use OMPD/OM-listas01.png>
-Package pdftex.def Info: OMPD/OM-listas01.png used on input line 1581.
+Package pdftex.def Info: OMPD/OM-listas01.png used on input line 1579.
 (pdftex.def)             Requested size: 437.73239pt x 477.07912pt.
 File: OMPD/OM-listas01.png Graphic file (type png)
  <use OMPD/OM-listas01.png>
-Package pdftex.def Info: OMPD/OM-listas01.png used on input line 1589.
+Package pdftex.def Info: OMPD/OM-listas01.png used on input line 1587.
 (pdftex.def)             Requested size: 437.73239pt x 477.07912pt.
 
 
@@ -1789,11 +1767,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [64 <./OMPD/OM-listas01.png (PNG copy)>]
-<OMPD/series-OM.png, id=1180, 472.76625pt x 174.6525pt>
+<OMPD/series-OM.png, id=1174, 472.76625pt x 174.6525pt>
 File: OMPD/series-OM.png Graphic file (type png)
 
 <use OMPD/series-OM.png>
-Package pdftex.def Info: OMPD/series-OM.png used on input line 1602.
+Package pdftex.def Info: OMPD/series-OM.png used on input line 1600.
 (pdftex.def)             Requested size: 330.93411pt x 122.2559pt.
 
 
@@ -1803,59 +1781,59 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65]
-<OMPD/segmentaOM.png, id=1188, 883.3pt x 526.96875pt>
+<OMPD/segmentaOM.png, id=1182, 883.3pt x 526.96875pt>
 File: OMPD/segmentaOM.png Graphic file (type png)
 
 <use OMPD/segmentaOM.png>
-Package pdftex.def Info: OMPD/segmentaOM.png used on input line 1612.
+Package pdftex.def Info: OMPD/segmentaOM.png used on input line 1610.
 (pdftex.def)             Requested size: 353.31374pt x 210.78375pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [66 <./OMPD/series-OM.png (PNG copy)> <./OMPD/segmentaOM.png>]
-<OMPD/PD-midifile_write_-mrpeach.png, id=1207, 863.225pt x 705.63625pt>
+<OMPD/PD-midifile_write_-mrpeach.png, id=1200, 863.225pt x 705.63625pt>
 File: OMPD/PD-midifile_write_-mrpeach.png Graphic file (type png)
 
 <use OMPD/PD-midifile_write_-mrpeach.png>
 Package pdftex.def Info: OMPD/PD-midifile_write_-mrpeach.png used on input line
- 1639.
+ 1637.
 (pdftex.def)             Requested size: 517.939pt x 423.38501pt.
 
-Overfull \hbox (62.939pt too wide) in paragraph at lines 1639--1640
+Overfull \hbox (62.939pt too wide) in paragraph at lines 1637--1638
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<OMPD/PD-RTC.png, id=1208, 221.82875pt x 635.37375pt>
+<OMPD/PD-RTC.png, id=1201, 221.82875pt x 635.37375pt>
 File: OMPD/PD-RTC.png Graphic file (type png)
  <use OMPD/PD-RTC.png>
-Package pdftex.def Info: OMPD/PD-RTC.png used on input line 1656.
+Package pdftex.def Info: OMPD/PD-RTC.png used on input line 1654.
 (pdftex.def)             Requested size: 155.27905pt x 444.75859pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<OMPD/PD-list-abs.png, id=1209, 256.96pt x 692.5875pt>
+<OMPD/PD-list-abs.png, id=1202, 256.96pt x 692.5875pt>
 File: OMPD/PD-list-abs.png Graphic file (type png)
 
 <use OMPD/PD-list-abs.png>
-Package pdftex.def Info: OMPD/PD-list-abs.png used on input line 1668.
+Package pdftex.def Info: OMPD/PD-list-abs.png used on input line 1666.
 (pdftex.def)             Requested size: 179.87076pt x 484.80794pt.
  [67]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<OMPD/Probalizador-PD-OSC-OM.png, id=1218, 1086.0575pt x 676.5275pt>
+<OMPD/Probalizador-PD-OSC-OM.png, id=1212, 1086.0575pt x 676.5275pt>
 File: OMPD/Probalizador-PD-OSC-OM.png Graphic file (type png)
 
 <use OMPD/Probalizador-PD-OSC-OM.png>
 Package pdftex.def Info: OMPD/Probalizador-PD-OSC-OM.png used on input line 168
-2.
+0.
 (pdftex.def)             Requested size: 543.02742pt x 338.26291pt.
 
-Overfull \hbox (88.02742pt too wide) in paragraph at lines 1682--1683
+Overfull \hbox (88.02742pt too wide) in paragraph at lines 1680--1681
  [] 
  []
 
@@ -1869,33 +1847,33 @@ PD/PD-list-abs.png>] [71 <./OMPD/Probalizador-PD-OSC-OM.png>] [72
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [74]
-Underfull \hbox (badness 5756) in paragraph at lines 1728--1728
+Underfull \hbox (badness 5756) in paragraph at lines 1726--1726
  [] [] [][]\T1/lmr/m/n/10 (+20) Tutorial ofi-cial de lilypond-scheme: [][]$<[]h
 ttp : / / lilypond . org / doc / v2 . 16 / Documentation / source /
  []
 
-<score/lilypond.pdf, id=1259, 321.2pt x 256.96pt>
+<score/lilypond.pdf, id=1253, 321.2pt x 256.96pt>
 File: score/lilypond.pdf Graphic file (type pdf)
  <use score/lilypond.pdf>
-Package pdftex.def Info: score/lilypond.pdf used on input line 1735.
+Package pdftex.def Info: score/lilypond.pdf used on input line 1733.
 (pdftex.def)             Requested size: 240.89941pt x 192.71951pt.
 
-<score/musicxml.pdf, id=1262, 481.8pt x 377.41pt>
+<score/musicxml.pdf, id=1256, 481.8pt x 377.41pt>
 File: score/musicxml.pdf Graphic file (type pdf)
  <use score/musicxml.pdf>
-Package pdftex.def Info: score/musicxml.pdf used on input line 1751.
+Package pdftex.def Info: score/musicxml.pdf used on input line 1749.
 (pdftex.def)             Requested size: 240.8994pt x 188.70453pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [75 <./score/lilypond.pdf>]
-Overfull \hbox (15.24796pt too wide) in paragraph at lines 1759--1760
+Overfull \hbox (15.24796pt too wide) in paragraph at lines 1757--1758
 []\T1/lmr/m/n/12 (-20) Pela sua na-tu-reza de có-digo aberto alto-nível de ori-
 en-ta-ção a ob-je-tos, Python([][]ROSSUM;
  []
 
 [76 <./score/musicxml.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1776--1776
+Underfull \hbox (badness 10000) in paragraph at lines 1774--1774
  [] [] [][][][]$\T1/lmr/m/n/10 (+20) <[]http : / / web . mit . edu / music21 / 
 doc / moduleReference / moduleChord . html ? #music21 . chord . Chord .
  []
@@ -1906,7 +1884,7 @@ doc / moduleReference / moduleChord . html ? #music21 . chord . Chord .
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [79]
-Overfull \hbox (2.80165pt too wide) in paragraph at lines 1808--1809
+Overfull \hbox (2.80165pt too wide) in paragraph at lines 1806--1807
 []\T1/lmr/m/n/12 (-20) Partiremos de pis-tas já dei-xa-das por au-to-res que ap
 ro-fun-da-ram o tema ([][]MARSHALL[][],
  []
@@ -1919,69 +1897,37 @@ ro-fun-da-ram o tema ([][]MARSHALL[][],
 bibitemlist
 [81
 
-] [82] [83] [84]) [85] [86
+] [82] [83] [84]) (./luteria_v0.6.QUALIFICA.ind)
 
-] [87
-
-] [88]
-Overfull \hbox (151.94083pt too wide) in paragraph at lines 1925--1978
-[][] 
- []
-
-
-LaTeX Warning: Float too large for page by 31.49922pt on input line 1978.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [89
-
-]
-
-LaTeX Warning: Float too large for page by 16.99924pt on input line 2037.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[90] [91] [92
-
-] (./luteria_v0.6.QUALIFICA.ind) 
 AED: lastpage setting LastPage
-[93]
+[85]
 \tf@lof=\write6
 \openout6 = `luteria_v0.6.QUALIFICA.lof'.
 
 \tf@toc=\write7
 \openout7 = `luteria_v0.6.QUALIFICA.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2054.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2054.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1935.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1935.
  (./luteria_v0.6.QUALIFICA.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2054.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2054.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1935.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1935.
 
+Package rerunfilecheck Info: File `luteria_v0.6.QUALIFICA.brf' has not changed.
 
+(rerunfilecheck)             Checksum: 793A0DD30C3367676DD64267BD06881B;15413.
 
-Package rerunfilecheck Warning: File `luteria_v0.6.QUALIFICA.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `luteria_v0.6.QUALIFICA.brf':
-(rerunfilecheck)             Before: A282C985A13E653FE0C63B35282EE7F4;15344
-(rerunfilecheck)             After:  99B6001AEBDEDA15D0C02AEB03103516;15344.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2054.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1935.
  ) 
 Here is how much of TeX's memory you used:
- 16411 strings out of 495039
- 248180 string characters out of 3181250
- 529789 words of memory out of 3000000
- 18779 multiletter control sequences out of 15000+200000
- 93411 words of font info for 171 fonts, out of 3000000 for 9000
+ 16390 strings out of 495039
+ 247966 string characters out of 3181250
+ 507957 words of memory out of 3000000
+ 18772 multiletter control sequences out of 15000+200000
+ 93282 words of font info for 170 fonts, out of 3000000 for 9000
  16 hyphenation exceptions out of 8191
  43i,13n,35p,1222b,664s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
@@ -1999,10 +1945,10 @@ lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf
 7.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pf
 b>
-Output written on luteria_v0.6.QUALIFICA.pdf (95 pages, 1691552 bytes).
+Output written on luteria_v0.6.QUALIFICA.pdf (87 pages, 1681165 bytes).
 PDF statistics:
- 1950 PDF objects out of 2073 (max. 8388607)
- 1701 compressed objects within 18 object streams
- 330 named destinations out of 1000 (max. 500000)
- 28315 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1897 PDF objects out of 2073 (max. 8388607)
+ 1657 compressed objects within 17 object streams
+ 318 named destinations out of 1000 (max. 500000)
+ 28283 words of extra memory for PDF output out of 29859 (max. 10000000)
 
