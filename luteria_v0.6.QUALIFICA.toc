@@ -9,13 +9,13 @@
 \contentsline {subsection}{\numberline {1.3.1}Estrutura de Agrupamento}{22}{subsection.1.3.1}
 \contentsline {subsubsection}{\numberline {1.3.1.1}Regras de prefer\IeC {\^e}ncia para agrupamentos (GPRs)}{23}{subsubsection.1.3.1.1}
 \contentsline {subsection}{\numberline {1.3.2}Estrutura M\IeC {\'e}trica}{25}{subsection.1.3.2}
-\contentsline {subsubsection}{\numberline {1.3.2.1}Regras de prefer\IeC {\^e}ncia M\IeC {\'e}trica (MPFRs) }{27}{subsubsection.1.3.2.1}
+\contentsline {subsubsection}{\numberline {1.3.2.1}Regras de prefer\IeC {\^e}ncia m\IeC {\'e}trica (MPFRs) }{27}{subsubsection.1.3.2.1}
 \contentsline {section}{\numberline {1.4}Segmenta\IeC {\c c}\IeC {\~a}o temporal de eventos cadenciais e a redu\IeC {\c c}\IeC {\~a}o prolongacional na GTTM}{28}{section.1.4}
-\contentsline {subsubsection}{\numberline {1.4.0.2}Calculando a tens\IeC {\~a}o e o Espa\IeC {\c c}o das alturas tonais (TPS) }{32}{subsubsection.1.4.0.2}
-\contentsline {section}{\numberline {1.5}Cogni\IeC {\c c}\IeC {\~a}o das Estruturas Musicais B\IeC {\'a}sicas (CBMS)}{36}{section.1.5}
-\contentsline {subsubsection}{\numberline {1.5.0.3}Solfejo Enarm\IeC {\^o}nico das Classes de Alturas Tonais}{36}{subsubsection.1.5.0.3}
-\contentsline {subsubsection}{\numberline {1.5.0.4}Algoritmo dos Perfis de Tonalidade}{40}{subsubsection.1.5.0.4}
-\contentsline {section}{\numberline {1.6}Restri\IeC {\c c}\IeC {\~o}es Cognitivas versus Segmenta\IeC {\c c}\IeC {\~a}o Atonal}{43}{section.1.6}
+\contentsline {subsubsection}{\numberline {1.4.0.2}Calculando a tens\IeC {\~a}o e o espa\IeC {\c c}o das alturas tonais (TPS) }{30}{subsubsection.1.4.0.2}
+\contentsline {section}{\numberline {1.5}Cogni\IeC {\c c}\IeC {\~a}o das estruturas musicais b\IeC {\'a}sicas (CBMS)}{35}{section.1.5}
+\contentsline {subsubsection}{\numberline {1.5.0.3}Solfejo Enarm\IeC {\^o}nico das Classes de Alturas Tonais}{35}{subsubsection.1.5.0.3}
+\contentsline {subsubsection}{\numberline {1.5.0.4}Algoritmo dos Perfis de Tonalidade}{39}{subsubsection.1.5.0.4}
+\contentsline {section}{\numberline {1.6}Restri\IeC {\c c}\IeC {\~o}es Cognitivas versus Segmenta\IeC {\c c}\IeC {\~a}o Atonal}{42}{section.1.6}
 \contentsline {chapter}{\chapternumberline {2}Teorias de Grupos das Classes de Alturas para uma Segmenta\IeC {\c c}\IeC {\~a}o Atonal }{45}{chapter.2}
 \contentsline {section}{\numberline {2.1}F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}{46}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Vetor intervalar}{47}{subsection.2.1.1}
