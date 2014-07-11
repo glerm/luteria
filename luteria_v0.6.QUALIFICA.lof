@@ -6,7 +6,7 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces Open Music}}{26}{figure.1.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o anal\IeC {\'\i }tica proposta pela GTTM que marca uma hierarquia das batidas por subdivis\IeC {\~o}es de pulsos}}{27}{figure.1.6}
 \contentsline {figure}{\numberline {7}{\ignorespaces Extens\IeC {\~a}o das regras de GTTM na obra \IeC {\textquotedblleft }Tonal Pitch Space\IeC {\textquotedblright } propostas por \citeonline {lerdahl2009genesis} }}{30}{figure.1.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces "Ideias verdes descoloridas dormem furiosamente"\cite {chomsky1957syntactic}}}{31}{figure.1.8}
+\contentsline {figure}{\numberline {8}{\ignorespaces "Ideias verdes descoloridas dormem furiosamente"\ \cite {chomsky1957syntactic}}}{31}{figure.1.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces A analogia de um segmento musical implicando ou sendo implicado por outro \IeC {\'e} usada na GTTM.}}{31}{figure.1.9}
 \contentsline {figure}{\numberline {10}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o em \IeC {\'a}rvore proposta pela GTTM aplicada na melodia inicial de Mikrokosmos 113 de B\IeC {\'a}rtok.}}{32}{figure.1.10}
 \contentsline {figure}{\numberline {11}{\ignorespaces For\IeC {\c c}as tonais nos prolongamentos revistas por Fred \citeonline {lerdahl1988tps} }}{32}{figure.1.11}
@@ -27,17 +27,17 @@
 \contentsline {figure}{\numberline {26}{\ignorespaces F\IeC {\'o}rmulas de agrupamento de classes de altura. }}{50}{figure.2.26}
 \contentsline {figure}{\numberline {27}{\ignorespaces Notas comuns na transposi\IeC {\c c}\IeC {\~a}o. }}{51}{figure.2.27}
 \contentsline {figure}{\numberline {28}{\ignorespaces Notas comuns na transposi\IeC {\c c}\IeC {\~a}o com tr\IeC {\'\i }tono. }}{52}{figure.2.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces A simetria transpositiva \IeC {\'e} obtida atrav\IeC {\'e}s de um padr\IeC {\~a}o de intervalos pal\IeC {\'\i }ndromo. }}{52}{figure.2.29}
+\contentsline {figure}{\numberline {29}{\ignorespaces A simetria transpositiva \IeC {\'e} obtida atrav\IeC {\'e}s de um padr\IeC {\~a}o de intervalo pal\IeC {\'\i }ndromo. }}{52}{figure.2.29}
 \contentsline {figure}{\numberline {30}{\ignorespaces A forma circular \IeC {\'e} mais geral do que a num\IeC {\'e}rica para a visualiza\IeC {\c c}\IeC {\~a}o do padr\IeC {\~a}o de simetrias. }}{53}{figure.2.30}
 \contentsline {figure}{\numberline {31}{\ignorespaces O complemento cont\IeC {\'e}m todas alturas crom\IeC {\'a}ticas que o conjunto original n\IeC {\~a}o possui. }}{53}{figure.2.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces Dois conjuntos Z-relacionados possuem os mesmos intervalos sem serem invers\IeC {\~o}es ou transposi\IeC {\c c}\IeC {\~o}es um dos outros. }}{54}{figure.2.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces Objeto Chord-Seq do Opem Music}}{61}{figure.3.33}
+\contentsline {figure}{\numberline {32}{\ignorespaces Dois conjuntos Z-relacionados possuem os mesmos intervalos sem serem invers\IeC {\~o}es ou transposi\IeC {\c c}\IeC {\~o}es uns dos outros. }}{54}{figure.2.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces Objeto Chord-Seq do OM}}{61}{figure.3.33}
 \contentsline {figure}{\numberline {34}{\ignorespaces Opera\IeC {\c c}\IeC {\~o}es com listas no OMs}}{62}{figure.3.34}
 \contentsline {figure}{\numberline {35}{\ignorespaces Opera\IeC {\c c}\IeC {\~o}es com listas no OMs}}{63}{figure.3.35}
 \contentsline {figure}{\numberline {36}{\ignorespaces Alguns objetos para opera\IeC {\c c}\IeC {\~o}es combinat\IeC {\'o}rias e opera\IeC {\c c}\IeC {\~o}es em grupos de classes de altura no OMs}}{64}{figure.3.36}
 \contentsline {figure}{\numberline {37}{\ignorespaces Segmenta\IeC {\c c}\IeC {\~a}o em Chord-Seq de OpenMusic}}{64}{figure.3.37}
 \contentsline {figure}{\numberline {38}{\ignorespaces Manipula\IeC {\c c}\IeC {\~a}o de arquivos MIDI no PD.}}{66}{figure.3.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces Objetos da biblioteca "Real Time Composition" para PD.}}{67}{figure.3.39}
+\contentsline {figure}{\numberline {39}{\ignorespaces Objetos da biblioteca "Real Time Composition"\ para PD.}}{67}{figure.3.39}
 \contentsline {figure}{\numberline {40}{\ignorespaces Objetos da biblioteca "list-abs" para PD.}}{68}{figure.3.40}
 \contentsline {figure}{\numberline {41}{\ignorespaces Objeto [probalizer].}}{69}{figure.3.41}
 \contentsline {figure}{\numberline {42}{\ignorespaces Gerador de um acorde D\IeC {\'o} maior (d\IeC {\'o}4 e4 g5) na clave de sol em Lilypond}}{73}{figure.4.42}

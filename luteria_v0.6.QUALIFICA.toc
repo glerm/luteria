@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {2.1.2}Forma Normal}{48}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Forma Prima}{49}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}Singularidades nos agrupamentos }{49}{subsection.2.1.4}
-\contentsline {subsubsection}{\numberline {2.1.4.1}Notas Comuns sob transposi\IeC {\c c}\IeC {\~a}o}{51}{subsubsection.2.1.4.1}
+\contentsline {subsubsection}{\numberline {2.1.4.1}Notas comuns sob transposi\IeC {\c c}\IeC {\~a}o}{51}{subsubsection.2.1.4.1}
 \contentsline {subsubsection}{\numberline {2.1.4.2}Simetria Transpositiva}{52}{subsubsection.2.1.4.2}
 \contentsline {subsubsection}{\numberline {2.1.4.3}Complemento}{53}{subsubsection.2.1.4.3}
 \contentsline {subsubsection}{\numberline {2.1.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{54}{subsubsection.2.1.4.4}
