@@ -124,7 +124,7 @@
 \titulo{Luteria Composicional de algoritmos pós-tonais }
 \autor{Guilherme Rafael Soares}
 %\local{Brasil}
-\data{14 de março de 2014, v0.3beta}
+\data{10 de julho de 2014, v0.6-Qualificação}
 \orientador{Prof. Dr. Daniel Quaranta}
 %\coorientador{Equipe \abnTeX}
 \instituicao{%
@@ -314,7 +314,7 @@
     \vspace*{\fill}
    \end{center}
         
-   Trabalho aprovado \imprimirlocal, 05 de março de 2014:
+   Trabalho aprovado \imprimirlocal, 13 de fevereiro de 2015:
 
    \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
    \assinatura{\textbf{Professor} \\ Convidado 1}
@@ -450,7 +450,8 @@ Detalhamos questões computacionais para esta implementação e deixamos um lega
 % ---
 \begin{siglas}
   \item[GTTM] Generative Theory of Tonal Music\footnote{ "Teoria Gerativa da Música Tonal"      \cite{lerdahl1983generative} }
-  \item[TPS] Tonal Pitch Space
+  \item[TPS] Tonal Pitch Space\footnote{ "Espaço das Alturas Tonais"\cite{lerdahl1988tps} }
+  \item[CBMS] Cognition of Basic Musical Structures\footnote{ "Cognição das Estruturas Musicais Básicas"\cite{temperley2001cognition} }
 \end{siglas}
 % ---
 
@@ -569,7 +570,9 @@ E finalmente na conclusão\footnote{ ver \autoref{conclusao}} deste trabalho uti
 % ---
 % Capitulo de revisão de literatura
 % ---
-\chapter{Formalização linguística de gramáticas musicais }
+\chapter{Teorias Cognitivistas para uma Segmentação Tonal}
+
+\section{Formalização linguística de gramáticas musicais }
 
 Em seu ensaio "A comparação das análises sobre o ponto de vista semiológico", J.J. \citeonline{nattiezcomparaccao} faz um balanço das diferentes abordagens analíticas na musicologia 
 
@@ -584,39 +587,38 @@ descrevem o prolongamento e as implicações das alturas, tanto no nível melód
 
 
 % ---
-Buscaremos aqui alguns caminhos para entender que procedimentos podem ser essenciais para a formalização de gramáticas musicais computáveis. Nossa intenção principal é encontrar um fio condutor para a didática de algoritmos composicionais e analíticos para a música que deem conta de estruturas da música pós-tonal anterior aos experimentos com timbre e música concreta que foram determinantes na segunda metade do século XX.  
+A segunda categoria apontada por Nattiez, \textbf{uma análise focada nas estruturas sintáticas}, é o foco desta parte da pesquisa.
 
-Partiremos de uma pequena revisão histórica e conceitual da aplicação do termo "gramática" no contexto da computação musical e suas derivações e implicações.  
+Tentando compreender a influência desta oposição entre sintaxe e semântica nas análises musicais, buscamos as origens deste estudo comparado de linguística e gramáticas musicais.
 
-Utilizaremos o termo “gramática” em sentido mais estrito e para isso tomamos como ponto de partida o entendimento deste termo dentro das ciências computacionais. Em paralelo iremos pensando como este modelo influenciou a formalização de gramáticas musicais estruturalistas e quais alternativas vão aparecendo como adjacentes para formalização de algoritmos musicais.
-
-O modelo de racionalização da linguística iniciado por Noam Chomsky com a obra "Syntactic Structures" \cite{chomsky1957syntactic} e formalizado na sua "Teoria da Sintaxe"\cite{chomsky1965aspects}  até hoje é uma das bases para o estudo algorítmico e algébrico de processamento linguagens naturais.  
+O modelo de racionalização da linguística iniciado por Noam Chomsky com a obra \textit{"Syntactic Structures"} \cite{chomsky1957syntactic} e formalizado na sua \textit{"Teoria da Sintaxe"}\cite{chomsky1965aspects}  até hoje é uma das bases para o estudo algorítmico e algébrico de processamento linguagens naturais.  
 
 Sua influência na teoria musical pode ser encontrada em muitas tentativas de aproximar linguística e musicologia nas década de 70 e 80.
 
-Inspirou as formalizações rígidas de modelos da musicologia da cognição inspirados na linguística na “Teoria Gerativa da Música Tonal” \cite{lerdahl1983generative} - um trabalho interdisciplinar do linguista Ray Jackendoff com o musicólogo Fred Lerdahl que detalharemos mais adiante.
+Inspirou as formalizações rígidas de modelos da musicologia da cognição inspirados na linguística, como na \textit{“Teoria Gerativa da Música Tonal”} \cite{lerdahl1983generative} - um trabalho interdisciplinar do linguista Ray Jackendoff com o musicólogo Fred Lerdahl que detalharemos mais adiante.
 
-Uma abordagem curiosa para comparação desta mesma época é a de Leonard Berstein na série de palestras “Unswared Question” \cite{bernstein1976unanswered}. Sua especulação empírica foi bastante alegórica e demonstrada inventivamente ao piano em seu registro em vídeo. Bersnstein fez comparações das estruturas de ordenamento das frases escritas e faladas com montagens de sessões motívicas de peças clássicas e chega a fazer algumas metáforas entre classes gramaticais e funções de acordes. Este tipo de metáfora parece ser de fato uma das motivações iniciais da pesquisa neste campo, porém muita coisa foi problematizada de maneira mais rigorosa, buscando métodos quantitativos, e nos anos seguintes contribuiu para as bases de organização de uma disciplina hoje conhecida por "cognição musical".
+Uma das primeiras comparações entre as teorias sintáticas de Chomsky e análises musicais é a de Leonard Bernstein na série de palestras \textit{“Unswared Question”} \cite{bernstein1976unanswered}. Sua especulação empírica foi bastante alegórica e demonstrada inventivamente ao piano em seu registro em vídeo. Bernstein fez comparações das estruturas de ordenamento das frases escritas e faladas com montagens de sessões motívicas de peças clássicas e chega a fazer algumas metáforas entre classes gramaticais e funções de acordes. Este tipo de metáfora parece ser de fato uma das motivações iniciais da pesquisa neste campo, porém muita coisa foi problematizada de maneira mais rigorosa, buscando métodos quantitativos, e nos anos seguintes contribuiu para as bases de organização de uma disciplina hoje conhecida por "cognição musical".
 
-Pelo bem ou pelo mal, a abordagem de Bernstein parece estar muito mais para o universo das analogias poéticas livres do que a busca por uma formalização strictu sensu \cite{lerdahl2009genesis} como a que se sucedeu nas derivações das gramáticas gerativas musicais \cite{lerdahl1983generative,temperley2001cognition} ou em formulações algébricas e algoritmicas que Curtis \citeonline{roads1979grammars} já apontava em seus estudos da época.
-
+Pelo bem ou pelo mal, a abordagem de Bernstein parecia estar muito mais para o universo das analogias poéticas livres do que a busca por uma formalização strictu sensu.
  
 
 \section{Gramáticas Musicais Computáveis}
 
-Uma interessante e histórica análise no ensaio de Curtis \citeonline{roads1979grammars} é um panorama que fez sobre o estado da arte da influência da linguística sobre musicologia na época, fazendo um estudo comparado dos trabalhos de \citeonline{smoliar1976music,lindblom1970towards,laske1977music, winograd1968linguistics, moorer1972music, nattiez1977fondements,ruwet1975theorie, lerdahl1983generative} e o próprio trabalho anterior de \citeonline{roads1978composing}.
+Uma interessante e histórica análise strictu sensu sobre a influência da linguística computacional na musicologia está no ensaio \textit{"Grammars as representations for music"}  de Curtis \citeonline{roads1979grammars}. O ensaio é um panorama sobre o estado da arte da influência da linguística sobre musicologia na época, fazendo um estudo comparado dos trabalhos de \citeonline{smoliar1976music,lindblom1970towards,laske1977music, winograd1968linguistics, moorer1972music, nattiez1977fondements,ruwet1975theorie, lerdahl1983generative} e o próprio trabalho anterior de \citeonline{roads1978composing}.
 
 
-O interessante deste panorama é que coloca lado a lado perspectivas mais empíricas como de \citeonline{nattiez1977fondements} e \citeonline{ruwet1975theorie} e outras que buscavam efetivamente uma inspiração para um rigor computacional de sintaxes musicais. Vale lembrar que Nattiez também tem um estudo comparado da influência da linguística na musicologia, com um ponto de vista menos pragmático e mais historicista, muito mais abrangente, e que traz um ponto de vista bem mais recente \cite{nattiez2004modelos} do que decorreu a seguir.
+O interessante deste panorama é que coloca lado a lado perspectivas mais empíricas como de \citeonline{nattiez1977fondements} e \citeonline{ruwet1975theorie} e outras que buscavam efetivamente uma inspiração para um rigor computacional de sintaxes musicais. Vale lembrar que Nattiez também tem um estudo comparado da influência da linguística na musicologia, com um ponto de vista menos pragmático e mais historicista, muito mais abrangente, e que traz um ponto de vista bem mais recente \cite{nattiez2004modelos}.
 
 
 Segundo Roads, \citeonline{moorer1972music} e \citeonline{winograd1968linguistics} chegam a realizar alguns experimentos computacionais. \citeonline{smoliar1976music} toca num ponto tecnologicamente complexo para a época: a segmentação de arquivos sonoros diretamente a partir de gravações. 
 
-\citeonline{laske1977music} propõe analogias com a fonologia (relação entre sintaxe e sons da palavra falada) com uma recente “sonologia” (relação de uma sintaxe musical e os sons musicais). A dupla \citeonline{lerdahl1983generative}  investe numa normatização bastante inspirada nas segmentações propostas por Chomsky e procura problematizar aspectos de uma cognição musical tonal, que teria bases culturais sólidas na tradição ocidental, que veremos a seguir na \autoref{GTTM}.
+\citeonline{laske1977music} propõe analogias com a fonologia (relação entre sintaxe e sons da palavra falada) com uma recente “sonologia” (relação de uma sintaxe musical e os sons musicais). 
+
+Já a dupla \citeonline{lerdahl1983generative}  investe numa normatização bastante inspirada nas segmentações propostas por Chomsky e procura problematizar aspectos de uma cognição musical tonal, que teria bases culturais sólidas na tradição ocidental. Seguiremos este percurso logo a seguir.
 
 
 
-\chapter{Teorias Cognitivistas para uma Segmentação Tonal}
+
 
 \section{Gramática Gerativa da Música Tonal (GTTM)}
 \label{GTTM}
@@ -628,18 +630,10 @@ Porque, se a obra de Lerdahl e Jackendoff não conheceu um amplo reconhecimento 
 \cite[ grifos nossos.]{nattiez2004modelos}
 \end{citacao}
 
+A GTTM introduz uma taxonomia para separar de um plano musical seus agrupamentos melódicos, harmônicos e rítmicos, buscando uma maneira estruturada para fazer uma segmentação hierárquica de motivos que supostamente estariam dentro de uma previsibilidade de uma escuta ocidental tonal, apontando limitações e contradições entre estas regras e buscando apoiar-se em processos cognitivos rastreados pela audição, psicoacústica e cultura desta escuta.\footnote{
+Lerdahl e Jackendoff colocam o termo “regra gerativa” ( que é derivado da linguística ) significando uma estrutura pela qual a escuta já experimentada naquela cultura musical guia-se para segmentar e fruir sua sixtaxe. \cite[ p.6]{lerdahl1983generative}
+}.  
 
-O que buscamos como objeto no presente trabalho é um percurso composicional utilizando algum repertório significativo de critérios analíticos com enfase em abordagens que busquem métodos para extrair regras gerativas
-\footnote{
-Lerdahl e Jackendoff colocam o termo “gerativo” ( que é derivado da linguística ) de uma forma que não signifique a príncipio uma fórmula capaz de gerar aquela música, mas sim um estrutura pela qual a escuta já experimentada naquela cultura musical guia-se para segmentar e fruir sua sixtaxe. \cite[ p.6]{lerdahl1983generative}
-}
-que estejam estruturalmente passíveis de serem descritas em forma de algoritmos. 
-
-Para isso iniciamos refletindo sobre uma das mais influentes teorias musicais com parentesco na linguística estruturalista e as tentativas de encontrar fórmulas de sintaxe para compreender os mecanismos seletivos da cognição musical: “A Teoria Gerativa da Musica Tonal”, conhecida por “GTTM”, sigla do termo inglês “Generative Theory of Tonal Music” \cite{lerdahl1983generative}.
-
-A GTTM introduz uma taxonomia para separar de um plano musical seus agrupamentos melódicos, harmônicos e ritmicos, buscando uma maneira estruturada para fazer uma segmentação hierárquica de motivos que supostamente estariam dentro de uma previsibilidade de uma escuta ocidental tonal, apontando limitações e contradições entre estas regras e buscando apoiar-se em processos cognitivos rastreados pela audição, psicoacústica e cultura desta escuta. 
-
-Desta maneira também problematiza e limita para fora do seu escopo peças que podem esconder segmentações registradas em esquemas composicionais anteriores a realização das obras, com estruturas racionalizadas porém fora do plano auditivo e cognitivo mais básico e intuitivo na cultura tonal ocidentalizada. 
 
 
 %%%%%%%%%%%%%%%%%% gttm esquema
@@ -651,6 +645,7 @@ Desta maneira também problematiza e limita para fora do seu escopo peças que p
 	\legend{Fonte: \citeonline[p. 2 , tradução do autor]{lerdahl2009genesis}}
 \end{figure}
 
+\pagebreak
 Em revisões que sucedem a GTTM, Fred Lerdahl desenha o esquema básico do seu funcionamento dividindo em quatro estruturas:
 
 \begin{citacao}
@@ -665,7 +660,9 @@ A teoria [GTTM] clama que, se um sinal permite, o ouvinte inconscientemente infe
 }
 \end{citacao}
 
-\pagebreak
+O quinto elemento da Figura 1, as "regras de preferência", seriam compostas pelas condições de estabilidade das 4 estruturas: regras de "boa-formação" que são mais essenciais para a segmentação básica e as "regras de preferencia" hierarquizadas pelo contexto.
+
+
 \subsection{Estrutura de Agrupamento}
 
 As Regras de boa formatividade dos agrupamentos \textit{("Grouping Well-Formed Rules" - GWFRs) }define o conjunto mais geral e axiomático das regras da GTTM, definindo premissas como o fato de que a análise considera uma escuta linear e hierarquizada, com pequenos grupos interdependentes de seus prolongamentos em grandes grupos.
@@ -683,7 +680,7 @@ As Regras de boa formatividade dos agrupamentos \textit{("Grouping Well-Formed R
 \textbf{GWFR 1} “Qualquer sequencia contígua de eventos de alturas, batidas percussivas, ou similares constituem um grupo, e somente sequencias contíguas constituem um grupo” \cite[ pg.37]{lerdahl1983generative}.
 \end{citacao}
 
-Esta regra estabelece que este tipo de escuta irá selecionar agrupamentos apenas por eventos sequenciados, não valendo por exemplo agrupar sons apenas por estarem na mesma oitava ou por serem de figuras rítmicas iguais figurando em diferentes sessões da peça, pois isto implicaria em uma seleção cognitiva-auditiva de eventos num tempo não-linear, desconstruindo a escuta imediata proposta pela sequencia de eventos da composição original. O paradigma da GTTM é sempre de tentar justificar suas regras por uma suposta experiência cognitiva imediata em comum.
+Esta regra estabelece que este tipo de escuta irá selecionar agrupamentos apenas por eventos sequenciados, não valendo por exemplo agrupar sons apenas por estarem na mesma oitava ou por serem de figuras rítmicas iguais figurando em diferentes sessões da peça, pois isto implicaria em uma seleção cognitiva-auditiva de eventos num tempo não-linear, desconstruindo a escuta imediata proposta pela sequencia de eventos da composição original. O paradigma da GTTM é sempre de tentar justificar suas regras por uma suposta experiência cognitiva imediata.
 
 As próximas regras de boa formatividade concluem por conjunção que os grupos se estabelecem por uma hierarquia de pequenos grupos contidos em grupos maiores, onde sempre um grupo grande pode ser decomposto em grupos menores:
 
@@ -693,7 +690,7 @@ As próximas regras de boa formatividade concluem por conjunção que os grupos 
  \cite[ p.38]{lerdahl1983generative}
 \end{citacao}
 
-\pagebreak
+
 %%%%%%%%%%%%%%%%%% mal formados
 \begin{figure}[htb]
 	\caption{\label{fig_grafico}Exemplos de agrupamentos “mal formados” de acordo com a regra GWFR5}
@@ -711,7 +708,7 @@ As próximas regras de boa formatividade concluem por conjunção que os grupos 
 \cite[ p.43]{lerdahl1983generative}
 \end{citacao}
 
-Segundo a GTTM pequenos grupos geralmente não serão capazes de sozinhos estabelecer contextos. Uma pequena digressão: Isto seria questionável em uma teoria que considerasse pequenos motivos como uma espécie de "objeto sonoro"\cite{guigue1995analise} , mas não é o caso desta abordagem, que está preocupada com uma camada exterior que supostamente é edificada por esta articulação contígua de grupos internos. A ideia de um pequeno motivo que irrompe esta superfície funcional linear como uma sonoridade\cite{guigue2012} articulada como entidade é extremamente interessante, mas por hora ficará fora do escopo.
+Segundo a GTTM pequenos grupos geralmente não serão capazes de sozinhos estabelecer contextos. Uma pequena digressão: Isto seria questionável em uma teoria que considerasse pequenos motivos como uma espécie de "objeto sonoro"\cite{guigue1995analise} , mas não é o caso desta abordagem, que está preocupada com uma camada exterior que supostamente é edificada por esta articulação contígua de grupos internos. A ideia de um pequeno motivo que irrompe esta superfície funcional linear como uma sonoridade\cite{guigue2012} articulada como entidade seria um complemento  interessante a ser pensando mais adiante.
 
 \begin{citacao}
 \textbf{GPR2 “(Proximidade)} – Considere uma sequencia de quatro notas [n1-n2-n3-n4], O restante sendo igual, a transição n2-n3 deve ser considerada uma fronteira de segmento se: \textbf{a) (Ligadura/Pausa)} o intervalo-temporal desde o final de n2 ao ínicio de n3 é menor do que desde final de n3 ao início de n4. \textbf{b) (Ponto-de-ataque)} o intervalo-temporal entre os pontos de ataque entre n2-n3 é maior do que entre n1-n2  e entre n3-n4. \cite[ p.45]{lerdahl1983generative}
@@ -753,7 +750,7 @@ Além do “respiro” passamos a levar em consideração alguns critérios de m
 \cite{lerdahl1983generative}
 \end{citacao}
 
-\pagebreak
+
 Ilustramos algumas destas regras demonstrando como podem ser observadas em uma estrutura "chord-seq" da linguagem Open Music.\footnote{As ferramentas computacionais utilizadas neste trabalho são explicadas em detalhs na \autoref{computacional}. }
 
 
@@ -859,10 +856,10 @@ difficulties in this regard. \cite[p. 191]{lerdahl2009genesis}}
 
 
 
-Posteriormente ao GTTM, Lerdahl investe esforços no desenvolvimento da teoria de espaço tonal\cite{lerdahl1988tps}, que foi fortemente baseado nas pesquisas de quantificação das condições para estabilidade da percepção de contextos tonais argumentada por Carol Krumhansl em seu artigo "Perceptual structures of tonal music"\cite{krumhansl1983perceptual} e fundamentada em mais profundidade no livro "Cognitive structures of pitch"\cite{krumhansl1990cognitive}. Como veremos mais adiante este trabalho também influenciou os algoritmos de harmonia e tonalidade de David Temperley em seu "Cognitive Basic Music Structures"\cite{temperley2001cognition}. 
+Posteriormente ao GTTM, Lerdahl investe esforços no desenvolvimento da teoria de espaço tonal\cite{lerdahl1988tps}, que foi fortemente baseado nas pesquisas de quantificação das condições para estabilidade da percepção de contextos tonais argumentada por Carol Krumhansl em seu artigo \textit{"Perceptual structures of tonal music"}\cite{krumhansl1983perceptual} e fundamentada em mais profundidade no livro \textit{"Cognitive structures of pitch"}\cite{krumhansl1990cognitive}. Como veremos mais adiante este trabalho também influenciou os algoritmos de harmonia e tonalidade de David Temperley em seu \textit{"Cognition of Basic Musical Structures"}\cite{temperley2001cognition}. 
 
 \pagebreak
-Mais recentemente, Lerdahl atualiza sua teoria do espeço tonal\cite{lerdahl2001tonal} buscando alguns argumentos novos sobre transformações cromáticas algébricas fundamentadas pela corrente musicológica "Neo-Riemaniana"\cite{cohn1998introduction,lewin2007generalized} e escreve com Krumhansl um artigo chamado "Modeling Tonal Tension"\cite{2007lerdahl-krumhansl} buscando legitimar sua teoria através de testes cognitivos com uma audiência.
+Mais recentemente, Lerdahl atualiza sua teoria do espeço tonal\cite{lerdahl2001tonal} buscando alguns argumentos novos sobre transformações cromáticas algébricas fundamentadas pela corrente musicológica \textit{"Neo-Riemaniana"}\cite{cohn1998introduction,lewin2007generalized} e escreve com Krumhansl um artigo chamado \textit{"Modeling Tonal Tension"}\cite{2007lerdahl-krumhansl} buscando legitimar sua teoria através de testes cognitivos com uma audiência.
 
 \begin{citacao}
 A ideia é que a distância cognitiva de um evento de um ponto dado de referência mede a instabilidade do evento em relação a este ponto de referência. Na suposição que o ouvinte inconscientemente busca uma interpretação mais estável de uma passagem musical, o principio TPS ["Espaço de Alturas Tonais"] do menor caminho seleciona eventos revelando as menores distâncias disponíveis para superordenar eventos em cada estágio da redução prolongacional.\cite[p. 191]{lerdahl2009genesis}\footnote{The idea is that the cognitive distance of an event from a given reference point measures the instability of that
@@ -912,7 +909,7 @@ A frase \textbf{"Ideias verdes descoloridas dormem furiosamente"} é usada por \
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Notação em árvore proposta pela GTTM apicada na melodia inicial de Mikrokosmos 113 de Bártok.}
+	\caption{\label{fig_grafico}Notação em árvore proposta pela GTTM aplicada na melodia inicial de Mikrokosmos 113 de Bártok.}
 	\begin{center}
 	    \includegraphics[scale=0.4]{mikro/mikro113_GTTM_tree.png}
 	\end{center}
@@ -1008,11 +1005,11 @@ Toma-se o menor como equivalente a "menor distancia" na tensão tonal, portanto 
 
 \section{Cognição das Estruturas Musicais Básicas (CBMS)}
 
-A teoria elaborada por David \citeonline{temperley2001cognition} em seu livro "Cognição das Estruturas Musicais Básicas"\footnote{"Cognitive Theory of Basic Musical Structures" doravante tratado por CBMS. } foi declaradamente inspirada na GTTM. Seu esquema de enumeração de regras "bem formadas" e regras de "preferência" é tão similar que pode ser considerado uma tentantiva de continuidade desta.
+A teoria elaborada por David \citeonline{temperley2001cognition} em seu livro \textit{"Cognition of Basic Musical Structures"}\footnote{Doravante tratado por CBMS. } foi declaradamente inspirada na GTTM. Seu esquema de enumeração de regras "bem formadas" e regras de "preferência" é tão similar que pode ser considerado uma tentantiva de continuidade desta.
 
 Temperley divide as regras em seis grupos: \textbf{estrutura métrica, frase melódica, estrutura contrapontual, solfejo enarmônico das classes de altura tonais, estrutura harmônica, estrutura de tonalidade.}
 
-As regras de estrutura métrica são bastante similares\footnote{Colocamos no apêndice um quadro comparativo das regras feito por David \citeonline{meredith2002review} em sua crítica do livro.  } e as regras de frase melódica e estrutura contrapontual são uma proposta próxima das regras de agrupamento da GTTM, porém levando em conta algumas ideias para interação polifônica e determinando métodos para pensar contorno melódico e o fluxo das vozes. 
+As regras de estrutura métrica são bastante similares e as regras de frase melódica e estrutura contrapontual são uma proposta próxima das regras de agrupamento da GTTM, porém levando em conta algumas ideias para interação polifônica e determinando métodos para pensar contorno melódico e o fluxo das vozes. 
 
 Decidimos iniciar o percurso pelas regras da CBMS pelos dois grupos de regras que parecem indispensáveis para pensar todas as outras e que parece mais deficiente na GTTM: o solfejo enarmônico das classes de altura tonais e a estrutura de tonalidade. 
 
@@ -1090,7 +1087,7 @@ Temperley problematiza os algoritmos de busca por tonalidade lembrando que ident
 
 Para isto inicia uma busca por um estudo comparado entre algumas abordagens da percepção de tonalidade, pela psicologia cognitivista da música. \cite{cuddy1979melody,brown1994musical,deutsch1981internal,longuet1971interpreting}
 
-Decide focar no algoritmo de "Krumhansl-Schmuckler"\footnote{c.f. implementação em \url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html\#music21.analysis.discrete.KrumhanslSchmuckler}} 
+Decide focar no algoritmo de "Krumhansl-Schmuckler"\footnote{c.f. implementação em \url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html\#music21.analysis.discrete.KrumhanslSchmuckler}. Acesso em 10 de julho de 2014.}     
 surgido da pesquisa de Carol \citeonline{krumhansl1983perceptual} e aprofundado em seu "Cognitive foundations of musical pitch"\cite{krumhansl1990cognitive}.
 
 
@@ -1114,7 +1111,7 @@ Krumhansl argumenta sobre o que chama "perfis-tonais", histogramas que servem co
 \end{figure}
 
 
-A fórmula funciona da seguinte maneira\footnote{c.f. uma prova real detalhada da fórmula orginal em \cite[p.37]{krumhansl1990cognitive} }:
+A fórmula funciona da seguinte maneira\footnote{c.f. uma prova real detalhada da fórmula original em \cite[p.37]{krumhansl1990cognitive} }:
 
 
 $ \left\{
@@ -1140,7 +1137,7 @@ $
 A escala cromática tem um padrão para o contexto de Dó maior e Dó menor, que para ser transposto para outras tonalidades bastando mover a ordem das alturas (por exemplo em Dó sustenido maior este passa a valer 6.35, Ré passa a valer 2.23 e assim por diante).
 \pagebreak
 
-Temperley propõe uma atualizações neste algoritmo\cite[pg.173-182]{temperley2001cognition}\footnote{c.f. implementação na biblioteca music21 em \url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html?\#temperleykostkapayne}} elaborando as seguintes modificações: aumentar a diferença entre os graus diatônicos e cromáticos, compensar um peso maior para a nota sensível ("leading tone") aumentando o peso da sétima maior e diminuindo da sétima menor\cite[p.182]{temperley2001cognition}, zerar alturas não presentes no vetor de comparação\cite[p.180]{temperley2001cognition}, diminuir o peso de alturas que estejam mais distantes na linha de quintas.\cite{temperley2001cognition}\footnote{c.f. \autoref{solfejo}}
+Temperley propõe uma atualizações neste algoritmo\cite[pg.173-182]{temperley2001cognition}\footnote{c.f. implementação na biblioteca music21 em \url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html?\#temperleykostkapayne}Acesso em 10 de julho de 2014.} elaborando as seguintes modificações: aumentar a diferença entre os graus diatônicos e cromáticos, compensar um peso maior para a nota sensível ("leading tone") aumentando o peso da sétima maior e diminuindo da sétima menor\cite[p.182]{temperley2001cognition}, zerar alturas não presentes no vetor de comparação\cite[p.180]{temperley2001cognition}, diminuir o peso de alturas que estejam mais distantes na linha de quintas.\cite{temperley2001cognition}\footnote{c.f. \autoref{solfejo}}
 
 O resultado são dois novos histogramas para os modos maior e menor:
 
@@ -1159,7 +1156,7 @@ O resultado são dois novos histogramas para os modos maior e menor:
 \section{Restrições Cognitivas versus Segmentação Atonal}
 
 
-Quase 10 anos após a publicação da GTTM Lerdahl publica um ensaio chamado \textbf{"Restrições cognitivas nos sistemas composicionais"}\cite{lerdahl1992cognitive}, ancorando observações em uma aproximação bastante conservadora e crítica da música serial, tomando como caso a peça "Le Marteau Sans Maitre" de Pierre Boulez, e defendendo a tese de que uma música tão distante dos perfis cognitivos básicos da musica tonal seria inapreensível para os sentidos\footnote{Conferir também o ensaio de Milton \citeonline{babbitt1958cares} chamado "Who Cares If you Listen" que argumenta os pressupostos que sustentariam uma pesquisa \textbf{despreocupada da escuta leiga} e que necessita o suporte da ciência para abrir novas fronteiras no desconhecido, assim como ocorre com as ciências exatas não-aplicadas. }. 
+Quase 10 anos após a publicação da GTTM Lerdahl publica um ensaio chamado \textbf{"Restrições cognitivas nos sistemas composicionais"}\cite{lerdahl1992cognitive}, ancorando observações em uma aproximação bastante conservadora e crítica da música serial, tomando como caso a peça "Le Marteau Sans Maitre" de Pierre Boulez, e defendendo a tese de que uma música tão distante dos perfis cognitivos básicos da musica tonal seria inapreensível para os sentidos\footnote{Conferir também o ensaio de Milton \citeonline{babbitt1958cares} chamado "Who Cares If you Listen" que argumenta o inverso: pressupostos que sustentariam uma pesquisa \textbf{despreocupada da escuta leiga} e que necessita o suporte da ciência para abrir novas fronteiras no desconhecido, assim como ocorre com as ciências exatas não-aplicadas. }. 
 
 É importante levar em conta que a GTTM e suas derivações insistiram sempre numa afirmação de uma suposta preferência cognitiva regida pelos princípios "atrativos" tonais, o que pode ser interessante em teorias pós-tonais para pensar ambiguidade de sistemas que induzem uma intenção auditiva politonal, \textbf{mas não parece ser suficiente }para pensar critérios que considerem uma busca auditiva pelas sonoridades de grupos de intervalos não organizados a partir da suposta ordem dos "espaços de alturas tonais"\cite{lerdahl1988tps} intuídos pela cognição de uma escuta ocidentalizada ou ocidentalizante.
 
@@ -1169,7 +1166,7 @@ Cabe pensar aqui aquilo que \citeonline[pg.18-20]{nattiez2001tripartite} diferen
 
 Já a \textbf{estésica indutiva} seria determinada por uma inferência explícita e autoral do musicólogo, que aponta aquilo que segundo seus próprios critérios poderia ser percebido como relevante e importante numa escuta. 
 
-Mas seria possível trabalhar um interesse apenas estrutural no material, isolado de seu contexto de condicionamento da escuta ou intenção do compositor? Nattiez chama de \textbf{"nível neutro"}, \textbf{"análise imanente"} ou \textbf{"análise material"} as estruturas em estado bruto. Dados quantitativos ainda isoladas de seu contexto argumentativo. 
+Mas seria possível trabalhar um interesse \textbf{apenas estrutural} no material, isolado de seu contexto de condicionamento da escuta ou intenção do compositor? Nattiez chama de \textbf{"nível neutro"}, \textbf{"análise imanente"} ou \textbf{"análise material"} as estruturas em estado bruto. Dados quantitativos ainda isoladas de seu contexto argumentativo. 
 
 A teoria de grupos e classes de alturas sempre foi evitada pela linha descendente da pesquisa da GTTM, justamente por não parecer tão preocupada em afirmar seus pressupostos em pesquisas de campo sobre cognição. Por estar preocupada apenas com o \textbf{"nível neutro"} quando a aplicada em análises sempre acabaria induzindo seus apontamentos em critérios subjetivamente determinados pelo musicólogo. Por outro lado a normatização que as teorias derivadas da GTTM impõe parecem tender a uma limitação estanque. Por que limitar a percepção naquilo que supostamente seria a percepção do ouvinte médio? Não seria produtivo propor outros modos de escuta, mesmo que ainda não estejam condicionados?
 
@@ -1323,7 +1320,7 @@ Para a redução de uma forma normal partimos do cluster sem repetições, coloc
 \pagebreak
 \subsection{Forma Prima} 
 
-A forma prima é um procedimento para simplificar ainda mais a forma normal, encontrando "a mais normal das normais"\cite[p.47]{straus2004} e reduzindo vetores que possuem os mesmos intervalos ou são inversões e transposições a um vetor primário. Para isso uma forma normal é transposta até que possua o zero em sua primeira posição. Assim é feito também com sua inversão. A forma mais compacta à esquerda será a forma prima. Allen \citeonline{forte1973structure} desenvolveu uma taxonomia a partir das formas primas que tem sido utilizada como forma canônica para representação de grupos de classes de altura.\footnote{A biblioteca "math" do OpenMusic possui o objeto "p-form" para encontrar os agrupamentos de Forte. A tabela original está no livro "The Structure of Atonal Music"\cite[p.179-181]{forte1973structure}}
+A forma prima é um procedimento para simplificar ainda mais a forma normal, encontrando "a mais normal das normais"\cite[p.47]{straus2004} e reduzindo vetores que possuem os mesmos intervalos ou são inversões e transposições a um vetor primário. Para isso uma forma normal é transposta até que possua o zero em sua primeira posição. Assim é feito também com sua inversão. A forma mais compacta à esquerda será a forma prima. Allen \citeonline{forte1973structure} desenvolveu uma taxonomia a partir das formas primas que tem sido utilizada como forma canônica para representação de grupos de classes de altura.\footnote{A biblioteca "math" do OpenMusic possui o objeto "p-form" para encontrar os agrupamentos de Forte. A tabela original está no livro "The Structure of Atonal Music"\cite[p.179-181]{forte1973structure}}. Forte organiza agrupamentos pelo número de elementos seguidos por um número que diz qual ordem dentro do conjunto com aquele mesmo número de elementos. Exemplo: |3-1| é composto das alturas (0,1,2), |3-2|  é o cluster (0,1,3), |4-17|  é composto por (0,3,4,7), e assim por diante.
 
 \begin{figure}[h]
 	\caption{\label{fig_grafico}Fórmulas de agrupamento de classes de altura. }
@@ -1617,7 +1614,7 @@ O OM também incorpora dentro de seus sequenciadores de nota um procedimento par
 \pagebreak
 \subsection{PD}
 
-Desde o início de seu desenvolvimento o PureData surge como um software preocupado em resolver problemas de processamento digital de sinal de maneira estruturada, paralelo ao momento que sua versão comercial Max\footnote{http://cycling74.com/} desenvolvia sua versão "MSP" para processamento de áudio digital, baseada neste primeiro estágio do PD. 
+Desde o início de seu desenvolvimento o PureData surge como um software preocupado em resolver problemas de processamento digital de sinal de maneira estruturada, paralelo ao momento que sua versão comercial Max\footnote{\url{http://cycling74.com/} Acesso em 10 de julho de 2014.} desenvolvia sua versão "MSP" para processamento de áudio digital, baseada neste primeiro estágio do PD. 
 
 \begin{citacao}
 Um novo sistema de software, chamado Puredata, está em seus primeiros estágios de desenvolvimento. Seu design almeja remediar algumas deficiências do programa Max e preservar algumas de suas vantagens. A mais importante fraqueza do Max é a dificuldade de manter estruturas de dados compostas de um tipo que possa ser acessado quando analisando e ressintetizando sons  ou quando gravando e modificando sequencias de diferentes tipos. Também, tem sido difícil integrar sinais que não sejam de áudio (vídeo por exemplo, e também espectro sonoro ) dentro do rígido sistema de “objetos til” ($\sim$ ) do Max.\cite{puckette1996pure}
@@ -1627,7 +1624,7 @@ Um novo sistema de software, chamado Puredata, está em seus primeiros estágios
 Interessante perceber que já no final dos anos 90 o PD já tinha como alvo a vindoura possibilidade de uma música performática feita com os computadores domésticos que começavam a popularizar-se, preocupando-se com aspectos de melhor performance de processamento de áudio, uso de video sincronizado e representação em tempo real de dados de processamento sonoro, apontando para a possibilidade de outros tipos de representação da música. Seu tutorial nativo é todo focado na didática do processamento digital de sinal.\cite{puckette2007theory}  
 
 
-A música partiturada em scores tradicionais nunca foi uma grande preocupação no PD. Podemos encontrar nativamente uma proposta de estrutura de dados mais próxima dos scores eletroacústicos, como o de "Artikulation" de Ligeti ou "Studie II" de Stockhausen.\footnote{ c.f. "Solitude" de Hans C. Steiner:  \url{http://http://vimeo.com/16175509}}.
+A música partiturada em scores tradicionais nunca foi uma grande preocupação no PD. Podemos encontrar nativamente uma proposta de estrutura de dados mais próxima dos scores eletroacústicos, como o de "Artikulation" de Ligeti ou "Studie II" de Stockhausen.\footnote{ c.f. "Solitude" de Hans C. Steiner:  \url{http://http://vimeo.com/16175509} Acesso em 10 de julho de 2014.}.
 
 
 Apesar disso, vale lembrar também que assim como o Max, o PD tem uma serie de objetos preparados para lidar com o protocolo MIDI. Existem também várias bibliotecas de terceiros (distribuídas no pacote "Extended" ) que foram criadas pensando em manipulação de dados estruturados como semitons da escala de temperamento igual. Vejamos a seguir.
@@ -1713,7 +1710,7 @@ A mensagem MIDI básica carrega informação sobre:
 \item Mensagens exclusivas de sistema (SysEx) geralmente usadas por aplicações para ações independentes do gesto musical, por exemplo informar ao sistema onde onde buscar arquivos temporários de uma sessão.
 \end{enumerate}
 
-É importante ter em mente que os arquivos MIDI, por ser há mais 35 é um padrão ainda em uso, gerou um legado relevante de arquivos baseados em repertório clássico para a reconstituição de corpus de peças partituradas. Porém não são descritores capazes de garantir a boa formatação de seus dados como figuras de compasso de uma pauta tradicional, já que os arquivos MIDI não carregam informações sobre as figuras, apenas sobre suas durações, alturas e expressão. Quando importados para programas de notação ou convertidos para formatos destes, os arquivos MIDI irão passar por uma segmentação arbitrária e determinada pelo algoritmo "parser"\footnote{definir parser} que vai converter determinada duração em determinada métrica quantizada, normalmente diferente das articulações de quais as músicas foram digitalizadas.
+É importante ter em mente que os arquivos MIDI, por ser há mais de 35 anos um padrão ainda em uso, gerou um legado relevante de arquivos baseados em repertório clássico para a reconstituição de corpus de peças partituradas. Porém não são descritores capazes de garantir a boa formatação de seus dados como figuras de compasso de uma pauta tradicional, já que os arquivos MIDI não carregam informações sobre as figuras, apenas sobre suas durações, alturas e expressão. Quando importados para programas de notação ou convertidos para formatos destes, os arquivos MIDI irão passar por uma segmentação arbitrária e determinada pelo algoritmo "parser"\footnote{Método computacional para conversão entre formatos ou tipos de dados diferentes.} que vai converter determinada duração em determinada métrica quantizada, normalmente diferente das articulações de quais as músicas foram digitalizadas.
 
 
 Veremos a seguir outros arquivos mais específicos para este fim e quando necessário será feita a conversão entre os tipos.
@@ -1724,7 +1721,7 @@ Veremos a seguir outros arquivos mais específicos para este fim e quando necess
 
 \section{Lilypond}
 
-O objetivo principal aqui é a formatação de uma notação partitural avançada e otimizada para impressão em papel. Permite também a utilização de elementos de notação mais exótica, inclusão de texto, dedilhados, nomenclatura de acordes, sinais de expressão, e customização de elementos a partir de módulos. Facilita a otmização da disposição e dimensão das fontes dos objetos e possui uma linguagem script própria dialeto da sintaxe scheme\footnote{Tutorial oficial de lilypond-scheme: \url{http://lilypond.org/doc/v2.16/Documentation/source/Documentation/extending/introduction-to-scheme}}.
+O objetivo principal aqui é a formatação de uma notação partitural avançada e otimizada para impressão em papel. Permite também a utilização de elementos de notação mais exótica, inclusão de texto, dedilhados, nomenclatura de acordes, sinais de expressão, e customização de elementos a partir de módulos. Facilita a otmização da disposição e dimensão das fontes dos objetos e possui uma linguagem script própria dialeto da sintaxe scheme\footnote{Tutorial oficial de lilypond-scheme: \url{http://lilypond.org/doc/v2.16/Documentation/source/Documentation/extending/introduction-to-scheme} Acesso em 10 de julho de 2014.}.
 
 
 
@@ -1741,7 +1738,7 @@ O objetivo principal aqui é a formatação de uma notação partitural avançad
 
 \section{MusicXML}
 
-O uso geral do formato MusicXML é similar ao Lilypond - formatação de partituras. No entanto, enquanto Lilypond é um sistema completo fechado em si próprio, o MusicXML é um formato com a intenção de tornar-se um padrão intercambiável entre diferentes aplicações de partitura\footnote{ Lista atualizada de aplicações compatíveis com o formato MusicXML: \url{http://www.musicxml.com/software/} }.
+O uso geral do formato MusicXML é similar ao Lilypond - formatação de partituras. No entanto, enquanto Lilypond é um sistema completo fechado em si próprio, o MusicXML é um formato com a intenção de tornar-se um padrão intercambiável entre diferentes aplicações de partitura\footnote{ Lista atualizada de aplicações compatíveis com o formato MusicXML: \url{http://www.musicxml.com/software/} Acesso em 10 de julho de 2014.}.
 
 
 \begin{figure}[htb]
@@ -1764,15 +1761,15 @@ Falaremos a seguir de duas dessas bibliotecas utilizadas como ferramenta auxilia
 
 \subsection{Abjad}
 
-É uma biblioteca voltada para a formatação de clichês em notação partitural pronta para impressão em papel, baseada na manipulação de templates no formato lilypond. A biblioteca apresenta alguns templates baseados em peças de Bártok, Ligeti, Ferneyhough e Mozart.\footnote{http://abjad.mbrsi.org/examples/index.html}
+É uma biblioteca voltada para a formatação de clichês em notação partitural pronta para impressão em papel, baseada na manipulação de templates no formato lilypond. A biblioteca apresenta alguns templates baseados em peças de Bártok, Ligeti, Ferneyhough e Mozart.\footnote{\url{http://abjad.mbrsi.org/examples/index.html} Acesso em 10 de julho de 2014.}
 
 
 
 \subsection{Music 21}
 
-É uma biblioteca projetada para trabalhar com manipulação e análise de corpus de arquivos partituráveis\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleCorpus.html}. Prepara a conversão entre diversos arquivos de dados musicais (midi, humdrum, lilypond, abc)\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleConverter.html}, mas nativamente trabalha com uma estrutura de dados baseada em musicxml.
+É uma biblioteca projetada para trabalhar com manipulação e análise de corpus de arquivos partituráveis\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleCorpus.html} Acesso em 10 de julho de 2014.}. Prepara a conversão entre diversos arquivos de dados musicais (midi, humdrum, lilypond, abc)\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleConverter.html} Acesso em 10 de julho de 2014.}, mas nativamente trabalha com uma estrutura de dados baseada em musicxml.
 
-Music21 tem uma abordagem voltada para uma "musicologia assistida por computador" e já tem incorporada em suas classes algumas ferramentas comuns a esta prática como: numeração de grau funcional de acorde\footnote{http://web.mit.edu/music21/doc/moduleReference/moduleRoman.html}, numeração de classes de altura usando a classificação de Allen Forte\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleChord.html?\#music21.chord.Chord.forteClassNumber}} e a implementação dos algoritmos de detecção de tonalidade\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html}} elaborado por \citeonline{krumhansl1990cognitive} e aperfeiçoado por \citeonline{temperley2001cognition}, descritos nesta pesquisa.\footnote{\autoref{perfiltonal}}
+Music21 tem uma abordagem voltada para uma "musicologia assistida por computador" e já tem incorporada em suas classes algumas ferramentas comuns a esta prática como: numeração de grau funcional de acorde\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleRoman.html} Acesso em 10 de julho de 2014.}, numeração de classes de altura usando a classificação de Allen Forte\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleChord.html?\#music21.chord.Chord.forteClassNumber} Acesso em 10 de julho de 2014.} e a implementação dos algoritmos de detecção de tonalidade\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html} Acesso em 10 de julho de 2014.} elaborado por \citeonline{krumhansl1990cognitive} e aperfeiçoado por \citeonline{temperley2001cognition}, descritos nesta pesquisa.\footnote{\autoref{perfiltonal}}
 
 
 % ---
@@ -1796,7 +1793,7 @@ Music21 tem uma abordagem voltada para uma "musicologia assistida por computador
 
 A busca por regras gerativas\cite{roads1979grammars} que pudessem formalizar algoritmos a partir de análises musicais de dados quantitativos capazes de segmentar e isolar parâmetros nos levou a encontrar uma interessante diferença entre duas abordagens analíticas que nos parecem complementares, apesar de contraditórias em certos aspectos.
 
-Por um lado revisamos uma corrente teórica que enumera estruturas operantes nas expectativas da música tonal, sobre aquele repertório considerado como prática comum nas análises funcionais das cadências, modulações, prolongamentos, tensão e relaxamento. Tais teorias argumentam que esta normatização é derivada de um condicionamento cultural na escuta da música ocidental e procura justificar suas regras de "boa-formação" ou "preferência"\cite{lerdahl1983generative,temperley2001cognition} legitimando as fórmulas a partir de teorias como as teses linguísticas das estruturas de sintaxe derivadas da fala\cite{chomsky1957syntactic} e pesquisas de campo em cognição musical básica das relações entre intervalos e percepção subjetiva das alturas em seu espaço tonal inferido pelo ouvinte\cite{krumhansl1990cognitive,lerdahl2001tonal}. 
+Por um lado revisamos uma corrente teórica que enumera estruturas operantes nas expectativas da música tonal, sobre aquele repertório considerado como prática comum nas análises funcionais das cadências, modulações, prolongamentos, tensão e relaxamento. Tais teorias argumentam que esta normatização é derivada de um condicionamento cultural na escuta da música ocidental e procura justificar suas regras de "boa-formação" ou "preferência"\cite{lerdahl1983generative,temperley2001cognition} legitimando as fórmulas a partir de teorias como as teses linguísticas das estruturas de sintaxe derivadas da fala e escrita\cite{chomsky1957syntactic} e pesquisas de campo em cognição musical básica das relações entre intervalos e percepção subjetiva das alturas em seu espaço tonal inferido pelo ouvinte\cite{krumhansl1990cognitive,lerdahl2001tonal}. 
 
 Por outro lado nos chamou atenção que paralelo a fundamentação destas teorias, nas últimas décadas do século XX (e a partir da sedimentação de uma tradição pós-tonal iniciada nas suas primeiras décadas) formalizou-se uma "teoria de grupos das classes de altura"\cite{forte1973structure,rahn1980basic,perle1990pitch,straus2004} baseada numa catalogação de combinações de intervalos formando compostos sonoros singulares e as possíveis estruturações e articulações entre estes. Ali operariam critérios não necessariamente tão amarrados na funcionalidade dos esquemas de tensão e relaxamento das formas "tonalizantes". Mesmo que vertiginosamente, é preciso admitir que cada composição já pode comportar um sistema totalmente idiossincrático. Ao contrário da corrente cognitivista, neste caso uma criatividade autoral do analista assume que as formas estão emergindo ali a príncipio porque foram apontadas, e não necessáriamente porque foram intuídas pelo compositor. Também não buscam justificar expectativas do ouvinte que guiariam a normatização de uma busca composicional da "boa forma" pré-concebida.\cite{babbitt1958cares}
 
@@ -1808,7 +1805,7 @@ Partiremos de pistas já deixadas por autores que aprofundaram o tema \cite{mars
 
 Mais do que encontrar alguma nova abordagem analítica sobre estas peças, buscaremos a demonstração de algumas regras gerativas observadas para em seguida serem utilizados de maneira mais livre em procedimentos composicionais que gerem motivos partiturados e sugestões de encadeamento destes.
 
-Composições produzidas durante esta pesquisa estão disponíveis para download\footnote{\url{http://http://vimeo.com/16175509}}. Também estão disponíveis os códigos que estão sendo trabalhados\footnote{\url{https://github.com/glerm/luteriaOM} , \url{https://github.com/glerm/Derivas_OpenMusic} e \url{https://github.com/glerm/AutomatosGeradores} }. A próxima etapa será modularizar e comentar os códigos, detalhando os processos de maneira mais didática.
+Composições produzidas durante esta pesquisa estão disponíveis para download\footnote{\url{http://http://vimeo.com/16175509} Acesso em 10 de julho de 2014.}. Também estão disponíveis os códigos que estão sendo trabalhados\footnote{\url{https://github.com/glerm/luteriaOM}, \url{https://github.com/glerm/Derivas_OpenMusic} e \url{https://github.com/glerm/AutomatosGeradores} Acesso em 10 de julho de 2014. }. A próxima etapa será modularizar e comentar os códigos, detalhando os processos de maneira mais didática.
 
 Vale lembrar de que estamos convencidos de que uma abordagem analítica que desconsidere paramêtros determinantes sobre a sonoridade\cite{guigue2012} dos aglomerados de alturas como parte intencional e determinante na composição estará incompleta. Também acreditamos que é limitador ignorar a tipo-morfologia\cite{shaeffer1966traite} e espectro-morfologia\cite{smalley1997spectromorphology} dos timbres atuantes numa situação real de gravação, performance partiturada ou improviso sobre as estruturas geradas. Interessa-nos refletir estes aspectos em alguma continuidade deste trabalho.
 

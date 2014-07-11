@@ -2,50 +2,50 @@
 \select@language {brazil}
 \contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o}{13}{chapter*.6}
 \contentsline {part}{\partnumberline {I}Paradigmas para uma An\IeC {\'a}lise Musical P\IeC {\'o}s-Tonal}{17}{part.1}
-\contentsline {chapter}{\chapternumberline {1}Formaliza\IeC {\c c}\IeC {\~a}o lingu\IeC {\'\i }stica de gram\IeC {\'a}ticas musicais }{19}{chapter.1}
-\contentsline {section}{\numberline {1.1}Gram\IeC {\'a}ticas Musicais Comput\IeC {\'a}veis}{20}{section.1.1}
-\contentsline {chapter}{\chapternumberline {2}Teorias Cognitivistas para uma Segmenta\IeC {\c c}\IeC {\~a}o Tonal}{23}{chapter.2}
-\contentsline {section}{\numberline {2.1}Gram\IeC {\'a}tica Gerativa da M\IeC {\'u}sica Tonal (GTTM)}{23}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Estrutura de Agrupamento}{25}{subsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Regras de prefer\IeC {\^e}ncia para agrupamentos (GPRs)}{26}{subsubsection.2.1.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Estrutura M\IeC {\'e}trica}{29}{subsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.2.1}Regras de prefer\IeC {\^e}ncia M\IeC {\'e}trica (MPFRs) }{30}{subsubsection.2.1.2.1}
-\contentsline {section}{\numberline {2.2}Segmenta\IeC {\c c}\IeC {\~a}o temporal de eventos cadenciais e a redu\IeC {\c c}\IeC {\~a}o prolongacional na GTTM}{31}{section.2.2}
-\contentsline {subsubsection}{\numberline {2.2.0.2}Calculando a tens\IeC {\~a}o e o Espa\IeC {\c c}o das alturas tonais (TPS) }{33}{subsubsection.2.2.0.2}
-\contentsline {section}{\numberline {2.3}Cogni\IeC {\c c}\IeC {\~a}o das Estruturas Musicais B\IeC {\'a}sicas (CBMS)}{37}{section.2.3}
-\contentsline {subsubsection}{\numberline {2.3.0.3}Solfejo Enarm\IeC {\^o}nico das Classes de Alturas Tonais}{37}{subsubsection.2.3.0.3}
-\contentsline {subsubsection}{\numberline {2.3.0.4}Algoritmo dos Perfis de Tonalidade}{41}{subsubsection.2.3.0.4}
-\contentsline {section}{\numberline {2.4}Restri\IeC {\c c}\IeC {\~o}es Cognitivas versus Segmenta\IeC {\c c}\IeC {\~a}o Atonal}{44}{section.2.4}
-\contentsline {chapter}{\chapternumberline {3}Teorias de Grupos das Classes de Alturas para uma Segmenta\IeC {\c c}\IeC {\~a}o Atonal }{47}{chapter.3}
-\contentsline {section}{\numberline {3.1}F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}{48}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Vetor intervalar}{49}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Forma Normal}{50}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Forma Prima}{51}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Singularidades nos agrupamentos }{51}{subsection.3.1.4}
-\contentsline {subsubsection}{\numberline {3.1.4.1}Notas Comuns sob transposi\IeC {\c c}\IeC {\~a}o}{52}{subsubsection.3.1.4.1}
-\contentsline {subsubsection}{\numberline {3.1.4.2}Simetria Transpositiva}{53}{subsubsection.3.1.4.2}
-\contentsline {subsubsection}{\numberline {3.1.4.3}Complemento}{54}{subsubsection.3.1.4.3}
-\contentsline {subsubsection}{\numberline {3.1.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{55}{subsubsection.3.1.4.4}
-\contentsline {subsection}{\numberline {3.1.5}Arbitrariedade e indu\IeC {\c c}\IeC {\~a}o na segmenta\IeC {\c c}\IeC {\~a}o atonal}{57}{subsection.3.1.5}
-\contentsline {part}{\partnumberline {II}Implementa\IeC {\c c}\IeC {\~a}o Computacional}{59}{part.2}
-\contentsline {chapter}{\chapternumberline {4}Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}{61}{chapter.4}
-\contentsline {section}{\numberline {4.1}Linguagens Dataflow}{61}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}OM}{62}{subsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.1.1}chord-seq}{62}{subsubsection.4.1.1.1}
-\contentsline {subsubsection}{\numberline {4.1.1.2}Listas de dados}{64}{subsubsection.4.1.1.2}
-\contentsline {subsubsection}{\numberline {4.1.1.3}Opera\IeC {\c c}\IeC {\~o}es combinat\IeC {\'o}rias e opera\IeC {\c c}\IeC {\~o}es sobre grupos de classes de altura }{65}{subsubsection.4.1.1.3}
-\contentsline {subsection}{\numberline {4.1.2}PD}{67}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.2.1}Biblioteca [RTC-lib]}{67}{subsubsection.4.1.2.1}
-\contentsline {subsubsection}{\numberline {4.1.2.2}Biblioteca de manipula\IeC {\c c}\IeC {\~a}o de listas [list-abs]}{67}{subsubsection.4.1.2.2}
-\contentsline {subsubsection}{\numberline {4.1.2.3}objeto [probalizer]}{68}{subsubsection.4.1.2.3}
-\contentsline {chapter}{\chapternumberline {5}Arquivos e Scripts para Segmenta\IeC {\c c}\IeC {\~a}o de Dados Musicais}{73}{chapter.5}
-\contentsline {section}{\numberline {5.1}MIDI}{73}{section.5.1}
-\contentsline {section}{\numberline {5.2}Lilypond}{75}{section.5.2}
-\contentsline {section}{\numberline {5.3}MusicXML}{75}{section.5.3}
-\contentsline {section}{\numberline {5.4}Bibliotecas Python auxiliares}{76}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Abjad}{76}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Music 21}{76}{subsection.5.4.2}
-\contentsline {chapter}{Conclus\IeC {\~a}o}{79}{chapter*.9}
+\contentsline {chapter}{\chapternumberline {1}Teorias Cognitivistas para uma Segmenta\IeC {\c c}\IeC {\~a}o Tonal}{19}{chapter.1}
+\contentsline {section}{\numberline {1.1}Formaliza\IeC {\c c}\IeC {\~a}o lingu\IeC {\'\i }stica de gram\IeC {\'a}ticas musicais }{19}{section.1.1}
+\contentsline {section}{\numberline {1.2}Gram\IeC {\'a}ticas Musicais Comput\IeC {\'a}veis}{20}{section.1.2}
+\contentsline {section}{\numberline {1.3}Gram\IeC {\'a}tica Gerativa da M\IeC {\'u}sica Tonal (GTTM)}{21}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Estrutura de Agrupamento}{22}{subsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.1.1}Regras de prefer\IeC {\^e}ncia para agrupamentos (GPRs)}{23}{subsubsection.1.3.1.1}
+\contentsline {subsection}{\numberline {1.3.2}Estrutura M\IeC {\'e}trica}{25}{subsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.2.1}Regras de prefer\IeC {\^e}ncia M\IeC {\'e}trica (MPFRs) }{27}{subsubsection.1.3.2.1}
+\contentsline {section}{\numberline {1.4}Segmenta\IeC {\c c}\IeC {\~a}o temporal de eventos cadenciais e a redu\IeC {\c c}\IeC {\~a}o prolongacional na GTTM}{28}{section.1.4}
+\contentsline {subsubsection}{\numberline {1.4.0.2}Calculando a tens\IeC {\~a}o e o Espa\IeC {\c c}o das alturas tonais (TPS) }{32}{subsubsection.1.4.0.2}
+\contentsline {section}{\numberline {1.5}Cogni\IeC {\c c}\IeC {\~a}o das Estruturas Musicais B\IeC {\'a}sicas (CBMS)}{36}{section.1.5}
+\contentsline {subsubsection}{\numberline {1.5.0.3}Solfejo Enarm\IeC {\^o}nico das Classes de Alturas Tonais}{36}{subsubsection.1.5.0.3}
+\contentsline {subsubsection}{\numberline {1.5.0.4}Algoritmo dos Perfis de Tonalidade}{40}{subsubsection.1.5.0.4}
+\contentsline {section}{\numberline {1.6}Restri\IeC {\c c}\IeC {\~o}es Cognitivas versus Segmenta\IeC {\c c}\IeC {\~a}o Atonal}{43}{section.1.6}
+\contentsline {chapter}{\chapternumberline {2}Teorias de Grupos das Classes de Alturas para uma Segmenta\IeC {\c c}\IeC {\~a}o Atonal }{45}{chapter.2}
+\contentsline {section}{\numberline {2.1}F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}{46}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Vetor intervalar}{47}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Forma Normal}{48}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Forma Prima}{49}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Singularidades nos agrupamentos }{49}{subsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.4.1}Notas Comuns sob transposi\IeC {\c c}\IeC {\~a}o}{51}{subsubsection.2.1.4.1}
+\contentsline {subsubsection}{\numberline {2.1.4.2}Simetria Transpositiva}{52}{subsubsection.2.1.4.2}
+\contentsline {subsubsection}{\numberline {2.1.4.3}Complemento}{53}{subsubsection.2.1.4.3}
+\contentsline {subsubsection}{\numberline {2.1.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{54}{subsubsection.2.1.4.4}
+\contentsline {subsection}{\numberline {2.1.5}Arbitrariedade e indu\IeC {\c c}\IeC {\~a}o na segmenta\IeC {\c c}\IeC {\~a}o atonal}{55}{subsection.2.1.5}
+\contentsline {part}{\partnumberline {II}Implementa\IeC {\c c}\IeC {\~a}o Computacional}{57}{part.2}
+\contentsline {chapter}{\chapternumberline {3}Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}{59}{chapter.3}
+\contentsline {section}{\numberline {3.1}Linguagens Dataflow}{59}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}OM}{60}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}chord-seq}{60}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Listas de dados}{62}{subsubsection.3.1.1.2}
+\contentsline {subsubsection}{\numberline {3.1.1.3}Opera\IeC {\c c}\IeC {\~o}es combinat\IeC {\'o}rias e opera\IeC {\c c}\IeC {\~o}es sobre grupos de classes de altura }{63}{subsubsection.3.1.1.3}
+\contentsline {subsection}{\numberline {3.1.2}PD}{65}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Biblioteca [RTC-lib]}{65}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Biblioteca de manipula\IeC {\c c}\IeC {\~a}o de listas [list-abs]}{66}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}objeto [probalizer]}{66}{subsubsection.3.1.2.3}
+\contentsline {chapter}{\chapternumberline {4}Arquivos e Scripts para Segmenta\IeC {\c c}\IeC {\~a}o de Dados Musicais}{71}{chapter.4}
+\contentsline {section}{\numberline {4.1}MIDI}{71}{section.4.1}
+\contentsline {section}{\numberline {4.2}Lilypond}{73}{section.4.2}
+\contentsline {section}{\numberline {4.3}MusicXML}{73}{section.4.3}
+\contentsline {section}{\numberline {4.4}Bibliotecas Python auxiliares}{74}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Abjad}{74}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Music 21}{75}{subsection.4.4.2}
+\contentsline {chapter}{Conclus\IeC {\~a}o}{77}{chapter*.9}
 \vspace {\cftbeforepartskip }
-\contentsline {chapter}{Refer\^encias}{81}{section*.12}
+\contentsline {chapter}{Refer\^encias}{79}{section*.12}
 \vspace {\cftbeforepartskip }
