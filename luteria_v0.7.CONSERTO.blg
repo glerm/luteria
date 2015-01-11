@@ -1,0 +1,67 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: luteria_v0.7.CONSERTO.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: mestrado_glerm.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--faltando school em marshall1946analysis
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex2.googlecode.com                           |
++---------------------------------------------------------+
+You've used 47 entries,
+            6711 wiz_defined-function locations,
+            1436 strings with 14568 characters,
+and the built_in function-call counts, 34350 in all, are:
+= -- 2825
+> -- 885
+< -- 172
++ -- 507
+- -- 285
+* -- 2184
+:= -- 4754
+add.period$ -- 154
+call.type$ -- 47
+change.case$ -- 342
+chr.to.int$ -- 65
+cite$ -- 47
+duplicate$ -- 2136
+empty$ -- 2764
+format.name$ -- 1321
+if$ -- 7923
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 847
+newline$ -- 219
+num.names$ -- 230
+pop$ -- 1056
+preamble$ -- 1
+purify$ -- 152
+quote$ -- 0
+skip$ -- 2202
+stack$ -- 1
+substring$ -- 1305
+swap$ -- 880
+text.length$ -- 26
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 1
+while$ -- 313
+width$ -- 0
+write$ -- 698
+(There was 1 warning)

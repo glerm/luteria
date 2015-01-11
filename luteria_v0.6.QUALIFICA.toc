@@ -1,8 +1,13 @@
 \changetocdepth {4}
 \select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o}{13}{chapter*.6}
-\contentsline {part}{\partnumberline {I}Paradigmas para uma An\IeC {\'a}lise Musical P\IeC {\'o}s-Tonal}{17}{part.1}
-\contentsline {chapter}{\chapternumberline {1}Teorias Cognitivistas para uma Segmenta\IeC {\c c}\IeC {\~a}o Tonal}{19}{chapter.1}
+\contentsline {part}{\partnumberline {I}\MakeTextUppercase {Paradigmas para uma An\IeC {\'a}lise Musical P\IeC {\'o}s-Tonal}}{17}{part.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Teorias Cognitivistas para uma Segmenta\IeC {\c c}\IeC {\~a}o Tonal}}{19}{chapter.1}
 \contentsline {section}{\numberline {1.1}Formaliza\IeC {\c c}\IeC {\~a}o lingu\IeC {\'\i }stica de gram\IeC {\'a}ticas musicais }{19}{section.1.1}
 \contentsline {section}{\numberline {1.2}Gram\IeC {\'a}ticas Musicais Comput\IeC {\'a}veis}{20}{section.1.2}
 \contentsline {section}{\numberline {1.3}Gram\IeC {\'a}tica Gerativa da M\IeC {\'u}sica Tonal (GTTM)}{21}{section.1.3}
@@ -16,7 +21,8 @@
 \contentsline {subsubsection}{\numberline {1.5.0.3}Solfejo Enarm\IeC {\^o}nico das Classes de Alturas Tonais}{35}{subsubsection.1.5.0.3}
 \contentsline {subsubsection}{\numberline {1.5.0.4}Algoritmo dos Perfis de Tonalidade}{39}{subsubsection.1.5.0.4}
 \contentsline {section}{\numberline {1.6}Restri\IeC {\c c}\IeC {\~o}es Cognitivas versus Segmenta\IeC {\c c}\IeC {\~a}o Atonal}{42}{section.1.6}
-\contentsline {chapter}{\chapternumberline {2}Teorias de Grupos das Classes de Alturas para uma Segmenta\IeC {\c c}\IeC {\~a}o Atonal }{45}{chapter.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Teorias de Grupos das Classes de Alturas para uma Segmenta\IeC {\c c}\IeC {\~a}o Atonal }}{45}{chapter.2}
 \contentsline {section}{\numberline {2.1}F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}{46}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Vetor intervalar}{47}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Forma Normal}{48}{subsection.2.1.2}
@@ -27,8 +33,9 @@
 \contentsline {subsubsection}{\numberline {2.1.4.3}Complemento}{53}{subsubsection.2.1.4.3}
 \contentsline {subsubsection}{\numberline {2.1.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{54}{subsubsection.2.1.4.4}
 \contentsline {subsection}{\numberline {2.1.5}Arbitrariedade e indu\IeC {\c c}\IeC {\~a}o na segmenta\IeC {\c c}\IeC {\~a}o atonal}{55}{subsection.2.1.5}
-\contentsline {part}{\partnumberline {II}Implementa\IeC {\c c}\IeC {\~a}o Computacional}{57}{part.2}
-\contentsline {chapter}{\chapternumberline {3}Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}{59}{chapter.3}
+\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Implementa\IeC {\c c}\IeC {\~a}o Computacional}}{57}{part.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}}{59}{chapter.3}
 \contentsline {section}{\numberline {3.1}Linguagens Dataflow}{59}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}OM}{60}{subsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.1}chord-seq}{60}{subsubsection.3.1.1.1}
@@ -38,14 +45,17 @@
 \contentsline {subsubsection}{\numberline {3.1.2.1}Biblioteca [RTC-lib]}{65}{subsubsection.3.1.2.1}
 \contentsline {subsubsection}{\numberline {3.1.2.2}Biblioteca de manipula\IeC {\c c}\IeC {\~a}o de listas [list-abs]}{66}{subsubsection.3.1.2.2}
 \contentsline {subsubsection}{\numberline {3.1.2.3}objeto [probalizer]}{66}{subsubsection.3.1.2.3}
-\contentsline {chapter}{\chapternumberline {4}Arquivos e Scripts para Segmenta\IeC {\c c}\IeC {\~a}o de Dados Musicais}{71}{chapter.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Arquivos e Scripts para Segmenta\IeC {\c c}\IeC {\~a}o de Dados Musicais}}{71}{chapter.4}
 \contentsline {section}{\numberline {4.1}MIDI}{71}{section.4.1}
 \contentsline {section}{\numberline {4.2}Lilypond}{73}{section.4.2}
 \contentsline {section}{\numberline {4.3}MusicXML}{73}{section.4.3}
 \contentsline {section}{\numberline {4.4}Bibliotecas Python auxiliares}{74}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Abjad}{74}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Music 21}{75}{subsection.4.4.2}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{Conclus\IeC {\~a}o}{77}{chapter*.9}
-\vspace {\cftbeforepartskip }
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{Refer\^encias}{79}{section*.12}
-\vspace {\cftbeforepartskip }
+\vspace {\cftbeforechapterskip }

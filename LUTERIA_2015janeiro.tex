@@ -1,0 +1,727 @@
+ %% abtex2-modelo-trabalho-academico.tex, v-1.9.2 laurocesar
+
+%% Copyright 2012-2014 by abnTeX2 group at http://abntex2.googlecode.com/ 
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% 
+%% The Current Maintainer of this work is the abnTeX2 team, led
+%% by Lauro César Araujo. Further information are available on 
+%% http://abntex2.googlecode.com/
+%%
+%% This work consists of the files abntex2-modelo-trabalho-academico.tex,
+%% abntex2-modelo-include-comandos and abntex2-modelo-references.bib
+%%
+
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% abnTeX2: Modelo de Trabalho Academico (tese de doutorado, dissertacao de
+% mestrado e trabalhos monograficos em geral) em conformidade com 
+% ABNT NBR 14724:2011: Informacao e documentacao - Trabalhos academicos -
+% Apresentacao
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	twoside,			% para impressão em verso e anverso. Oposto a oneside
+	a4paper,			% tamanho do papel. 
+	% -- opções da classe abntex2 --
+	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	french,				% idioma adicional para hifenização
+	spanish,			% idioma adicional para hifenização
+	brazil				% o último idioma é o principal do documento
+	]{abntex2}
+%https://code.google.com/p/abntex2/wiki/Texmaker
+% ---
+% Pacotes básicos 
+% ---
+\usepackage{lmodern}			% Usa a fonte Latin Modern			
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{url}
+\usepackage[table,xcdraw]{xcolor}
+
+% ---
+		
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}				% para geração de dummy text
+% ---
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+%%%%%%%%%%% syntax highlight %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{listings}
+\definecolor{maroon}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{purple}{rgb}{0.5,0,0.5}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+
+ 
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{Luteria Composicional de algoritmos pós-tonais }
+\autor{Guilherme Rafael Soares}
+%\local{Brasil}
+\data{10 de julho de 2014, v0.6-Qualificação}
+\orientador{Prof. Dr. Daniel Quaranta}
+%\coorientador{Equipe \abnTeX}
+\instituicao{%
+  UFJF - Universidade Federal de Juiz de Fora
+  \par
+  Instituto de Artes e Design
+  \par
+  Programa de Pós-Graduação em Artes, Cultura e Linguagens}
+\tipotrabalho{Tese (Mestrado)}
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+\preambulo{Prévia da dissertação para a banca de qualificação para o Mestrado em Arte, Cultura e Linguagens do IAD-UFJF.}
+% ---
+
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa
+% ---
+\imprimircapa
+% ---
+
+
+% ---
+% Folha de rosto
+% (o * indica que haverá a ficha bibliográfica)
+% ---
+\imprimirfolhaderosto*
+% ---
+
+% ---
+% Inserir a ficha bibliografica
+% ---
+
+% Isto é um exemplo de Ficha Catalográfica, ou ``Dados internacionais de
+% catalogação-na-publicação''. Você pode utilizar este modelo como referência. 
+% Porém, provavelmente a biblioteca da sua universidade lhe fornecerá um PDF
+% com a ficha catalográfica definitiva após a defesa do trabalho. Quando estiver
+% com o documento, salve-o como PDF no diretório do seu projeto e substitua todo
+% o conteúdo de implementação deste arquivo pelo comando abaixo:
+%
+% \begin{fichacatalografica}
+%     \includepdf{fig_ficha_catalografica.pdf}
+% \end{fichacatalografica}
+\begin{fichacatalografica}
+	\vspace*{\fill}					% Posição vertical
+	\hrule							% Linha horizontal
+	\begin{center}					% Minipage Centralizado
+	\begin{minipage}[c]{12.5cm}		% Largura
+	
+	\imprimirautor
+	
+	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+	\imprimirlocal, \imprimirdata-
+	
+	\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
+	
+	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
+	
+	\hspace{0.5cm}
+	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
+	\imprimirdata.}\\
+	
+	\hspace{0.5cm}
+		1. Palavra-chave1.
+		2. Palavra-chave2.
+		I. Orientador: Prof. Dr. Daniel Quaranta
+		II. UFJF - Universidade Federal de Juiz de Fora.
+		III. Instituto de Artes e Design
+		IV. \imprimirtitulo \\ 			
+	
+	\hspace{8.75cm} CDU 02:141:005.7\\
+	
+	\end{minipage}
+	\end{center}
+	\hrule
+\end{fichacatalografica}
+% ---
+
+% ---
+% Inserir errata
+% ---
+%\begin{errata}
+%Elemento opcional da \citeonline[4.2.1.2]{NBR14724:2011}. Exemplo:
+%
+%\vspace{\onelineskip}
+%
+%FERRIGNO, C. R. A. \textbf{Tratamento de neoplasias ósseas apendiculares com
+%reimplantação de enxerto ósseo autólogo autoclavado associado ao plasma
+%rico em plaquetas}: estudo crítico na cirurgia de preservação de membro em
+%cães. 2011. 128 f. Tese (Livre-Docência) - Faculdade de Medicina Veterinária e
+%Zootecnia, Universidade de São Paulo, São Paulo, 2011.
+%
+%\begin{table}[htb]
+%\center
+%\footnotesize
+%\begin{tabular}{|p{1.4cm}|p{1cm}|p{3cm}|p{3cm}|}
+%  \hline
+%   \textbf{Folha} & \textbf{Linha}  & \textbf{Onde se lê}  & \textbf{Leia-se}  \\
+%    \hline
+%    1 & 10 & auto-conclavo & autoconclavo\\
+%   \hline
+%\end{tabular}
+%\end{table}
+
+%\end{errata}
+% ---
+
+% ---
+% Inserir folha de aprovação
+% ---
+
+% Isto é um exemplo de Folha de aprovação, elemento obrigatório da NBR
+% 14724/2011 (seção 4.2.1.3). Você pode utilizar este modelo até a aprovação
+% do trabalho. Após isso, substitua todo o conteúdo deste arquivo por uma
+% imagem da página assinada pela banca com o comando abaixo:
+%
+% \includepdf{folhadeaprovacao_final.pdf}
+%
+\begin{folhadeaprovacao}
+
+  \begin{center}
+    {\ABNTEXchapterfont\large\imprimirautor}
+
+    \vspace*{\fill}\vspace*{\fill}
+    \begin{center}
+      \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+    \end{center}
+    \vspace*{\fill}
+    
+    \hspace{.45\textwidth}
+    \begin{minipage}{.5\textwidth}
+        \imprimirpreambulo
+    \end{minipage}%
+    \vspace*{\fill}
+   \end{center}
+        
+   Trabalho aprovado \imprimirlocal, 13 de fevereiro de 2015:
+
+   \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
+   \assinatura{\textbf{Professor} \\ Convidado 1}
+   \assinatura{\textbf{Professor} \\ Convidado 2}
+   %\assinatura{\textbf{Professor} \\ Convidado 3}
+   %\assinatura{\textbf{Professor} \\ Convidado 4}
+      
+   \begin{center}
+    \vspace*{0.5cm}
+    {\large\imprimirlocal}
+    \par
+    {\large\imprimirdata}
+    \vspace*{1cm}
+  \end{center}
+  
+\end{folhadeaprovacao}
+% ---
+
+% ---
+% Dedicatória
+% ---
+%\begin{dedicatoria}
+%   \vspace*{\fill}
+%   \centering
+%   \noindent
+%   \textit{ Este trabalho é dedicado às crianças adultas que,\\
+%   quando pequenas, sonharam em se tornar cientistas.} \vspace*{\fill}
+%\end{dedicatoria}
+% ---
+
+% ---
+% Agradecimentos
+% ---
+%\begin{agradecimentos}
+
+%A você...\footnote{...principalmente pela atenção até nas notas de rodapé.}
+
+
+
+%\end{agradecimentos}
+% ---
+
+% ---
+% Epígrafe cortazar
+% ---
+%\begin{epigrafe}
+%    \vspace*{\fill}
+%	\begin{flushright}
+%		\textit{``Quantas vezes me pergunto se isto não é mais do que escrita, numa época em que corremos para o %engano entre equações infalíveis e máquinas de conformismos? Mas perguntar se saberemos encontrar o outro lado do %hábito ou se mais vale se deixar levar pela sua alegre cibernética, não será mais uma vez literatura? Revolta, %conformismo, angústia, alimentos terrestres, todas as dicotomias: o Yin e o Yang, a contemplação (...) e, %finalmente; um encolher de ombros, a paz, o parafuso foi a paz, ninguém podia passar pela rua sem olhar de soslaio %para o parafuso e sentir que ele era a paz. \cite{cortazar1963} }
+%	\end{flushright}
+%\end{epigrafe}
+
+
+
+% ---
+
+% ---
+% RESUMOS
+% ---
+
+% resumo em português
+
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+
+
+
+\begin{resumo}
+
+
+Esta pesquisa visa problematizar e sistematizar um catálogo de experimentos constituído de pequenas peças musicais e seus algoritmos geradores, objetivando a construção de uma biblioteca de objetos para composição assistida por computador que gere partituras baseadas em regras quantitativas extraídas de análises musicais.
+
+Formalizamos tais aspectos através de um estudo comparado de dois paradigmas de análise musical: \textit{"A Teoria Gerativa da Música Tonal"}\cite{lerdahl1983generative} com algumas de suas continuidades  \cite{lerdahl2009genesis,temperley2001cognition} e a \textit{"Teoria de grupos das classes de alturas"\ (ou "Pitch Class Set Theory")}  \cite{forte1973structure,straus2004}.
+
+Os procedimentos são demonstrados a partir de aspectos singulares de algumas peças da suíte Mikrokosmos do compositor Béla Bartók, gerando composições algorítmicas a partir das regras observadas. Este repertório foi escolhido devido a seu reconhecido contexto como composições pianísticas e pedagógicas situadas nas fronteiras da pós-tonalidade. 
+
+Apontamos as limitações encontradas na aplicação dos paradigmas analíticos adotados aqui no contexto da suíte de peças escolhidas e suas derivações composicionais.
+
+Detalhamos questões computacionais para esta implementação e deixamos um legado de código aberto para continuidades possíveis deste trabalho.
+
+
+ \textbf{Palavras-chaves}: Música algorítmica. Pós-tonalismo. Teoria dos conjuntos. Pitch class theory. Luteria. Composição assistida por computador. Cibernética. Software livre. Cognição musical. Teoria Gerativa da Música Tonal. Mikrokosmos. Arte Sonora.
+\end{resumo}
+
+%%%%%%%%%% traduçoes resumo
+\begin{comment}
+% resumo em inglês
+\begin{resumo}[Abstract]
+ \begin{otherlanguage*}{english}
+   This is the english abstract.
+
+   \vspace{\onelineskip}
+ 
+   \noindent 
+   \textbf{Key-words}: latex. abntex. text editoration.
+ \end{otherlanguage*}
+\end{resumo}
+
+% resumo em francês 
+\begin{resumo}[Résumé]
+ \begin{otherlanguage*}{french}
+    Il s'agit d'un résumé en français.
+ 
+   \textbf{Mots-clés}: latex. abntex. publication de textes.
+ \end{otherlanguage*}
+\end{resumo}
+
+% resumo em espanhol
+\begin{resumo}[Resumen]
+ \begin{otherlanguage*}{spanish}
+   Este es el resumen en español.
+  
+   \textbf{Palabras clave}: latex. abntex. publicación de textos.
+ \end{otherlanguage*}
+\end{resumo}
+% ---
+\end{comment}
+
+
+% ---
+% inserir lista de ilustrações
+% ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+% ---
+
+% ---
+% inserir lista de tabelas
+% ---
+%\pdfbookmark[0]{\listtablename}{lot}
+%\listoftables*
+%\cleardoublepage
+% ---
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+\begin{siglas}
+  \item[GTTM] \textit{Generative Theory of Tonal Music}\footnote{ "Teoria Gerativa da Música Tonal"      \cite{lerdahl1983generative} }
+  \item[TPS] \textit{Tonal Pitch Space}\footnote{ "Espaço das Alturas Tonais"\cite{lerdahl1988tps} }
+  \item[CBMS] \textit{Cognition of Basic Musical Structures}\footnote{ "Cognição das Estruturas Musicais Básicas"\cite{temperley2001cognition} }
+  \item[OM] \textit{Open Music}\footnote{ \url{http://repmus.ircam.fr/openmusic/home}. Acessado em 10 de julho de 2014. }
+  \item[PD] \textit{Pure Data}\footnote{ \url{http://puredata.info}. Acessado em 10 de julho de 2014. }
+\end{siglas}
+% ---
+
+% ---
+% inserir lista de símbolos
+% ---
+%\begin{simbolos}
+%  \item[$ \Gamma $] Letra grega Gama
+%  \item[$ \Lambda $] Lambda
+%  \item[$ \zeta $] Letra grega minúscula zeta
+%  \item[$ \in $] Pertence
+%\end{simbolos}
+% ---
+
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
+%
+%
+%
+%
+%
+%
+%
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+% ----------------------------------------------------------
+% Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
+% ----------------------------------------------------------
+
+Este trabalho inicia-se com 
+
+\part{Paradigmas analíticos para um repertorio generativo pos tonal}
+
+
+\chapter{Percurso pela Analise Musical }
+
+
+
+
+\chapter{Musicologia Assistida por computador}
+
+Prioridade na descrição de métodos da biblioteca music21
+
+Opção por Python http://spectrum.ieee.org/computing/software/top-10-programming-languages 
+
+
+\section{Analise de Corpus}
+
+\subsection{Formatos de entrada e saida}
+
+\section{Prolongamentos e inferencia de tonalidade}
+
+\section{Key Profiles}
+
+\section{Escalas e Modalismo}
+
+\section{Contorno melodico}
+
+\section{Metrica composta}
+
+\section{Acento Melodico}
+
+\section{Busca e extraçao de padroes}
+
+Com music21 a possibilidade de tornar a segmentaçao independente do gesto grafico
+
+\subsection{Alternativas em OpenMusic}
+
+as vantagens de segmentaçao via mouse. LZ , Inerface de analise e SOAL como exemplos de possivel automacao do procedimento usando LISP ou servidores externos.
+
+\section{Especialidade da automação versus especialidade do analista}
+
+\chapter{Revisão bibliográfica de estudos Bartokianos}
+
+\subsection{Panorama básico sobre analise bartokiana}
+
+
+
+\subsection{Apontamentos de Lendvai}
+
+a) Afinidades funcionais entre quarto e quinto graus
+b) A relação relativa entre grau maior e menor
+c) relações de overtone (sobretom)
+d)
+
+
+\cite{lendvai1971bela}
+
+
+
+
+\subsection{Apontamentos de Antokoletz}
+
+\subsection{Apontamentos sobre os Mikrokosmos}
+
+mikrokosmos 25 - exemplo de uso de Armadura de Clave problematizar em AAC. Modalismo ?
+
+Bagatella numero 1 é notada em duas tonalidades diferentes
+
+
+\cite{suchoff2004bartok}
+
+
+
+
+
+Esta pequena amostra de abordagens sobre alguns traços estruturais na musica de Bartok e seus Mikrokosmos não tem a ambição de esgotar ou mesmo de argumentar uma hierarquia de importâncias destes traços em sua obra como um todo ou na consistência geral de seu estilo. Nossa intenção aqui foi apontar limites e possibilidades que a automação da analise teria em alguns traços marcantes de sua musica e isolar estes traços por uma arbitrariedade de nossos interesses esteticos imediatos por tras de algumas destas formulizações. Nos interessa no momento nos sirvam a seguir como modelos iniciais de uma musica generativa inspirada nestes procedimentos.
+
+
+\part{Formalizaçoes para uma Luteria Composicional sobre regras de estilo}
+
+\chapter{Cliches generativos partituraveis}
+
+\section{Formatos de entrada e saida}
+
+\section{Tecnicas em Music21}
+
+\section{Experimentos em outras linguagens de CAC}
+
+\subsection{Tecnicas em OpenMusic}
+
+\subsection{Problematizacoes em PureData}
+
+\section{Musica e Probabilidade}
+
+\part{Experimentos Generativos}
+
+\chapter{CosmoBagatellas}
+
+
+\chapter{Lastros e Rumos}
+
+
+
+
+
+
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+%\bibliography{abntex2-modelo-references}
+\bibliography{mestrado_glerm}
+% ----------------------------------------------------------
+% Glossário
+% ----------------------------------------------------------
+%
+% Consulte o manual da classe abntex2 para orientações sobre o glossário.
+%
+%\glossary
+
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+
+% ---
+% Inicia os apêndices
+% ---
+%\begin{apendicesenv}
+
+% Imprime uma página indicando o início dos apêndices
+%\partapendices
+
+
+
+
+%%%%
+
+%\chapter{Repositório de Códigos}
+%\label{codigo}
+
+
+%\subsection{Biblioteca de Algoritmos}
+
+
+
+%\lstset{frameround=fttt,language=Python,showspaces=false,
+%showtabs=true,tab=\rightarrowfill}
+%\begin{lstlisting}[frame=trBL]
+%def mod12(n):
+%	return n % 12
+%
+%def note_name(number):
+%	notes = "C  D E F G A B".split()
+%	return notes[mod12(number)]
+%	
+%for i in intervalos:
+%	if (i in maiores):
+%		if (i == (4,7)):
+%			tipos.append(("maior",0))
+%		if (i == (5,9)):
+%			tipos.append(("maior",1))
+%		if (i == (3,8)):
+%			tipos.append(("maior",2))
+% 
+%	if (i in menores):
+%		if (i == (3,7)):
+%			tipos.append(("menor",0))
+%		if (i == (5,8)):
+%			tipos.append(("menor",1))
+%		if (i == (4,9)):
+%			tipos.append(("menor",2))
+%	if (i in aumentados):
+%			tipos.append(("aumentado","not"))
+%	if (i in diminutos):
+%		if (i == (3,6)):
+%			tipos.append(("diminuto",0))
+%		if (i == (6,9)):
+%			tipos.append(("diminuto",1))
+%		if (i == (3,9)):
+%			tipos.append(("diminuto",2))
+% 
+%\end{lstlisting}
+
+
+
+
+
+%\end{apendicesenv}
+% ---
+
+
+% ----------------------------------------------------------
+% Anexos
+% ----------------------------------------------------------
+
+% ---
+% Inicia os anexos
+% ---
+%\begin{anexosenv}
+
+% Imprime uma página indicando o início dos anexos
+%\partanexos
+
+
+
+% ---
+%\chapter{Regras da Teoria Gerativa da Musica Tonal}
+% ---
+
+
+%\end{anexosenv}
+
+%---------------------------------------------------------------------
+% INDICE REMISSIVO
+%---------------------------------------------------------------------
+\phantompart
+\printindex
+%---------------------------------------------------------------------
+
+\end{document}

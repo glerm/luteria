@@ -1,0 +1,51 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[Forte 1973]{forte1973structure}
+\abntrefinfo{Forte}{FORTE}{1973}
+{FORTE, A. \emph{The structure of atonal music}. [S.l.]: Yale University Press,
+  1973.}
+
+\bibitem[Lendvai e Bush 1971]{lendvai1971bela}
+\abntrefinfo{Lendvai e Bush}{LENDVAI; BUSH}{1971}
+{LENDVAI, E.; BUSH, A. \emph{B{\'e}la Bart{\'o}k: an analysis of his music}.
+  [S.l.]: Kahn \& Averill London, 1971.}
+
+\bibitem[Lerdahl 1988]{lerdahl1988tps}
+\abntrefinfo{Lerdahl}{LERDAHL}{1988}
+{LERDAHL, F. Tonal pitch space.
+\emph{Music Perception: An Interdisciplinary Journal}, University of California
+  Press, v.~5, n.~3, p. pp. 315--349, 1988.
+ISSN 07307829.
+Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/40285402}.}
+
+\bibitem[Lerdahl 2009]{lerdahl2009genesis}
+\abntrefinfo{Lerdahl}{LERDAHL}{2009}
+{LERDAHL, F. Genesis and architecture of the gttm project.
+JSTOR, 2009.}
+
+\bibitem[Lerdahl e Jackendoff 1983]{lerdahl1983generative}
+\abntrefinfo{Lerdahl e Jackendoff}{LERDAHL; JACKENDOFF}{1983}
+{LERDAHL, F.; JACKENDOFF, R.~S. \emph{A generative theory of tonal music}.
+  [S.l.]: MIT press, 1983.}
+
+\bibitem[Straus 2004]{straus2004}
+\abntrefinfo{Straus}{STRAUS}{2004}
+{STRAUS, J.~N. \emph{Introduction to Post-Tonal Theory (3rd Edition)}. [S.l.]:
+  Pearson, 2004.}
+
+\bibitem[Suchoff 2004]{suchoff2004bartok}
+\abntrefinfo{Suchoff}{SUCHOFF}{2004}
+{SUCHOFF, B. \emph{Bart{\'o}k's Mikrokosmos: Genesis, Pedagogy, and Style}.
+  [S.l.]: Scarecrow Press, 2004.}
+
+\bibitem[Temperley 2001]{temperley2001cognition}
+\abntrefinfo{Temperley}{TEMPERLEY}{2001}
+{TEMPERLEY, D. \emph{The cognition of basic musical structures}. [S.l.]: MIT
+  press, 2001.}
+
+\end{thebibliography}

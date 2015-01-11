@@ -1,0 +1,55 @@
+\changetocdepth {4}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o}{13}{chapter*.6}
+\contentsline {part}{\partnumberline {I}\MakeTextUppercase {Musica Generativa e o "ready-made" pos-tonal}}{17}{part.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Catalogo de algoritmos idiossincr\IeC {\'a}ticos em Bela Bartok}}{21}{chapter.1}
+\contentsline {section}{\numberline {1.1}Palavras Chave}{21}{section.1.1}
+\contentsline {section}{\numberline {1.2}Contextos anal\IeC {\'\i }ticos e singularidade estrutural em Bela Bartok}{21}{section.1.2}
+\contentsline {section}{\numberline {1.3}Idiossincrasia dos Ciclos Intervalares}{21}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Eixo de Simetrias}{22}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Celula Intervalar}{22}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Harmoniza\IeC {\c c}ao de melodias folcloricas}{22}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Centricidade Tonal}{22}{subsection.1.3.4}
+\contentsline {section}{\numberline {1.4}Teses sobre a Sec\IeC {\c c}ao Aurea}{22}{section.1.4}
+\contentsline {section}{\numberline {1.5}Algoritmos Ready-Made na suite Mikrokosmos}{22}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Contraponto Modal}{22}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Polimodalismo}{22}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}R\IeC {\'\i }tmica}{22}{subsection.1.5.3}
+\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Implementa\IeC {\c c}\IeC {\~a}o Computacional}}{23}{part.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {An\IeC {\'a}lise Assistida por Computador}}{25}{chapter.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Linguagens Dataflow}{27}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}OM}{28}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}chord-seq}{28}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Listas de dados}{30}{subsubsection.3.1.1.2}
+\contentsline {subsubsection}{\numberline {3.1.1.3}Opera\IeC {\c c}\IeC {\~o}es combinat\IeC {\'o}rias e opera\IeC {\c c}\IeC {\~o}es sobre grupos de classes de altura }{31}{subsubsection.3.1.1.3}
+\contentsline {subsection}{\numberline {3.1.2}PD}{33}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Biblioteca [RTC-lib]}{33}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Biblioteca de manipula\IeC {\c c}\IeC {\~a}o de listas [list-abs]}{34}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}objeto [probalizer]}{34}{subsubsection.3.1.2.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Arquivos e Scripts para Segmenta\IeC {\c c}\IeC {\~a}o de Dados Musicais}}{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}MIDI}{39}{section.4.1}
+\contentsline {section}{\numberline {4.2}Lilypond}{41}{section.4.2}
+\contentsline {section}{\numberline {4.3}MusicXML}{41}{section.4.3}
+\contentsline {section}{\numberline {4.4}Bibliotecas Python auxiliares}{42}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Abjad}{42}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Music 21}{43}{subsection.4.4.2}
+\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Experimentos Composicionais Generativos}}{45}{part.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Gerador de MikroBagatellas}}{47}{chapter.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CosmoSonoridade de um Rascunho em Aberto }}{49}{chapter.6}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Conclus\IeC {\~a}o}{51}{chapter*.10}
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Refer\^encias}{53}{section*.13}
+\vspace {\cftbeforechapterskip }

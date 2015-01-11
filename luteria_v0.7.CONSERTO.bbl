@@ -1,0 +1,257 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[Agon 2006]{OM_book01_2006}
+\abntrefinfo{Agon}{AGON}{2006}
+{AGON, C. \emph{The OM Composer's book 1}. Musique/sciences. Delatour France,
+  2006.
+ISBN 9782752100283. Dispon{\'\i}vel em:
+  \url{http://amazon.com/o/ASIN/2752100280/}.}
+
+\bibitem[Andreatta e Agon 2003]{andreatta2003implementing}
+\abntrefinfo{Andreatta e Agon}{ANDREATTA; AGON}{2003}
+{ANDREATTA, M.; AGON, C. Implementing algebraic methods in openmusic. In:
+  \emph{Proceedings of the International Computer Music Conference,
+  Singaphore}. [S.l.: s.n.], 2003.}
+
+\bibitem[Antokoletz 1984]{antokoletz1984music}
+\abntrefinfo{Antokoletz}{ANTOKOLETZ}{1984}
+{ANTOKOLETZ, E. \emph{The music of B{\'e}la Bart{\'o}k: a study of tonality and
+  progression in twentieth-century music}. [S.l.]: Univ of California Press,
+  1984.}
+
+\bibitem[Babbitt 1958]{babbitt1958cares}
+\abntrefinfo{Babbitt}{BABBITT}{1958}
+{BABBITT, M. Who cares if you listen?
+\emph{High Fidelity}, v.~8, n.~2, p. 38--40, 1958.}
+
+\bibitem[Bachmann e Bachmann 1979]{bachmann1979analysis}
+\abntrefinfo{Bachmann e Bachmann}{BACHMANN; BACHMANN}{1979}
+{BACHMANN, T.; BACHMANN, P.~J. An analysis of bela bartok's music through
+  fibonaccian numbers and the golden mean.
+\emph{Musical Quarterly}, JSTOR, p. 72--82, 1979.}
+
+\bibitem[Bresson e Agon 2008]{bresson2008scores}
+\abntrefinfo{Bresson e Agon}{BRESSON; AGON}{2008}
+{BRESSON, J.; AGON, C. Scores, programs, and time representation: The sheet
+  object in openmusic.
+\emph{Computer Music Journal}, MIT Press, v.~32, n.~4, p. 31--47, 2008.}
+
+\bibitem[Bresson, Agon e Assayag 2011]{bresson2011openmusic}
+\abntrefinfo{Bresson, Agon e Assayag}{BRESSON; AGON; ASSAYAG}{2011}
+{BRESSON, J.; AGON, C.; ASSAYAG, G. Openmusic: visual programming environment
+  for music composition, analysis and research. In:  ACM. \emph{Proceedings of
+  the 19th ACM international conference on Multimedia}. [S.l.], 2011. p.
+  743--746.}
+
+\bibitem[Bresson e P{\'e}rez-Sancho 2012]{bresson2012new}
+\abntrefinfo{Bresson e P{\'e}rez-Sancho}{BRESSON; P{\'E}REZ-SANCHO}{2012}
+{BRESSON, J.; P{\'E}REZ-SANCHO, C. New framework for score segmentation and
+  analysis in openmusic.
+\emph{Proceedings Sound and Music Computing Conference}, Copenhagen, Denmark,
+  2012.}
+
+\bibitem[Chomsky 1957]{chomsky1957syntactic}
+\abntrefinfo{Chomsky}{CHOMSKY}{1957}
+{CHOMSKY, N. Syntactic structures.
+Mouton, 1957.}
+
+\bibitem[Cohn 1991]{cohn1991bartok}
+\abntrefinfo{Cohn}{COHN}{1991}
+{COHN, R. Bartok's octatonic strategies: A motivic approach.
+\emph{Journal of the American musicological society}, JSTOR, p. 262--300,
+  1991.}
+
+\bibitem[Downey 2009]{downey2009python}
+\abntrefinfo{Downey}{DOWNEY}{2009}
+{DOWNEY, A. \emph{Python for software design: how to think like a computer
+  scientist}. [S.l.]: Cambridge University Press, 2009.}
+
+\bibitem[Filho 2012]{nery2008voos}
+\abntrefinfo{Filho}{FILHO}{2012}
+{FILHO, W. N.
+\emph{Os voos do Passarinho de Pano e an{\'a}lise dos processos composicionais
+  na su{\'\i}te Prole do Beb{\^e} n{\textordmasculine} 2 de Villa-Lobos}.
+Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2012.}
+
+\bibitem[Forte 1973]{forte1973structure}
+\abntrefinfo{Forte}{FORTE}{1973}
+{FORTE, A. \emph{The structure of atonal music}. [S.l.]: Yale University Press,
+  1973.}
+
+\bibitem[Graham 1995]{graham1995ansi}
+\abntrefinfo{Graham}{GRAHAM}{1995}
+{GRAHAM, P. \emph{ANSI common lisp}. [S.l.]: Prentice Hall Press, 1995.}
+
+\bibitem[Guigue 2012]{guigue2012}
+\abntrefinfo{Guigue}{GUIGUE}{2012}
+{GUIGUE, D. \emph{Estética da Sonoridade}. S{\~a}o Paulo: Editora Perpectiva,
+  2012.}
+
+\bibitem[Iazzetta 2009]{iazzetta2009musica}
+\abntrefinfo{Iazzetta}{IAZZETTA}{2009}
+{IAZZETTA, F. \emph{M{\'u}sica e media{\c{c}}{\~a}o tecnol{\'o}gica}. S{\~a}o
+  Paulo: Perspectiva-Fapesp, 2009.}
+
+\bibitem[Johnson 2001]{johnson2001found}
+\abntrefinfo{Johnson}{JOHNSON}{2001}
+{JOHNSON, T. Found mathematical objects.
+\emph{samedi}, v.~13, p.~17, 2001.}
+
+\bibitem[Keller 2011]{keller2011rotational}
+\abntrefinfo{Keller}{KELLER}{2011}
+{KELLER, R.~C.
+\emph{Rotational Strategy in Selected Works by Bela Bartok}.
+Tese (Doutorado) --- Florida State University, 2011.}
+
+\bibitem[Kroger 2012]{Kroger201208}
+\abntrefinfo{Kroger}{KROGER}{2012}
+{KROGER, P. \emph{Music for Geeks and Nerds}. CreateSpace Independent
+  Publishing Platform, 2012.
+ISBN 9781478345381. Dispon{\'\i}vel em:
+  \url{http://musicforgeeksandnerds.com}.}
+
+\bibitem[Krumhansl 1990]{krumhansl1990cognitive}
+\abntrefinfo{Krumhansl}{KRUMHANSL}{1990}
+{KRUMHANSL, C.~L. \emph{Cognitive foundations of musical pitch}. [S.l.]: Oxford
+  University Press New York, 1990.}
+
+\bibitem[Lendvai 1962]{lendvai1962duality}
+\abntrefinfo{Lendvai}{LENDVAI}{1962}
+{LENDVAI, E. \emph{Duality and synthesis in the music of B{\'e}la Bart{\'o}k}.
+  [S.l.: s.n.], 1962.}
+
+\bibitem[Lendvai e Bush 1971]{lendvai1971bela}
+\abntrefinfo{Lendvai e Bush}{LENDVAI; BUSH}{1971}
+{LENDVAI, E.; BUSH, A. \emph{B{\'e}la Bart{\'o}k: an analysis of his music}.
+  [S.l.]: Kahn \& Averill London, 1971.}
+
+\bibitem[Lerdahl 1988]{lerdahl1988tps}
+\abntrefinfo{Lerdahl}{LERDAHL}{1988}
+{LERDAHL, F. Tonal pitch space.
+\emph{Music Perception: An Interdisciplinary Journal}, University of California
+  Press, v.~5, n.~3, p. pp. 315--349, 1988.
+ISSN 07307829.
+Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/40285402}.}
+
+\bibitem[Lerdahl 2001]{lerdahl2001tonal}
+\abntrefinfo{Lerdahl}{LERDAHL}{2001}
+{LERDAHL, F. \emph{Tonal pitch space}. [S.l.]: Oxford University Press, 2001.}
+
+\bibitem[Lerdahl 2009]{lerdahl2009genesis}
+\abntrefinfo{Lerdahl}{LERDAHL}{2009}
+{LERDAHL, F. Genesis and architecture of the gttm project.
+JSTOR, 2009.}
+
+\bibitem[Lerdahl e Jackendoff 1983]{lerdahl1983generative}
+\abntrefinfo{Lerdahl e Jackendoff}{LERDAHL; JACKENDOFF}{1983}
+{LERDAHL, F.; JACKENDOFF, R.~S. \emph{A generative theory of tonal music}.
+  [S.l.]: MIT press, 1983.}
+
+\bibitem[Lester 1989]{lester1989analytic}
+\abntrefinfo{Lester}{LESTER}{1989}
+{LESTER, J. Analytic approaches to twentieth-century music.
+WW Norton \& Company, 1989.}
+
+\bibitem[Marshall 1946]{marshall1946analysis}
+\abntrefinfo{Marshall}{MARSHALL}{1946}
+{MARSHALL, W.~E.
+\emph{An Analysis Of The Mikrokosmos Of B{\'e}la Bart{\'o}k}.
+Tese (Doutorado), 1946.}
+
+\bibitem[Morgan e Antokoletz 1991]{morgan1991twentieth}
+\abntrefinfo{Morgan e Antokoletz}{MORGAN; ANTOKOLETZ}{1991}
+{MORGAN, R.~P.; ANTOKOLETZ, E. \emph{Twentieth-century music: a history of
+  musical style in modern Europe and America}. [S.l.]: Norton New York, 1991.}
+
+\bibitem[Perle 1990]{perle1990pitch}
+\abntrefinfo{Perle}{PERLE}{1990}
+{PERLE, G. Pitch-class set analysis: An evaluation.
+\emph{Journal of Musicology}, JSTOR, p. 151--172, 1990.}
+
+\bibitem[Puckette 2006]{puckettecomputing}
+\abntrefinfo{Puckette}{PUCKETTE}{2006}
+{PUCKETTE, M. The om composer's book 1.
+In:  \underline{\ \ \ \ \ \ \ \ }. Paris, France: Delatour, 2006. cap.
+  Computing while composing, p. x--xiv.}
+
+\bibitem[Puckette 2007]{puckette2007theory}
+\abntrefinfo{Puckette}{PUCKETTE}{2007}
+{PUCKETTE, M. \emph{The Theory and Technique of Electronic Music}. World
+  Scientific Publishing Company, 2007.
+ISBN 9789812700773. Dispon{\'\i}vel em:
+  \url{http://amazon.com/o/ASIN/9812700773/}.}
+
+\bibitem[Puckette et al. 1996]{puckette1996pure}
+\abntrefinfo{Puckette et al.}{PUCKETTE et al.}{1996}
+{PUCKETTE, M. et al. Pure data: another integrated computer music environment.
+\emph{Proceedings of the Second Intercollege Computer Music Concerts},
+  Citeseer, p. 37--41, 1996.}
+
+\bibitem[Rahn 1980]{rahn1980basic}
+\abntrefinfo{Rahn}{RAHN}{1980}
+{RAHN, J. \emph{Basic atonal theory}. [S.l.]: Longman New York, 1980.}
+
+\bibitem[Roads 1979]{roads1979grammars}
+\abntrefinfo{Roads}{ROADS}{1979}
+{ROADS, C. Grammars as representations for music.
+\emph{Computer Music Journal}, JSTOR, p. 48--55, 1979.}
+
+\bibitem[Roads 1996]{curtis1996computer}
+\abntrefinfo{Roads}{ROADS}{1996}
+{ROADS, C. \emph{The computer music tutorial}. [S.l.]: MIT press, 1996.}
+
+\bibitem[Roads 2004]{roads2004microsound}
+\abntrefinfo{Roads}{ROADS}{2004}
+{ROADS, C. \emph{Microsound}. [S.l.]: MIT press, 2004.}
+
+\bibitem[Roig-Francol{\'\i} 2008]{roig2008understanding}
+\abntrefinfo{Roig-Francol{\'\i}}{ROIG-FRANCOL{\'I}}{2008}
+{ROIG-FRANCOL{\'I}, M.~A. \emph{Understanding post-tonal music}. [S.l.]:
+  McGraw-Hill, 2008.}
+
+\bibitem[Rossum e Jr 1995]{van1995python}
+\abntrefinfo{Rossum e Jr}{ROSSUM; JR}{1995}
+{ROSSUM, G. V.; JR, F.~L. D. \emph{Python reference manual}. [S.l.]: Centrum
+  voor Wiskunde en Informatica Amsterdam, 1995.}
+
+\bibitem[Schaeffer 1966]{shaeffer1966traite}
+\abntrefinfo{Schaeffer}{SCHAEFFER}{1966}
+{SCHAEFFER, P. \emph{Traite des objets musicaux. Essai interdisciplines.}
+  Paris: Ed. du Seuil, 1966.}
+
+\bibitem[Sethares 2005]{sethares2005tuning}
+\abntrefinfo{Sethares}{SETHARES}{2005}
+{SETHARES, W. \emph{Tuning, Timbre, Spectrum, Scale}. [S.l.]: Springer, 2005.
+ISBN 9781852337971.}
+
+\bibitem[Smalley 1997]{smalley1997spectromorphology}
+\abntrefinfo{Smalley}{SMALLEY}{1997}
+{SMALLEY, D. Spectromorphology: explaining sound-shapes.
+\emph{Organised sound}, Cambridge Univ Press, v.~2, n.~02, p. 107--126, 1997.}
+
+\bibitem[Straus 2004]{straus2004}
+\abntrefinfo{Straus}{STRAUS}{2004}
+{STRAUS, J.~N. \emph{Introduction to Post-Tonal Theory (3rd Edition)}. [S.l.]:
+  Pearson, 2004.}
+
+\bibitem[Suchoff 1971]{suchoff1971guide}
+\abntrefinfo{Suchoff}{SUCHOFF}{1971}
+{SUCHOFF, B. \emph{Guide to Bart{\'o}k's Mikrokosmos}. [S.l.]: Boosey and
+  Hawkes, 1971.}
+
+\bibitem[Suchoff 2004]{suchoff2004bartok}
+\abntrefinfo{Suchoff}{SUCHOFF}{2004}
+{SUCHOFF, B. \emph{Bart{\'o}k's Mikrokosmos: Genesis, Pedagogy, and Style}.
+  [S.l.]: Scarecrow Press, 2004.}
+
+\bibitem[Temperley 2001]{temperley2001cognition}
+\abntrefinfo{Temperley}{TEMPERLEY}{2001}
+{TEMPERLEY, D. \emph{The cognition of basic musical structures}. [S.l.]: MIT
+  press, 2001.}
+
+\end{thebibliography}

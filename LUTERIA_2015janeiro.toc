@@ -1,0 +1,45 @@
+\changetocdepth {4}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {part}{\partnumberline {I}\MakeTextUppercase {Paradigmas anal\IeC {\'\i }ticos para um repertorio generativo pos tonal}}{15}{part.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Percurso pela Analise Musical }}{17}{chapter.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Musicologia Assistida por computador}}{19}{chapter.2}
+\contentsline {section}{\numberline {2.1}Analise de Corpus}{19}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Formatos de entrada e saida}{19}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Prolongamentos e inferencia de tonalidade}{19}{section.2.2}
+\contentsline {section}{\numberline {2.3}Key Profiles}{19}{section.2.3}
+\contentsline {section}{\numberline {2.4}Escalas e Modalismo}{19}{section.2.4}
+\contentsline {section}{\numberline {2.5}Contorno melodico}{19}{section.2.5}
+\contentsline {section}{\numberline {2.6}Metrica composta}{19}{section.2.6}
+\contentsline {section}{\numberline {2.7}Acento Melodico}{19}{section.2.7}
+\contentsline {section}{\numberline {2.8}Busca e extra\IeC {\c c}ao de padroes}{19}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Alternativas em OpenMusic}{19}{subsection.2.8.1}
+\contentsline {section}{\numberline {2.9}Especialidade da automa\IeC {\c c}\IeC {\~a}o versus especialidade do analista}{19}{section.2.9}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Revis\IeC {\~a}o bibliogr\IeC {\'a}fica de estudos Bartokianos}}{21}{chapter.3}
+\contentsline {subsection}{\numberline {3.0.1}Panorama b\IeC {\'a}sico sobre analise bartokiana}{21}{subsection.3.0.1}
+\contentsline {subsection}{\numberline {3.0.2}Apontamentos de Lendvai}{21}{subsection.3.0.2}
+\contentsline {subsection}{\numberline {3.0.3}Apontamentos de Antokoletz}{21}{subsection.3.0.3}
+\contentsline {subsection}{\numberline {3.0.4}Apontamentos sobre os Mikrokosmos}{21}{subsection.3.0.4}
+\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}oes para uma Luteria Composicional sobre regras de estilo}}{23}{part.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Cliches generativos partituraveis}}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Formatos de entrada e saida}{25}{section.4.1}
+\contentsline {section}{\numberline {4.2}Tecnicas em Music21}{25}{section.4.2}
+\contentsline {section}{\numberline {4.3}Experimentos em outras linguagens de CAC}{25}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Tecnicas em OpenMusic}{25}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Problematizacoes em PureData}{25}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Musica e Probabilidade}{25}{section.4.4}
+\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Experimentos Generativos}}{27}{part.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CosmoBagatellas}}{29}{chapter.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Lastros e Rumos}}{31}{chapter.6}
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Refer\^encias}{33}{section*.11}
+\vspace {\cftbeforechapterskip }
