@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  11 JAN 2015 16:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  14 JAN 2015 13:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1170,48 +1170,16 @@ l.301
 
 ] [4
 
-]
-
-LaTeX Warning: Citation `lerdahl1983generative' on page 5 undefined on input li
-ne 390.
-
-
-LaTeX Warning: Citation `lerdahl2009genesis' on page 5 undefined on input line 
-390.
-
-
-LaTeX Warning: Citation `temperley2001cognition' on page 5 undefined on input l
-ine 390.
-
-
-LaTeX Warning: Citation `forte1973structure' on page 5 undefined on input line 
-390.
-
-
-LaTeX Warning: Citation `straus2004' on page 5 undefined on input line 390.
-
-[5] [6
+] [5] [6
 
 ] (./LUTERIA_2015janeiro.lof) [7] [8
 
-]
-
-LaTeX Warning: Citation `lerdahl1983generative' on page 9 undefined on input li
-ne 457.
-
-
-LaTeX Warning: Citation `lerdahl1988tps' on page 9 undefined on input line 458.
-
-
-
-LaTeX Warning: Citation `temperley2001cognition' on page 9 undefined on input l
-ine 459.
-
-[9
+] [9
 
 ] [10
 
-] (./LUTERIA_2015janeiro.toc
+]
+(./LUTERIA_2015janeiro.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 6.
 
@@ -1219,11 +1187,7 @@ Overfull \hbox (2.83842pt too wide) in paragraph at lines 6--6
  [][] [][][]\T1/lmss/bx/n/14.4 PARADIGMAS ANA-LÍ-TI-COS PARA UM RE-PER-TO-RIO 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11])
-[12] [13
+[11]) [12] [13
 
 ] [14
 
@@ -1237,33 +1201,46 @@ Overfull \hbox (16.12102pt too wide) in paragraph at lines 514--515
 ware/top-10-programming-
  []
 
-[19] [20
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
+ [] [] [][][][]$\T1/lmr/m/n/10 (+20) <[]http : / / web . mit . edu / music21 / 
+doc / moduleReference / moduleChord . html ? #music21 . chord . Chord .
+ []
+
+
+LaTeX Warning: Reference `perfiltonal' on page 19 undefined on input line 523.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+[20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21
 
 ]
+Overfull \hbox (10.58383pt too wide) in paragraph at lines 582--583
+\T1/lmr/m/it/12 (-20) Béla Bar-tók: a study of to-na-lity and pro-gres-sion in 
+twentieth-century mu-sic."\T1/lmr/m/n/12 (-20) ([][]ANTOKOLETZ[][],
+ []
 
-LaTeX Warning: Citation `lendvai1971bela' on page 21 undefined on input line 55
-7.
-
-
-LaTeX Warning: Citation `suchoff2004bartok' on page 21 undefined on input line 
-571.
-
-[21] [22
-
-] [23] [24] [25
-
-] [26
+[22] [23] [24] [25] [26
 
 ] [27] [28] [29
 
 ] [30
 
-] (./LUTERIA_2015janeiro.bbl
-No file LUTERIA_2015janeiro.brf.
+] [31] [32] [33
+
+] [34
+
+]
+(./LUTERIA_2015janeiro.bbl (./LUTERIA_2015janeiro.brf)
 \tf@brf=\write5
 \openout5 = `LUTERIA_2015janeiro.brf'.
 
-[31] [32
+ [35] [36
 
 ]
 bibitemlist
@@ -1271,54 +1248,55 @@ bibitemlist
 No file LUTERIA_2015janeiro.ind.
 
 AED: lastpage setting LastPage
-[33]
+[37]
 \tf@lof=\write6
 \openout6 = `LUTERIA_2015janeiro.lof'.
 
 \tf@toc=\write7
 \openout7 = `LUTERIA_2015janeiro.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 727.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 727.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 886.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 886.
  (./LUTERIA_2015janeiro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 727.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 727.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 886.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 886.
 
 
 Package rerunfilecheck Warning: File `LUTERIA_2015janeiro.brf' has changed.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `LUTERIA_2015janeiro.brf':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  BC8B4884A49BBDDECCB59C3FB73EC02C;645.
+(rerunfilecheck)             Before: 7A85CD816F08BCE490664DDF73094E56;1676
+(rerunfilecheck)             After:  2F1170E8369719913AB5220C2F273F4F;1579.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 727.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 886.
  ) 
 Here is how much of TeX's memory you used:
- 15488 strings out of 494928
- 227771 string characters out of 6177930
- 477245 words of memory out of 5000000
- 18336 multiletter control sequences out of 15000+600000
- 85672 words of font info for 92 fonts, out of 8000000 for 9000
+ 15667 strings out of 494928
+ 231090 string characters out of 6177930
+ 480083 words of memory out of 5000000
+ 18443 multiletter control sequences out of 15000+600000
+ 92301 words of font info for 117 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
- 43i,12n,39p,699b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,12n,35p,1098b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on LUTERIA_2015janeiro.pdf (35 pages, 281413 bytes).
+hare/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
+8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmssbx10.pfb>
+Output written on LUTERIA_2015janeiro.pdf (39 pages, 329795 bytes).
 PDF statistics:
- 434 PDF objects out of 1000 (max. 8388607)
- 382 compressed objects within 4 object streams
- 95 named destinations out of 1000 (max. 500000)
- 27945 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 577 PDF objects out of 1000 (max. 8388607)
+ 518 compressed objects within 6 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 28481 words of extra memory for PDF output out of 29859 (max. 10000000)
 

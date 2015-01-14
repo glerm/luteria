@@ -516,6 +516,12 @@ Opção por Python http://spectrum.ieee.org/computing/software/top-10-programmin
 
 \section{Analise de Corpus}
 
+\subsection{Music21}
+
+É uma biblioteca projetada para trabalhar com manipulação e análise de \textit{corpus} de arquivos partituráveis\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleCorpus.html} Acesso em 10 de julho de 2014.}. Prepara a conversão entre diversos arquivos de dados musicais (MIDIs, humdrum, lilypond, abc)\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleConverter.html} Acesso em 10 de julho de 2014.}, mas nativamente trabalha com uma estrutura de dados baseada em Music XML.
+
+Music21 tem uma abordagem voltada para uma "musicologia assistida por computador"\ e já tem incorporada em suas classes algumas ferramentas comuns a esta prática como: numeração de grau funcional de acorde\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleRoman.html} Acesso em 10 de julho de 2014.}, numeração de classes de altura usando a classificação de Allen Forte\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleChord.html?\#music21.chord.Chord.forteClassNumber} Acesso em 10 de julho de 2014.} e a implementação dos algoritmos de detecção de tonalidade\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html} Acesso em 10 de julho de 2014.} elaborado por \citeonline{krumhansl1990cognitive} e aperfeiçoado por \citeonline{temperley2001cognition}, descritos nesta pesquisa.\footnote{\autoref{perfiltonal}}
+
 \subsection{Formatos de entrada e saida}
 
 \section{Prolongamentos e inferencia de tonalidade}
@@ -544,6 +550,17 @@ as vantagens de segmentaçao via mouse. LZ , Inerface de analise e SOAL como exe
 
 \subsection{Panorama básico sobre analise bartokiana}
 
+Gillies (05 bartokanalysis pdf) propõe em seu artigo "Bartók Analysis and Authenticity" um panorama dos problemas e lugares comum nas análises de Bartók, apontando alguns critérios para o que poderia ao menos garantir a "autenticidade" entre as diversas correntes analíticas encontradas até então. Gilles inicia a reflexão destacando o notável desafio em argumentarmos qualquer esboço totalizante entre estas composições que sustente a unidade entre os níveis "micro", destacados em apontamentos de interações entre ciclos e grupos intervalares, estratégias modais, polimodais e cromáticas e relações que definam ou sejam definidas pelas "macro" estruturas notáveis em sua obra - como questões sobre o encadeamento de secções por alguma estrutura de prolongamento de expectativa, ambiguidades com alguma sugestão ambígua de tonalidade nos encadeamentos dos grandes blocos, estratégias de simetria ou elaboração de eixos geométricos inspirados na secção áurea ou por vezes o lastro de formas tradicionais como a sonata.
+
+Propõe então a seguinte classificação: análises "autenticas", "semi-autenticas" ou "não-autenticas", sem que nisso haja algum sentido pejorativo, apenas como critério que vai de um historicismo de lastro comprovado até alguma teoria mais inventiva e sem necessidade de comprovação da consciência do compositor sobre estes aspectos, uma teoria comprometida mais com a inspiração de processos criativos derivados. 
+
+A autenticidade seria sobretudo definida pelo registro comprovado de alguma formalização documentada do próprio Bartók, como na compilação "Bela Bartók Essays"(ano). Considera também nesta categoria as pesquisas que a partir dos registros da pesquisa etnomusicológica de Bartók busca fontes originais de estudos dos aspectos folk de seu trabalho. Entram aqui também as analises que tomam em consideração as performances do próprio Bartók ou supervisionadas por ele ainda em vida, para destacar aspectos complementares aos escritos e partituras originais. 
+
+Uma "semi-autenticidade" seria definida a partir de analogias entre influências claras ou declaradas de outros compositores ou contextos de gênero presentes na obra de Bartók, como por exemplo discurso sobre a influência do drama em sua ópera ou a localização de citações paródicas de outros autores em suas peças. Dada autenticidade da analogia portanto, a preocupação fica deslocada para aspectos externos a obra de Bartók.
+
+A "não-autenticidade" comportaria os usos da música de Bartók como exemplo para apontar o funcionamento ou exceção em clichês de harmonia funcional, contraponto, análise shenkeriana ou análise pós-tonal por grupos de classes de alturas. Gilles situa também aqui algumas análises de Bartók que tomam caminhos mais especulativos como as análises de proporção geométrica e simetria propostas por \citeonline{lendvai1971bela}  ou o escrutínio de relações e transformações entre ciclos intervalares, rotações motívicas, coleções modais ou não-diatônicas como no trabalho de \citeonline{antokoletz1984music} 
+
+Em nossa pequena amostra de abordagens sobre alguns traços estruturais na musica de Bartók e seus Mikrokosmos não tem ainda a ambição de esgotar ou mesmo de argumentar uma hierarquia de importâncias destes traços em sua obra como um todo ou na consistência geral de seu estilo. Nossa intenção aqui foi apontar limites e possibilidades para uma automação de manipulação de transformações sugeridas nestas análises e abrir caminho para uma musica generativa inspirada nestes procedimentos.
 
 
 \subsection{Apontamentos de Lendvai}
@@ -559,7 +576,151 @@ d)
 
 
 
-\subsection{Apontamentos de Antokoletz}
+
+\subsection{As celulas de Alturas - X,Y,Z}
+
+Antokoletz fundamenta boa parte de sua argumentação em seu livro \textit{"The music of Béla Bartók: a study of tonality and progression in twentieth-century music."}\cite{antokoletz1984music} sobre a ideia de subdivisão da oitava em um complexo de ciclos intervalares. Ele insiste por vários ângulos em destacar algumas propriedades da simetria intervalar de sequencias não-diatônicas recorrentes e possibilidade de que houvesse uma estratégia de construção de estruturas transformacionais de grupos de intervalos que chama células X, Y e Z. A nomenclatura "célula de alturas"(\textit{"pitch cell"}) é inspirada nos argumentos sobre construções conjuntos motívicos sobre series baseando-se neste termo proposto por George \citeonline{perle1981serial}
+
+
+c.f. \cite[p. xiii]{susanni_antokoletz2012music}
+
+Antokoletz localiza com isso também alguns meios de harmonização das melodias modais e polimodais de bases folcloricas onde Bartok buscava estrategias para trabalhar com ambiguidades entre as melodias modais e as tonalidades maiores ou menores associados a centros tonais evidenciados pelas melodias.
+
+With the free use of the folk modes and the subsequent disappear ance of the triad as a basic harmonic premise in the course of Bartók's compositional evolution, the establishment of both local and large-scale
+structural coherence became exclusively reliant on intervallic relation-
+ships. Bart6k himself commented that the use of the diatonic scale in
+the form of the old modes "eventually led to a new conception of the
+chromatic scale, every tone of which came to be considered of equal
+value and could be used freely and independently.
+
+\subsection{O Eixo de Simetrias}
+
+
+George Perle alerta para o problema da definição de uma forma de macroestrutura em Bartok não ser suficientemente determinada por estes achados de estratégias internas de construções simétricas.
+
+Impressive as these procedures are, it must be observed that Bartk's symmetrical formations 
+are only an incidental aspect of his total compositional means. Even in those few works where they perform a significant structural role they do not ultimately define the context, which is determined
+instead by a curious amalgam of various elements..
+Can symmetrical formations generate a total musical structure, as triadic relations have done traditionally? The implications of Bartók's work in this, as in other aspects, remain problematical.
+
+Bernard fala em "simetria literal" destacando a observação sobre a conjunção de simetrias intervalares determinadas por posição de registro das alturas de cada um dos componentes de um agregado sonoro (seja uma sequencia de notas em forma melódica ou um cluster vertical). Por exemplo [ Db3, C4, B4 ] possuem entre si as distancias [-11,0,11 ] se considerarmos o C4 como um centro, mas se usarmos {Db4-C4-B4} teremos {-1,0,11} onde apesar de podermos considerar os intervalos [1,11] inversivamente equivalentes por inversão\footnote{Com base nas "teorias de grupos das classes de altura".} desta maneira estes não possuem "literalmente" a mesma distancia.
+
+\citeonline{bernard1986space} localiza no ensaio "Problems of New Music" do proprio Bartók esta ideia onde ele nomeia esta a simetria que considere distâncias por registros de mais de uma oitava de \textit{\textbf{"simetria em espelho"}}
+
+
+figuras da  \cite[p. 187]{bernard1986space}
+
+\citeonline[p. 189]{bernard1986space} localiza um exemplo aplicado no Concerto n.2 para piano e Orquestra de Bartok uma estrutura de construção de simetrias por alternancia de tons e semitons ao longo de um registro que vai de F4 descendo a C0 nos 5 primeiros compassos e de C5 a Eb0 nos compassos de 6 a 8.
+
+A peça Mikrokosmos n.141 já sugere o procedimento no próprio título "Sujeito e Reflexão".
+
+The piece consists of a series of short sections, each of which is symmetrical about a single
+pitch or a pair of pitches one or more octaves apart.\cite[p. 187]{bernard1986space}
+
+Closely related to parallel and mirror symmetry respectively are replica-
+tion and inversion. The only difference is that replication and inversion are
+better suited to describing order of events, in which a given configuration
+may be said to give rise to another.\cite[p. 190]{bernard1986space}
+
+
+simetria por eixo em sonata para 2 pianos \cite[p. 195-198]{bernard1986space}
+
+
+\subsection{mikrokosmos 29}
+
+reflexo de imitação - mikro 29
+
+coleção acústica (lidio-mixolidio)
+
+A peça de número 29, chamada de Reflexo de Imitação divide um aspecto
+comum a todas as peças iniciais: a composição baseada em pentacordes associados a um
+dedilhado que utiliza os cinco dedos de cada mão. Dessa forma, temos na mão direita o
+pentacorde diatônico E-Fsus-Gsus-A-B e na mão esquerda, outro pentacorde diatônico, o A-B-C-
+D-E. Ambos pertencem a mesma classe de conjuntos 5-27 (02357) e se relacionam por
+transposição e inversão (T 8 I). A textura
+polifônica
+e a imitação das vozes em movimento
+Reflexo
+em Imitação
+Béla Bartók
+contrário evidenciam essa relação.
+
+rodrgo-coleção acústica - "compressão intervalar"
+comparação entre mkro 29 e 141 ... uso de terminologias de forte
+\cite[p. 126]{tymoczko2011geometry}
+
+
+"simetria inversiva"
+"combinação transposicional"
+\cite{cohn1988inversional}
+
+One senses in Bart6k's total output an all-encompassing
+system of
+pitch-relations. The present study is intended to demonstrate that
+Bart6k's music is indeed based on such a system.... Pitch relations
+in Bart6k's music are primarily
+based on the principle of equal subdi-
+visions of the octave into the total complex of interval cycles. The fun-
+this equal-division
+damental concept underlying
+system is that of sym-
+metry.
+
+
+Bart6k clearly favored the fifteen inversionally
+symmetric tetrachord-classes, in particular those thirteen which
+are capable of being realized as symmetric four note pitch-sets.
+(The two exceptions are 4-6 [0127] and 4-24 [0248].) The thir-
+teen include 4-1 [0123], 4-21 [0246], and 4-9 [0167], which figure
+prominently in the writings of Perle and Antokoletz, where
+they are called X, Y, and Z cells; 4-17 [0347], Lendvai's
+"gamma" chord;11 and 4-3 [0134] and 4-10 [0235], the half-
+octatonic tetrachords discussed by Berry.
+
+
+
+
+Example 2a brackets two versions of the four-note motive found in
+bb. 1-3 of Bartók's Mikrokosmos, Vol. IV, no. 94, 'From the Island of
+Bali'. The first of these motives outlines a descent with the interval
+succession 1 / 5/1. This motive - which itself represents a symmetrical
+structure in pitch space - forms the basis for a series of motivic trans-
+formations that propel the piece forward. In b. 2, the motive turns
+upside down, increasing the range of the composition and adding
+several new pitches. Taken together, the two pitch collections in bb. 1
+and 2 form a one-octave octatonic scale. This symmetrical scale, shown
+in Ex. 2b, projects a 1/2 interval series above and below C\#, the axis of
+inversion.4 As the piece continues, the motive begins to degenerate
+through truncation and reordering, as shown in Ex. 2c. The degenera-
+tion of the motive also has the effect of dissolving the symmetry of the
+pitch collection. Symmetry is restored in b. 12 where the complete
+motive and its inversion return. The piece ends with the symmetrical
+collection shown in Ex. 2d. This collection is also drawn from the
+octatonic scale, but occupies a broader region in pitch space. Here, the
+notes of the opening 1 / 5 / 1 gesture are presented as chords, helping to
+highlight the intervallic symmetry of the collection.
+
+ (bartokcrumbmikro.pdf )
+
+
+
+
+
+
+
+
+
+Bcla Bartok and
+Bulgarian Rhythm", in Bartok Perspectives.
+London New York, Oxford Univ.
+
+Press, 2000, pp. 196-212. This distinction by Rice is based on the study Mieczyslaw
+Kolinsky: "A Cross
+cultural Approach to Mctrorhythmic Patterns", Ethnomusicology
+17(1973), pp. 494-506.
+
+
+
 
 \subsection{Apontamentos sobre os Mikrokosmos}
 
@@ -573,8 +734,6 @@ Bagatella numero 1 é notada em duas tonalidades diferentes
 
 
 
-
-Esta pequena amostra de abordagens sobre alguns traços estruturais na musica de Bartok e seus Mikrokosmos não tem a ambição de esgotar ou mesmo de argumentar uma hierarquia de importâncias destes traços em sua obra como um todo ou na consistência geral de seu estilo. Nossa intenção aqui foi apontar limites e possibilidades que a automação da analise teria em alguns traços marcantes de sua musica e isolar estes traços por uma arbitrariedade de nossos interesses esteticos imediatos por tras de algumas destas formulizações. Nos interessa no momento nos sirvam a seguir como modelos iniciais de uma musica generativa inspirada nestes procedimentos.
 
 
 \part{Formalizaçoes para uma Luteria Composicional sobre regras de estilo}

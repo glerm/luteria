@@ -5,10 +5,31 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Antokoletz 1984]{antokoletz1984music}
+\abntrefinfo{Antokoletz}{ANTOKOLETZ}{1984}
+{ANTOKOLETZ, E. \emph{The music of B{\'e}la Bart{\'o}k: a study of tonality and
+  progression in twentieth-century music}. [S.l.]: Univ of California Press,
+  1984.}
+
+\bibitem[Bernard 1986]{bernard1986space}
+\abntrefinfo{Bernard}{BERNARD}{1986}
+{BERNARD, J.~W. Space and symmetry in bart{\'o}k.
+\emph{Journal of Music Theory}, JSTOR, p. 185--201, 1986.}
+
+\bibitem[Cohn 1988]{cohn1988inversional}
+\abntrefinfo{Cohn}{COHN}{1988}
+{COHN, R. Inversional symmetry and transpositional combination in bart{\'o}k.
+\emph{Music Theory Spectrum}, JSTOR, p. 19--42, 1988.}
+
 \bibitem[Forte 1973]{forte1973structure}
 \abntrefinfo{Forte}{FORTE}{1973}
 {FORTE, A. \emph{The structure of atonal music}. [S.l.]: Yale University Press,
   1973.}
+
+\bibitem[Krumhansl 1990]{krumhansl1990cognitive}
+\abntrefinfo{Krumhansl}{KRUMHANSL}{1990}
+{KRUMHANSL, C.~L. \emph{Cognitive foundations of musical pitch}. [S.l.]: Oxford
+  University Press New York, 1990.}
 
 \bibitem[Lendvai e Bush 1971]{lendvai1971bela}
 \abntrefinfo{Lendvai e Bush}{LENDVAI; BUSH}{1971}
@@ -33,6 +54,13 @@ JSTOR, 2009.}
 {LERDAHL, F.; JACKENDOFF, R.~S. \emph{A generative theory of tonal music}.
   [S.l.]: MIT press, 1983.}
 
+\bibitem[Perle 1981]{perle1981serial}
+\abntrefinfo{Perle}{PERLE}{1981}
+{PERLE, G. \emph{Serial Composition and Atonality: An Introduction to the Music
+  of Schoenberg, Berg, and Webern}. University of California Press, 1981.
+ISBN 9780520074309. Dispon{\'\i}vel em:
+  \url{http://books.google.com.br/books?id=4C8RjEaBRf4C}.}
+
 \bibitem[Straus 2004]{straus2004}
 \abntrefinfo{Straus}{STRAUS}{2004}
 {STRAUS, J.~N. \emph{Introduction to Post-Tonal Theory (3rd Edition)}. [S.l.]:
@@ -43,9 +71,20 @@ JSTOR, 2009.}
 {SUCHOFF, B. \emph{Bart{\'o}k's Mikrokosmos: Genesis, Pedagogy, and Style}.
   [S.l.]: Scarecrow Press, 2004.}
 
+\bibitem[Susanni e Antokoletz 2012]{susanni_antokoletz2012music}
+\abntrefinfo{Susanni e Antokoletz}{SUSANNI; ANTOKOLETZ}{2012}
+{SUSANNI, P.; ANTOKOLETZ, E. \emph{Music and Twentieth-century Tonality:
+  Harmonic Progression Based on Modality and the Interval Cycles}. [S.l.]:
+  Routledge, 2012.}
+
 \bibitem[Temperley 2001]{temperley2001cognition}
 \abntrefinfo{Temperley}{TEMPERLEY}{2001}
 {TEMPERLEY, D. \emph{The cognition of basic musical structures}. [S.l.]: MIT
   press, 2001.}
+
+\bibitem[Tymoczko 2011]{tymoczko2011geometry}
+\abntrefinfo{Tymoczko}{TYMOCZKO}{2011}
+{TYMOCZKO, D. \emph{A geometry of music: harmony and counterpoint in the
+  extended common practice}. [S.l.]: Oxford University Press, 2011.}
 
 \end{thebibliography}
