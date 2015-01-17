@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  14 JAN 2015 13:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  17 JAN 2015 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1220,14 +1220,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [21
 
 ]
-Overfull \hbox (10.58383pt too wide) in paragraph at lines 582--583
-\T1/lmr/m/it/12 (-20) Béla Bar-tók: a study of to-na-lity and pro-gres-sion in 
-twentieth-century mu-sic."\T1/lmr/m/n/12 (-20) ([][]ANTOKOLETZ[][],
- []
+Underfull \vbox (badness 1286) has occurred while \output is active []
 
-[22] [23] [24] [25] [26
+ [22]
+[23]
 
-] [27] [28] [29
+LaTeX Warning: Citation `susanni_antokoletz2012music' on page 24 undefined on i
+nput line 637.
+
+[24] [25] [26] [27
+
+] [28] [29
 
 ] [30
 
@@ -1244,46 +1247,41 @@ twentieth-century mu-sic."\T1/lmr/m/n/12 (-20) ([][]ANTOKOLETZ[][],
 
 ]
 bibitemlist
-)
+[37])
 No file LUTERIA_2015janeiro.ind.
 
 AED: lastpage setting LastPage
-[37]
+[38]
 \tf@lof=\write6
 \openout6 = `LUTERIA_2015janeiro.lof'.
 
 \tf@toc=\write7
 \openout7 = `LUTERIA_2015janeiro.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 886.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 886.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 918.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 918.
  (./LUTERIA_2015janeiro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 886.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 886.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 918.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 918.
+Package rerunfilecheck Info: File `LUTERIA_2015janeiro.brf' has not changed.
+(rerunfilecheck)             Checksum: B5CF6AE3D0AA5959552746F6EEB43B8B;2059.
 
-
-Package rerunfilecheck Warning: File `LUTERIA_2015janeiro.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `LUTERIA_2015janeiro.brf':
-(rerunfilecheck)             Before: 7A85CD816F08BCE490664DDF73094E56;1676
-(rerunfilecheck)             After:  2F1170E8369719913AB5220C2F273F4F;1579.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 886.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 918.
  ) 
 Here is how much of TeX's memory you used:
- 15667 strings out of 494928
- 231090 string characters out of 6177930
- 480083 words of memory out of 5000000
- 18443 multiletter control sequences out of 15000+600000
- 92301 words of font info for 117 fonts, out of 8000000 for 9000
+ 15729 strings out of 494928
+ 232091 string characters out of 6177930
+ 480551 words of memory out of 5000000
+ 18477 multiletter control sequences out of 15000+600000
+ 93484 words of font info for 128 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
- 43i,12n,35p,1098b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,12n,35p,1049b,645s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/publ
@@ -1293,10 +1291,10 @@ exmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 s/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmssbx10.pfb>
-Output written on LUTERIA_2015janeiro.pdf (39 pages, 329795 bytes).
+Output written on LUTERIA_2015janeiro.pdf (40 pages, 338950 bytes).
 PDF statistics:
- 577 PDF objects out of 1000 (max. 8388607)
- 518 compressed objects within 6 object streams
- 116 named destinations out of 1000 (max. 500000)
- 28481 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 614 PDF objects out of 1000 (max. 8388607)
+ 554 compressed objects within 6 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 28489 words of extra memory for PDF output out of 29859 (max. 10000000)
 

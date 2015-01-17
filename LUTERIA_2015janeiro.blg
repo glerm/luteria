@@ -13,7 +13,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: mestrado_glerm.bib
-Warning--I didn't find a database entry for "lendvai1962duality;lendvai1971bela"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -23,45 +22,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 16 entries,
+You've used 19 entries,
             6711 wiz_defined-function locations,
-            1277 strings with 11228 characters,
-and the built_in function-call counts, 12584 in all, are:
-= -- 1184
-> -- 277
-< -- 92
-+ -- 233
-- -- 90
-* -- 758
-:= -- 1747
-add.period$ -- 49
-call.type$ -- 16
-change.case$ -- 109
-chr.to.int$ -- 19
-cite$ -- 15
-duplicate$ -- 829
-empty$ -- 952
-format.name$ -- 417
-if$ -- 2863
+            1293 strings with 11420 characters,
+and the built_in function-call counts, 14639 in all, are:
+= -- 1324
+> -- 323
+< -- 98
++ -- 248
+- -- 105
+* -- 893
+:= -- 2026
+add.period$ -- 58
+call.type$ -- 19
+change.case$ -- 130
+chr.to.int$ -- 25
+cite$ -- 18
+duplicate$ -- 955
+empty$ -- 1125
+format.name$ -- 486
+if$ -- 3340
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 289
-newline$ -- 75
-num.names$ -- 75
-pop$ -- 378
+missing$ -- 340
+newline$ -- 90
+num.names$ -- 90
+pop$ -- 432
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 60
 quote$ -- 0
-skip$ -- 895
+skip$ -- 1017
 stack$ -- 1
-substring$ -- 500
-swap$ -- 330
-text.length$ -- 7
+substring$ -- 622
+swap$ -- 395
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 102
+while$ -- 127
 width$ -- 0
-write$ -- 230
-(There was 1 warning)
+write$ -- 279

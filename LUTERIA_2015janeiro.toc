@@ -23,11 +23,12 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Revis\IeC {\~a}o bibliogr\IeC {\'a}fica de estudos Bartokianos}}{21}{chapter.3}
 \contentsline {subsection}{\numberline {3.0.1}Panorama b\IeC {\'a}sico sobre analise bartokiana}{21}{subsection.3.0.1}
-\contentsline {subsection}{\numberline {3.0.2}Apontamentos de Lendvai}{22}{subsection.3.0.2}
-\contentsline {subsection}{\numberline {3.0.3}As celulas de Alturas - X,Y,Z}{22}{subsection.3.0.3}
-\contentsline {subsection}{\numberline {3.0.4}O Eixo de Simetrias}{23}{subsection.3.0.4}
-\contentsline {subsection}{\numberline {3.0.5}mikrokosmos 29}{24}{subsection.3.0.5}
-\contentsline {subsection}{\numberline {3.0.6}Apontamentos sobre os Mikrokosmos}{25}{subsection.3.0.6}
+\contentsline {subsection}{\numberline {3.0.2}O Eixo de Simetrias}{22}{subsection.3.0.2}
+\contentsline {subsection}{\numberline {3.0.3}Sistema de Eixos}{23}{subsection.3.0.3}
+\contentsline {subsection}{\numberline {3.0.4}As c\IeC {\'e}lulas de Alturas - X,Y,Z}{24}{subsection.3.0.4}
+\contentsline {subsection}{\numberline {3.0.5}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{24}{subsection.3.0.5}
+\contentsline {subsection}{\numberline {3.0.6}Cole\IeC {\c c}ao Acustica ou Polimodo Lidio-Mixolidio}{25}{subsection.3.0.6}
+\contentsline {subsection}{\numberline {3.0.7}Apontamentos sobre os Mikrokosmos}{26}{subsection.3.0.7}
 \contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}oes para uma Luteria Composicional sobre regras de estilo}}{27}{part.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Cliches generativos partituraveis}}{29}{chapter.4}
