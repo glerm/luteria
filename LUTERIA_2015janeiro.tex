@@ -60,6 +60,7 @@
 \usepackage{microtype} 			% para melhorias de justificação
 \usepackage{url}
 \usepackage[table,xcdraw]{xcolor}
+\usepackage{enumitem}
 
 % ---
 		
@@ -87,7 +88,6 @@
 \definecolor{deepgreen}{rgb}{0,0.5,0}
 
 
- 
 
 
 
@@ -556,7 +556,7 @@ as vantagens de segmentaçao via mouse. LZ , Inerface de analise e SOAL como exe
 
 Malcom Gillies propõe em seu artigo \textit{"Bartók Analysis and Authenticity"}\cite{gillies1995bartok}\ um panorama dos problemas e lugares comum nas análises de Bartók, apontando alguns critérios para o que poderiam ao menos garantir a \textit{"autenticidade"}\ entre as diversas correntes analíticas encontradas até então, já que estas são tão diversas que podem facilmente fechar-se em suas próprias contradições. 
 
-Gillies inicia a reflexão destacando o notável desafio em argumentarmos qualquer esboço totalizante entre estas composições que sustente a unidade entre os níveis das \textit{ "micro"}\ e \textit{"macro"}\ estruturas extraídas da vasta gama de análises disponíveis sobre Bartók até aquele momento.
+Gillies inicia a reflexão destacando o notável desafio em argumentarmos qualquer esboço totalizante que sustente a unidade entre os níveis das \textit{ "micro"}\ e \textit{"macro"}\ estruturas extraídas da vasta gama de análises disponíveis sobre Bartók até aquele momento.
 
 As \textit{ "micro"}\ estruturas seriam as destacadas com apontamentos de interações entre ciclos e simetrias intervalares, pelas estratégias polimodais que libertam as melodias do tonalismo e criam temas que tornam-se por transposição complementarmente um total cromático, e em geral quaisquer relações que definam contextos que dão uma identidade de sonoridade a fragmentos ainda descontextualizados de uma suposta função num todo. 
 
@@ -569,9 +569,51 @@ A \textit{\textbf{"autenticidade"}} seria sobretudo definida por critérios de a
 
 Uma \textit{\textbf{"semi-autenticidade"}} seria definida a partir de analogias entre influências de outros compositores ou contextos de gênero presentes na obra de Bartók, como por exemplo discurso sobre a influência do drama em sua ópera ou a localização de traços ou citações paródicas por influência de outros compositores em suas peças. Dada autenticidade da analogia portanto, a preocupação com a legitimidade ficaria deslocada para aspectos externos a obra de Bartók.
 
-Já a \textit{\textbf{"não-autenticidade"}} comportaria os estudos da música de Bartók como fonte para apontamentos arbitrários para demonstrações de harmonia funcional, contraponto, análise shenkeriana ou análise pós-tonal por grupos de classes de alturas. Gillies situa também aqui algumas análises de Bartók que tomam caminhos mais especulativos e originais como as análises de proporção geométrica e simetria propostas por \citeonline{lendvai1971bela}  ou o escrutínio de relações celulares e suas transformações entre ciclos intervalares, rotações motívicas, coleções modais ou não-diatônicas presentes em trabalhos como o de \citeonline{antokoletz1984music}. 
+Já a \textit{\textbf{"não-autenticidade"}} comportaria os estudos da música de Bartók como fonte para apontamentos arbitrários para demonstrações de harmonia funcional, contraponto, análise shenkeriana ou análise pós-tonal por grupos de classes de alturas. Gillies situa também aqui algumas análises de Bartók que tomam caminhos mais especulativos e originais como as análises de proporção geométrica e simetria propostas por Ern{\H{o}} \citeonline{lendvai1971bela}  ou o escrutínio de relações celulares e suas transformações entre ciclos intervalares, rotações motívicas, coleções modais ou não-diatônicas presentes em trabalhos como o de Elliot \citeonline{antokoletz1984music}. 
 
 Em nossa pequena amostra de abordagens seguimos muito mais por este percurso mais descontextualizado e autoral de analistas que destacaram alguns traços estruturais na musica de Bartók e seus Mikrokosmos. Não temos ainda a ambição de esgotar ou mesmo de argumentar uma hierarquia de importâncias "autênticas"\ destes traços em sua obra como um todo ou na consistência geral de seu estilo. Nossa intenção aqui foi apontar limites e possibilidades para uma automação algorítmica de manipulação de transformações sugeridas nestas análises e abrir caminho para uma musica generativa inspirada nestes procedimentos.
+
+\subsection{Sistema de Eixos}
+
+Ern{\H{o}} \citeonline[p. 08]{lendvai1971bela} organiza uma visão geral de uma transformação de conceitos de harmonia tonal funcional pelo prisma do que chama de \textit{"sistema de eixos"}\footnote{axis system}\ de Bartók. \pagebreak
+
+Estes apontamentos são organizados a partir de seis pontos chave: \textit{A relação relativa entre grau maior e menor, as especificidades da coleção acústica (overtone), os papeis das notas sensíveis , as tensões contrapostas de subdominante e dominante, a dualidade entre os princípios de tonalidade e distância.}
+
+\subsubsection{Afinidades funcionais entre quarto e quinto graus}
+
+Partindo da consideração do ciclo das quintas como um esquema rotativo de transformação que possui as forças \textit{subdominante<-tonica->dominante} em cada um dos passos, lembremos que girando da \textit{esquerda para direita} temos sempre uma relação onde \textit{a dominante como nova tônica terá a tônica anterior como subdominante} e girando \textit{da direita a esquerda} teremos uma nova tônica que possui \textit{a tônica anterior como dominante}. \cite[ p.3]{lendvai1971bela} propõe a partir disso a observação do uso das relações entre os quatro pólos dos três eixos possíveis de transposição que agrupam as doze alturas cromáticas em três eixos de quatro notas. 
+
+\cite{lendvai1971bela}
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Os três eixos das transposições possíveis para a rotação "subdominante-tônica-dominante" .}
+	\begin{center}
+	    \includegraphics[scale=0.6]{axis/axisOM.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+Lendvai chama de \textit{"polo e contrapolo"} a relação entre os trítonos nas duas extremidades (que chama de "eixo primário") e observa que o eixo perpendicular (ou "eixo secundário") possui também sua relação de \textit{"polo e contrapolo"} entre a relativa e a mediante da tônica observada. A relação entre este \textit{"\textbf{sistema de eixos}"} portanto pode ser a de analogia ao movimento de passo \textit{"subdominante<->tônica<->dominante"} que temos no ciclo original: se houver uma modulação pelo movimento esquerda para direita para uma tonalidade mediante a relativa anterior torna-se o contrapolo deste novo polo e vice-versa.
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Sistema de Eixos - Rotacão entre primário e secundário}
+	\begin{center}
+	    \includegraphics[scale=0.6]{axis/PoloContrapolo.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+ Lendvai toma este conceito de "polo e contrapolo" como uma das estratégias estruturais "mais fundamentais na música de Béla Bartók"\cite[ p.04]{lendvai1971bela} e cita alguns exemplos que confirmam que este tipo de modulação era recorrente.
+ 
+ Na \textit{"Sonata para dois pianos e Percussão"} o motivo inicial é transposto três vezes com duas vozes em sua relação de trítono \textit{"polo e contrapolo"} e nestas três entradas consecutivas deste motivo é apresentando com as três transposições possíveis do \textit{"sistema de eixos"}, numa relação que pode ser observada como esta analogia com o pêndulo \textit{"subdominante<-tônica>dominante"}: inicia com a relação motívica destacando a relação C <-> F/# (compassos 2-5) em seguida (compasso 8) entra o eixo de G <-> Db (como se G entrasse numa relação dominante com C e Db numa simultânea relação dominante com F\#) e nos compassos 12-17 a entrada do jogo entre as transposições D<->Ab como se agora introduzisse a "dominante da dominante"(G->D e Db->Ab) ao mesmo tempo que move-se assim para o último dos três eixos.
+ 
+ 
+
+
+
 
 
 \subsection{O Eixo de Simetrias}
@@ -606,20 +648,6 @@ may be said to give rise to another.\cite[p. 190]{bernard1986space}
 
 simetria por eixo em sonata para 2 pianos \cite[p. 195-198]{bernard1986space}
 
-
-
-\subsection{Sistema de Eixos}
-
-\citeonline[p. 08]{lendvai1971bela} organiza uma visão geral da transformação dos conceitos de harmonia tonal funcional nas estratégias no que chama de \textit{"sistema de eixos"}\footnote{axis system}\ de Bartók a partir de seis destaques:
-
-a) Afinidades funcionais entre quarto e quinto graus
-b) A relação relativa entre grau maior e menor
-c) relações de overtone (sobretom)
-d) As papeis das notas sensíveis
-e) As tensões contrapostas de subdominante e dominante 
-f) 
-
-\cite{lendvai1971bela}
 
 
 

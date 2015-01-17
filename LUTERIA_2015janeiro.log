@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  17 JAN 2015 12:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  17 JAN 2015 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,7 +974,11 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 164.
 
 
 Writing index file LUTERIA_2015janeiro.idx 
-(./LUTERIA_2015janeiro.aux)
+(./LUTERIA_2015janeiro.aux
+
+LaTeX Warning: Label `fig_grafico' multiply defined.
+
+)
 \openout1 = `LUTERIA_2015janeiro.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 187.
@@ -1220,81 +1224,93 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [21
 
 ]
-Underfull \vbox (badness 1286) has occurred while \output is active []
+Underfull \vbox (badness 4328) has occurred while \output is active []
 
  [22]
-[23]
+<axis/axisOM.png, id=287, 749.80125pt x 505.89pt>
+File: axis/axisOM.png Graphic file (type png)
+ <use axis/axisOM.png>
+Package pdftex.def Info: axis/axisOM.png used on input line 591.
+(pdftex.def)             Requested size: 449.88422pt x 303.53633pt.
 
-LaTeX Warning: Citation `susanni_antokoletz2012music' on page 24 undefined on i
-nput line 637.
+[23 <./axis/axisOM.png>]
+<axis/PoloContrapolo.png, id=293, 551.05875pt x 302.12875pt>
+File: axis/PoloContrapolo.png Graphic file (type png)
 
-[24] [25] [26] [27
+<use axis/PoloContrapolo.png>
+Package pdftex.def Info: axis/PoloContrapolo.png used on input line 603.
+(pdftex.def)             Requested size: 330.63779pt x 181.27864pt.
+ [24 <./axis/PoloContrapolo.png>] [25] [26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [28] [29
+ [27]
+[28] [29
 
-] [30
+] [30] [31
 
-] [31] [32] [33
+] [32
 
-] [34
+] [33] [34] [35
 
-]
-(./LUTERIA_2015janeiro.bbl (./LUTERIA_2015janeiro.brf)
+] [36
+
+] (./LUTERIA_2015janeiro.bbl
+(./LUTERIA_2015janeiro.brf)
 \tf@brf=\write5
 \openout5 = `LUTERIA_2015janeiro.brf'.
 
- [35] [36
+ [37] [38
 
 ]
 bibitemlist
-[37])
+[39])
 No file LUTERIA_2015janeiro.ind.
 
 AED: lastpage setting LastPage
-[38]
+[40]
 \tf@lof=\write6
 \openout6 = `LUTERIA_2015janeiro.lof'.
 
 \tf@toc=\write7
 \openout7 = `LUTERIA_2015janeiro.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 918.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 918.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 944.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 944.
  (./LUTERIA_2015janeiro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 918.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 918.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 944.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 944.
 Package rerunfilecheck Info: File `LUTERIA_2015janeiro.brf' has not changed.
-(rerunfilecheck)             Checksum: B5CF6AE3D0AA5959552746F6EEB43B8B;2059.
+(rerunfilecheck)             Checksum: 213F4C64927DC128CBE8DBD0288E0DA8;2187.
 
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 918.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 944.
  ) 
 Here is how much of TeX's memory you used:
- 15729 strings out of 494928
- 232091 string characters out of 6177930
- 480551 words of memory out of 5000000
- 18477 multiletter control sequences out of 15000+600000
- 93484 words of font info for 128 fonts, out of 8000000 for 9000
+ 15783 strings out of 494928
+ 232914 string characters out of 6177930
+ 480962 words of memory out of 5000000
+ 18502 multiletter control sequences out of 15000+600000
+ 97321 words of font info for 138 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
- 43i,12n,35p,1049b,645s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,13n,35p,1049b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/font
-s/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmssbx10.pfb>
-Output written on LUTERIA_2015janeiro.pdf (40 pages, 338950 bytes).
+s/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on LUTERIA_2015janeiro.pdf (42 pages, 422504 bytes).
 PDF statistics:
- 614 PDF objects out of 1000 (max. 8388607)
- 554 compressed objects within 6 object streams
- 122 named destinations out of 1000 (max. 500000)
- 28489 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 583 compressed objects within 6 object streams
+ 128 named destinations out of 1000 (max. 500000)
+ 30555 words of extra memory for PDF output out of 35830 (max. 10000000)
 

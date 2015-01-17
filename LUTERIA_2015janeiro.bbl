@@ -41,10 +41,10 @@
 {KRUMHANSL, C.~L. \emph{Cognitive foundations of musical pitch}. [S.l.]: Oxford
   University Press New York, 1990.}
 
-\bibitem[Lendvai e Bush 1971]{lendvai1971bela}
-\abntrefinfo{Lendvai e Bush}{LENDVAI; BUSH}{1971}
-{LENDVAI, E.; BUSH, A. \emph{B{\'e}la Bart{\'o}k: an analysis of his music}.
-  [S.l.]: Kahn \& Averill London, 1971.}
+\bibitem[Lendvai 1971]{lendvai1971bela}
+\abntrefinfo{Lendvai}{LENDVAI}{1971}
+{LENDVAI, E. \emph{B{\'e}la Bart{\'o}k: an analysis of his music}. [S.l.]: Kahn
+  \& Averill London, 1971.}
 
 \bibitem[Lerdahl 1988]{lerdahl1988tps}
 \abntrefinfo{Lerdahl}{LERDAHL}{1988}
@@ -85,6 +85,12 @@ ISBN 9780520074309. Dispon{\'\i}vel em:
 \abntrefinfo{Suchoff}{SUCHOFF}{2004}
 {SUCHOFF, B. \emph{Bart{\'o}k's Mikrokosmos: Genesis, Pedagogy, and Style}.
   [S.l.]: Scarecrow Press, 2004.}
+
+\bibitem[Susanni e Antokoletz 2012]{susanni_antokoletz2012music}
+\abntrefinfo{Susanni e Antokoletz}{SUSANNI; ANTOKOLETZ}{2012}
+{SUSANNI, P.; ANTOKOLETZ, E. \emph{Music and Twentieth-century Tonality:
+  Harmonic Progression Based on Modality and the Interval Cycles}. [S.l.]:
+  Routledge, 2012.}
 
 \bibitem[Temperley 2001]{temperley2001cognition}
 \abntrefinfo{Temperley}{TEMPERLEY}{2001}
