@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  17 JAN 2015 17:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  18 JAN 2015 00:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,6 +978,12 @@ Writing index file LUTERIA_2015janeiro.idx
 
 LaTeX Warning: Label `fig_grafico' multiply defined.
 
+
+LaTeX Warning: Label `fig_grafico' multiply defined.
+
+
+LaTeX Warning: Label `fig_grafico' multiply defined.
+
 )
 \openout1 = `LUTERIA_2015janeiro.aux'.
 
@@ -1227,60 +1233,75 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 4328) has occurred while \output is active []
 
  [22]
-<axis/axisOM.png, id=287, 749.80125pt x 505.89pt>
+<axis/axisOM.png, id=292, 749.80125pt x 505.89pt>
 File: axis/axisOM.png Graphic file (type png)
  <use axis/axisOM.png>
 Package pdftex.def Info: axis/axisOM.png used on input line 591.
 (pdftex.def)             Requested size: 449.88422pt x 303.53633pt.
 
 [23 <./axis/axisOM.png>]
-<axis/PoloContrapolo.png, id=293, 551.05875pt x 302.12875pt>
+<axis/PoloContrapolo.png, id=298, 551.05875pt x 302.12875pt>
 File: axis/PoloContrapolo.png Graphic file (type png)
 
 <use axis/PoloContrapolo.png>
 Package pdftex.def Info: axis/PoloContrapolo.png used on input line 603.
-(pdftex.def)             Requested size: 330.63779pt x 181.27864pt.
- [24 <./axis/PoloContrapolo.png>] [25] [26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(pdftex.def)             Requested size: 275.52869pt x 151.064pt.
 
- [27]
-[28] [29
+<axis/sonata2P_OM.png, id=302, 358.33875pt x 280.04625pt>
+File: axis/sonata2P_OM.png Graphic file (type png)
 
-] [30] [31
+<use axis/sonata2P_OM.png>
+Package pdftex.def Info: axis/sonata2P_OM.png used on input line 616.
+(pdftex.def)             Requested size: 215.0049pt x 168.02904pt.
 
-] [32
 
-] [33] [34] [35
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-] [36
+[24 <./axis/PoloContrapolo.png>]
+<axis/temasonata2P.pdf, id=308, 562.1pt x 505.89pt>
+File: axis/temasonata2P.pdf Graphic file (type pdf)
 
-] (./LUTERIA_2015janeiro.bbl
-(./LUTERIA_2015janeiro.brf)
+<use axis/temasonata2P.pdf>
+Package pdftex.def Info: axis/temasonata2P.pdf used on input line 629.
+(pdftex.def)             Requested size: 224.83601pt x 202.3524pt.
+ [25 <./axis/sonata2P_OM.png> <./axis/temasonata2P.pdf>] [26] [27] [28] [29] [3
+0
+
+] [31] [32] [33
+
+] [34
+
+] [35] [36] [37
+
+] [38
+
+]
+(./LUTERIA_2015janeiro.bbl (./LUTERIA_2015janeiro.brf)
 \tf@brf=\write5
 \openout5 = `LUTERIA_2015janeiro.brf'.
 
- [37] [38
+ [39] [40
 
 ]
 bibitemlist
-[39])
+[41])
 No file LUTERIA_2015janeiro.ind.
 
 AED: lastpage setting LastPage
-[40]
+[42]
 \tf@lof=\write6
 \openout6 = `LUTERIA_2015janeiro.lof'.
 
 \tf@toc=\write7
 \openout7 = `LUTERIA_2015janeiro.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 944.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 944.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 965.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 965.
  (./LUTERIA_2015janeiro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 944.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 944.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 965.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 965.
 Package rerunfilecheck Info: File `LUTERIA_2015janeiro.brf' has not changed.
-(rerunfilecheck)             Checksum: 213F4C64927DC128CBE8DBD0288E0DA8;2187.
+(rerunfilecheck)             Checksum: CDED622438D2F59734CEA2C367AC6BC2;2187.
 
 
 LaTeX Warning: There were undefined references.
@@ -1288,14 +1309,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 944.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 965.
  ) 
 Here is how much of TeX's memory you used:
- 15783 strings out of 494928
- 232914 string characters out of 6177930
- 480962 words of memory out of 5000000
- 18502 multiletter control sequences out of 15000+600000
- 97321 words of font info for 138 fonts, out of 8000000 for 9000
+ 15799 strings out of 494928
+ 233203 string characters out of 6177930
+ 480978 words of memory out of 5000000
+ 18510 multiletter control sequences out of 15000+600000
+ 97412 words of font info for 139 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
  43i,13n,35p,1049b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
@@ -1307,10 +1328,10 @@ exmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 s/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on LUTERIA_2015janeiro.pdf (42 pages, 422504 bytes).
+Output written on LUTERIA_2015janeiro.pdf (44 pages, 495833 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 583 compressed objects within 6 object streams
- 128 named destinations out of 1000 (max. 500000)
- 30555 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 748 PDF objects out of 1000 (max. 8388607)
+ 642 compressed objects within 7 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 30565 words of extra memory for PDF output out of 35830 (max. 10000000)
 

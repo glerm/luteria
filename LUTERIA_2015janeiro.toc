@@ -25,26 +25,26 @@
 \contentsline {subsection}{\numberline {3.0.1}Panorama b\IeC {\'a}sico sobre analise bartokiana}{21}{subsection.3.0.1}
 \contentsline {subsection}{\numberline {3.0.2}Sistema de Eixos}{22}{subsection.3.0.2}
 \contentsline {subsubsection}{\numberline {3.0.2.1}Afinidades funcionais entre quarto e quinto graus}{23}{subsubsection.3.0.2.1}
-\contentsline {subsection}{\numberline {3.0.3}O Eixo de Simetrias}{24}{subsection.3.0.3}
-\contentsline {subsection}{\numberline {3.0.4}As c\IeC {\'e}lulas de Alturas - X,Y,Z}{25}{subsection.3.0.4}
-\contentsline {subsection}{\numberline {3.0.5}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{26}{subsection.3.0.5}
-\contentsline {subsection}{\numberline {3.0.6}Cole\IeC {\c c}ao Acustica ou Polimodo Lidio-Mixolidio}{27}{subsection.3.0.6}
-\contentsline {subsection}{\numberline {3.0.7}Apontamentos sobre os Mikrokosmos}{28}{subsection.3.0.7}
-\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}oes para uma Luteria Composicional sobre regras de estilo}}{29}{part.2}
+\contentsline {subsection}{\numberline {3.0.3}O Eixo de Simetrias}{26}{subsection.3.0.3}
+\contentsline {subsection}{\numberline {3.0.4}As c\IeC {\'e}lulas de Alturas - X,Y,Z}{27}{subsection.3.0.4}
+\contentsline {subsection}{\numberline {3.0.5}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{27}{subsection.3.0.5}
+\contentsline {subsection}{\numberline {3.0.6}Cole\IeC {\c c}ao Acustica ou Polimodo Lidio-Mixolidio}{28}{subsection.3.0.6}
+\contentsline {subsection}{\numberline {3.0.7}Apontamentos sobre os Mikrokosmos}{29}{subsection.3.0.7}
+\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}oes para uma Luteria Composicional sobre regras de estilo}}{31}{part.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Cliches generativos partituraveis}}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Formatos de entrada e saida}{31}{section.4.1}
-\contentsline {section}{\numberline {4.2}Tecnicas em Music21}{31}{section.4.2}
-\contentsline {section}{\numberline {4.3}Experimentos em outras linguagens de CAC}{31}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Tecnicas em OpenMusic}{31}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Problematizacoes em PureData}{31}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Musica e Probabilidade}{31}{section.4.4}
-\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Experimentos Generativos}}{33}{part.3}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Cliches generativos partituraveis}}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Formatos de entrada e saida}{33}{section.4.1}
+\contentsline {section}{\numberline {4.2}Tecnicas em Music21}{33}{section.4.2}
+\contentsline {section}{\numberline {4.3}Experimentos em outras linguagens de CAC}{33}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Tecnicas em OpenMusic}{33}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Problematizacoes em PureData}{33}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Musica e Probabilidade}{33}{section.4.4}
+\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Experimentos Generativos}}{35}{part.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CosmoBagatellas}}{35}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CosmoBagatellas}}{37}{chapter.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Lastros e Rumos}}{37}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Lastros e Rumos}}{39}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{39}{section*.11}
+\contentsline {chapter}{Refer\^encias}{41}{section*.11}
 \vspace {\cftbeforechapterskip }
