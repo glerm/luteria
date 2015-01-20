@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  18 JAN 2015 00:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  20 JAN 2015 04:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -984,6 +984,21 @@ LaTeX Warning: Label `fig_grafico' multiply defined.
 
 LaTeX Warning: Label `fig_grafico' multiply defined.
 
+
+LaTeX Warning: Label `fig_grafico' multiply defined.
+
+
+LaTeX Warning: Label `fig_grafico' multiply defined.
+
+
+LaTeX Warning: Label `fig_grafico' multiply defined.
+
+
+LaTeX Warning: Label `fig_grafico' multiply defined.
+
+
+LaTeX Warning: Label `fig_grafico' multiply defined.
+
 )
 \openout1 = `LUTERIA_2015janeiro.aux'.
 
@@ -1197,7 +1212,11 @@ Overfull \hbox (2.83842pt too wide) in paragraph at lines 6--6
  [][] [][][]\T1/lmss/bx/n/14.4 PARADIGMAS ANA-LÍ-TI-COS PARA UM RE-PER-TO-RIO 
  []
 
-[11]) [12] [13
+
+Underfull \vbox (badness 5563) has occurred while \output is active []
+
+ [11])
+[12] [13
 
 ] [14
 
@@ -1230,78 +1249,138 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [21
 
 ]
-Underfull \vbox (badness 4328) has occurred while \output is active []
+Underfull \vbox (badness 1546) has occurred while \output is active []
 
  [22]
-<axis/axisOM.png, id=292, 749.80125pt x 505.89pt>
+<axis/axisOM.png, id=326, 749.80125pt x 505.89pt>
 File: axis/axisOM.png Graphic file (type png)
  <use axis/axisOM.png>
 Package pdftex.def Info: axis/axisOM.png used on input line 591.
 (pdftex.def)             Requested size: 449.88422pt x 303.53633pt.
 
 [23 <./axis/axisOM.png>]
-<axis/PoloContrapolo.png, id=298, 551.05875pt x 302.12875pt>
+
+LaTeX Warning: Command \^ invalid in math mode on input line 599.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 603.
+
+<axis/PoloContrapolo.png, id=332, 551.05875pt x 302.12875pt>
 File: axis/PoloContrapolo.png Graphic file (type png)
 
 <use axis/PoloContrapolo.png>
-Package pdftex.def Info: axis/PoloContrapolo.png used on input line 603.
-(pdftex.def)             Requested size: 275.52869pt x 151.064pt.
+Package pdftex.def Info: axis/PoloContrapolo.png used on input line 608.
+(pdftex.def)             Requested size: 330.63779pt x 181.27864pt.
 
-<axis/sonata2P_OM.png, id=302, 358.33875pt x 280.04625pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./axis/PoloContrapolo.png>]
+<axis/sonata2P_OM.png, id=344, 358.33875pt x 280.04625pt>
 File: axis/sonata2P_OM.png Graphic file (type png)
 
 <use axis/sonata2P_OM.png>
-Package pdftex.def Info: axis/sonata2P_OM.png used on input line 616.
-(pdftex.def)             Requested size: 215.0049pt x 168.02904pt.
+Package pdftex.def Info: axis/sonata2P_OM.png used on input line 622.
+(pdftex.def)             Requested size: 250.83542pt x 196.03102pt.
+ [25 <./axis/sonata2P_OM.png>]
+<axis/temasonata2P.pdf, id=349, 562.1pt x 505.89pt>
+File: axis/temasonata2P.pdf Graphic file (type pdf)
+
+<use axis/temasonata2P.pdf>
+Package pdftex.def Info: axis/temasonata2P.pdf used on input line 640.
+(pdftex.def)             Requested size: 224.83601pt x 202.3524pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26 <./axis/temasonata2P.pdf>] <axis/estagio01.png, id=442, 415.5525pt x 54.20
+25pt>
+File: axis/estagio01.png Graphic file (type png)
+
+<use axis/estagio01.png>
+Package pdftex.def Info: axis/estagio01.png used on input line 658.
+(pdftex.def)             Requested size: 249.33342pt x 32.52174pt.
+
+<axis/estagio02.png, id=443, 418.56375pt x 97.36375pt>
+File: axis/estagio02.png Graphic file (type png)
+
+<use axis/estagio02.png>
+Package pdftex.def Info: axis/estagio02.png used on input line 669.
+(pdftex.def)             Requested size: 251.14018pt x 58.41869pt.
+ <axis/estagio03.png, id=444, 421.575pt x 100.375pt>
+File: axis/estagio03.png Graphic file (type png)
+
+<use axis/estagio03.png>
+Package pdftex.def Info: axis/estagio03.png used on input line 680.
+(pdftex.def)             Requested size: 252.94695pt x 60.22545pt.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 686.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 686.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 686.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 686.
+
+[27 <./axis/estagio01.png> <./axis/estagio02.png> <./axis/estagio03.png>]
+<axis/estagio04.png, id=449, 423.5825pt x 139.52126pt>
+File: axis/estagio04.png Graphic file (type png)
+
+<use axis/estagio04.png>
+Package pdftex.def Info: axis/estagio04.png used on input line 691.
+(pdftex.def)             Requested size: 254.15146pt x 83.7134pt.
+ [28 <./axis/estagio04.png>] [29]
+<antokoletz/ciclos_intervalares_table2012.png, id=488, 606.265pt x 458.71375pt>
+File: antokoletz/ciclos_intervalares_table2012.png Graphic file (type png)
+<use antokoletz/ciclos_intervalares_table2012.png>
+Package pdftex.def Info: antokoletz/ciclos_intervalares_table2012.png used on i
+nput line 782.
+(pdftex.def)             Requested size: 363.76181pt x 275.23038pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24 <./axis/PoloContrapolo.png>]
-<axis/temasonata2P.pdf, id=308, 562.1pt x 505.89pt>
-File: axis/temasonata2P.pdf Graphic file (type pdf)
+[30] [31 <./antokoletz/ciclos_intervalares_table2012.png>] [32] [33] [34
 
-<use axis/temasonata2P.pdf>
-Package pdftex.def Info: axis/temasonata2P.pdf used on input line 629.
-(pdftex.def)             Requested size: 224.83601pt x 202.3524pt.
- [25 <./axis/sonata2P_OM.png> <./axis/temasonata2P.pdf>] [26] [27] [28] [29] [3
-0
-
-] [31] [32] [33
-
-] [34
-
-] [35] [36] [37
+]
+[35] [36] [37
 
 ] [38
 
-]
-(./LUTERIA_2015janeiro.bbl (./LUTERIA_2015janeiro.brf)
+] [39] [40] [41
+
+] [42
+
+] (./LUTERIA_2015janeiro.bbl
+(./LUTERIA_2015janeiro.brf)
 \tf@brf=\write5
 \openout5 = `LUTERIA_2015janeiro.brf'.
 
- [39] [40
+ [43] [44
 
 ]
 bibitemlist
-[41])
+[45])
 No file LUTERIA_2015janeiro.ind.
 
 AED: lastpage setting LastPage
-[42]
+[46]
 \tf@lof=\write6
 \openout6 = `LUTERIA_2015janeiro.lof'.
 
 \tf@toc=\write7
 \openout7 = `LUTERIA_2015janeiro.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 965.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 965.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1092.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1092.
  (./LUTERIA_2015janeiro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 965.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 965.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1092.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1092.
+
 Package rerunfilecheck Info: File `LUTERIA_2015janeiro.brf' has not changed.
-(rerunfilecheck)             Checksum: CDED622438D2F59734CEA2C367AC6BC2;2187.
+(rerunfilecheck)             Checksum: BD345E1C8F249764942ABE616F61AE37;2460.
 
 
 LaTeX Warning: There were undefined references.
@@ -1309,29 +1388,32 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 965.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1092.
  ) 
 Here is how much of TeX's memory you used:
- 15799 strings out of 494928
- 233203 string characters out of 6177930
- 480978 words of memory out of 5000000
- 18510 multiletter control sequences out of 15000+600000
- 97412 words of font info for 139 fonts, out of 8000000 for 9000
+ 15880 strings out of 494928
+ 234546 string characters out of 6177930
+ 483555 words of memory out of 5000000
+ 18557 multiletter control sequences out of 15000+600000
+ 95137 words of font info for 143 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
  43i,13n,35p,1049b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
-8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/font
-s/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on LUTERIA_2015janeiro.pdf (44 pages, 495833 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm
+/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmm
+i12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on LUTERIA_2015janeiro.pdf (48 pages, 573199 bytes).
 PDF statistics:
- 748 PDF objects out of 1000 (max. 8388607)
- 642 compressed objects within 7 object streams
- 132 named destinations out of 1000 (max. 500000)
- 30565 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 873 PDF objects out of 1000 (max. 8388607)
+ 752 compressed objects within 8 object streams
+ 151 named destinations out of 1000 (max. 500000)
+ 28606 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -22,29 +22,37 @@
 \contentsline {section}{\numberline {2.9}Especialidade da automa\IeC {\c c}\IeC {\~a}o versus especialidade do analista}{20}{section.2.9}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Revis\IeC {\~a}o bibliogr\IeC {\'a}fica de estudos Bartokianos}}{21}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}Panorama b\IeC {\'a}sico sobre analise bartokiana}{21}{subsection.3.0.1}
-\contentsline {subsection}{\numberline {3.0.2}Sistema de Eixos}{22}{subsection.3.0.2}
-\contentsline {subsubsection}{\numberline {3.0.2.1}Afinidades funcionais entre quarto e quinto graus}{23}{subsubsection.3.0.2.1}
-\contentsline {subsection}{\numberline {3.0.3}O Eixo de Simetrias}{26}{subsection.3.0.3}
-\contentsline {subsection}{\numberline {3.0.4}As c\IeC {\'e}lulas de Alturas - X,Y,Z}{27}{subsection.3.0.4}
-\contentsline {subsection}{\numberline {3.0.5}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{27}{subsection.3.0.5}
-\contentsline {subsection}{\numberline {3.0.6}Cole\IeC {\c c}ao Acustica ou Polimodo Lidio-Mixolidio}{28}{subsection.3.0.6}
-\contentsline {subsection}{\numberline {3.0.7}Apontamentos sobre os Mikrokosmos}{29}{subsection.3.0.7}
-\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}oes para uma Luteria Composicional sobre regras de estilo}}{31}{part.2}
+\contentsline {section}{\numberline {3.1}Panorama b\IeC {\'a}sico sobre analise bartokiana}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}Sistema de Eixos}{22}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Afinidades funcionais entre quarto e quinto graus}{23}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}A rela\IeC {\c c}\IeC {\~a}o relativa entre grau maior e menor}{27}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Especificidades da cole\IeC {\c c}\IeC {\~a}o ac\IeC {\'u}stica (overtone)}{28}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Expectativas de grau sens\IeC {\'\i }vel}{28}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Tens\IeC {\~o}es contrapostas de subdominante e dominante}{28}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Dualidade entre os princ\IeC {\'\i }pios de tonalidade e dist\IeC {\^a}ncia}{28}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Simetria Literal}{29}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}As c\IeC {\'e}lulas de Alturas - X,Y,Z}{30}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{30}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Limites e ideias a partir de analise tonal funcional}{32}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Analises por grupos e classes de altura}{32}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Cole\IeC {\c c}ao Acustica ou Polimodo Lidio-Mixolidio}{32}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Cole\IeC {\c c}\IeC {\~a}o Octat\IeC {\^o}nica}{33}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Apontamentos sobre os Mikrokosmos}{33}{section.3.6}
+\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}oes para uma Luteria Composicional sobre regras de estilo}}{35}{part.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Cliches generativos partituraveis}}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Formatos de entrada e saida}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Tecnicas em Music21}{33}{section.4.2}
-\contentsline {section}{\numberline {4.3}Experimentos em outras linguagens de CAC}{33}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Tecnicas em OpenMusic}{33}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Problematizacoes em PureData}{33}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Musica e Probabilidade}{33}{section.4.4}
-\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Experimentos Generativos}}{35}{part.3}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Cliches generativos partituraveis}}{37}{chapter.4}
+\contentsline {section}{\numberline {4.1}Formatos de entrada e saida}{37}{section.4.1}
+\contentsline {section}{\numberline {4.2}Tecnicas em Music21}{37}{section.4.2}
+\contentsline {section}{\numberline {4.3}Experimentos em outras linguagens de CAC}{37}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Tecnicas em OpenMusic}{37}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Problematizacoes em PureData}{37}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Musica e Probabilidade}{37}{section.4.4}
+\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Experimentos Generativos}}{39}{part.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CosmoBagatellas}}{37}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CosmoBagatellas}}{41}{chapter.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Lastros e Rumos}}{39}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Lastros e Rumos}}{43}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{41}{section*.11}
+\contentsline {chapter}{Refer\^encias}{45}{section*.11}
 \vspace {\cftbeforechapterskip }

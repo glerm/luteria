@@ -542,7 +542,7 @@ Music21 tem uma abordagem voltada para uma "musicologia assistida por computador
 
 \section{Busca e extraçao de padroes}
 
-Com music21 a possibilidade de tornar a segmentaçao independente do gesto grafico
+Com music21 a possibilidade de tornar a segmentação independente do gesto gráfico
 
 \subsection{Alternativas em OpenMusic}
 
@@ -552,7 +552,7 @@ as vantagens de segmentaçao via mouse. LZ , Inerface de analise e SOAL como exe
 
 \chapter{Revisão bibliográfica de estudos Bartokianos}
 
-\subsection{Panorama básico sobre analise bartokiana}
+\section{Panorama básico sobre analise bartokiana}
 
 Malcom Gillies propõe em seu artigo \textit{"Bartók Analysis and Authenticity"}\cite{gillies1995bartok}\ um panorama dos problemas e lugares comum nas análises de Bartók, apontando alguns critérios para o que poderiam ao menos garantir a \textit{"autenticidade"}\ entre as diversas correntes analíticas encontradas até então, já que estas são tão diversas que podem facilmente fechar-se em suas próprias contradições. 
 
@@ -573,17 +573,17 @@ Já a \textit{\textbf{"não-autenticidade"}} comportaria os estudos da música d
 
 Em nossa pequena amostra de abordagens seguimos muito mais por este percurso mais descontextualizado e autoral de analistas que destacaram alguns traços estruturais na musica de Bartók e seus Mikrokosmos. Não temos ainda a ambição de esgotar ou mesmo de argumentar uma hierarquia de importâncias "autênticas"\ destes traços em sua obra como um todo ou na consistência geral de seu estilo. Nossa intenção aqui foi apontar limites e possibilidades para uma automação algorítmica de manipulação de transformações sugeridas nestas análises e abrir caminho para uma musica generativa inspirada nestes procedimentos.
 
-\subsection{Sistema de Eixos}
+\section{Sistema de Eixos}
 
 Ern{\H{o}} \citeonline[p. 08]{lendvai1971bela} organiza uma visão geral de uma transformação de conceitos de harmonia tonal funcional pelo prisma do que chama de \textit{"sistema de eixos"}\footnote{axis system}\ de Bartók. \pagebreak
 
-Estes apontamentos são organizados a partir de seis pontos chave: \textit{A relação relativa entre grau maior e menor, as especificidades da coleção acústica (overtone), os papeis das notas sensíveis , as tensões contrapostas de subdominante e dominante, a dualidade entre os princípios de tonalidade e distância.}
+Estes apontamentos são organizados a partir de seis pontos chave: \textit{\textbf{a)}Afinidades funcionais entre quarto e quinto graus,\textbf{ b)}A relação relativa entre grau maior e menor, \textbf{c)}as especificidades da coleção acústica (overtone), \textbf{d)}os papeis das notas sensíveis , \textbf{e)}das tensões contrapostas de subdominante e dominante, \textbf{f)}a dualidade entre os princípios de tonalidade e distância.}
 
-\subsubsection{Afinidades funcionais entre quarto e quinto graus}
+\subsection{Afinidades funcionais entre quarto e quinto graus}
 
-Partindo da consideração do ciclo das quintas como um esquema rotativo de transformação que possui as forças \textit{subdominante<-tonica->dominante} em cada um dos passos, lembremos que girando da \textit{esquerda para direita} temos sempre uma relação onde \textit{a dominante como nova tônica terá a tônica anterior como subdominante} e girando \textit{da direita a esquerda} teremos uma nova tônica que possui \textit{a tônica anterior como dominante}. \cite[ p.3]{lendvai1971bela} propõe a partir disso a observação do uso das relações entre os quatro pólos dos três eixos possíveis de transposição que agrupam as doze alturas cromáticas em três eixos de quatro notas. 
+Partindo da consideração do ciclo das quintas como um esquema rotativo de transformação que possui as forças \textit{subdominante<-tonica->dominante} em cada um dos passos de 30 graus, lembremos que girando da \textit{esquerda para direita} temos sempre uma relação onde \textit{a dominante como nova tônica terá a tônica anterior como subdominante} e girando \textit{da direita a esquerda} teremos uma nova tônica que possui \textit{a tônica anterior como dominante}. 
 
-\cite{lendvai1971bela}
+\citeonline[ p.3]{lendvai1971bela} propõe a partir disso a observação do uso das relações entre os quatro pólos dos três eixos possíveis de transposição que agrupam as doze alturas cromáticas em três eixos de quatro notas. 
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Os três eixos das transposições possíveis para a rotação "subdominante-tônica-dominante" .}
@@ -593,49 +593,138 @@ Partindo da consideração do ciclo das quintas como um esquema rotativo de tran
 	\legend{Fonte: autor }
 \end{figure}
 
-\pagebreak
-Lendvai chama de \textit{"polo e contrapolo"}\ a relação entre os trítonos nas duas extremidades (que chama de "eixo primário") e observa que o eixo perpendicular (ou "eixo secundário") possui também sua relação de \textit{"polo e contrapolo"}\ entre a relativa e a mediante da tônica observada. A relação entre este \textit{"\textbf{sistema de eixos}"} portanto pode ser a de analogia ao movimento de passo \textit{"subdominante<->tônica<->dominante"}\ que temos no ciclo de quintas original: se houver uma "modulação"\ pelo movimento da esquerda para direita a tonalidade relativa anterior torna-se o novo polo e a mediante anterior torna-se o contrapolo e assim por diante.
 
+Lendvai chama de \textit{"polo e contrapolo"}\ a relação entre os trítonos nas duas extremidades (que chama de "eixo primário") e observa que o eixo perpendicular (ou "eixo secundário") possui também sua relação de \textit{"polo e contrapolo"}\ entre o que seriam a relativa e a mediante de uma tônica pelo ciclo de quintas. 
+
+A relação entre este \textit{"\textbf{sistema de eixos}"} portanto pode ser a de analogia ao movimento de passo \textit{"$subdominante \leftrightarrow tônica \leftrightarrow dominante$"}\ onde movíamos por passos de 30 graus pelo ciclo de quintas original.  
+
+A diferença é que neste caso a relação mais importante entre as notas do eixo não seria exatamente por um critério baseado na busca de notas comuns de acordes para servirem de pivôs para resoluções tonais ou da busca por notas sensíveis para a solução de dissonâncias por grau conjunto mas uma questão de \textbf{"\textbf{parentesco rotacional}"} das sonoridades dos intervalos que giram de 90 em 90 graus dividindo simetricamente o total cromático numa soma de quatro intervalos de três semitons.
+
+As três transposições possíveis dos eixos de quatro notas tornam a transformação de \textit{"transposição do sistema de eixos"} \textbf{\textbf{\underline{geometricamente}}} similar ao movimento \textit{"$subdominante \leftrightarrow tônica \leftrightarrow dominante$"}\ mas nem sempre pelos mesmos critérios de uma harmonia tonal funcional, apesar de obviamente, poder servir-se deste como estratégia de construção de ambiguidades politonais.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Sistema de Eixos - Rotacão entre primário e secundário}
 	\begin{center}
-	    \includegraphics[scale=0.5]{axis/PoloContrapolo.png}
+	    \includegraphics[scale=0.6]{axis/PoloContrapolo.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
 
- Lendvai toma este conceito de "polo e contrapolo" como uma das estratégias estruturais "mais fundamentais na música de Béla Bartók"\cite[ p.04]{lendvai1971bela} e cita alguns exemplos que confirmam que este tipo de modulação era recorrente.
+Lendvai toma este conceito de "polo e contrapolo" como \textit{\textbf{"uma das estratégias estruturais mais fundamentais na música de Béla Bartók"}}\cite[ p.04]{lendvai1971bela} e cita alguns exemplos que confirmam que este tipo de modulação era recorrente.
+\pagebreak 
  
- Na \textit{"Sonata para dois pianos e Percussão"} o motivo inicial é transposto três vezes com duas vozes em sua relação de trítono \textit{"polo e contrapolo"} e nestas três entradas consecutivas deste motivo é apresentando com as três transposições possíveis do \textit{"sistema de eixos"}, numa relação que pode ser observada como esta analogia com o pêndulo \textit{"subdominante<-tônica>dominante"}: inicia com a relação motívica destacando a relação C <-> F\# (compassos 2-5) em seguida (compasso 8) entra o eixo de G <-> Db (como se G surgisse de uma relação dominante com C e Db numa simultânea relação dominante com F\#) e nos compassos 12-17 a entrada do jogo entre as transposições D<->Ab como se agora introduzisse a "dominante da dominante"(G->D e Db->Ab) ao mesmo tempo que move-se assim para o último dos três eixos.
+Na \textit{"Sonata para dois pianos e Percussão"} o motivo inicial é transposto três vezes com duas vozes em sua relação de trítono \textit{"polo e contrapolo"} e nestas três entradas consecutivas deste motivo é apresentando com as três transposições possíveis do \textit{"sistema de eixos"}, numa relação que pode ser observada como esta analogia com o pêndulo \textit{"subdominante<-tônica>dominante"}: inicia com a relação motívica destacando a relação $C \leftrightarrow F\#$ (compassos 2-5) em seguida (compasso 8) entra o eixo de $G \leftrightarrow Db$ (como se G surgisse de uma relação dominante com C e Db numa simultânea relação dominante com F\#) e nos compassos 12-17 a entrada do jogo entre as transposições $D \leftrightarrow Ab$ como se agora introduzisse a "dominante da dominante"($G \leftrightarrow D$ e $Db \leftrightarrow Ab$) ao mesmo tempo que move-se assim para o último dos três eixos.
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}O plano melódico do motivo inicial parece ser o de fechar o total cromático com a transposição paralela da melodia nos dois pólos }
+	\caption{\label{fig_grafico}O plano melódico do motivo inicial de \textit{"Sonata para dois pianos e Percussão"}  parece ser o de fechar o total cromático com a transposição paralela da melodia nos dois pólos }
 	\begin{center}
-	    \includegraphics[scale=0.6]{axis/sonata2P_OM.png}
+	    \includegraphics[scale=0.7]{axis/sonata2P_OM.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
-Podemos observar que já dentro da própria melodia deste motivo inicial que fica sendo transposto e tocado em vozes paralelas dos dois pianos temos uma estratégia de saltos por mediantes e dominantes que fecham uma coleção de 7 notas que dividem o total cromático em dois, tendo como notas comuns as notas do eixo secundário (a mediante e a relativa - no caso de F\# e C por exemplo, as notas comuns são A e Eb ).
 
-E ainda é interessante especularmos que a melodia sugere um giro em torno de um eixo que prolonga a expectativa do passo cromático F\# -> G (e assim por diante em suas transposições). Porém não o faz por um simples ziguezague cromático ou diatônico mas por meio de uma simetria de intervalos onde há um salto por quinta invertida no meio de duas células que unem o inicio e fim da melodia por um salto de 3 semitons. Estas simetrias internas recorrentes em Bartok por coleções intervalares serão comentadas mais adiante em mais detalhes.
+Podemos observar (Figura 3) que já dentro do motivo inicial temos uma estratégia de entrada de uma coleção de 7 notas a partir de um polo e mais 7 a partir do seu contrapolo em sua voz de resposta - as duas vozes juntas dividem o total cromático em dois, tendo como notas comuns as notas do eixo secundário (a mediante e a relativa - no caso de F\# e C por exemplo, as notas comuns são A e Eb ).
+
+É possível também inferir que a melodia sugere um giro em torno de um eixo que prolonga a expectativa do passo cromático $F\# \rightarrow G$ (e assim por diante em suas transposições). O contorno possui uma simetria no núcleo interno de intervalos com um segmento onde há um salto por quinta invertida no meio de duas células de passo cromático que estão distantes do inicio e do fim da melodia por um salto de 3 semitons (Figura 4). 
+
+Esta estratégia composicional com simetrias internas recorrentes em Bartók por rotações de células intervalares serão comentadas mais adiante em mais detalhes. 
+
+Lembremos também que as transposições em 3 semitons sugerem esta equivalência de sonoridade das transposições pelo mesmo sistema de eixos usado nas transposições da melodia completa e que o salto em quinta invertida no meio do segmento remete ao ciclo de dominantes tradicionalmente usado para modulações tonais.
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Possível estratégia composicional em nível melódico do motivo inicial}
+	\caption{\label{fig_grafico}Possível estratégia composicional em nível melódico do motivo inicial de \textit{"Sonata para dois pianos e Percussão"}}
 	\begin{center}
 	    \includegraphics[scale=0.4]{axis/temasonata2P.pdf}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
+\citeonline[ p.4]{lendvai1971bela} também lembra situações onde a estratégia de rotação dos polos do sistema de eixos é a conexão entre os movimentos de formas completas, como na opera \textit{"Castelo de Barba Azul"} ($F\# \leftrightarrow  C \leftrightarrow F\#$) e na \textit{"Music for Strings, Percussion and Celesta" } (que altera cada movimento entre os pólos e contrapólos dos eixos primário $F\# \leftrightarrow  C \leftrightarrow F\#$ e secundário $A\# \leftrightarrow  Eb \leftrightarrow A\#$).
+\pagebreak
+
+
+\subsection{A relação relativa entre grau maior e menor}
+
+\cite[ p.08]{lendvai1971bela} elabora sobre a assimilação do "sistema de eixos" na música ocidental como uma evolução natural da harmonia funcional: 
+
+a) O ciclo de dominantes inicia como um sistema de eixos de cadência onde as regiões vizinhas aparecem apenas como função dominante e subdominante sem modulação para outras tonalidades. 
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Primeiro estágio: cadencial}
+	\begin{center}
+	    \includegraphics[scale=0.6]{axis/estagio01.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+b) O próximo passo é a introdução do eixo da tonalidade relativa (90 graus à esquerda do ponto da tonalidade). A modulação de tonalidade é induzida pela similaridade entre duas regiões diatônicas maiores e menores. Exemplo: Lá menor como relativa de Dó maior e vice-versa.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Segundo estágio: modulação pela relativa}
+	\begin{center}
+	    \includegraphics[scale=0.6]{axis/estagio02.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+c) No estágio mais avançado do romantismo é introduzido o jogo de ambiguidade entre a tonalidade maior e menor de um mesmo polo permitindo que haja a estratégia de modulação pelo sistema de eixos tanto para 90 graus a esquerda (Ex: Lá menor e Dó maior) quanto 90 graus a direita (Ex: Dó menor e Mi bemol maior ).
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Terceiro estágio: modulação pela relativa com ambiguidade maior-menor em um dos polos }
+	\begin{center}
+	    \includegraphics[scale=0.6]{axis/estagio03.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+d) Finalmente no último estágio onde e introduzida a politonalidade temos a assimilação da nota que está a 180 graus do polo (relação polo e contrapolo) pela sonoridade almejada de um modo misto "maior-menor"\ e quaisquer um dos pontos, desta maneira um giro completo como $ Dó\ maior-menor \leftrightarrow Lá\ maior-menor \leftrightarrow Fá\ sustenido\ maior -menor \leftrightarrow Mi\ bemol maior-menor \leftrightarrow  Dó maior-menor $ introduz a vertigem de uma sensação de há uma teia de tonalidades simultâneas operando as expectativas.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Quarto estágio: simultaneidade do modos maior-menor permite o jogo de modulações por todos os polos do eixo }
+	\begin{center}
+	    \includegraphics[scale=0.6]{axis/estagio04.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
 
 
 
+\subsection{Especificidades da coleção acústica (overtone)}
 
-\subsection{O Eixo de Simetrias}
+C1, C2, G2, C3, E3, G3, Bb3, C4, D4, E4, F\# 4, G4, A4, Bb4, B4, C5
+
+Uso de overtones com função dominante
+
+
+\subsection{Expectativas de grau sensível}
+
+Substituição da cadência G7 -> C maior pela possibilidade G7->F\# maior-menor (desenhar as setas)
+
+\subsection{Tensões contrapostas de subdominante e dominante}
+.
+
+.
+.
+.
+
+
+\subsection{Dualidade entre os princípios de tonalidade e distância}
+
+Tríade aumentada C - E - Ab -> "surgindo" da mudança de função "subdominante-tonica-dominante" por uma rotação dos eixos laterais:
+(de G pra E e de F para Ab )
+
+.
+.
+.
+
+
+\section{Simetria Literal}
 
 
 George Perle alerta para o problema da definição de uma forma de macroestrutura em Bartok não ser suficientemente determinada por estes achados de estratégias internas de construções simétricas.
@@ -645,7 +734,9 @@ are only an incidental aspect of his total compositional means. Even in those fe
 instead by a curious amalgam of various elements..
 Can symmetrical formations generate a total musical structure, as triadic relations have done traditionally? The implications of Bartók's work in this, as in other aspects, remain problematical.
 
-\citeonline{bernard1986space} fala em "simetria literal" destacando a observação sobre a conjunção de simetrias intervalares determinadas por posição de registro das alturas de cada um dos componentes de um agregado sonoro (seja uma sequencia de notas em forma melódica ou um cluster vertical). Por exemplo [ Db3, C4, B4 ] possuem entre si as distancias [-11,0,11 ] se considerarmos o C4 como um centro, mas se usarmos {Db4-C4-B4} teremos {-1,0,11} onde apesar de podermos considerar os intervalos [1,11] inversivamente equivalentes por inversão\footnote{Com base nas "teorias de grupos das classes de altura".} desta maneira estes não possuem "literalmente" a mesma distancia.
+\citeonline{bernard1986space} fala em "simetria literal" destacando a estratégia composicional por uma conjunção de simetrias intervalares independentes de posição num mesmo âmbito de oitavas.  Funciona como um  agregado sonoro que cria uma expectativa de equidistância de uma nota central em um grupo de intervalos - seja uma sequencia de notas em forma melódica ou um cluster vertical. 
+
+Por exemplo: { Db3, C4, B4} possuem entre si as distancias [-11 ,0 ,11 ] se considerarmos o C4 como um centro, mas se usarmos o mesmo agrupamento dentro de uma única oitava {Db4-C4-B4} teremos as distâncias [ -1, 0, 11] onde apesar de podermos considerar os intervalos [1,11] inversivamente equivalentes por inversão\footnote{Com base nas "teorias de grupos das classes de altura".} não teremos esta sonoridade da equidistância.
 
  localiza no ensaio "Problems of New Music" do proprio Bartók esta ideia onde ele nomeia esta a simetria que considere distâncias por registros de mais de uma oitava de \textit{\textbf{"simetria em espelho"}}
 
@@ -685,7 +776,19 @@ c.f. "Pitch Cells"
 
 
 
-\subsection{Harmonização dos Modos Folclóricos}
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Agrupamentos de sequencias com intervalos iguais observado por \citeonline{antokoletz1984music} - na vertical temos as sequencias (de baixo para cima as distâncias mais curtas e de baixo pra cima suas inversões mais longas). Na horizontal temos em cada coluna da tabela os grupos de transposições possíveis: }
+	\begin{center}
+	    \includegraphics[scale=0.6]{antokoletz/ciclos_intervalares_table2012.png}
+	\end{center}
+	\legend{Fonte: \cite{susanni_antokoletz2012music} }
+\end{figure}
+
+
+
+
+
+\section{Harmonização dos Modos Folclóricos}
 
 
 A harmonização  bartokiana em muitos casos é desamarrada das cadências tonais pela intenção de destacar a sensação modal ou pentatônica das melodias. Esta foi também uma estratégia para criar harmonizações onde as tríades maior e menor são usadas de modo ambíguo, simultâneo e que facilitam o uso do total cromático. Também ao evitar a sensível surge a preferência do uso de intervalo de sétima menor como uma sonoridade sem expectativa de resolução de tonalidade que torna este intervalo aqui "tão importante quanto as terças e quintas"\cite[p. 28]{antokoletz1984music}.
@@ -697,6 +800,20 @@ Nas palavras do próprio Bartok:
 \cite[p. 342]{bartok1993bela}
 \end{citacao}
 
+“estas melodias primitivas, além do mais , não mostram rastro de uma junção esterotipada de tríades”
+
+acordes usados de maneira “livre” para harmonizar notas melódicas que não pertencem a estes
+
+na bagatela numero 4 o tecido harmônico é determinado basicamente por um sistema de ambiguidade maior-menor 
+
+evitando o leading-tone (sensível) – exemplo D menor (eólio) . Evita acorde de sétima maior. 
+A tríade construída sobre o quinto grau não faz o mesmo papel que na musica tonal tradicional.
+
+A função do acorde de sétima menor faz o papel modal , evitando a ideia de resolução eminente de uma tonalidade maior ou menor.
+
+O acorde de sétima menor possui uma propriedade de simetria interna dos intervalos. Metade do acorde espelha outra metade. Este equilíbrio contribui para uma sensação de imobilidade aparente. Neutralidade Cinética.
+
+
 
 Um exemplo citado no livro de  \citeonline{suchoff2004bartok} dedicado exclusivamente aos mikrokosmos é da primeira canção folk tratada na coleção.
 
@@ -704,9 +821,15 @@ A Melodia pentatônica é também uma estratégia para introduzir uma célula de
 
 Aplicamos aqui os algoritmos de análise de harmonia funcional da biblioteca music21.
 
+\subsection{Limites e ideias a partir de analise tonal funcional}
 
+usar analise comentario mikro 100 e 101 do paper 25bartokshenker limits
+\cite[ p.179]{brown1997iv}
 
+mikro101
+\cite[ p.113]{straus2004}
 
+\section{Analises por grupos e classes de altura}
 \subsection{Coleçao Acustica ou Polimodo Lidio-Mixolidio}
 
 reflexo de imitação - mikro 29
@@ -799,9 +922,13 @@ cultural Approach to Mctrorhythmic Patterns", Ethnomusicology
 17(1973), pp. 494-506.
 
 
+\subsection{Coleção Octatônica}
+
+\cite{cohn1991bartok}
 
 
-\subsection{Apontamentos sobre os Mikrokosmos}
+
+\section{Apontamentos sobre os Mikrokosmos}
 
 mikrokosmos 25 - exemplo de uso de Armadura de Clave problematizar em AAC. Modalismo ?
 
