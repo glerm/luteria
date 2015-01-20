@@ -34,10 +34,11 @@
 \contentsline {subsection}{\numberline {3.3.1}As c\IeC {\'e}lulas de Alturas - X,Y,Z}{30}{subsection.3.3.1}
 \contentsline {section}{\numberline {3.4}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{30}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Limites e ideias a partir de analise tonal funcional}{32}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Acompanhamento e textura}{32}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}Analises por grupos e classes de altura}{32}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Cole\IeC {\c c}ao Acustica ou Polimodo Lidio-Mixolidio}{32}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Cole\IeC {\c c}\IeC {\~a}o Octat\IeC {\^o}nica}{33}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Apontamentos sobre os Mikrokosmos}{33}{section.3.6}
+\contentsline {section}{\numberline {3.6}Apontamentos sobre os Mikrokosmos}{34}{section.3.6}
 \contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}oes para uma Luteria Composicional sobre regras de estilo}}{35}{part.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Cliches generativos partituraveis}}{37}{chapter.4}
