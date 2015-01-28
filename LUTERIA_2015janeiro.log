@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  28 JAN 2015 02:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  28 JAN 2015 10:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1332,13 +1332,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [33] [34] [35] [36
 
 ] [37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+Underfull \hbox (badness 10000) in paragraph at lines 1019--1019
  [] [] [][][][]$\T1/lmr/m/n/10 (+20) <[]http : / / web . mit . edu / music21 / 
 doc / moduleReference / moduleChord . html ? #music21 . chord . Chord .
  []
 
 
-LaTeX Warning: Reference `perfiltonal' on page 39 undefined on input line 1006.
+LaTeX Warning: Reference `perfiltonal' on page 39 undefined on input line 1019.
 
 
 
@@ -1373,14 +1373,14 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `LUTERIA_2015janeiro.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1204.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1204.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1217.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1217.
  (./LUTERIA_2015janeiro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1204.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1204.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1217.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1217.
 
 Package rerunfilecheck Info: File `LUTERIA_2015janeiro.brf' has not changed.
-(rerunfilecheck)             Checksum: AF8B51BD6B5A20F08578A40EA220BE86;3154.
+(rerunfilecheck)             Checksum: B8C78640BBD936D8C3F0A5D11A46EEEF;3332.
 
 
 LaTeX Warning: There were undefined references.
@@ -1388,14 +1388,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1204.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1217.
  ) 
 Here is how much of TeX's memory you used:
- 15991 strings out of 494928
- 236431 string characters out of 6177930
- 483369 words of memory out of 5000000
+ 15997 strings out of 494928
+ 236495 string characters out of 6177930
+ 483591 words of memory out of 5000000
  18627 multiletter control sequences out of 15000+600000
- 98495 words of font info for 150 fonts, out of 8000000 for 9000
+ 98790 words of font info for 153 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
  43i,13n,35p,1049b,645s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -1411,10 +1411,10 @@ are/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmsy10.pfb>
-Output written on LUTERIA_2015janeiro.pdf (52 pages, 606361 bytes).
+Output written on LUTERIA_2015janeiro.pdf (52 pages, 608222 bytes).
 PDF statistics:
- 1021 PDF objects out of 1200 (max. 8388607)
- 894 compressed objects within 9 object streams
+ 1027 PDF objects out of 1200 (max. 8388607)
+ 900 compressed objects within 9 object streams
  179 named destinations out of 1000 (max. 500000)
  30782 words of extra memory for PDF output out of 35830 (max. 10000000)
 

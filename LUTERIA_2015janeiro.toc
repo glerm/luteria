@@ -32,9 +32,9 @@
 \contentsline {section}{\numberline {2.5}Cole\IeC {\c c}\IeC {\~o}es referenciais ordenadas por conjuntos de classes de altura}{33}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Octatonismo e suas parti\IeC {\c c}\IeC {\~o}es}{33}{subsection.2.5.1}
 \contentsline {section}{\numberline {2.6}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{33}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Limites e ideias a partir de analise tonal funcional}{34}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Acompanhamento e textura}{34}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Centricidade por Equil\IeC {\'\i }brio Inversivo}{34}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.1}Limites e ideias a partir de analise tonal funcional}{35}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Acompanhamento e textura}{35}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Centricidade por Equil\IeC {\'\i }brio Inversivo}{35}{subsection.2.6.3}
 \contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}\IeC {\~o}es Computacionais}}{37}{part.2}
 \contentsline {section}{\numberline {2.7}Analise de Corpus}{39}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Formatos de entrada}{39}{subsection.2.7.1}
