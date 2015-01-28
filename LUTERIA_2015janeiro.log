@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  27 JAN 2015 23:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  28 JAN 2015 02:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1221,106 +1221,106 @@ ware/top-10-programming-
 
 [19
 
-] [20
-
-]
+] [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21]
+ [21
+
+]
 Underfull \vbox (badness 1546) has occurred while \output is active []
 
  [22]
-<axis/axisOM.png, id=331, 749.80125pt x 505.89pt>
+<axis/axisOM.png, id=345, 749.80125pt x 505.89pt>
 File: axis/axisOM.png Graphic file (type png)
  <use axis/axisOM.png>
-Package pdftex.def Info: axis/axisOM.png used on input line 564.
+Package pdftex.def Info: axis/axisOM.png used on input line 579.
 (pdftex.def)             Requested size: 449.88422pt x 303.53633pt.
 
 [23 <./axis/axisOM.png>]
 
-LaTeX Warning: Command \^ invalid in math mode on input line 572.
+LaTeX Warning: Command \^ invalid in math mode on input line 587.
 
 
-LaTeX Warning: Command \^ invalid in math mode on input line 576.
+LaTeX Warning: Command \^ invalid in math mode on input line 591.
 
-<axis/PoloContrapolo.png, id=337, 551.05875pt x 302.12875pt>
+<axis/PoloContrapolo.png, id=351, 551.05875pt x 302.12875pt>
 File: axis/PoloContrapolo.png Graphic file (type png)
 
 <use axis/PoloContrapolo.png>
-Package pdftex.def Info: axis/PoloContrapolo.png used on input line 581.
+Package pdftex.def Info: axis/PoloContrapolo.png used on input line 596.
 (pdftex.def)             Requested size: 330.63779pt x 181.27864pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24 <./axis/PoloContrapolo.png>]
-<axis/sonata2P_OM.png, id=349, 358.33875pt x 280.04625pt>
+<axis/sonata2P_OM.png, id=363, 358.33875pt x 280.04625pt>
 File: axis/sonata2P_OM.png Graphic file (type png)
 
 <use axis/sonata2P_OM.png>
-Package pdftex.def Info: axis/sonata2P_OM.png used on input line 595.
+Package pdftex.def Info: axis/sonata2P_OM.png used on input line 610.
 (pdftex.def)             Requested size: 250.83542pt x 196.03102pt.
 
 Underfull \vbox (badness 3396) has occurred while \output is active []
 
- [25 <./axis/sonata2P_OM.png>] <axis/temasonata2P.pdf, id=359, 562.1pt x 505.89
+ [25 <./axis/sonata2P_OM.png>] <axis/temasonata2P.pdf, id=373, 562.1pt x 505.89
 pt>
 File: axis/temasonata2P.pdf Graphic file (type pdf)
 
 <use axis/temasonata2P.pdf>
-Package pdftex.def Info: axis/temasonata2P.pdf used on input line 613.
+Package pdftex.def Info: axis/temasonata2P.pdf used on input line 628.
 (pdftex.def)             Requested size: 224.83601pt x 202.3524pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26 <./axis/temasonata2P.pdf>] <axis/estagio01.png, id=453, 415.5525pt x 54.20
+ [26 <./axis/temasonata2P.pdf>] <axis/estagio01.png, id=468, 415.5525pt x 54.20
 25pt>
 File: axis/estagio01.png Graphic file (type png)
 
 <use axis/estagio01.png>
-Package pdftex.def Info: axis/estagio01.png used on input line 631.
+Package pdftex.def Info: axis/estagio01.png used on input line 646.
 (pdftex.def)             Requested size: 249.33342pt x 32.52174pt.
 
-<axis/estagio02.png, id=454, 418.56375pt x 97.36375pt>
+<axis/estagio02.png, id=469, 418.56375pt x 97.36375pt>
 File: axis/estagio02.png Graphic file (type png)
 
 <use axis/estagio02.png>
-Package pdftex.def Info: axis/estagio02.png used on input line 642.
+Package pdftex.def Info: axis/estagio02.png used on input line 657.
 (pdftex.def)             Requested size: 251.14018pt x 58.41869pt.
- <axis/estagio03.png, id=455, 421.575pt x 100.375pt>
+ <axis/estagio03.png, id=470, 421.575pt x 100.375pt>
 File: axis/estagio03.png Graphic file (type png)
 
 <use axis/estagio03.png>
-Package pdftex.def Info: axis/estagio03.png used on input line 653.
+Package pdftex.def Info: axis/estagio03.png used on input line 668.
 (pdftex.def)             Requested size: 252.94695pt x 60.22545pt.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 659.
+LaTeX Warning: Command \' invalid in math mode on input line 674.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 659.
+LaTeX Warning: Command \' invalid in math mode on input line 674.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 659.
+LaTeX Warning: Command \' invalid in math mode on input line 674.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 659.
+LaTeX Warning: Command \' invalid in math mode on input line 674.
 
 [27 <./axis/estagio01.png> <./axis/estagio02.png> <./axis/estagio03.png>]
-<axis/estagio04.png, id=460, 423.5825pt x 139.52126pt>
+<axis/estagio04.png, id=475, 423.5825pt x 139.52126pt>
 File: axis/estagio04.png Graphic file (type png)
 
 <use axis/estagio04.png>
-Package pdftex.def Info: axis/estagio04.png used on input line 664.
+Package pdftex.def Info: axis/estagio04.png used on input line 679.
 (pdftex.def)             Requested size: 254.15146pt x 83.7134pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28 <./axis/estagio04.png>] [29]
-<antokoletz/ciclos_intervalares_table2012.png, id=494, 606.265pt x 458.71375pt>
+<antokoletz/ciclos_intervalares_table2012.png, id=508, 606.265pt x 458.71375pt>
 File: antokoletz/ciclos_intervalares_table2012.png Graphic file (type png)
 <use antokoletz/ciclos_intervalares_table2012.png>
 Package pdftex.def Info: antokoletz/ciclos_intervalares_table2012.png used on i
-nput line 761.
+nput line 776.
 (pdftex.def)             Requested size: 363.76181pt x 275.23038pt.
 
 Underfull \vbox (badness 3930) has occurred while \output is active []
@@ -1332,13 +1332,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [33] [34] [35] [36
 
 ] [37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 991--991
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
  [] [] [][][][]$\T1/lmr/m/n/10 (+20) <[]http : / / web . mit . edu / music21 / 
 doc / moduleReference / moduleChord . html ? #music21 . chord . Chord .
  []
 
 
-LaTeX Warning: Reference `perfiltonal' on page 39 undefined on input line 991.
+LaTeX Warning: Reference `perfiltonal' on page 39 undefined on input line 1006.
+
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1372,14 +1373,14 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `LUTERIA_2015janeiro.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1189.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1189.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1204.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1204.
  (./LUTERIA_2015janeiro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1189.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1189.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1204.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1204.
 
 Package rerunfilecheck Info: File `LUTERIA_2015janeiro.brf' has not changed.
-(rerunfilecheck)             Checksum: E249311F4096042BD50D6DF68055859D;2932.
+(rerunfilecheck)             Checksum: AF8B51BD6B5A20F08578A40EA220BE86;3154.
 
 
 LaTeX Warning: There were undefined references.
@@ -1387,16 +1388,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1189.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1204.
  ) 
 Here is how much of TeX's memory you used:
- 15966 strings out of 494928
- 235916 string characters out of 6177930
- 483037 words of memory out of 5000000
- 18606 multiletter control sequences out of 15000+600000
+ 15991 strings out of 494928
+ 236431 string characters out of 6177930
+ 483369 words of memory out of 5000000
+ 18627 multiletter control sequences out of 15000+600000
  98495 words of font info for 150 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
- 43i,13n,35p,1049b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,13n,35p,1049b,645s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
@@ -1410,10 +1411,10 @@ are/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmsy10.pfb>
-Output written on LUTERIA_2015janeiro.pdf (52 pages, 602120 bytes).
+Output written on LUTERIA_2015janeiro.pdf (52 pages, 606361 bytes).
 PDF statistics:
- 1003 PDF objects out of 1200 (max. 8388607)
- 876 compressed objects within 9 object streams
- 175 named destinations out of 1000 (max. 500000)
+ 1021 PDF objects out of 1200 (max. 8388607)
+ 894 compressed objects within 9 object streams
+ 179 named destinations out of 1000 (max. 500000)
  30782 words of extra memory for PDF output out of 35830 (max. 10000000)
 
