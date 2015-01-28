@@ -15,9 +15,9 @@
 \contentsline {section}{\numberline {2.1}Panorama b\IeC {\'a}sico sobre analise bartokiana}{21}{section.2.1}
 \contentsline {section}{\numberline {2.2}Sistema de Eixos de Lendvai}{22}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Afinidades funcionais entre quarto e quinto graus}{23}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}A rela\IeC {\c c}\IeC {\~a}o relativa entre grau maior e menor}{27}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}A elabora\IeC {\c c}\IeC {\~a}o de uma sonoridade mista maior-menor}{27}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Especificidades da cole\IeC {\c c}\IeC {\~a}o ac\IeC {\'u}stica (overtone)}{28}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Expectativas de grau sens\IeC {\'\i }vel}{28}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.4}Expectativas de grau sens\IeC {\'\i }vel}{29}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}Tens\IeC {\~o}es contrapostas de subdominante e dominante}{29}{subsection.2.2.5}
 \contentsline {subsection}{\numberline {2.2.6}Dualidade entre os princ\IeC {\'\i }pios de tonalidade e dist\IeC {\^a}ncia}{29}{subsection.2.2.6}
 \contentsline {subsection}{\numberline {2.2.7}Geometria da Macro-forma com analogias na Micro-forma}{29}{subsection.2.2.7}
@@ -27,10 +27,10 @@
 \contentsline {section}{\numberline {2.3}C\IeC {\'e}lulas de Alturas em Antokoletz}{29}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Ciclos Intervalares}{30}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Modalismo e estrat\IeC {\'e}gias rotacionais}{30}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Simetria Inversiva}{30}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Simetria Literal}{30}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Cole\IeC {\c c}\IeC {\~o}es referenciais ordenadas por conjuntos de classes de altura}{32}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Octatonismo e suas parti\IeC {\c c}\IeC {\~o}es}{32}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.4}Simetria Inversiva}{31}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Simetria Literal}{31}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Cole\IeC {\c c}\IeC {\~o}es referenciais ordenadas por conjuntos de classes de altura}{33}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Octatonismo e suas parti\IeC {\c c}\IeC {\~o}es}{33}{subsection.2.5.1}
 \contentsline {section}{\numberline {2.6}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{33}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Limites e ideias a partir de analise tonal funcional}{34}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Acompanhamento e textura}{34}{subsection.2.6.2}
