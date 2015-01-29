@@ -890,6 +890,20 @@ highlight the intervallic symmetry of the collection.
 
 \section{Coleções referenciais ordenadas por conjuntos de classes de altura}
 
+O uso sistemático de uma teoria unificada para a classificação de classes de altura em conjuntos relacionados por transposição, inversão, complemento, simetria e outras possíveis observações de propriedades específicas de agrupamentos intervalares tem a sua disposição a construção de alguns consensos que giram sobretudo em torno de uma área da musicologia de origem norte-americana\footnote{Sobre a influência da \textit{"Teoria dos Conjuntos de Classes de Altura"} norte-americana na musicologia européia ver \citeonline{aroundset2013}.} que tem se estruturado desde fortalecimento acadêmico do serialismo na segunda metade do século XX. Geralmente é referida como \textit{"Pitch Class Set Theory"}, e normalmente traduzida para português pelo termo \textit{"Teoria dos Conjuntos de Classes de Altura"}\cite{straus2004}.
+
+\begin{citacao}
+Foi, obviamente, Allen Forte quem foi o pioneiro das análises com a taxonomia dos \textbf{conjuntos de classes de alturas} aplicadas em conceitos da matemática, primeiro surgindo em tipos de Milton Babbit (a teoria conceitual), e em seguida com a inclusão e abstração de relações (como as relações de similaridade) construídas para uso analítico. A \textbf{"teoria de conjuntos"}\ de Forte (...) tem tido suas próprias ramificações e influência. Em particular, as próprias análises de Forte de peças individuais tem levado muitos outros a fazerem de maneira parecida, e a ideia inicial de Forte das relações de similaridade ( diferentes das relações de equivalência) sobre os grupos de classes de alturas tem visto florescer uma indústria teórica em torno disto, depois que os artigos seminais de Morris, Rahn  Lewin apareceram em 1980. \cite[ p. 130]{rahn2004swerve}\footnote{
+It was, of course, Allen Forte who in the USA pioneered the analytical with a taxonomy of pc-set application of concepts from mathematics, first arose also in serial Babbittian types (the concept theory), and following as some inclusion and with relations abstract up (such similarity relations) meant for analytical use. Forte's "set theory"\  (...) has had its own ramifications and influence. In particular, Forte's own analyses of individual pieces of music have led many others to do likewise, and Forte's initial idea of similarity relations (as distinct from equivalence relations) among pitch-class sets has seen a flourishing theoretical industry grow around it, after seminal articles by Morris, Rahn, and Lewin appeared in 1980. \cite[ p. 130, grifo nossos]{rahn2004swerve}}
+\end{citacao}
+
+Para uma introdução resumida da terminologia da T.C.C.A. sugerimos a consulta do Apêndice do presente trabalho e dos patches de OpenMusic disponibilizados para sua demonstração. Para uma introdução mais aprofundada que serviu como referência aqui sugerimos a tradução brasileira do livro de \citeonline{straus2004} e os trabalhos originais de \citeonline{forte1973structure} e \citeonline{rahn1980basic}.
+
+Observamos a seguir um exemplo de análise de inspiração na T.C.C.A. que utiliza como base discussões sobre a coleção referencial octatônica - grupos de oito intervalos separados entre duas oitavas por uma sequencia não-diatônica que intercala tom e semitom, gerando propriedades curiosas e de bastante uso na música de Bartók e no repertório pós-tonal em geral.
+
+
+
+
 \subsection{Octatonismo e suas partições}
 
 Richard \citeonline{cohn1991bartok} propõe em seu artigo \textit{"Bartók's octatonic strategies: a motivic approach"}\ uma abordagem que utiliza a nomenclatura dos conjuntos de classes de altura propostas por Allen \citeonline{forte1973structure} na tentativa de construir um discurso sobre as coleções de sonoridades em Bartók que articule com uma continuidade das tradições analíticas.
@@ -906,6 +920,9 @@ dyad-class 6, the tritone. Although theorists use interval-class more frequently
 concept of dyad-class allows for a more natural comparison to larger sets.
 \cite[ p.265-266]{cohn1991bartok}
 \end{citacao}
+
+
+
 
 
 \section{Harmonização dos Modos Folclóricos}
@@ -1091,8 +1108,10 @@ problema ou utopia da "analise cega"
 \chapter{Lastros e Rumos}
 
 
-
-
+%%%%%
+%%%%%
+%%%%%
+%%%%%
 
 
 
@@ -1122,68 +1141,222 @@ problema ou utopia da "analise cega"
 % ---
 % Inicia os apêndices
 % ---
-%\begin{apendicesenv}
+\begin{apendicesenv}
 
 % Imprime uma página indicando o início dos apêndices
-%\partapendices
+\partapendices
+
+\chapter{Fórmulas de agrupamento e transformação dos intervalos}
+
+A teoria de grupos de classes de altura utiliza como base de suas formulações a relação entre os 12 semitons da escala cromática de forma modular: considerando alturas de mesma oitava como sujeitas mesmas propriedades intervalares, podendo argumentar relações independentes de registro. Exemplo: O Dó grave representado no protocolo MIDI pelo valor 24 tem uma relação de equivalência com o Dó agudo de valor 72. A fórmula é simples: ambos quando divididos por 12 apresentam resto 0. A nota Ré, por exemplo, sempre apresentaria o resto 2, e assim por diante. Dizemos por tanto que pertencem a uma mesma classe de altura.
+
+Diferente de quando argumentada uma enarmonia funcional\footnote{ver \autoref{solfejo} } (como por exemplo D\# $\to$ Eb ) a teoria de grupos e classes de altura não toma como princípio ideias do tipo "terça maior ou menor", "nota sensível" ou "nota de passagem"\ pois vai partir de uma relação direta entre os aglomerados sonoros, buscando similaridades e equivalências sem estar tão presa as formas de prolongamento normatizadas pelo tonalismo clássico. \cite{lerdahl1989atonal,straus1987problem}
+
+Os intervalos são, sobretudo, distâncias. Nas teorias de classes de alturas essas distâncias podem estar categorizadas como intervalos ordenados - usando número negativos para os intervalos descendentes, ou não-ordenados - considerando intervalos equivalentes independentes de suas direções.\cite[p. 6]{straus2004}
+
+Isso cria imediatamente uma relação interessante de parentesco entre pares em todos intervalos da escala cromática - exceto para o trítono, intervalo de sexta ordem que esta equidistante de 0 e 12 e portanto não possui uma inversão propriamente dita, mas sim tem o papel de cortar ao meio este espelhamento.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Equivalência de intervalos por inversão }
+	\begin{center}
+	    \includegraphics[scale=0.3]{algo/equivalencia_inversa.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+\section{Vetor intervalar}
+
+A operação obtenção do vetor intervalar é a primeira das reduções sugeridas para propor uma similaridade entre agrupamentos que seja neutra quanto a inversões e oitavas.
+
+Tomemos um exemplo de uma sequência C-D-E-Bb.
 
 
 
-
-%%%%
-
-%\chapter{Repositório de Códigos}
-%\label{codigo}
-
-
-%\subsection{Biblioteca de Algoritmos}
-
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}[0,2,4,10] }
+	\begin{center}
+	    \includegraphics[scale=0.6]{OM_settheory/vetor02410.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
 
 
-%\lstset{frameround=fttt,language=Python,showspaces=false,
-%showtabs=true,tab=\rightarrowfill}
-%\begin{lstlisting}[frame=trBL]
-%def mod12(n):
-%	return n % 12
-%
-%def note_name(number):
-%	notes = "C  D E F G A B".split()
-%	return notes[mod12(number)]
-%	
-%for i in intervalos:
-%	if (i in maiores):
-%		if (i == (4,7)):
-%			tipos.append(("maior",0))
-%		if (i == (5,9)):
-%			tipos.append(("maior",1))
-%		if (i == (3,8)):
-%			tipos.append(("maior",2))
-% 
-%	if (i in menores):
-%		if (i == (3,7)):
-%			tipos.append(("menor",0))
-%		if (i == (5,8)):
-%			tipos.append(("menor",1))
-%		if (i == (4,9)):
-%			tipos.append(("menor",2))
-%	if (i in aumentados):
-%			tipos.append(("aumentado","not"))
-%	if (i in diminutos):
-%		if (i == (3,6)):
-%			tipos.append(("diminuto",0))
-%		if (i == (6,9)):
-%			tipos.append(("diminuto",1))
-%		if (i == (3,9)):
-%			tipos.append(("diminuto",2))
-% 
-%\end{lstlisting}
+Este trecho pode ser reduzido a sequência de alturas [0,2,4,10]
+
+Organizamos seus intervalos fazendo todas as combinações possíveis entre essas distâncias:
+
+
+$ inversões = \left\{
+  \begin{array}{l l}
+    2-0 = 2\\
+    4-0 = 4\\
+    10-0 = 10 \\
+     \\
+    4-2 = 2\\
+    10-2= 8 \\
+     \\
+    10-4= 6
+  \end{array} \right.
+$
+
+O vetor de intervalos pode ser reduzido então a uma contagem que coloca no mesmo grupo os intervalos que são inversões dos primeiros cinco intervalos possíveis, já que seus pares após o trítono não são considerados espelhamentos. No exemplo acima temos 10 que é a inversão de 2 e 8 que é a inversão de 4. Nosso vetor fica assim:
+
+
+\begin{table}[h]
+\begin{tabular}{|
+>{\columncolor[HTML]{FD6864}}l |
+>{\columncolor[HTML]{F8A102}}l |
+>{\columncolor[HTML]{F8FF00}}l |
+>{\columncolor[HTML]{34FF34}}l |
+>{\columncolor[HTML]{00D2CB}}l |
+>{\columncolor[HTML]{EE00EE}}l |}
+\hline
+1 & 2 & 3 & 4 & 5 & 6 \\ \hline
+0 & 3 & 0 & 2 & 0 & 1 \\ \hline
+\end{tabular}
+\end{table}
+
+Pode-se dizer então que a classe de alturas [0,2,4,10] possui o vetor intervalar <0,3,0,2,0,1>.
+
+
+\section{Forma Normal} 
+
+É comum na prática de uso dos grupos de classes de altura a preparação dos conjuntos em sua forma ordenada e reduzida. Desta maneira podemos mais facilmente reconhecer as equivalências entre os grupos, reconhecer transposições, propriedades.
+
+
+\begin{figure}[h]
+	\caption{\label{fig_grafico}Redução de um segmento do Microkosmos 101 de Bártok para um cluster de 4 alturas. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/reducao_acorde.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+Para a redução de uma forma normal, partimos do \textit{cluster} sem repetições, colocando todas as alturas dentro da mesma oitava. Os passos seguintes são: 
+\textbf{a)} Ordenar de forma ascendente e escolher a sequência que tenha a menor distância da primeira até a última nota.
+\textbf{b)} Se houver empate reduzir pela que seja mais compacta à esquerda, comparando o menor intervalo entre a primeira e penúltima e assim por diante.
+\textbf{c)} Havendo ainda empate, escolher aquele grupo que tem a menor altura como início. 
+
+\begin{figure}[h]
+	\caption{\label{fig_grafico}Forma Normal. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/forma_normal.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
 
 
 
+\pagebreak
+\section{Forma Prima} 
+
+A forma prima é um procedimento para simplificar ainda mais a forma normal, encontrando "a mais normal das normais"\ \cite[p. 47]{straus2004} e reduzindo vetores que possuem os mesmos intervalos ou são inversões e transposições a um vetor primário. Para isso uma forma normal é transposta até que possua o zero em sua primeira posição. Assim é feito também com sua inversão. A forma mais compacta à esquerda será a forma prima. Allen \citeonline{forte1973structure} desenvolveu uma taxonomia a partir das formas primas que tem sido utilizada como forma canônica para representação de grupos de classes de altura.\footnote{A biblioteca \textit{"math"}\ do OpenMusic possui o objeto "p-form"\ para encontrar os agrupamentos de Forte. A tabela original está no livro "The Structure of Atonal Music"\ \cite[p.179-181]{forte1973structure}}. Forte organiza agrupamentos pelo número de elementos seguidos por um número que diz qual ordem dentro do conjunto com aquele mesmo número de elementos. Exemplo: |3-1| é composto das alturas (0,1,2), |3-2|  é o cluster (0,1,3), |4-17|  é composto por (0,3,4,7), e assim por diante.
+
+\begin{figure}[h]
+	\caption{\label{fig_grafico}Fórmulas de agrupamento de classes de altura. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/forma_prima_forte_vector.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
 
 
-%\end{apendicesenv}
+\section{Singularidades nos agrupamentos }
+
+Algumas propriedades entre os grupos de classes de alturas são muito interessantes como princípio composicional e, mesmo quando não tão obvias em primeiras audições, ao menos ajudam garantir alguma coerência estrutural conceitual. George Perle argumenta sobre "funções motívicas"\ em grupos de alturas \cite[ p.60-85]{perle1991serial} e observa algumas estratégias de compositores para aproveitar algumas propriedades encontradas em relações internas das series. Perle no entanto mostra-se cético quanto a formalização de nomenclaturas analíticas derivadas da classificação de Allen Forte e sua aplicação em argumentações para análises de composições que tenham sido compostas antes fórmulas tornarem-se ferramentas musicológicas. \cite{perle1990pitch}
+
+Levantaremos aqui algumas destas propriedades conforme o resumo didático proposto por \citeonline{straus2004}, sem ainda estarmos certos de sua efetividade para analises mas interessados na formalização computacional possível destas para processos composicionais.
+
+
+\subsection{Notas comuns sob transposição}
+
+Tomemos o seguinte exemplo: Dado um grupo em sua forma prima [0,2,5] - ou "4-10"\ na forma prima pela classificação de Allen \citeonline{forte1973structure} - quando transpomos para o intervalo 2 e seu inverso 10, obtemos duas notas iguais para cada um destes grupos.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Notas comuns na transposição. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/notas_comuns_2e10.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+Isso acontece porque o vetor de intervalos para esta forma é <1,2,2,0,1,0> e podemos observar que há uma fórmula geral que prova que o número de incidências comuns de uma determinada classe de alturas em sua transposição será o número de repetições deste intervalo em seu vetor original. Neste caso por exemplo temos duas incidências do intervalo de classe 2 - portanto as transposições T2 e T10 tem duas notas em comum com T0.
+
+Há uma exceção a esta regra:
+ 
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Notas comuns na transposição com trítono. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/notas_comuns_tritono.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+É preciso observar que para o caso do trítono a inversão é simétrica - portanto para cada trítono temos duas notas em comum. Como no exemplo acima: 10 e 4 geram as duas simétricas 4 e 10, logo conclui-se que um trítono gera duas notas em comum e assim por diante.
+
+Interessante pensar também que o vetor de intervalos irá determinar transposições onde não existe nota nenhuma em comum. Composicionalmente isso pode ser visto como uma possibilidade de transpor a série para uma sessão totalmente distinta da anterior, criando algum discurso com estas transições.
+
+
+\subsection{Simetria Transpositiva}
+
+Na simetria transpositiva temos um padrão de intervalos que funciona como palíndromo (tem a mesma leitura da esquerda para a direita e direita para esquerda).
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}A simetria transpositiva é obtida através de um padrão de intervalo palíndromo. }
+	\begin{center}
+	    \includegraphics[scale=0.6]{OM_settheory/palindrome1.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}A forma circular é mais geral do que a numérica para a visualização do padrão de simetrias. }
+	\begin{center}
+	    \includegraphics[scale=0.6]{OM_settheory/palindrome2.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+\subsection{Complemento}
+
+Útil para reconhecer e produzir contextos totalmente distintos entre si, o complemento é composto por todos intervalos que estão exclusos dos grupo, produzindo um outro grupo completamente diferente.
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}O complemento contém todas alturas cromáticas que o conjunto original não possui. }
+	\begin{center}
+	    \includegraphics[scale=0.6]{OM_settheory/complemento.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+\subsection{Relação Z entre grupos de classes de alturas}
+
+A relação Z é uma das interessantes relações onde há uma equivalência sem que os conjuntos sejam transposições ou inversões entre si neste caso produzindo dois conjuntos que possuem os mesmos intervalos na sua constituição.
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Dois conjuntos Z-relacionados possuem os mesmos intervalos sem serem inversões ou transposições uns dos outros. }
+	\begin{center}
+	    \includegraphics[scale=0.7]{OM_settheory/Z_related.png}
+	\end{center}
+	\legend{Fonte: autor (adaptado de exemplo do tutorial MathTools do OM) }
+\end{figure}
+
+\end{apendicesenv}
 % ---
+% ----------------------------------------------------------
+
+
+
 
 
 % ----------------------------------------------------------

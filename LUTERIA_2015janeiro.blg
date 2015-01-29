@@ -13,6 +13,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: mestrado_glerm.bib
+Warning--I didn't find a database entry for "perle1991serial"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -22,44 +23,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 27 entries,
+You've used 33 entries,
             6711 wiz_defined-function locations,
-            1337 strings with 12422 characters,
-and the built_in function-call counts, 20317 in all, are:
-= -- 1718
-> -- 481
-< -- 110
-+ -- 304
-- -- 155
-* -- 1282
-:= -- 2799
-add.period$ -- 82
-call.type$ -- 27
-change.case$ -- 192
-chr.to.int$ -- 39
-cite$ -- 26
-duplicate$ -- 1280
-empty$ -- 1601
-format.name$ -- 717
-if$ -- 4665
+            1370 strings with 13020 characters,
+and the built_in function-call counts, 25527 in all, are:
+= -- 2159
+> -- 609
+< -- 157
++ -- 387
+- -- 195
+* -- 1628
+:= -- 3481
+add.period$ -- 103
+call.type$ -- 33
+change.case$ -- 240
+chr.to.int$ -- 51
+cite$ -- 32
+duplicate$ -- 1644
+empty$ -- 1972
+format.name$ -- 902
+if$ -- 5841
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 482
-newline$ -- 128
-num.names$ -- 130
-pop$ -- 594
+missing$ -- 590
+newline$ -- 159
+num.names$ -- 160
+pop$ -- 715
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 106
 quote$ -- 0
-skip$ -- 1330
+skip$ -- 1684
 stack$ -- 1
-substring$ -- 913
-swap$ -- 553
-text.length$ -- 22
+substring$ -- 1179
+swap$ -- 721
+text.length$ -- 31
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 192
+while$ -- 240
 width$ -- 0
-write$ -- 407
+write$ -- 506
+(There was 1 warning)

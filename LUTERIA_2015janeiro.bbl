@@ -5,6 +5,12 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Andreatta, Rahn e Bardez 2013]{aroundset2013}
+\abntrefinfo{Andreatta, Rahn e Bardez}{ANDREATTA; RAHN; BARDEZ}{2013}
+{ANDREATTA, M.; RAHN, J.; BARDEZ, J.~M. \emph{Around set theory}. [S.l.]:
+  Delatour France, 2013.
+ISBN 2752100523.}
+
 \bibitem[Antokoletz 1984]{antokoletz1984music}
 \abntrefinfo{Antokoletz}{ANTOKOLETZ}{1984}
 {ANTOKOLETZ, E. \emph{The music of B{\'e}la Bart{\'o}k: a study of tonality and
@@ -82,6 +88,12 @@
 ISSN 07307829.
 Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/40285402}.}
 
+\bibitem[Lerdahl 1989]{lerdahl1989atonal}
+\abntrefinfo{Lerdahl}{LERDAHL}{1989}
+{LERDAHL, F. Atonal prolongational structure.
+\emph{Contemporary Music Review}, Taylor \& Francis, v.~4, n.~1, p. 65--87,
+  1989.}
+
 \bibitem[Lerdahl 2009]{lerdahl2009genesis}
 \abntrefinfo{Lerdahl}{LERDAHL}{2009}
 {LERDAHL, F. Genesis and architecture of the gttm project.
@@ -104,6 +116,23 @@ JSTOR, 2009.}
 ISBN 9780520074309. Dispon{\'\i}vel em:
   \url{http://books.google.com.br/books?id=4C8RjEaBRf4C}.}
 
+\bibitem[Perle 1990]{perle1990pitch}
+\abntrefinfo{Perle}{PERLE}{1990}
+{PERLE, G. Pitch-class set analysis: An evaluation.
+\emph{Journal of Musicology}, JSTOR, p. 151--172, 1990.}
+
+\bibitem[Rahn 1980]{rahn1980basic}
+\abntrefinfo{Rahn}{RAHN}{1980}
+{RAHN, J. \emph{Basic atonal theory}. [S.l.]: Longman New York, 1980.}
+
+\bibitem[Rahn 2004]{rahn2004swerve}
+\abntrefinfo{Rahn}{RAHN}{2004}
+{RAHN, J. The swerve and the flow: Music's relationship to mathematics.
+\emph{Perspectives of New Music}, Perspectives of New Music, v.~42, n.~1, p.
+  pp. 130--148, 2004.
+ISSN 00316016.
+Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/25164542}.}
+
 \bibitem[Roads 1979]{roads1979grammars}
 \abntrefinfo{Roads}{ROADS}{1979}
 {ROADS, C. Grammars as representations for music.
@@ -114,6 +143,11 @@ ISBN 9780520074309. Dispon{\'\i}vel em:
 {STARR, L. Melody-accompaniment textures in the music of bart{\'o}k, as seen in
   his mikrokosmos.
 \emph{Journal of Musicology}, JSTOR, p. 91--104, 1985.}
+
+\bibitem[Straus 1987]{straus1987problem}
+\abntrefinfo{Straus}{STRAUS}{1987}
+{STRAUS, J.~N. The problem of prolongation in post-tonal music.
+\emph{Journal of Music Theory}, JSTOR, p. 1--21, 1987.}
 
 \bibitem[Straus 2004]{straus2004}
 \abntrefinfo{Straus}{STRAUS}{2004}
