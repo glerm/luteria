@@ -25,67 +25,68 @@
 \contentsline {subsubsection}{\numberline {2.2.7.2}Fibonacci}{31}{subsubsection.2.2.7.2}
 \contentsline {subsection}{\numberline {2.2.8}Cr\IeC {\'\i }ticas ao modelo de Lendvai}{31}{subsection.2.2.8}
 \contentsline {section}{\numberline {2.3}C\IeC {\'e}lulas de Alturas em Antokoletz}{31}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Ciclos Intervalares}{33}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Modalismo e estrat\IeC {\'e}gias rotacionais}{34}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Rota\IeC {\c c}\IeC {\~a}o Pentat\IeC {\^o}nica}{35}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Simetria Inversiva}{36}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Simetria Literal}{36}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Cole\IeC {\c c}\IeC {\~o}es referenciais ordenadas por conjuntos de classes de altura}{39}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Octatonismo e suas parti\IeC {\c c}\IeC {\~o}es}{40}{subsection.2.6.1}
-\contentsline {section}{\numberline {2.7}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{40}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Limites e ideias a partir de analise tonal funcional}{42}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Acompanhamento e textura}{42}{subsection.2.7.2}
-\contentsline {subsection}{\numberline {2.7.3}Centricidade por Equil\IeC {\'\i }brio Inversivo}{42}{subsection.2.7.3}
-\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}\IeC {\~o}es Computacionais}}{43}{part.2}
-\contentsline {section}{\numberline {2.8}Analise de Corpus}{45}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Formatos de entrada}{45}{subsection.2.8.1}
-\contentsline {section}{\numberline {2.9}Music21}{45}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Stream}{46}{subsection.2.9.1}
-\contentsline {subsection}{\numberline {2.9.2}Notas, Acordes e nomenclaturas}{46}{subsection.2.9.2}
-\contentsline {subsection}{\numberline {2.9.3}Prolongamentos e infer\IeC {\^e}ncia de tonalidade}{46}{subsection.2.9.3}
-\contentsline {subsection}{\numberline {2.9.4}Key Profiles}{46}{subsection.2.9.4}
-\contentsline {subsection}{\numberline {2.9.5}Escalas e Modalismo}{46}{subsection.2.9.5}
-\contentsline {subsection}{\numberline {2.9.6}Contorno melodico}{46}{subsection.2.9.6}
-\contentsline {subsection}{\numberline {2.9.7}Metrica composta}{46}{subsection.2.9.7}
-\contentsline {subsection}{\numberline {2.9.8}Acento Melodico}{46}{subsection.2.9.8}
-\contentsline {subsection}{\numberline {2.9.9}Busca e extra\IeC {\c c}ao de padroes}{46}{subsection.2.9.9}
-\contentsline {section}{\numberline {2.10}OpenMusic}{46}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}Visualiza\IeC {\c c}\IeC {\~a}o das classes de altura}{46}{subsection.2.10.1}
-\contentsline {subsection}{\numberline {2.10.2}Manipula\IeC {\c c}\IeC {\~a}o de Conjuntos e suas nomenclaturas}{46}{subsection.2.10.2}
-\contentsline {subsection}{\numberline {2.10.3}Crivos como estrat\IeC {\'e}gia para de ciclos intervalares}{46}{subsection.2.10.3}
-\contentsline {subsection}{\numberline {2.10.4}Segmenta\IeC {\c c}\IeC {\~a}o Monitorada}{46}{subsection.2.10.4}
-\contentsline {section}{\numberline {2.11}Especialidade da automa\IeC {\c c}\IeC {\~a}o versus especialidade do analista}{46}{section.2.11}
+\contentsline {subsection}{\numberline {2.3.1}Ciclos Intervalares}{34}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Simetria Inversiva}{35}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Eixo de Simetrias como estrat\IeC {\'e}gia mot\IeC {\'\i }vica}{37}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Centricidade por Equil\IeC {\'\i }brio Inversivo}{39}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Simetria Literal}{39}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Cole\IeC {\c c}\IeC {\~o}es referenciais ordenadas por conjuntos de classes de altura}{41}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Octatonismo e suas parti\IeC {\c c}\IeC {\~o}es}{42}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Modalismo e estrat\IeC {\'e}gias rotacionais}{42}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Rota\IeC {\c c}\IeC {\~a}o Pentat\IeC {\^o}nica}{43}{subsection.2.6.1}
+\contentsline {section}{\numberline {2.7}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{44}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Limites e ideias a partir de analise tonal funcional}{45}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Acompanhamento e textura}{46}{subsection.2.7.2}
+\contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}\IeC {\~o}es Computacionais}}{47}{part.2}
+\contentsline {section}{\numberline {2.8}Analise de Corpus}{49}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Formatos de entrada}{49}{subsection.2.8.1}
+\contentsline {section}{\numberline {2.9}Music21}{49}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Stream}{50}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Notas, Acordes e nomenclaturas}{50}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.3}Prolongamentos e infer\IeC {\^e}ncia de tonalidade}{50}{subsection.2.9.3}
+\contentsline {subsection}{\numberline {2.9.4}Key Profiles}{50}{subsection.2.9.4}
+\contentsline {subsection}{\numberline {2.9.5}Escalas e Modalismo}{50}{subsection.2.9.5}
+\contentsline {subsection}{\numberline {2.9.6}Contorno melodico}{50}{subsection.2.9.6}
+\contentsline {subsection}{\numberline {2.9.7}Metrica composta}{50}{subsection.2.9.7}
+\contentsline {subsection}{\numberline {2.9.8}Acento Melodico}{50}{subsection.2.9.8}
+\contentsline {subsection}{\numberline {2.9.9}Busca e extra\IeC {\c c}ao de padroes}{50}{subsection.2.9.9}
+\contentsline {section}{\numberline {2.10}OpenMusic}{50}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Visualiza\IeC {\c c}\IeC {\~a}o das classes de altura}{50}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}Manipula\IeC {\c c}\IeC {\~a}o de Conjuntos e suas nomenclaturas}{50}{subsection.2.10.2}
+\contentsline {subsection}{\numberline {2.10.3}Crivos como estrat\IeC {\'e}gia para de ciclos intervalares}{50}{subsection.2.10.3}
+\contentsline {subsection}{\numberline {2.10.4}Segmenta\IeC {\c c}\IeC {\~a}o Monitorada}{50}{subsection.2.10.4}
+\contentsline {section}{\numberline {2.11}Especialidade da automa\IeC {\c c}\IeC {\~a}o versus especialidade do analista}{50}{section.2.11}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}}{47}{chapter.3}
-\contentsline {section}{\numberline {3.1}Cliches generativos partituraveis}{47}{section.3.1}
-\contentsline {section}{\numberline {3.2}Formatos de sa\IeC {\'\i }da}{47}{section.3.2}
-\contentsline {section}{\numberline {3.3}Tecnicas em Music21}{47}{section.3.3}
-\contentsline {section}{\numberline {3.4}Experimentos em outras linguagens de CAC}{47}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Tecnicas em OpenMusic}{47}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Problematiza\IeC {\c c}\IeC {\~o}es em PureData}{47}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Probabilidade e Combinat\IeC {\'o}ria}{47}{section.3.5}
-\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Experimentos Generativos}}{49}{part.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}}{51}{chapter.3}
+\contentsline {section}{\numberline {3.1}Cliches generativos partituraveis}{51}{section.3.1}
+\contentsline {section}{\numberline {3.2}Formatos de sa\IeC {\'\i }da}{51}{section.3.2}
+\contentsline {section}{\numberline {3.3}Tecnicas em Music21}{51}{section.3.3}
+\contentsline {section}{\numberline {3.4}Experimentos em outras linguagens de CAC}{51}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Tecnicas em OpenMusic}{51}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Problematiza\IeC {\c c}\IeC {\~o}es em PureData}{51}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Probabilidade e Combinat\IeC {\'o}ria}{51}{section.3.5}
+\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Experimentos Generativos}}{53}{part.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {CosmoBagatellas}}{51}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {CosmoBagatellas}}{55}{chapter.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Lastros e Rumos}}{53}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Lastros e Rumos}}{57}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{55}{section*.12}
+\contentsline {chapter}{Refer\^encias}{59}{section*.12}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{59}{section*.13}
+\contentsline {part}{\uppercase {Ap\^endices}}{63}{section*.13}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}}{61}{appendix.A}
-\contentsline {section}{\numberline {A.1}Vetor intervalar}{62}{section.A.1}
-\contentsline {section}{\numberline {A.2}Forma Normal}{62}{section.A.2}
-\contentsline {section}{\numberline {A.3}Forma Prima}{64}{section.A.3}
-\contentsline {section}{\numberline {A.4}Singularidades nos agrupamentos }{65}{section.A.4}
-\contentsline {subsection}{\numberline {A.4.1}Notas comuns sob transposi\IeC {\c c}\IeC {\~a}o}{66}{subsection.A.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Simetria Transpositiva}{67}{subsection.A.4.2}
-\contentsline {subsection}{\numberline {A.4.3}Complemento}{68}{subsection.A.4.3}
-\contentsline {subsection}{\numberline {A.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{69}{subsection.A.4.4}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}}{65}{appendix.A}
+\contentsline {section}{\numberline {A.1}Vetor intervalar}{66}{section.A.1}
+\contentsline {section}{\numberline {A.2}Forma Normal}{66}{section.A.2}
+\contentsline {section}{\numberline {A.3}Forma Prima}{68}{section.A.3}
+\contentsline {section}{\numberline {A.4}Singularidades nos agrupamentos }{69}{section.A.4}
+\contentsline {subsection}{\numberline {A.4.1}Notas comuns sob transposi\IeC {\c c}\IeC {\~a}o}{70}{subsection.A.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Simetria Transpositiva}{71}{subsection.A.4.2}
+\contentsline {subsection}{\numberline {A.4.3}Complemento}{72}{subsection.A.4.3}
+\contentsline {subsection}{\numberline {A.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{73}{subsection.A.4.4}
 \vspace {\cftbeforechapterskip }
