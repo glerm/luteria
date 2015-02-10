@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  10 FEB 2015 01:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  10 FEB 2015 02:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1470,8 +1470,8 @@ File: octa/octaOM.png Graphic file (type png)
 <use octa/octaOM.png>
 Package pdftex.def Info: octa/octaOM.png used on input line 1113.
 (pdftex.def)             Requested size: 361.3491pt x 191.2139pt.
- [43 <./octa/octaOM.png>] [44]
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1151
+ [43 <./octa/octaOM.png>] [44] [45]
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1174
 \T1/lmr/m/n/12 (+20) Pen-tatô-nica: $\OML/lmm/m/it/12 C \OMS/lmsy/m/n/12 ^^@ \O
 ML/lmm/m/it/12 D \OMS/lmsy/m/n/12 ! \OT1/lmr/m/n/12 (+20) [??] \OMS/lmsy/m/n/12
  ^^@ \OML/lmm/m/it/12 E \OMS/lmsy/m/n/12 ^^@ \OML/lmm/m/it/12 G \OMS/lmsy/m/n/1
@@ -1481,7 +1481,7 @@ $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1151
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1174
 \T1/lmr/m/n/12 (+20) ******Lí-dio: $\OML/lmm/m/it/12 C \OMS/lmsy/m/n/12 ^^@ \OM
 L/lmm/m/it/12 D \OMS/lmsy/m/n/12 ! \OT1/lmr/m/n/12 (+20) [$\T1/lmr/m/n/12 (+20)
  F#$\OT1/lmr/m/n/12 (+20) ] \OMS/lmsy/m/n/12 ^^@ \OML/lmm/m/it/12 E \OMS/lmsy/m
@@ -1492,7 +1492,7 @@ lmsy/m/n/12 ^^@ \OT1/lmr/m/n/12 (+20) (\OML/lmm/m/it/12 :::\OT1/lmr/m/n/12 (+20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1151
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1174
 \T1/lmr/m/n/12 (+20) **Mi-xo-lí-dio: $\OML/lmm/m/it/12 C \OMS/lmsy/m/n/12 ^^@ \
 OML/lmm/m/it/12 D \OMS/lmsy/m/n/12 ! \OT1/lmr/m/n/12 (+20) [\OML/lmm/m/it/12 F\
 OT1/lmr/m/n/12 (+20) ] \OMS/lmsy/m/n/12 ^^@ \OML/lmm/m/it/12 E \OMS/lmsy/m/n/12
@@ -1503,24 +1503,20 @@ OT1/lmr/m/n/12 (+20) ] \OMS/lmsy/m/n/12 ^^@ \OML/lmm/m/it/12 E \OMS/lmsy/m/n/12
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1151
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1174
 
  []
 
-[45]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46]
-[47] [48
+[46] [47] [48
 
 ] [49] [50]
-Underfull \hbox (badness 10000) in paragraph at lines 1265--1265
+Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
  [] [] [][][][]$\T1/lmr/m/n/10 (+20) <[]http : / / web . mit . edu / music21 / 
 doc / moduleReference / moduleChord . html ? #music21 . chord . Chord .
  []
 
 
-LaTeX Warning: Reference `perfiltonal' on page 51 undefined on input line 1265.
+LaTeX Warning: Reference `perfiltonal' on page 51 undefined on input line 1288.
 
 
 
@@ -1551,47 +1547,47 @@ bibitemlist
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 1377.
+(hyperref)                removing `\uppercase' on input line 1400.
 
 [65
 
 ] [66]
 
-LaTeX Warning: Reference `solfejo' on page 67 undefined on input line 1382.
+LaTeX Warning: Reference `solfejo' on page 67 undefined on input line 1405.
 
-<algo/equivalencia_inversa.png, id=1554, 1170.3725pt x 239.89626pt>
+<algo/equivalencia_inversa.png, id=1557, 1170.3725pt x 239.89626pt>
 File: algo/equivalencia_inversa.png Graphic file (type png)
 
 <use algo/equivalencia_inversa.png>
-Package pdftex.def Info: algo/equivalencia_inversa.png used on input line 1391.
+Package pdftex.def Info: algo/equivalencia_inversa.png used on input line 1414.
 
 (pdftex.def)             Requested size: 351.11446pt x 71.96942pt.
  [67
 
  <./algo/equivalencia_inversa.png>]
-<OM_settheory/vetor02410.png, id=1560, 262.9825pt x 121.45375pt>
+<OM_settheory/vetor02410.png, id=1563, 262.9825pt x 121.45375pt>
 File: OM_settheory/vetor02410.png Graphic file (type png)
 
 <use OM_settheory/vetor02410.png>
-Package pdftex.def Info: OM_settheory/vetor02410.png used on input line 1408.
+Package pdftex.def Info: OM_settheory/vetor02410.png used on input line 1431.
 (pdftex.def)             Requested size: 157.7907pt x 72.87279pt.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 1419.
+LaTeX Warning: Command \~ invalid in math mode on input line 1442.
 
-<OM_settheory/reducao_acorde.png, id=1561, 292.09125pt x 396.48125pt>
+<OM_settheory/reducao_acorde.png, id=1564, 292.09125pt x 396.48125pt>
 File: OM_settheory/reducao_acorde.png Graphic file (type png)
 
 <use OM_settheory/reducao_acorde.png>
-Package pdftex.def Info: OM_settheory/reducao_acorde.png used on input line 146
-0.
+Package pdftex.def Info: OM_settheory/reducao_acorde.png used on input line 148
+3.
 (pdftex.def)             Requested size: 204.46246pt x 277.53497pt.
  [68 <./OM_settheory/vetor02410.png>]
-<OM_settheory/forma_normal.png, id=1566, 480.79625pt x 405.515pt>
+<OM_settheory/forma_normal.png, id=1569, 480.79625pt x 405.515pt>
 File: OM_settheory/forma_normal.png Graphic file (type png)
 
 <use OM_settheory/forma_normal.png>
-Package pdftex.def Info: OM_settheory/forma_normal.png used on input line 1473.
+Package pdftex.def Info: OM_settheory/forma_normal.png used on input line 1496.
 
 (pdftex.def)             Requested size: 336.55507pt x 283.85855pt.
 
@@ -1602,74 +1598,74 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [69 <./OM_settheory/reducao_acorde.png>]
-<OM_settheory/forma_prima_forte_vector.png, id=1578, 424.58624pt x 579.16376pt>
+<OM_settheory/forma_prima_forte_vector.png, id=1581, 424.58624pt x 579.16376pt>
 File: OM_settheory/forma_prima_forte_vector.png Graphic file (type png)
 <use OM_settheory/forma_prima_forte_vector.png>
 Package pdftex.def Info: OM_settheory/forma_prima_forte_vector.png used on inpu
-t line 1488.
+t line 1511.
 (pdftex.def)             Requested size: 297.20834pt x 405.41187pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `perle1991serial' on page 70 undefined on input line 14
-96.
+LaTeX Warning: Citation `perle1991serial' on page 70 undefined on input line 15
+19.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [70 <./OM_settheory/forma_normal.png>] [71 <./OM_settheory/forma_prima_forte_v
-ector.png>] <OM_settheory/notas_comuns_2e10.png, id=1595, 378.41376pt x 302.128
+ector.png>] <OM_settheory/notas_comuns_2e10.png, id=1598, 378.41376pt x 302.128
 75pt>
 File: OM_settheory/notas_comuns_2e10.png Graphic file (type png)
 
 <use OM_settheory/notas_comuns_2e10.png>
 Package pdftex.def Info: OM_settheory/notas_comuns_2e10.png used on input line 
-1508.
+1531.
 (pdftex.def)             Requested size: 264.88782pt x 211.48868pt.
 
-<OM_settheory/notas_comuns_tritono.png, id=1596, 446.66875pt x 351.3125pt>
+<OM_settheory/notas_comuns_tritono.png, id=1599, 446.66875pt x 351.3125pt>
 File: OM_settheory/notas_comuns_tritono.png Graphic file (type png)
 
 <use OM_settheory/notas_comuns_tritono.png>
 Package pdftex.def Info: OM_settheory/notas_comuns_tritono.png used on input li
-ne 1522.
+ne 1545.
 (pdftex.def)             Requested size: 312.66599pt x 245.91707pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<OM_settheory/palindrome1.png, id=1597, 313.17pt x 354.32375pt>
+<OM_settheory/palindrome1.png, id=1600, 313.17pt x 354.32375pt>
 File: OM_settheory/palindrome1.png Graphic file (type png)
 
 <use OM_settheory/palindrome1.png>
-Package pdftex.def Info: OM_settheory/palindrome1.png used on input line 1539.
+Package pdftex.def Info: OM_settheory/palindrome1.png used on input line 1562.
 (pdftex.def)             Requested size: 187.90344pt x 212.59589pt.
  [72 <./OM_settheory/notas_comuns_2e10.png>]
-<OM_settheory/palindrome2.png, id=1602, 308.15125pt x 360.34625pt>
+<OM_settheory/palindrome2.png, id=1605, 308.15125pt x 360.34625pt>
 File: OM_settheory/palindrome2.png Graphic file (type png)
 
 <use OM_settheory/palindrome2.png>
-Package pdftex.def Info: OM_settheory/palindrome2.png used on input line 1549.
+Package pdftex.def Info: OM_settheory/palindrome2.png used on input line 1572.
 (pdftex.def)             Requested size: 184.89217pt x 216.20941pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [73 <./OM_settheory/notas_comuns_tritono.png> <./OM_settheory/palindrome1.png>]
-<OM_settheory/complemento.png, id=1606, 313.17pt x 329.23pt>
+<OM_settheory/complemento.png, id=1611, 313.17pt x 329.23pt>
 File: OM_settheory/complemento.png Graphic file (type png)
 
 <use OM_settheory/complemento.png>
-Package pdftex.def Info: OM_settheory/complemento.png used on input line 1564.
+Package pdftex.def Info: OM_settheory/complemento.png used on input line 1587.
 (pdftex.def)             Requested size: 187.90344pt x 197.53952pt.
  [74 <./OM_settheory/palindrome2.png> <./OM_settheory/complemento.png>]
-<OM_settheory/Z_related.png, id=1612, 480.79625pt x 367.3725pt>
+<OM_settheory/Z_related.png, id=1616, 480.79625pt x 367.3725pt>
 File: OM_settheory/Z_related.png Graphic file (type png)
 
 <use OM_settheory/Z_related.png>
-Package pdftex.def Info: OM_settheory/Z_related.png used on input line 1578.
+Package pdftex.def Info: OM_settheory/Z_related.png used on input line 1601.
 (pdftex.def)             Requested size: 336.55507pt x 257.15898pt.
 
 No file LUTERIA_2015janeiro.ind.
@@ -1682,11 +1678,11 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `LUTERIA_2015janeiro.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1619.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1619.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1642.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1642.
  (./LUTERIA_2015janeiro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1619.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1619.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1642.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1642.
 
 
 
@@ -1694,21 +1690,21 @@ Package rerunfilecheck Warning: File `LUTERIA_2015janeiro.brf' has changed.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `LUTERIA_2015janeiro.brf':
-(rerunfilecheck)             Before: 8E0A08FE4FCD0896D203C3D7DA00A0A7;6933
-(rerunfilecheck)             After:  CF14F533AD6A1070754F4E86067F82CB;6933.
+(rerunfilecheck)             Before: 6BC707B81D0F1C96E35C464CDF35FD66;7092
+(rerunfilecheck)             After:  03F6DF839D821E3EB986DD658B629FC7;7092.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1619.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1642.
  ) 
 Here is how much of TeX's memory you used:
- 16392 strings out of 494928
- 244231 string characters out of 6177930
- 495006 words of memory out of 5000000
- 18887 multiletter control sequences out of 15000+600000
+ 16393 strings out of 494928
+ 244241 string characters out of 6177930
+ 494793 words of memory out of 5000000
+ 18888 multiletter control sequences out of 15000+600000
  100187 words of font info for 167 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
  43i,13n,35p,1194b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1726,10 +1722,10 @@ are/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public
 exmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/l
 mss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmsy10.pfb>
-Output written on LUTERIA_2015janeiro.pdf (77 pages, 1199333 bytes).
+Output written on LUTERIA_2015janeiro.pdf (77 pages, 1201809 bytes).
 PDF statistics:
- 1972 PDF objects out of 2073 (max. 8388607)
- 1576 compressed objects within 16 object streams
+ 1976 PDF objects out of 2073 (max. 8388607)
+ 1580 compressed objects within 16 object streams
  259 named destinations out of 1000 (max. 500000)
  30973 words of extra memory for PDF output out of 35830 (max. 10000000)
 
