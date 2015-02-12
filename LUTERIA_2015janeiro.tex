@@ -385,18 +385,19 @@
 \begin{resumo}
 
 
-Esta pesquisa visa problematizar e sistematizar um catálogo de experimentos constituído de pequenas peças musicais e seus algoritmos geradores, objetivando a construção de uma biblioteca de objetos para composição assistida por computador que gere partituras baseadas em regras quantitativas extraídas de análises musicais.
+Esta pesquisa visa sistematizar um catálogo de experimentos constituído de pequenas peças musicais e seus algoritmos geradores, objetivando a construção de uma biblioteca de procedimentos para composição assistida por computador que gere partituras baseadas em regras derivadas de análises musicais de contexto pós-tonal.
 
-Formalizamos tais aspectos através de um estudo comparado de dois paradigmas de análise musical: \textit{"A Teoria Gerativa da Música Tonal"}\cite{lerdahl1983generative} com algumas de suas continuidades  \cite{lerdahl2009genesis,temperley2001cognition} e a \textit{"Teoria de grupos das classes de alturas"\ (ou "Pitch Class Set Theory")}  \cite{forte1973structure,straus2004}.
+%Formalizamos tais aspectos através de um estudo comparado de dois paradigmas de análise musical: \textit{"A Teoria Gerativa da Música Tonal"}\cite{lerdahl1983generative} com algumas de suas continuidades  \cite{lerdahl2009genesis,temperley2001cognition} e a \textit{"Teoria de grupos das classes de alturas"\ (ou "Pitch Class Set Theory")}  \cite{forte1973structure,straus2004}.
 
-Os procedimentos são demonstrados a partir de aspectos singulares de algumas peças da suíte Mikrokosmos do compositor Béla Bartók, gerando composições algorítmicas a partir das regras observadas. Este repertório foi escolhido devido a seu reconhecido contexto como composições pianísticas e pedagógicas situadas nas fronteiras da pós-tonalidade. 
+Os procedimentos são inspirados em apontamentos de estudos sobre pós-tonalidade no compositor Béla Bartók encontrados nas as obras de \citeonline{lendvai1971bela,antokoletz1984music,cohn1991bartok} e  \citeonline{suchoff2004bartok}. Enfatizamos a problematização de ciclos intervalares, eixos de simetria, polimodalismo e peculiaridades de coleções referenciais de classes de altura conforme sugestões de 
+\citeonline{forte1973structure, straus2004} e \citeonline{susanni_antokoletz2012music}.
 
-Apontamos as limitações encontradas na aplicação dos paradigmas analíticos adotados aqui no contexto da suíte de peças escolhidas e suas derivações composicionais.
+Detalhamos questões computacionais para esta implementação utilizando como base as ferramentas OpenMusic e biblioteca python de musicologia assistida por computador Music21. 
 
-Detalhamos questões computacionais para esta implementação e deixamos um legado de código aberto para continuidades possíveis deste trabalho.
+Deixamos um legado em código aberto para continuidades possíveis deste trabalho.
 
 
- \textbf{Palavras-chaves}: Música algorítmica. Pós-tonalismo. Teoria dos conjuntos. Pitch class theory. Luteria. Composição assistida por computador. Cibernética. Software livre. Cognição musical. Teoria Gerativa da Música Tonal. Mikrokosmos. Arte Sonora.
+ \textbf{Palavras-chaves}: Música algorítmica. Pós-tonalismo. Teoria dos conjuntos. Pitch class theory. Luteria. Composição assistida por computador. Musicologia assistida por computador. Open Music. Music21 Software livre. Bela Bartók.
 \end{resumo}
 
 %%%%%%%%%% traduçoes resumo
@@ -497,43 +498,42 @@ Detalhamos questões computacionais para esta implementação e deixamos um lega
 % Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
 % ----------------------------------------------------------
 
-Este trabalho inicia-se com 
 
-\chapter*[Introdução]{Introdução}
-\addcontentsline{toc}{chapter}{Introdução}
 
-lalalala
+%\chapter*[Introdução]{Introdução}
+%\addcontentsline{toc}{chapter}{Introdução}
+
+
 
 
 \part{Percurso pela Analise Musical }
 
 
-\chapter{Percurso pela Analise Musical}
+%\chapter{Percurso pela Analise Musical}
 
-Prioridade na descrição de métodos da biblioteca music21
+%Prioridade na descrição de métodos da biblioteca music21
+%Opção por Python http://spectrum.ieee.org/computing/software/top-10-programming-languages 
 
-Opção por Python http://spectrum.ieee.org/computing/software/top-10-programming-languages 
 
-
-\section{Análise musical para regras gerativas }
+%\section{Análise musical para regras gerativas }
 
 dfdkjsfsk
 
 
-\section{Musicologia Assistida por computador}
+%\section{Musicologia Assistida por computador}
 
 
 
-Iniciamos esta pesquisa buscando entender como o percurso que as formalizações computacionais de elementos básicos da cognição musical permitiram o atual estágio da musicologia assistida por computador. Trabalhos como as primeiras tentativas de definir gramáticas computáveis de Curtis \citeonline{roads1979grammars}, a formalização de uma gramática gerativa da música tonal proposta por \citeonline{lerdahl1983generative} e derivações que geraram implementações computacionais como as pesquisas de \citeonline{temperley2001cognition} e \citeonline{huron2006sweet} nos interessaram e pareceram a princípio essenciais como base para o entendimento de algoritmos de segmentação de estruturas musicais observáveis em partituras e arquivos de corpus derivados de instruções composicionais simbólicas.
+%Iniciamos esta pesquisa buscando entender como o percurso que as formalizações computacionais de elementos básicos da cognição musical permitiram o atual estágio da musicologia assistida por computador. Trabalhos como as primeiras tentativas de definir gramáticas computáveis de Curtis \citeonline{roads1979grammars}, a formalização de uma gramática gerativa da música tonal proposta por \citeonline{lerdahl1983generative} e derivações que geraram implementações computacionais como as pesquisas de \citeonline{temperley2001cognition} e \citeonline{huron2006sweet} nos interessaram e pareceram a princípio essenciais como base para o entendimento de algoritmos de segmentação de estruturas musicais observáveis em partituras e arquivos de corpus derivados de instruções composicionais simbólicas.
 
-No entanto percebemos no decorrer de nosso aprofundamento nesta bibliografia específica que descrever todo seu escopo em profundidade e abrangência apresentava duas questões essenciais de prioridades para o presente trabalho, considerndo o caso da teoria pós-tonal almejada aqui e em especial para as particularidades presentes na música de Bela Bartók que pudessem interessar como singularidade composicional: 
+%No entanto percebemos no decorrer de nosso aprofundamento nesta bibliografia específica que descrever todo seu escopo em profundidade e abrangência apresentava duas questões essenciais de prioridades para o presente trabalho, considerndo o caso da teoria pós-tonal almejada aqui e em especial para as particularidades presentes na música de Bela Bartók que pudessem interessar como singularidade composicional: 
 
 
-1) As abordagens generalistas dos problemas quantizáveis de expectativa musical com base em pesquisas sobre cognição e fruição da linguagem tonal, uma música de tradição clássica e romântica ocidental, repertório referido como "de prática comum"\footnote{c.f. temprley} e seus problemas de ordem métrica, rítmica, melódica, harmônica e prolongacional\footnote{tradição shenkeriana} quase sempre tangenciam a música que interessa na presente pesquisa como uma exceção especializada das regras gerais, o que nos chamou a atenção para quais seriam as alternativas a uma abordagem que partisse de outros princípios. 
+%1) As abordagens generalistas dos problemas quantizáveis de expectativa musical com base em pesquisas sobre cognição e fruição da linguagem tonal, uma música de tradição clássica e romântica ocidental, repertório referido como "de prática comum"\footnote{c.f. temprley} e seus problemas de ordem métrica, rítmica, melódica, harmônica e prolongacional\footnote{tradição shenkeriana} quase sempre tangenciam a música que interessa na presente pesquisa como uma exceção especializada das regras gerais, o que nos chamou a atenção para quais seriam as alternativas a uma abordagem que partisse de outros princípios. 
 
-Encontramos então na literatura específica das análises do repertório bartokiano e na literatura que funda algums nomenclaturas da análise pós-tonal um ponto de partida mais objetivo: organização de sonoridades por novos critérios de organização intervalar, casos de observação de simetrias, ciclos transposições e transformações destes materiais e a busca por descrições de outras lógicas de encadeamento deste material intervalar e sua relação com as percepções mais básicas que ainda operam o lstro de expectativa tonal
+%Encontramos então na literatura específica das análises do repertório bartokiano e na literatura que funda algums nomenclaturas da análise pós-tonal um ponto de partida mais objetivo: organização de sonoridades por novos critérios de organização intervalar, casos de observação de simetrias, ciclos transposições e transformações destes materiais e a busca por descrições de outras lógicas de encadeamento deste material intervalar e sua relação com as percepções mais básicas que ainda operam o lstro de expectativa tonal
 
-2) Dado o período de quase quatro décadas das primeiras implementações destes algoritmos de segmentação musical temos atualmente um cenário bastante amplo para testar muitas destas teorias e buscar compreende-las a mperlepartir de uma experiência prática. Alguns dos algoritmos implementados por Temperley, Huron e pesquisas similares podem ser experimentados com a biblioteca python Music21, que foi usada em nossos estudos de caso. Consideramos esta uma melhor estratégia fazer as digressões sobre as origens destes algoritmos a partir destas implementações, seus usos e limitações na presente pesquisa, portanto.
+%2) Dado o período de quase quatro décadas das primeiras implementações destes algoritmos de segmentação musical temos atualmente um cenário bastante amplo para testar muitas destas teorias e buscar compreende-las a mperlepartir de uma experiência prática. Alguns dos algoritmos implementados por Temperley, Huron e pesquisas similares podem ser experimentados com a biblioteca python Music21, que foi usada em nossos estudos de caso. Consideramos esta uma melhor estratégia fazer as digressões sobre as origens destes algoritmos a partir destas implementações, seus usos e limitações na presente pesquisa, portanto.
 
 
 
@@ -984,13 +984,13 @@ O argumento de Cohn é de que além da questão simétrica há uma prioridade de
 
 \subsection{Centricidade por Equilíbrio Inversivo}
 
-\citeonline{straus2004} cita o exemplo
 
+\begin{citacao}
 Às vezes a idéia do equilíbrio inversivo em torno de um eixo pode afetar mais do que
 apenas um único conjunto de classe de notas ou grupo de conjuntos. Ela pode expandir-se
 para abranger todas as doze classes de notas. Nesse caso, cada classe de notas mapeia-se
 em outra (ou nela mesma) em torno de algum eixo. A Bagatela, Op. 6, No 2, de Bartók,
-começa com notas Láb e Sib repetidas na mão direita (ver o Exemplo 4–14).
+começa com notas Láb e Sib repetidas na mão direita.
 
 Uma melodia começa no compasso 3 em Sin, um semitom acima da figura repetida, e
 então continua com Sol, um semitom abaixo da figura repetida. Depois vem Dó e Solb
@@ -998,9 +998,9 @@ então continua com Sol, um semitom abaixo da figura repetida. Depois vem Dó e 
 semitons acima e abaixo), e finalmente Mib, uma classe de notas que está cinco semitons
 tanto acima quanto abaixo. A única classe de notas que não foi ouvida é Lá, que está
 justamente no meio da figura repetida, um tipo de centro silencioso em torno do qual tudo
-se equilibra (ver a Figura 4–8).
+se equilibra.
 \cite[ p.121]{straus2004}
-
+\end{citacao}
 
 
 
@@ -1020,63 +1020,29 @@ Como proposta para entender coerências macroestruturais para as simetrias na m�
 
 Funciona como um  agregado sonoro que cria uma expectativa de equidistância de uma nota central em um grupo de intervalos - seja uma sequencia de notas em forma melódica ou um cluster vertical. 
 
-Por exemplo: { Db3, C4, B4} possuem entre si as distancias [-11 ,0 ,11 ] se considerarmos o C4 como um centro, mas se usarmos o mesmo agrupamento dentro de uma única oitava {Db4-C4-B4} teremos as distâncias [ -1, 0, 11] onde apesar de podermos considerar os intervalos [1,11] inversivamente equivalentes por inversão\footnote{Com base nas "teorias de grupos das classes de altura".} não teremos esta sonoridade de equidistância dentro de um eixo de 22 semitons, que funcionaria como um eixo estratégico na composição dos jogos simétricos de um peça que use a simetria literal. 
+Por exemplo: { Db3, C4, B4} possuem entre si as distancias [-11 ,0 ,11 ] se considerarmos o C4 como um centro, mas se usarmos o mesmo agrupamento dentro de uma única oitava {Db4-C4-B4} teremos as distâncias [ -1, 0, 11] onde apesar de podermos considerar os intervalos [1,11] inversivamente equivalentes por inversão\footnote{Com base nas "teorias de grupos das classes de altura".} não teremos esta sonoridade de equidistância dentro de um eixo de 22 semitons. Planeja-se então uma equidistância que leve em conta todo âmbito de oitavas usadas na peça.
 
-Bernard localiza no ensaio "Problems of New Music" do proprio Bartók com o nome de \textit{\textbf{"simetria em espelho"}}.
+Bernard aponta escritos do próprio Bartók no ensaio "Problems of New Music" como evidência do procedimento. Bartók chamaria de \textit{\textbf{"simetria em espelho"}}.
 
 
-figuras da  \cite[p. 187]{bernard1986space}
-
-\citeonline[p. 189]{bernard1986space} localiza um exemplo aplicado no Concerto n.2 para piano e Orquestra de Bartok uma estrutura de construção de simetrias por alternancia de tons e semitons ao longo de um registro que vai de F4 descendo a C0 nos 5 primeiros compassos e de C5 a Eb0 nos compassos de 6 a 8.
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} Alguns dos acordes de "simetria em espelho" apontados por Bartók e citados por \citeonline[p. 189]{bernard1986space}}
+	\begin{center}
+	    \includegraphics[scale=0.5]{axis/simetria_literal.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
 
 A peça Mikrokosmos n.141 já sugere o procedimento no próprio título "Sujeito e Reflexão".
 
+\begin{citacao}
 The piece consists of a series of short sections, each of which is symmetrical about a single
 pitch or a pair of pitches one or more octaves apart.\cite[p. 187]{bernard1986space}
-
 Closely related to parallel and mirror symmetry respectively are replica-
 tion and inversion. The only difference is that replication and inversion are
 better suited to describing order of events, in which a given configuration
 may be said to give rise to another.\cite[p. 190]{bernard1986space}
-
-
-simetria por eixo em sonata para 2 pianos \cite[p. 195-198]{bernard1986space}
-
-
-
-"simetria inversiva"
-"combinação transposicional"
-\cite{cohn1988inversional}
-
-One senses in Bart6k's total output an all-encompassing
-system of pitch-relations. The present study is intended to demonstrate that
-Bart6k's music is indeed based on such a system.... Pitch relations
-in Bart6k's music are primarily
-based on the principle of equal subdi-
-visions of the octave into the total complex of interval cycles. The fun-
-this equal-division
-damental concept underlying
-system is that of sym-
-metry.
-
-
-Bartók clearly favored the fifteen inversionally
-symmetric tetrachord-classes, in particular those thirteen which
-are capable of being realized as symmetric four note pitch-sets.
-(The two exceptions are 4-6 [0127] and 4-24 [0248].) The thir-
-teen include 4-1 [0123], 4-21 [0246], and 4-9 [0167], which figure
-prominently in the writings of Perle and Antokoletz, where
-they are called X, Y, and Z cells; 4-17 [0347], Lendvai's
-"gamma" chord;11 and 4-3 [0134] and 4-10 [0235], the half-
-octatonic tetrachords discussed by Berry.
-
-
-
-
-
-
-
-
+\end{citacao}
 
 
 
@@ -1092,6 +1058,31 @@ It was, of course, Allen Forte who in the USA pioneered the analytical with a ta
 
 Para uma introdução resumida da terminologia da T.C.C.A. sugerimos a consulta do Apêndice do presente trabalho e dos patches de OpenMusic disponibilizados para sua demonstração. Para uma introdução mais aprofundada que serviu como referência aqui sugerimos a tradução brasileira do livro de \citeonline{straus2004} e os trabalhos originais de \citeonline{forte1973structure} e \citeonline{rahn1980basic}.
 
+\begin{citacao}
+Bartók clearly favored the fifteen inversionally
+symmetric tetrachord-classes, in particular those thirteen which
+are capable of being realized as symmetric four note pitch-sets.
+(The two exceptions are 4-6 [0127] and 4-24 [0248].) The thir-
+teen include 4-1 [0123], 4-21 [0246], and 4-9 [0167], which figure
+prominently in the writings of Perle and Antokoletz, where
+they are called X, Y, and Z cells; 4-17 [0347], Lendvai's
+"gamma" chord;11 and 4-3 [0134] and 4-10 [0235], the half-
+octatonic tetrachords discussed by Berry.
+\cite{cohn1988inversional}
+\end{citacao}
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} Simetrias em coleções referenciais citadas por cohn}
+	\begin{center}
+	    \includegraphics[scale=0.5]{axis/colecoes_simetricas.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+\pagebreak
+
+
+
 Observamos a seguir um exemplo de análise de inspiração na T.C.C.A. que utiliza como base discussões sobre a coleção referencial octatônica - grupos de oito intervalos separados entre duas oitavas por uma sequencia não-diatônica que intercala tom e semitom, gerando propriedades curiosas e de bastante uso na música de Bartók e no repertório pós-tonal em geral.
 
 
@@ -1100,6 +1091,17 @@ Observamos a seguir um exemplo de análise de inspiração na T.C.C.A. que utili
 \subsection{Octatonismo e suas partições}
 
 Richard \citeonline{cohn1991bartok} propõe em seu artigo \textit{"Bartók's octatonic strategies: a motivic approach"}\ uma abordagem que utiliza a nomenclatura dos conjuntos de classes de altura propostas por Allen \citeonline{forte1973structure} na tentativa de construir um discurso sobre as coleções de sonoridades em Bartók que articule com uma continuidade das tradições analíticas.
+
+Cohn aponta também a importância do conceito de simetria nestas estratégias composicionais:
+
+\begin{citacao}
+The present study is intended to demonstrate that
+Bartok's music is indeed based on such a system( simetria inversiva ). Pitch relations
+in Bartok's music are primarily based on the principle of equal subdivisions of the octave into the total complex of interval cycles. The fundamental concept underlying
+this equal-division system is that of symmetry. \cite{cohn1988inversional}
+\end{citacao}
+
+Cohn no entanto destaca o que chama de "combinação transpositiva" como uma observação a ser tomada na escolha das coleções simétricas.
 
 Considera importante sistematizar aspectos transpositivos, inversivos e relações intervalares com lastro na harmonia funcional. Para isso traça uma estratégia que parte do mapeamento de permutações da coleção octatônica separando desta também derivações de díades e tétrades pelo que chama de "grau de fertilidade"\cite[ p.268]{cohn1991bartok} - a capacidade do segmento em relacionar-se por transposição com outros grupos de mesma cardinalidade (mesmo número de elementos).
 
@@ -1135,8 +1137,6 @@ Sua forma prima é classificada como\textbf{ 8-28} na nomenclatura de \citeonlin
 Para isto parte de uma série de definições para o particionamento das coleções em subgrupos:
 
 \begin{itemize}
-
-
 \item Os subgrupos não devem compartilhar elementos;
 \item Subgrupos comparados devem possuir o mesmo número de elementos. 
 \item As partições de uma nota só não serão analisadas pelo formalismo.
@@ -1155,6 +1155,29 @@ Observando portanto as relações entre estas tétrades e díades é possível e
 
 
 Destacamos aqui em patch de OpenMusic as relações transpositivas das permutações internas na célula 4-9 ( 0167 , ou célula Z de antokoletz)
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} Aqui os três intervalos comuns para a rotação da octatônica que produz a célula Z}
+	\begin{center}
+	    \includegraphics[scale=0.5]{strategies/RotacionaZ.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+\lipsum[5]
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} Aqui os três intervalos comuns para a rotação da octatônica que produz a célula Z}
+	\begin{center}
+	    \includegraphics[scale=0.35]{strategies/strategieZCELL.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
 
 \section{Modalismo e estratégias rotacionais}
 
