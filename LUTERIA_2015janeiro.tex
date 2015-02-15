@@ -79,13 +79,22 @@
 %%%%%%%%%%% syntax highlight %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\usepackage{listings}
-\definecolor{maroon}{rgb}{0.5,0,0}
-\definecolor{darkgreen}{rgb}{0,0.5,0}
-\definecolor{deepblue}{rgb}{0,0,0.5}
-\definecolor{deepred}{rgb}{0.6,0,0}
-\definecolor{purple}{rgb}{0.5,0,0.5}
-\definecolor{deepgreen}{rgb}{0,0.5,0}
+\usepackage[procnames]{listings}
+
+\definecolor{keywords}{RGB}{255,0,90}
+\definecolor{comments}{RGB}{0,0,113}
+\definecolor{red}{RGB}{160,0,0}
+\definecolor{green}{RGB}{0,150,0}
+
+\lstset{language=Python, 
+basicstyle=\ttfamily\tiny, 
+keywordstyle=\color{keywords},
+commentstyle=\color{comments},
+stringstyle=\color{red},
+showstringspaces=false,
+frame=single, 
+identifierstyle=\color{green},
+procnamekeys={def,class}}
 
 
 
@@ -124,7 +133,7 @@
 \titulo{Luteria Composicional de algoritmos pós-tonais }
 \autor{Guilherme Rafael Soares}
 %\local{Brasil}
-\data{10 de julho de 2014, v0.6-Qualificação}
+\data{12 de fevereiro de 2015, v0.9-Defesa}
 \orientador{Prof. Dr. Daniel Quaranta}
 %\coorientador{Equipe \abnTeX}
 \instituicao{%
@@ -517,7 +526,6 @@ Deixamos um legado em código aberto para continuidades possíveis deste trabalh
 
 %\section{Análise musical para regras gerativas }
 
-dfdkjsfsk
 
 
 %\section{Musicologia Assistida por computador}
@@ -784,31 +792,25 @@ Ex: C-Eb-F\#-A com C resolvendo em Db-F-Ab ,
 	\legend{Fonte: autor }
 \end{figure}
 
-\lipsum[1]
-
-
-\begin{figure}[!h]
-	\caption{\label{fig_grafico}A resolução de uma coleção do ciclo de diminutas pela condução por nota sensível a um dos quatro acordes de resolução derivados   }
-	\begin{center}
-	    \includegraphics[scale=0.5]{ciclos/setimadominante.png}
-	\end{center}
-	\legend{Fonte: autor }
-\end{figure}
-
-\lipsum[3]
+..... inserir aqui resumo e comentários sobre transformações do ciclo de terças menores e terças maiores exemplificados nos patches e explicados em \citeonline[ p.23-25]{susanni_antokoletz2012music}
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}A resolução de uma coleção do ciclo de diminutas pela condução por nota sensível a um dos quatro acordes de resolução derivados   }
+	\caption{\label{fig_grafico}A resolução de uma coleção do ciclo de terças maiores pela condução por nota sensível a um dos quatro acordes de resolução derivados. Detalhes sobre o script gerador no Apêndice.   }
 	\begin{center}
 	    \includegraphics[scale=0.3]{ciclos/transpoe_triades_aumentadas.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
+\pagebreak
 
 
-
-
-
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}O ciclo de terças menores sendo usado para gerar uma dominante com sétima e sua resolução   }
+	\begin{center}
+	    \includegraphics[scale=0.5]{ciclos/setimadominante.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
 
 
 
@@ -1154,30 +1156,29 @@ Em seu levantamento de octacordes com maior grau de potencia e fertilidade \cite
 Observando portanto as relações entre estas tétrades e díades é possível encontrar todas relações transpositivas possíveis (de 1 a 6 semitons).
 
 
-Destacamos aqui em patch de OpenMusic as relações transpositivas das permutações internas na célula 4-9 ( 0167 , ou célula Z de antokoletz)
+Destacamos aqui em patch de OpenMusic as relações transpositivas das permutações internas na célula 4-9 ( 0167 , ou célula Z de antokoletz).
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico} Aqui os três intervalos comuns para a rotação da octatônica que produz a célula Z}
+	\caption{\label{fig_grafico} As permutações de díades internas a uma célula Z de Antokoletz, pode ser reduzida a três coleções intervalares de 1, 5 ou 6 semitons. Este patch de OM mede as combinações transpositivas para qualquer tétrade permutada podendo encontrar todas as relações da tabela de \citeonline[ p.271]{cohn1991bartok} }
 	\begin{center}
 	    \includegraphics[scale=0.5]{strategies/RotacionaZ.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
-
-
-\lipsum[5]
-
+Na figura abaixo temos em detalhes todas as permutações transpositivas do tetracorde.
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico} Aqui os três intervalos comuns para a rotação da octatônica que produz a célula Z}
+	\caption{\label{fig_grafico} Aqui conferimos os três intervalos comuns para a rotação da octatônica que produz a célula Z e todas suas transposições}
 	\begin{center}
 	    \includegraphics[scale=0.35]{strategies/strategieZCELL.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
+\subsection{Combinação transpositiva em Mikrokosmos 109}
 
+resumo e comentários sobre \cite[ 272-275]{cohn1991bartok}
 
 \section{Modalismo e estratégias rotacionais}
 
@@ -1292,19 +1293,22 @@ Aplicamos aqui os algoritmos de análise de harmonia funcional da biblioteca mus
 
 \subsection{Limites e ideias a partir de analise tonal funcional}
 
-comparação recente com algoritmo de key probing
+comparação com algoritmo de key probing
 \cite{cooper1998unfolding}
 
 
-usar analise comentario mikro 100 e 101 do paper 25bartokshenker limits
+usar analise e comentario sobre mikro 100 e 101 do paper 25bartokshenker limits
 \cite[ p.179]{brown1997iv}
 
-mikro101
+comentario de  mikro101 em strauss
 \cite[ p.113]{straus2004}
 
 \subsection{Acompanhamento e textura}
 
 \cite{starr1985melody}
+
+
+
 
 
 
@@ -1321,12 +1325,181 @@ mikro101
 
 \section{Music21}
 
-É uma biblioteca projetada para trabalhar com manipulação e análise de \textit{corpus} de arquivos partituráveis\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleCorpus.html} Acesso em 10 de julho de 2014.}. Prepara a conversão entre diversos arquivos de dados musicais (MIDIs, humdrum, lilypond, abc)\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleConverter.html} Acesso em 10 de julho de 2014.}, mas nativamente trabalha com uma estrutura de dados baseada em Music XML.
+É uma biblioteca projetada para trabalhar com manipulação e análise de \textit{corpus} de arquivos partituráveis\footnote{\url{http://goo.gl/ovMEl1} Acesso em 10 de julho de 2014.}. Prepara a conversão entre diversos arquivos de dados musicais (MIDIs, humdrum, lilypond, abc)\footnote{\url{http://goo.gl/K9GQ01} Acesso em 10 de julho de 2014.}, mas nativamente trabalha com uma estrutura de dados baseada em Music XML.
 
-Music21 tem uma abordagem voltada para uma "musicologia assistida por computador"\ e já tem incorporada em suas classes algumas ferramentas comuns a esta prática como: numeração de grau funcional de acorde\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleRoman.html} Acesso em 10 de julho de 2014.}, numeração de classes de altura usando a classificação de Allen Forte\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleChord.html?\#music21.chord.Chord.forteClassNumber} Acesso em 10 de julho de 2014.} e a implementação dos algoritmos de detecção de tonalidade\footnote{\url{http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisDiscrete.html} Acesso em 10 de julho de 2014.} elaborado por \citeonline{krumhansl1990cognitive} e aperfeiçoado por \citeonline{temperley2001cognition}, descritos nesta pesquisa.\footnote{\autoref{perfiltonal}}
+Music21 tem uma abordagem voltada para uma "musicologia assistida por computador"\ e já tem incorporada em suas classes algumas ferramentas comuns a esta prática como: numeração de grau funcional de acorde\footnote{\url{http://goo.gl/n1DgAN} Acesso em 10 de julho de 2014.}, numeração de classes de altura usando a classificação de Allen Forte\footnote{\url{http://goo.gl/Pkbcig}Acesso em 13 de fevereiro de 2015.} a implementação dos algoritmos de detecção de tonalidade\footnote{\url{http://goo.gl/vj8LyB} Acesso em 10 de julho de 2014.} elaborado por \citeonline{krumhansl1990cognitive} e aperfeiçoado por \citeonline{temperley2001cognition}, busca de padrões como transposições e inversões\footnote{\url{http://goo.gl/BrrLer}Acesso em 13 de fevereiro de 2015.} e outros.\footnote{{\url{http://goo.gl/ejiCMP}Acesso em 13 de fevereiro de 2015.}}
+
+
 
 \subsection{Stream}
 
+A biblioteca Music21 tem como uma das ideias básicas a estrutura de dados "Stream"(Fluxo). Este objeto funciona como uma subclasse da classe music21, os objetos quais a documentação\footnote{\url{http://goo.gl/lNMMLJ}Acesso em 13 de fevereiro de 2015.} refere-se  como "módulos". Um Stream irá conter dentro dele uma estrutura de dados semlhante a uma lista python, ordenando em sequencia os intrumentos, claves, assinaturas de compasso, notas, acordes, pausas, ornamentos.
+
+Para entender a estrutura de dados na prática, vejamos os procedimentos a seguir, demonstramos em um script Python\footnote{Para uma introdução básica ao Python a partir de uma perspectiva musical conferir \cite{Kroger201208} } comentado linha a linha mínimo como inserir um acorde dentro de um fluxo e renderizá-lo em uma partitura em pdf.
+
+\pagebreak
+
+ 
+\begin{lstlisting}
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+#Importando a biblioteca
+from music21 import *
+
+#Criando um objeto de fluxo 
+fluxo = stream.Stream()
+
+#Criando um objeto acorde
+acorde=chord.Chord(['C4','A4','E5'])
+
+#Adicionando o objeto acorde no inicio do fluxo
+fluxo.insert(0,acorde)
+
+#Renderizando em pdf
+fluxo.show('lily.pdf')
+\end{lstlisting}
+ 
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} A saída do teste em terminal cria um arquivo temporário em pdf com a renderização do Stream.}
+	\begin{center}
+	    \includegraphics[scale=0.3]{estudosM21/acorde01.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+O script insere um objeto acorde na posição zero do fluxo. Podemos perceber pela figura acima que por padrão a biblioteca renderizou a pauta em uma clave de sol com assinatura de compasso quatro por quatro. Em uma situação mais complexa obviamente temos muito mais pra pensar: teremos instrumentos de duas pautas como piano, ornamentos, texto, pautas com fórmulas de compasso diferentes, e assim por diante.
+
+Precisaremos separar as partes hierarquicamente, criando uma estrutura de dados em camadas, como vemos no exemplo mais complexo abaixo. 
+
+
+\begin{lstlisting}
+
+# Criamos um objeto score (partitura) para usar como fluxo
+partitura=stream.Score()
+
+# Separamos o fluxo em duas partes: duas pautas
+mao_esquerda=stream.PartStaff()
+mao_direita=stream.PartStaff()
+
+# Criamos os compassos para cada pauta 
+compasso1L=stream.Measure(number=1)
+compasso1R=stream.Measure(number=1)
+
+# Necessitamos formatar o layout do score para agrupar as duas pautas
+compasso1L.insert(0,layout.SystemLayout())
+compasso1L.insert(0,layout.StaffLayout(staffNumber=2))
+
+# Inserindo a clave, a formula de compasso, nota e acorde
+compasso1L.insert(0,clef.BassClef())
+compasso1L.insert(0,meter.TimeSignature('2/4'))
+compasso1L.insert(0,note.Note('F3'))
+compasso1L.insert(1,chord.Chord(['A2','E3','C4']))
+
+# Inserindo o compasso da pauta da mao esquerda na parte inferior
+mao_esquerda.insert(0,compasso1L)
+
+# Inserindo a clave, a formula de compasso, nota e pausa
+compasso1R.insert(0,layout.SystemLayout())
+compasso1R.insert(0,clef.TrebleClef())
+compasso1R.insert(0,meter.TimeSignature('2/4'))
+compasso1R.insert(0,note.Note('C5'))
+compasso1R.insert(1,note.Rest())
+
+# Inserindo o compasso da pauta da mao direita na parte superior
+mao_direita.insert(0,compasso1R)
+
+# Formatando a entrada das partes na camada de layout da partitura
+partitura.insert(0,mao_direita)
+partitura.insert(0,mao_esquerda)
+
+# Renderizando em PDF
+partitura.show('lily.pdf')
+\end{lstlisting}
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} Renderização da pauta de piano em compasso $2/4$} 
+	\begin{center}
+	    \includegraphics[scale=0.25]{estudosM21/pautaM21.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+Importante também destacar aqui que a proposta maior da biblioteca Music21 é a de servir como auxiliar em processos de análise de partituras. 
+
+Temos portanto uma série de procedimentos que permite que partituras formatadas exteriormente (em formatos como musicxml, abc, humdrum, midi, etc.) sejam carregadas e convertidas para a estrutura de dados da biblioteca, facilitando sua análise, manipulação e re-modelagem. 
+
+O script anterior obviamente pode ser encapsulado em uma função, utilizando recursividade e algumas outras funções presentes na biblioteca para evitar tanto código para cada compasso. 
+
+No entanto, mostramos dessa maneira passo a passo para que fique entendido que a formatação das partituras ocorre de maneira similar ao padrão xml de encapsulamento de dados: temos camadas dentro de camadas que vão da página de impressão até os acorde, notas, pausas e ornamentos.
+
+Vejamos abaixo como é feita a conversão de uma partitura salva no formato musicxml e como ela fica formatada dentro da estrutura de dados do Music21.
+
+\begin{lstlisting}
+>>> p=converter.parse('piano.xml')
+>>> p.show('text')
+
+{0.0} <music21.metadata.Metadata object at 0xb3f642c>
+{0.0} <music21.stream.PartStaff P1-Staff1>
+    {0.0} <music21.instrument.Instrument P1: Piano: Piano>
+    {0.0} <music21.stream.Measure 1 offset=0.0>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.clef.TrebleClef>
+        {0.0} <music21.key.KeySignature of no sharps or flats, mode major>
+        {0.0} <music21.meter.TimeSignature 2/4>
+        {0.0} <music21.note.Note C>
+        {1.0} <music21.note.Rest rest>
+        {2.0} <music21.bar.Barline style=final>
+{0.0} <music21.stream.PartStaff P1-Staff2>
+    {0.0} <music21.instrument.Instrument P1: Piano: Piano>
+    {0.0} <music21.stream.Measure 1 offset=0.0>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout staffNumber 2>
+        {0.0} <music21.clef.BassClef>
+        {0.0} <music21.key.KeySignature of no sharps or flats, mode major>
+        {0.0} <music21.meter.TimeSignature 2/4>
+        {0.0} <music21.note.Note F>
+        {1.0} <music21.chord.Chord A2 E3 C4>
+        {2.0} <music21.bar.Barline style=final>
+{0.0} <music21.layout.ScoreLayout>
+
+
+\end{lstlisting}
+
+O que vemos aqui é uma estrutura bastante similar a estrutura que geramos no script anterior. A impressão da estrutura dos dados facilita que enxerguemos a maneira aninhada com que os dados são inseridos em camadas dentro uns dos outros.
+
+Se analizarmos a partitura que esta alocada dentro da variável "p" como se fosse uma lista python comum, veremos que o que temos são listas dentro de listas, o que permite que usemos métodos comuns de iteração normalmente usados em python.
+
+\begin{lstlisting}
+>>> p[0]
+<music21.metadata.Metadata object at 0xb3f642c>
+>>> p[1]
+<music21.stream.PartStaff P1-Staff1>
+>>> p[2]
+<music21.stream.PartStaff P1-Staff2>
+>>> p[2][0]
+<music21.instrument.Instrument P1: Piano: Piano>
+>>> p[2][1]
+<music21.stream.Measure 1 offset=0.0>
+>>> p[2][1][0]
+<music21.layout.SystemLayout>
+
+>>> p[2][1][5]
+<music21.note.Note F>
+>>> p[2][1][6]
+<music21.chord.Chord A2 E3 C4>
+>>> acorde=p[2][1][6]
+>>> len(acorde)
+3
+
+<music21.note.Note A>
+<music21.note.Note E>
+<music21.note.Note C>
+>>> 
+\end{lstlisting}
+
+  
 
 \subsubsection{Notas, Acordes e nomenclaturas}
 
