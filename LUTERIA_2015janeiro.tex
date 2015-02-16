@@ -1469,7 +1469,7 @@ Vejamos abaixo como é feita a conversão de uma partitura salva no formato musi
 
 O que vemos aqui é uma estrutura bastante similar a estrutura que geramos no script anterior. A impressão da estrutura dos dados facilita que enxerguemos a maneira aninhada com que os dados são inseridos em camadas dentro uns dos outros.
 
-Se analizarmos a partitura que esta alocada dentro da variável "p" como se fosse uma lista python comum, veremos que o que temos são listas dentro de listas, o que permite que usemos métodos comuns de iteração normalmente usados em python.
+Se analisarmos a partitura que esta alocada dentro da variável "p" como se fosse uma lista python comum, veremos que o que temos são listas dentro de listas, o que permite que usemos métodos comuns de iteração normalmente usados em python.
 
 \begin{lstlisting}
 >>> p[0]
@@ -1490,18 +1490,81 @@ Se analizarmos a partitura que esta alocada dentro da variável "p" como se foss
 >>> p[2][1][6]
 <music21.chord.Chord A2 E3 C4>
 >>> acorde=p[2][1][6]
->>> len(acorde)
-3
 
+>>> for i in acorde:
+...     print i
+... 
 <music21.note.Note A>
 <music21.note.Note E>
 <music21.note.Note C>
->>> 
+
 \end{lstlisting}
 
   
-
+ 
 \subsubsection{Notas, Acordes e nomenclaturas}
+
+Como vemos no final do experimento acima o objeto acorde pode ser entendido no Music21 como uma lista de objetos nota. Das relações entre objetos nota é possível também extrair intervalos ou transpor notas individuais do acorde. É possível também aplicar transformações e inferências diretamente no objeto acorde.
+
+Alguns exemplos:
+
+\begin{lstlisting}
+
+# Iniciamos copiando um acorde menor normalizado em Do, usando a tabela de Forte(1973)
+>>> c=chord.fromForteClass('3-11')
+>>> c
+<music21.chord.Chord C E- G>
+
+# Necessitamos definir a oitava, caso contrario o acorde fica sempre no registro C4
+# o metodo 'closedPosition' coloca as notas em ordem crescente e mais proxima
+>>> c.closedPosition(forceOctave = 3, inPlace= True)
+>>> c
+<music21.chord.Chord C3 E-3 G3>
+
+# Criamos uma copia transposta do acorde, podemos utilizar nomes (abreviados)  
+#de intervalos como '6M' para sexta maior
+>>> a=c.transpose('6M')
+>>> a
+<music21.chord.Chord A3 C4 E4>
+
+# Temos um metodo para transformar ou inferir inversoes do acorde
+>>> a.inversion(1)
+>>> a
+<music21.chord.Chord C4 E4 A4>
+
+>>> a.inversion(2)
+>>> a
+<music21.chord.Chord E4 A4 C5>
+
+# Um acorde pode tambem ser inicizado com umas lista de notas e suas oitavas
+>>> A=chord.Chord(['A4','C#4','E4'])
+
+#Podemos inferir seu nome "comum", no caso das triades temos 
+#os nomes funcionais da harmonia tradicional
+>>> A.pitchedCommonName
+'A4-major triad'
+
+# E seu nome equivalente na tabela de Forte
+>>> A.forteClass
+'3-11B'
+
+# Podemos transpor notas especificas do acorde
+>>> a=chord.Chord([a[0],a[1].transpose(interval.Interval(-1)),a[2]])
+>>> a
+<music21.chord.Chord E6 G#6 C6>
+
+# Todas as cardinalidades da tabela de Forte estao presentes
+>>> o=chord.fromForteClass('8-28')
+<music21.chord.Chord C C# E- E F# G A B->
+# Lembrando que o bemol no Music21 e trocado de 'b' para '-' (ex: Eb fica E-) 
+
+# A forma prima fonece o valor dos intervalos em sua ordem crescente 
+#e normalizada a partir de zero
+>>> o.primeForm
+[0, 1, 3, 4, 6, 7, 9, 10]
+
+
+\end{lstlisting}
 
 
 \subsection{Prolongamentos e inferência de tonalidade}
