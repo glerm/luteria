@@ -1434,7 +1434,7 @@ O script anterior obviamente pode ser encapsulado em uma função, utilizando re
 
 No entanto, mostramos dessa maneira passo a passo para que fique entendido que a formatação das partituras ocorre de maneira similar ao padrão xml de encapsulamento de dados: temos camadas dentro de camadas que vão da página de impressão até os acorde, notas, pausas e ornamentos.
 
-Vejamos abaixo como é feita a conversão de uma partitura salva no formato musicxml e como ela fica formatada dentro da estrutura de dados do Music21.
+Vejamos abaixo como é feita a conversão de uma partitura com o mesmo conteúdo gerado anteriormente, mas desta vez criada em um editor de partituras e salva no formato musicxml\footnote{Editada no software livre Musescore.}. No script abaixo nós abrimos o arquivo dentro de um terminal Python e em seguida imprimimos para mostrar como ela fica formatada dentro da estrutura de dados do Music21.
 
 \begin{lstlisting}
 >>> p=converter.parse('piano.xml')
@@ -1582,6 +1582,10 @@ skill, that of determining local and global tonality. Indeed, it is because of i
 
 \subsubsection{Key Profiles}
 
+%explicando os key profiles
+\lipsum[2]
+
+
 \begin{lstlisting}
 >>> m=converter.parse('mikro041.xml')
 
@@ -1614,8 +1618,54 @@ skill, that of determining local and global tonality. Indeed, it is because of i
 \end{lstlisting}
 
 
-plotando2
+O módulo de análise\footnote{c.f. Código em \url{https://github.com/cuthbertLab/music21/blob/master/music21/analysis/discrete.py}. Acesso em 13 de Fevereiro de 2015.} de tonalidade do Music21 utiliza como padrão algoritmo de "Krumhansl-Schmuckler"\footnote{c.f. Discussão na mailing list do Music21 sobre o algoritmo em \url{https://groups.google.com/forum/\#!topic/music21list/lwamYR0o8To}. Acesso em 13 de Fevereiro de 2015.},     
+surgido em \textit{"Perceptual Structures of Tonal Music"}\ \cite{krumhansl1983perceptual} e aprofundado \textit{"Cognitive foundations of musical pitch"}\ \cite{krumhansl1990cognitive}.
 
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Perfis de tonalidade propostos por Carol \citeonline{krumhansl1983perceptual} - comparativo entre tonalidades próximas e distantes. }
+	\begin{center}
+	    \includegraphics[scale=0.4]{CBMS/probeones_krumhansl_p36.png}
+	\end{center}
+	\legend{Fonte: \cite[pg. 36]{krumhansl1990cognitive} }
+\end{figure}
+
+Carol Krumhansl e Mark Schmukler constroem um modelo matemático que chamam "perfis-tonais" ("tonal profiles") - histogramas que servem como uma referência\footnote{O histograma apresenta valores para uma escala cromática normalizada no contexto de Dó maior e Dó menor. Para ser transposto para outras tonalidades, basta rotacionar a ordem das alturas.} para calculo estatístico a partir de uma amostra de ouvintes pesquisados sobre a tendência a "adaptar"\ \cite[ p. 173]{temperley2001cognition} intuitivamente notas de uma escala cromática como ornamentos dentro de um determinado contexto tonal.
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Perfis de tonalidade propostos por Carol \citeonline{krumhansl1990cognitive} - histograma demonstrado por \citeonline{temperley2001cognition}. }
+	\begin{center}
+	    \includegraphics[scale=0.4]{CBMS/krumhansl_temperley_p174.png}
+	\end{center}
+	\legend{Fonte: \cite[pg. 174]{temperley2001cognition} }
+\end{figure}
+
+
+A fórmula funciona da seguinte maneira\footnote{c.f. uma prova real detalhada da fórmula original em \cite[p.37]{krumhansl1990cognitive} }:
+
+\scalebox{1.5}{%
+$
+r= 
+\frac{\sum{(x-\overline{x})(y-\overline{y})}}
+{\sqrt{ \sum{ (x-\overline{x})^2 } \sum{ (y-\overline{y})^2 } } }
+$
+}
+
+
+$ \left\{
+  \begin{array}{l l}
+x = valores\;individuais\;do\;histograma\;original \\
+\overline{x} = media\;de\;todos\;valores\;do\;histograma\;original \\
+y = valores\;de\;um\;histograma\;a\;ser\;comparado - retirado\;de\;trecho\;musical \\
+\overline{y} = media\;de\;todos\;os\;valores\;do\;histograma\;usado\;em\;y \\
+    
+  \end{array} \right.
+$
+
+
+%plotando
+\lipsum[1]
 
 \begin{lstlisting}
 >>> p = graph.PlotHistogramPitchClass(m)
@@ -1629,8 +1679,21 @@ plotando2
 
 \end{lstlisting}
 
-final
 
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} Pitch Space} 
+	\begin{center}
+	    \includegraphics[scale=0.4]{estudosM21/mikro041Pspace.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+
+
+\lipsum[3]
 
 \begin{lstlisting}
 
@@ -1678,19 +1741,83 @@ final
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico} Aplicação do algoritmo de cadência considerando a inferência de tonalidade Sol maior} 
+	\caption{\label{fig_grafico} Aplicação do algoritmo de análise graus de cadência em Mikrokosmos 109 considerando a inferência de tonalidade Sol maior detectada anteriormente.} 
 	\begin{center}
 	    \includegraphics[scale=0.25]{estudosM21/mikro041FinalChords.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
+\lipsum[3]
 
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} "Tonalidade" singular apontada por Bartók - a pauta contém um sustenido em C\# ao invés do F\# padrão para Sol maior: declaração de uma intenção polimodal em Mikrokosmos 41} 
+	\begin{center}
+	    \includegraphics[scale=0.4]{estudosM21/mikro041_inicio.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+\lipsum[4]
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} Distribuição das classes de altura durante toda composição revelam que apesar da composição estar polarizada em torno da nota Sol essa aparece menos que sua terça maior ( Si ) e sua quinta justa ( Ré ). } 
+	\begin{center}
+	    \includegraphics[scale=0.4]{estudosM21/mikro041Pclass.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+% sobre a sistribuição das classes de nota
+\lipsum[5]
 
 
 \subsubsection{Escalas e Modalismo}
 
-\subsubsection{Contorno melódico}
+%sobre  a importancia do pensamento modal, pentatonica e suas rotações
+\lipsum[6]
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}A sugestão de exercício das "escalas"\ de Mikrokosmos 109 na partitura original revela a saliência da sequencia de 2-2-2-1 intervalos de semitom a partir de Sol que remetem ao modo lídio. No entanto o Sol lídio teria que ter Fá sustenido: fica assim explícita a invenção de um modo derivado ou "polimodo". } 
+	\begin{center}
+	    \includegraphics[scale=0.3]{estudosM21/mikro041_exercicio.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+% sobre as vantagens de poder analisar os intervalos algoritmicamente - o humanamente possivel 
+
+\lipsum[7]
+
+%sobre  a importancia do pensamento modal, pentatonica e suas rotações
+
+No ínicio da melodia de Mikrokosmos 109 uma relação "quase"\ pentatônica polariza a emergência da nota Sol por sua ausência no intervalo pentatônico de 3-2-3 semitons que faria os passos Si-Ré-Mi-(Sol). A inserção dos semitons Fa e Dó\# funciona como um "resumo" das relações semitonais da polimodalismo da composição. A nota Sol nunca será usada na melodia, mas durante quase toda composição figura no baixo.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} Análise de contorno intervalar na melodia inicial de Mikrokosmos 109.  } 
+	\begin{center}
+	    \includegraphics[scale=0.3]{estudosM21/mikro041_contorno01.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+%sobre a evidenência da estratégia lídio - mixolídio no final
+
+\lipsum[8]
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}O final de Mikrokosmos 41 evidencia a sequencia de 2-2-2-1 semitons do modo Lídio. } 
+	\begin{center}
+	    \includegraphics[scale=0.3]{estudosM21/mikro041FinalChords_contorno.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+O final de Mikrokosmos 41 cita o clichê da sequencia de 2-2-2-1 semitons do modo Lídio e "resolve" o acorde de Sol maior sem o uso da sensível Fá\#, negando-se a uma evidência de tonalidade maior tradicional. A estratégia é pela condução da quinta justa Ré através dos passos Dó\# $\rightarrow $ Ré e Dó\# $\rightarrow $ Si mantendo-se em díade até que uma última entrada da nota Sol no baixo deixe uma impressão vaga de que havia uma intenção modal em torno do acorde de Sol maior 
+
+\subsubsection{Construçao de escalas, polimodos e crivos}
+
+\cite{ariza2011analytical}
 
 \subsection{Métrica composta}
 
