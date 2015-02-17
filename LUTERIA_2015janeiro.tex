@@ -1567,9 +1567,126 @@ Alguns exemplos:
 \end{lstlisting}
 
 
-\subsection{Prolongamentos e inferência de tonalidade}
+\subsection{Cadência e inferência de tonalidade}
+
+O Music21 fornece uma série de ferramentas para análise de harmonia funcional, incluindo algoritmos para sugerir grau cadencial (com o uso de numerais romanos) e de detecção de regras de contraponto na condução de vozes. Obviamente que para que tudo isso tenha um sentido estritamente tonal teríamos que estar analisando repertórios que se encaixam nos padrões da "prática comum"\cite[ p.354]{temperley2001cognition} podendo ater-se aos pequenos desvios da norma como invenção estilística dos compositores. Por outro lado, o uso deste tipo de ferramenta em repertórios pós-tonais pode tomar um sentido interessante. 
+
+Em seu artigo \textit{"The unfolding of tonality in the music of Bela Bartók"},\ David \citeonline{cooper1998unfolding} propõe a análise assistida por computador das \textit{"10 Easy Piano Pieces"} de Bartók. Após testar os mesmos algoritmos de detecção de tonalidade que usou para analisar as peças do \textit{"Cravo Bem Temperado"} de J. S. Bach, onde obteve uma aproximação muito satisfatória das análises conhecidas da obra, Cooper conclui que mesmo com alguns desvios previstos o procedimento ajuda o analista a inferir ideias sobre ambiguidade ou politonalidade em compositores pós-tonais como Bartók. Por ser independente de "estilo" o algoritmo poderia ajudar a revelar estruturas implícitas.
+
+\begin{citacao}
+Although in itself the algorithm is fundamentally musically ignorant, 'knowing' little about musical structure and nothing of aesthetics, it is able to simulate quite successfully one particular musical
+skill, that of determining local and global tonality. Indeed, it is because of its artlessness that it could form a useful tool in the analyst's repertoire, by providing a measure of tonality which is largely independent of 'style dependent' knowledge.\cite[ p.34-35]{cooper1998unfolding}
+\end{citacao}
+
+
 
 \subsubsection{Key Profiles}
+
+\begin{lstlisting}
+>>> m=converter.parse('mikro041.xml')
+
+# o metodo key do modulo analyze usa por padrao
+# o algoritmo de Krumhansl(1983)
+>>> ak = m.analyze('key')
+>>> ak
+<music21.key.Key of G major>
+>>> alt=ak.alternateInterpretations
+
+# o indice de zero a um de precisao para o criterio do algoritmo
+>>> ak.correlationCoefficient
+0.7569137256478474
+
+# podemos buscar interpretacoes alternativas
+>>> alt=ak.alternateInterpretations
+>>> for i in alt:
+...     i.name+" = "+str(i.correlationCoefficient)
+... 
+'B minor = 0.624054831613'
+'A major = 0.458564195272'
+'E minor = 0.455816729504'
+'D major = 0.387453206313'
+#(...)
+# as demais alternativas apresentam coeficientes mais cada vez mais baixos 
+#ate que fiquem negativos, indicando "impossibilidade" de expectativa de tonalidade
+>>> 
+
+>>> 
+\end{lstlisting}
+
+
+plotando2
+
+
+\begin{lstlisting}
+>>> p = graph.PlotHistogramPitchClass(m)
+>>> p.process()
+
+>>> p = graph.PlotHistogramPitchSpace(m)
+>>> p.process()
+
+>>> p = graph.PlotScatterPitchSpaceQuarterLength(m)
+>>> p.process()
+
+\end{lstlisting}
+
+final
+
+
+\begin{lstlisting}
+
+>>> x=m.chordify()
+
+>>> X=x[11:14]
+>>> K = X.analyze('key')
+
+<music21.key.Key of b minor>
+
+>>> K.correlationCoefficient
+0.6270772804741662
+
+>>> alt=K.alternateInterpretations
+>>> for i in alt:
+...     i.name+" = "+str(i.correlationCoefficient)      
+... 
+'B minor = 0.583943016291'
+'E minor = 0.418671671701'
+'A major = 0.311484217597'
+
+>>> r = roman.RomanNumeral('VII', key.Key('Bm'))
+>>> [str(p) for p in r.pitches]
+['A5', 'C#6', 'E6']
+
+>>> r=roman.RomanNumeral('VI', key.Key('Bm'))
+>>> [str(p) for p in r.pitches]
+['G5', 'B5', 'D6']
+
+
+>>> R=[]
+>>> for i in X.flat.notes:
+...     R.append((roman.romanNumeralFromChord(i,key.Key('G'))).figure)
+... 
+>>> R
+['I', 'iii', 'iii#6', 'v', 'v4', '#iv', 'iii#6', 
+'iii', 'i', 'II#3', '#iv2', '#iv', 'iii#6', 'iii', 'I']
+
+
+>>> for n in xrange(len(X.flat.notes)):
+...      (X.flat.notes)[n].addLyric(R[n])
+
+
+\end{lstlisting}
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} Aplicação do algoritmo de cadência considerando a inferência de tonalidade Sol maior} 
+	\begin{center}
+	    \includegraphics[scale=0.25]{estudosM21/mikro041FinalChords.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
 
 \subsubsection{Escalas e Modalismo}
 

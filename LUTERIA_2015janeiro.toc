@@ -35,50 +35,50 @@
 \contentsline {section}{\numberline {2.2}Music21}{49}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Stream}{49}{subsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.1.1}Notas, Acordes e nomenclaturas}{53}{subsubsection.2.2.1.1}
-\contentsline {subsection}{\numberline {2.2.2}Prolongamentos e infer\IeC {\^e}ncia de tonalidade}{54}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Cad\IeC {\^e}ncia e infer\IeC {\^e}ncia de tonalidade}{54}{subsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.1}Key Profiles}{54}{subsubsection.2.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2.2}Escalas e Modalismo}{54}{subsubsection.2.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.3}Contorno mel\IeC {\'o}dico}{54}{subsubsection.2.2.2.3}
-\contentsline {subsection}{\numberline {2.2.3}M\IeC {\'e}trica composta}{54}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}Acento Mel\IeC {\'o}dico}{54}{subsubsection.2.2.3.1}
-\contentsline {subsection}{\numberline {2.2.4}Busca e extra\IeC {\c c}\IeC {\~a}o de padr\IeC {\~o}es}{54}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}OpenMusic}{54}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Visualiza\IeC {\c c}\IeC {\~a}o das classes de altura}{55}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Manipula\IeC {\c c}\IeC {\~a}o de Conjuntos e suas nomenclaturas}{55}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}Crivos como estrat\IeC {\'e}gia para de ciclos intervalares}{55}{subsubsection.2.3.2.1}
-\contentsline {subsection}{\numberline {2.3.3}Segmenta\IeC {\c c}\IeC {\~a}o Monitorada}{55}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Especialidade da automa\IeC {\c c}\IeC {\~a}o versus especialidade do analista}{55}{section.2.4}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Escalas e Modalismo}{56}{subsubsection.2.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Contorno mel\IeC {\'o}dico}{56}{subsubsection.2.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}M\IeC {\'e}trica composta}{56}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Acento Mel\IeC {\'o}dico}{56}{subsubsection.2.2.3.1}
+\contentsline {subsection}{\numberline {2.2.4}Busca e extra\IeC {\c c}\IeC {\~a}o de padr\IeC {\~o}es}{56}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}OpenMusic}{57}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Visualiza\IeC {\c c}\IeC {\~a}o das classes de altura}{57}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Manipula\IeC {\c c}\IeC {\~a}o de Conjuntos e suas nomenclaturas}{57}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Crivos como estrat\IeC {\'e}gia para de ciclos intervalares}{57}{subsubsection.2.3.2.1}
+\contentsline {subsection}{\numberline {2.3.3}Segmenta\IeC {\c c}\IeC {\~a}o Monitorada}{57}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Especialidade da automa\IeC {\c c}\IeC {\~a}o versus especialidade do analista}{57}{section.2.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}}{57}{chapter.3}
-\contentsline {section}{\numberline {3.1}Cliches generativos partituraveis}{57}{section.3.1}
-\contentsline {section}{\numberline {3.2}Formatos de sa\IeC {\'\i }da}{57}{section.3.2}
-\contentsline {section}{\numberline {3.3}Tecnicas em Music21}{57}{section.3.3}
-\contentsline {section}{\numberline {3.4}Experimentos em outras linguagens de CAC}{57}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Tecnicas em OpenMusic}{57}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Problematiza\IeC {\c c}\IeC {\~o}es em PureData}{57}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Probabilidade e Combinat\IeC {\'o}ria}{57}{section.3.5}
-\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Experimentos Generativos}}{59}{part.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}}{59}{chapter.3}
+\contentsline {section}{\numberline {3.1}Cliches generativos partituraveis}{59}{section.3.1}
+\contentsline {section}{\numberline {3.2}Formatos de sa\IeC {\'\i }da}{59}{section.3.2}
+\contentsline {section}{\numberline {3.3}Tecnicas em Music21}{59}{section.3.3}
+\contentsline {section}{\numberline {3.4}Experimentos em outras linguagens de CAC}{59}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Tecnicas em OpenMusic}{59}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Problematiza\IeC {\c c}\IeC {\~o}es em PureData}{59}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Probabilidade e Combinat\IeC {\'o}ria}{59}{section.3.5}
+\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Experimentos Generativos}}{61}{part.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {CosmoBagatellas}}{61}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {CosmoBagatellas}}{63}{chapter.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Lastros e Rumos}}{63}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Lastros e Rumos}}{65}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{65}{section*.11}
+\contentsline {chapter}{Refer\^encias}{67}{section*.11}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{69}{section*.12}
+\contentsline {part}{\uppercase {Ap\^endices}}{71}{section*.12}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}}{71}{appendix.A}
-\contentsline {section}{\numberline {A.1}Vetor intervalar}{72}{section.A.1}
-\contentsline {section}{\numberline {A.2}Forma Normal}{72}{section.A.2}
-\contentsline {section}{\numberline {A.3}Forma Prima}{74}{section.A.3}
-\contentsline {section}{\numberline {A.4}Singularidades nos agrupamentos }{75}{section.A.4}
-\contentsline {subsection}{\numberline {A.4.1}Notas comuns sob transposi\IeC {\c c}\IeC {\~a}o}{76}{subsection.A.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Simetria Transpositiva}{77}{subsection.A.4.2}
-\contentsline {subsection}{\numberline {A.4.3}Complemento}{78}{subsection.A.4.3}
-\contentsline {subsection}{\numberline {A.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{79}{subsection.A.4.4}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}}{73}{appendix.A}
+\contentsline {section}{\numberline {A.1}Vetor intervalar}{74}{section.A.1}
+\contentsline {section}{\numberline {A.2}Forma Normal}{74}{section.A.2}
+\contentsline {section}{\numberline {A.3}Forma Prima}{76}{section.A.3}
+\contentsline {section}{\numberline {A.4}Singularidades nos agrupamentos }{77}{section.A.4}
+\contentsline {subsection}{\numberline {A.4.1}Notas comuns sob transposi\IeC {\c c}\IeC {\~a}o}{78}{subsection.A.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Simetria Transpositiva}{79}{subsection.A.4.2}
+\contentsline {subsection}{\numberline {A.4.3}Complemento}{80}{subsection.A.4.3}
+\contentsline {subsection}{\numberline {A.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{81}{subsection.A.4.4}
 \vspace {\cftbeforechapterskip }
