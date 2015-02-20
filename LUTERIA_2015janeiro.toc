@@ -37,12 +37,12 @@
 \contentsline {subsubsection}{\numberline {2.2.1.1}Notas, Acordes e nomenclaturas}{55}{subsubsection.2.2.1.1}
 \contentsline {subsection}{\numberline {2.2.2}Cad\IeC {\^e}ncia e infer\IeC {\^e}ncia de tonalidade}{56}{subsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.1}Key Profiles}{57}{subsubsection.2.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2.2}Escalas e Modalismo}{62}{subsubsection.2.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.3}Constru\IeC {\c c}ao de escalas, polimodos e crivos}{64}{subsubsection.2.2.2.3}
-\contentsline {subsection}{\numberline {2.2.3}M\IeC {\'e}trica composta}{64}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}Acento Mel\IeC {\'o}dico}{64}{subsubsection.2.2.3.1}
-\contentsline {subsection}{\numberline {2.2.4}Busca e extra\IeC {\c c}\IeC {\~a}o de padr\IeC {\~o}es}{64}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}OpenMusic}{64}{section.2.3}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Contorno Intervalar}{63}{subsubsection.2.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Constru\IeC {\c c}ao de escalas, polimodos e crivos}{65}{subsubsection.2.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}M\IeC {\'e}trica composta}{65}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Acento Mel\IeC {\'o}dico}{65}{subsubsection.2.2.3.1}
+\contentsline {subsection}{\numberline {2.2.4}Busca e extra\IeC {\c c}\IeC {\~a}o de padr\IeC {\~o}es}{65}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}OpenMusic}{65}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Visualiza\IeC {\c c}\IeC {\~a}o das classes de altura}{65}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Manipula\IeC {\c c}\IeC {\~a}o de Conjuntos e suas nomenclaturas}{65}{subsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.2.1}Crivos como estrat\IeC {\'e}gia para de ciclos intervalares}{65}{subsubsection.2.3.2.1}
