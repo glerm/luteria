@@ -1757,7 +1757,9 @@ Aplicada então a análise de tonalidade em um segmento cadencial final de Mikro
 
 \end{lstlisting}
 
-Vemos na Figura 31 a comprovação do que já poderíamos supor pela própria sugestão de Bartók na partitura original (Figura 32) - o sustenido fixo da música é afirmado não como um cromatismo localizado ornamental mas algo que está ali para substituir a expectativa de resolução em Sol maior que o grau sensível Fá\# traria. Ao invés deste passo Fá\# $ \rightarrow $ Sol temos a figura de Dó\# atuando na dissonância que desloca a sensação de prolongamento I-V-I possível, figurando como trítono de Sol e com isso também impossibilitando a interpretação de que estaríamos simplesmente num modo Mixolídio de Sol pela ausência do Fá\#. 
+Vemos na Figura 31 a comprovação do que já poderíamos supor pela própria sugestão de Bartók na partitura original (Figura 32) - o sustenido fixo da música é afirmado não como um cromatismo localizado ornamental mas algo que está ali para substituir a expectativa de resolução em Sol maior que o grau sensível Fá\# traria. 
+
+Ao invés deste passo Fá\# $ \rightarrow $ Sol temos a figura de Dó\# atuando na dissonância que desloca a sensação de prolongamento I-V-I possível, figurando como trítono de Sol. Também é incompleta a interpretação de que estaríamos simplesmente num modo Mixolídio de Sol pela ausência do Fá\# pois a presença de Dó\# desconfigura o modo.
 
 A figura "desfuncional" de um grau "II\#3" detectada pelo algoritmo chama atenção para a figura do Lá, que quando soando juntamente com o Dó\# poderia trazer a interpretação de um acorde de Lá maior incompleto - mas qual seria sua função na cadência? 
 
@@ -1846,17 +1848,121 @@ O final de Mikrokosmos 41 cita o clichê da sequencia de 2-2-2-1 semitons do mod
 
 Com music21 a possibilidade de tornar a segmentação independente do gesto gráfico
 
+
+\pagebreak
 \section{OpenMusic}
 
-as vantagens de segmentaçao via mouse. LZ , Inerface de analise e SOAL como exemplos de possivel automacao do procedimento usando LISP ou servidores externos.
+\begin{citacao}
+"Enquanto a maioria das “linguagens de programação musical”\ lidam principalmente com processamento de sinal e síntese sonora, uma abordagem original adotada pelo time de representação musical do IRCAM no fim dos anos 80 foi
+particularmente um foco na nas estruturas simbólicas e processos musicais, isto é, aspectos tradicionalmente
+ignorados ou deixados de lado dos ambientes computacionais."\cite[ p.743]{bresson2011openmusic}
+\end{citacao}
 
-\subsection{Visualização das classes de altura}
+Em suma, o Open Music teve (pelo menos em seus primeiros anos) uma intenção voltada para processos focados na continuidade dos sistemas derivados dos estudos de intervalos, acordes, harmonia que estavam na base das preocupações do serialismo integral e outras estratégias composicionais que necessitavam manipulação de permutações e combinações matemáticas. O OM sempre foi um dos software amplamente utilizados para tal fim, e isto reflete diretamente em sua interface e cultura de uso.
+
+A grande vantagem do uso do Open Music em procedimentos de análise musical assistida por computador é a de que sua orientação visual de programação por grafos interativos agiliza bastante a experimentação e facilita a organização de esquemas de representação gráfica das ideias algorítmicas de um procedimento.\footnote{Como já utilizamos no presente trabalho em toda a parte de revisão da teoria bartokiana.} 
+
+Como ferramenta composicional o OM é um \textit{framework} que tende a uma programação orientada pela reflexão em tempo diferido, isto é, estimula a composição por escolha entre diversos resultados permutados e decupados em um tempo de escuta.
+
+Organiza materiais orientado basicamente pela escrita e fortemente pensado dentro do esquema de intervalos melódicos
+harmônicos derivados da notação moderna para música orquestral, utilizando sequenciadores bastante similares ao pentagrama de pauta sem (\textit{“chord-seq”}) ou com figuras de compasso (com o sequeciador \textit{“voice”}).
+
+
+
+\subsection{Visualização das classes de altura e sequencias partituradas}
+
+Vale destacar aqui a vantagem intuitiva do uso de objetos de representação gráfica dos intervalos como o objeto "n-cercle", que organiza os conjuntos de classe de altura em torno de um gráfico semelhante a uma partição de "relógio" de 12 alturas, podendo representar assim simetrias e distâncias entre classes de altura.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\begin{center}
+	    \includegraphics[scale=0.45]{estudosM21/ncercle.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+O objeto de sequenciamento de acordes o "chord-seq" permite a representação de sequencias simbólicas partituradas derivadas de arquivos como MIDI ou musicxml em um formato inspirado nas partituras proporcionais: onde não há a medida de assinaturas, barras ou figuras de compasso mas sim um posicionamento das notas na altura das pautas e em uma distancia proporcional a posição temporal de seu ataque
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\begin{center}
+	    \includegraphics[scale=0.5]{OMPD/chord-seq-sem-titulo.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
 
 \subsection{Manipulação de Conjuntos e suas nomenclaturas}
 
-\subsubsection{Crivos como estratégia para de ciclos intervalares}
+O OM também apresenta algumas ferramentas para manipulação de conjuntos de classe de altura
+\lipsum[6]
 
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\begin{center}
+	    \includegraphics[scale=0.5]{OM_settheory/todas_triades.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+\subsubsection{Contornos intervalares e crivos}
+
+\lipsum[6]
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\begin{center}
+	    \includegraphics[scale=0.5]{OM_settheory/fibonacci.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+\lipsum[7]
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\begin{center}
+	    \includegraphics[scale=0.5]{OM_settheory/crivos.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+\lipsum[8]
+
+
+
+
+
+
+\pagebreak
 \subsection{Segmentação Monitorada}
+
+\lipsum[9]
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\begin{center}
+	    \includegraphics[scale=0.55]{OM_settheory/x_dx.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\begin{center}
+	    \includegraphics[scale=0.35]{OMPD/segmentaOM.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}	
+	
+\lipsum[11]	
+	
+
 
 
 \section{Especialidade da automação versus especialidade do analista}

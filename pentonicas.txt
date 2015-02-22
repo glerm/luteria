@@ -1,0 +1,8 @@
+c d e g a c
+ 2 2 3 2 3
+
+c d f g a# c
+ 2 3 2 3  2
+
+c eb f g# a# c
+ 3  2 3  2  2
