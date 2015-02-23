@@ -1,0 +1,166 @@
+1.
+fica antes do comptacional?
+
+comentario sobre analise em geral - problema da analise assistida por computador
+
+
+citação virtual music cope sobre paradoxo da analise de estilo
+como buscar regras gerais - gramtiva gerativa... LZ
+
+1.1. ok
+
+1.2 ok
+
+1.2.1 
+
+revisar ideia de "mediante"  e pagebreaks
+
+1.2.2. ok
+
+1.2.3.
+
+fibonacci e seção aurea 
+
+screenshots das formas de lendvai
+
+ataque do karpati
+
+
+
+1.3.
+explicar patches ciclos
+
+1.4.
+
+inserir patches celulas
+medir intervalos de lendvai com scale do m21
+
+music21.analysis.search.findConsecutiveScale(source, targetScale, degreesRequired=5, stepSize=1, comparisonAttribute='name', repeatsAllowed=True, restsAllowed=False)
+http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisSearch.html
+
+1.5.
+
+traduzir citações
+desenvolver mais sobre analise de cohn mikro 109
+
+
+1.5.2  exemplo do equilibrio imersivo do strauss citar tb mikro 41 o sol no baixo
+
+
+1.5.3 imagem de mikro 141 
+
+
+1.6.
+
+comentar filtro lisp no apendice
+
+1.6.1
+
+detalhar analise mikro 109 de cohn
+
+
+1.7.
+comentar sobre o uso da penatonica criando polimodalismo em mikrokosmos 41  - encontrar outros exemplos em suchoff para citar
+
+
+1.8.
+hamoniação modal
+mostrar as progressões na mikrokosmos reduzida com melodia folclorica 
+
+1.8.1 dois paragrafos do paper
+
+1.8.2 dois paragrafos do paper
+
+
+2.
+
+comentar a decisão pelo estudo comparado, falar das limitações e a decisão por focar em um processo que permitisse o experimento composicional
+
+2.1.
+
+midi, musicxml, corpus
+
+
+2.2.
+
+comentar mais sobre os módulos de busca
+
+2.2.1
+
+ok
+
+2.2.2
+
+ok
+
+2.2.2.1
+
+ok
+
+2.2.2.2
+
+ok
+
+2.2.2.3
+
+revisar paper scalas music21
+
+
+2.2.3
+
+modulos analise e search do music21
+
+a)
+http://web.mit.edu/music21/doc/moduleReference/moduleAnalysisSearch.html
+
+b) acento melodico
+
+c) segmentação por agrupamentos
+
+2.3.
+
+comentar as figuras
+
+2.4. LZ
+
+
+3 -
+
+probabilidade - permutação n OM - cadeias de markov
+
+constraints no OM
+
+profile no OM
+
+contrução de clichês a partir de trechos retirados com LZ e outros estudos
+
+desenhar patches de variação em OM e music21 a partir de clichês montados ja satisfatórios
+
+
+
+4 
+
+conclusão
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

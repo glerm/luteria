@@ -133,7 +133,7 @@ procnamekeys={def,class}}
 \titulo{Luteria Composicional de algoritmos pós-tonais }
 \autor{Guilherme Rafael Soares}
 %\local{Brasil}
-\data{12 de fevereiro de 2015, v0.9-Defesa}
+\data{23 de fevereiro de 2015, v0.99-Defesa}
 \orientador{Prof. Dr. Daniel Quaranta}
 %\coorientador{Equipe \abnTeX}
 \instituicao{%
@@ -741,7 +741,7 @@ Assim introduz-se a vertigem de uma sensação onde há uma teia de tonalidades 
 
 \subsubsection{Fibonacci}
 
-\subsection{Críticas ao modelo de Lendvai}
+\subsubsection{Críticas ao modelo de Lendvai}
 
 aqui citar \cite{karpati2006axis}
 
@@ -922,7 +922,7 @@ No piano um eixo onde esta simetria de soma par fica visualmente explícita é o
 	\legend{Fonte: autor }
 \end{figure}
 
-De maneira similar podemos ver no piano dois eixos onde a simetria de soma ímpar fica visualmente explícita: o eixo em torno das alturas \textbf{E} $\leftrightarrow $  \textbf{F} e o eixo em torno das alturas \textbf{B} $\leftrightarrow $  \textbf{C}  (Figura abaixo).
+De maneira similar podemos ver no piano um eixo onde a simetria de soma ímpar fica visualmente explícita: o eixo em torno das alturas \textbf{E} $\leftrightarrow $  \textbf{F}(Figura abaixo).
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Simetria inversiva impar}
@@ -1214,6 +1214,18 @@ Pentatônica: $ C - D \rightarrow [ ?? ] - E - G - A \rightarrow [ ?? ] - (...) 
 **Mixolídio: $ C - D \rightarrow [ F ] - E - G - A \rightarrow [ Bb ] - (...) $  \linebreak
 
 A inserção de jogos de tensão com a célula [ B - F\# - F - Bb ], mostra-se portanto uma estratégia possível para as transições deste polimodo.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Rotações dos intervalos da pentatônica, normalizados em Dó. }
+	\begin{center}
+	    \includegraphics[scale=0.55]{OM_settheory/pentarotacoes.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+
 
 %serie acústica:
 %C1, C2, G2, C3, E3, G3, Bb3, C4, D4, E4, F\# 4, G4, A4, Bb4, B4, C5
@@ -1840,13 +1852,15 @@ O final de Mikrokosmos 41 cita o clichê da sequencia de 2-2-2-1 semitons do mod
 
 \cite{ariza2011analytical}
 
-\subsection{Métrica composta}
 
-\subsubsection{Acento Melódico}
 
 \subsection{Busca e extração de padrões}
 
 Com music21 a possibilidade de tornar a segmentação independente do gesto gráfico
+
+
+\subsubsection{Acento Melódico}
+
 
 
 \pagebreak
@@ -1874,9 +1888,9 @@ harmônicos derivados da notação moderna para música orquestral, utilizando s
 Vale destacar aqui a vantagem intuitiva do uso de objetos de representação gráfica dos intervalos como o objeto "n-cercle", que organiza os conjuntos de classe de altura em torno de um gráfico semelhante a uma partição de "relógio" de 12 alturas, podendo representar assim simetrias e distâncias entre classes de altura.
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\caption{\label{fig_grafico}Objeto N-Cercle }
 	\begin{center}
-	    \includegraphics[scale=0.45]{estudosM21/ncercle.png}
+	    \includegraphics[scale=0.6]{estudosM21/ncercle.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
@@ -1894,12 +1908,12 @@ O objeto de sequenciamento de acordes o "chord-seq" permite a representação de
 
 \subsection{Manipulação de Conjuntos e suas nomenclaturas}
 
-O OM também apresenta algumas ferramentas para manipulação de conjuntos de classe de altura
-\lipsum[6]
+%O OM também apresenta algumas ferramentas para manipulação de conjuntos de classe de altura
+%\lipsum[6]
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\caption{\label{fig_grafico}Todas tríades }
 	\begin{center}
 	    \includegraphics[scale=0.5]{OM_settheory/todas_triades.png}
 	\end{center}
@@ -1909,28 +1923,28 @@ O OM também apresenta algumas ferramentas para manipulação de conjuntos de cl
 
 \subsubsection{Contornos intervalares e crivos}
 
-\lipsum[6]
+%\lipsum[6]
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\caption{\label{fig_grafico}Objetos geradores de escalas e intervalos. Duas maneiras de representar uma proporção de fibonacci }
 	\begin{center}
-	    \includegraphics[scale=0.5]{OM_settheory/fibonacci.png}
+	    \includegraphics[scale=0.6]{OM_settheory/fibonacci.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
 
-\lipsum[7]
+%\lipsum[7]
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\caption{\label{fig_grafico}Construção de crivos. }
 	\begin{center}
 	    \includegraphics[scale=0.5]{OM_settheory/crivos.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
-\lipsum[8]
+%\lipsum[8]
 
 
 
@@ -1940,10 +1954,10 @@ O OM também apresenta algumas ferramentas para manipulação de conjuntos de cl
 \pagebreak
 \subsection{Segmentação Monitorada}
 
-\lipsum[9]
+%\lipsum[9]
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\caption{\label{fig_grafico}Extração de contorno. }
 	\begin{center}
 	    \includegraphics[scale=0.55]{OM_settheory/x_dx.png}
 	\end{center}
@@ -1953,14 +1967,14 @@ O OM também apresenta algumas ferramentas para manipulação de conjuntos de cl
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
+	\caption{\label{fig_grafico}Módulo de segmentação para análise dentro dos objetos chord-seq. }
 	\begin{center}
 	    \includegraphics[scale=0.35]{OMPD/segmentaOM.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}	
 	
-\lipsum[11]	
+%\lipsum[11]	
 	
 
 
