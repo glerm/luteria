@@ -38,6 +38,11 @@ ISBN 2752100523.}
 {BERNARD, J.~W. Space and symmetry in bart{\'o}k.
 \emph{Journal of Music Theory}, JSTOR, p. 185--201, 1986.}
 
+\bibitem[Bishop et al. 2006]{bishop2006pattern}
+\abntrefinfo{Bishop et al.}{BISHOP et al.}{2006}
+{BISHOP, C.~M. et al. \emph{Pattern recognition and machine learning}. [S.l.]:
+  springer New York, 2006.}
+
 \bibitem[Bresson, Agon e Assayag 2011]{bresson2011openmusic}
 \abntrefinfo{Bresson, Agon e Assayag}{BRESSON; AGON; ASSAYAG}{2011}
 {BRESSON, J.; AGON, C.; ASSAYAG, G. Openmusic: visual programming environment
@@ -67,6 +72,11 @@ ISBN 2752100523.}
 \abntrefinfo{Cooper}{COOPER}{1998}
 {COOPER, D. The unfolding of tonality in the music of b{\'e}la bart{\'o}k.
 \emph{Music Analysis}, JSTOR, p. 21--38, 1998.}
+
+\bibitem[Dubnov et al. 2003]{dubnov2003using}
+\abntrefinfo{Dubnov et al.}{DUBNOV et al.}{2003}
+{DUBNOV, S. et al. Using machine-learning methods for musical style modeling.
+\emph{Computer}, IEEE, v.~36, n.~10, p. 73--80, 2003.}
 
 \bibitem[Forte 1973]{forte1973structure}
 \abntrefinfo{Forte}{FORTE}{1973}
@@ -119,6 +129,11 @@ ISBN 2752100523.}
 {KRUMHANSL, C.~L. \emph{Cognitive foundations of musical pitch}. [S.l.]: Oxford
   University Press New York, 1990.}
 
+\bibitem[Lendvai 1962]{lendvai1962duality}
+\abntrefinfo{Lendvai}{LENDVAI}{1962}
+{LENDVAI, E. \emph{Duality and synthesis in the music of B{\'e}la Bart{\'o}k}.
+  [S.l.: s.n.], 1962.}
+
 \bibitem[Lendvai 1971]{lendvai1971bela}
 \abntrefinfo{Lendvai}{LENDVAI}{1971}
 {LENDVAI, E. \emph{B{\'e}la Bart{\'o}k: an analysis of his music}. [S.l.]: Kahn
@@ -147,6 +162,11 @@ Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/40285402}.}
 \abntrefinfo{Lester}{LESTER}{1989}
 {LESTER, J. Analytic approaches to twentieth-century music.
 WW Norton \& Company, 1989.}
+
+\bibitem[Meyer 1956]{meyer1956emotion}
+\abntrefinfo{Meyer}{MEYER}{1956}
+{MEYER, L.~B. \emph{Emotion and meaning in music}. [S.l.]: University of
+  Chicago Press, 1956.  (Phoenix books).}
 
 \bibitem[Nierhaus 2009]{nierhaus2009algorithmic}
 \abntrefinfo{Nierhaus}{NIERHAUS}{2009}
@@ -240,5 +260,11 @@ Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/25164542}.}
 \abntrefinfo{Treitler}{TREITLER}{1959}
 {TREITLER, L. Harmonic procedure in the" fourth quartet" of bela bart{\'o}k.
 \emph{Journal of Music Theory}, JSTOR, p. 292--298, 1959.}
+
+\bibitem[Ziv e Lempel 1977]{ziv1977universal}
+\abntrefinfo{Ziv e Lempel}{ZIV; LEMPEL}{1977}
+{ZIV, J.; LEMPEL, A. A universal algorithm for sequential data compression.
+\emph{IEEE Transactions on information theory}, v.~23, n.~3, p. 337--343,
+  1977.}
 
 \end{thebibliography}
