@@ -5,6 +5,13 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Agon 2006]{OM_book01_2006}
+\abntrefinfo{Agon}{AGON}{2006}
+{AGON, C. \emph{The OM Composer's book 1}. Musique/sciences. Delatour France,
+  2006.
+ISBN 9782752100283. Dispon{\'\i}vel em:
+  \url{http://amazon.com/o/ASIN/2752100280/}.}
+
 \bibitem[Andreatta, Rahn e Bardez 2013]{aroundset2013}
 \abntrefinfo{Andreatta, Rahn e Bardez}{ANDREATTA; RAHN; BARDEZ}{2013}
 {ANDREATTA, M.; RAHN, J.; BARDEZ, J.~M. \emph{Around set theory}. [S.l.]:
@@ -108,6 +115,11 @@ ISBN 2752100523.}
 {HURON, D.~B. \emph{Sweet anticipation: Music and the psychology of
   expectation}. [S.l.]: MIT press, 2006.}
 
+\bibitem[Iazzetta 2009]{iazzetta2009musica}
+\abntrefinfo{Iazzetta}{IAZZETTA}{2009}
+{IAZZETTA, F. \emph{M{\'u}sica e media{\c{c}}{\~a}o tecnol{\'o}gica}. S{\~a}o
+  Paulo: Perspectiva-Fapesp, 2009.}
+
 \bibitem[K{\'a}rp{\'a}ti 2006]{karpati2006axis}
 \abntrefinfo{K{\'a}rp{\'a}ti}{K{\'A}RP{\'A}TI}{2006}
 {K{\'A}RP{\'A}TI, J. Axis tonality and golden section theory reconsidered.
@@ -196,6 +208,12 @@ ISBN 9780520074309. Dispon{\'\i}vel em:
 {PERLE, G. Pitch-class set analysis: An evaluation.
 \emph{Journal of Musicology}, JSTOR, p. 151--172, 1990.}
 
+\bibitem[Puckette 2006]{puckettecomputing}
+\abntrefinfo{Puckette}{PUCKETTE}{2006}
+{PUCKETTE, M. The om composer's book 1.
+In:  \underline{\ \ \ \ \ \ \ \ }. Paris, France: Delatour, 2006. cap.
+  Computing while composing, p. x--xiv.}
+
 \bibitem[Rahn 1980]{rahn1980basic}
 \abntrefinfo{Rahn}{RAHN}{1980}
 {RAHN, J. \emph{Basic atonal theory}. [S.l.]: Longman New York, 1980.}
@@ -212,6 +230,19 @@ Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/25164542}.}
 \abntrefinfo{Roads}{ROADS}{1979}
 {ROADS, C. Grammars as representations for music.
 \emph{Computer Music Journal}, JSTOR, p. 48--55, 1979.}
+
+\bibitem[Roads 1996]{curtis1996computer}
+\abntrefinfo{Roads}{ROADS}{1996}
+{ROADS, C. \emph{The computer music tutorial}. [S.l.]: MIT press, 1996.}
+
+\bibitem[Roads 2004]{roads2004microsound}
+\abntrefinfo{Roads}{ROADS}{2004}
+{ROADS, C. \emph{Microsound}. [S.l.]: MIT press, 2004.}
+
+\bibitem[Sethares 2005]{sethares2005tuning}
+\abntrefinfo{Sethares}{SETHARES}{2005}
+{SETHARES, W. \emph{Tuning, Timbre, Spectrum, Scale}. [S.l.]: Springer, 2005.
+ISBN 9781852337971.}
 
 \bibitem[Souza 2013]{de2013simetria}
 \abntrefinfo{Souza}{SOUZA}{2013}

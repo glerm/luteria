@@ -133,7 +133,7 @@ procnamekeys={def,class}}
 \titulo{Luteria Composicional de algoritmos pós-tonais }
 \autor{Guilherme Rafael Soares}
 %\local{Brasil}
-\data{23 de fevereiro de 2015, v0.99-Defesa}
+\data{25 de fevereiro de 2015, v0.999-Defesa}
 \orientador{Prof. Dr. Daniel Quaranta}
 %\coorientador{Equipe \abnTeX}
 \instituicao{%
@@ -509,11 +509,44 @@ Deixamos um legado em código aberto para continuidades possíveis deste trabalh
 
 
 
-%\chapter*[Introdução]{Introdução}
-%\addcontentsline{toc}{chapter}{Introdução}
+\chapter*[Introdução]{Introdução}
+\addcontentsline{toc}{chapter}{Introdução}
+
+Em seu livro sobre música e mediação tecnológica, Fernando \citeonline[ p.187]{iazzetta2009musica} nos fala sobre um tipo de \textit{\textbf{"luteria composicional"}}\ que surge do experimento de estúdio migrando para os computadores pessoais no final do século XX. A criação dos instrumentos musicais a partir de algoritmos, códigos, \textit{patches}, passa a existir como estratégia composicional tanto quanto a técnica instrumental ou a experiência de orquestração por escrita partitural. 
+
+Podemos observar na história da musica algorítmica que já em seus primeiros experimentos, como na Suíte Illiac de Lejarem Hiller, buscava-se a legitimação da promessa de viabilidade uma computação musical a partir da aplicação estatística de restrições composicionais derivadas das regras de harmonia e contraponto, emulando as técnicas do compositor ocidental tradicional, treinado nas partituras. 
+
+Isso logo inspira também as expansões de técnicas através de aplicações de teorias matemáticas mais avançadas sobre a serialização de eventos partituráveis. No entanto este serialismo integral e ortodoxo vai aos poucos sendo permeado por uma música computacional que estimula a busca por sonoridades cada vez menos restritas a organização das 12 alturas da escala temperada. 
+
+O computador passa a ser cada vez mais usado para a síntese sonora e em dado momento sua capacidade de memória passa a permitir também as manipulações muito avançadas em sons gravados. Os experimentos concretos e eletrônicos com sonoridades passam a ser uma das primeiras coisas que um músico iniciado na computação terá contato, já que o uso dos processos partiturados estarão sempre de alguma forma ligados a tradição da orquestração ou estudo de instrumentos musicais de um repertorio
+
+Jean Bresson, um dos desenvolvedores da linguagem OpenMusic, mantida pelo IRCAM, aponta que esta tendência para uso do computador como ferramenta de manipulação de sonoridades sintéticas ou pré-gravadas tem seu auge justamente neste período que sucede a possibilidade do uso do computador pessoal, na contramão do que passa a ser considerada a sonoridade da "computer music", focando em processos simbólicos de manipulação:
+
+
+\begin{citacao}
+"Enquanto a maioria das “linguagens de programação musical”\ lidam principalmente com processamento de sinal e síntese sonora, uma abordagem original adotada pelo time de representação musical do IRCAM no fim dos anos 80 foi particularmente um foco na nas estruturas simbólicas e processos musicais, isto é, aspectos tradicionalmente ignorados ou deixados de lado dos ambientes computacionais."\ \cite{bresson2011openmusic}
+\end{citacao}
 
 
 
+\begin{citacao}
+"Qualquer estrutura, gramática ou modelo pode, em princípio, ser transposto para o âmbito sonoro com a intenção de produzir música. Uma vez que nos sistemas computacionais todo e qualquer elemento é transcrito na forma de símbolos abstratos do mesmo tipo (em última instância, bits representados por 0 e 1), esse tipo de procedimento se torna tentador, mas também vulnerável.(...)Certamente estas transposições de um campo a outro não destroem a coerência interna dos fenômenos transpostos, mas de forma alguma asseguram a  geração de uma coerência musical, pelo menos não no nível perceptivo.
+(...)
+\textbf{O discurso enfatizando o caráter inovador que acompanha cada novo invento geralmente esconde o quanto nossos avanços representam uma consolidação  de conhecimentos existentes, mais do que saltos progressivos}”. \cite[p. 151-153, grifo nosso.]{iazzetta2009musica}
+\end{citacao}
+
+
+
+
+
+parece cada vez mais seduzir para um estudo da música que inicia pela "morfologia do espectro sonoro"\cite{smalley1997spectromorphology} , onde impera o "microsom"\cite{roads2004microsound}\ manipulado nos níveis limites da psicoacústica.
+
+
+
+
+Interessa em nossa abordagem aqui repensar um pouco os meandros desta manipulação simbólica de escalas e aglomerados de alturas, antes de mergulhar nas possibilidades expandidas pelo computador. 
+
+O objeto central de estudo desta pesquisa são os algoritmos de manipulação de dados de uma superfície musical normatizada para a escala de temperamento igual, de doze tons \footnote{Conhecida também como "12-TET" ou "EDO"\cite[ p. 76]{sethares2005tuning}}, tradicionalmente usada nas partituras da prática comum do repertório ocidental. Estamos abstraindo no momento as questões como timbre, microtonalismo,  ou quaisquer outros aspectos não formalizáveis em partitura tradicional. 
 
 \part{Percurso pela Analise Musical }
 
@@ -528,25 +561,26 @@ Deixamos um legado em código aberto para continuidades possíveis deste trabalh
 
 
 
-%\section{Musicologia Assistida por computador}
+\section{Musicologia Assistida por computador}
 
 
 
-%Iniciamos esta pesquisa buscando entender como o percurso que as formalizações computacionais de elementos básicos da cognição musical permitiram o atual estágio da musicologia assistida por computador. Trabalhos como as primeiras tentativas de definir gramáticas computáveis de Curtis \citeonline{roads1979grammars}, a formalização de uma gramática gerativa da música tonal proposta por \citeonline{lerdahl1983generative} e derivações que geraram implementações computacionais como as pesquisas de \citeonline{temperley2001cognition} e \citeonline{huron2006sweet} nos interessaram e pareceram a princípio essenciais como base para o entendimento de algoritmos de segmentação de estruturas musicais observáveis em partituras e arquivos de corpus derivados de instruções composicionais simbólicas.
+Iniciamos esta pesquisa buscando entender como o percurso que as formalizações computacionais de elementos básicos da cognição musical permitiram o atual estágio da musicologia assistida por computador. Trabalhos como as primeiras tentativas de definir gramáticas computáveis de Curtis \citeonline{roads1979grammars}, a formalização de uma gramática gerativa da música tonal proposta por \citeonline{lerdahl1983generative} e derivações que geraram implementações computacionais como as pesquisas de \citeonline{temperley2001cognition} e \citeonline{huron2006sweet} nos interessaram e pareceram a princípio essenciais como base para o entendimento de algoritmos de segmentação de estruturas musicais observáveis em partituras e arquivos de corpus derivados de instruções composicionais simbólicas.
 
-%No entanto percebemos no decorrer de nosso aprofundamento nesta bibliografia específica que descrever todo seu escopo em profundidade e abrangência apresentava duas questões essenciais de prioridades para o presente trabalho, considerndo o caso da teoria pós-tonal almejada aqui e em especial para as particularidades presentes na música de Bela Bartók que pudessem interessar como singularidade composicional: 
+No entanto percebemos no decorrer de nosso aprofundamento nesta bibliografia específica que descrever todo seu escopo em profundidade e abrangência apresentava duas questões essenciais de prioridades para o presente trabalho, considerando o caso da teoria pós-tonal almejada aqui e em especial para as particularidades presentes na música de Bela Bartók que pudessem interessar como singularidade composicional: 
 
 
-%1) As abordagens generalistas dos problemas quantizáveis de expectativa musical com base em pesquisas sobre cognição e fruição da linguagem tonal, uma música de tradição clássica e romântica ocidental, repertório referido como "de prática comum"\footnote{c.f. temprley} e seus problemas de ordem métrica, rítmica, melódica, harmônica e prolongacional\footnote{tradição shenkeriana} quase sempre tangenciam a música que interessa na presente pesquisa como uma exceção especializada das regras gerais, o que nos chamou a atenção para quais seriam as alternativas a uma abordagem que partisse de outros princípios. 
+1) As abordagens generalistas dos problemas quantizáveis de expectativa musical com base em pesquisas sobre cognição e fruição da linguagem tonal, uma música de tradição clássica e romântica ocidental, repertório referido como "de prática comum"\footnote{c.f. temprley} e seus problemas de ordem métrica, rítmica, melódica, harmônica e prolongacional\footnote{tradição shenkeriana} quase sempre tangenciam a música que interessa na presente pesquisa como uma exceção especializada das regras gerais, o que nos chamou a atenção para quais seriam as alternativas a uma abordagem que partisse de outros princípios. 
 
-%Encontramos então na literatura específica das análises do repertório bartokiano e na literatura que funda algums nomenclaturas da análise pós-tonal um ponto de partida mais objetivo: organização de sonoridades por novos critérios de organização intervalar, casos de observação de simetrias, ciclos transposições e transformações destes materiais e a busca por descrições de outras lógicas de encadeamento deste material intervalar e sua relação com as percepções mais básicas que ainda operam o lstro de expectativa tonal
+Encontramos então na literatura específica das análises do repertório bartokiano ( \autoref{bartokianas} ) e na literatura que funda algumas das nomenclaturas da análise pós-tonal um ponto de partida mais objetivo: organização de sonoridades por novos critérios de organização intervalar, casos de observação de simetrias, ciclos transposições e transformações destes materiais e a busca por descrições de outras lógicas de encadeamento deste material intervalar e sua relação com as percepções mais básicas que ainda operam o lastro de expectativa tonal
 
-%2) Dado o período de quase quatro décadas das primeiras implementações destes algoritmos de segmentação musical temos atualmente um cenário bastante amplo para testar muitas destas teorias e buscar compreende-las a mperlepartir de uma experiência prática. Alguns dos algoritmos implementados por Temperley, Huron e pesquisas similares podem ser experimentados com a biblioteca python Music21, que foi usada em nossos estudos de caso. Consideramos esta uma melhor estratégia fazer as digressões sobre as origens destes algoritmos a partir destas implementações, seus usos e limitações na presente pesquisa, portanto.
+2) Dado o período de quase quatro décadas das primeiras implementações destes algoritmos de segmentação musical temos atualmente um cenário bastante amplo para testar muitas destas teorias e buscar compreende-las a partir de uma experiência prática. Alguns dos algoritmos implementados por Temperley, Huron e pesquisas similares podem ser experimentados com a biblioteca python Music21, que foi usada em nossos estudos de caso. Consideramos esta uma melhor estratégia fazer as digressões sobre as origens destes algoritmos a partir destas implementações, seus usos e limitações na presente pesquisa, portanto.
 
 
 
 
 \chapter{Apontamentos Bartokianos}
+\label{bartokianas}
 
 \section{Panorama básico sobre analise bartokiana}
 
@@ -1359,12 +1393,8 @@ Bart6k talked at length about these structural chromatic melodies from Algeria a
 Dalmatia, relating his comments to the 'new chromatic' melodies in his compositions:
 
 As to the general characteristics, exactly the same can be said about my melodies as what I said already
-concerning the chromatic folk melodies. That is, the single tones of these melodies are independent tones
-having no interrelation between each other. There is in each specimen, however, a decidedly fixed
-fundamental tone to which the other tones resolve in the end. The main difference between the chromatic folk
-melodies and my own chromatic melodies is to be found in their range. They consist exclusively of five, six, or
-at most seven half-tones, which corresponds to a range of about a fourth. My own melodies generally have at
-least eight half-tones and cover, in some cases, the distance of an octave or more. 1
+concerning the chromatic folk melodies. That is, the single tones of these melodies are independent tones having no interrelation between each other. There is in each specimen, however, a decidedly fixed
+fundamental tone to which the other tones resolve in the end. The main difference between the chromatic folk melodies and my own chromatic melodies is to be found in their range. They consist exclusively of five, six, or at most seven half-tones, which corresponds to a range of about a fourth. My own melodies generally have at least eight half-tones and cover, in some cases, the distance of an octave or more. 1
 \cite[ p.6]{gillies1983bartok}
 
 
