@@ -13,7 +13,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: mestrado_glerm.bib
-Warning--I didn't find a database entry for "perle1991serial"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -23,45 +22,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 55 entries,
+You've used 53 entries,
             6711 wiz_defined-function locations,
-            1484 strings with 15584 characters,
-and the built_in function-call counts, 41973 in all, are:
-= -- 3421
-> -- 1058
-< -- 220
-+ -- 583
+            1471 strings with 15531 characters,
+and the built_in function-call counts, 39207 in all, are:
+= -- 3091
+> -- 1060
+< -- 139
++ -- 510
 - -- 337
-* -- 2713
-:= -- 5701
-add.period$ -- 179
-call.type$ -- 55
-change.case$ -- 411
-chr.to.int$ -- 91
-cite$ -- 54
-duplicate$ -- 2631
-empty$ -- 3344
-format.name$ -- 1565
-if$ -- 9707
+* -- 2566
+:= -- 5361
+add.period$ -- 167
+call.type$ -- 53
+change.case$ -- 406
+chr.to.int$ -- 83
+cite$ -- 52
+duplicate$ -- 2316
+empty$ -- 3200
+format.name$ -- 1567
+if$ -- 9148
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 995
-newline$ -- 258
-num.names$ -- 270
-pop$ -- 1209
+missing$ -- 960
+newline$ -- 244
+num.names$ -- 260
+pop$ -- 1187
 preamble$ -- 1
-purify$ -- 179
+purify$ -- 175
 quote$ -- 0
-skip$ -- 2647
+skip$ -- 2357
 stack$ -- 1
-substring$ -- 1873
-swap$ -- 1168
-text.length$ -- 52
+substring$ -- 1694
+swap$ -- 1034
+text.length$ -- 45
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1
+type$ -- 0
 warning$ -- 0
-while$ -- 402
+while$ -- 384
 width$ -- 0
-write$ -- 847
-(There was 1 warning)
+write$ -- 809

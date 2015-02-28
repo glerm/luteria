@@ -463,13 +463,10 @@ Deixamos um legado em código aberto para continuidades possíveis deste trabalh
 % ---
 % inserir lista de abreviaturas e siglas
 % ---
-\begin{siglas}
-  \item[GTTM] \textit{Generative Theory of Tonal Music}\footnote{ "Teoria Gerativa da Música Tonal"      \cite{lerdahl1983generative} }
-  \item[TPS] \textit{Tonal Pitch Space}\footnote{ "Espaço das Alturas Tonais"\cite{lerdahl1988tps} }
-  \item[CBMS] \textit{Cognition of Basic Musical Structures}\footnote{ "Cognição das Estruturas Musicais Básicas"\cite{temperley2001cognition} }
-  \item[OM] \textit{Open Music}\footnote{ \url{http://repmus.ircam.fr/openmusic/home}. Acessado em 10 de julho de 2014. }
-  \item[PD] \textit{Pure Data}\footnote{ \url{http://puredata.info}. Acessado em 10 de julho de 2014. }
-\end{siglas}
+%\begin{siglas}
+ % \item[OM] \textit{Open Music}\footnote{ \url{http://repmus.ircam.fr/openmusic/home}. Acessado em 10 de julho de 2014. }
+  %\item[PD] \textit{Pure Data}\footnote{ \url{http://puredata.info}. Acessado em 10 de julho de 2014. }
+%\end{siglas}
 % ---
 
 % ---
@@ -512,15 +509,15 @@ Deixamos um legado em código aberto para continuidades possíveis deste trabalh
 \chapter*[Introdução]{Introdução}
 \addcontentsline{toc}{chapter}{Introdução}
 
-Em seu livro sobre música e mediação tecnológica, Fernando \citeonline[ p.187]{iazzetta2009musica} nos fala sobre um tipo de \textit{\textbf{"luteria composicional"}}\ que surge do experimento de estúdio migrando para os computadores pessoais no final do século XX. A criação dos instrumentos musicais a partir de algoritmos, códigos, \textit{patches}, passa a existir como estratégia composicional tanto quanto a técnica instrumental ou a experiência de orquestração por escrita partitural. 
+Em seu livro sobre música e mediação tecnológica, Fernando \citeonline[ p.187]{iazzetta2009musica} nos fala sobre um tipo de \textit{\textbf{"luteria composicional"}}\ que surge do experimento de estúdio migrando para os computadores pessoais no final do século XX. A criação dos instrumentos musicais a partir de algoritmos, códigos, \textit{patches}\footnote{Algoritmos computacionais em forma de fluxogramas usados em liguagens de programação gráficas como Open Music e Pure Data.}, passa a existir como estratégia composicional tanto quanto a técnica instrumental ou a experiência de orquestração por escrita partitural. 
 
-Podemos observar na história da musica algorítmica que já em seus primeiros experimentos, como na Suíte Illiac de Lejarem Hiller, buscava-se a legitimação da promessa de viabilidade uma computação musical a partir da aplicação estatística de restrições composicionais derivadas das regras de harmonia e contraponto, emulando as técnicas do compositor ocidental tradicional, treinado nas partituras. 
+Podemos observar na história da musica algorítmica que em seus primeiros experimentos, como na \textit{Suíte Illiac} de \citeonline{hiller1957musical}, ainda buscava-se a legitimação de uma computação musical a partir da aplicação estatística de restrições composicionais derivadas das regras de harmonia e contraponto, emulando as técnicas do compositor ocidental tradicional, treinado nas partituras. 
 
-Isso logo inspira e possibilita também as expansões de técnicas através de aplicações de teorias matemáticas mais avançadas sobre a serialização de eventos partituráveis. No entanto este serialismo integral e ortodoxo vai aos poucos sendo permeado por uma música computacional que estimula a busca por sonoridades cada vez menos restritas a organização das 12 alturas da escala temperada. 
+Provada a possibilidade de um \textit{"computador ser usado para compor"}, logo começam expansões de técnicas \textit{muito complexas para serem pensadas sem o auxílio do computador}, através de aplicações de teorias matemáticas mais avançadas sobre a serialização de eventos partituráveis. No entanto este serialismo integral e ortodoxo vai aos poucos sendo permeado por uma música computacional que estimula a busca por sonoridades não-restritas a organização das 12 alturas da escala temperada, estimulado pelos experimentos da era inaugurada pela música eletroacústica e pela música concreta.
 
-O computador passa a ser cada vez mais usado para a pesquisa sobre síntese sonora e em dado momento sua capacidade de memória passa a permitir também as manipulações muito avançadas em sons gravados. Os experimentos concretos e eletrônicos com todo espectro audível passam a ser uma das primeiras coisas que um músico iniciado pela computação terá contato, já que o uso dos processos partiturados estarão sempre de alguma forma ligados a tradições ocidentais da orquestração ou estudo de instrumentos musicais de um repertorio de prática comum.
+O computador passa a ser cada vez mais usado para a pesquisa sobre síntese sonora e em dado momento sua capacidade de memória passa a permitir também manipulações muito avançadas em sons gravados. Os experimentos concretos e eletrônicos com todo espectro audível passam a ser \textbf{uma das primeiras coisas que um músico iniciado pela computação terá contato}, já que o uso dos processos partiturados estarão sempre de alguma forma ligados a tradições ocidentais da orquestração ou estudo de instrumentos musicais de um repertorio de prática comum.
 
-Jean Bresson, um dos desenvolvedores da linguagem OpenMusic, desenvolvida no IRCAM, aponta que esta tendência para uso do computador como ferramenta de manipulação de sonoridades sintéticas ou pré-gravadas tem seu auge justamente neste período que sucede a possibilidade do uso do computador pessoal, e considera que na contramão do que passa a ser considerada a sonoridade da "computer music",estão os processos simbólicos de manipulação inspirados na partitura, que deram origem aos softwares como PatchWork e OpenMusic.
+Jean Bresson, um dos criadores da linguagem OpenMusic\footnote{Linguagem de programação de fluxo gráfico, baseada na linguagem LISP. \url{http://repmus.ircam.fr/openmusic/home}. Acesso em 27 de fevereiro de 2015.}, desenvolvida no IRCAM\footnote{Institut de Recherche et Coordination Acoustique/Musique. \url{http://www.ircam.fr/}. Acesso em 27 de fevereiro de 2015.}, aponta que esta tendência para uso do computador como ferramenta de manipulação de sonoridades sintéticas ou pré-gravadas tem seu auge justamente neste período que sucede a possibilidade do uso do computador pessoal, e relembra que os processos simbólicos de manipulação inspirados na partitura, que deram origem a linguagem OpenMusic, foram sendo cada vez mais ignorados pela estética da \textit{"computer music"}.
 
 
 \begin{citacao}
@@ -529,9 +526,9 @@ Jean Bresson, um dos desenvolvedores da linguagem OpenMusic, desenvolvida no IRC
 
 Nas primeiras décadas do século XXI, com a sedimentação da computação em rede mundial, a popularização de ferramentas de busca e mineração de dados e o estabelecimento de uma cultura de compartilhamento de arquivos digitais audiovisuais temos a viabilização de algumas novas tendências.
 
-A colagem referencial inspirada por esta alta-disponibilidade de fonogramas digitais e a "sonificação" de dados que a priori não estavam em um contexto musical tornam potentes aquilo que Johanes Kreidler chama de "Novo Conceitualismo": de um gráfico da bolsa de valores aos movimentos de uma bactéria em um microcoscópio tudo pode tornar-se uma relação entre X e Y parâmetros de uma música.
+A colagem referencial inspirada por esta alta-disponibilidade de fonogramas digitais e a "sonificação" de dados que a priori não estavam em um contexto musical tornam potentes aquilo que Johanes Kreidler chama de "Conceitualismo"\footnote{Conferir a palestra de Kreidler em Harvard, de 14 de abril de 2013 - \url{https://www.youtube.com/watch?v=cUIzq52kuP4}. Acessado em 27 de fevereiro de 2015.} : de um gráfico da bolsa de valores aos movimentos de uma bactéria em um microcoscópio tudo pode tornar-se uma relação metafórica entre parâmetros de uma música.
 
-Iazetta problematiza esta situação da seguinte maneira:
+Iazetta, no entanto, problematiza esta situação da seguinte maneira:
 
 
 \begin{citacao}
@@ -540,44 +537,32 @@ Iazetta problematiza esta situação da seguinte maneira:
 \textbf{O discurso enfatizando o caráter inovador que acompanha cada novo invento geralmente esconde o quanto nossos avanços representam uma consolidação  de conhecimentos existentes, mais do que saltos progressivos}”. \cite[p. 151-153, grifo nosso.]{iazzetta2009musica}
 \end{citacao}
 
-Considerando este infindável escopo de investigação e as prioridades com que depara-se hoje o músico que programa computadores ou o programador que faz música, decidimos investigar algumas balizas para a manipulação dos processos simbólicos partituráveis na escala temperada em um contexto teórico que estivesse nos limites da ideia de tonalidade, porém restritos a estratégias de manipulação das doze alturas e ao uso do timbre do piano como uma abstração "neutra" para referência das alturas.
+Considerando este cenário com que depara-se hoje \textbf{o músico que programa computadores ou o programador que faz música}, decidimos investigar \textbf{uma situação imediatamente anterior a influência dos computadores no processo composicional.} Referências que precederam o serialismo planejado a priori como estratégia estatística, e que inaugurou a música autoral auxiliada por computadores no anos 50 (com trabalhos como os de Xenakis, Stockhausen, Boulez ou Babbitt).
 
-Para isso decidimos focar na possibilidade de organizar apontamentos composicionais pós-tonais a partir da análise assistida por computador de uma material de referência pós-tonal com ampla musicologia disponível. Assim decidimos fazer revisão a partir de apontamentos sobre Bela Bartók.
+Um limite que teve seu auge um pouco antes do início da história da música algorítmica, antes da preocupação imediata com os timbres ou da era das manipulações de amostras sonoras, e de certa maneira ainda proto-serialista. Uma música por vezes chamada politonal, polimodal ou usando o termo de \citeonline{straus2004}: \textit{\textbf{pós-tonal}}. 
 
-O procedimento dividiu-sem em 3 etapas: Apontamentos da Análise Bartokiana, Formalizações computacionais da análise assistida por computador e formalizaçoes computacionais da composição assistida por computador.
+Para isso investigamos algumas bases para a manipulação dos processos simbólicos partituráveis na escala temperada em um contexto teórico que estivesse nos limites da ideia de tonalidade, porém restritos a estratégias de manipulação das doze alturas e ao uso do timbre do piano como uma abstração "neutra"\footnote{Tomamos esta arbitrária "neutralidade" apenas para medir as relações intervalares como foco de investigação, sem uma preocupação imediata com timbres. Uma abordagem ainda mais focada na "sonoridade" do piano poderia encontrar referências no trabalho de \citeonline{guigue2012}, para continuidade do presente trabalho. } para referência das alturas.
+
+Decidimos focar na possibilidade de organizar apontamentos composicionais pós-tonais a partir de ferramentas de análise assistida por computador. Nossa estratégia para definição do escopo foi a de partir do estudo de caso do compositor Bela Bartók.
+
+O procedimento dividiu-sem em 3 etapas:\textit{ a) apontamentos da Análise Bartokiana, b) formalizações computacionais da análise assistida por computador e c) formalizaçoes computacionais da composição assistida por computador.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% talvez
+%\section*{Musicologia Assistida por computador}
 
 
+Iniciamos esta pesquisa buscando entender como o percurso que as formalizações computacionais de elementos básicos da cognição musical permitiram o atual estágio da \textit{análise musical assistida por computador}. Trabalhos como a formalização de uma gramática gerativa da música tonal proposta por \citeonline{lerdahl1983generative} e derivações similares que geraram implementações computacionais como as pesquisas de \citeonline{temperley2001cognition} e \citeonline{huron2006sweet} nos interessaram e pareceram a princípio essenciais como base para o entendimento de algoritmos de segmentação de estruturas musicais observáveis em partituras e arquivos de corpus derivados de instruções composicionais simbólicas.
+
+Dado o período de quase quatro décadas das primeiras implementações destes algoritmos de segmentação musical temos atualmente um cenário bastante amplo para testar muitas destas teorias e buscar compreende-las a partir de uma experiência prática. Alguns dos algoritmos implementados por Temperley, Huron e pesquisas similares podem ser experimentados com a biblioteca Python Music21\footnote{Biblioteca voltada para procedimentos de análise musical assistida por computador, desenvolvido com suporte do MIT. \url{http://web.mit.edu/music21/}. Acesso em 27 de fevereiro de 2015.}, que foi usada em nossos estudos de caso explicados no \autoref{analise_computacional}, juntamente com algumas implementações destas análises em linguagem OpenMusic, para comparação das ferramentas.
+
+No entanto, as abordagens generalistas dos problemas quantizáveis de expectativa musical com base em pesquisas sobre cognição e fruição da linguagem tonal\footnote{ Entenda-se aqui - a música de tradição clássica e romântica ocidental, repertório referido como "de prática comum"\cite{temperley2001cognition} } e seus problemas de ordem métrica, rítmica, melódica, harmônica e prolongacional\footnote{De maneira geral os procedimentos cristalizados pela tradição shenkeriana. Conferir \citeonline{dunsby2011analise} } quase sempre tangenciam a música pós-tonal como uma exceção especializada das regras gerais, o que nos chamou a atenção para quais seriam as alternativas a uma abordagem que partisse de outros princípios. 
+
+Objetivando este escopo mais restrito ao período pós-tonal buscamos na literatura específica das análises do repertório bartokiano ( \autoref{bartokianas} ) e na literatura que funda algumas das nomenclaturas da análise pós-tonal ( \autoref{pos_tonal} ) alguns aspectos mais específicos. 
+
+Destacamos desta literatura: a organização de sonoridades por novos critérios de organização intervalar, casos de observação de simetrias, ciclos transposições e transformações destes materiais e a busca por descrições de outras lógicas de encadeamento dos blocos e sua relação com as percepções mais básicas que ainda operam o lastro de expectativa tonal. Estes procedimentos são descritos em patches de OpenMusic que são usados também como geradores de sugestões composicionais detalhadas na \autoref{cac} .
 
 
 \part{Percurso pela Analise Musical }
-
-
-%\chapter{Percurso pela Analise Musical}
-
-%Prioridade na descrição de métodos da biblioteca music21
-%Opção por Python http://spectrum.ieee.org/computing/software/top-10-programming-languages 
-
-
-%\section{Análise musical para regras gerativas }
-
-
-
-\section{Musicologia Assistida por computador}
-
-
-
-Iniciamos esta pesquisa buscando entender como o percurso que as formalizações computacionais de elementos básicos da cognição musical permitiram o atual estágio da musicologia assistida por computador. Trabalhos como as primeiras tentativas de definir gramáticas computáveis de Curtis \citeonline{roads1979grammars}, a formalização de uma gramática gerativa da música tonal proposta por \citeonline{lerdahl1983generative} e derivações que geraram implementações computacionais como as pesquisas de \citeonline{temperley2001cognition} e \citeonline{huron2006sweet} nos interessaram e pareceram a princípio essenciais como base para o entendimento de algoritmos de segmentação de estruturas musicais observáveis em partituras e arquivos de corpus derivados de instruções composicionais simbólicas.
-
-No entanto percebemos no decorrer de nosso aprofundamento nesta bibliografia específica que descrever todo seu escopo em profundidade e abrangência apresentava duas questões essenciais de prioridades para o presente trabalho, considerando o caso da teoria pós-tonal almejada aqui e em especial para as particularidades presentes na música de Bela Bartók que pudessem interessar como singularidade composicional: 
-
-
-1) As abordagens generalistas dos problemas quantizáveis de expectativa musical com base em pesquisas sobre cognição e fruição da linguagem tonal, uma música de tradição clássica e romântica ocidental, repertório referido como "de prática comum"\footnote{c.f. temprley} e seus problemas de ordem métrica, rítmica, melódica, harmônica e prolongacional\footnote{tradição shenkeriana} quase sempre tangenciam a música que interessa na presente pesquisa como uma exceção especializada das regras gerais, o que nos chamou a atenção para quais seriam as alternativas a uma abordagem que partisse de outros princípios. 
-
-Encontramos então na literatura específica das análises do repertório bartokiano ( \autoref{bartokianas} ) e na literatura que funda algumas das nomenclaturas da análise pós-tonal um ponto de partida mais objetivo: organização de sonoridades por novos critérios de organização intervalar, casos de observação de simetrias, ciclos transposições e transformações destes materiais e a busca por descrições de outras lógicas de encadeamento deste material intervalar e sua relação com as percepções mais básicas que ainda operam o lastro de expectativa tonal
-
-2) Dado o período de quase quatro décadas das primeiras implementações destes algoritmos de segmentação musical temos atualmente um cenário bastante amplo para testar muitas destas teorias e buscar compreende-las a partir de uma experiência prática. Alguns dos algoritmos implementados por Temperley, Huron e pesquisas similares podem ser experimentados com a biblioteca python Music21, que foi usada em nossos estudos de caso. Consideramos esta uma melhor estratégia fazer as digressões sobre as origens destes algoritmos a partir destas implementações, seus usos e limitações na presente pesquisa, portanto.
-
-
 
 
 \chapter{Apontamentos Bartokianos}
@@ -1456,7 +1441,10 @@ comentario de  mikro101 em strauss
 
 \part{Formalizações Computacionais}
 
+
 \chapter{Analise de Corpus}
+\label{analise_computacional}
+
 
 \section{Formatos de entrada}
 
@@ -2102,6 +2090,7 @@ O objeto de sequenciamento de acordes o "chord-seq" permite a representação de
 
 \pagebreak
 \subsection{LZ: Extração de motivos e aprendizado de máquina}	
+\label{lz}
 
 A biblioteca de Open Music LZ foi elaborado sobre a pesquisa de \citeonline{dubnov2003using} para aplicação de alguns métodos de "Aprendizado de Máquina"\footnote{Podemos definir de maneira geral a área de "Aprendizado de Máquina" como procedimentos computacionais onde temos algoritmos que "aprendem"\ com a interação do usuário na classificação de re-incidência de padrões, moldando comportamentos que podem solucionar problemas. Para uma abordagem mais específica do tema conferir \citeonline{bishop2006pattern}} para a filtragem de motivos relevantes em uma composição.
 
@@ -2134,6 +2123,7 @@ Apesar de realizar uma "re-síntese" dos motivos escolhidos a biblioteca LZ pare
 
 
 \chapter{Composição Assistida por Computador}
+\label{cac}
 
 \section{Cliches generativos partituraveis}
 
@@ -2163,13 +2153,45 @@ Apesar de realizar uma "re-síntese" dos motivos escolhidos a biblioteca LZ pare
 \chapter{CosmoBagatellas}
 
 
-\chapter{Lastros e Rumos}
+%\chapter{Lastros e Rumos}
 
 
 %%%%%
 %%%%%
 %%%%%
 %%%%%
+\chapter*[Conclusão]{Conclusão}
+\addcontentsline{toc}{chapter}{Conclusão}
+\label{conclusao}
+
+A revisão da literatura específica sobre o compositor Bela Bartók mostrou-se essencial como referência para construção de procedimentos de estilo pós-tonal sugeridos nos apontamentos. Como já previa o pesquisador de inteligência artificial Douglas Hofstadter na coleção de impressões sobre a pesquisa de geradores de estilo de David \citeonline{cope2004virtual} :
+
+\begin{citacao}
+A deeper imitator would add other outer layers of style but
+fail to penetrate all the way to the core, or stylistic bull's-eye. But only someone who
+had dedicated years to the art, and whose emotional makeup, moreover, bore a deep
+affinity to that of the composer in question.\cite[ p.54]{cope2004virtual}
+\end{citacao}
+
+
+A tentativa de usar uma análise assistida por computador ancorada em parâmetros mais genéricos, derivados de investigações sobre cognição musical aplicada na segmentação de elementos básicos, mostrou-se insuficiente e limitada para um repertório pós-tonal estilisticamente idiossincrático como o de Bela Bartók.
+
+Vale relevar que procedimentos baseados em \textit{"aprendizado de máquina"}, como o exemplificado com a bilioteca OpenMusic LZ ( \autoref{lz} ) apontam uma direção viável para auxiliar a segmentação automatizada sem necessidade a priori de uma classificação especializada de parâmetros. O procedimento "treina" a máquina para separar segmentos re-incidentes e remonta sequencias com estes clichês. 
+
+A remontagem disponível como padrão na biblioteca no entanto não tem como possuir uma consistência como macroforma, pois apenas remonta os clichês por proximidade de similaridade dos segmentos.
+A etapa composicional requer aplicação arbitrária de uma estratégia de encadeamento dos clichês, conectado-os por conduções melódicas e planejando as texturas politonais ou polimodais características.
+
+No presente estágio da pesquisa decidimos por separar os dois procedimentos assistidos por computador pesquisados aqui - a análise e composição - buscando uma maior liberdade na experimentação com os procedimentos e um registro de ideias derivadas. 
+
+O uso de duas linguagens de programação durante o processo - OpenMusic e Python (com a biblioteca Music21)  - foi importante para que pudéssemos testar alguns procedimentos já implementados em ao menos uma das ferramentas e compará-las quando disponíveis em ambas. Ficou claro na prática do processo que o legado das bibliotecas e funções de programação devem ser levados em conta tanto quanto a literatura disponível ou a escuta das composições de referência. A possibilidade de ler código aberto é essencial para o entendimento de teorias que o geraram.
+
+Ficou para uma possível continuação deste trabalho a implementação dos procedimentos de uma maneira mais integrada e sem necessária interação humana em tantas etapas, podendo ser usada em um corpus grande de composições relacionadas (exemplo: livros inteiros dos Mikrokosmos ou relação entre compositores pós-tonais diferentes). 
+
+Interessa também como desdobramento desta pesquisa a ampliação dos parâmetros para uma teoria que também especule com a "sonoridade"\cite{guigue2012} do piano para além do uso "neutro" dos timbres. 
+
+
+
+
 
 
 
@@ -2204,7 +2226,9 @@ Apesar de realizar uma "re-síntese" dos motivos escolhidos a biblioteca LZ pare
 % Imprime uma página indicando o início dos apêndices
 \partapendices
 
+
 \chapter{Fórmulas de agrupamento e transformação dos intervalos}
+\label{pos_tonal}
 
 A teoria de grupos de classes de altura utiliza como base de suas formulações a relação entre os 12 semitons da escala cromática de forma modular: considerando alturas de mesma oitava como sujeitas mesmas propriedades intervalares, podendo argumentar relações independentes de registro. Exemplo: O Dó grave representado no protocolo MIDI pelo valor 24 tem uma relação de equivalência com o Dó agudo de valor 72. A fórmula é simples: ambos quando divididos por 12 apresentam resto 0. A nota Ré, por exemplo, sempre apresentaria o resto 2, e assim por diante. Dizemos por tanto que pertencem a uma mesma classe de altura.
 
@@ -2322,7 +2346,7 @@ A forma prima é um procedimento para simplificar ainda mais a forma normal, enc
 
 \section{Singularidades nos agrupamentos }
 
-Algumas propriedades entre os grupos de classes de alturas são muito interessantes como princípio composicional e, mesmo quando não tão obvias em primeiras audições, ao menos ajudam garantir alguma coerência estrutural conceitual. George Perle argumenta sobre "funções motívicas"\ em grupos de alturas \cite[ p.60-85]{perle1991serial} e observa algumas estratégias de compositores para aproveitar algumas propriedades encontradas em relações internas das series. Perle no entanto mostra-se cético quanto a formalização de nomenclaturas analíticas derivadas da classificação de Allen Forte e sua aplicação em argumentações para análises de composições que tenham sido compostas antes fórmulas tornarem-se ferramentas musicológicas. \cite{perle1990pitch}
+Algumas propriedades entre os grupos de classes de alturas são muito interessantes como princípio composicional e, mesmo quando não tão obvias em primeiras audições, ao menos ajudam garantir alguma coerência estrutural conceitual. George Perle argumenta sobre "funções motívicas"\ em grupos de alturas \cite[ p.60-85]{perle1981serial} e observa algumas estratégias de compositores para aproveitar algumas propriedades encontradas em relações internas das series. Perle no entanto mostra-se cético quanto a formalização de nomenclaturas analíticas derivadas da classificação de Allen Forte e sua aplicação em argumentações para análises de composições que tenham sido compostas antes fórmulas tornarem-se ferramentas musicológicas. \cite{perle1990pitch}
 
 Levantaremos aqui algumas destas propriedades conforme o resumo didático proposto por \citeonline{straus2004}, sem ainda estarmos certos de sua efetividade para analises mas interessados na formalização computacional possível destas para processos composicionais.
 
