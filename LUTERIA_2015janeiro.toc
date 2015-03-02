@@ -24,12 +24,9 @@
 \contentsline {subsection}{\numberline {1.5.3}Simetria Literal}{45}{subsection.1.5.3}
 \contentsline {section}{\numberline {1.6}Cole\IeC {\c c}\IeC {\~o}es referenciais ordenadas por conjuntos de classes de altura}{47}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}Octatonismo e suas parti\IeC {\c c}\IeC {\~o}es}{48}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Combina\IeC {\c c}\IeC {\~a}o transpositiva em Mikrokosmos 109}{52}{subsection.1.6.2}
 \contentsline {section}{\numberline {1.7}Modalismo e estrat\IeC {\'e}gias rotacionais}{52}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}Rota\IeC {\c c}\IeC {\~a}o Pentat\IeC {\^o}nica}{53}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.1}Rota\IeC {\c c}\IeC {\~a}o Pentat\IeC {\^o}nica}{52}{subsection.1.7.1}
 \contentsline {section}{\numberline {1.8}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{54}{section.1.8}
-\contentsline {subsection}{\numberline {1.8.1}Limites e ideias a partir de analise tonal funcional}{56}{subsection.1.8.1}
-\contentsline {subsection}{\numberline {1.8.2}Acompanhamento e textura}{56}{subsection.1.8.2}
 \contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}\IeC {\~o}es Computacionais}}{57}{part.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Analise de Corpus}}{59}{chapter.2}
