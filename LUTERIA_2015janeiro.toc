@@ -43,15 +43,13 @@
 \contentsline {subsubsection}{\numberline {2.2.2.1}Key Profiles}{71}{subsubsection.2.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2.2}Contorno Intervalar}{76}{subsubsection.2.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.3}Infer\IeC {\^e}ncia de escalas e modos}{79}{subsubsection.2.2.2.3}
-\contentsline {subsection}{\numberline {2.2.3}Busca e extra\IeC {\c c}\IeC {\~a}o de padr\IeC {\~o}es}{80}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}Acento Mel\IeC {\'o}dico}{80}{subsubsection.2.2.3.1}
-\contentsline {section}{\numberline {2.3}OpenMusic}{81}{section.2.3}
+\contentsline {section}{\numberline {2.3}OpenMusic}{80}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Visualiza\IeC {\c c}\IeC {\~a}o das classes de altura e sequencias partituradas}{81}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Manipula\IeC {\c c}\IeC {\~a}o de Conjuntos e suas nomenclaturas}{82}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}Contornos intervalares e crivos}{83}{subsubsection.2.3.2.1}
-\contentsline {subsection}{\numberline {2.3.3}Segmenta\IeC {\c c}\IeC {\~a}o Monitorada}{85}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}LZ: Extra\IeC {\c c}\IeC {\~a}o de motivos e aprendizado de m\IeC {\'a}quina}{87}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Especialidade da automa\IeC {\c c}\IeC {\~a}o versus especialidade do analista}{88}{section.2.4}
+\contentsline {subsection}{\numberline {2.3.2}Manipula\IeC {\c c}\IeC {\~a}o de Conjuntos e suas nomenclaturas}{81}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Contornos intervalares e crivos}{82}{subsubsection.2.3.2.1}
+\contentsline {subsection}{\numberline {2.3.3}Segmenta\IeC {\c c}\IeC {\~a}o Monitorada}{84}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}LZ: Extra\IeC {\c c}\IeC {\~a}o de motivos e aprendizado de m\IeC {\'a}quina}{86}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Especialidade da automa\IeC {\c c}\IeC {\~a}o versus especialidade do analista}{87}{section.2.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}}{89}{chapter.3}
 \contentsline {section}{\numberline {3.1}Cliches generativos partituraveis}{89}{section.3.1}
