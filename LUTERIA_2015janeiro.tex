@@ -568,6 +568,13 @@ Destacamos desta literatura: a organização de sonoridades por novos critérios
 \chapter{Apontamentos Bartokianos}
 \label{bartokianas}
 
+Construímos neste capítulo um catálogo de apontamentos analíticos sobre algumas características singulares da obra de Bela Bartók a partir da literatura musicológica derivada de sua obra.
+
+No entanto, mais do que alguma nova teoria sobre Bartók, a intenção deste capítulo é sobretudo servir como uma definição de um escopo pós-tonal para um percurso por ferramentas livres de análise musical assistida por computador.
+
+Durante a pesquisa fizemos um estudo comparado das análises com as linguagens de programação OpenMusic e Python (com a biblioteca Music21)  que serviram para ilustrar e testar os apontamentos e que estão explicados em maiores detalhes nos capítulos seguintes.
+
+Buscamos aqui neste percurso formular técnicas e algoritmos que sirvam a uma composição assistida por computador mais integrada com processos automatizados de análise musical pós-tonal.
 
 
 \section{Panorama básico sobre analise bartokiana}
@@ -1367,7 +1374,25 @@ Danielle \citeonline{fosler2007music} aponta ainda de maneira interessante em se
 
 \subsection{Modos Gregos}
 
-\lipsum[2]
+Os modos \textit{gregos} ou modos \textit{eclesiásticos} são bastante conhecidos na teoria musical ocidental por já haverem servido de matriz para música litúrgica do período pré-clássico na Europa e de certa maneira sempre presentes desde a concepção da escala temperada como uma configuração de sete notas contendo dois intervalos de semitom e cinco intervalos de tom inteiro, o conceito de diatonismo. 
+
+A escala jônia e sua sequencia de [2,2,1,2,2,1] semitons estão na gênese do que hoje entendemos como "escala maior". As rotações desta configuração de intervalos, deslocando o intervalo de semitom, são as operações que determinam os demais modos. 
+
+Quando normalizados em Dó podemos entender ao comparar sustenidos e bemóis que cada um dos modos pode funcionar como uma escala maior ou menor com alguns graus modificados: \textit{Jônio} - escala maior natural, \textit{Dórico} -   escala menor com sétima menor, \textit{Frígio} - escala menor com segunda menor e sétima menor, \textit{Lídio} - escala maior com quarta aumentada, \textit{Mixolídio} - escala maior com sétima menor, \textit{Eólio} - escala menor natural, \textit{Lócrio} - escala menor com segunda menor, sétima menor e quinta diminuta.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Rotações dos intervalos da pentatônica, normalizados em Dó. }
+	\begin{center}
+	    \includegraphics[scale=0.5]{modal/modal.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+Na música de Bartók os modos gregos são utilizados também como uma estratégia de confecção de modos híbridos, introdução de coleções não-diatônicas (algumas delas resgatadas do folclore do leste europeu) e cromatismos em geral.
+
+Uma das características recorrentes pra confecção dos modos híbridos na música de Bartok é o uso de rotações da escala pentatônica, como veremos a seguir.
+
 
 \subsection{Rotação Pentatônica}
  
@@ -1401,7 +1426,14 @@ A inserção de jogos de tensão com a célula [ B - F\# - F - Bb ], mostra-se p
 
 \subsection{Cromatismo Polimodal}
 
-\lipsum[3]
+Algumas das construções de polimodos serve também como uma maneira de amenizar a entrada de cromatismos, em algumas situações introduzindo todas as 12 notas da escala cromática de maneira sutil. 
+
+Diferente da da intenção dodecafônica que buscava construir uma escuta de equilíbrio e equivalência entre os doze intervalos, Bartók trabalha aquilo que chama "cromatismo polimodal" construindo estratégias de polarização, sem no entanto usar o cromatismo como uma estratégia de função tonal pra e simples. Em suas palavras:
+
+\begin{citacao}
+As the result of superposing a Lydian and Phrygian pentachord with a common fundamental tone, we get a diatonic pentachord filled out with all the possibe flat and sharp degrees. These seemingly chromatic degrees, however, are tottaly different in their function from the altered degrees of the chromatic styles of the previous periods. A chromatically altered note of a chord is in strict relation to its non-altered form; it is a transition leading to the respective tone of following chord. I our polymodal chromaticism, however, tha flat and te sharp tones are not altered degrees at all; they are diatonic ingredients of a diatonic modal scale.\cite[ p.367]{bartok1993bela} 
+\end{citacao}
+
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Rotações dos intervalos da pentatônica, normalizados em Dó. }
@@ -1486,11 +1518,67 @@ Na \autoref{m21} fazemos uma análise assistida por computador de Mikrokosmos 41
 \part{Formalizações Computacionais}
 
 
-\chapter{Analise de Corpus}
+\chapter{Analise Musical Assistida por Computador}
 \label{analise_computacional}
+
+Este capítulo elabora sobre as possibilidades de uma análise musical assistida por computador através de um estudo comparado entre duas ferramentas livres:\footnote{Consideramos aqui o conceito de "software livre" a partir da definição da FSF.} a biblioteca Python Music21 e a linguagem dataflow\footnote{definição liguagem dataflow} OpenMusic.
+
+Parte das aplicações práticas já foram demostradas nos exemplos dos capítulo anterior, mas aqui explicaremos em mais detalhes os conceitos e procedimentos computacionais utilizados.
 
 
 \section{Formatos de entrada}
+
+
+Os formatos de arquivos utilizados nas análises estão dentro do paradigma de representação simbólica de conteúdos musicais, isto é, são organizados como um mapa temporal de parâmetros gestuais sobre determinada nota ou conjuntos de notas no tempo, a ser ouvida sob determinado timbre (em todos casos aqui, um piano) não incluso como parte do arquivo. 
+
+Arquivos sonoros de performances instrumentais das composições ou as renderizações de timbres de arquivos simbólicos não estão sendo levados em conta na pesquisa por estarem fora do escopo no momento.
+
+
+
+\subsection{MIDI}
+
+Por muito tempo o formato MIDI ficou estigmatizado por ser associado aos timbres genéricos da indústria de sintetizadores populares dos anos 80 e 90 e pelas primeiras placas de som e softwares sequenciadores de eventos ou partituras dos computadores pessoais. 
+
+Na verdade o formato não carrega parâmetros de timbres em seus metadados. Arquivo MIDI carrega valores básicos de expressão sobre a força e a duração que a nota de deve ser tocada e as alturas cromáticas que devem ser moduladas, permitindo que esta seja posteriormente associada a qualquer timbre.
+
+É importante ter em mente que o protocolo MIDI, por ser há mais de 35 anos um padrão ainda em uso, gerou um legado relevante de arquivos baseados em repertório clássico para a reconstituição de corpus de peças partituradas. 
+
+Porém não são descritores capazes de garantir a boa formatação de seus dados como figuras de compasso de uma pauta tradicional, já que os arquivos MIDI não carregam informações sobre as figuras, apenas sobre suas durações, alturas e expressão. 
+
+Quando importados para programas de notação ou convertidos para formatos destes, os arquivos MIDI irão passar por uma segmentação arbitrária e determinada pelo algoritmo \textit{"parser}"\footnote{Método computacional para conversão entre formatos ou tipos de dados diferentes.} que vai converter determinada duração em determinada métrica quantizada, normalmente diferente das articulações de quais as músicas foram digitalizadas.
+
+
+\subsection{Lilypond}
+
+Lilypond é uma  \textit{"linguagem de marcação"} similiar a linguagem Latex (para formatação de documentos científicos) que também possui um compilador próprio, podendo gerar partituras em formato final de imagem, pdf ou arquivos MIDI para renderização sonora.
+
+O objetivo principal no Lilypond é a formatação de uma notação partitural avançada e otimizada para impressão em papel. Permite também a utilização de elementos de notação mais exótica, inclusão de texto, dedilhados, nomenclatura de acordes, sinais de expressão, e customização de elementos a partir de módulos. Facilita a otimização da disposição e dimensão das fontes dos objetos e possui uma linguagem \textit{script} própria, dialeto da sintaxe \textit{scheme}\footnote{Tutorial oficial de lilypond-scheme: \url{http://lilypond.org/doc/v2.16/Documentation/source/Documentation/extending/introduction-to-scheme} Acesso em 10 de julho de 2014.}.
+
+No caso do presente trabalho, estamos utilizando o arquivo Lilypond como um arquivo de saída ou um arquivo intermediário (de conversão entre arquivos), pois as ferramentas utilizadas aqui não possuem parsers satisfatórios para tratar uma entrada em Lilypond, apesar de serem capazes de gerar saída no formato .ly.
+
+
+\begin{figure}[htb]
+	\caption{\label{fig_grafico}Gerador de um acorde Dó maior (dó4 e4 g5) na clave de sol em Lilypond}
+	\begin{center}
+	    \includegraphics[scale=0.75]{score/lilypond.pdf}
+	\end{center}
+	%\legend{Fonte: autor}
+\end{figure}
+
+
+\subsection{MusicXML}
+
+O uso geral do formato MusicXML é similar ao Lilypond - formatação de partituras. No entanto, enquanto Lilypond é um sistema completo fechado em si próprio, o MusicXML é um formato com a intenção de tornar-se um padrão intercambiável entre diferentes aplicações de partitura\footnote{ Lista atualizada de aplicações compatíveis com o formato MusicXML: \url{http://www.musicxml.com/software/} Acesso em 10 de julho de 2014.}.
+
+
+\begin{figure}[htb]
+	\caption{\label{fig_grafico}Gerador de uma nota dó4 na clave de sol em MusicXML}
+	\begin{center}
+	    \includegraphics[scale=0.5]{score/musicxml.pdf}
+	\end{center}
+	%\legend{Fonte: autor}
+\end{figure}
+
 
 \section{Music21}
 \label{m21}
@@ -1503,17 +1591,12 @@ Music21 tem uma abordagem voltada para uma "musicologia assistida por computador
 
 \subsection{Stream}
 
-A biblioteca Music21 tem como uma das ideias básicas a estrutura de dados "Stream"(Fluxo). Este objeto funciona como uma subclasse da classe music21, os objetos quais a documentação\footnote{\url{http://goo.gl/lNMMLJ}Acesso em 13 de fevereiro de 2015.} refere-se  como "módulos". Um Stream irá conter dentro dele uma estrutura de dados semlhante a uma lista python, ordenando em sequencia os intrumentos, claves, assinaturas de compasso, notas, acordes, pausas, ornamentos.
+A biblioteca Music21 tem como uma das ideias básicas a estrutura de dados "Stream"(Fluxo). Este objeto funciona como uma subclasse da classe music21, os objetos quais a documentação\footnote{\url{http://goo.gl/lNMMLJ}Acesso em 13 de fevereiro de 2015.} refere-se  como "módulos". Um Stream irá conter dentro dele uma estrutura de dados semelhante a uma lista python, ordenando em sequencia os instrumentos, claves, assinaturas de compasso, notas, acordes, pausas, ornamentos.
 
-Para entender a estrutura de dados na prática, vejamos os procedimentos a seguir, demonstramos em um script Python\footnote{Para uma introdução básica ao Python a partir de uma perspectiva musical conferir \cite{Kroger201208} } comentado linha a linha mínimo como inserir um acorde dentro de um fluxo e renderizá-lo em uma partitura em pdf.
-
-\pagebreak
+Para entender a estrutura de dados na prática, vejamos os procedimentos a seguir, demonstramos em um script Python\footnote{Para uma introdução básica ao Python a partir de uma perspectiva musical conferir \cite{Kroger201208} } comentado linha a linha\footnote{Todos os comentários dos códigos Python mostrados aqui estão próprio no corpo do código em linhas que possuem o sinal de sustenido ( \# ) no início} mínimo como inserir um acorde dentro de um fluxo e renderizá-lo em uma partitura em pdf.
 
  
 \begin{lstlisting}
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 #Importando a biblioteca
 from music21 import *
 
@@ -1992,7 +2075,6 @@ Esta sonoridade quase pentatônica da melodia ou em ostinatos, que traz um cará
 \end{figure}
 
 
-
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}O final de Mikrokosmos 41 evidencia a sequencia de 2-2-2-1 semitons do modo Lídio. Detalhes sobre o script de extração de intervalos no Apêndice. } 
 	\begin{center}
@@ -2003,9 +2085,52 @@ Esta sonoridade quase pentatônica da melodia ou em ostinatos, que traz um cará
 
 O final de Mikrokosmos 41 cita o clichê da sequencia de 2-2-2-1 semitons do modo Lídio e "resolve" o acorde de Sol maior sem o uso da sensível Fá\#, negando-se a uma evidência de tonalidade maior tradicional, mas também negando-se a uma resolução de modo Lídio literal. A estratégia é pela condução da quinta justa Ré através dos passos Dó\# $\rightarrow $ Ré e Dó\# $\rightarrow $ Si mantendo-se em díade até que uma última entrada da nota Sol no baixo deixe uma impressão vaga de que havia uma polarização em torno do acorde de Sol maior. 
 
-\subsubsection{Construçao de escalas, polimodos e crivos}
+\subsubsection{Inferência de escalas e modos}
 
-\cite{ariza2011analytical}
+O Music21 possui um módulo muito útil para a inferência de modos e escalas\footnote{Para maiores detalhes sobre o modulo conferir o artigo \cite{ariza2011analytical}}, o que é muito útil para análises de repertórios como o de Bartók, onde há uma grande necessidade de busca de construções escalares.
+
+Este módulo pode pegar como referência qualquer dos modos gregos, escalas referenciais ou mesmo construções arbitrárias de coleções motívicas ou crivos.\footnote{Demonstramos em mais detalhes a construção de escalas em Music21 para fins composicionais em \autoref{cac} }
+
+Vejamos a seguir a aplicação na partitura de Mikrokosmos 109, comprovando a tese de \citeonline{cohn1991bartok} de que esta peça tem como uma das sonoridades principais uma linha motívica octatônica a partir de Dó.
+
+\begin{lstlisting}
+# importa o arquivo mikrokosmos 109
+localfile="localcorpus/mikro109.xml"
+
+# converte para o formato music21
+m=converter.parse(localfile)
+
+# separa as duas partes
+p0=m.parts[0]
+p1=m.parts[1]
+
+# cria uma escala de referencia octatonica
+c=scale.OctatonicScale('C')
+
+# verifica nota a nota (pulando acordes) se existem graus da escala de referencia 
+
+for n in p0.flat.notes:
+	if n.isNote:
+		n.addLyric(n.name)
+		n.addLyric(str(c.getScaleDegreeFromPitch(n.pitch)))
+
+for n in p1.flat.notes:
+	if n.isNote:
+		n.addLyric(n.name)
+		n.addLyric(str(c.getScaleDegreeFromPitch(n.pitch)))			
+			
+# imprime a partitura em pdf
+m.show('lily.pdf')		
+\end{lstlisting}
+
+
+
+
+
+
+
+
+
 
 
 
