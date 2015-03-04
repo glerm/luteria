@@ -9,24 +9,23 @@
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Apontamentos Bartokianos}}{21}{chapter.1}
 \contentsline {section}{\numberline {1.1}Panorama b\IeC {\'a}sico sobre analise bartokiana}{21}{section.1.1}
 \contentsline {section}{\numberline {1.2}Sistema de Eixos de Lendvai}{23}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Afinidades funcionais entre quarto e quinto graus}{24}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}A elabora\IeC {\c c}\IeC {\~a}o de uma sonoridade mista maior-menor}{28}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Especificidades da cole\IeC {\c c}\IeC {\~a}o ac\IeC {\'u}stica (overtone)}{30}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.1}Afinidades funcionais entre quarto e quinto graus}{23}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}A elabora\IeC {\c c}\IeC {\~a}o de uma sonoridade mista maior-menor}{27}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Especificidades da cole\IeC {\c c}\IeC {\~a}o ac\IeC {\'u}stica (overtone)}{29}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}Expectativas de grau sens\IeC {\'\i }vel}{32}{subsection.1.2.4}
-\contentsline {subsection}{\numberline {1.2.5}Sec\IeC {\c c}\IeC {\~a}o \IeC {\'A}urea e Fibonacci}{33}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.5}Sec\IeC {\c c}\IeC {\~a}o \IeC {\'A}urea e Fibonacci}{32}{subsection.1.2.5}
 \contentsline {subsubsection}{\numberline {1.2.5.1}Geometria da Macro-forma com analogias na Micro-forma}{34}{subsubsection.1.2.5.1}
 \contentsline {subsubsection}{\numberline {1.2.5.2}Cr\IeC {\'\i }ticas ao modelo de Lendvai}{35}{subsubsection.1.2.5.2}
-\contentsline {section}{\numberline {1.3}Ciclos Intervalares}{36}{section.1.3}
-\contentsline {section}{\numberline {1.4}C\IeC {\'e}lulas de Altura de Antokoletz}{40}{section.1.4}
+\contentsline {section}{\numberline {1.3}Ciclos Intervalares}{35}{section.1.3}
+\contentsline {section}{\numberline {1.4}C\IeC {\'e}lulas de Altura de Antokoletz}{39}{section.1.4}
 \contentsline {section}{\numberline {1.5}Simetria Inversiva}{42}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}Eixo de Simetrias como estrat\IeC {\'e}gia mot\IeC {\'\i }vica}{44}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Centricidade por Equil\IeC {\'\i }brio Inversivo}{45}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Simetria Literal}{46}{subsection.1.5.3}
-\contentsline {section}{\numberline {1.6}Cole\IeC {\c c}\IeC {\~o}es referenciais ordenadas por conjuntos de classes de altura}{48}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Octatonismo e suas parti\IeC {\c c}\IeC {\~o}es}{49}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.5.2}Simetria Literal}{46}{subsection.1.5.2}
+\contentsline {section}{\numberline {1.6}Cole\IeC {\c c}\IeC {\~o}es referenciais ordenadas por conjuntos de classes de altura}{47}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Octatonismo e suas parti\IeC {\c c}\IeC {\~o}es}{48}{subsection.1.6.1}
 \contentsline {section}{\numberline {1.7}Modalismo e estrat\IeC {\'e}gias rotacionais}{53}{section.1.7}
 \contentsline {subsection}{\numberline {1.7.1}Modos Gregos}{53}{subsection.1.7.1}
-\contentsline {subsection}{\numberline {1.7.2}Rota\IeC {\c c}\IeC {\~a}o Pentat\IeC {\^o}nica}{55}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.2}Rota\IeC {\c c}\IeC {\~a}o Pentat\IeC {\^o}nica}{54}{subsection.1.7.2}
 \contentsline {subsection}{\numberline {1.7.3}Cromatismo Polimodal}{56}{subsection.1.7.3}
 \contentsline {section}{\numberline {1.8}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{57}{section.1.8}
 \contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}\IeC {\~o}es Computacionais}}{61}{part.2}
@@ -47,8 +46,8 @@
 \contentsline {subsection}{\numberline {2.3.1}Visualiza\IeC {\c c}\IeC {\~a}o das classes de altura e sequencias partituradas}{81}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Manipula\IeC {\c c}\IeC {\~a}o de Conjuntos e suas nomenclaturas}{81}{subsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.2.1}Contornos intervalares e crivos}{82}{subsubsection.2.3.2.1}
-\contentsline {subsection}{\numberline {2.3.3}Segmenta\IeC {\c c}\IeC {\~a}o Monitorada}{84}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}LZ: Extra\IeC {\c c}\IeC {\~a}o de motivos e aprendizado de m\IeC {\'a}quina}{86}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.3}Segmenta\IeC {\c c}\IeC {\~a}o Monitorada}{83}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}LZ: Extra\IeC {\c c}\IeC {\~a}o de motivos e aprendizado de m\IeC {\'a}quina}{84}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Especialidade da automa\IeC {\c c}\IeC {\~a}o versus especialidade do analista}{87}{section.2.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}}{89}{chapter.3}
