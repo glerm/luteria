@@ -50,6 +50,13 @@ ISBN 2752100523.}
   the 19th ACM international conference on Multimedia}. [S.l.], 2011. p.
   743--746.}
 
+\bibitem[Bresson e P{\'e}rez-Sancho 2012]{bresson2012new}
+\abntrefinfo{Bresson e P{\'e}rez-Sancho}{BRESSON; P{\'E}REZ-SANCHO}{2012}
+{BRESSON, J.; P{\'E}REZ-SANCHO, C. New framework for score segmentation and
+  analysis in openmusic.
+\emph{Proceedings Sound and Music Computing Conference}, Copenhagen, Denmark,
+  2012.}
+
 \bibitem[Cohn 1988]{cohn1988inversional}
 \abntrefinfo{Cohn}{COHN}{1988}
 {COHN, R. Inversional symmetry and transpositional combination in bart{\'o}k.
@@ -178,6 +185,11 @@ WW Norton \& Company, 1989.}
 \abntrefinfo{Nierhaus}{NIERHAUS}{2009}
 {NIERHAUS, G. \emph{Algorithmic composition: paradigms of automated music
   generation}. [S.l.]: Springer, 2009.}
+
+\bibitem[Pardo e Birmingham 2002]{pardo2002algorithms}
+\abntrefinfo{Pardo e Birmingham}{PARDO; BIRMINGHAM}{2002}
+{PARDO, B.; BIRMINGHAM, W.~P. Algorithms for chordal analysis.
+\emph{Computer Music Journal}, MIT Press, v.~26, n.~2, p. 27--49, 2002.}
 
 \bibitem[Pearsall 2004]{pearsall2004symmetry}
 \abntrefinfo{Pearsall}{PEARSALL}{2004}

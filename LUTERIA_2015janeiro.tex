@@ -75,6 +75,7 @@
 % ---
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+\usepackage{float}
 
 %%%%%%%%%%% syntax highlight %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -127,7 +128,7 @@ procnamekeys={def,class}}
 \titulo{Luteria Composicional de algoritmos pós-tonais }
 \autor{Guilherme Rafael Soares}
 %\local{Brasil}
-\data{03 de março de 2015, v0.9999-Defesa}
+\data{04 de março de 2015, v0.99999-Defesa}
 \orientador{Prof. Dr. Daniel Quaranta}
 %\coorientador{Equipe \abnTeX}
 \instituicao{%
@@ -2106,104 +2107,153 @@ m.show('lily.pdf')
 \pagebreak
 \section{OpenMusic}
 
-\begin{citacao}
-"Enquanto a maioria das “linguagens de programação musical”\ lidam principalmente com processamento de sinal e síntese sonora, uma abordagem original adotada pelo time de representação musical do IRCAM no fim dos anos 80 foi
-particularmente um foco na nas estruturas simbólicas e processos musicais, isto é, aspectos tradicionalmente
-ignorados ou deixados de lado dos ambientes computacionais."\cite[ p.743]{bresson2011openmusic}
-\end{citacao}
+OpenMusic é um ambiente de programação com orientação visual criada com o suporte do IRCAM em 1997, derivada do ambiente PatchWork, e está dentro da família de interfaces desenvolvidas para articulação de processos simbólicos, mediados pela representação partitural.\footnote{Um artigo recente e introdutório pode ser encontrado nos escritos de \citeonline{bresson2011openmusic}}
 
-Em suma, o Open Music teve (pelo menos em seus primeiros anos) uma intenção voltada para processos focados na continuidade dos sistemas derivados dos estudos de intervalos, acordes, harmonia que estavam na base das preocupações do serialismo integral e outras estratégias composicionais que necessitavam manipulação de permutações e combinações matemáticas. O OM sempre foi um dos software amplamente utilizados para tal fim, e isto reflete diretamente em sua interface e cultura de uso.
+Em suma, o Open Music teve (pelo menos em seus primeiros anos) uma intenção voltada para processos focados na continuidade dos sistemas derivados dos estudos de intervalos, acordes, harmonia que estavam na base das preocupações do serialismo integral e outras estratégias composicionais (como o espectralismo e o microtonalismo) que necessitavam manipulação de permutações e combinações matemáticas. O OM sempre foi um dos software amplamente utilizados para tal fim, e isto reflete diretamente em sua interface e cultura de uso.
 
-A grande vantagem do uso do Open Music em procedimentos de análise musical assistida por computador é a de que sua orientação visual de programação por grafos interativos agiliza bastante a experimentação e facilita a organização de esquemas de representação gráfica das ideias algorítmicas de um procedimento.\footnote{Como já utilizamos no presente trabalho em toda a parte de revisão da teoria bartokiana.} 
+A grande vantagem do uso do Open Music em procedimentos de análise musical assistida por computador é a de que sua orientação visual de programação por grafos interativos agiliza bastante a experimentação e facilita a organização de esquemas de representação gráfica das ideias algorítmicas de um procedimento.\footnote{Como já utilizamos no presente trabalho em toda a parte de revisão da teoria bartokiana (\autoref{bartokianas})  .} 
 
 Como ferramenta composicional o OM é um \textit{framework} que tende a uma programação orientada pela reflexão em tempo diferido, isto é, estimula a composição por escolha entre diversos resultados permutados e decupados em um tempo de escuta.
 
-Organiza materiais orientado basicamente pela escrita e fortemente pensado dentro do esquema de intervalos melódicos
-harmônicos derivados da notação moderna para música orquestral, utilizando sequenciadores bastante similares ao pentagrama de pauta sem (\textit{“chord-seq”}) ou com figuras de compasso (com o sequeciador \textit{“voice”}).
-
+Organiza materiais orientado basicamente pela escrita e fortemente pensado dentro do esquema de intervalos melódicos harmônicos derivados da notação moderna para música orquestral, utilizando sequenciadores bastante similares ao pentagrama de pauta: sem barras de compasso (\textit{“chord-seq”}) ou com barras de compasso (com o sequeciador \textit{“voice”}).
 
 
 \subsection{Visualização das classes de altura e sequencias partituradas}
 
-Vale destacar aqui a vantagem intuitiva do uso de objetos de representação gráfica dos intervalos como o objeto "n-cercle", que organiza os conjuntos de classe de altura em torno de um gráfico semelhante a uma partição de "relógio" de 12 alturas, podendo representar assim simetrias e distâncias entre classes de altura.
+Vale destacar aqui a vantagem intuitiva do uso de objetos de representação gráfica dos intervalos como o objeto "n-cercle", que organiza os conjuntos de classe de altura em torno de um gráfico semelhante a uma partição de "relógio" de 12 alturas, podendo representar assim simetrias e distâncias entre as classes.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Objeto N-Cercle }
 	\begin{center}
-	    \includegraphics[scale=0.6]{estudosM21/ncercle.png}
+	    \includegraphics[scale=0.5]{estudosM21/ncercle.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
+\subsection{Notação Proporcional}
 
-O objeto de sequenciamento de acordes o "chord-seq" permite a representação de sequencias simbólicas partituradas derivadas de arquivos como MIDI ou musicxml em um formato inspirado nas partituras proporcionais: onde não há a medida de assinaturas, barras ou figuras de compasso mas sim um posicionamento das notas na altura das pautas e em uma distancia proporcional a posição temporal de seu ataque
+O objeto de sequenciamento de acordes o "chord-seq"\ permite a representação de sequencias simbólicas partituradas, montadas através de procedimentos algorítmicos ou derivadas de arquivos como MIDI ou MusicXML. O formato visual é inspirado nas partituras de notação proporcional: onde não há a medida de assinaturas, barras ou figuras de compasso mas sim apenas uma representação visual do posicionamento das notas na altura das pautas e em uma distancia proporcional a posição temporal de seu ataque.
+
+
+Os dados são estruturados em forma de parenteses aninhados, característica da linguagem LISP. Um exemplo de um uso comum dos parenteses é a maneira como o OM filtra notas e acordes: por padrão um objeto como chord-seq recebe uma lista de números em \textit{midicents}\footnote{Número absoluto da nota no padrão MIDI multiplicando por centésimos de semitom.} - números em uma primeira camada da lista serão interpretados como notas, números entre parênteses dentro de parênteses serão interpretados como acordes.
+
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Representação de uma sequencia partiturada com notação proporcional em um objeto chord\-seq }
 	\begin{center}
-	    \includegraphics[scale=0.5]{OMPD/chord-seq-sem-titulo.png}
+	    \includegraphics[scale=0.8]{OMPD/chord-seq-sem-titulo.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
+A biblioteca padrão de manipulação de listas do OM já apresenta uma série de objetos preparados para manipulações comuns em procedimentos com dados musicais - agrupamentos de notas em acordes ou clusters, buscas, substituições, operações matemáticas sobre toda a lista, ordenamento, serialização  de sequências, combinação, interpolação, permutação. 
+
+A \autoref{fig_listas} mostra alguns objetos básicos para manipulação de listas.
+
+\begin{figure}[!h]
+	\caption{\label{fig_listas}Objetos para filtragem de Listas }
+	\begin{center}
+	    \includegraphics[scale=0.3]{OMPD/OM-listasDELADO.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Manipulaçao de listas LISP }
+	\begin{center}
+	    \includegraphics[scale=0.3]{OMPD/manipulacao02.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
 \subsection{Manipulação de Conjuntos e suas nomenclaturas}
 
-%O OM também apresenta algumas ferramentas para manipulação de conjuntos de classe de altura
+O OM também apresenta algumas ferramentas nativas para manipulação de conjuntos de classe de altura que já facilitam a implementação de procedimentos de manipulação, transformação e análise de coleções baseadas na nomenclatura de \citeonline{forte1973structure}. Estas ferramentas estão localizadas em uma biblioteca chamada "Math".
 
+Na Figura 50 demonstramos alguns procedimentos básicos em um patch que faz a análise de todas as tríades dentro de uma oitava reduzida a uma única forma prima\footnote{Para uma introdução a terminologia da TCCA ver o \autoref{pos_tonal}. } de qual podem ser derivadas todas as demais transposições ou inversões possíveis.
 
+Em \textbf{(A)} temos o objeto \textit{"dn orbites"} listando todas as tríades na nomenclatura de Forte, com o objeto \textit{"pc set"} fazendo a conversão em listas de classes de altura. 
+
+A parte \textbf{(B)} da figura figura mostra as classes de alturas convertidas para suas formas geométricas dentro da visualização em \textit{"relógio de semitons"}, do objeto \textit{"n-cercle"}. 
+
+A parte \textbf{(C)} mostra algumas alternativas para a vizualização das classes - a forma prima das classes de altura para cada tríade, as notas respectivas sem oitava definida, o vetor intervalar\footnote{Ver \autoref{pos_tonal}} e com o objeto "n structure" estamos relacionando os intervalos internos do acorde (sendo que da última para primeira novamente considera-se uma distância oitavada em relação a nota raiz). Um detalhe nesta última listagem é de que estamos usando a função genérica Lisp "mapcar" para fazer a iteração sobre item a item de toda coleção, usando o modo lambda\footnote{Todos objetos de OM podem ser colocados em modo de recursividade utilizados como uma função lambda. Maiores detalhes na documentação em \url{http://support.ircam.fr/docs/om/om6-manual/co/LambdaPatch.html}. Acesso em 28 de fevereiro de 2015.} do objeto "n structure".
+
+Em \textbf{(D)} Selecionamos a 11ª coleção da lista (3-11) com o objeto nth. Observemos que "nth"\footnote{Um objeto que seleciona o n-ésimo elemento de uma lista, começando a contar as posições a partir de zero.} é uma função Lisp primitiva, e não um objeto de OM especializado. Importante notar portanto, que o OM permite o uso de quaisquer funções Lisp que rodem no seu interpretador embarcado.\footnote{A linguagem Lisp gerada pelos objetos é processada sob demanda por um ambiente embarcado. Este interpretador é baseado na plataforma LispWorks. } Também é possível implementar funções Lisp dentro do próprio ambiente, com o objeto \textit{"lisp"}.
+
+O vetor é transformado primeiro em inversão da sua forma prima (com o objeto \textit{"inv"} ) e em seguida a inversão é novamente reduzida a uma forma prima. Note-se que este exercício demonstra o parentesco entre o acorde maior e o acorde menor - a inversão de todos intervalos do acorde menor resulta um acorde maior.
+
+Em \textbf{(E)} vemos a conversão das três formas para uma sequencia de acordes com o zero em Dó 4 (nota 60 na notação MIDI).
+ 
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Todas tríades }
 	\begin{center}
-	    \includegraphics[scale=0.5]{OM_settheory/todas_triades.png}
+	    \includegraphics[scale=0.3]{OM_settheory/todas_triades.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
-\pagebreak
-\subsubsection{Contornos intervalares e crivos}
 
+\subsection{Segmentação e Análise no OM}
 
+A maior vantagem percebida na prática desta pesquisa, da utilização de procedimentos em OM sobre procedimentos em nosso experimento com Python/Music21 é a possibilidade de testar rapidamente procedimentos em gestos intuitivos de cópia e cola, numa costura de patches que privelegia um improviso heuristicamente produtivo. 
+
+O módulo de segmentação para análise implementado dentro de objetos sequenciadores do OM, como o \textit{chord-seq}, permite o uso de um processamento carregado de um código Lisp externo ou codificado na janela do editor Lisp embarcada no OM. 
+
+Na figura 56 temos a automatização de uma sequencia de acordes de um dos experimentos composicionais derivados dos estudos de simetrias do presente trabalho. No procedimento ilustrado podemos retirar do objeto \textit{chord-seq} as analises individuais de conjuntos de classes de altura para cada segmento e revelar que os acordes que estão em inversões, transposições e âmbitos distintos, revelam-se o mesmo grupo de classes de altura em suas formas primas.
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Objetos geradores de escalas e intervalos. Duas maneiras de representar uma proporção de fibonacci }
+	\caption{\label{fig_grafico}Módulo de segmentação para análise dentro dos objetos chord-seq. }
 	\begin{center}
-	    \includegraphics[scale=0.6]{OM_settheory/fibonacci.png}
+	    \includegraphics[scale=0.4]{OM_settheory/OMsetAnalise.png}
 	\end{center}
 	\legend{Fonte: autor }
-\end{figure}
+\end{figure}	
+		
+Na figura 57 temos um exemplo de de segmentação feita manualmente, com seleção de mouse, e em seguida analisada automaticamente em interação com a escuta, revelando a escolha de uma coleçao octatonica ja na primeira frase melodica de oito notas (duas repetidas) de Mikrokosmos 109.
 
-
-
-
-\begin{figure}[!h]
-	\caption{\label{fig_grafico}Construção de crivos. }
-	\begin{center}
-	    \includegraphics[scale=0.5]{OM_settheory/crivos.png}
-	\end{center}
-	\legend{Fonte: autor }
-\end{figure}
-
-
-
-
-
-
-
-
-\pagebreak
-\subsection{Segmentação Monitorada}
 
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Módulo de segmentação para análise dentro dos objetos chord-seq. }
 	\begin{center}
-	    \includegraphics[scale=0.35]{OMPD/segmentaOM.png}
+	    \includegraphics[scale=0.4]{OM_settheory/SegmentaMikro109Octa.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}	
-	
 
+O problema para este tipo de segmentação manual são os casos onde gostaríamos de fazer uma análise sem passar pela escuta e manipulação gráfica, gerando resultados diretamente. Para isso temos disponível o procedimento ilustrado na figura 58, situação onde é possível definir funções Lisp dentro do editor embarcado do OM e salvar para usos posteriores como um padrão de análise e segmentação.
+
+Para estes casos é possível desenvolver análises customizadas em linguagem Lisp, podendo também fazer chamadas das bibliotecas OM em seu código escrito. O procedimento mínimo para um registro de procedimento customizado de análise e segmentação esta ilustrado na figura 59.
+
+		
+		
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Procedimento de compilação de uma análise customizada, usando o editor Lisp embarcado no OM }
+	\begin{center}
+	    \includegraphics[scale=0.4]{OM_settheory/Analise_customizada.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}	
+				
+
+O artigo \textit{"New framework for score segmentation and analysis for Openmusic"}\cite{bresson2012new}, que descreve este ambiente de segmentação e análise, apresenta uma alternativa de análise harmônica supervisionada, que implementa um processamento externo ao OM com servidor Java baseado no modelo de \citeonline{pardo2002algorithms}.
+
+
+
+O servidor utiliza uma comunicação em protocolo OSC\footnote{Open Sound Control - protocolo desenvolvido no CNMAT, da Universidade de Berkeley-EUA, por Adrian Freed e Matt Wright para comunicações entre instrumentos musicais ou controladores de performance. Geralmente usado para envio de dados de parâmetros gestuais ao vivo, o protocolo é considerado uma alternativa ao padrão MIDI. No entanto pela possibilidade de descrição nos parâmetros com texto, em hierarquia de endereços similares aos protocolos de rede ou árvores de diretório unix, facilita o uso em qualquer contexto. Sua comunicação básica utiliza protocolos populares na internet como UDP/IP e TCP/IP, o que permite que as aplicações possam conversar entre si em redes locais ou globais muito facilmente. }
+
+\begin{citacao}
+The harmonic analysis software communicates with OpenMusic via OSC messages following a simple client/server protocol. When the harmonic-analysis class is attached to a chord-seq object in OM, a MIDI representation of the sequence is sent to the analysis server.\cite[ p.4]{bresson2012new}
+\end{citacao}		
+
+
+
+		
+
+\section{Extraçao de contornos}
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Extração de contorno. }
@@ -2214,9 +2264,6 @@ O objeto de sequenciamento de acordes o "chord-seq" permite a representação de
 \end{figure}
 
 
-
-
-\pagebreak
 \subsection{LZ: Extração de motivos e aprendizado de máquina}	
 \label{lz}
 
@@ -2244,8 +2291,6 @@ Utilizamos no presente trabalho alguns segmentos gerados por busca com a bibliot
 Apesar de realizar uma "re-síntese" dos motivos escolhidos a biblioteca LZ parece não preocupar-se em estabelecer critérios de re-organizaçao de uma forma total de composição a partir destes motivos. As aplicações exemplificadas argumentam em torno da concatenação de gestos idiomáticos, algo que pode funcionar para ideias de improviso livre ou para elaboração de catálogos de gestos. 
 
 
-
-
 \section{Especialidade da automação versus especialidade do analista}
 
 
@@ -2261,13 +2306,37 @@ Apesar de realizar uma "re-síntese" dos motivos escolhidos a biblioteca LZ pare
 
 \section{Tecnicas em Music21}
 
-\section{Experimentos em outras linguagens de CAC}
 
 \subsection{Tecnicas em OpenMusic}
 
-\subsection{Problematizações em PureData}
 
-\section{Probabilidade e Combinatória}
+
+
+\subsubsection{Contornos intervalares e crivos}
+
+Os objetos para construção de 
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Objetos geradores de escalas e intervalos. Duas maneiras de representar uma proporção de fibonacci }
+	\begin{center}
+	    \includegraphics[scale=0.6]{OM_settheory/fibonacci.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Construção de crivos. }
+	\begin{center}
+	    \includegraphics[scale=0.5]{OM_settheory/crivos.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
 
 
 
