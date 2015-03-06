@@ -128,7 +128,7 @@ procnamekeys={def,class}}
 \titulo{Luteria Composicional de algoritmos pós-tonais }
 \autor{Guilherme Rafael Soares}
 %\local{Brasil}
-\data{04 de março de 2015, v0.99999-Defesa}
+\data{05 de março de 2015, v0.999999-Defesa}
 \orientador{Prof. Dr. Daniel Quaranta}
 %\coorientador{Equipe \abnTeX}
 \instituicao{%
@@ -1554,7 +1554,7 @@ Music21 tem uma abordagem voltada para uma "musicologia assistida por computador
 
 A biblioteca Music21 tem como uma das ideias básicas a estrutura de dados "Stream"(Fluxo). Este objeto funciona como uma subclasse da classe music21, os objetos quais a documentação\footnote{\url{http://goo.gl/lNMMLJ}Acesso em 13 de fevereiro de 2015.} refere-se  como "módulos". Um Stream irá conter dentro dele uma estrutura de dados semelhante a uma lista python, ordenando em sequencia os instrumentos, claves, assinaturas de compasso, notas, acordes, pausas, ornamentos.
 
-Para entender a estrutura de dados na prática, vejamos os procedimentos a seguir, demonstramos em um script Python\footnote{Para uma introdução básica ao Python a partir de uma perspectiva musical conferir \cite{Kroger201208} } comentado linha a linha\footnote{Todos os comentários dos códigos Python mostrados aqui estão próprio no corpo do código em linhas que possuem o sinal de sustenido ( \# ) no início} mínimo como inserir um acorde dentro de um fluxo e renderizá-lo em uma partitura em pdf.
+Para entender a estrutura de dados na prática, vejamos os procedimentos a seguir, demonstramos em um script Python\footnote{Para uma introdução básica ao Python a partir de uma perspectiva musical conferir \cite{Kroger201208} } comentado linha a linha\footnote{Todos os comentários dos códigos Python mostrados aqui estão próprio no corpo do código em linhas que possuem o sinal de sustenido ( \# ) no início.} mínimo como inserir um acorde dentro de um fluxo e renderizá-lo em uma partitura em pdf.
 
  
 \begin{lstlisting}
@@ -2153,7 +2153,7 @@ A \autoref{fig_listas} mostra alguns objetos básicos para manipulação de list
 \begin{figure}[!h]
 	\caption{\label{fig_listas}Objetos para filtragem de Listas }
 	\begin{center}
-	    \includegraphics[scale=0.3]{OMPD/OM-listasDELADO.png}
+	    \includegraphics[scale=0.55]{OMPD/OM-listasDELADO.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
@@ -2162,12 +2162,12 @@ A \autoref{fig_listas} mostra alguns objetos básicos para manipulação de list
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Manipulaçao de listas LISP }
 	\begin{center}
-	    \includegraphics[scale=0.3]{OMPD/manipulacao02.png}
+	    \includegraphics[scale=0.6]{OMPD/manipulacao02.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
-
+\pagebreak
 \subsection{Manipulação de Conjuntos e suas nomenclaturas}
 
 O OM também apresenta algumas ferramentas nativas para manipulação de conjuntos de classe de altura que já facilitam a implementação de procedimentos de manipulação, transformação e análise de coleções baseadas na nomenclatura de \citeonline{forte1973structure}. Estas ferramentas estão localizadas em uma biblioteca chamada "Math".
@@ -2190,12 +2190,12 @@ Em \textbf{(E)} vemos a conversão das três formas para uma sequencia de acorde
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Todas tríades }
 	\begin{center}
-	    \includegraphics[scale=0.3]{OM_settheory/todas_triades.png}
+	    \includegraphics[scale=0.5]{OM_settheory/todas_triades.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
-
+\pagebreak
 \subsection{Segmentação e Análise no OM}
 
 A maior vantagem percebida na prática desta pesquisa, da utilização de procedimentos em OM sobre procedimentos em nosso experimento com Python/Music21 é a possibilidade de testar rapidamente procedimentos em gestos intuitivos de cópia e cola, numa costura de patches que privelegia um improviso heuristicamente produtivo. 
@@ -2215,35 +2215,34 @@ Na figura 56 temos a automatização de uma sequencia de acordes de um dos exper
 Na figura 57 temos um exemplo de uma segmentação feita manualmente, com seleção de mouse, e em seguida analisada automaticamente em interação com a escuta, revelando a escolha de uma coleção octatonica já na primeira frase melódica de oito notas (duas repetidas) de Mikrokosmos 109.
 
 
-
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Módulo de segmentação para análise dentro dos objetos chord-seq. }
+	\caption{\label{fig_grafico}Encontrando segmento de octatônica. }
 	\begin{center}
-	    \includegraphics[scale=0.44]{OM_settheory/SegmentaMikro109Octa.png}
+	    \includegraphics[scale=0.3]{OM_settheory/SegmentaMikro109Octa.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}	
 
 O problema para este tipo de segmentação manual são os casos onde gostaríamos de fazer uma análise sem passar pela escuta e manipulação gráfica, gerando resultados diretamente. Para isso temos disponível o procedimento ilustrado na figura 58, situação onde é possível definir funções Lisp dentro do editor embarcado do OM e salvar para usos posteriores como um padrão de análise e segmentação.
 
-Para estes casos é possível desenvolver análises customizadas em linguagem Lisp, podendo também fazer chamadas das bibliotecas OM em seu código escrito. O procedimento mínimo para um registro de procedimento customizado de análise e segmentação esta ilustrado na figura 59.
+Para estes casos é possível desenvolver análises customizadas em linguagem Lisp, podendo também fazer chamadas das bibliotecas OM em seu código escrito. O procedimento mínimo para uma compilação de procedimento customizado de análise e segmentação esta ilustrado na figura 59.
 
 				
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Procedimento de compilação de uma análise customizada, usando o editor Lisp embarcado no OM }
 	\begin{center}
-	    \includegraphics[scale=0.4]{OM_settheory/Analise_customizada.png}
+	    \includegraphics[scale=0.3]{OM_settheory/Analise_customizada.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}	
 
-No código\footnote{A especificação de classes e métodos de analise disponíveis esta em \url{http://repmus.ircam.fr/openmusic/dev-resources/analysis}. Acesso em 3 de março de 2015.} temos: 
+No código\footnote{A especificação completa de classes e métodos de analise disponíveis esta em \url{http://repmus.ircam.fr/openmusic/dev-resources/analysis}. Acesso em 3 de março de 2015.} temos: 
 
 \begin{itemize}
 
 \item A definição do escopo com \textit{in-package:om} para a carga das classes e métodos
 
-\item A definição de classe uma análise \textit{(defclass! nome-da-analise (abstract-analysis)()))}. 
+\item A definição de uma classe análise \textit{(defclass! nome-da-analise (abstract-analysis)()))}. 
 
 \item Um método para iteração dos acordes, determinando que cada acorde sera um segmento de uma cor diferente, cortando os segmentos: \textit{(defmethod compute-analysis-segments ((self nome-da-analise) (object t))))}.
 
@@ -2255,8 +2254,7 @@ No código\footnote{A especificação de classes e métodos de analise disponív
 				
 \end{itemize}
 			
-				
-\pagebreak
+
 O artigo \textit{"New framework for score segmentation and analysis for Openmusic"}\cite{bresson2012new}, descreve um ambiente de segmentação e análise harmônica supervisionada \footnote{Este projeto tem seu código aberto e está disponível no website \url{http://grfia.dlsi.ua.es/cm/projects/drims/software.php. Acesso 3 de março de 2015.}}, que implementa um processamento externo ao OM com servidor Java baseado no modelo de \citeonline{pardo2002algorithms}.
 
 Este servidor utiliza uma comunicação em protocolo OSC\footnote{Open Sound Control - protocolo desenvolvido no CNMAT, da Universidade de Berkeley-EUA, por Adrian Freed e Matt Wright para comunicações entre instrumentos musicais ou controladores de performance. Geralmente usado para envio de dados de parâmetros gestuais ao vivo, o protocolo é considerado uma alternativa ao padrão MIDI. No entanto pela possibilidade de descrição nos parâmetros com texto, em hierarquia de endereços similares aos protocolos de rede ou árvores de diretório unix, facilita o uso em qualquer contexto. Sua comunicação básica utiliza protocolos populares na internet como UDP/IP e TCP/IP, o que permite que as aplicações possam conversar entre si em redes locais ou globais muito facilmente. }
@@ -2271,7 +2269,7 @@ Comparada com a alternativa que testamos em linguagem Python com Music21, citamo
 
 \subsection{Extraçao de contornos}
 
-
+O uso do objeto x->dx para a extração de contorno de um segmento motívico esta ilustrado na figura 60. Este patch faz a conversão de midicients para uma escala MIDI para a partir dela fazer uma operação de subtração da \textbf{"nota atual menos nota anterior")}. Perceba-se pelo caso demonstrado que podemos usar o procedimento para localizar uma melodia transposta. 
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Extração de contorno. }
@@ -2292,15 +2290,21 @@ Esta proposta é diferente da formalização de gramáticas gerativas, que preci
 Parte da possibilidade de extrair padrões gestuais singulares de um corpus de arquivos MIDI a partir de de segmentação por proximidade rítmica e melódica \footnote{ \citeonline[ p.73]{dubnov2003using} citam o trabalho de classificação de parâmetros de cognição musical de \citeonline{meyer1956emotion} como base para elaboração dos critérios de segmentação } de uma superfície musical, extraindo dali motivos a partir de iterações recursivas que definem frequência e variações de similaridade.
 
 \begin{citacao}
-A generative theory of music can be constructed by explicitly coding music rules in some logic or
-formal grammar. This approach is sometimes called an expert system or knowledge engineering.
-Although these methods achieve impressive results, they require extensive exploitation of musical
-knowledge, often specific to each composer or style.
-\textbf{A contrasting approach relies on statistical learning
-or empirical induction.}\cite[ p.74, grifos nossos]{dubnov2003using}
+Uma teoria gerativa da música pode ser construída explicitamente codando regras musicais em alguma lógica de gramática formal. Esta abordagem é por vezes chamada de "sistema expert" ou "engenharia de cognição". Apesar destes métodos atingirem resultados impressionantes, eles requerem uma extensiva exploração do conhecimento musical, frequentemente específica para cada compositor ou estilo.\textbf{Uma abordagem constrastante confia em aprendizado estatístico de indução empírica.}\cite[ p.74, grifos nossos]{dubnov2003using}\footnote{A generative theory of music can be constructed by explicitly coding music rules in some logic or formal grammar. This approach is sometimes called an expert system or knowledge engineering. Although these methods achieve impressive results, they require extensive exploitation of musical knowledge, often specific to each composer or style.
+\textbf{A contrasting approach relies on statistical learning or empirical induction.}\cite[ p.74, grifos nossos]{dubnov2003using}}
 \end{citacao}
 
 A biblioteca LZ tem seu nome inspirado no algoritmo de Lempel-Ziv, desenvolvido po Abraham Lempel e Jacob Zif originalmente como um método de compressão de dados.\footnote{Detalhes sobre o algoritmo original em \citeonline{ziv1977universal}} A ideia parte da necessidade de reduzir strings de texto a um dicionário onde as posições repetidas podem ser apontadas em um mesmo endereço, reduzindo a redundância na informação a um grafo de caminhos possíveis e guardando posições já buscadas.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}A extraçao de segmentos atraves da tecnica LZ. }
+	\begin{center}
+	    \includegraphics[scale=0.55]{OM_settheory/LZfy.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
 
 Um exemplo ilustrativo é o da redução da palavra \textbf{\textit{"abracadabra"}}: Podemos perceber facilmente que não apenas existem letras repetidas mas também alguns segmentos, o segmento "abra" e suas permutações de duas letras (ab,br,ra) aparecem duas vezes . Existem também probabilidades de ocorrência que podem ser condicionadas - exemplos: o aparecimento da letra "a" apenas quando precedida do segmento "br" ocorre apenas duas vezes dentre as cinco possíveis, ou existe apenas um único "a" totalmente isolado dos segmentos "br" dentre as cinco possíveis, apenas é possível começar em a ou terminar em a e assim por diante.
 
@@ -2309,7 +2313,7 @@ Utilizamos no presente trabalho alguns segmentos gerados por busca com a bibliot
 Apesar de realizar uma "re-síntese" dos motivos escolhidos a biblioteca LZ parece não preocupar-se em estabelecer critérios de re-organizaçao de uma forma total de composição a partir destes motivos. As aplicações exemplificadas argumentam em torno da concatenação de gestos idiomáticos, algo que pode funcionar para ideias de improviso livre ou para elaboração de catálogos de gestos. 
 
 
-\section{Especialidade da automação versus especialidade do analista}
+%\section{Especialidade da automação versus especialidade do analista}
 
 
 

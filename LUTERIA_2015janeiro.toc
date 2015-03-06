@@ -46,39 +46,38 @@
 \contentsline {subsection}{\numberline {2.3.1}Visualiza\IeC {\c c}\IeC {\~a}o das classes de altura e sequencias partituradas}{81}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Nota\IeC {\c c}\IeC {\~a}o Proporcional}{81}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Manipula\IeC {\c c}\IeC {\~a}o de Conjuntos e suas nomenclaturas}{84}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Segmenta\IeC {\c c}\IeC {\~a}o e An\IeC {\'a}lise no OM}{85}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Extra\IeC {\c c}ao de contornos}{88}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}LZ: Extra\IeC {\c c}\IeC {\~a}o de motivos e aprendizado de m\IeC {\'a}quina}{88}{subsection.2.3.6}
-\contentsline {section}{\numberline {2.4}Especialidade da automa\IeC {\c c}\IeC {\~a}o versus especialidade do analista}{90}{section.2.4}
+\contentsline {subsection}{\numberline {2.3.4}Segmenta\IeC {\c c}\IeC {\~a}o e An\IeC {\'a}lise no OM}{86}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Extra\IeC {\c c}ao de contornos}{90}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}LZ: Extra\IeC {\c c}\IeC {\~a}o de motivos e aprendizado de m\IeC {\'a}quina}{90}{subsection.2.3.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}}{91}{chapter.3}
-\contentsline {section}{\numberline {3.1}Cliches generativos partituraveis}{91}{section.3.1}
-\contentsline {section}{\numberline {3.2}Formatos de sa\IeC {\'\i }da}{91}{section.3.2}
-\contentsline {section}{\numberline {3.3}Tecnicas em Music21}{91}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Tecnicas em OpenMusic}{91}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Contornos intervalares e crivos}{91}{subsubsection.3.3.1.1}
-\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Experimentos Generativos}}{95}{part.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}}{93}{chapter.3}
+\contentsline {section}{\numberline {3.1}Cliches generativos partituraveis}{93}{section.3.1}
+\contentsline {section}{\numberline {3.2}Formatos de sa\IeC {\'\i }da}{93}{section.3.2}
+\contentsline {section}{\numberline {3.3}Tecnicas em Music21}{93}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Tecnicas em OpenMusic}{93}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Contornos intervalares e crivos}{93}{subsubsection.3.3.1.1}
+\contentsline {part}{\partnumberline {III}\MakeTextUppercase {Experimentos Generativos}}{97}{part.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {CosmoBagatellas}}{97}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {CosmoBagatellas}}{99}{chapter.4}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Conclus\IeC {\~a}o}{99}{chapter*.8}
+\contentsline {chapter}{Conclus\IeC {\~a}o}{101}{chapter*.8}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{101}{section*.11}
+\contentsline {chapter}{Refer\^encias}{103}{section*.11}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{105}{section*.12}
+\contentsline {part}{\uppercase {Ap\^endices}}{107}{section*.12}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}}{107}{appendix.A}
-\contentsline {section}{\numberline {A.1}Vetor intervalar}{108}{section.A.1}
-\contentsline {section}{\numberline {A.2}Forma Normal}{108}{section.A.2}
-\contentsline {section}{\numberline {A.3}Forma Prima}{110}{section.A.3}
-\contentsline {section}{\numberline {A.4}Singularidades nos agrupamentos }{111}{section.A.4}
-\contentsline {subsection}{\numberline {A.4.1}Notas comuns sob transposi\IeC {\c c}\IeC {\~a}o}{112}{subsection.A.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Simetria Transpositiva}{113}{subsection.A.4.2}
-\contentsline {subsection}{\numberline {A.4.3}Complemento}{114}{subsection.A.4.3}
-\contentsline {subsection}{\numberline {A.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{115}{subsection.A.4.4}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}}{109}{appendix.A}
+\contentsline {section}{\numberline {A.1}Vetor intervalar}{110}{section.A.1}
+\contentsline {section}{\numberline {A.2}Forma Normal}{110}{section.A.2}
+\contentsline {section}{\numberline {A.3}Forma Prima}{112}{section.A.3}
+\contentsline {section}{\numberline {A.4}Singularidades nos agrupamentos }{113}{section.A.4}
+\contentsline {subsection}{\numberline {A.4.1}Notas comuns sob transposi\IeC {\c c}\IeC {\~a}o}{114}{subsection.A.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Simetria Transpositiva}{115}{subsection.A.4.2}
+\contentsline {subsection}{\numberline {A.4.3}Complemento}{116}{subsection.A.4.3}
+\contentsline {subsection}{\numberline {A.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{117}{subsection.A.4.4}
 \vspace {\cftbeforechapterskip }
