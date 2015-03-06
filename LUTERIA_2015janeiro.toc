@@ -47,9 +47,9 @@
 \contentsline {subsection}{\numberline {2.3.2}Nota\IeC {\c c}\IeC {\~a}o Proporcional}{81}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Manipula\IeC {\c c}\IeC {\~a}o de Conjuntos e suas nomenclaturas}{84}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Segmenta\IeC {\c c}\IeC {\~a}o e An\IeC {\'a}lise no OM}{85}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Extra\IeC {\c c}ao de contornos}{87}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}LZ: Extra\IeC {\c c}\IeC {\~a}o de motivos e aprendizado de m\IeC {\'a}quina}{87}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Especialidade da automa\IeC {\c c}\IeC {\~a}o versus especialidade do analista}{89}{section.2.5}
+\contentsline {subsection}{\numberline {2.3.5}Extra\IeC {\c c}ao de contornos}{88}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}LZ: Extra\IeC {\c c}\IeC {\~a}o de motivos e aprendizado de m\IeC {\'a}quina}{88}{subsection.2.3.6}
+\contentsline {section}{\numberline {2.4}Especialidade da automa\IeC {\c c}\IeC {\~a}o versus especialidade do analista}{90}{section.2.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}}{91}{chapter.3}
 \contentsline {section}{\numberline {3.1}Cliches generativos partituraveis}{91}{section.3.1}

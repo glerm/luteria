@@ -850,7 +850,7 @@ Considerando no exemplo geométrico uma indução onde $(a+b)$ fosse igual a $\P
 
 Logo, se sabemos que $(a+b)/a = a/b $, portanto $\Phi/1 = 1/b$, podemos também deduzir que $b = 1/\Phi \approx 0.61034.. $ 
 
-Resumindo: se a = 1 teremos $b \approx 0.61034 $. Se a=2 $b \approx 0.61034 \textbf{* 2} $. 
+Concluímos que: se a = 1 teremos $b \approx 0.61034 $. Se a=2 $b \approx 0.61034 \textbf{* 2} $ e assim por diante.
 
 Ou seja, \textbf{podemos obter a menor secção (b) fazendo a multiplicação da constante 0.61034 pelo valor de (a).}
 
@@ -863,7 +863,7 @@ Na figura abaixo demonstramos a fórmula para encontrar a constante $1/\Phi$ e s
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}A fórmula para encontrar a constante $1/\Phi$ e sua relação com a série de Fibonacci. }
 	\begin{center}
-	    \includegraphics[scale=0.5]{OM_settheory/aurea.png}
+	    \includegraphics[scale=0.45]{OM_settheory/aurea.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}	
@@ -2212,14 +2212,14 @@ Na figura 56 temos a automatização de uma sequencia de acordes de um dos exper
 	\legend{Fonte: autor }
 \end{figure}	
 		
-Na figura 57 temos um exemplo de de segmentação feita manualmente, com seleção de mouse, e em seguida analisada automaticamente em interação com a escuta, revelando a escolha de uma coleçao octatonica ja na primeira frase melodica de oito notas (duas repetidas) de Mikrokosmos 109.
+Na figura 57 temos um exemplo de uma segmentação feita manualmente, com seleção de mouse, e em seguida analisada automaticamente em interação com a escuta, revelando a escolha de uma coleção octatonica já na primeira frase melódica de oito notas (duas repetidas) de Mikrokosmos 109.
 
 
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Módulo de segmentação para análise dentro dos objetos chord-seq. }
 	\begin{center}
-	    \includegraphics[scale=0.4]{OM_settheory/SegmentaMikro109Octa.png}
+	    \includegraphics[scale=0.44]{OM_settheory/SegmentaMikro109Octa.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}	
@@ -2228,8 +2228,7 @@ O problema para este tipo de segmentação manual são os casos onde gostaríamo
 
 Para estes casos é possível desenvolver análises customizadas em linguagem Lisp, podendo também fazer chamadas das bibliotecas OM em seu código escrito. O procedimento mínimo para um registro de procedimento customizado de análise e segmentação esta ilustrado na figura 59.
 
-		
-		
+				
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Procedimento de compilação de uma análise customizada, usando o editor Lisp embarcado no OM }
 	\begin{center}
@@ -2237,23 +2236,42 @@ Para estes casos é possível desenvolver análises customizadas em linguagem Li
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}	
+
+No código\footnote{A especificação de classes e métodos de analise disponíveis esta em \url{http://repmus.ircam.fr/openmusic/dev-resources/analysis}. Acesso em 3 de março de 2015.} temos: 
+
+\begin{itemize}
+
+\item A definição do escopo com \textit{in-package:om} para a carga das classes e métodos
+
+\item A definição de classe uma análise \textit{(defclass! nome-da-analise (abstract-analysis)()))}. 
+
+\item Um método para iteração dos acordes, determinando que cada acorde sera um segmento de uma cor diferente, cortando os segmentos: \textit{(defmethod compute-analysis-segments ((self nome-da-analise) (object t))))}.
+
+\item Um método para registro da método anterior, fazendo com que apareça no menu da análise: \textit{(defmethod compute-segments-p ((self nome-da-analise)) t)}
+
+\item Um método para a análise com \textit{(defmethod analyse-one-segment ((self pcset-analysis) (seg segment) (object t)))} que itera pelos acordes e converte-os em elementos n-cercle (com o objeto chord2c). A partir deste método a análise já guarda os n-cercles que podem ser retirados pelo mesmo método mostrado na figura 57.
+
+\item Um método para registro da método anterior, fazendo com que apareça no menu da análise: \textit{(defmethod analyse-segments-p ((self luteria)) nil)}.
 				
+\end{itemize}
+			
+				
+\pagebreak
+O artigo \textit{"New framework for score segmentation and analysis for Openmusic"}\cite{bresson2012new}, descreve um ambiente de segmentação e análise harmônica supervisionada \footnote{Este projeto tem seu código aberto e está disponível no website \url{http://grfia.dlsi.ua.es/cm/projects/drims/software.php. Acesso 3 de março de 2015.}}, que implementa um processamento externo ao OM com servidor Java baseado no modelo de \citeonline{pardo2002algorithms}.
 
-O artigo \textit{"New framework for score segmentation and analysis for Openmusic"}\cite{bresson2012new}, que descreve este ambiente de segmentação e análise, apresenta uma alternativa de análise harmônica supervisionada, que implementa um processamento externo ao OM com servidor Java baseado no modelo de \citeonline{pardo2002algorithms}.
-
-
-
-O servidor utiliza uma comunicação em protocolo OSC\footnote{Open Sound Control - protocolo desenvolvido no CNMAT, da Universidade de Berkeley-EUA, por Adrian Freed e Matt Wright para comunicações entre instrumentos musicais ou controladores de performance. Geralmente usado para envio de dados de parâmetros gestuais ao vivo, o protocolo é considerado uma alternativa ao padrão MIDI. No entanto pela possibilidade de descrição nos parâmetros com texto, em hierarquia de endereços similares aos protocolos de rede ou árvores de diretório unix, facilita o uso em qualquer contexto. Sua comunicação básica utiliza protocolos populares na internet como UDP/IP e TCP/IP, o que permite que as aplicações possam conversar entre si em redes locais ou globais muito facilmente. }
+Este servidor utiliza uma comunicação em protocolo OSC\footnote{Open Sound Control - protocolo desenvolvido no CNMAT, da Universidade de Berkeley-EUA, por Adrian Freed e Matt Wright para comunicações entre instrumentos musicais ou controladores de performance. Geralmente usado para envio de dados de parâmetros gestuais ao vivo, o protocolo é considerado uma alternativa ao padrão MIDI. No entanto pela possibilidade de descrição nos parâmetros com texto, em hierarquia de endereços similares aos protocolos de rede ou árvores de diretório unix, facilita o uso em qualquer contexto. Sua comunicação básica utiliza protocolos populares na internet como UDP/IP e TCP/IP, o que permite que as aplicações possam conversar entre si em redes locais ou globais muito facilmente. }
 
 \begin{citacao}
-The harmonic analysis software communicates with OpenMusic via OSC messages following a simple client/server protocol. When the harmonic-analysis class is attached to a chord-seq object in OM, a MIDI representation of the sequence is sent to the analysis server.\cite[ p.4]{bresson2012new}
+O software de análise harmônica comunica-se com OpenMusic via mensagens OSC seguindo um simples protocolo cliente/servidor. Quando a classe de análise harmônica é anexada a um objeto chord-seq em OM, uma representação MIDI da sequencia e mandada para análise no servidor.\cite[ p.4]{bresson2012new}\footnote{The harmonic analysis software communicates with OpenMusic via OSC messages following a simple client/server protocol. When the harmonic-analysis class is attached to a chord-seq object in OM, a MIDI representation of the sequence is sent to the analysis server.\cite[ p.4]{bresson2012new}}
 \end{citacao}		
 
 
+Comparada com a alternativa que testamos em linguagem Python com Music21, citamos esta implementação até o momento mais pela sugestão de arquitetura (OM + um servidor externo OSC) do que pelo que foi possível testar dela até agora. A ideia de integrar o procedimentos analíticos de Music21 já explorados nesta pesquisa, com a segmentação gráfica e possibilidade de interação e tradução das estruturas de dados com o OpenMusic via protocolo OSC nos parece um caminho viável para a continuação do presente trabalho.
+	
 
-		
+\subsection{Extraçao de contornos}
 
-\section{Extraçao de contornos}
+
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Extração de contorno. }
