@@ -2320,59 +2320,290 @@ Apesar de realizar uma "re-síntese" dos motivos escolhidos a biblioteca LZ pare
 \chapter{Composição Assistida por Computador}
 \label{cac}
 
-\section{Cliches generativos partituraveis}
+Descrição da ideia de CAC - a 
+\lipsum[5]
 
+
+
+
+\section{Tecnicas em Music21}
+
+Nesta parte da pesquisa o Music21 foi utilizado como ferramenta de formatação de clichês partiturados com saída já formatada diretamente em formato MusicXML. Para isso um exemplo singular dos Mikrokosmos serve de inspiração para uma saída já formatada de partitura presente desde a fase de concepção do algoritmo.
+
+\subsection{Mikro-clichês}
+
+Construí um exemplo de clichê generativo baseado em um padrão bastante comum de segmentação presente em todos livros do Mikrokosmos de Bela Bartók. O clichê consiste em um segmento fechado por uma ligadura de expressão, que por vezes possui alguma ligadura de continuação interna para notas iguais. 
+
+Este modelo permite que o motivo atravesse diferentes conjunções de barras de compasso, compondo contrapontos com polirritmos sincopados por defasagem ou pela troca de clichês na melodia e no baixo. Um exemplo retirado da partitura original de Mikrokosmos 25 está na Figura 62.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Os compassos iniciais de Mikrokosms 25 mostram a ideia de dois clichês ritmos iguais em uma defasagem que faz com que utilizem as barras de compasso de forma distinta. }
+	\begin{center}
+	    \includegraphics[scale=0.35]{score/mikro25.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+Elaborei uma função usando a biblioteca music21 para que a partir de um mapeamento de alguns destes clichês rítmicos seja possível coloca-los em qualquer parte da partitura na melodia ou no baixo, criando o mesmo efeito rítmico, ajustando os clichês nos compassos e marcando-os com a ligadura de expressão que caracteriza a escrita dos Mikrokosmos, além de ajudar na segmentação visual dos motivos.
+
+\begin{lstlisting}
+from music21 import *
+from random import *
+from copy import *
+
+
+
+def clichelize(durations,motivo):
+	# a funcao vai formar um stream com as notas do motivo
+	# posicionadas em cliches de segmentacao dolivro mikrokosmos 01
+	cliche=stream.Stream()
+
+	# para efeito de teste inserida uma funcao que sorteia notas para usar
+	mesmo=choice(motivo)
+
+	# para cada uma das duracoes inseridas na funcao
+	for d in durations:
+
+		# testa se o elemento tem nao tem ligadura
+		# se nao tiver insere nova nota
+		if type(d) is float:	
+			nota=note.Note(choice(motivo),quarterLength=d)
+
+		# se tiver ligadura insere 
+		else:	
+			#beam: ligadura de continuacao
+			# convencionamos I para o inicio da ligadura e F para o final
+			if d[1] == 'I':
+				nota=note.Note(mesmo,quarterLength=d[0])
+				nota.tie=tie.Tie("start")
+				
+			if d[1] == 'F':
+				nota=note.Note(mesmo,quarterLength=d[0])
+				nota.tie=tie.Tie("stop")
+
+		# faz uma copia da nota criada para usar no cliche
+		cliche.append(deepcopy(nota))
+
+	# retorna o cliche para a chamada da funcao
+	return cliche
+
+\end{lstlisting}
+
+Para a repetição e o posicionamento dos clichês considerando o preenchimento de pausas em compassos que ficam incompletos quando este cai entre duas barras de compasso e também para a inserção das ligaduras de expressão em cada um dos clichês - elaborei o script abaixo que serve como ponto de partida para outras estratégias como a inserção da voz do baixo e o procedimento melódico envolvido na escolha das notas.
+
+\begin{lstlisting}
+
+####################### teste da biblioteca de cliches mikrokosmos
+
+
+# dados para teste
+# 1. duracoes com ligados
+durs1=[1.0,1.0,1.0,1.0,[2.0,'I'],[1.0,'F'],1.0,1.0,1.0,1.0,'F1']
+durs2=[1.0,0.5,[0.5,'I'],[1.0,'F'],0.5,0.5]
+
+# 2. uma celula base de tres notas
+motivo=['A4','C5','F#5']
+
+
+# inicia um cliche vazio
+cliche=stream.Stream()
+
+# variavel de inicio 
+Linicio=0
+
+# loop para o sorteio de 8 compassos
+for x in xrange(8):
+	#sorteia um dos dois motivos
+	c=choice([durs1,durs2])
+
+	#chama a funcao que cria os cliches a partir da lista de ritmos e notas
+	s=clichelize(c,motivo)
+	
+	#insere os cliches
+	for i in s:
+		cliche.append(deepcopy(i))
+
+	# insere pausa no final do motivo
+	cliche.append(note.Rest())	
+	
+	# insercao da ligadura baseada na primeira e ultima nota do motivo atual
+	l=[cliche[Linicio],cliche[len(cliche)-2]]
+	ligado = spanner.Slur(l)
+	cliche.insert(Linicio,ligado)
+	Linicio=(len(cliche))
+	
+	
+#formatacao de uma metrica padrao para insercao, fazendo os motivos ajustarem
+cliche.makeMeasures(meterStream=meter.TimeSignature('2/4') , inPlace=True)
+	
+
+
+cliche.show('text') # conferencia da estrutura de dados
+cliche.show('musicxml') # o ligado de expressao so aparece no musicxml
+\end{lstlisting}
 
 
 \section{Formatos de saída}
 
-\section{Tecnicas em Music21}
-
-
-\subsection{Tecnicas em OpenMusic}
-
-
-
-
-\subsubsection{Contornos intervalares e crivos}
-
-Os objetos para construção de 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Objetos geradores de escalas e intervalos. Duas maneiras de representar uma proporção de fibonacci }
+	\caption{\label{fig_grafico}A saída do script em MusicXML é enviada automaticamente para o software livre de edições de partitura Musescore, já formatada dentro das barras de compasso e com as ligaduras de expressão e continuação. }
+	\begin{center}
+	    \includegraphics[scale=0.4]{score/clichelib_musescore.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+A questão decisiva no momento em que assume-se um procedimento que será em seguida partiturado em notação tradicional ou próxima desta é sobre em que etapa a partitura entra no processo computacional. 
+
+O paradoxo é o seguinte: se adotamos um procedimento onde a partitura já é parte do algoritmo, estaremos por um lado garantindo um possível uso fora do computador, mas por outro limitando a experimentação e perdendo bastante tempo com a preocupação do código do que vai ser impresso em papel, ao invés do como pode soar. 
+
+Considerando no caso de uso de clichês já partiturados: temos uma saída baseada na estrutura tradicional das barras de compasso, indicação métrica, assinatura de tonalidade, claves condizentes com a tessitura do instrumento para qual a partitura está sendo gerada, sinais de expressão conhecidos pelo instrumentista e possibilidade técnica de ser tocada.
+
+Por outro lado podemos deixar a partituração para um procedimento posterior: não estaremos contando com a possibilidade de ter uma automatização em lote de um processo (gerar diversas partituras a partir de alguns clichês) e também teremos que contar com o risco (e a potência) de encontrar sonoridades que não saberemos como escrever, pois são imprevistas para na escritura tradicional ou no instrumento para qual supostamente o algoritmo gerou as estruturas.
+
+Nosso caso aqui é bastante voltado para o processo genérico e didático da composição de algoritmos que deem conta de alguns problemas da estética pós-tonal tratada no presente trabalho. 
+
+Assumimos a sonoridade de um "piano" hipotético mais pela tecitura do instrumento do que pela real e imediata possibilidade de peças derivadas desta pesquisa serem tocadas por um pianista, mas interessa aqui apontar as possibilidades.
+
+A saída do script em Music21 portanto nos serve como um exemplo didático bastante preciso: temos a possibilidade de transformar a função em uma chamada modular dentro de outros scripts, podendo reutilizar aquela estrutura já segmentada e com sinal de expressão específico da escrita para o instrumento hipotético piano. O procedimento seria similar para escrita de articulações, dinâmicas e ornamentos.
+
+Já o uso do OpenMusic para tal fim, mostrou algumas necessidades de interação com suas expressões geradas, que para atingir a mesma autonomia necessita interação suas listas Lisp literais ou no caso da saída Lilypond, interação com o script Lilypond gerado. A possibilidade de interagir com algumas camadas da estrutura de formação das barras de compasso\footnote{Discutida no OM Manual em \url{http://support.ircam.fr/docs/om/om6-manual/co/RT2.html}. Acesso em 05 de fevereiro de 2015.} do objeto \textit{voice} demanda extender patches gráficos de uma maneira que ao final torna-se menos legível do que os scripts.
+
+No entanto, a saída em Lilypond para o OM (com a biblioteca omlily) mostrou-se também satisfatória e seria uma alternativa, considerando a boa documentação do projeto Lilypond para partituração impressa.\footnote{O script gerado a partir do patch da sessão recombinações está no apendice partituras. O script Lilypond gerado (onde foram inseridas as ligaduras direto no código) esta no \autoref{scripts}. }
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}A formatação de uma estrutura similar a estrutura composta com Music21, para a criação de clichês partiturados em OpenMusic. O OM possui a função de ligadura de continuidade (circulada na figura, ativada pelo uso do ponto flutuante), porém não possui nativamente a ligadura de expressão e outras articulações. }
+	\begin{center}
+	    \includegraphics[scale=0.6]{OMPD/PolirritmoOM.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+
+
+\section{Técnicas em OpenMusic}
+
+Para além das questões sobre a formatação de saída, o papel do OM na parte de CAC do presente 
+trabalho foi sobretudo como uma plataforma de testes em tempo de escuta dos algoritmos, além de proporcionar muita inspiração através de suas bibliotecas que acabam por antecipar vários procedimentos de composição algorítmica.
+
+
+\subsection{Estratégias motívicas}
+
+Fora todos os patches que já foram demonstrados nas partes anteriores como ilustração de métodos analíticos ou teoria pós-tonal, demonstramos ainda aqui alguns procedimentos básicos e interessantes para a formatação de ideias composicionais motívicas usando funções disponíveis no OM.
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Objetos geradores de escalas e intervalos. Duas maneiras de representar uma proporção de fibonacci. À esquerda um procedimento para gerar intervalos a partir de uma nota raiz. À direita um procedimento para gerar um arredondamento de intervalos proporcionais a distância de várias oitavas. }
 	\begin{center}
 	    \includegraphics[scale=0.6]{OM_settheory/fibonacci.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
+\subsubsection{Crivos}
 
+A biblioteca de crivos\footnote{Conhecidos também como \textit{"cribles"} em francês ou \textit{"sieves"} em inglês. A palavra traduz-se literalmente "peneira".} do OM permite a construção de fórmulas para geradores de escalas "literais" baseadas em regras geradoras simples.
+
+Podemos também por união ou intersecção de conjuntos estabelecer algumas restrições de quais oitavas entram determinados intervalos, fazendo que por momentos os intervalos compostos formem novos intervalos intermediários que podem ser independentes de oitava. Iannis \cite{xenakis1992formalized} descreve o conceito de crivo em seu livro \textit{"Formalized Music"}.
+ 
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Construção de crivos. A união de dois crivos que geram dois padrões intervalares durante inicio e fim diferentes cria uma terceira região de intersecção dos intervalos, gerando sonoridades com equilíbrios localizados porém independentes de oitava. }
+	\begin{center}
+	    \includegraphics[scale=0.6]{OM_settheory/crivos.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+\subsubsection{Simetria e coleções }
+
+Estratégias diversas de simetria e seus ciclos foram bastante discutidas na \autoref{simetria} do presente trabalho. Apresento aqui na figura abaixo um patch base usado para gerar um clichê de acordes distanciados progressivamente de um eixo central dado. exemplo: dado o Lá$\sharp$ teremos uma díade Lá$\leftrightarrow$Sol, uma segunda díade Lá$\flat \leftrightarrow$Sol$\sharp$ e assim por diante. O objeto permut-random do OM auxilia o embaralhamento de uma nova sequencia baseada nos acordes.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Gerador de eixo de simetria a partir de uma nota dada. }
+	\begin{center}
+	    \includegraphics[scale=0.6]{OMPD/simetricos01.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+\subsubsection{Ostinatos rotacionados}
+
+Entre as estratégias de polarização está também a possibilidade de construir ostinatos que rotacionam seu início defasando com uma melodia ou baixo de acompanhamento. 
+
+O loop deste patch da figura abaixo re-organiza os intervalos rotacionando-os e cria um encadeamento de acordes que pode servir para criar clichês similares e de mesma coleção de intervalos.
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Construção de crivos. }
+	\caption{\label{fig_grafico}Ostinatos e rotações. }
 	\begin{center}
-	    \includegraphics[scale=0.5]{OM_settheory/crivos.png}
+	    \includegraphics[scale=0.5]{OMPD/motivicos01.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+O procedimento de formatação dos acordes fornece também um exemplo do uso do objeto \textit{omloop} para iteração em listas Lisp. O loop entrelaça os contornos inserindo as notas no mesmo contexto de parênteses e criando com isso acordes.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}O loop interno do subpatch "opera listas" que insere a rotação e a permutação da figura anterior em um acorde. }
+	\begin{center}
+	    \includegraphics[scale=0.5]{OMPD/opera_listas.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+\pagebreak
+\subsubsection{Perfis motívicos}
+
+Uma biblioteca OM interessante para a exploração de contornos e estratégias de perfis motívicos, é a Profile. Abaixo a figura de um patch onde utilizo o objeto compress/expand para gerar uma estrutura de simetria proporcional, baseada na célula Z (vetor de intervalos [0,1,6,7] ) de Antokoletz. 
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Comprime e expande em passos de 3 intervalos simétricos, abrindo e fechando os acordes baseados em uma célula Z. }
+	\begin{center}
+	    \includegraphics[scale=0.6]{OMPD/Profile_celulaZ.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+\subsubsection{Recombinações }
+
+Na seção
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Recombinação de motivos a partir de segmentos gerados pela biblioteca LZ e estratégia pentatônica retirada da análise de Mikrokosmos 41. }
+	\begin{center}
+	    \includegraphics[scale=0.5]{OMPD/Recombina_Mikros.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+\lipsum[9]
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}O novo perfil rítmico deve ser quantizado se quisermos usar barras de compasso. Com o objeto \textit{om-quantify} foi possível normalizar o tempo da notação proporcional em em quadro de 7/4 considerando como definição aproximada o uso de colcheias e semicolcheias.  }
+	\begin{center}
+	    \includegraphics[scale=0.5]{OMPD/OMquantify.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
 
 
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}Uma estrutura gerada em Lilypond no OM com o objeto om->lily. As ligaduras foram inseridas a posteriori direto no código lilypond. }
+	\begin{center}
+	    \includegraphics[scale=0.3]{OMPD/recombinadoLILY.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
 
 
-
-
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-\part{Experimentos Generativos}
-
-\chapter{CosmoBagatellas}
-
-
-%\chapter{Lastros e Rumos}
 
 
 %%%%%
@@ -2399,13 +2630,17 @@ Vale relevar que procedimentos baseados em \textit{"aprendizado de máquina"}, c
 A remontagem disponível como padrão na biblioteca no entanto não tem como possuir uma consistência como macroforma, pois apenas remonta os clichês por proximidade de similaridade dos segmentos.
 A etapa composicional requer aplicação arbitrária de uma estratégia de encadeamento dos clichês, conectado-os por conduções melódicas e planejando as texturas politonais ou polimodais características.
 
-No presente estágio da pesquisa decidimos por separar os dois procedimentos assistidos por computador pesquisados aqui - a análise e composição - buscando uma maior liberdade na experimentação com os procedimentos e um registro de ideias derivadas. 
+No presente estágio da pesquisa decidi por separar os dois procedimentos assistidos por computador pesquisados aqui - a análise e composição - buscando uma maior liberdade na experimentação com os procedimentos e um registro de ideias derivadas. 
 
-O uso de duas linguagens de programação durante o processo - OpenMusic e Python (com a biblioteca Music21)  - foi importante para que pudéssemos testar alguns procedimentos já implementados em ao menos uma das ferramentas e compará-las quando disponíveis em ambas. Ficou claro na prática do processo que o legado das bibliotecas e funções de programação devem ser levados em conta tanto quanto a literatura disponível ou a escuta das composições de referência. A possibilidade de ler código aberto é essencial para o entendimento de teorias que o geraram.
+Os exemplos mostrados no capítulo sobre C.A.C. e as partituras anexadas tem antes de um acabamento estético e poético um objetivo didático para demonstração dos procedimentos básicos de aplicação das teorias e ferramentas aqui expostas. Junto a este trabalho anexo\footnote{Disponível para download em \url{http://devolts.org/luteria}.} arquivos com patches, músicas e scripts de caráter ainda experimental derivados deste trabalho e que apontam direções para continuidade da investigação prática.
 
-Ficou para uma possível continuação deste trabalho a implementação dos procedimentos de uma maneira mais integrada e sem necessária interação humana em tantas etapas, podendo ser usada em um corpus grande de composições relacionadas (exemplo: livros inteiros dos Mikrokosmos ou relação entre compositores pós-tonais diferentes). 
+O uso de duas linguagens de programação durante o processo - OpenMusic e Python (com a biblioteca Music21)  - foi importante para que pudéssemos testar alguns procedimentos já implementados em ao menos uma das ferramentas e compará-las quando disponíveis em ambas. 
 
-Interessa também como desdobramento desta pesquisa a ampliação dos parâmetros para uma teoria que também especule com a "sonoridade"\cite{guigue2012} do piano para além do uso "neutro" dos timbres. 
+Ficou claro na prática do processo que \textbf{o legado das bibliotecas e funções de programação disponíveis em código aberto devem ser levados em conta tanto quanto a literatura musical ou computacional disponível ou a escuta das composições de referência.} A possibilidade de ler código aberto\textbf{ é essencial} para o entendimento de teorias que o geraram.
+
+Ficou para uma possível continuação deste trabalho a implementação dos procedimentos de uma maneira mais integrada e sem necessária interação humana em tantas etapas, podendo ser usada em um corpus grande de composições relacionadas (exemplo: livros inteiros dos Mikrokosmos ou relação entre compositores pós-tonais diferentes usados em comparações estatísticas). 
+
+Interessa também como desdobramento desta pesquisa a ampliação dos parâmetros para uma teoria que também especule com a \textit{"sonoridade do piano"}\cite{guigue2012}\ para além do uso "neutro"\ dos timbres e entre em aspectos da \textit{"espectromorfologia das formas sonoras"}.\cite{smalley1997spectromorphology}
 
 
 
@@ -2654,6 +2889,170 @@ A relação Z é uma das interessantes relações onde há uma equivalência sem
 \end{apendicesenv}
 % ---
 % ----------------------------------------------------------
+
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\chapter{Experimentos Generativos}
+
+\section{CosmoBagatellas}
+
+
+
+
+\section{Lastros e Rumos}
+
+
+\chapter{Scripts}
+\label{scripts}
+
+\section{CAC}
+
+\subsection{Exemplo Lilypond}
+
+\begin{lstlisting}
+\version "2.9"
+
+\score { 
+ { 
+
+\new StaffGroup
+<<
+\new Staff
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%% VOICE : 1 %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\override TupletNumber #'text = #tuplet-number::calc-fraction-text
+
+
+#(set-accidental-style 'modern)
+
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 1 %%%%%%%%%%%%%%%%%%%%%%%
+\time 7/4
+\tempo 4  = 120
+
+d'8\(
+< d' b>8
+d'8
+g'8
+< d' g b'>8
+a8
+a'8
+< d' b'' g'>8\)
+d'8\(
+b'8
+< d' b'>8
+a'8
+g'8
+a8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 2 %%%%%%%%%%%%%%%%%%%%%%%
+< f'' f'>8
+b'8\)
+< d' b'' g'>4
+< cis' cis''>8\(
+< cis' g''>8
+cis''8
+b8
+< d' b>8
+< cis' e''>8
+< cis' g''>8
+< cis' e''>8\)
+b'4
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 3 %%%%%%%%%%%%%%%%%%%%%%%
+< g e''>8\(
+d'8
+b8
+< d' g b'>8
+< g e''>8
+g'8
+a8
+< f'' f'>8
+< cis' g''>8
+e'8\)
+b4
+b'8\(
+< d' f''>8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 4 %%%%%%%%%%%%%%%%%%%%%%%
+< cis' cis''>8
+< f'' f'>8
+a8
+cis''8
+< d' b'' g'>8
+< cis' e''>8\)
+b8\(
+< d' b'>8
+d'8
+< d' g b'>8
+< b d''>8
+b'8
+e'8
+< d' b>8\)
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 5 %%%%%%%%%%%%%%%%%%%%%%%
+\time 6/4
+b8\(
+< d' f''>8
+< cis' cis''>8
+a8\)
+cis''4
+< d' b'>2
+r4
+}
+>>
+}
+
+
+\layout {
+indent = 0.0
+\context {\Score 
+	  %% This is if you we use mensural type bars (uncomment next line) :
+	   %%\override BarLine #'transparent = ##t 
+         \override TupletBracket #'staff-padding = #1.5
+         \override TupletBracket #'direction = #1
+         \override TupletBracket #'bracket-visibility = ##t
+          \override Stem #'stemlet-length = #0.75
+	  \remove "Mark_engraver" %%%for the fermata on barline 
+	   \override MetronomeMark #'padding = #2.5
+
+	  \remove "Timing_translator"
+	  \remove "Default_bar_line_engraver"
+
+         }
+\context {\Staff
+	  minimumVerticalExtent = #'(-6 . 6)
+          %%%tupletNumberFormatFunction = #fraction-tuplet-formatter
+          \override TimeSignature #'style = #'()
+          \override NoteHead #'style = #'baroque
+	   \override DynamicLineSpanner #'staff-padding = #3  %%add this by default Should I ??
+	   \consists "Mark_engraver" %%%for the fermata on barline
+
+          \consists "Timing_translator"
+	  \consists "Default_bar_line_engraver"
+          
+
+}
+}
+
+
+\header {
+  
+   breakbefore = ##t
+    title = \markup \center-align { "teste" }
+%%    subtitle = "the subtitle,"
+%%    dedication = "toto"
+%%    poet = "tutu"
+    composer =  \markup \center-align { "me" \small "(2006)" }
+%%    meter = \markup { \teeny "m" \tiny "e" \normalsize "t" \large "e" \huge "r" }
+%%    piece = "Piece"
+  }
+
+\midi{}
+
+}
+\end{lstlisting}
+
+
 
 
 
