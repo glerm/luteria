@@ -23,6 +23,12 @@ ISBN 2752100523.}
   a network-based scale model in music21}. [S.l.]: Ann Arbor, MI: MPublishing,
   University of Michigan Library, 2011.}
 
+\bibitem[Assayag et al. 1999]{assayag1999computer}
+\abntrefinfo{Assayag et al.}{ASSAYAG et al.}{1999}
+{ASSAYAG, G. et al. Computer-assisted composition at ircam: From patchwork to
+  openmusic.
+\emph{Computer Music Journal}, MIT Press, v.~23, n.~3, p. 59--72, 1999.}
+
 \bibitem[Bart{\'o}k e Suchoff 1993]{bartok1993bela}
 \abntrefinfo{Bart{\'o}k e Suchoff}{BART{\'O}K; SUCHOFF}{1993}
 {BART{\'O}K, B.; SUCHOFF, B. \emph{B{\'e}la Bart{\'o}k Essays}. [S.l.]: Univ of
@@ -277,6 +283,11 @@ Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/25164542}.}
 \abntrefinfo{Treitler}{TREITLER}{1959}
 {TREITLER, L. Harmonic procedure in the" fourth quartet" of bela bart{\'o}k.
 \emph{Journal of Music Theory}, JSTOR, p. 292--298, 1959.}
+
+\bibitem[Xenakis 1992]{xenakis1992formalized}
+\abntrefinfo{Xenakis}{XENAKIS}{1992}
+{XENAKIS, I. \emph{Formalized music: thought and mathematics in composition}.
+  [S.l.]: Pendragon Press, 1992.}
 
 \bibitem[Ziv e Lempel 1977]{ziv1977universal}
 \abntrefinfo{Ziv e Lempel}{ZIV; LEMPEL}{1977}

@@ -51,43 +51,43 @@
 \contentsline {subsection}{\numberline {2.3.6}LZ: Extra\IeC {\c c}\IeC {\~a}o de motivos e aprendizado de m\IeC {\'a}quina}{92}{subsection.2.3.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Composi\IeC {\c c}\IeC {\~a}o Assistida por Computador}}{95}{chapter.3}
-\contentsline {section}{\numberline {3.1}Tecnicas em Music21}{95}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Mikro-clich\IeC {\^e}s}{95}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Formatos de sa\IeC {\'\i }da}{97}{section.3.2}
+\contentsline {section}{\numberline {3.1}Tecnicas em Music21}{96}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Mikro-clich\IeC {\^e}s}{96}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Formatos de sa\IeC {\'\i }da}{98}{section.3.2}
 \contentsline {section}{\numberline {3.3}T\IeC {\'e}cnicas em OpenMusic}{100}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Estrat\IeC {\'e}gias mot\IeC {\'\i }vicas}{100}{subsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.1.1}Crivos}{101}{subsubsection.3.3.1.1}
 \contentsline {subsubsection}{\numberline {3.3.1.2}Simetria e cole\IeC {\c c}\IeC {\~o}es }{102}{subsubsection.3.3.1.2}
 \contentsline {subsubsection}{\numberline {3.3.1.3}Ostinatos rotacionados}{102}{subsubsection.3.3.1.3}
-\contentsline {subsubsection}{\numberline {3.3.1.4}Perfis mot\IeC {\'\i }vicos}{104}{subsubsection.3.3.1.4}
-\contentsline {subsubsection}{\numberline {3.3.1.5}Recombina\IeC {\c c}\IeC {\~o}es }{104}{subsubsection.3.3.1.5}
+\contentsline {subsubsection}{\numberline {3.3.1.4}Perfis mot\IeC {\'\i }vicos}{105}{subsubsection.3.3.1.4}
+\contentsline {subsubsection}{\numberline {3.3.1.5}Recombina\IeC {\c c}\IeC {\~o}es }{105}{subsubsection.3.3.1.5}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Conclus\IeC {\~a}o}{107}{chapter*.7}
+\contentsline {chapter}{Conclus\IeC {\~a}o}{109}{chapter*.7}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{109}{section*.10}
+\contentsline {chapter}{Refer\^encias}{111}{section*.10}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{113}{section*.11}
+\contentsline {part}{\uppercase {Ap\^endices}}{115}{section*.11}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}}{115}{appendix.A}
-\contentsline {section}{\numberline {A.1}Vetor intervalar}{116}{section.A.1}
-\contentsline {section}{\numberline {A.2}Forma Normal}{116}{section.A.2}
-\contentsline {section}{\numberline {A.3}Forma Prima}{118}{section.A.3}
-\contentsline {section}{\numberline {A.4}Singularidades nos agrupamentos }{119}{section.A.4}
-\contentsline {subsection}{\numberline {A.4.1}Notas comuns sob transposi\IeC {\c c}\IeC {\~a}o}{120}{subsection.A.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Simetria Transpositiva}{121}{subsection.A.4.2}
-\contentsline {subsection}{\numberline {A.4.3}Complemento}{122}{subsection.A.4.3}
-\contentsline {subsection}{\numberline {A.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{123}{subsection.A.4.4}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}}{117}{appendix.A}
+\contentsline {section}{\numberline {A.1}Vetor intervalar}{118}{section.A.1}
+\contentsline {section}{\numberline {A.2}Forma Normal}{118}{section.A.2}
+\contentsline {section}{\numberline {A.3}Forma Prima}{120}{section.A.3}
+\contentsline {section}{\numberline {A.4}Singularidades nos agrupamentos }{121}{section.A.4}
+\contentsline {subsection}{\numberline {A.4.1}Notas comuns sob transposi\IeC {\c c}\IeC {\~a}o}{122}{subsection.A.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Simetria Transpositiva}{123}{subsection.A.4.2}
+\contentsline {subsection}{\numberline {A.4.3}Complemento}{124}{subsection.A.4.3}
+\contentsline {subsection}{\numberline {A.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{125}{subsection.A.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {B}\MakeTextUppercase {Experimentos Generativos}}{125}{appendix.B}
-\contentsline {section}{\numberline {B.1}CosmoBagatellas}{125}{section.B.1}
-\contentsline {section}{\numberline {B.2}Lastros e Rumos}{125}{section.B.2}
+\contentsline {chapter}{\chapternumberline {B}\MakeTextUppercase {Experimentos Generativos}}{127}{appendix.B}
+\contentsline {section}{\numberline {B.1}CosmoBagatellas}{127}{section.B.1}
+\contentsline {section}{\numberline {B.2}Lastros e Rumos}{127}{section.B.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {C}\MakeTextUppercase {Scripts}}{127}{appendix.C}
-\contentsline {section}{\numberline {C.1}CAC}{127}{section.C.1}
-\contentsline {subsection}{\numberline {C.1.1}Exemplo Lilypond}{127}{subsection.C.1.1}
+\contentsline {chapter}{\chapternumberline {C}\MakeTextUppercase {Scripts}}{129}{appendix.C}
+\contentsline {section}{\numberline {C.1}CAC}{129}{section.C.1}
+\contentsline {subsection}{\numberline {C.1.1}Exemplo Lilypond}{129}{subsection.C.1.1}
 \vspace {\cftbeforechapterskip }

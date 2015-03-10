@@ -1360,6 +1360,7 @@ Uma das características recorrentes pra confecção dos modos híbridos na mús
 
 
 \subsection{Rotação Pentatônica}
+\label{pentarota}
  
 \citeonline{susanni_antokoletz2012music} demonstram de maneira bastante pedagógica algumas técnicas de rotação intervalar, transposição, união e mistura de coleções modais por inserção de notas pivô e a transformação orgânica de motivos modais ou pentatônicos em novas sonoridades híbridas não-diatônicas, cíclicas e de uma ambiguidade maior-menor, presente nesta linguagem. 
 
@@ -2009,6 +2010,7 @@ A análise dos contornos se mostra necessária para que encontremos novas relaç
 
 
 \subsubsection{Contorno Intervalar}
+\label{mikrocontorno}
 
 Uma possibilidade importante de utilização dos scripts para análise é a de retirarmos de um corpus de partituras as relações intervalares de contorno motívico para identificarmos estratégias composicionais reincidentes. Fazer isso sem auxílio do computador é extremamente penoso e sujeito a erros, e para um corpo grande de obras a ser comparado fica inviável.
 
@@ -2320,11 +2322,22 @@ Apesar de realizar uma "re-síntese" dos motivos escolhidos a biblioteca LZ pare
 \chapter{Composição Assistida por Computador}
 \label{cac}
 
-Descrição da ideia de CAC - a 
-\lipsum[5]
+O conceito de "Composição Assistida por Computador"(CAC) está em geral colocado em contexto diferente do termo "composição algorítmica". Composição algorítmica é um conceito mais amplo e antigo e descende da ideia de um computador gerando músicas prontas a partir de algumas regras rígidas com variação estatística.
+
+Em seu artigo \textit{"Computer assisted composition today"}, \citeonline{assayag1999computer} define o termo como uma derivação natural da escritura musical
+
+\begin{citacao}
+A escrita instrumental parrece para nós um campo de estudo que é ao mesmo tempo preciso e aberto; constitui um mdelo desigual de adequação entre sistemas combinatórios de operações sobre conjuntos de símbolos por um lado e um universo sonoro tendo suas próprias regras  de operação cognitica e percetiva por outro lado. Certamente a notação opera um link coerente entre estes dois mundos.(...)
+Nós iremos empregar o termo Composição Assistida por Computador enquanto privilegiando, entre todas interpretações possíveis, aquela que mais se aproxima de escrita instrumental. Sistemas de CAC terão de ser capazes de trazer ajuda específica na escrita instrumental, eles devem constituir um link coerente entre os próximos e novos campos do som (sintético). \cite[ p.07]{assayag1999computer} \footnote{
+Instrumental writing seems to us a field of study which is at the same time precise and open: it constitutes a still unequalled model of adequacy between combinatorial systems of operations on sets of symbols on one hand and a sound universe having its own rules of perceptive and cognitive operation on the other hand. Indeed, the notation operates a coherent link between these two worlds. (...) We will thus employ the term Computer Assisted Composition while privileging, among all possible interpretations, the one that approaches at most the idea of instrumental writing. CAC systems will have to be able to bring an effective help in the specific case of instrumental writing; they will have to constitute a coherent link between the latter and new (synthetic) sound fields. \cite[ p.07]{assayag1999computer}}
+\end{citacao}
 
 
+O presente trabalho almeja também a possibilidade de organizar procedimentos de música generativa a partir de regras fixas retiradas de análises e possibilitando gerar música consistente automatizada a partir de definições algorítmicas precisas. 
 
+No entanto, na atual estado da pesquisa e considerando a imensa gama de opções encontradas, acredito que a prática criativa com estes procedimentos é a melhor maneira de organizar uma didática e uma sistematização consistente do conhecimento. 
+
+Neste capítulo descrevo alguns procedimentos que auxiliaram experimentos composicionais derivados desta pesquisa. 
 
 \section{Tecnicas em Music21}
 
@@ -2508,7 +2521,7 @@ Fora todos os patches que já foram demonstrados nas partes anteriores como ilus
 
 A biblioteca de crivos\footnote{Conhecidos também como \textit{"cribles"} em francês ou \textit{"sieves"} em inglês. A palavra traduz-se literalmente "peneira".} do OM permite a construção de fórmulas para geradores de escalas "literais" baseadas em regras geradoras simples.
 
-Podemos também por união ou intersecção de conjuntos estabelecer algumas restrições de quais oitavas entram determinados intervalos, fazendo que por momentos os intervalos compostos formem novos intervalos intermediários que podem ser independentes de oitava. Iannis \cite{xenakis1992formalized} descreve o conceito de crivo em seu livro \textit{"Formalized Music"}.
+Podemos também por união ou intersecção de conjuntos estabelecer algumas restrições de quais oitavas entram determinados intervalos, fazendo que por momentos os intervalos compostos formem novos intervalos intermediários que podem ser independentes de oitava. Iannis \citeonline{xenakis1992formalized} descreve o conceito de crivo em seu livro \textit{"Formalized Music"}.
  
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Construção de crivos. A união de dois crivos que geram dois padrões intervalares durante inicio e fim diferentes cria uma terceira região de intersecção dos intervalos, gerando sonoridades com equilíbrios localizados porém independentes de oitava. }
@@ -2572,27 +2585,19 @@ Uma biblioteca OM interessante para a exploração de contornos e estratégias d
 
 \subsubsection{Recombinações }
 
-Na seção
+Na \autoref{lz} discuti a biblioteca de OM LZ, que funciona com alguns conceitos de aprendizado de máquina para retirar contextos de relevância e similaridade de arquivos MIDI.
+
+Com alguns destes blocos construí um procedimento que pode servir de base para construção de clichês retirados dos Mikrokosmos de Bela Bartók. O caso específico da figura 71 é baseado na análise feita do Mikrokosmos 41 na \autoref{mikrocontorno} onde encontramos uma estratégia de rotação da pentatônica.\footnote{Para mais detalhes sobre rotações da pentatônica rever também \autoref{pentarota} }
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Recombinação de motivos a partir de segmentos gerados pela biblioteca LZ e estratégia pentatônica retirada da análise de Mikrokosmos 41. }
 	\begin{center}
-	    \includegraphics[scale=0.5]{OMPD/Recombina_Mikros.png}
+	    \includegraphics[scale=0.4]{OMPD/Recombina_Mikros.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
-
-\lipsum[9]
-
-\begin{figure}[!h]
-	\caption{\label{fig_grafico}O novo perfil rítmico deve ser quantizado se quisermos usar barras de compasso. Com o objeto \textit{om-quantify} foi possível normalizar o tempo da notação proporcional em em quadro de 7/4 considerando como definição aproximada o uso de colcheias e semicolcheias.  }
-	\begin{center}
-	    \includegraphics[scale=0.5]{OMPD/OMquantify.png}
-	\end{center}
-	\legend{Fonte: autor }
-\end{figure}
-
+Este patch também serviu como teste do procedimento já descrito anteriormente em , onde trabalhamos a conversão da notação proporcional em um procedimento de quantização para encaixe numa barra de compasso 7/4, para em seguida salvar em formato Lilypond, permitindo gerar uma partitura em pdf com padrões de impressão.
 
 
 \begin{figure}[!h]
@@ -2603,6 +2608,14 @@ Na seção
 	\legend{Fonte: autor }
 \end{figure}
 
+\pagebreak
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}O novo perfil rítmico deve ser quantizado se quisermos usar barras de compasso. Com o objeto \textit{om-quantify} foi possível normalizar o tempo da notação proporcional em em quadro de 7/4 considerando como definição aproximada o uso de colcheias e semicolcheias.  }
+	\begin{center}
+	    \includegraphics[scale=0.65]{OMPD/OMquantify.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
 
 
 
