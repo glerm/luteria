@@ -128,7 +128,7 @@ procnamekeys={def,class}}
 \titulo{Luteria Composicional de algoritmos pós-tonais }
 \autor{Guilherme Rafael Soares}
 %\local{Brasil}
-\data{05 de março de 2015, v0.999999-Defesa}
+\data{10 de março de 2015, v0.9999999999999999999999999REVISAOFINAL}
 \orientador{Prof. Dr. Daniel Quaranta}
 %\coorientador{Equipe \abnTeX}
 \instituicao{%
@@ -2909,20 +2909,445 @@ A relação Z é uma das interessantes relações onde há uma equivalência sem
 %%%%%
 \chapter{Experimentos Generativos}
 
+Anexamos aqui nesta parte algumas partituras geradas que representam uma amostra de experimentos possíveis. Considere-se também que todos os patches e scripts demonstrados neste trabalho podem potencialmente serem usados para gerar novas partituras, portanto estas peças figuram no presente trabalho sobretudo como um registro técnico do momento, representando a possibilidade de automatização desta etapa do procedimento.
+
+\begin{figure}[!h]
+	\begin{center}
+	    \includegraphics*[scale=0.25]{mat/agora.png}
+	\end{center}
+
+\end{figure}
+
+
+\section{MikroClichês}
+
+Experimentos de partitura onde busquei um critério de semelhança entre os clichês de segmentação e estratégias de melodia e condução de vozes apontadas.
+
 \section{CosmoBagatellas}
 
-
-
-
-\section{Lastros e Rumos}
+Partituras derivadas de experimentos livres, surgidos durante a organização dos patches de análise, como possibilidade de invenção. 
 
 
 \chapter{Scripts}
 \label{scripts}
 
+\section{Analise}
+
+\begin{lstlisting}
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from music21 import *
+
+#Script estudo sobre transformacoes por vizinhanca no ciclo das 3as maiores
+
+
+# acorde de 5a aumentada
+d = duration.Duration(4.0)
+duration=d
+c1=chord.Chord(['C4','E4','A-4'], duration=d)
+c1.addLyric('C E Ab')
+c1.addLyric(c1.commonName)
+c1.addLyric(c1.normalFormString)	
+c1.addLyric(c1.forteClassTn)
+s=stream.Stream()
+s.append(c1)
+ 
+for n in xrange(len(c1)):
+	### uma nota mais 1 semitom
+	intervalo=interval.Interval(+1)
+	t=c1[n].transpose(intervalo)
+	c=chord.Chord([t,c1[((n+1)%3)],c1[((n+2)%3)]],duration=d)
+	c.addLyric(c1[n].name+' mais 1 Semitom')
+	c.addLyric(c.pitchedCommonName)
+	c.addLyric(c.normalFormString)	
+	c.addLyric(c.forteClassTn)
+	s.append(c)
+	### uma nota menos 1 semitom
+	intervalo=interval.Interval(-1)
+	t=c1[n].transpose(intervalo)
+	c=chord.Chord([t,c1[((n+1)%3)],c1[((n+2)%3)]],duration=d)
+	c.addLyric(c1[n].name +' menos 1 Semitom')
+	c.addLyric(c.pitchedCommonName)
+	c.addLyric(c.normalFormString)	
+	c.addLyric(c.forteClassTn)
+	s.append(c)
+
+	### duas primeiras notas mais 1 semitom
+	intervalo=interval.Interval(+1)
+	t1=c1[n].transpose(intervalo)
+	e2=c1[((n+1)%3)]
+	t2=e2.transpose(intervalo)
+	c=chord.Chord([t1,t2,c1[((n+2)%3)]],duration=d)
+	c.addLyric(c1[n].name+' mais 1 Semitom')
+	c.addLyric(e2.name+' mais 1 Semitom')
+	c.addLyric(c.pitchedCommonName)
+	c.addLyric(c.normalFormString)	
+	c.addLyric(c.forteClassTn)
+	s.append(c)
+
+	### duas primeiras notas menos 1 semitom
+	intervalo=interval.Interval(-1)
+	t1=c1[n].transpose(intervalo)
+	e2=c1[((n+1)%3)]
+	t2=e2.transpose(intervalo)
+	c=chord.Chord([t1,t2,c1[((n+2)%3)]],duration=d)
+	c.addLyric(c1[n].name+' mais 1 Semitom')
+	c.addLyric(e2.name+' mais 1 Semitom')
+	c.addLyric(c.pitchedCommonName)
+	c.addLyric(c.normalFormString)	
+	c.addLyric(c.forteClassTn)
+	s.append(c)
+
+	### primeira e ultima notas mais 1 semitom
+	intervalo=interval.Interval(+1)
+	t1=c1[n].transpose(intervalo)
+	e2=c1[((n+2)%3)]
+	t2=e2.transpose(intervalo)
+	c=chord.Chord([t1,t2,c1[((n+2)%3)]],duration=d)
+	c.addLyric(c1[n].name+' mais 1 Semitom')
+	c.addLyric(e2.name+' mais 1 Semitom')
+	c.addLyric(c.pitchedCommonName)
+	c.addLyric(c.normalFormString)	
+	c.addLyric(c.forteClassTn)
+	s.append(c)
+
+	### primeira e ultima notas menos 1 semitom
+	intervalo=interval.Interval(-1)
+	t1=c1[n].transpose(intervalo)
+	e2=c1[((n+2)%3)]
+	t2=e2.transpose(intervalo)
+	c=chord.Chord([t1,t2,c1[((n+2)%3)]],duration=d)
+	c.addLyric(c1[n].name+' mais 1 Semitom')
+	c.addLyric(e2.name+' mais 1 Semitom')
+	c.addLyric(c.pitchedCommonName)
+	c.addLyric(c.normalFormString)	
+	c.addLyric(c.forteClassTn)
+	s.append(c)
+
+
+
+s.show('midi')
+s.show('lily.pdf')
+
+
+\end{lstlisting}
+
+
+\begin{lstlisting}
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from music21 import *
+
+k=['iii6','V7','I64', 'V7']
+#k=['I6','ii','IV','V7','I']
+T='C' 
+
+s=stream.Stream()
+
+for i in k:
+	n=roman.RomanNumeral(str(i),T)
+	c=chord.Chord(n.pitches)
+	c.addLyric(str(i))
+	s.append(c) 
+
+fim=chord.Chord(['C4','G4','C5','E5','C6'])
+fim.addLyric('I')
+
+s.append(fim)
+ 
+
+s.show('midi')
+s.show('lily.pdf')
+
+\end{lstlisting}
+
+
+
+\begin{lstlisting}
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from music21 import *
+import os
+import sys
+
+#contorno.py
+#detecta contorno
+
+localcorpus=os.getcwd()+'/localcorpus/'
+localXML='mikro'+str(sys.argv[1])+'.xml'
+
+localfile=localcorpus+localXML
+
+MIKRO=converter.parse(localfile) 
+
+maodir=MIKRO.parts[0]
+maoesq=MIKRO.parts[1]
+
+#nota inicial mao esquerda 
+IniE=note.Note(str(sys.argv[2]))
+nota_inicial_ESQ=IniE.midi
+#nota inicial mao direita 
+IniD=note.Note(str(sys.argv[3]))
+nota_inicial_DIR=IniD.midi
+
+
+#NCR = nota code or rest
+for NCR in maoesq.flat.notes:
+	if NCR.isNote:
+		contorno_atual=NCR.midi-nota_inicial_ESQ
+		nota_inicial_ESQ=NCR.midi
+		NCR.addLyric(NCR.name)
+		NCR.addLyric(contorno_atual)
+	if NCR.isChord:
+		NCR.addLyric(NCR.forteClassTn)
+
+
+#NCR = nota code or rest
+for NCR in maodir.flat.notes:
+	if NCR.isNote:
+		contorno_atual=NCR.midi-nota_inicial_DIR
+		nota_inicial_DIR=NCR.midi
+		NCR.addLyric(NCR.name)
+		NCR.addLyric(contorno_atual)
+	if NCR.isChord:
+		NCR.addLyric(NCR.forteClassTn)
+
+
+MIKRO.show('lily.pdf')
+
+\end{lstlisting}
+
+\begin{lstlisting}
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
+#Script detecta contornos de octatonica
+
+from music21 import *
+
+# importa o arquivo mikrokosmos 109
+localfile="localcorpus/mikro109.xml"
+
+# converte para o formato music21
+m=converter.parse(localfile)
+
+# separa as duas partes
+p0=m.parts[0]
+p1=m.parts[1]
+
+# cria uma escala de referencia octatonica
+c=scale.OctatonicScale('C')
+
+
+# verifica nota a nota (pulando acordes) se existem melodias dentro da escala
+for n in p0.flat.notes:
+	if n.isNote:
+		n.addLyric(n.name)
+		n.addLyric(str(c.getScaleDegreeFromPitch(n.pitch)))
+
+for n in p1.flat.notes:
+	if n.isNote:
+		n.addLyric(n.name)
+		if n.pitch.pitchClass == 8: #testa se ha o Ab
+			n.addLyric(str(c.getScaleDegreeFromPitch(n.pitch.getEnharmonic())))			
+		else:			#se ha o Ab troca para o G# no teste
+			n.addLyric(str(c.getScaleDegreeFromPitch(n.pitch)))			
+			
+# imprime a partitura em pdf
+m.show('lily.pdf')		
+\end{lstlisting}
+
+\begin{lstlisting}
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from music21 import *
+import os
+import sys
+
+#isola trechos de ritmos mais raros
+
+localcorpus=os.getcwd()+'/localcorpus/'
+localXML='mikro'+str(sys.argv[1])+'.xml'
+
+localfile=localcorpus+localXML
+
+MIKRO=converter.parse(localfile) 
+
+#maodir=MIKRO.parts[0]
+#maoesq=MIKRO.parts[1]
+MIKROch=MIKRO.chordify()
+
+
+sortedRhythms = search.mostCommonMeasureRythms(MIKROch)
+
+
+vezes=[]
+for s in sortedRhythms:
+	vezes.append(s['number'])
+
+comum=stream.Stream()
+raro=stream.Stream()
+
+for s in sortedRhythms:
+	if (s['number']) == max(vezes):
+		for m in s['measures']:
+			comum.append(m)
+
+for s in sortedRhythms:
+	if (s['number']) == min(vezes):
+		for m in s['measures']:
+			raro.append(m)
+
+
+if sys.argv[2] == 'comum':
+	comum.show('lily.pdf')
+else:
+	if sys.argv[2] == 'raro':
+		raro.show('lily.pdf')
+	else:
+		MIKROch.show('lily.pdf')
+
+\end{lstlisting}
+
+
+\begin{lstlisting}
+
+#Script nomeia notas e acordes
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from music21 import *
+import os
+import sys
+
+localcorpus=os.getcwd()+'/localcorpus/'
+localXML='mikro'+str(sys.argv[1])+'.xml'
+
+localfile=localcorpus+localXML
+
+MIKRO=converter.parse(localfile) 
+
+maodir=MIKRO.parts[0]
+maoesq=MIKRO.parts[1]
+
+
+#NCR = nota code or rest
+for NCR in maodir.flat.notes:
+	if NCR.isNote:
+		NCR.addLyric(NCR.name)
+		#NCR.color = 'blue'
+	if NCR.isChord:
+		NCR.addLyric(NCR.forteClassTn)
+
+
+for NCR in maoesq.flat.notes:
+	if NCR.isNote:
+		NCR.addLyric(NCR.name)
+	if NCR.isChord:
+		NCR.addLyric(NCR.forteClassTn)
+
+
+
+MIKRO.show('lily.pdf')
+\end{lstlisting}
+
+
 \section{CAC}
 
 \subsection{Exemplo Lilypond}
+
+
+
+\begin{lstlisting}
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from music21 import *
+import random
+import copy
+
+#Script que formata cliches a partir de escalas
+
+
+n_compassos=16
+
+# Criamos um objeto score (partitura) para usar como fluxo principal
+partitura=stream.Score()
+
+# Separamos o fluxo em duas partes: duas pautas
+mao_esquerda=stream.PartStaff()
+mao_direita=stream.PartStaff()
+
+
+#Criamos o primeiro compasso para cada pauta 
+compasso1L=stream.Measure(number=0)
+compasso1R=stream.Measure(number=0)
+
+# Necessitamos formatar o layout do staff para agrupar as duas pautas
+compasso1L.insert(0,layout.SystemLayout())
+compasso1L.insert(0,layout.StaffLayout(staffNumber=2))
+compasso1R.insert(0,layout.SystemLayout())
+
+# Inserindo a clave, a formula de compasso inicial
+compasso1L.insert(0,clef.BassClef())
+compasso1L.insert(0,meter.TimeSignature('4/4'))
+mao_esquerda.insert(0,compasso1L)
+
+# Inserindo a clave, a formula de compasso inicial
+compasso1R.insert(0,clef.TrebleClef())
+compasso1R.insert(0,meter.TimeSignature('4/4'))
+mao_direita.insert(0,compasso1R)
+
+
+########## escalas
+
+pitchList = ["C4","D4","F4","G4","A4"]
+PentaScale = scale.AbstractScale()
+PentaScale.buildNetworkFromPitches([pitch.Pitch(p) for p in pitchList])
+escala_melodia = PentaScale._net.realizePitch('D5')
+
+escala2 = scale.DorianScale('C')
+escala_baixo=escala2.getPitches('c2', 'f#3')
+
+
+escala_melodia.reverse()
+
+for n in xrange(n_compassos):	
+	compasso_esquerdo=stream.Measure(number=n)
+	compasso_direito=stream.Measure(number=n)
+		
+	for t in xrange(4):
+		baixo=escala_baixo[((t+random.randint(0,4))%(len(escala_baixo)))]
+		melodia=escala_melodia[((t+random.randint(0,4))%(len(escala_melodia)))]
+		compasso_esquerdo.append(note.Note(baixo))
+		compasso_direito.append(note.Note(melodia))
+
+	mao_esquerda.insert(n,compasso_esquerdo)
+	mao_direita.insert(n,compasso_direito)
+
+
+# Formatando a entrada das partes na camada de layout da partitura
+partitura.insert(0,mao_direita)
+partitura.insert(0,mao_esquerda)
+
+
+
+
+##################### processamento
+P='lily.pdf'
+M='midi'
+T='text'
+X='musicxml'
+
+partitura.show(P)
+
+
+\end{lstlisting}
+
+
 
 \begin{lstlisting}
 \version "2.9"

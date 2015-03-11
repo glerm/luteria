@@ -84,10 +84,11 @@
 \contentsline {subsection}{\numberline {A.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{125}{subsection.A.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {B}\MakeTextUppercase {Experimentos Generativos}}{127}{appendix.B}
-\contentsline {section}{\numberline {B.1}CosmoBagatellas}{127}{section.B.1}
-\contentsline {section}{\numberline {B.2}Lastros e Rumos}{127}{section.B.2}
+\contentsline {section}{\numberline {B.1}MikroClich\IeC {\^e}s}{127}{section.B.1}
+\contentsline {section}{\numberline {B.2}CosmoBagatellas}{127}{section.B.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {C}\MakeTextUppercase {Scripts}}{129}{appendix.C}
-\contentsline {section}{\numberline {C.1}CAC}{129}{section.C.1}
-\contentsline {subsection}{\numberline {C.1.1}Exemplo Lilypond}{129}{subsection.C.1.1}
+\contentsline {section}{\numberline {C.1}Analise}{129}{section.C.1}
+\contentsline {section}{\numberline {C.2}CAC}{134}{section.C.2}
+\contentsline {subsection}{\numberline {C.2.1}Exemplo Lilypond}{134}{subsection.C.2.1}
 \vspace {\cftbeforechapterskip }
