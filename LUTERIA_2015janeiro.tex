@@ -389,16 +389,16 @@ procnamekeys={def,class}}
 \begin{resumo}
 
 
-Esta pesquisa visa sistematizar um catálogo de experimentos constituído de pequenas peças musicais e seus algoritmos geradores, objetivando a construção de uma biblioteca de procedimentos para composição assistida por computador que gere partituras baseadas em regras derivadas de análises musicais de contexto pós-tonal.
+Esta sistematiza um catálogo de experimentos constituído de estudos musicais e seus algoritmos geradores, organizando procedimentos para composição assistida por computador orientados regras derivadas de análises musicais de contexto pós-tonal.
 
 %Formalizamos tais aspectos através de um estudo comparado de dois paradigmas de análise musical: \textit{"A Teoria Gerativa da Música Tonal"}\cite{lerdahl1983generative} com algumas de suas continuidades  \cite{lerdahl2009genesis,temperley2001cognition} e a \textit{"Teoria de grupos das classes de alturas"\ (ou "Pitch Class Set Theory")}  \cite{forte1973structure,straus2004}.
 
-Os procedimentos são inspirados em apontamentos de estudos sobre pós-tonalidade no compositor Béla Bartók encontrados nas as obras de \citeonline{lendvai1971bela,antokoletz1984music,cohn1991bartok} e  \citeonline{suchoff2004bartok}. Enfatizamos a problematização de ciclos intervalares, eixos de simetria, polimodalismo e peculiaridades de coleções referenciais de classes de altura conforme sugestões de 
+Os procedimentos são inspirados em apontamentos de estudos sobre pós-tonalidade no compositor Béla Bartók encontrados nas as obras de \citeonline{lendvai1971bela,antokoletz1984music,cohn1991bartok} e  \citeonline{suchoff2004bartok}. São problematizados os conceitos de ciclos intervalares, eixos de simetria, polimodalismo e peculiaridades de coleções referenciais de classes de altura conforme sugestões de 
 \citeonline{forte1973structure, straus2004} e \citeonline{susanni_antokoletz2012music}.
 
-Detalhamos questões computacionais para esta implementação utilizando como base as ferramentas OpenMusic e biblioteca python de musicologia assistida por computador Music21. 
+São detalhadas questões computacionais para esta implementação utilizando como base as ferramentas OpenMusic e biblioteca python de musicologia assistida por computador Music21. 
 
-Deixamos um legado em código aberto para continuidades possíveis deste trabalho.
+Um legado em código aberto é deixado para continuidades possíveis deste trabalho.
 
 
  \textbf{Palavras-chaves}: Música algorítmica. Pós-tonalismo. Teoria dos conjuntos. Pitch class theory. Luteria. Composição assistida por computador. Musicologia assistida por computador. Open Music. Music21 Software livre. Bela Bartók.
@@ -506,9 +506,9 @@ Deixamos um legado em código aberto para continuidades possíveis deste trabalh
 
 Em seu livro sobre música e mediação tecnológica, Fernando \citeonline[ p.187]{iazzetta2009musica} nos fala sobre um tipo de \textit{\textbf{"luteria composicional"}}\ que surge do experimento de estúdio migrando para os computadores pessoais no final do século XX. A criação dos instrumentos musicais a partir de algoritmos, códigos, \textit{patches}\footnote{Algoritmos computacionais em forma de fluxogramas usados em linguagens de programação gráficas como Open Music e Pure Data.}, passa a existir como estratégia composicional tanto quanto a técnica instrumental ou a experiência de orquestração por escrita partitural. 
 
-Podemos observar na história da musica algorítmica que em seus primeiros experimentos, como na \textit{Suíte Illiac} de \citeonline{hiller1957musical}, ainda buscava-se a legitimação de uma computação musical a partir da aplicação estatística de restrições composicionais derivadas das regras de harmonia e contraponto, emulando as técnicas do compositor ocidental tradicional, treinado nas partituras. 
+Em experimentos pioneiros da História da música algorítmica , como na \textit{Suíte Illiac} de \citeonline{hiller1957musical}, ainda buscava-se a legitimação de uma computação musical a partir da aplicação estatística de restrições composicionais derivadas das regras de harmonia e contraponto, emulando as técnicas do compositor ocidental tradicional, treinado nas partituras. 
 
-Provada a possibilidade de um \textit{"computador ser usado para compor"}, logo começam expansões de técnicas \textit{muito complexas para serem pensadas sem o auxílio do computador}, através de aplicações de teorias matemáticas mais avançadas sobre a serialização de eventos partituráveis. No entanto este serialismo integral e ortodoxo vai aos poucos sendo permeado por uma música computacional que estimula a busca por sonoridades não-restritas a organização das 12 alturas da escala temperada, estimulado pelos experimentos da era inaugurada pela música eletroacústica e pela música concreta.
+Provada a possibilidade de um \textit{"computador ser usado para compor"}, logo começam expansões de técnicas \textit{muito complexas para serem pensadas sem o auxílio do computador}, através de aplicações de teorias matemáticas mais avançadas sobre a serialização de eventos partituráveis. No entanto este serialismo integral e ortodoxo vai aos poucos sendo permeado por uma música computacional que estimula a busca por sonoridades não-restritas a organização das 12 alturas da escala temperada, estimulado pelos experimentos da era inaugurada pela música eletroacústica e pela música concreta.\footnote{Para um comentário histórico sobre o inicio da influência serialista na música eletrônica ver \cite{stockhausen1996unidade}. } 
 
 O computador passa a ser cada vez mais usado para a pesquisa sobre síntese sonora e em dado momento sua capacidade de memória passa a permitir também manipulações muito avançadas em sons gravados. Os experimentos concretos e eletrônicos com todo espectro audível passam a ser \textbf{uma das primeiras coisas que um músico iniciado pela computação terá contato}, já que o uso dos processos partiturados estarão sempre de alguma forma ligados a tradições ocidentais da orquestração ou estudo de instrumentos musicais de um repertorio de prática comum.
 
@@ -536,9 +536,9 @@ Considerando este cenário com que depara-se hoje \textbf{o músico que programa
 
 Um limite que teve seu auge um pouco antes do início da história da música algorítmica, antes da preocupação imediata com os timbres ou da era das manipulações de amostras sonoras, e de certa maneira ainda proto-serialista. Uma música por vezes chamada politonal, polimodal ou usando o termo de \citeonline{straus2004}: \textit{\textbf{pós-tonal}}. 
 
-Para isso investigamos algumas bases para a manipulação dos processos simbólicos partituráveis na escala temperada em um contexto teórico que estivesse nos limites da ideia de tonalidade, porém restritos a estratégias de manipulação das doze alturas e ao uso do timbre do piano como uma abstração "neutra"\footnote{Tomamos esta arbitrária "neutralidade" apenas para medir as relações intervalares como foco de investigação, sem uma preocupação imediata com timbres. Uma abordagem ainda mais focada na "sonoridade" do piano poderia encontrar referências no trabalho de \citeonline{guigue2012}, para continuidade do presente trabalho. } para referência das alturas.
+Para isso investiguei algumas bases para a manipulação dos processos simbólicos partituráveis na escala temperada em um contexto teórico que estivesse nos limites da ideia de tonalidade, porém restritos a estratégias de manipulação das doze alturas e ao uso do timbre do piano como uma abstração "neutra"\footnote{Tomamos esta arbitrária "neutralidade" apenas para medir as relações intervalares como foco de investigação, sem uma preocupação imediata com timbres. Uma abordagem ainda mais focada na "sonoridade" do piano poderia encontrar referências no trabalho de \citeonline{guigue2012}, para continuidade do presente trabalho. } para referência das alturas.
 
-Decidimos focar na possibilidade de organizar apontamentos composicionais pós-tonais a partir de ferramentas de análise assistida por computador. Nossa estratégia para definição do escopo foi a de partir do estudo de caso do compositor Bela Bartók.
+Decidi focar na possibilidade de organizar apontamentos composicionais pós-tonais a partir de ferramentas de análise assistida por computador. Nossa estratégia para definição do escopo foi a de partir do estudo de caso do compositor Bela Bartók.
 
 O procedimento dividiu-sem em 3 etapas:\textit{ a) apontamentos da Análise Bartokiana, b) formalizações computacionais da análise assistida por computador e c) formalizaçoes computacionais da composição assistida por computador.}
 
@@ -546,15 +546,17 @@ O procedimento dividiu-sem em 3 etapas:\textit{ a) apontamentos da Análise Bart
 %\section*{Musicologia Assistida por computador}
 
 
-Iniciamos esta pesquisa buscando entender como o percurso que as formalizações computacionais de elementos básicos da cognição musical permitiram o atual estágio da \textit{análise musical assistida por computador}. Trabalhos como a formalização de uma gramática gerativa da música tonal proposta por \citeonline{lerdahl1983generative} e derivações similares que geraram implementações computacionais como as pesquisas de \citeonline{temperley2001cognition} e \citeonline{huron2006sweet} nos interessaram e pareceram a princípio essenciais como base para o entendimento de algoritmos de segmentação de estruturas musicais observáveis em partituras e arquivos de corpus derivados de instruções composicionais simbólicas.
+Iniciei esta pesquisa buscando entender como o percurso que as formalizações computacionais de elementos básicos da cognição musical permitiram o atual estágio da \textit{análise musical assistida por computador}. Trabalhos como a formalização de uma gramática gerativa da música tonal proposta por \citeonline{lerdahl1983generative} e derivações similares que geraram implementações computacionais como as pesquisas de \citeonline{temperley2001cognition} e \citeonline{huron2006sweet} interessaram e pareceram a princípio essenciais como base para o entendimento de algoritmos de segmentação de estruturas musicais observáveis em partituras e arquivos de corpus derivados de instruções composicionais simbólicas.
 
 Dado o período de quase quatro décadas das primeiras implementações destes algoritmos de segmentação musical temos atualmente um cenário bastante amplo para testar muitas destas teorias e buscar compreende-las a partir de uma experiência prática. Alguns dos algoritmos implementados por Temperley, Huron e pesquisas similares podem ser experimentados com a biblioteca Python Music21\footnote{Biblioteca voltada para procedimentos de análise musical assistida por computador, desenvolvido com suporte do MIT. \url{http://web.mit.edu/music21/}. Acesso em 27 de fevereiro de 2015.}, que foi usada em nossos estudos de caso explicados no \autoref{analise_computacional}, juntamente com algumas implementações destas análises em linguagem OpenMusic, para comparação das ferramentas.
 
-No entanto, as abordagens generalistas dos problemas quantizáveis de expectativa musical com base em pesquisas sobre cognição e fruição da linguagem tonal\footnote{ Entenda-se aqui - a música de tradição clássica e romântica ocidental, repertório referido como "de prática comum"\cite{temperley2001cognition} } e seus problemas de ordem métrica, rítmica, melódica, harmônica e prolongacional\footnote{De maneira geral os procedimentos cristalizados pela tradição shenkeriana. Conferir \citeonline{dunsby2011analise} } quase sempre tangenciam a música pós-tonal como uma exceção especializada das regras gerais, o que nos chamou a atenção para quais seriam as alternativas a uma abordagem que partisse de outros princípios. 
+No entanto, as abordagens generalistas dos problemas quantizáveis de expectativa musical com base em pesquisas sobre cognição e fruição da linguagem tonal\footnote{ Entenda-se aqui - a música de tradição clássica e romântica ocidental, repertório referido como "de prática comum"\cite{temperley2001cognition} } e seus problemas de ordem métrica, rítmica, melódica, harmônica e prolongacional\footnote{De maneira geral procedimentos cristalizados pela tradição shenkeriana. Conferir \citeonline{dunsby2011analise} } quase sempre tangenciam a música pós-tonal como uma exceção especializada das regras gerais, o que nos chamou a atenção para quais seriam as alternativas a uma abordagem que partisse de outros princípios. 
 
 Objetivando este escopo mais restrito ao período pós-tonal buscamos na literatura específica das análises do repertório bartokiano ( \autoref{bartokianas} ) e na literatura que funda algumas das nomenclaturas da análise pós-tonal ( \autoref{pos_tonal} ) alguns aspectos mais específicos. 
 
-Destacamos desta literatura: \textit{a organização de sonoridades por novos critérios de organização intervalar, casos de observação de simetrias, ciclos transposições e transformações destes materiais e a busca por descrições de outras lógicas de encadeamento dos blocos e sua relação com as percepções mais básicas que ainda operam o lastro de expectativa tonal.} Estes procedimentos são descritos em patches de OpenMusic que são usados também como geradores de sugestões composicionais detalhadas na \autoref{cac} .
+Destaquei desta literatura: \textit{a organização de sonoridades por novos critérios de organização intervalar, casos de observação de simetrias, ciclos transposições e transformações destes materiais e a busca por descrições de outras lógicas de encadeamento dos blocos e sua relação com as percepções mais básicas que ainda operam o lastro de expectativa tonal.} 
+
+Estes procedimentos são descritos em patches de OpenMusic que são usados também como geradores de sugestões composicionais detalhadas na \autoref{cac} .
 
 
 \part{Percurso pela Analise Musical }
@@ -563,13 +565,13 @@ Destacamos desta literatura: \textit{a organização de sonoridades por novos cr
 \chapter{Apontamentos Bartokianos}
 \label{bartokianas}
 
-Construímos neste capítulo um catálogo de apontamentos analíticos sobre algumas características singulares da obra de Bela Bartók a partir da literatura musicológica derivada de sua obra.
+Este capítulo compõe um catálogo de apontamentos analíticos sobre algumas características singulares da obra de Bela Bartók a partir da literatura musicológica derivada de sua obra.
 
 No entanto, mais do que alguma nova teoria sobre Bartók, a intenção deste capítulo é sobretudo servir como uma definição de um escopo pós-tonal para um percurso por ferramentas livres de análise musical assistida por computador.
 
-Durante a pesquisa fizemos um estudo comparado das análises com as linguagens de programação OpenMusic e Python (com a biblioteca Music21)  que serviram para ilustrar e testar os apontamentos e que estão explicados em maiores detalhes nos capítulos seguintes.
+Durante a pesquisa fiz um estudo comparado das análises com as linguagens de programação OpenMusic e Python (com a biblioteca Music21)  que serviram para ilustrar e testar os apontamentos e que estão explicados em maiores detalhes nos capítulos seguintes.
 
-Buscamos aqui neste percurso formular técnicas e algoritmos que sirvam a uma composição assistida por computador mais integrada com processos automatizados de análise musical pós-tonal.
+Busquei aqui neste percurso formular técnicas e algoritmos que sirvam a uma composição assistida por computador mais integrada com processos automatizados de análise musical pós-tonal.
 
 
 \section{Panorama básico sobre analise bartokiana}
@@ -590,7 +592,7 @@ Uma \textit{\textbf{"semi-autenticidade"}} seria definida a partir de analogias 
 
 Já a \textit{\textbf{"não-autenticidade"}} comportaria os estudos da música de Bartók como fonte para apontamentos arbitrários para demonstrações de harmonia funcional, contraponto, análise shenkeriana ou análise pós-tonal por grupos de classes de alturas. Gillies situa também aqui algumas análises de Bartók que tomam caminhos mais especulativos e originais como as análises de proporção geométrica e simetria propostas por Ern{\H{o}} \citeonline{lendvai1971bela}  ou o escrutínio de relações celulares e suas transformações entre ciclos intervalares, rotações motívicas, coleções modais ou não-diatônicas presentes em trabalhos como o de Elliot \citeonline{antokoletz1984music}. 
 
-Em nossa pequena amostra de abordagens seguimos muito mais por este percurso mais descontextualizado e autoral de analistas que destacaram alguns traços estruturais na musica de Bartók e seus Mikrokosmos. Não temos ainda a ambição de esgotar ou mesmo de argumentar uma hierarquia de importâncias "autênticas"\ destes traços em sua obra como um todo ou na consistência geral de seu estilo. Nossa intenção aqui foi apontar limites e possibilidades para uma automação algorítmica de manipulação de transformações sugeridas nestas análises e abrir caminho para uma musica generativa inspirada nestes procedimentos.
+Em nossa pequena amostra de abordagens seguimos muito mais por este percurso descontextualizado e autoral de analistas que destacaram alguns traços estruturais na musica de Bartók e seus Mikrokosmos. Não temos ainda a ambição de esgotar ou mesmo de argumentar uma hierarquia de importâncias "autênticas"\ destes traços em sua obra como um todo ou na consistência geral de seu estilo. Nossa intenção aqui foi apontar limites e possibilidades para uma automação algorítmica de manipulação de transformações sugeridas nestas análises e abrir caminho para uma musica generativa inspirada nestes procedimentos.
 
 \section{Sistema de Eixos de Lendvai}
 \label{lendvai_eixos}
@@ -603,7 +605,7 @@ Ern{\H{o}} \citeonline[p. 08]{lendvai1971bela} organiza uma visão geral de uma 
 
 \subsection{Afinidades funcionais entre quarto e quinto graus}
 
-Partindo da consideração do ciclo das quintas como um esquema rotativo de transformação que possui as forças \textit{subdominante<-tonica->dominante} em cada um dos passos de 30 graus, lembremos que girando da \textit{esquerda para direita} temos sempre uma relação onde \textit{a dominante como nova tônica terá a tônica anterior como subdominante} e girando \textit{da direita a esquerda} teremos uma nova tônica que possui \textit{a tônica anterior como dominante}. 
+Partindo da consideração do ciclo das quintas como um esquema rotativo de transformação que possui as forças \textit{subdominante<-tonica->dominante} em cada um dos passos de 30 graus, lembremos que girando da \textit{esquerda para direita} temos sempre uma relação onde \textit{a dominante como nova tônica terá a tônica anterior como subdominante} e girando \textit{da direita para a esquerda} teremos uma nova tônica que possui \textit{a tônica anterior como dominante}. 
 
 \citeonline[ p.3]{lendvai1971bela} propõe a partir disso a observação do uso das relações entre os quatro polos dos três eixos possíveis. As doze alturas cromáticas ficam distribuídas em três eixos de quatro notas. 
 
@@ -627,7 +629,7 @@ A diferença é que neste caso a relação mais importante entre as notas do eix
 Is essential that the particular axes should not be considered as chords of diminished seventh, but as functional relationships of four diferent tonalities, which may best be compared to the minor-major relations of classical music.\cite[ p.3]{lendvai1971bela}}
 \end{citacao}
 
-As três transposições possíveis dos eixos de quatro notas tornam a transformação de \textit{"transposição do sistema de eixos"} \textbf{\textbf{\underline{geometricamente}}} similar ao movimento \textit{"$subdominante \leftrightarrow tônica \leftrightarrow dominante$"}\ mas nem sempre pelos mesmos critérios de uma harmonia tonal funcional, apesar de obviamente, poder servir-se deste como estratégia de construção de ambiguidades politonais.
+As três transposições possíveis dos eixos de quatro notas tornam a transformação de \textit{"transposição do sistema de eixos"} \textbf{\textbf{\underline{geometricamente}}} similar ao movimento \textit{"$subdominante \leftrightarrow tônica \leftrightarrow dominante$"}\ mas nem sempre pelos mesmos critérios de uma harmonia tonal funcional, apesar de poder servir-se deste como estratégia de construção de ambiguidades politonais.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Sistema de Eixos - Rotacão entre primário e secundário}
@@ -638,12 +640,12 @@ As três transposições possíveis dos eixos de quatro notas tornam a transform
 \end{figure}
 
 
-Lendvai toma este conceito de "polo e contrapolo" como \textit{\textbf{"uma das estratégias estruturais mais fundamentais na música de Béla Bartók"}}\cite[ p.04]{lendvai1971bela} e cita alguns exemplos que confirmam que este tipo de modulação era recorrente.
+Lendvai toma este conceito de "polo e contrapolo"\ como \textit{\textbf{"uma das estratégias estruturais mais fundamentais na música de Béla Bartók"}}\cite[ p.04]{lendvai1971bela} e cita alguns exemplos que confirmam que este tipo de modulação era recorrente.
 
  
 Na \textit{"Sonata para dois pianos e Percussão"} o motivo inicial é transposto três vezes entre os dois pianos em sua relação de trítono \textit{"polo e contra-polo"} e nestas três entradas consecutivas deste motivo é apresentando com as três transposições possíveis do \textit{"sistema de eixos"}.
 
-A relação \textit{polo $\leftrightarrow$ contra-polo} que pode ser observada nestas entradas pode ser percebida como a analogia com o pêndulo \textit{"subdominante $\leftrightarrow$ tônica $\leftrightarrow$ dominante"} proposta por Lendvai: inicia com a relação motívica destacando a relação $C \leftrightarrow F\#$ (compassos 2-5 / Figura 3) em seguida (compasso 8-9 / Figura 4) entra o eixo de $G \leftrightarrow Db$ (como se G surgisse de uma relação dominante com C e Db estivesse numa simultânea relação dominante com F\#) e no compasso 12 (Figura 4) a entrada do jogo entre as transposições $B \leftrightarrow Ab$ como se agora introduzisse a "dominante da dominante"($G \leftrightarrow B$ e $Db \leftrightarrow Ab$) ao mesmo tempo que move-se assim para o último dos três eixos.
+A relação \textit{polo $\leftrightarrow$ contra-polo} que pode ser observada nestas entradas pode ser percebida como a analogia com o pêndulo \textit{"subdominante $\leftrightarrow$ tônica $\leftrightarrow$ dominante"} proposta por Lendvai: inicia com a relação motívica destacando a relação $Dó \leftrightarrow Fá\sharp$ (compassos 2-5 / Figura 3) em seguida (compasso 8-9 / Figura 4) entra o eixo de $Sol \leftrightarrow Ré\flat$ (como se Sol surgisse de uma relação dominante com Dó e Ré$\flat$ estivesse numa simultânea relação dominante com Fá$\sharp$) e no compasso 12 (Figura 4) a entrada do jogo entre as transposições $Si \leftrightarrow Lá\flat$ como se agora introduzisse a "dominante da dominante"($Sol \leftrightarrow Si$ e $Ré\flat \leftrightarrow Lá\flat$) ao mesmo tempo que move-se assim para o último dos três eixos.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}O plano melódico do motivo inicial de \textit{"Sonata para dois pianos e Percussão"}  parece ser o de fechar o total cromático com a transposição paralela da melodia nos dois pólos, fazendo um pólo para cada piano. }
@@ -655,7 +657,7 @@ A relação \textit{polo $\leftrightarrow$ contra-polo} que pode ser observada n
 
 
 
-Podemos observar (Figura 3) que já nas entradas do motivo inicial temos uma estratégia de introdução de uma coleção de 7 notas a partir de um polo e mais 7 a partir do seu contrapolo em sua voz de resposta no segundo piano - as duas vozes juntas dividem o total cromático em dois, tendo como notas comuns as notas do eixo secundário (a mediante e a relativa - no caso de F\# e C por exemplo, as notas comuns são A e Eb ).
+Podemos observar (Figura 3) que já nas entradas do motivo inicial temos uma estratégia de introdução de uma coleção de 7 notas a partir de um polo e mais 7 a partir do seu contrapolo em sua voz de resposta no segundo piano - as duas vozes juntas dividem o total cromático em dois, tendo como notas comuns as notas do eixo secundário (a mediante e a relativa - no caso de Fá$\sharp$ e Dó por exemplo, as notas comuns são Lá e Mi$\flat$ ).
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Encadeamento dos eixos através das transposições do motivo inicial }
@@ -667,7 +669,7 @@ Podemos observar (Figura 3) que já nas entradas do motivo inicial temos uma est
 
 
 
-É possível também inferir que a melodia sugere um giro em torno de um eixo que prolonga a expectativa do passo cromático $F\# \rightarrow G$ (e assim por diante em suas transposições). O contorno possui uma simetria no núcleo interno de intervalos\footnote{"Um aglomerado simétrico de semitons equilibrados em torno de um eixo"\cite[ p.120]{straus2004}} com um segmento onde há um salto por quinta invertida no meio de duas células de passo cromático que estão distantes do inicio e do fim da melodia por um salto de 3 semitons (Figura 4). 
+É possível também inferir que a melodia sugere um giro em torno de um eixo que prolonga a expectativa do passo cromático $Fá\sharp \rightarrow Sol$ (e assim por diante em suas transposições). O contorno possui uma simetria no núcleo interno de intervalos\footnote{"Um aglomerado simétrico de semitons equilibrados em torno de um eixo"\cite[ p.120]{straus2004}} com um segmento onde há um salto por quinta invertida no meio de duas células de passo cromático que estão distantes do inicio e do fim da melodia por um salto de 3 semitons (Figura 4). 
 
 Esta estratégia composicional com simetrias internas\footnote{C.f. "Eixo de Inversão"\cite[ p.121]{straus2004}} recorrentes em Bartók por rotações de "células intervalares"\cite[ p.128]{susanni_antokoletz2012music} serão comentadas na \autoref{simetria}.
 
@@ -685,7 +687,7 @@ Esta estratégia composicional com simetrias internas\footnote{C.f. "Eixo de Inv
 Lembremos também que as transposições em 3 semitons sugerem esta equivalência de sonoridade das transposições pelo mesmo sistema de eixos usado nas transposições da melodia completa e que o salto em quinta invertida no meio do segmento remete ao ciclo de dominantes tradicionalmente usado para modulações tonais.
 
 
-\citeonline[ p.4]{lendvai1971bela} também lembra situações onde a estratégia de rotação dos polos do sistema de eixos é a conexão entre os movimentos de formas completas, como na opera \textit{"Castelo de Barba Azul"} ($F\# \leftrightarrow  C \leftrightarrow F\#$) e na \textit{"Music for Strings, Percussion and Celesta" } (que altera cada movimento entre os pólos e contrapólos dos eixos primário $F\# \leftrightarrow  C \leftrightarrow F\#$ e secundário $A\# \leftrightarrow  Eb \leftrightarrow A\#$).
+\citeonline[ p.4]{lendvai1971bela} também lembra situações onde a estratégia de rotação dos polos do sistema de eixos é a conexão entre os movimentos de formas completas, como na opera \textit{"Castelo de Barba Azul"} ($Fá\sharp \leftrightarrow  Dó \leftrightarrow Fá\sharp$) e na \textit{"Music for Strings, Percussion and Celesta" } (que altera cada movimento entre os pólos e contrapólos dos eixos primário $Fá\sharp \leftrightarrow  Dó \leftrightarrow Fá\sharp$ e secundário $Lá\sharp \leftrightarrow  Mi\flat \leftrightarrow Lá\sharp$).
 
 
 \subsection{A elaboração de uma sonoridade mista maior-menor}
@@ -722,7 +724,7 @@ b) O próximo passo é a introdução do eixo da tonalidade relativa (90 graus �
 \end{figure}
 
 
-c) No estágio mais avançado do romantismo é introduzido o jogo de ambiguidade entre a tonalidade maior e menor de um mesmo polo permitindo que haja a estratégia de modulação pelo sistema de eixos tanto para 90 graus a esquerda (Ex: Lá menor e Dó maior) quanto 90 graus a direita (Ex: Dó menor e Mi bemol maior ).
+c) No estágio mais avançado do romantismo é introduzido o jogo de ambiguidade entre a tonalidade maior e menor de um mesmo polo permitindo que haja a estratégia de modulação pelo sistema de eixos tanto para 90 graus para a esquerda (Ex: Lá menor e Dó maior) quanto 90 graus para a direita (Ex: Dó menor e Mi bemol maior ).
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Terceiro estágio: modulação pela relativa com ambiguidade maior-menor em um dos polos }
@@ -733,7 +735,7 @@ c) No estágio mais avançado do romantismo é introduzido o jogo de ambiguidade
 \end{figure}
 
 
-d) Finalmente no último estágio onde e introduzida a politonalidade temos a assimilação da nota que está a 180 graus do polo (relação polo e contra-polo) pela sonoridade almejada de um modo misto "maior-menor"\ em quaisquer um dos pontos, desta maneira um giro completo:
+d) Finalmente no último estágio onde é introduzida a politonalidade temos a assimilação da nota que está a 180 graus do polo (relação polo e contra-polo) pela sonoridade almejada de um modo misto "maior-menor"\ em quaisquer um dos pontos, desta maneira um giro completo:
 
 
 \begin{figure}[!h]
@@ -745,7 +747,7 @@ d) Finalmente no último estágio onde e introduzida a politonalidade temos a as
 \end{figure}
 
 
-Assim introduz-se a vertigem de uma sensação onde há uma teia de tonalidades simultâneas operando as expectativas de relações entre os três diferentes eixos. É como se cada um dos três ciclos de quatro terças menores também pudesse substituir por rotação a função de dominante ou subdominante que opera a tonalidade estrita, pois aqui operamos com uma expectativa ambígua. A função dominante de Dó, por exemplo, passa a poder ser substituída por qualquer nota do ciclo de Sol: E, Bb ou C\#.
+Assim introduz-se a vertigem de uma sensação onde há uma teia de tonalidades simultâneas operando as expectativas de relações entre os três diferentes eixos. É como se cada um dos três ciclos de quatro terças menores também pudesse substituir por rotação a função de dominante ou subdominante que opera a tonalidade estrita, pois aqui operamos com uma expectativa ambígua. A função dominante de Dó, por exemplo, passa a poder ser substituída por qualquer nota do ciclo de Sol: Mi, Si$\flat$ ou Dó$\sharp$.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Simultaneidade do modos maior-menor }
@@ -755,7 +757,7 @@ Assim introduz-se a vertigem de uma sensação onde há uma teia de tonalidades 
 	\legend{Fonte: \cite[ p.10]{lendvai1971bela} }
 \end{figure}
 
-\citeonline[ p.10]{lendvai1971bela} atribui também a possibilidade de substituir-se Sol ( a dominante de Dó ) por Mi e Si bemol a uma justificativa acústica de similaridade pela série harmônica, como veremos a seguir. 
+\citeonline[ p.10]{lendvai1971bela} atribui também a possibilidade de substituir-se Sol ( a dominante de Dó ) por Mi e Si$\flat$ a uma justificativa acústica de similaridade pela série harmônica, como veremos a seguir. 
 
 
 
@@ -771,13 +773,13 @@ Assim introduz-se a vertigem de uma sensação onde há uma teia de tonalidades 
 	\legend{Fonte: wikimedia.org }
 \end{figure}
 
-Considerando uma série acústica partindo de Dó no registro grave de 65.406Hz podemos encontrar a série harmônica multiplicando esta frequência fundamental sucessivamente por 1,2,3,4 e assim por diante. Teremos oitavas em todos os números que são potência de dois: 2,4,8,16... Para os números intermediários ente estas oitavas encontraremos valores que por aproximação podem ser usados para gerar a sequencia [ C1, C2, G2, C3, E3, G3, Bb3, C4, D4, E4, F$\sharp$ 4, G4, A4, Bb4, B4, C5, ...].
+Considerando uma série acústica partindo de Dó no registro grave de 65.406Hz podemos encontrar a série harmônica multiplicando esta frequência fundamental sucessivamente por 1,2,3,4 e assim por diante. Teremos oitavas em todos os números que são potência de dois: 2,4,8,16... Para os números intermediários ente estas oitavas encontraremos valores que por aproximação podem ser usados para gerar a sequencia (partindo de Dó): [ Dó1, Dó2, Sol2, Dó3, Mi3, Sol3, Si$\flat$3, Dó4, Ré4, Mi4, F$\sharp$ 4, Sol4, Lá4, Si$\flat$4, Si4, Dó5, ...].
 
 Lendvai pontua que já que consideramos na teoria tradicional este primeiro harmônico que não é oitava (no caso de Dó, o Sol ) como chave para estabelecer as relações de dominante e sua inversão (a subdominante), podemos também tentar encontrar relações com estes próximos harmônicos - a terça maior e a sétima menor - e com isto encontrar a sonoridade que justifica mais uma vez a expansão do sistema de eixos.
 
 Lendvai propõe a observação das relações destes dois sobretons, a terça e a sétima, e demostra assim que ambas terão como primeiros harmônicos fora a oitava e a quinta justa os harmônicos Sol$\sharp$/La$\flat$  e Ré, apenas em posições invertidas (o quinto e o sétimo harmônico e vice-versa).
 
-Interessante então notar que estes dois harmônicos (Mi e Lab) terão como seus próprios harmônicos as notas Dó e Fá$\sharp$/Sol$\flat$ , também apenas em posições trocadas. Isto é, esta relação retorna para o eixo de polo e contra-polo de C$\leftrightarrow$F$\sharp$. Podemos observar esta relação na figura 12.
+Interessante então notar que estes dois harmônicos (Mi e La$\flat$) terão como seus próprios harmônicos as notas Dó e Fá$\sharp$/Sol$\flat$ , também apenas em posições trocadas. Isto é, esta relação retorna para o eixo de polo e contra-polo de Do$\leftrightarrow$Fá$\sharp$. Podemos observar esta relação na figura 12.
  
 
 \begin{figure}[!h]
@@ -790,7 +792,7 @@ Interessante então notar que estes dois harmônicos (Mi e Lab) terão como seus
 
 Considerando esta propriedade Lendvai sugere que na música de Bartok isso possibilita a substituição de dominantes ou subdominantes pelo giro dos eixos, permitindo levar também em conta a relação 6m$\leftrightarrow$ T $\leftrightarrow$ 3M como uma relação de função similar a relação subdominante $\leftrightarrow$ tônica $\leftrightarrow$ dominante. 
 
-Toma para isso em consideração que assim como Dó é a "dominante da subdominante"\ Fá e o Sol, harmônico de Dó, é também sua dominante, induz essa proporcionalidade em relação as harmônico Mi, que tem como seu próprio harmônico o La$\flat$ .\cite[ p.11]{lendvai1971bela}.
+Toma para isso em consideração que assim como \textbf{Dó é a \textit{"dominante da subdominante"}\ Fá} e o \textbf{Sol, harmônico de Dó, é também sua dominante}, induz essa proporcionalidade em relação as harmônico Mi, que tem como seu segundo harmônico o Lá$\flat$ .\cite[ p.11]{lendvai1971bela}.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}O giro de eixos que sugere equivalência nas relações de subdominante e dominante ela proximidade acústica da série harmônica. }
@@ -861,7 +863,7 @@ Para calcular a série de Fibonnaci seguimos a fórmula de sempre adicionar os d
 Na figura abaixo demonstramos a fórmula para encontrar a constante $1/\Phi$ e sua relação com a série de Fibonacci.
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}A fórmula para encontrar a constante $1/\Phi$ e sua relação com a série de Fibonacci. }
+	\caption{\label{fig_grafico}A fórmula para encontrar a constante $1/\Phi$ e sua relação com a série de Fibonacci, testada no OpenMusic. }
 	\begin{center}
 	    \includegraphics[scale=0.45]{OM_settheory/aurea.png}
 	\end{center}
@@ -879,7 +881,7 @@ Reconhecida como uma das fórmulas matemáticas capazes de demonstrar equilíbri
 
 
 \begin{citacao}
-A secção áurea não é menos significante como elemento constituinte na criação da forma, melodia e harmonia do que a harmonização e contrução de frases fechando oito ou quatro compassos no estilo clássico vienense.
+A secção áurea não é menos significante na obra de Bartók como elemento constituinte na criação da forma, melodia e harmonia do que a harmonização e construção de frases fechando oito ou quatro compassos no estilo clássico vienense.
 Por exemplo, em um estudo inicial eu demonstrei que cada unidade de \textit{"Sonata para dois pianos e percussão"}\ desde o todo até as pequenas células, são divididos pela secção áurea.\cite[ p.175]{lendvai1962duality}\footnote{
 Golden section is no longer less significant constituent element in Bartok's creation of form, melody and harmony than overtone harmonization and construction in periods embracing eight or four bars in the viennese classical style. For example, in a early study I demonstrated thar every unit of the \textit{"Sonata for two pianos and percussion"} from the whole work to the tinest cells, is divided according to the rule of the golden section.\cite[ p.175]{lendvai1962duality}}
 \end{citacao}
@@ -890,10 +892,10 @@ Alguns apontamentos são ajustados a uma aproximação, iniciando o seccionament
 
 A série de Fibonnaci é usada por Lendvai para apontar uma estrutura nas escolhas motívicas que se constituem por concatenamento de intervalos que geram âmbitos de articulação das melodias. Destaca sobretudo a sequencia de intervalos [0,3,5,8] por possuírem internamente uma potencia de construir sonoridades e rotações da pentatônica (a partir do passo de 2-3 semitons) que pode seguir como estrategia recursiva de passos dentro dos intervalos consequentes. Exemplo: entre 8 a 13 os 5 semitons podem estar posicionados como 2+3, entre 13 a 21 como 3+(2+3) e assim por diante.
 
-\citeonline[ p.179]{lendvai1962duality} destaca também a relação de intervalos e 3,5,8 como essenciais na formação do agregado \textit{"maior-menor"}, entendendo a relação como uma conjunção de dois empilhamentos possíveis: o acorde maior com a terça invertida + o acorde menor com a quinta invertida, como demonstrado na figura abaixo:
+\citeonline[ p.179]{lendvai1962duality} destaca também a relação de intervalos e 3,5,8 como essenciais na formação do agregado \textit{"maior-menor"}, entendendo a relação como uma conjunção de dois empilhamentos possíveis: o acorde maior com a terça invertida + o acorde menor com a quinta invertida, como demonstrado na figura 17:
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}gs  }
+	\caption{\label{fig_grafico}Secção áurea no modo misto maior-menor.  }
 	\begin{center}
 	    \includegraphics[scale=0.3]{axis/GS_maior_menor.png}
 	\end{center}
@@ -906,9 +908,9 @@ A série de Fibonnaci é usada por Lendvai para apontar uma estrutura nas escolh
 
 Uma das principais críticas ao modelo de Lendvai, por \citeonline{karpati2006axis} é a de que sua escolha de intervalos e demonstração de relações entre estes apresenta sonoridades arbitrárias, já que potencialmente existem outros agrupamentos intervalares dentro da sequencia que estariam fora da série de Fibonnaci, como os intervalos somados fora da ordem crescente 5+2 = 7 , 2+8 = 10 e assim por diante.
 
-Por outro lado é interessante perceber que de fato Bartók estava consciente dessas estruturas de proporção áurea, considerando a visibilidade de suas decisões nas macroformas. Podemos entender o modelo de Lendvai como a observação de recorrências na geometria do material.
+Por outro lado é interessante perceber que de fato Bartók estava consciente dessas estruturas de proporção áurea, considerando a visibilidade de suas decisões nas macroformas. Podemos entender também o modelo de Lendvai como a observação de recorrências "naturais" na geometria do material, como o apontamento de padrões espirais em conchas ou flores, um recorte de formas que sugerem equilíbrio.
 
-Estes aspecto formais que pode ser levado em conta para encontrar ideias que inspirem estrategias derivadas, mesmo sem a afirmação historicista de que havia uma consciência composicional por trás de todas elas em seu apontamento original.
+Estes aspecto formais que pode ser levado em conta para encontrar ideias que inspirem estrategias derivadas, mesmo sem a afirmação historicista de que havia uma consciência composicional total por trás de todas elas em seu apontamento original.
 
 
 \section{Ciclos Intervalares}
@@ -916,7 +918,7 @@ Estes aspecto formais que pode ser levado em conta para encontrar ideias que ins
 
 O conceito de ciclo intervalar, a partir da definição de \citeonline[ p.68]{antokoletz1984music} e conforme revisada por \citeonline[ p.22]{susanni_antokoletz2012music} parte de uma identificação de ciclos de transposições possíveis de um determinado intervalo e sua inversão, dividindo a oitava em partes iguais.
 
-O modelo é bastante intuitivo se tomado geometricamente como na figura abaixo:
+O modelo é bastante intuitivo se tomado geometricamente como na figura 18:
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Alguns dos ciclos intervalares observados geometicamente em suas transposições no Open Music.  }
@@ -936,7 +938,7 @@ O modelo é bastante intuitivo se tomado geometricamente como na figura abaixo:
 \item O intervalo de trítono produz seis transposições de duas notas
 \end{itemize}
 
-Já indução de um ciclo baseado no intervalo de quinta justa (ou sua inversão quarta justa) produz o que conhecemos pelo \textit{"ciclo de dominantes e subdominantes"}. É importante observar que por ser assimétrico este ciclo consegue gerar todo total cromático, mas não consegue percorrer apenas uma oitava sem quebrar o ciclo. Para chegar por exemplo de um Dó até outro é necessário percorrer cinco oitavas num percurso ascendente por quartas justas, como podemos ver na figura abaixo.
+Já indução de um ciclo baseado no intervalo de quinta justa (ou sua inversão quarta justa) produz o que conhecemos pelo \textit{"ciclo de dominantes e subdominantes"}. É importante observar que por ser assimétrico este ciclo consegue gerar todo total cromático, mas não consegue percorrer apenas uma oitava sem quebrar o ciclo. Para chegar por exemplo de um Dó até outro é necessário percorrer cinco oitavas num percurso ascendente por quartas justas, como podemos ver na figura 19.
 
 
 \begin{figure}[!h]
@@ -953,7 +955,7 @@ O caso do ciclo de terças menores é citado como matriz para a sonoridade de re
 
 Em algum dos casos teremos até duas notas da tríade em proximidade com a tétrade da sensível de semitom e as demais a um passo de tom inteiro. 
 
-A figura abaixo mostra a aplicação do apontamento em OpenMusic, para uso em composições.
+A figura 20 mostra a aplicação do apontamento em OpenMusic, para uso em composições.
  
 
 \begin{figure}[!h]
@@ -970,8 +972,8 @@ Um segundo caso citado por \citeonline[ p.23-25]{susanni_antokoletz2012music} é
 
 Neste caso uma das notas da tétrade original é aumentada em um semitom para tornar-se a quinta da tétrade dominante com sétima, para manter-se também como quinta do acorde final.
 
-\pagebreak
-A figura a seguir mostra aplicação desta transformação em um patch de OpenMusic.
+
+A figura a 21 mostra aplicação desta transformação em um patch de OpenMusic.
 
 
 \begin{figure}[!h]
@@ -984,9 +986,9 @@ A figura a seguir mostra aplicação desta transformação em um patch de OpenMu
 
 O apontamento sobre o ciclo de terças aumentadas remete também a observação de Lendvai\footnote{ \autoref{lendvai_maior_menor} } sobre a assimilação completa da ambiguidade maior-menor e seu uso como sonoridade nos sistemas politonais ou pós-tonais. 
 
-Como ferramenta para uso composicional e de análise e para efeito de demonstração deste apontamento elaboramos um script em music21 que gera todas as possibilidades de acordes próximos por aumento ou diminuição de um ou dois dos semitons da tríade aumentada original. 
+Como ferramenta para uso composicional e de análise e para efeito de demonstração deste apontamento elaborei um script em music21 que gera todas as possibilidades de acordes próximos por aumento ou diminuição de um ou dois dos semitons da tríade aumentada original. \footnote{ver em \autoref{ciclotercas}.}
 
-Na figura abaixo um exemplo de 3 possibilidades onde o resultado são tríades maiores ou menores.
+Na figura 22 um exemplo de 3 possibilidades onde o resultado são tríades maiores ou menores.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}A resolução de uma coleção do ciclo de terças maiores pela condução por nota sensível a um dos quatro acordes de resolução derivados. Detalhes sobre o script gerador no Apêndice.   }
@@ -1011,29 +1013,29 @@ No entanto é bom lembrar que este conceito de células de altura é uma medida 
 
 \citeonline[ p.131]{susanni_antokoletz2012music} exemplificam as relações entre os intervalos agrupando suas permutações em díades.
 
-Se tomarmos por exemplo Dó como nota raiz (C, C\#, D, Eb) teremos internamente as seguintes relações:
+Se tomarmos por exemplo Dó como nota raiz (Dó, Dó$\sharp$, Ré, Mi$\flat$) teremos internamente as seguintes relações:
 
 
 \begin{itemize}
-\item Semitom: ( $C \rightarrow C\#$, $C\# \rightarrow D$, $D \rightarrow Eb$ ) 
+\item Semitom: ( $Dó \rightarrow Dó\sharp$, $Dó\sharp \rightarrow Ré$, $Ré \rightarrow Mi\flat$ ) 
 
-\item Tons Inteiros: ( $C \rightarrow D\#$, $C\# \rightarrow Eb$ )
+\item Tons Inteiros: ( $Dó \rightarrow Ré\sharp$, $Dó\sharp \rightarrow Mi\flat$ )
 
-\item Terça menor: ( $C \rightarrow Eb\#$ )
+\item Terça menor: ( $Dó \rightarrow Mi\flat$ )
 \end{itemize}
 
 Obviamente ficam também implícitas as relações de inversão entre estas possibilidades.
 
-\textbf{A célula Y é o tetracorde de tons inteiros} (que poderia ser reduzido a um forma prima [0, 2, 4, 6] ), da mesma maneira \citeonline[ p.132]{susanni_antokoletz2012music} exemplificam as relações entre os intervalos agrupando suas permutações em díades tomando o exemplo de Dó como nota raiz (C, D, E, F\#). 
+\textbf{A célula Y é o tetracorde de tons inteiros} (que poderia ser reduzido a um forma prima [0, 2, 4, 6] ), da mesma maneira \citeonline[ p.132]{susanni_antokoletz2012music} exemplificam as relações entre os intervalos agrupando suas permutações em díades tomando o exemplo de Dó como nota raiz (Dó, Ré, Mi, Fá$\sharp$). 
 
 Teremos assim internamente as seguintes relações:
 
 \begin{itemize}
-\item Tons Inteiros: ( $C \rightarrow D\#$, $D \rightarrow E$, $E \rightarrow F\#$ ) 
+\item Tons Inteiros: ( $Dó \rightarrow Ré\sharp$, $Ré \rightarrow Mi$, $Mi \rightarrow Fá\sharp$ ) 
 
-\item Terça maiores: ( $C \rightarrow E$, $D \rightarrow F\#$ )
+\item Terça maiores: ( $Dó \rightarrow Mi$, $Ré \rightarrow Fá\sharp$ )
 
-\item Quarta aumentada/Quinta diminuta: ( $C \rightarrow F\#$ )
+\item Quarta aumentada/Quinta diminuta: ( $Dó \rightarrow Fá\sharp$ )
 \end{itemize}
 
 
@@ -1050,11 +1052,11 @@ Por exemplo [ C, F, F\#, B] teria a nomenclatura \textbf{Z0/6} por ser composto 
 Podemos observar as permutações de díades na célula \textbf{Z0/6} a partir deste exemplo:
 
 \begin{itemize}
-\item Quartas Justas: ( $C \rightarrow F$, $F\# \rightarrow B$) 
+\item Quartas Justas: ( $Dó \rightarrow Fá$, $Fá\sharp \rightarrow Si$) 
 
-\item Trítonos: ( $C \rightarrow F\#$, $F \rightarrow B$ )
+\item Trítonos: ( $Dó \rightarrow Fá\sharp$, $Fá \rightarrow Si$ )
 
-\item Semitons: ( $C \rightarrow B$, $F \rightarrow F\#$)
+\item Semitons: ( $Dó \rightarrow Si$, $Fá \rightarrow Fá\sharp$)
 \end{itemize}
 
 
@@ -1064,7 +1066,7 @@ O principal problema destas nomenclaturas das \textit{"células de alturas"}\ de
 
 O termo \textit{"conjunto Z"}\, por exemplo, tem um sentido totalmente diferente\footnote{ver \autoref{pos_tonal} } dentro da nomenclatura da  \textit{"Teoria dos conjuntos de classes de altura"}\footnote{Doravante também referida aqui pela sigla T.C.C.A}\ de Allen \citeonline{forte1973structure}. \citeonline{susanni_antokoletz2012music} negam-se ao uso da nomenclatura padronizada pela \textit{"Teoria dos conjuntos das classes de altura"}\ por considerá-la "alienante".\footnote{c.f. \citeonline[ p.xiii]{susanni_antokoletz2012music}} Esta idiossincrasia dificulta comparações com outros contextos.
 
-Vale também lembrar que \cite[ p.51]{lendvai1971bela} também cita a célula Z, mas a denomina "modelo 1:5"\ por possuir uma sequencia de intervalos de 1 semitom seguido de 5 semitons.\footnote{Esta denominação também faz parte da busca de Lendvai por formas derivadas da secção áurea já discutidas na \autoref{fibo} . Ele cita também o uso de intervalos de 1:2 (escala octatônica) e de 1:3 (um semitom inteercalado com uma terça menor) } 
+Vale também lembrar que \cite[ p.51]{lendvai1971bela} também cita a célula Z, mas a denomina \textit{"modelo 1:5"}\ por possuir uma sequencia de intervalos de 1 semitom seguido de 5 semitons.\footnote{Esta denominação também faz parte da busca de Lendvai por formas derivadas da secção áurea já discutidas na \autoref{fibo} . Ele cita também o uso de intervalos de 1:2 (escala octatônica) e de 1:3 (um semitom inteercalado com uma terça menor) } 
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Algumas evidencias célula Z de Antokoletz nos Mikrokosmos, destacadas por Lendvai com o nome de "modelo 1:5". }
@@ -1088,7 +1090,7 @@ Cada tetracorde simétrico pode ser analisado em partições de \textbf{díades 
 
 O que Antokoletz chama de \textbf{"díades de mesma soma"} é na verdade seu método para definir os pontos de simetria para uma díade qualquer. Toda díade terá dois eixos possíveis de simetria - um eixo que tem como ponto central \textbf{a metade da soma das duas classes da díade} e outro igual \textbf{a este número mais seu trítono (ou seja: mais 6 semitons)}. 
 
-Por exemplo: tomando a díade \textbf{Mi} $\leftrightarrow $ \textbf{Dó} pegamos seus números de classe de altura [4, 0] e somamos, obtendo o valor 4 que dividido por 2 nos fornece \textbf{o valor 2, equivalente a nota Ré.} O segundo eixo seria o seu trítono, ou seja, 2 + 6 =\textbf{ 8, que é equivalente a nota Lá$\flat$/Sol$\sharp$ }. 
+Por exemplo: tomando a díade \textbf{Mi} $\leftrightarrow $ \textbf{Dó} pegamos seus números de classe de altura [4, 0] e somamos, obtendo o valor 4 que dividido por 2 nos fornece \textbf{o valor 2, equivalente a nota Ré.} O segundo eixo seria o trítono de Ré, ou seja, 2 + 6 =\textbf{ 8, que é a classe de altura Lá$\flat$/Sol$\sharp$ }. 
 
 
 \citeonline[ p.72-74]{antokoletz1984music} define como "díades de soma par"\ estes eixos onde os intervalos estarão em uma relação intervalar par com o eixo.
@@ -1151,7 +1153,7 @@ Richard \citeonline{cohn1988inversional} problematiza esta questão do arbítrio
 
 O argumento de Cohn é de que além da questão simétrica há uma prioridade decisória para encontrar situações onde o espelhamento dos segmentos também possui uma relação transpositiva que interesse ao plano de sonoridades da peça.
 
-\citeonline[ p.25]{cohn1988inversional} aponta alguns conjuntos importantes na obra de Bartók (Figura 16) onde esta questão está presente. Retomaremos esta abordagem mais adiante utilizando como exemplo a análise da importância da classificação e segmentação das coleções octatônicas presentes nesta peça Mikrokosmos 109.\cite{cohn1991bartok}
+\citeonline[ p.25]{cohn1988inversional} aponta alguns conjuntos importantes na obra de Bartók (Figura 28) onde esta questão está presente. Retomaremos esta abordagem mais adiante utilizando como exemplo a análise da importância da classificação e segmentação das coleções octatônicas presentes nesta peça Mikrokosmos 109.\cite{cohn1991bartok}
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Apontamentos de Cohn - Combinaçao Transposicional}
@@ -1185,6 +1187,7 @@ O argumento de Cohn é de que além da questão simétrica há uma prioridade de
 
 
 \subsection{Simetria Literal}
+\label{simetrialiteral}
 
 
 George Perle, apesar de também ter sido um entusiasta dos apontamentos motívicos em Bartók, alerta para o problema da definição de uma forma de macroestrutura não ser suficientemente determinada por estes achados de estratégias internas de construções simétricas:
@@ -1204,9 +1207,9 @@ Bernard aponta escritos do próprio Bartók no ensaio "Problems of New Music" co
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico} Alguns dos acordes de "simetria em espelho" apontados por Bartók e citados por \citeonline[p. 189]{bernard1986space}}
+	\caption{\label{fig_simetrialiteral} Alguns dos acordes de "simetria em espelho" apontados por Bartók e citados por \citeonline[p. 189]{bernard1986space}}
 	\begin{center}
-	    \includegraphics[scale=0.5]{axis/simetria_literal.png}
+	    \includegraphics[scale=0.6]{axis/simetria_literal.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
@@ -1225,7 +1228,7 @@ Para uma introdução resumida da terminologia da T.C.C.A. sugerimos a consulta 
 
 \begin{citacao}
 
-Bartók claramente favoreceu as quinze classes de tratracordes inversamente simétricas, em particular estas treze que foram capazes de serem deduzidas como conjuntos de classes de alturas com quatro notas simétricas (as duas exceções são 4-6 [0127] e 4-24 [0248]). Estas treze incluem  4-1 [0123], 4-21 [0246], e 4-9 [0167], que figuram de maneira proeminente nos escritos de Perle e Antokoletz, onde são chamadas células X,Y e Z; 4-17 [0347] o acorde "gamma" de Lendvai e 4-3 [0134] e 4-10 [0235], os tetracordes meio-octatônicos discutidos por Berry.\cite[ p.22]{cohn1988inversional}\footnote{
+Bartók claramente favoreceu as quinze classes de tetracordes inversamente simétricas, em particular estas treze que foram capazes de serem deduzidas como conjuntos de classes de alturas com quatro notas simétricas (as duas exceções são 4-6 [0127] e 4-24 [0248]). Estas treze incluem  4-1 [0123], 4-21 [0246], e 4-9 [0167], que figuram de maneira proeminente nos escritos de Perle e Antokoletz, onde são chamadas células X,Y e Z; 4-17 [0347] o acorde "gamma" de Lendvai e 4-3 [0134] e 4-10 [0235], os tetracordes meio-octatônicos discutidos por Berry.\cite[ p.22]{cohn1988inversional}\footnote{
 Bartók clearly favored the fifteen inversionally symmetric tetrachord-classes, in particular those thirteen which are capable of being realized as symmetric four note pitch-sets.
 (The two exceptions are 4-6 [0127] and 4-24 [0248].) The thirteen include 4-1 [0123], 4-21 [0246], and 4-9 [0167], which figure prominently in the writings of Perle and Antokoletz, where they are called X, Y, and Z cells; 4-17 [0347], Lendvai's "gamma" chord; and 4-3 [0134] and 4-10 [0235], the half-octatonic tetrachords discussed by Berry.\cite[ p.22]{cohn1988inversional}}
 \end{citacao}
@@ -1254,19 +1257,19 @@ Cohn aponta também a importância do conceito de simetria nestas estratégias c
 O presente estudo pretende demonstrar que a música de Bartok é mesmo baseada em tal sistema (simetria inversiva). As relações de alturas na música de Bartok é primariamente baseada nas subdivisões iguais da oitava em um total complexo de ciclos de intervalos. O conceito fundamental desta divisão igual é o da simetria.\cite{cohn1988inversional}\footnote{ The present study is intended to demonstrate that Bartok's music is indeed based on such a system. Pitch relations in Bartok's music are primarily based on the principle of equal subdivisions of the octave into the total complex of interval cycles. The fundamental concept underlying this equal-division system is that of symmetry. \cite{cohn1988inversional}}
 \end{citacao}
 
-Cohn no entanto destaca o que chama de "combinação transpositiva" como uma observação a ser tomada na escolha das coleções simétricas.
+Cohn no entanto destaca o que chama de "combinação transpositiva"\ como uma observação a ser tomada na escolha das coleções simétricas.
 
 Considera importante sistematizar aspectos transpositivos, inversivos e relações intervalares com lastro na harmonia funcional. Para isso traça uma estratégia que parte do mapeamento de permutações da coleção octatônica separando desta também derivações de díades e tétrades pelo que chama de "grau de fertilidade"\cite[ p.268]{cohn1991bartok} - a capacidade do segmento em relacionar-se por transposição com outros grupos de mesma cardinalidade (mesmo número de elementos).
 
 Ao separar os grupos em pares relacionados por transposição, Cohn almeja encontrar um sistema de classificação de intervalos também por sua funcionalidade em parte da expectativa politonal que também rege estas obras:
 
 \begin{citacao}
-Pares de notas são classificados tanto por classe de intervalo quanto classe de díade neste estudo. As duas classificações são idênticas, então a distinção e uma questão de orientação. Assim como com as classes de intervalo, os nomes das classes de díade correspondem ao seu menor intervalo, medido em semitons, disponível entre suas classes de altura constituintes. Assim entre as classes de díades eu incluo pares de alturas separados por meio tom, sétimas maiores, e seus equivalentes enarmônicos e compostos, e assim por diante até a classe de díades 6, o trítono. Apesar dos teóricos usarem a classe de intervalo mais frequentemente, o conceito de classe de díade permite uma compração mais natural com conjuntos maiores.\cite[ p.265-266]{cohn1991bartok}\footnote{Pairs of notes are classified either by interval-class or by dyad-class in this study. The two classifications are identical, so their distinction is a matter of orientation. As with interval-classes, names of dyad-classes correspond to the smallest interval, measured in half-steps, available between their constituent pitch-classes. Thus dyad-class I includes pairs of pitches separated by half-step, major seventh, and their enharmonic equivalents and compounds; dyad-class 2 includes whole-steps, minor sevenths, and their enharmonic equivalents and compounds, and so forth up to dyad-class 6, the tritone. Although theorists use interval-class more frequently, the concept of dyad-class allows for a more natural comparison to larger sets.\cite[ p.265-266]{cohn1991bartok}}
+Pares de notas são classificados tanto por classe de intervalo quanto classe de díade neste estudo. As duas classificações são idênticas, então a distinção é uma questão de orientação. Assim como com as classes de intervalo, os nomes das classes de díade correspondem ao seu menor intervalo, medido em semitons, disponível entre suas classes de altura constituintes. Assim entre as classes de díades eu incluo pares de alturas separados por meio tom, sétimas maiores, e seus equivalentes enarmônicos e compostos, e assim por diante até a classe de díades 6, o trítono. Apesar dos teóricos usarem a classe de intervalo mais frequentemente, o conceito de classe de díade permite uma comparação mais natural com conjuntos maiores.\cite[ p.265-266]{cohn1991bartok}\footnote{Pairs of notes are classified either by interval-class or by dyad-class in this study. The two classifications are identical, so their distinction is a matter of orientation. As with interval-classes, names of dyad-classes correspond to the smallest interval, measured in half-steps, available between their constituent pitch-classes. Thus dyad-class I includes pairs of pitches separated by half-step, major seventh, and their enharmonic equivalents and compounds; dyad-class 2 includes whole-steps, minor sevenths, and their enharmonic equivalents and compounds, and so forth up to dyad-class 6, the tritone. Although theorists use interval-class more frequently, the concept of dyad-class allows for a more natural comparison to larger sets.\cite[ p.265-266]{cohn1991bartok}}
 \end{citacao}
 
 A coleção octatônica é reconhecida como uma das importantes estratégias composicionais de construção motívica não-diatônica no repertório pós-tonal da primeira metade do século XX \cite{berger1963problems,antokoletz1984music,lester1989analytic,forte1991debussy,straus2004,de2013simetria}
 
-O termo "coleção" é usado para diferenciar a ideia de "escala", onde fica implícita a importância motívica da ordem dos elementos. Há aqui também uma preocupação com propriedades adquiridas em rotação, segmentação, permutação, inversão, transposição ou qualquer transformação que derive de algum parentesco relevante com as coleções originais.
+O termo "coleção"\ é usado para diferenciar da ideia de "escala", onde fica implícita a importância motívica da ordem dos elementos. Há aqui também uma preocupação com propriedades adquiridas em rotação, segmentação, permutação, inversão, transposição ou qualquer transformação que derive de algum parentesco relevante com as coleções originais.
 
 Vale aqui no entanto definir o conceito que funda a noção de octatonismo\footnote{Allen \citeonline[ p.125]{forte1991debussy} cita o artigo de Arthur \citeonline{berger1963problems} como origem do conceito de octatonismo.} que é a alternância de tons e semitons dentro de uma oitava - gerando uma sequencia de oito notas dentro deste âmbito. 
 
@@ -1280,7 +1283,7 @@ Sua forma prima é classificada como\textbf{ 8-28} na nomenclatura de \citeonlin
 	\legend{Fonte: autor }
 \end{figure}
 
-\citeonline{cohn1991bartok} propõe um formalismosobre a permutação de díades e tétrades derivadas de coleções octatônicas para buscar em Bartok algumas estratégias composicionais enfatizando o que chama de \textbf{\textit{combinação transpositiva}} - "o procedimento geral de combinar entidades com suas próprias transposições".\cite[ p.x]{cohn1991bartok}
+\citeonline{cohn1991bartok} propõe um formalismo sobre a permutação de díades e tétrades derivadas de coleções octatônicas para buscar em Bartok algumas estratégias composicionais enfatizando o que chama de \textbf{\textit{combinação transpositiva}} - "o procedimento geral de combinar entidades com suas próprias transposições".\cite[ p.x]{cohn1991bartok}
 
 Para isto parte de uma série de definições para o particionamento das coleções em subgrupos:
 
@@ -1296,13 +1299,13 @@ Para isto parte de uma série de definições para o particionamento das coleç�
 \end{itemize}
 
 
-Em seu levantamento de octacordes com maior grau de potencia e fertilidade \cite{cohn1991bartok} então pode demonstrar que a coleção octatônica (8-28) é a que mais destaca-se.
+Baseado nestasrgras, em seu levantamento de octacordes com maior grau de potencia e fertilidade \cite{cohn1991bartok} demonstra que a coleção octatônica (8-28) é a que mais destaca-se.
 
 
-Observando portanto as relações entre estas tétrades e díades é possível encontrar todas relações transpositivas possíveis (de 1 a 6 semitons).
+Observando a partir disto as relações entre tétrades e díades permutadas da coleção octatônica é possível encontrar todas relações transpositivas possíveis (de 1 a 6 semitons).
 
 
-Destacamos aqui em patch de OpenMusic as relações transpositivas das permutações internas na célula 4-9 ( 0167 , ou célula Z de antokoletz).
+Inspirado neste estudo implementei em um patch de OpenMusic (figura 32) um estudo das relações transpositivas das permutações internas na célula 4-9 ( 0167 , ou célula Z de Antokoletz).
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico} As permutações de díades internas a uma célula Z de Antokoletz, pode ser reduzida a três coleções intervalares de 1, 5 ou 6 semitons. Este patch de OM mede as combinações transpositivas para qualquer tétrade permutada podendo encontrar todas as relações da tabela de \citeonline[ p.271]{cohn1991bartok} }
@@ -1312,16 +1315,16 @@ Destacamos aqui em patch de OpenMusic as relações transpositivas das permutaç
 	\legend{Fonte: autor }
 \end{figure}
 
-Na figura abaixo temos em detalhes todas as permutações transpositivas do tetracorde.
+Na figura 33 temos em detalhes todas as permutações transpositivas do tetracorde.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico} Aqui conferimos os três intervalos comuns para a rotação da octatônica que produz a célula Z e todas suas transposições}
 	\begin{center}
-	    \includegraphics[scale=0.35]{strategies/strategieZCELL.png}
+	    \includegraphics[scale=0.3]{strategies/strategieZCELL.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
-
+\pagebreak
 %\subsection{Combinação transpositiva em Mikrokosmos 109}
 
 %resumo e comentários sobre \cite[ 272-275]{cohn1991bartok}
@@ -1331,7 +1334,7 @@ Na figura abaixo temos em detalhes todas as permutações transpositivas do tetr
 
 A construção de estratégias composicionais que destacam identidades de escalas modais é traço fundamental para entendimento de repertórios que buscavam hibridizar melodias populares com arranjos e harmonizações da música artística ocidental nas primeiras décadas do século XX. 
 
-Apesar da música de Bartók ser frequentemente associada a um apelo folclorista, devido a suas pesquisas na música camponesa do leste europeu que sempre influenciaram seu trabalho, é importante destacar que Bartók sempre o fez aproximando as melodias de uma linguagem moderna e proto-serialista, ainda mais depois de exilado nos Estados Unidos e obviamente tocado pela catástrofe que derivou dos nacionalismos que racharam a Europa nas duas guerra mundiais que presenciou.\footnote{Um exemplo simples e curioso é a modificação sarcástica do tema do Hino Austríaco demonstrada por \citeonline[ p.2934]{suchoff1971guide}. }
+Apesar da música de Bartók ser frequentemente associada a um apelo folclorista, devido a suas pesquisas na música camponesa do leste europeu que sempre influenciaram seu trabalho, é importante destacar que Bartók sempre o fez aproximando as melodias de uma linguagem moderna e proto-serialista, ainda mais depois de exilado nos Estados Unidos e obviamente tocado pela catástrofe que derivou dos nacionalismos que racharam a Europa nas duas guerra mundiais que presenciou.
 
 Danielle \citeonline{fosler2007music} aponta ainda de maneira interessante em seu livro \textit{"Music divided: Bartók's legacy in cold war culture"}\ algumas evidências de que por fatores como a morte de Bartók logo após a segunda guerra mundial (1945) e a singularidade de representar a figura de um exilado que trabalhou no limite entre a linguagem de pesquisa da tradição de sua terra natal e invenção contemporânea universal, Bartók influenciou tanto músicos de vanguarda do serialismo quanto revisionistas da música artística inspirada em motivos populares.
 
@@ -1368,36 +1371,41 @@ Da mesma maneira que tradicionalmente pensamos a rotação da coleção diatôni
 
 \citeonline[ p.83]{susanni_antokoletz2012music} trabalham esta ideia comum no repertório pós-tonal de fazer a rotação da pentatônica criando uma estratégia para gerar ambiguidade em relação aos modos gregos, já que as pentatônicas não possuem os semitons que as caracterizam. Podemos então jogar com as notas faltantes como pivôs de uma transformação entre diferentes modos ou de uma simultaneidade que Bartók chamou "polimodalismo cromático" e que falaremos mais adiante. 
 
-Se considerarmos a normalização da sequencia tradicional das notas pretas como a transposição para os intervalos a partir de Dó ( $C \rightarrow  D \rightarrow F \rightarrow G \rightarrow A \rightarrow C $ ) , teremos a sequencia de intervalos de semitom ( $C \rightarrow 2 \rightarrow  3 \rightarrow 2 \rightarrow 2  \rightarrow 3 \rightarrow C $ ). Iniciando \textbf{a partir de Ré} (chamemos aqui de \textbf{"rotação 2"}) teremos a rotação e intervalos ($D \rightarrow F \rightarrow G \rightarrow A \rightarrow C \rightarrow D $ ) equivalente a ( $  D \rightarrow 3 \rightarrow  2 \rightarrow 2 \rightarrow 3  \rightarrow 2 \rightarrow D $ ) e assim por diante.\footnote{Interessante notar aqui que a pentatônica a partir de Sol gera uma sequencia de intervalos que pode ser particionada simetricamente. Veremos na Sessão mais adiante estratégias de uso das simetrias.}
+Se considerarmos a normalização da sequencia tradicional das notas pretas como a transposição para os intervalos a partir de Dó ( $Dó \rightarrow  Ré \rightarrow Fá \rightarrow Sol \rightarrow Lá \rightarrow Dó $ ) , teremos a sequencia de intervalos de semitom ( $Dó \rightarrow 2 \rightarrow  3 \rightarrow 2 \rightarrow 2  \rightarrow 3 \rightarrow Dó $ ). Iniciando \textbf{a partir de Ré} (chamemos aqui de \textbf{"rotação 2"}) teremos a rotação e intervalos ($Ré \rightarrow Fá \rightarrow Sol \rightarrow Lá \rightarrow Dó \rightarrow Ré $ ) equivalente a ( $  Ré \rightarrow 3 \rightarrow  2 \rightarrow 2 \rightarrow 3  \rightarrow 2 \rightarrow Ré $ ) e assim por diante.\footnote{Interessante notar aqui que a pentatônica a partir de Sol gera uma sequencia de intervalos que pode ser particionada simetricamente. Veremos na Sessão mais adiante estratégias de uso das simetrias.}
 
-Pensemos também que a partir desta configuração de intervalos podemos normalizar todas as sequencias em uma mesma nota raiz de transposição. Por exemplo, a sequencia intervalar \textbf{"a partir de Ré"}, demostrada no parágrafo anterior como a \textbf{"rotação 2"} se transposta para ter \textbf{a nota Dó como raiz} ficaria com a configuração: $C \rightarrow Eb \rightarrow F \rightarrow G \rightarrow Bb \rightarrow C $ .
+Pensemos também que a partir desta configuração de intervalos podemos normalizar todas as sequencias em uma mesma nota raiz de transposição. Por exemplo, a sequencia intervalar \textbf{"a partir de Ré"}, demostrada no parágrafo anterior como a \textbf{"rotação 2"} se transposta para ter \textbf{a nota Dó como raiz} ficaria com a configuração: $Dó \rightarrow Mi\flat \rightarrow Fá \rightarrow Sol \rightarrow Si\flat \rightarrow C $ .
 
 É a partir disso que \citeonline[ p.84]{susanni_antokoletz2012music} demonstram que estas rotações da pentatônica e suas transposições servem como uma maneira de construir transformações entre diferentes modos usando como pivô uma ou mais rotações ou transposições de um motivo pentatônico. 
 
+\pagebreak
 Por exemplo, uma estratégia de ambiguidade entre modo Lídio e Mixolídio:
-\linebreak
-Pentatônica: $ C - D \rightarrow [ ?? ] - E - G - A \rightarrow [ ?? ] - (...) $  \linebreak
-******Lídio: $ C - D \rightarrow [ $F\#$ ] - E - G - A \rightarrow [ B ] - (...) $  \linebreak
-**Mixolídio: $ C - D \rightarrow [ F ] - E - G - A \rightarrow [ Bb ] - (...) $  \linebreak
 
-A inserção de jogos de tensão com a célula [ B - F\# - F - Bb ], mostra-se portanto uma estratégia possível para as transições deste polimodo.
+Pentatônica: $ C - D \rightarrow [ ?? ] - E - G - A \rightarrow [ ?? ] - (...) $ 
+
+Lídio: $ C - D \rightarrow [ F\sharp ] - E - G - A \rightarrow [ B ] - (...) $  
+
+Mixolídio: $ C - D \rightarrow [ F ] - E - G - A \rightarrow [ B\flat ] - (...) $  
+
+
+A inserção de jogos de tensão com a célula [ B - F$\sharp$ - F - B$\flat$ ], mostra-se portanto uma estratégia possível para as transições deste polimodo.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Rotações dos intervalos da pentatônica, normalizados em Dó. }
 	\begin{center}
-	    \includegraphics[scale=0.5]{OM_settheory/pentarotacoes.png}
+	    \includegraphics[scale=0.6]{OM_settheory/pentarotacoes.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
 \subsection{Cromatismo Polimodal}
+\label{polimodal}
 
 Algumas das construções de polimodos serve também como uma maneira de amenizar a entrada de cromatismos, em algumas situações introduzindo todas as 12 notas da escala cromática de maneira sutil. 
 
-Diferente da da intenção dodecafônica que buscava construir uma escuta de equilíbrio e equivalência entre os doze intervalos, Bartók trabalha aquilo que chama "cromatismo polimodal" construindo estratégias de polarização, sem no entanto usar o cromatismo como uma estratégia de função tonal pra e simples. Em suas palavras:
+Diferente da intenção dodecafônica que buscava construir uma escuta de equilíbrio e equivalência entre os doze intervalos, Bartók trabalha aquilo que chama "cromatismo polimodal"\ construindo estratégias de polarização, sem no entanto usar o cromatismo como uma estratégia de função tonal pura e simples. Em suas palavras:
 
 \begin{citacao}
-Como resultado de sobrepor os pentacordes Lídio e Frígio com um tom comum fundamentla, nos conseguimos um pentacorde diatônico preenchido com todos possíveis sustenidos e bemóis. Estes graus aparentemente cromáticos, contudo, são totalmente diferentes de duas funções de graus alterados nos estilos cromáticos dos períodos prévios. Uma nota com alteração cromática em um acorde esta em relação estrita com sua forma não-alterada; é a transição conduzindo ao respectivo tom do acorde de resolução. Em nosso cromatismo polimodal, no entanto, os tons bemóis e sustenidos não são totalmente graus alterados; eles são ingredientes diatônicos de uma escala diatônica modal.\cite[ p.367]{bartok1993bela}\footnote{As the result of superposing a Lydian and Phrygian pentachord with a common fundamental tone, we get a diatonic pentachord filled out with all the possibe flat and sharp degrees. These seemingly chromatic degrees, however, are tottaly different in their function from the altered degrees of the chromatic styles of the previous periods. A chromatically altered note of a chord is in strict relation to its non-altered form; it is a transition leading to the respective tone of following chord. I our polymodal chromaticism, however, the flat and the sharp tones are not altered degrees at all; they are diatonic ingredients of a diatonic modal scale.\cite[ p.367]{bartok1993bela}}
+Como resultado de sobrepor os pentacordes Lídio e Frígio com um tom comum fundamental, nos conseguimos um pentacorde diatônico preenchido com todos possíveis sustenidos e bemóis. Estes graus aparentemente cromáticos, contudo, são totalmente diferentes de duas funções de graus alterados nos estilos cromáticos dos períodos prévios. Uma nota com alteração cromática em um acorde esta em relação estrita com sua forma não-alterada; é a transição conduzindo ao respectivo tom do acorde de resolução. Em nosso cromatismo polimodal, no entanto, os tons bemóis e sustenidos não são totalmente graus alterados; eles são ingredientes diatônicos de uma escala diatônica modal.\cite[ p.367]{bartok1993bela}\footnote{As the result of superposing a Lydian and Phrygian pentachord with a common fundamental tone, we get a diatonic pentachord filled out with all the possibe flat and sharp degrees. These seemingly chromatic degrees, however, are tottaly different in their function from the altered degrees of the chromatic styles of the previous periods. A chromatically altered note of a chord is in strict relation to its non-altered form; it is a transition leading to the respective tone of following chord. I our polymodal chromaticism, however, the flat and the sharp tones are not altered degrees at all; they are diatonic ingredients of a diatonic modal scale.\cite[ p.367]{bartok1993bela}}
 \end{citacao}
 
 
@@ -1446,7 +1454,7 @@ Um exemplo interessante desta estratégia de separar as coleções entre um osti
 	\legend{Fonte: autor }
 \end{figure}
 
-Na \autoref{m21} fazemos uma análise assistida por computador de Mikrokosmos 41, onde demonstramos uma estatégia de construção polimodal a simultânea  a uma melodia de sonoridade pentatônica.
+Na \autoref{m21} fazemos uma análise assistida por computador de Mikrokosmos 41, onde demonstramos uma estatégia de construção polimodal e simultânea a uma melodia de sonoridade pentatônica.
 
 
 
@@ -1463,15 +1471,6 @@ Na \autoref{m21} fazemos uma análise assistida por computador de Mikrokosmos 41
 %comentario de  mikro101 em strauss
 %\cite[ p.113]{straus2004}
 
-
-
-
-
-
-
-
-
-
 %
 %
 %
@@ -1485,7 +1484,7 @@ Na \autoref{m21} fazemos uma análise assistida por computador de Mikrokosmos 41
 
 Este capítulo elabora sobre as possibilidades de uma análise musical assistida por computador através de um estudo comparado entre duas ferramentas livres:\footnote{Consideramos aqui o conceito de "software livre" a partir da definição da FSF.} a biblioteca Python Music21 e a linguagem dataflow\footnote{definição liguagem dataflow} OpenMusic.
 
-Parte das aplicações práticas já foram demostradas nos exemplos dos capítulo anterior, mas aqui explicaremos em mais detalhes os conceitos e procedimentos computacionais utilizados.
+Parte das aplicações práticas já foram demostradas nos exemplos dos capítulo anterior, mas aqui explico em mais detalhes os conceitos e procedimentos computacionais utilizados.
 
 
 \section{Formatos de entrada}
@@ -1505,7 +1504,7 @@ Na verdade o formato não carrega parâmetros de timbres em seus metadados. Arqu
 
 É importante ter em mente que o protocolo MIDI, por ser há mais de 35 anos um padrão ainda em uso, gerou um legado relevante de arquivos baseados em repertório clássico para a reconstituição de corpus de peças partituradas. 
 
-Porém não são descritores capazes de garantir a boa formatação de seus dados como figuras de compasso de uma pauta tradicional, já que os arquivos MIDI não carregam informações sobre as figuras, apenas sobre suas durações, alturas e expressão. 
+Porém não são descritores capazes de garantir a boa formatação de seus dados como figuras de compasso de uma pauta tradicional, já que os arquivos MIDI não carregam informações sobre as figuras, apenas sobre as durações, alturas e expressão das notas.
 
 Quando importados para programas de notação ou convertidos para formatos destes, os arquivos MIDI irão passar por uma segmentação arbitrária e determinada pelo algoritmo \textit{"parser}"\footnote{Método computacional para conversão entre formatos ou tipos de dados diferentes.} que vai converter determinada duração em determinada métrica quantizada, normalmente diferente das articulações de quais as músicas foram digitalizadas.
 
@@ -1516,7 +1515,7 @@ Lilypond é uma  \textit{"linguagem de marcação"} similiar a linguagem Latex (
 
 O objetivo principal no Lilypond é a formatação de uma notação partitural avançada e otimizada para impressão em papel. Permite também a utilização de elementos de notação mais exótica, inclusão de texto, dedilhados, nomenclatura de acordes, sinais de expressão, e customização de elementos a partir de módulos. Facilita a otimização da disposição e dimensão das fontes dos objetos e possui uma linguagem \textit{script} própria, dialeto da sintaxe \textit{scheme}\footnote{Tutorial oficial de lilypond-scheme: \url{http://lilypond.org/doc/v2.16/Documentation/source/Documentation/extending/introduction-to-scheme} Acesso em 10 de julho de 2014.}.
 
-No caso do presente trabalho, estamos utilizando o arquivo Lilypond como um arquivo de saída ou um arquivo intermediário (de conversão entre arquivos), pois as ferramentas utilizadas aqui não possuem parsers satisfatórios para tratar uma entrada em Lilypond, apesar de serem capazes de gerar saída no formato .ly.
+No caso do presente trabalho, estamos utilizando o arquivo Lilypond como um arquivo de saída ou um arquivo intermediário (de conversão entre arquivos), pois as ferramentas utilizadas aqui não possuem parsers satisfatórios para tratar uma \textbf{entrada} em Lilypond, apesar de serem capazes de gerar saída no formato .ly.
 
 
 \begin{figure}[htb]
@@ -1584,7 +1583,7 @@ fluxo.show('lily.pdf')
 	\legend{Fonte: autor }
 \end{figure}
 
-O script insere um objeto acorde na posição zero do fluxo. Podemos perceber pela figura acima que por padrão a biblioteca renderizou a pauta em uma clave de sol com assinatura de compasso quatro por quatro. Em uma situação mais complexa obviamente temos muito mais pra pensar: teremos instrumentos de duas pautas como piano, ornamentos, texto, pautas com fórmulas de compasso diferentes, e assim por diante.
+O script insere um objeto acorde na posição zero do fluxo. Podemos perceber pela figura acima que por padrão a biblioteca renderizou a pauta em uma clave de Sol com assinatura de compasso quatro por quatro. Em uma situação mais complexa obviamente temos muito mais pra pensar: teremos instrumentos de duas pautas como piano, ornamentos, texto, pautas com fórmulas de compasso diferentes, e assim por diante.
 
 Precisaremos separar as partes hierarquicamente, criando uma estrutura de dados em camadas, como vemos no exemplo mais complexo abaixo. 
 
@@ -1647,7 +1646,7 @@ Temos portanto uma série de procedimentos que permite que partituras formatadas
 
 O script anterior obviamente pode ser encapsulado em uma função, utilizando recursividade e algumas outras funções presentes na biblioteca para evitar tanto código para cada compasso. 
 
-No entanto, mostramos dessa maneira passo a passo para que fique entendido que a formatação das partituras ocorre de maneira similar ao padrão xml de encapsulamento de dados: temos camadas dentro de camadas que vão da página de impressão até os acorde, notas, pausas e ornamentos.
+No entanto, dessa maneira passo a passo fica entendido que a formatação das partituras ocorre de maneira similar ao padrão xml de encapsulamento de dados: temos camadas dentro de camadas que vão da página de impressão até os acorde, notas, pausas e ornamentos.
 
 Vejamos abaixo como é feita a conversão de uma partitura com o mesmo conteúdo gerado anteriormente, mas desta vez criada em um editor de partituras e salva no formato musicxml\footnote{Editada no software livre Musescore.}. No script abaixo nós abrimos o arquivo dentro de um terminal Python e em seguida imprimimos para mostrar como ela fica formatada dentro da estrutura de dados do Music21.
 
@@ -1791,7 +1790,7 @@ Em seu artigo \textit{"The unfolding of tonality in the music of Bela Bartók"},
 
 Após testar os mesmos algoritmos de detecção de tonalidade que usou para analisar as peças do \textit{"Cravo Bem Temperado"} de J. S. Bach, onde obteve uma aproximação muito satisfatória das análises conhecidas da obra, Cooper conclui que mesmo com alguns desvios previstos o mesmo procedimento também ajudaria o analista a inferir ideias sobre ambiguidade ou politonalidade em compositores pós-tonais como Bartók.
 
-Por ser independente de "estilo" o algoritmo poderia ajudar a revelar estruturas implícitas e residuais do condicionamento tonal da escuta, isto é, sua força estaria justamente em revelar mesmo através de "erros" formais da funcionalidade estilística, dados que podem gerar ideias para o analista.
+Por ser independente de "estilo"\ o algoritmo poderia ajudar a revelar estruturas implícitas e residuais do condicionamento tonal da escuta, isto é, sua força estaria justamente em revelar mesmo através de "erros"\ formais da funcionalidade estilística, dados que podem gerar ideias para o analista.
 
 \begin{citacao}
 Apesar de em essência o algoritmo ser fundamentalmente ignorante musicalmente, 'sabendo' pouco sobre estrutura musical e nada de estética, este é capaz de simular de maneira bem sucedida uma habilidade musical específica, que é determinar tonalidade global e local. Contudo, é por causa da ausência de critério artístico que este pode ser uma ferramenta útil para o repertório do analista, providenciando uma medida de tonalidade que seja amplamente independente de conhecimento "dependente de estilo'.\cite[ p.34-35]{cooper1998unfolding}.\footnote{Although in itself the algorithm is fundamentally musically ignorant, 'knowing' little about musical structure and nothing of aesthetics, it is able to simulate quite successfully one particular musical skill, that of determining local and global tonality. Indeed, it is because of its artlessness that it could form a useful tool in the analyst's repertoire, by providing a measure of tonality which is largely independent of 'style dependent' knowledge.\cite[ p.34-35]{cooper1998unfolding}}
@@ -1803,7 +1802,7 @@ Apesar de em essência o algoritmo ser fundamentalmente ignorante musicalmente, 
 
 A redução quantitativa para construção de algoritmos para inferência de "estruturas básicas da cognição musical"\cite{temperley2001cognition}\ é uma área de pesquisa interdisciplinar entre os estudos sobre a aquisição psicosocial do repertório musical que normatiza a escuta ocidental e a formalização computacional de "gramáticas gerativas"\cite[ p.83]{nierhaus2009algorithmic}\ que muito influenciou-se pela formalização das disciplinas que deram origem a linguística computacional.\cite{roads1979grammars}    
 
-Como já vimos anteriormente, a observação de parâmetros para uma inferência de cadência e prolongamento da expectativa tonal implica em discussões sobre a aplicabilidade de teorias ambiciosamente "gerais" sobre estruturas fundamentais da escuta.\footnote{Rever \autoref{Prolongamento}  }
+Como já vimos anteriormente, a observação de parâmetros para uma inferência de cadência e prolongamento da expectativa tonal implica em discussões sobre a aplicabilidade de teorias ambiciosamente "gerais"\ sobre estruturas fundamentais da escuta.\footnote{Rever \autoref{Prolongamento}  }
 
 Por outro lado, uma proposta mais experimental como a de \citeonline{cooper1998unfolding} e a disponibilidade de alguns algoritmos derivados destas reflexões na biblioteca Music21 nos permite especular a partir de algumas experiências práticas que veremos a seguir.
 
@@ -1846,9 +1845,9 @@ Mas apesar de desenvolverem seus próprios algoritmos de detecção de tonalidad
 
 O algoritmo de "Krumhansl-Schmuckler"\ surge em \textit{"Perceptual Structures of Tonal Music"}\ \cite{krumhansl1983perceptual} e é aprofundado em \textit{"Cognitive foundations of musical pitch"}\ \cite{krumhansl1990cognitive}.
 
-Carol Krumhansl e Mark Schmukler constroem um modelo matemático que chamam "perfis-tonais" ("tonal profiles") - histogramas que servem como uma referência\footnote{O histograma apresenta valores para uma escala cromática normalizada no contexto de Dó maior e Dó menor. Para ser transposto para outras tonalidades, basta rotacionar a ordem das alturas.} para calculo estatístico a partir de uma amostra de ouvintes pesquisados sobre a tendência a "adaptar"\ cognitivamente \cite[ p. 173]{temperley2001cognition} notas de uma escala cromática como ornamentos dentro de um determinado contexto tonal.
+Carol Krumhansl e Mark Schmukler constroem um modelo matemático que chamam "perfis-tonais"\footnote{\textit{"tonal profiles"}} - histogramas que servem como uma referência\footnote{O histograma apresenta valores para uma escala cromática normalizada no contexto de Dó maior e Dó menor. Para ser transposto para outras tonalidades, basta rotacionar a ordem das alturas.} para calculo estatístico a partir de uma amostra de ouvintes pesquisados sobre a tendência a "adaptar"\ cognitivamente \cite[ p. 173]{temperley2001cognition} notas de uma escala cromática como ornamentos dentro de um determinado contexto tonal.
 
-A fórmula funciona da seguinte maneira\footnote{c.f. uma prova real detalhada da fórmula original em \cite[p.37]{krumhansl1990cognitive} }:
+A fórmula funciona da seguinte maneira\footnote{C.f. uma prova real detalhada da fórmula original em \cite[p.37]{krumhansl1990cognitive} }:
 
 \scalebox{1.5}{%
 $
@@ -1889,7 +1888,7 @@ $
 
 A fórmula de perfis tonais mostra em seus resultados também uma sugestão composicional curiosa para estratégias politonais. Vemos, por exemplo, na exposição orginal das figuras estatísticas da comparação entre tonalidades próximas e distantes (Figura 29) as relações apontadas por Lendvai em seu sistema de eixos\footnote{ Rever \autoref{lendvai_eixos} }. 
 
-Podemos observar que se a comparação com a tonalidade relativa menor de Dó Maior (Lá menor) possui apenas pequenos desvios possibilitando a geração e ambiguidade, a relação com uma tonalidade de "contrapolo" de Dó Maior (Fá\# Maior) tem também um efeito bastante específico: apoia-se numa expectativa simetricamente oposta de alturas, o que lembra os movimentos politonais de Bartók que buscam estabelecer estratégias de uso do total cromático por mistura de modos ou tonalidades, suspendendo as expectativas e criando vórtices para modulação.
+Podemos observar que se a comparação com a tonalidade relativa menor de Dó Maior (Lá menor) possui apenas pequenos desvios possibilitando a geração e ambiguidade, a relação com uma tonalidade de "contra-polo" de Dó Maior (Fá\# Maior) tem também um efeito bastante específico: apoia-se numa expectativa simetricamente oposta de alturas, o que lembra os movimentos politonais de Bartók que buscam estabelecer estratégias de uso do total cromático por mistura de modos ou tonalidades, suspendendo as expectativas e criando vórtices para modulação.
 
 
 O Music21 apresenta também um módulo para plotagem de dados bastante útil. Abaixo demonstramos a plotagem do espaço de alturas da composição Mikrokosmos 41 que revela o panaroma de uso das alturas.
@@ -1909,7 +1908,7 @@ O Music21 apresenta também um módulo para plotagem de dados bastante útil. Ab
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico} Pitch Space} 
+	\caption{\label{fig_grafico} Pitch Space em Mikrokosmos 41.} 
 	\begin{center}
 	    \includegraphics[scale=0.4]{estudosM21/mikro041Pspace.png}
 	\end{center}
@@ -1969,11 +1968,11 @@ Aplicada então a análise de tonalidade em um segmento cadencial final de Mikro
 
 \end{lstlisting}
 
-Vemos na Figura 31 a comprovação do que já poderíamos supor pela própria sugestão de Bartók na partitura original (Figura 32) - o sustenido fixo da música é afirmado não como um cromatismo localizado ornamental mas algo que está ali para substituir a expectativa de resolução em Sol maior que o grau sensível Fá\# traria. 
+Vemos na Figura 45 a comprovação do que já poderíamos supor pela própria sugestão de Bartók na partitura original (Figura 46) - o sustenido fixo da música é afirmado não como um cromatismo localizado ornamental mas algo que está ali para substituir a expectativa de resolução em Sol maior que o grau sensível Fá$\sharp$ traria. 
 
-Ao invés deste passo Fá\# $ \rightarrow $ Sol temos a figura de Dó\# atuando na dissonância que desloca a sensação de prolongamento I-V-I possível, figurando como trítono de Sol. Também é incompleta a interpretação de que estaríamos simplesmente num modo Mixolídio de Sol pela ausência do Fá\# pois a presença de Dó\# desconfigura o modo.
+Ao invés deste passo Fá$\sharp \rightarrow $ Sol temos a figura de Dó$\sharp$ atuando na dissonância que desloca a sensação de prolongamento I-V-I possível, figurando como trítono de Sol. Também é incompleta a interpretação de que estaríamos simplesmente num modo Mixolídio de Sol pela ausência do Fá$\sharp$ pois a presença de Dó$\sharp$ desconfigura o modo.
 
-A figura "desfuncional" de um grau "II\#3" detectada pelo algoritmo chama atenção para a figura do Lá, que quando soando juntamente com o Dó\# poderia trazer a interpretação de um acorde de Lá maior incompleto - mas qual seria sua função na cadência? 
+A figura "desfuncional" de um grau "II$\sharp$" detectada pelo algoritmo chama atenção para a figura do Lá, que quando soando juntamente com o Dó$\sharp$ poderia trazer a interpretação de um acorde de Lá maior incompleto - mas qual seria sua função na cadência? 
 
 A "resolução" da cadência final pelo passo que vai do acorde de Si menor incompleto até o Sol maior nos deixa pistas de que há uma estratégia que atua pelos contornos intervalares internos e que analisar apenas a superfície dos movimentos verticais não é suficiente - não estamos em "Sol Maior", mas também não estamos em "Si menor", que seria a segunda opção do algoritmo. No entanto há um discurso de afirmação da polarização deste acorde de Sol Maior.
 
@@ -1990,7 +1989,7 @@ A análise dos contornos se mostra necessária para que encontremos novas relaç
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico} "Tonalidade" singular apontada por Bartók - a pauta contém um sustenido em C\# ao invés do F\# padrão para Sol maior: declaração de uma intenção polimodal em Mikrokosmos 41} 
+	\caption{\label{fig_grafico} "Tonalidade" singular apontada por Bartók - a pauta contém um sustenido em C$\sharp$ ao invés do F$\sharp$ padrão para Sol maior: declaração de uma intenção polimodal em Mikrokosmos 41} 
 	\begin{center}
 	    \includegraphics[scale=0.4]{estudosM21/mikro041_inicio.png}
 	\end{center}
@@ -2025,7 +2024,7 @@ O exemplo de Mikrokosmos 41 é interessante por conter a necessidade de descober
 \end{figure}
 
 
-No ínicio da melodia de Mikrokosmos 41 uma relação motívica "quase"\ pentatônica que polariza a expectativa de emergência da nota Sol por sua ausência no intervalo pentatônico possível de 3-2-3 semitons que faria os passos Si-Ré-Mi-(Sol). A quebra da continuidade pentatônica pela inserção do passo semitonal Fá $ \rightarrow $ Mi e a enunciação do Dó\# funcionam como um "resumo" das relações diatônicas essenciais do polimodalismo desta composição. A nota Sol nunca será usada na melodia, mas durante quase toda composição figura no baixo.
+No ínicio da melodia de Mikrokosmos 41 uma relação motívica "quase"\ pentatônica que polariza a expectativa de emergência da nota Sol por sua ausência no intervalo pentatônico possível de 3-2-3 semitons que faria os passos Si-Ré-Mi-(Sol). A quebra da continuidade pentatônica pela inserção do passo semitonal Fá $ \rightarrow $ Mi e a enunciação do Dó$\sharp$ funcionam como um "resumo" das relações diatônicas essenciais do polimodalismo desta composição. A nota Sol nunca será usada na melodia, mas durante quase toda composição figura no baixo.
 
 Esta sonoridade quase pentatônica da melodia ou em ostinatos, que traz um caráter de música folclórica ao mesmo tempo que serve de estratégia para inserção gradual de cromatismos que criam polimodos é bastante presente em Bartók, como já discutimos na \autoref{modalismo}.
 
@@ -2046,11 +2045,11 @@ Esta sonoridade quase pentatônica da melodia ou em ostinatos, que traz um cará
 	\legend{Fonte: autor }
 \end{figure}
 
-O final de Mikrokosmos 41 cita o clichê da sequencia de 2-2-2-1 semitons do modo Lídio e "resolve" o acorde de Sol maior sem o uso da sensível Fá\#, negando-se a uma evidência de tonalidade maior tradicional, mas também negando-se a uma resolução de modo Lídio literal. A estratégia é pela condução da quinta justa Ré através dos passos Dó\# $\rightarrow $ Ré e Dó\# $\rightarrow $ Si mantendo-se em díade até que uma última entrada da nota Sol no baixo deixe uma impressão vaga de que havia uma polarização em torno do acorde de Sol maior. 
+O final de Mikrokosmos 41 cita o clichê da sequencia de 2-2-2-1 semitons do modo Lídio e "resolve" o acorde de Sol maior sem o uso da sensível Fá$\sharp$, negando-se a uma evidência de tonalidade maior tradicional, mas também negando-se a uma resolução de modo Lídio literal. A estratégia é pela condução da quinta justa Ré através dos passos Dó$\sharp \rightarrow $ Ré e Dó$\sharp \rightarrow $ Si mantendo-se em díade até que uma última entrada da nota Sol no baixo deixe uma impressão vaga de que havia uma polarização em torno do acorde de Sol maior. 
 
 \subsubsection{Inferência de escalas e modos}
 
-O Music21 possui um módulo muito útil para a inferência de modos e escalas\footnote{Para maiores detalhes sobre o modulo conferir o artigo \cite{ariza2011analytical}}, o que é muito útil para análises de repertórios como o de Bartók, onde há uma grande necessidade de busca de construções escalares.
+O Music21 possui um módulo muito útil para a inferência de modos e escalas\footnote{Para maiores detalhes sobre o modulo conferir o artigo \cite{ariza2011analytical}}, o que é muito útil para análises de repertórios como o de Bartók, onde há uma grande necessidade de busca por construções escalares mistas ou originais.
 
 Este módulo pode pegar como referência qualquer dos modos gregos, escalas referenciais ou mesmo construções arbitrárias de coleções motívicas ou crivos.\footnote{Demonstramos em mais detalhes a construção de escalas em Music21 para fins composicionais em \autoref{cac} }
 
@@ -2122,7 +2121,7 @@ Organiza materiais orientado basicamente pela escrita e fortemente pensado dentr
 
 \subsection{Visualização das classes de altura e sequencias partituradas}
 
-Vale destacar aqui a vantagem intuitiva do uso de objetos de representação gráfica dos intervalos como o objeto "n-cercle", que organiza os conjuntos de classe de altura em torno de um gráfico semelhante a uma partição de "relógio" de 12 alturas, podendo representar assim simetrias e distâncias entre as classes.
+Vale destacar aqui a vantagem intuitiva do uso de objetos de representação gráfica dos intervalos como o objeto \textit{"n-cercle"}, que organiza os conjuntos de classe de altura em torno de um gráfico semelhante a uma partição de "relógio"\ de 12 alturas, podendo representar assim simetrias e distâncias entre as classes.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Objeto N-Cercle }
@@ -2134,7 +2133,7 @@ Vale destacar aqui a vantagem intuitiva do uso de objetos de representação gr�
 
 \subsection{Notação Proporcional}
 
-O objeto de sequenciamento de acordes o "chord-seq"\ permite a representação de sequencias simbólicas partituradas, montadas através de procedimentos algorítmicos ou derivadas de arquivos como MIDI ou MusicXML. O formato visual é inspirado nas partituras de notação proporcional: onde não há a medida de assinaturas, barras ou figuras de compasso mas sim apenas uma representação visual do posicionamento das notas na altura das pautas e em uma distancia proporcional a posição temporal de seu ataque.
+O objeto de sequenciamento de acordes o \textit{"chord-seq}"\ permite a representação de sequencias simbólicas partituradas, montadas através de procedimentos algorítmicos ou derivadas de arquivos como MIDI ou MusicXML. O formato visual é inspirado nas partituras de notação proporcional: onde não há a medida de assinaturas, barras ou figuras de compasso mas sim apenas uma representação visual do posicionamento das notas na altura das pautas e em uma distancia proporcional a posição temporal de seu ataque.
 
 
 Os dados são estruturados em forma de parenteses aninhados, característica da linguagem LISP. Um exemplo de um uso comum dos parenteses é a maneira como o OM filtra notas e acordes: por padrão um objeto como chord-seq recebe uma lista de números em \textit{midicents}\footnote{Número absoluto da nota no padrão MIDI multiplicando por centésimos de semitom.} - números em uma primeira camada da lista serão interpretados como notas, números entre parênteses dentro de parênteses serão interpretados como acordes.
@@ -2180,9 +2179,9 @@ Em \textbf{(A)} temos o objeto \textit{"dn orbites"} listando todas as tríades 
 
 A parte \textbf{(B)} da figura figura mostra as classes de alturas convertidas para suas formas geométricas dentro da visualização em \textit{"relógio de semitons"}, do objeto \textit{"n-cercle"}. 
 
-A parte \textbf{(C)} mostra algumas alternativas para a vizualização das classes - a forma prima das classes de altura para cada tríade, as notas respectivas sem oitava definida, o vetor intervalar\footnote{Ver \autoref{pos_tonal}} e com o objeto "n structure" estamos relacionando os intervalos internos do acorde (sendo que da última para primeira novamente considera-se uma distância oitavada em relação a nota raiz). Um detalhe nesta última listagem é de que estamos usando a função genérica Lisp "mapcar" para fazer a iteração sobre item a item de toda coleção, usando o modo lambda\footnote{Todos objetos de OM podem ser colocados em modo de recursividade utilizados como uma função lambda. Maiores detalhes na documentação em \url{http://support.ircam.fr/docs/om/om6-manual/co/LambdaPatch.html}. Acesso em 28 de fevereiro de 2015.} do objeto "n structure".
+A parte \textbf{(C)} mostra algumas alternativas para a vizualização das classes - a forma prima das classes de altura para cada tríade, as notas respectivas sem oitava definida, o vetor intervalar\footnote{Ver \autoref{pos_tonal}} e com o objeto "n structure" estamos relacionando os intervalos internos do acorde (sendo que da última para primeira novamente considera-se uma distância oitavada em relação a nota raiz). Um detalhe nesta última listagem é de que estamos usando a função genérica \textit{Lisp "mapcar"}\ para fazer a iteração sobre item a item de toda coleção, usando o modo lambda\footnote{Todos objetos de OM podem ser colocados em modo de recursividade utilizados como uma função lambda. Maiores detalhes na documentação em \url{http://support.ircam.fr/docs/om/om6-manual/co/LambdaPatch.html}. Acesso em 28 de fevereiro de 2015.} do objeto "n structure".
 
-Em \textbf{(D)} Selecionamos a 11ª coleção da lista (3-11) com o objeto nth. Observemos que "nth"\footnote{Um objeto que seleciona o n-ésimo elemento de uma lista, começando a contar as posições a partir de zero.} é uma função Lisp primitiva, e não um objeto de OM especializado. Importante notar portanto, que o OM permite o uso de quaisquer funções Lisp que rodem no seu interpretador embarcado.\footnote{A linguagem Lisp gerada pelos objetos é processada sob demanda por um ambiente embarcado. Este interpretador é baseado na plataforma LispWorks. } Também é possível implementar funções Lisp dentro do próprio ambiente, com o objeto \textit{"lisp"}.
+Em \textbf{(D)} Selecionamos a 11ª coleção da lista (3-11) com o objeto nth. Observemos que "nth"\footnote{Um objeto que seleciona o n-ésimo elemento de uma lista, começando a contar as posições a partir de zero.} é uma função Lisp primitiva, e não um objeto de OM especializado. Importante notar portanto, que o OM permite o uso de quaisquer funções Lisp que rodem no seu interpretador embarcado.\footnote{A linguagem \textit{Lisp} gerada pelos objetos é processada sob demanda por um ambiente embarcado. Este interpretador é baseado na plataforma \textit{LispWorks}. } Também é possível implementar funções Lisp dentro do próprio ambiente, com o objeto \textit{"lisp"}.
 
 O vetor é transformado primeiro em inversão da sua forma prima (com o objeto \textit{"inv"} ) e em seguida a inversão é novamente reduzida a uma forma prima. Note-se que este exercício demonstra o parentesco entre o acorde maior e o acorde menor - a inversão de todos intervalos do acorde menor resulta um acorde maior.
 
@@ -2200,11 +2199,11 @@ Em \textbf{(E)} vemos a conversão das três formas para uma sequencia de acorde
 \pagebreak
 \subsection{Segmentação e Análise no OM}
 
-A maior vantagem percebida na prática desta pesquisa, da utilização de procedimentos em OM sobre procedimentos em nosso experimento com Python/Music21 é a possibilidade de testar rapidamente procedimentos em gestos intuitivos de cópia e cola, numa costura de patches que privelegia um improviso heuristicamente produtivo. 
+A maior vantagem percebida na prática desta pesquisa, da utilização de procedimentos em OM sobre procedimentos em nosso experimento com Python/Music21 é a possibilidade de testar rapidamente ideias em gestos intuitivos de cópia e cola, numa costura de patches que privelegia um improviso heuristicamente produtivo. 
 
 O módulo de segmentação para análise implementado dentro de objetos sequenciadores do OM, como o \textit{chord-seq}, permite o uso de um processamento carregado de um código Lisp externo ou codificado na janela do editor Lisp embarcada no OM. 
 
-Na figura 56 temos a automatização de uma sequencia de acordes de um dos experimentos composicionais derivados dos estudos de simetrias do presente trabalho. No procedimento ilustrado podemos retirar do objeto \textit{chord-seq} as analises individuais de conjuntos de classes de altura para cada segmento e revelar que os acordes que estão em inversões, transposições e âmbitos distintos, revelam-se o mesmo grupo de classes de altura em suas formas primas.
+Na figura 57 temos a automatização de uma sequencia de acordes de um dos experimentos composicionais derivados dos estudos de simetrias do presente trabalho. No procedimento ilustrado podemos retirar do objeto \textit{chord-seq} as analises individuais de conjuntos de classes de altura para cada segmento e revelar que os acordes que estão em inversões, transposições e âmbitos distintos, revelam-se o mesmo grupo de classes de altura em suas formas primas.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Módulo de segmentação para análise dentro dos objetos chord-seq. }
@@ -2214,7 +2213,7 @@ Na figura 56 temos a automatização de uma sequencia de acordes de um dos exper
 	\legend{Fonte: autor }
 \end{figure}	
 		
-Na figura 57 temos um exemplo de uma segmentação feita manualmente, com seleção de mouse, e em seguida analisada automaticamente em interação com a escuta, revelando a escolha de uma coleção octatonica já na primeira frase melódica de oito notas (duas repetidas) de Mikrokosmos 109.
+Na figura 58 temos um exemplo de uma segmentação feita manualmente, com seleção de mouse, e em seguida analisada automaticamente em interação com a escuta, revelando a escolha de uma coleção octatonica já na primeira frase melódica de oito notas (duas repetidas) de Mikrokosmos 109.
 
 
 \begin{figure}[!h]
@@ -2225,7 +2224,7 @@ Na figura 57 temos um exemplo de uma segmentação feita manualmente, com seleç
 	\legend{Fonte: autor }
 \end{figure}	
 
-O problema para este tipo de segmentação manual são os casos onde gostaríamos de fazer uma análise sem passar pela escuta e manipulação gráfica, gerando resultados diretamente. Para isso temos disponível o procedimento ilustrado na figura 58, situação onde é possível definir funções Lisp dentro do editor embarcado do OM e salvar para usos posteriores como um padrão de análise e segmentação.
+O problema para este tipo de segmentação manual são os casos onde gostaríamos de fazer uma análise sem passar pela escuta e manipulação gráfica, gerando resultados diretamente. Para isso temos disponível o procedimento ilustrado na figura 59, situação onde é possível definir funções Lisp dentro do editor embarcado do OM e salvar para usos posteriores como um padrão de análise e segmentação.
 
 Para estes casos é possível desenvolver análises customizadas em linguagem Lisp, podendo também fazer chamadas das bibliotecas OM em seu código escrito. O procedimento mínimo para uma compilação de procedimento customizado de análise e segmentação esta ilustrado na figura 59.
 
@@ -2292,7 +2291,7 @@ Esta proposta é diferente da formalização de gramáticas gerativas, que preci
 Parte da possibilidade de extrair padrões gestuais singulares de um corpus de arquivos MIDI a partir de de segmentação por proximidade rítmica e melódica \footnote{ \citeonline[ p.73]{dubnov2003using} citam o trabalho de classificação de parâmetros de cognição musical de \citeonline{meyer1956emotion} como base para elaboração dos critérios de segmentação } de uma superfície musical, extraindo dali motivos a partir de iterações recursivas que definem frequência e variações de similaridade.
 
 \begin{citacao}
-Uma teoria gerativa da música pode ser construída explicitamente codando regras musicais em alguma lógica de gramática formal. Esta abordagem é por vezes chamada de "sistema expert" ou "engenharia de cognição". Apesar destes métodos atingirem resultados impressionantes, eles requerem uma extensiva exploração do conhecimento musical, frequentemente específica para cada compositor ou estilo.\textbf{Uma abordagem constrastante confia em aprendizado estatístico de indução empírica.}\cite[ p.74, grifos nossos]{dubnov2003using}\footnote{A generative theory of music can be constructed by explicitly coding music rules in some logic or formal grammar. This approach is sometimes called an expert system or knowledge engineering. Although these methods achieve impressive results, they require extensive exploitation of musical knowledge, often specific to each composer or style.
+Uma teoria gerativa da música pode ser construída explicitamente codando regras musicais em alguma lógica de gramática formal. Esta abordagem é por vezes chamada de "sistema expert" ou "engenharia de cognição". Apesar destes métodos atingirem resultados impressionantes, eles requerem uma extensiva exploração do conhecimento musical, frequentemente específica para cada compositor ou estilo.\textbf{Uma abordagem contrastante confia em aprendizado estatístico de indução empírica.}\cite[ p.74, grifos nossos]{dubnov2003using}\footnote{A generative theory of music can be constructed by explicitly coding music rules in some logic or formal grammar. This approach is sometimes called an expert system or knowledge engineering. Although these methods achieve impressive results, they require extensive exploitation of musical knowledge, often specific to each composer or style.
 \textbf{A contrasting approach relies on statistical learning or empirical induction.}\cite[ p.74, grifos nossos]{dubnov2003using}}
 \end{citacao}
 
@@ -2308,11 +2307,11 @@ A biblioteca LZ tem seu nome inspirado no algoritmo de Lempel-Ziv, desenvolvido 
 
 
 
-Um exemplo ilustrativo é o da redução da palavra \textbf{\textit{"abracadabra"}}: Podemos perceber facilmente que não apenas existem letras repetidas mas também alguns segmentos, o segmento "abra" e suas permutações de duas letras (ab,br,ra) aparecem duas vezes . Existem também probabilidades de ocorrência que podem ser condicionadas - exemplos: o aparecimento da letra "a" apenas quando precedida do segmento "br" ocorre apenas duas vezes dentre as cinco possíveis, ou existe apenas um único "a" totalmente isolado dos segmentos "br" dentre as cinco possíveis, apenas é possível começar em a ou terminar em a e assim por diante.
+Um exemplo ilustrativo é o da redução da palavra \textbf{\textit{"abracadabra"}}: Podemos perceber facilmente que não apenas existem letras repetidas mas também alguns segmentos, o segmento "abra" e suas permutações de duas letras (ab,br,ra) aparecem duas vezes . Existem também probabilidades de ocorrência que podem ser condicionadas - exemplos: o aparecimento da letra "a"\ apenas quando precedida do segmento "br"\ ocorre apenas duas vezes dentre as cinco possíveis, ou existe apenas um único "a"\ totalmente isolado dos segmentos "br" dentre as cinco possíveis, apenas é possível começar em a ou terminar em a e assim por diante.
 
 Utilizamos no presente trabalho alguns segmentos gerados por busca com a biblioteca LZ como filtro para selecionar alguns motivos de trechos de peças dos Mikrokosmos de Bela Bartók, como um auxiliar para destaques da escuta. Consideramos a abordagem com aprendizado de máquina um assunto demasiado amplo e específico para aprofundamento aqui, no entanto aplicamos seu uso para problematizá-lo.
 
-Apesar de realizar uma "re-síntese" dos motivos escolhidos a biblioteca LZ parece não preocupar-se em estabelecer critérios de re-organizaçao de uma forma total de composição a partir destes motivos. As aplicações exemplificadas argumentam em torno da concatenação de gestos idiomáticos, algo que pode funcionar para ideias de improviso livre ou para elaboração de catálogos de gestos. 
+Apesar de realizar uma "re-síntese"\ dos motivos escolhidos a biblioteca LZ parece não preocupar-se em estabelecer critérios de re-organizaçao de uma forma total de composição a partir destes motivos. As aplicações exemplificadas argumentam em torno da concatenação de gestos idiomáticos, algo que pode funcionar para ideias de improviso livre ou para elaboração de catálogos de gestos. 
 
 
 %\section{Especialidade da automação versus especialidade do analista}
@@ -2327,7 +2326,7 @@ O conceito de "Composição Assistida por Computador"(CAC) está em geral coloca
 Em seu artigo \textit{"Computer assisted composition today"}, \citeonline{assayag1999computer} define o termo como uma derivação natural da escritura musical
 
 \begin{citacao}
-A escrita instrumental parrece para nós um campo de estudo que é ao mesmo tempo preciso e aberto; constitui um mdelo desigual de adequação entre sistemas combinatórios de operações sobre conjuntos de símbolos por um lado e um universo sonoro tendo suas próprias regras  de operação cognitica e percetiva por outro lado. Certamente a notação opera um link coerente entre estes dois mundos.(...)
+A escrita instrumental parece para nós um campo de estudo que é ao mesmo tempo preciso e aberto; constitui um mdelo desigual de adequação entre sistemas combinatórios de operações sobre conjuntos de símbolos por um lado e um universo sonoro tendo suas próprias regras  de operação cognitiva e perceptiva por outro lado. Certamente a notação opera um link coerente entre estes dois mundos.(...)
 Nós iremos empregar o termo Composição Assistida por Computador enquanto privilegiando, entre todas interpretações possíveis, aquela que mais se aproxima de escrita instrumental. Sistemas de CAC terão de ser capazes de trazer ajuda específica na escrita instrumental, eles devem constituir um link coerente entre os próximos e novos campos do som (sintético). \cite[ p.07]{assayag1999computer} \footnote{
 Instrumental writing seems to us a field of study which is at the same time precise and open: it constitutes a still unequalled model of adequacy between combinatorial systems of operations on sets of symbols on one hand and a sound universe having its own rules of perceptive and cognitive operation on the other hand. Indeed, the notation operates a coherent link between these two worlds. (...) We will thus employ the term Computer Assisted Composition while privileging, among all possible interpretations, the one that approaches at most the idea of instrumental writing. CAC systems will have to be able to bring an effective help in the specific case of instrumental writing; they will have to constitute a coherent link between the latter and new (synthetic) sound fields. \cite[ p.07]{assayag1999computer}}
 \end{citacao}
@@ -2335,7 +2334,7 @@ Instrumental writing seems to us a field of study which is at the same time prec
 
 O presente trabalho almeja também a possibilidade de organizar procedimentos de música generativa a partir de regras fixas retiradas de análises e possibilitando gerar música consistente automatizada a partir de definições algorítmicas precisas. 
 
-No entanto, na atual estado da pesquisa e considerando a imensa gama de opções encontradas, acredito que a prática criativa com estes procedimentos é a melhor maneira de organizar uma didática e uma sistematização consistente do conhecimento. 
+No entanto, no atual estado da pesquisa e considerando a imensa gama de opções encontradas, acredito que a prática criativa com estes procedimentos é a melhor maneira de organizar uma didática e uma sistematização consistente do conhecimento. 
 
 Neste capítulo descrevo alguns procedimentos que auxiliaram experimentos composicionais derivados desta pesquisa. 
 
@@ -2344,6 +2343,7 @@ Neste capítulo descrevo alguns procedimentos que auxiliaram experimentos compos
 Nesta parte da pesquisa o Music21 foi utilizado como ferramenta de formatação de clichês partiturados com saída já formatada diretamente em formato MusicXML. Para isso um exemplo singular dos Mikrokosmos serve de inspiração para uma saída já formatada de partitura presente desde a fase de concepção do algoritmo.
 
 \subsection{Mikro-clichês}
+\label{mikrocliches}
 
 Construí um exemplo de clichê generativo baseado em um padrão bastante comum de segmentação presente em todos livros do Mikrokosmos de Bela Bartók. O clichê consiste em um segmento fechado por uma ligadura de expressão, que por vezes possui alguma ligadura de continuação interna para notas iguais. 
 
@@ -2457,6 +2457,7 @@ cliche.show('musicxml') # o ligado de expressao so aparece no musicxml
 
 
 \section{Formatos de saída}
+\label{saidapartituras}
 
 
 \begin{figure}[!h]
@@ -2482,7 +2483,7 @@ Assumimos a sonoridade de um "piano" hipotético mais pela tecitura do instrumen
 
 A saída do script em Music21 portanto nos serve como um exemplo didático bastante preciso: temos a possibilidade de transformar a função em uma chamada modular dentro de outros scripts, podendo reutilizar aquela estrutura já segmentada e com sinal de expressão específico da escrita para o instrumento hipotético piano. O procedimento seria similar para escrita de articulações, dinâmicas e ornamentos.
 
-Já o uso do OpenMusic para tal fim, mostrou algumas necessidades de interação com suas expressões geradas, que para atingir a mesma autonomia necessita interação suas listas Lisp literais ou no caso da saída Lilypond, interação com o script Lilypond gerado. A possibilidade de interagir com algumas camadas da estrutura de formação das barras de compasso\footnote{Discutida no OM Manual em \url{http://support.ircam.fr/docs/om/om6-manual/co/RT2.html}. Acesso em 05 de fevereiro de 2015.} do objeto \textit{voice} demanda extender patches gráficos de uma maneira que ao final torna-se menos legível do que os scripts.
+Já o uso do OpenMusic para tal fim, mostrou algumas necessidades de interação com suas expressões geradas, que para atingir a mesma autonomia necessita interação com suas listas Lisp literais ou no caso da saída Lilypond, interação com o script Lilypond gerado. A possibilidade de interagir com algumas camadas da estrutura de formação das barras de compasso\footnote{Discutida no OM Manual em \url{http://support.ircam.fr/docs/om/om6-manual/co/RT2.html}. Acesso em 05 de fevereiro de 2015.} do objeto \textit{voice} demanda extender patches gráficos de uma maneira que ao final torna-se menos legível do que os scripts.
 
 No entanto, a saída em Lilypond para o OM (com a biblioteca omlily) mostrou-se também satisfatória e seria uma alternativa, considerando a boa documentação do projeto Lilypond para partituração impressa.\footnote{O script gerado a partir do patch da sessão recombinações está no apendice partituras. O script Lilypond gerado (onde foram inseridas as ligaduras direto no código) esta no \autoref{scripts}. }
 
@@ -2519,7 +2520,7 @@ Fora todos os patches que já foram demonstrados nas partes anteriores como ilus
 
 \subsubsection{Crivos}
 
-A biblioteca de crivos\footnote{Conhecidos também como \textit{"cribles"} em francês ou \textit{"sieves"} em inglês. A palavra traduz-se literalmente "peneira".} do OM permite a construção de fórmulas para geradores de escalas "literais" baseadas em regras geradoras simples.
+A biblioteca de crivos\footnote{Conhecidos também como \textit{"cribles"} em francês ou \textit{"sieves"} em inglês. A palavra traduz-se literalmente "peneira".} do OM permite a construção de fórmulas para geradores de escalas "literais"\ baseadas em regras geradoras simples.
 
 Podemos também por união ou intersecção de conjuntos estabelecer algumas restrições de quais oitavas entram determinados intervalos, fazendo que por momentos os intervalos compostos formem novos intervalos intermediários que podem ser independentes de oitava. Iannis \citeonline{xenakis1992formalized} descreve o conceito de crivo em seu livro \textit{"Formalized Music"}.
  
@@ -2569,7 +2570,23 @@ O procedimento de formatação dos acordes fornece também um exemplo do uso do 
 	\legend{Fonte: autor }
 \end{figure}
 
-\pagebreak
+
+\subsubsection{Lambdas e recursividade no tratamento de acordes}
+
+Além da possibilidade de iterar as listas de notas dentro de um loop utilizando o objeto omloop , o OM traz um recurso interessante herdado da linguagem Lisp que é a possibilidade operar os objetos em "função lambda". O uso da "função lambda" em conjunto com o objeto \textit{mapcar} por exemplo, permite que de maneira similar ao que foi feito pelo loop da figura anterior seja possível aplicar recursivamente funções ou processamento de patches sobre listas de listas recursivamente até chegar em elementos unitários. Desta maneira podemos por exemplo criar uma função onde aplicamos regras de transformação para cada uma das notas de acordes já sequenciados em uma lista de acordes, como feito no patch ilustrado na figura abaixo.
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico}A função lambda permite aplicar recursivamente para cada acorde de um chord-seq uma nova recursividade que busca cada elemento de cada acorde para aplicar nele neste caso um sorteio de oitava. }
+	\begin{center}
+	    \includegraphics[scale=0.5]{OMPD/Lambda_randomOitavas.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+
+
 \subsubsection{Perfis motívicos}
 
 Uma biblioteca OM interessante para a exploração de contornos e estratégias de perfis motívicos, é a Profile. Abaixo a figura de um patch onde utilizo o objeto compress/expand para gerar uma estrutura de simetria proporcional, baseada na célula Z (vetor de intervalos [0,1,6,7] ) de Antokoletz. 
@@ -2597,7 +2614,7 @@ Com alguns destes blocos construí um procedimento que pode servir de base para 
 	\legend{Fonte: autor }
 \end{figure}
 
-Este patch também serviu como teste do procedimento já descrito anteriormente em , onde trabalhamos a conversão da notação proporcional em um procedimento de quantização para encaixe numa barra de compasso 7/4, para em seguida salvar em formato Lilypond, permitindo gerar uma partitura em pdf com padrões de impressão.
+Este patch também serviu como teste do procedimento já descrito anteriormente em \autoref{mikrocliches} , onde trabalhamos a conversão da notação proporcional em um processo de quantização para encaixe numa barra de compasso 7/4, para em seguida salvar em formato Lilypond, permitindo gerar uma partitura em pdf com padrões de impressão.
 
 
 \begin{figure}[!h]
@@ -2638,12 +2655,12 @@ inner rings untouched. A deeper imitator would add other outer layers of style b
 
 A tentativa de usar uma análise assistida por computador ancorada em parâmetros mais genéricos, derivados de investigações sobre cognição musical aplicada na segmentação de elementos básicos, mostrou-se insuficiente e limitada para um repertório pós-tonal estilisticamente idiossincrático como o de Bela Bartók.
 
-Vale relevar que procedimentos baseados em \textit{"aprendizado de máquina"}, como o exemplificado com a bilioteca OpenMusic LZ ( \autoref{lz} ) apontam uma direção viável para auxiliar a segmentação automatizada sem necessidade a priori de uma classificação especializada de parâmetros. O procedimento "treina" a máquina para separar segmentos re-incidentes e remonta sequencias com estes clichês. 
+Vale relevar que procedimentos baseados em \textit{"aprendizado de máquina"}, como o exemplificado com a bilioteca OpenMusic LZ ( \autoref{lz} ) apontam uma direção viável para auxiliar a segmentação automatizada sem necessidade a priori de uma classificação especializada de parâmetros. O procedimento "treina"\ a máquina para separar segmentos re-incidentes e remonta sequencias com estes clichês. 
 
 A remontagem disponível como padrão na biblioteca no entanto não tem como possuir uma consistência como macroforma, pois apenas remonta os clichês por proximidade de similaridade dos segmentos.
 A etapa composicional requer aplicação arbitrária de uma estratégia de encadeamento dos clichês, conectado-os por conduções melódicas e planejando as texturas politonais ou polimodais características.
 
-No presente estágio da pesquisa decidi por separar os dois procedimentos assistidos por computador pesquisados aqui - a análise e composição - buscando uma maior liberdade na experimentação com os procedimentos e um registro de ideias derivadas. 
+No presente estágio da pesquisa decidi por separar os dois procedimentos assistidos por computador pesquisados aqui - a análise e composição - buscando uma maior liberdade na experimentação e um registro de ideias derivadas, apontando caminhos para continuidade da pesquisa.
 
 Os exemplos mostrados no capítulo sobre C.A.C. e as partituras anexadas tem antes de um acabamento estético e poético um objetivo didático para demonstração dos procedimentos básicos de aplicação das teorias e ferramentas aqui expostas. Junto a este trabalho anexo\footnote{Disponível para download em \url{http://devolts.org/luteria}.} arquivos com patches, músicas e scripts de caráter ainda experimental derivados deste trabalho e que apontam direções para continuidade da investigação prática.
 
@@ -2696,9 +2713,9 @@ Interessa também como desdobramento desta pesquisa a ampliação dos parâmetro
 \chapter{Fórmulas de agrupamento e transformação dos intervalos}
 \label{pos_tonal}
 
-A teoria de grupos de classes de altura utiliza como base de suas formulações a relação entre os 12 semitons da escala cromática de forma modular: considerando alturas de mesma oitava como sujeitas mesmas propriedades intervalares, podendo argumentar relações independentes de registro. Exemplo: O Dó grave representado no protocolo MIDI pelo valor 24 tem uma relação de equivalência com o Dó agudo de valor 72. A fórmula é simples: ambos quando divididos por 12 apresentam resto 0. A nota Ré, por exemplo, sempre apresentaria o resto 2, e assim por diante. Dizemos por tanto que pertencem a uma mesma classe de altura.
+A teoria de grupos de classes de altura utiliza como base de suas formulações a relação entre os 12 semitons da escala cromática de forma modular: considerando alturas de mesma oitava como sujeitas mesmas propriedades intervalares, podendo argumentar relações independentes de registro. Exemplo: O Dó grave representado no protocolo MIDI pelo valor 24 tem uma relação de equivalência com o Dó agudo de valor 72. A fórmula é simples: ambos quando divididos por 12 apresentam resto 0. A nota Ré, por exemplo, sempre apresentaria o resto 2, e assim por diante. Dizemos portanto que pertencem a uma mesma classe de altura.
 
-Diferente de quando argumentada uma enarmonia funcional\footnote{ver \autoref{solfejo} } (como por exemplo D\# $\to$ Eb ) a teoria de grupos e classes de altura não toma como princípio ideias do tipo "terça maior ou menor", "nota sensível" ou "nota de passagem"\ pois vai partir de uma relação direta entre os aglomerados sonoros, buscando similaridades e equivalências sem estar tão presa as formas de prolongamento normatizadas pelo tonalismo clássico. \cite{lerdahl1989atonal,straus1987problem}
+Diferente de quando argumentada uma enarmonia funcional\footnote{ver \autoref{solfejo} } (como por exemplo  $Ré\sharp \to Mi\flat$ ) a teoria de grupos e classes de altura não toma como princípio ideias do tipo "terça maior ou menor", "nota sensível" ou "nota de passagem"\ pois vai partir de uma relação direta entre os aglomerados sonoros, buscando similaridades e equivalências sem estar tão presa as formas de prolongamento normatizadas pelo tonalismo clássico. \cite{lerdahl1989atonal,straus1987problem}
 
 Os intervalos são, sobretudo, distâncias. Nas teorias de classes de alturas essas distâncias podem estar categorizadas como intervalos ordenados - usando número negativos para os intervalos descendentes, ou não-ordenados - considerando intervalos equivalentes independentes de suas direções.\cite[p. 6]{straus2004}
 
@@ -2748,7 +2765,7 @@ $ inversões = \left\{
   \end{array} \right.
 $
 
-O vetor de intervalos pode ser reduzido então a uma contagem que coloca no mesmo grupo os intervalos que são inversões dos primeiros cinco intervalos possíveis, já que seus pares após o trítono não são considerados espelhamentos. No exemplo acima temos 10 que é a inversão de 2 e 8 que é a inversão de 4. Nosso vetor fica assim:
+O vetor de intervalos pode ser reduzido então a uma contagem que coloca no mesmo grupo os intervalos que são inversões dos primeiros cinco intervalos possíveis, já que seus pares após o trítono são considerados espelhamentos. No exemplo acima temos 10 que é a inversão de 2 e 8 que é a inversão de 4. Nosso vetor fica assim:
 
 
 \begin{table}[h]
@@ -2795,11 +2812,9 @@ Para a redução de uma forma normal, partimos do \textit{cluster} sem repetiç�
 \end{figure}
 
 
-
-\pagebreak
 \section{Forma Prima} 
 
-A forma prima é um procedimento para simplificar ainda mais a forma normal, encontrando "a mais normal das normais"\ \cite[p. 47]{straus2004} e reduzindo vetores que possuem os mesmos intervalos ou são inversões e transposições a um vetor primário. Para isso uma forma normal é transposta até que possua o zero em sua primeira posição. Assim é feito também com sua inversão. A forma mais compacta à esquerda será a forma prima. Allen \citeonline{forte1973structure} desenvolveu uma taxonomia a partir das formas primas que tem sido utilizada como forma canônica para representação de grupos de classes de altura.\footnote{A biblioteca \textit{"math"}\ do OpenMusic possui o objeto "p-form"\ para encontrar os agrupamentos de Forte. A tabela original está no livro "The Structure of Atonal Music"\ \cite[p.179-181]{forte1973structure}}. Forte organiza agrupamentos pelo número de elementos seguidos por um número que diz qual ordem dentro do conjunto com aquele mesmo número de elementos. Exemplo: |3-1| é composto das alturas (0,1,2), |3-2|  é o cluster (0,1,3), |4-17|  é composto por (0,3,4,7), e assim por diante.
+A forma prima é um procedimento para simplificar ainda mais a forma normal, encontrando \textit{"a mais normal das normais"}\cite[p. 47]{straus2004} e reduzindo vetores que possuem os mesmos intervalos ou são inversões e transposições a um vetor primário. Para isso uma forma normal é transposta até que possua o zero em sua primeira posição. Assim é feito também com sua inversão. A forma mais compacta à esquerda será a forma prima. Allen \citeonline{forte1973structure} desenvolveu uma taxonomia a partir das formas primas que tem sido utilizada como forma canônica para representação de grupos de classes de altura.\footnote{A biblioteca \textit{"math"}\ do OpenMusic possui o objeto "p-form"\ para encontrar os agrupamentos de Forte. A tabela original está no livro "The Structure of Atonal Music"\ \cite[p.179-181]{forte1973structure}}. Forte organiza agrupamentos pelo número de elementos seguidos por um número que diz qual ordem dentro do conjunto com aquele mesmo número de elementos. Exemplo: |3-1| é composto das alturas (0,1,2), |3-2|  é o cluster (0,1,3), |4-17|  é composto por (0,3,4,7), e assim por diante.
 
 \begin{figure}[h]
 	\caption{\label{fig_grafico}Fórmulas de agrupamento de classes de altura. }
@@ -2814,7 +2829,7 @@ A forma prima é um procedimento para simplificar ainda mais a forma normal, enc
 
 Algumas propriedades entre os grupos de classes de alturas são muito interessantes como princípio composicional e, mesmo quando não tão obvias em primeiras audições, ao menos ajudam garantir alguma coerência estrutural conceitual. George Perle argumenta sobre "funções motívicas"\ em grupos de alturas \cite[ p.60-85]{perle1981serial} e observa algumas estratégias de compositores para aproveitar algumas propriedades encontradas em relações internas das series. Perle no entanto mostra-se cético quanto a formalização de nomenclaturas analíticas derivadas da classificação de Allen Forte e sua aplicação em argumentações para análises de composições que tenham sido compostas antes fórmulas tornarem-se ferramentas musicológicas. \cite{perle1990pitch}
 
-Levantaremos aqui algumas destas propriedades conforme o resumo didático proposto por \citeonline{straus2004}, sem ainda estarmos certos de sua efetividade para analises mas interessados na formalização computacional possível destas para processos composicionais.
+Exponho aqui algumas destas propriedades conforme o resumo didático proposto por \citeonline{straus2004}, sem ainda estarmos certos de sua efetividade para analises mas interessados na formalização computacional possível destas para processos composicionais.
 
 
 \subsection{Notas comuns sob transposição}
@@ -2830,10 +2845,9 @@ Tomemos o seguinte exemplo: Dado um grupo em sua forma prima [0,2,5] - ou "4-10"
 \end{figure}
 
 
+Isso acontece porque o vetor de intervalos para esta forma é <1,2,2,0,1,0> e podemos observar a fórmula de \citeonline[ p.68]{straus2004} que prova que o número de incidências comuns de uma determinada classe de alturas em sua transposição será o número de repetições deste intervalo em seu vetor original. Neste caso por exemplo temos duas incidências do intervalo de classe 2 - \textbf{portanto as transposições T2 e T10 tem duas notas em comum com T0.}
 
-Isso acontece porque o vetor de intervalos para esta forma é <1,2,2,0,1,0> e podemos observar que há uma fórmula geral que prova que o número de incidências comuns de uma determinada classe de alturas em sua transposição será o número de repetições deste intervalo em seu vetor original. Neste caso por exemplo temos duas incidências do intervalo de classe 2 - portanto as transposições T2 e T10 tem duas notas em comum com T0.
-
-Há uma exceção a esta regra:
+Há uma exceção a esta regra (Figura 81):
  
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Notas comuns na transposição com trítono. }
@@ -2860,18 +2874,6 @@ Na simetria transpositiva temos um padrão de intervalos que funciona como palí
 	\legend{Fonte: autor }
 \end{figure}
 
-
-
-\begin{figure}[!h]
-	\caption{\label{fig_grafico}A forma circular é mais geral do que a numérica para a visualização do padrão de simetrias. }
-	\begin{center}
-	    \includegraphics[scale=0.6]{OM_settheory/palindrome2.png}
-	\end{center}
-	\legend{Fonte: autor }
-\end{figure}
-
-
-
 \subsection{Complemento}
 
 Útil para reconhecer e produzir contextos totalmente distintos entre si, o complemento é composto por todos intervalos que estão exclusos dos grupo, produzindo um outro grupo completamente diferente.
@@ -2888,13 +2890,13 @@ Na simetria transpositiva temos um padrão de intervalos que funciona como palí
 
 \subsection{Relação Z entre grupos de classes de alturas}
 
-A relação Z é uma das interessantes relações onde há uma equivalência sem que os conjuntos sejam transposições ou inversões entre si neste caso produzindo dois conjuntos que possuem os mesmos intervalos na sua constituição.
+A relação Z é um caso interessante: há uma equivalência sem que os conjuntos sejam transposições ou inversões entre si neste caso produzindo dois conjuntos que possuem os mesmos intervalos na sua constituição.
 
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Dois conjuntos Z-relacionados possuem os mesmos intervalos sem serem inversões ou transposições uns dos outros. }
 	\begin{center}
-	    \includegraphics[scale=0.7]{OM_settheory/Z_related.png}
+	    \includegraphics[scale=0.6]{OM_settheory/Z_related.png}
 	\end{center}
 	\legend{Fonte: autor (adaptado de exemplo do tutorial MathTools do OM) }
 \end{figure}
@@ -2907,25 +2909,95 @@ A relação Z é uma das interessantes relações onde há uma equivalência sem
 %%%%%
 %%%%%
 %%%%%
-\chapter{Experimentos Generativos}
+\chapter{Partituras Generativas}
+%\begin{figure}[!h]
+%	\begin{center}
+%	    \includegraphics*[scale=0.25]{mat/agora.png}
+%	\end{center}
+%
+%\end{figure}
 
-Anexamos aqui nesta parte algumas partituras geradas que representam uma amostra de experimentos possíveis. Considere-se também que todos os patches e scripts demonstrados neste trabalho podem potencialmente serem usados para gerar novas partituras, portanto estas peças figuram no presente trabalho sobretudo como um registro técnico do momento, representando a possibilidade de automatização desta etapa do procedimento.
-
-\begin{figure}[!h]
-	\begin{center}
-	    \includegraphics*[scale=0.25]{mat/agora.png}
-	\end{center}
-
-\end{figure}
-
+Anexamos aqui nesta parte algumas partituras geradas que representam uma amostra de experimentos possíveis. Considere-se também que todos os patches e scripts demonstrados neste trabalho podem potencialmente ser usados para gerar novas partituras, portanto estas peças figuram no presente trabalho sobretudo como um registro técnico do momento, enunciando a possibilidade de automatização desta etapa do procedimento.
 
 \section{MikroClichês}
 
-Experimentos de partitura onde busquei um critério de semelhança entre os clichês de segmentação e estratégias de melodia e condução de vozes apontadas.
+Experimentos de partitura onde busquei um critério de semelhança entre os clichês de segmentação e estratégias de melodia e condução de vozes apontadas. Apresento aqui dois exemplos iniciais que podem servir como modelo para infinitas peças semelhantes.
+
+
+\subsection{Mikroclichê 01 - Maior-Menor}
+
+Este clichê utiliza o script explicado na \autoref{mikrocliches}, e é organizado posicionando as frases que estão segmentadas dentro de ligaduras de expressão, de maneira similar a usada por Bartók nos Mikrokosmos. 
+
+
+\begin{figure}[!h]
+	\begin{center}
+	    \includegraphics*[scale=0.4]{score/MikroCliche01.png}
+	\end{center}
+\end{figure}
+
+
+A melodia foi sorteada a partir do sistema de eixos C, E$\flat$, F$\sharp$, A e possui uma característica de ir progressivamente trocando o E$\flat$ por E e o F$\sharp$ por F, finaliza com o acorde de Lá Menor incompleto construindo a impressão de uma polarização do modo eólio.
+
+\subsection{Mikroclichê 02 - Octatônica}
+
+Mesmo clichê de segmentação usado na peça anterior, mas utilizando o sorteio de uma escala octatônica. A escala é particionada em duas tétrades que revezam e permutam a aparição na melodia e no baixo, progressivamente permitindo a aparição simultânea da mesma tétrade nas duas vozes.
+
+\begin{figure}[!h]
+	\begin{center}
+	    \includegraphics*[scale=0.4]{score/MikroCliche02.png}
+	\end{center}
+\end{figure}
+
 
 \section{CosmoBagatellas}
 
 Partituras derivadas de experimentos livres, surgidos durante a organização dos patches de análise, como possibilidade de invenção. 
+
+\subsection{CosmoBagatella 0.01}
+
+Este "mikro-motivo"\ foi gerado a partir de um estudo para composição de eixos de simetria inversiva\footnote{Rever \autoref{simetria}. } a partir do eixo central $Fá \leftrightarrow Fá\sharp  $. No entanto a etapa $Ré \leftrightarrow Lá$ do eixo ficou destacada por sua sonoridade de 5ª justa e inspirou um movimento que prolonga a resolução do primeiro acorde [$Lá\flat$, Sol, Lá] em um Lá Uníssono do acorde final\footnote{Após uma citação passageira do $Dó\sharp$ e do Mi um pouco antes, sugerindo um Lá Maior.}
+
+\begin{figure}[!h]
+	\begin{center}
+	    \includegraphics*[scale=0.4]{score/CosmoBagatella001.png}
+	\end{center}
+\end{figure}
+
+\pagebreak
+\subsection{CosmoBagatella 0.02}
+
+Derivado do estudo sobre simetria literal comentado na \autoref{simetrialiteral}, esta versão usa como tema o arpejo pelo acorde da "simetria em espelho" de Bartók demonstrada no \autoref{fig_simetrialiteral} e possui a inserção de acelerandos e retardandos arbitrários, colocados posteriormente. A busca de um critério de segmentação para a inserção de acelerandos e retardandos nas mudanças de frase fica aqui registrado e sugerido para futura implementação automatizada desta parte.
+
+
+\begin{figure}[!h]
+	\begin{center}
+	    \includegraphics*[scale=0.4]{score/CosmoBagatella002.png}
+	\end{center}
+\end{figure}
+
+\subsection{CosmoBagatella 0.03 - Estudo Pentatônico}
+
+\begin{figure}[!h]
+	\begin{center}
+	    \includegraphics*[scale=0.4]{score/ExperimentoPentatonico.png}
+	\end{center}
+\end{figure}
+
+
+Esta miniatura surgiu durante a formalizações do script para construção dos Mikroclichês, mas com uma estrutura rítmica mais livre, onde a entrada de pausas sorteadas criou um efeito de síncopas.
+
+Apesar de encaixada em um compasso quaternário para efeito de registro aqui, poderia ou deveria ser re-escrita de outra forma.
+
+O importante deste estudo foi o uso dos módulos de escalas da biblioteca Music21, para formatação das estratégias de uso da escala pentatônica conjugada com uma escala dórica, buscando aplicar os conceitos de poliomodalismo presentes na \autoref{polimodal}. 
+
+Seu script gerador esta no \autoref{scriptescalas}.
+
+
+
+
+
+
+
 
 
 \chapter{Scripts}
@@ -2933,13 +3005,17 @@ Partituras derivadas de experimentos livres, surgidos durante a organização do
 
 \section{Analise}
 
+\subsection{Transformações do ciclo de terças maiores}
+\label{ciclotercas}
+
+
 \begin{lstlisting}
 
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from music21 import *
 
-#Script estudo sobre transformacoes por vizinhanca no ciclo das 3as maiores
+#Script estudo sobre transformacoes por vizinhanca no ciclo das 3as maiores 
 
 
 # acorde de 5a aumentada
@@ -3033,6 +3109,7 @@ s.show('lily.pdf')
 
 \end{lstlisting}
 
+\subsection{Inserção de graus de cadência (numerais romanos)}
 
 \begin{lstlisting}
 
@@ -3063,7 +3140,7 @@ s.show('lily.pdf')
 
 \end{lstlisting}
 
-
+\subsection{Detecção de contorno melódico}
 
 \begin{lstlisting}
 #!/usr/bin/env python
@@ -3119,6 +3196,8 @@ MIKRO.show('lily.pdf')
 
 \end{lstlisting}
 
+\subsection{Detecção de escala ou coleção}
+
 \begin{lstlisting}
 
 #!/usr/bin/env python
@@ -3126,6 +3205,7 @@ MIKRO.show('lily.pdf')
 
 
 #Script detecta contornos de octatonica
+# pode ser modificado para detectar qualquer escla ou colecao
 
 from music21 import *
 
@@ -3160,6 +3240,8 @@ for n in p1.flat.notes:
 # imprime a partitura em pdf
 m.show('lily.pdf')		
 \end{lstlisting}
+
+\subsection{Isola ritmos mais raros ou mais frequentes}
 
 \begin{lstlisting}
 #!/usr/bin/env python
@@ -3213,6 +3295,7 @@ else:
 
 \end{lstlisting}
 
+\subsection{Nomeia notas e acordes em uma partitura}
 
 \begin{lstlisting}
 
@@ -3258,8 +3341,8 @@ MIKRO.show('lily.pdf')
 
 \section{CAC}
 
-\subsection{Exemplo Lilypond}
-
+\subsection{Estudo de clichê a partir de escalas}
+\label{scriptescalas}
 
 
 \begin{lstlisting}
@@ -3348,6 +3431,9 @@ partitura.show(P)
 \end{lstlisting}
 
 
+\subsection{Script Lilypond gerado por OM}
+
+Script gerado pela biblioteca omlily do OM, editado manualmente para inserção de ligaduras, conforme comentado na \autoref{saidapartituras}.
 
 \begin{lstlisting}
 \version "2.9"
