@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  12 MAR 2015 13:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  12 MAR 2015 13:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3343,7 +3343,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3613.
 Here is how much of TeX's memory you used:
  19099 strings out of 494928
  285461 string characters out of 6177930
- 568331 words of memory out of 5000000
+ 568269 words of memory out of 5000000
  20350 multiletter control sequences out of 15000+600000
  103874 words of font info for 200 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
@@ -3365,7 +3365,7 @@ ts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on LUTERIA_2015janeiro.pdf (140 pages, 3954831 bytes).
+Output written on LUTERIA_2015janeiro.pdf (140 pages, 3954574 bytes).
 PDF statistics:
  4171 PDF objects out of 4296 (max. 8388607)
  3582 compressed objects within 36 object streams
