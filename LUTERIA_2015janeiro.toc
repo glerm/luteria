@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {1.7.1}Modos Gregos}{55}{subsection.1.7.1}
 \contentsline {subsection}{\numberline {1.7.2}Rota\IeC {\c c}\IeC {\~a}o Pentat\IeC {\^o}nica}{57}{subsection.1.7.2}
 \contentsline {subsection}{\numberline {1.7.3}Cromatismo Polimodal}{58}{subsection.1.7.3}
-\contentsline {section}{\numberline {1.8}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{60}{section.1.8}
+\contentsline {section}{\numberline {1.8}Harmoniza\IeC {\c c}\IeC {\~a}o dos Modos Folcl\IeC {\'o}ricos}{59}{section.1.8}
 \contentsline {part}{\partnumberline {II}\MakeTextUppercase {Formaliza\IeC {\c c}\IeC {\~o}es Computacionais}}{63}{part.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Analise Musical Assistida por Computador}}{65}{chapter.2}

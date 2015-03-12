@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  12 MAR 2015 13:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  12 MAR 2015 13:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2284,11 +2284,7 @@ LaTeX Warning: Command \' invalid in math mode on input line 1376.
 
 LaTeX Warning: Command \' invalid in math mode on input line 1376.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57]
-<OM_settheory/pentarotacoes.png, id=1707, 681.54625pt x 592.2125pt>
+[57] <OM_settheory/pentarotacoes.png, id=1707, 681.54625pt x 592.2125pt>
 File: OM_settheory/pentarotacoes.png Graphic file (type png)
 
 <use OM_settheory/pentarotacoes.png>
@@ -2300,44 +2296,43 @@ Package pdftex.def Info: OM_settheory/pentarotacoes.png used on input line 1395
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1406 
-        <./OM_settheory/pentarotacoes.png>]
+l.1409 \end{citacao}
+                     <./OM_settheory/pentarotacoes.png>]
 <modal/lidiofrigioOM.png, id=1717, 714.67pt x 508.90125pt>
 File: modal/lidiofrigioOM.png Graphic file (type png)
 
 <use modal/lidiofrigioOM.png>
 Package pdftex.def Info: modal/lidiofrigioOM.png used on input line 1415.
 (pdftex.def)             Requested size: 357.33412pt x 254.45pt.
-
-Underfull \vbox (badness 2426) has occurred while \output is active []
-
  [59pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 36}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1425 
+l.1427 
         <./modal/lidiofrigioOM.png>] [60]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [61]
-<ostinatos/boating_ostinato.png, id=1752, 1096.095pt x 473.77pt>
+<ostinatos/boating_ostinato.png, id=1748, 1096.095pt x 473.77pt>
 File: ostinatos/boating_ostinato.png Graphic file (type png)
 
 <use ostinatos/boating_ostinato.png>
 Package pdftex.def Info: ostinatos/boating_ostinato.png used on input line 1452
 .
-(pdftex.def)             Requested size: 328.83104pt x 142.1321pt.
- [62pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-37}) has been already used, duplicate ignored
+(pdftex.def)             Requested size: 493.23819pt x 213.19452pt.
+
+Overfull \hbox (38.23819pt too wide) in paragraph at lines 1452--1453
+ [] 
+ []
+
+[61pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3
+7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1479 \part
             {Formalizações Computacionais} <./ostinatos/boating_ostinato.png>
-] [63
+] [62
 
-] [64] [65
+] [63] [64] [65
 
 ]
 Underfull \hbox (badness 5756) in paragraph at lines 1516--1516
@@ -3330,7 +3325,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3613.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3613.
 
 Package rerunfilecheck Info: File `LUTERIA_2015janeiro.brf' has not changed.
-(rerunfilecheck)             Checksum: D576D0FBE5D28D9C6704DFC4B4F0A949;11660.
+(rerunfilecheck)             Checksum: 23816E26B915AC8AAAB9D4CF759E37EC;11660.
 
 
 LaTeX Warning: There were undefined references.
@@ -3365,7 +3360,7 @@ ts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on LUTERIA_2015janeiro.pdf (140 pages, 3954574 bytes).
+Output written on LUTERIA_2015janeiro.pdf (140 pages, 3953954 bytes).
 PDF statistics:
  4171 PDF objects out of 4296 (max. 8388607)
  3582 compressed objects within 36 object streams
