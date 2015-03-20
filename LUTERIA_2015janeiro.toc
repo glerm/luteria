@@ -75,33 +75,34 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
 \contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {F\IeC {\'o}rmulas de agrupamento e transforma\IeC {\c c}\IeC {\~a}o dos intervalos}}{117}{appendix.A}
-\contentsline {section}{\numberline {A.1}Vetor intervalar}{118}{section.A.1}
-\contentsline {section}{\numberline {A.2}Forma Normal}{118}{section.A.2}
+\contentsline {section}{\numberline {A.1}Vetor intervalar}{117}{section.A.1}
+\contentsline {section}{\numberline {A.2}Forma Normal}{119}{section.A.2}
 \contentsline {section}{\numberline {A.3}Forma Prima}{119}{section.A.3}
 \contentsline {section}{\numberline {A.4}Singularidades nos agrupamentos }{120}{section.A.4}
 \contentsline {subsection}{\numberline {A.4.1}Notas comuns sob transposi\IeC {\c c}\IeC {\~a}o}{121}{subsection.A.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Simetria Transpositiva}{123}{subsection.A.4.2}
+\contentsline {subsection}{\numberline {A.4.2}Simetria Transpositiva}{122}{subsection.A.4.2}
 \contentsline {subsection}{\numberline {A.4.3}Complemento}{123}{subsection.A.4.3}
 \contentsline {subsection}{\numberline {A.4.4}Rela\IeC {\c c}\IeC {\~a}o Z entre grupos de classes de alturas}{124}{subsection.A.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {B}\MakeTextUppercase {Partituras Generativas}}{125}{appendix.B}
-\contentsline {section}{\numberline {B.1}MikroClich\IeC {\^e}s}{125}{section.B.1}
-\contentsline {subsection}{\numberline {B.1.1}Mikroclich\IeC {\^e} 01 - Maior-Menor}{125}{subsection.B.1.1}
-\contentsline {subsection}{\numberline {B.1.2}Mikroclich\IeC {\^e} 02 - Octat\IeC {\^o}nica}{126}{subsection.B.1.2}
-\contentsline {section}{\numberline {B.2}CosmoBagatellas}{126}{section.B.2}
-\contentsline {subsection}{\numberline {B.2.1}CosmoBagatella 0.01}{126}{subsection.B.2.1}
-\contentsline {subsection}{\numberline {B.2.2}CosmoBagatella 0.02}{127}{subsection.B.2.2}
-\contentsline {subsection}{\numberline {B.2.3}CosmoBagatella 0.03 - Estudo Pentat\IeC {\^o}nico}{127}{subsection.B.2.3}
+\contentsline {chapter}{\chapternumberline {B}\MakeTextUppercase {Partituras Generativas}}{127}{appendix.B}
+\contentsline {section}{\numberline {B.1}MikroClich\IeC {\^e}s}{127}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}Mikroclich\IeC {\^e} 01 - Maior-Menor}{127}{subsection.B.1.1}
+\contentsline {subsection}{\numberline {B.1.2}Mikroclich\IeC {\^e} 02 - Octat\IeC {\^o}nica}{128}{subsection.B.1.2}
+\contentsline {section}{\numberline {B.2}CosmoBagatellas}{128}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}CosmoBagatella 0.01}{128}{subsection.B.2.1}
+\contentsline {subsection}{\numberline {B.2.2}CosmoBagatella 0.02}{129}{subsection.B.2.2}
+\contentsline {subsection}{\numberline {B.2.3}CosmoBagatella 0.03 - Estudo Pentat\IeC {\^o}nico}{129}{subsection.B.2.3}
+\contentsline {subsection}{\numberline {B.2.4}CosmoBagatella $ {\begingroup 1\endgroup \over \Phi } $ - Epigrafe }{130}{subsection.B.2.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {C}\MakeTextUppercase {Scripts}}{129}{appendix.C}
-\contentsline {section}{\numberline {C.1}Analise}{129}{section.C.1}
-\contentsline {subsection}{\numberline {C.1.1}Transforma\IeC {\c c}\IeC {\~o}es do ciclo de ter\IeC {\c c}as maiores}{129}{subsection.C.1.1}
-\contentsline {subsection}{\numberline {C.1.2}Inser\IeC {\c c}\IeC {\~a}o de graus de cad\IeC {\^e}ncia (numerais romanos)}{130}{subsection.C.1.2}
-\contentsline {subsection}{\numberline {C.1.3}Detec\IeC {\c c}\IeC {\~a}o de contorno mel\IeC {\'o}dico}{131}{subsection.C.1.3}
-\contentsline {subsection}{\numberline {C.1.4}Detec\IeC {\c c}\IeC {\~a}o de escala ou cole\IeC {\c c}\IeC {\~a}o}{132}{subsection.C.1.4}
-\contentsline {subsection}{\numberline {C.1.5}Isola ritmos mais raros ou mais frequentes}{133}{subsection.C.1.5}
-\contentsline {subsection}{\numberline {C.1.6}Nomeia notas e acordes em uma partitura}{133}{subsection.C.1.6}
-\contentsline {section}{\numberline {C.2}CAC}{134}{section.C.2}
-\contentsline {subsection}{\numberline {C.2.1}Estudo de clich\IeC {\^e} a partir de escalas}{134}{subsection.C.2.1}
-\contentsline {subsection}{\numberline {C.2.2}Script Lilypond gerado por OM}{136}{subsection.C.2.2}
+\contentsline {chapter}{\chapternumberline {C}\MakeTextUppercase {Scripts}}{133}{appendix.C}
+\contentsline {section}{\numberline {C.1}Analise}{133}{section.C.1}
+\contentsline {subsection}{\numberline {C.1.1}Transforma\IeC {\c c}\IeC {\~o}es do ciclo de ter\IeC {\c c}as maiores}{133}{subsection.C.1.1}
+\contentsline {subsection}{\numberline {C.1.2}Inser\IeC {\c c}\IeC {\~a}o de graus de cad\IeC {\^e}ncia (numerais romanos)}{134}{subsection.C.1.2}
+\contentsline {subsection}{\numberline {C.1.3}Detec\IeC {\c c}\IeC {\~a}o de contorno mel\IeC {\'o}dico}{135}{subsection.C.1.3}
+\contentsline {subsection}{\numberline {C.1.4}Detec\IeC {\c c}\IeC {\~a}o de escala ou cole\IeC {\c c}\IeC {\~a}o}{136}{subsection.C.1.4}
+\contentsline {subsection}{\numberline {C.1.5}Isola ritmos mais raros ou mais frequentes}{137}{subsection.C.1.5}
+\contentsline {subsection}{\numberline {C.1.6}Nomeia notas e acordes em uma partitura}{137}{subsection.C.1.6}
+\contentsline {section}{\numberline {C.2}CAC}{138}{section.C.2}
+\contentsline {subsection}{\numberline {C.2.1}Estudo de clich\IeC {\^e} a partir de escalas}{138}{subsection.C.2.1}
+\contentsline {subsection}{\numberline {C.2.2}Script Lilypond gerado por OM}{140}{subsection.C.2.2}
 \vspace {\cftbeforechapterskip }

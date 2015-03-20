@@ -1,0 +1,105 @@
+\version "2.9"
+
+\score { 
+ { 
+
+\new StaffGroup
+<<
+\new Staff
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%% VOICE : 1 %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\override TupletNumber #'text = #tuplet-number::calc-fraction-text
+
+
+#(set-accidental-style 'modern)
+
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 1 %%%%%%%%%%%%%%%%%%%%%%%
+\time 13/8
+< cis, cis,,>8
+cis8
+< cis gis,>8
+cis'8
+< gis f>8
+gis8
+< cis' aisih>8
+cis''8
+< f' dis''>8
+f''8
+< gis' fisih'>8
+gis'8
+< eih' aih'''>8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 2 %%%%%%%%%%%%%%%%%%%%%%%
+aisih''8
+< cis' c''''>8
+cis''''8
+< cis'' gis''>8
+g'''8
+< f'' fih'''>8
+eih''8
+< gih'' dis''''>8
+cisih'''8
+< gis'' c''>8
+ais'''8
+< gisih' gis'>8
+fih''8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 3 %%%%%%%%%%%%%%%%%%%%%%%
+\time 12/8
+< cih'' dis''>8
+c'''8
+< f'' gis>8
+dis''8
+< gis'' gis>2..
+r8
+}
+>>
+}
+
+
+\layout {
+indent = 0.0
+\context {\Score 
+	  %% This is if you we use mensural type bars (uncomment next line) :
+	   %%\override BarLine #'transparent = ##t 
+         \override TupletBracket #'staff-padding = #1.5
+         \override TupletBracket #'direction = #1
+         \override TupletBracket #'bracket-visibility = ##t
+          \override Stem #'stemlet-length = #0.75
+	  \remove "Mark_engraver" %%%for the fermata on barline 
+	   \override MetronomeMark #'padding = #2.5
+
+	  \remove "Timing_translator"
+	  \remove "Default_bar_line_engraver"
+
+         }
+\context {\Staff
+	  minimumVerticalExtent = #'(-6 . 6)
+          %%%tupletNumberFormatFunction = #fraction-tuplet-formatter
+          \override TimeSignature #'style = #'()
+          \override NoteHead #'style = #'baroque
+	   \override DynamicLineSpanner #'staff-padding = #3  %%add this by default Should I ??
+	   \consists "Mark_engraver" %%%for the fermata on barline
+
+          \consists "Timing_translator"
+	  \consists "Default_bar_line_engraver"
+
+}
+}
+
+
+\header {
+   breakbefore = ##t
+    title = \markup \center-align { "Da Title" }
+%%    subtitle = "the subtitle,"
+%%    dedication = "toto"
+%%    poet = "tutu"
+    composer =  \markup \center-align { "me" \small "(2006)" }
+%%    meter = \markup { \teeny "m" \tiny "e" \normalsize "t" \large "e" \huge "r" }
+%%    piece = "Piece"
+  }
+
+
+}
+
+

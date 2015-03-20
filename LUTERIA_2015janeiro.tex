@@ -128,7 +128,7 @@ procnamekeys={def,class}}
 \titulo{Luteria Composicional de algoritmos pós-tonais }
 \autor{Guilherme Rafael Soares}
 %\local{Brasil}
-\data{12 de março de 2015, v1.0FINAL}
+\data{13 de março de 2015, v1.1FINAL}
 \orientador{Prof. Dr. Daniel Quaranta}
 %\coorientador{Equipe \abnTeX}
 \instituicao{%
@@ -322,8 +322,8 @@ procnamekeys={def,class}}
    Trabalho aprovado \imprimirlocal, 13 de fevereiro de 2015:
 
    \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
-   \assinatura{\textbf{Professor} \\ Convidado 1}
-   \assinatura{\textbf{Professor} \\ Convidado 2}
+   \assinatura{\textbf{Prof. Dr. Alexandre Sperandéo Fenerich} \\ Titular interno}
+   \assinatura{\textbf{Prof. Dr. Cristiano Severo Figueiró} \\ Titular externo}
    %\assinatura{\textbf{Professor} \\ Convidado 3}
    %\assinatura{\textbf{Professor} \\ Convidado 4}
       
@@ -366,10 +366,10 @@ procnamekeys={def,class}}
 % Epígrafe cortazar
 % ---
 %\begin{epigrafe}
-%    \vspace*{\fill}
-%	\begin{flushright}
-%		\textit{``Quantas vezes me pergunto se isto não é mais do que escrita, numa época em que corremos para o %engano entre equações infalíveis e máquinas de conformismos? Mas perguntar se saberemos encontrar o outro lado do %hábito ou se mais vale se deixar levar pela sua alegre cibernética, não será mais uma vez literatura? Revolta, %conformismo, angústia, alimentos terrestres, todas as dicotomias: o Yin e o Yang, a contemplação (...) e, %finalmente; um encolher de ombros, a paz, o parafuso foi a paz, ninguém podia passar pela rua sem olhar de soslaio %para o parafuso e sentir que ele era a paz. \cite{cortazar1963} }
-%	\end{flushright}
+ %   \vspace*{\fill}
+	%\begin{flushright}
+	%	\textit{aqui desenho de um LP preferido-contracapa: ou 78 restrições seriam outras: antes de 0,618: se é possível esquecer: e há gosto em esquecer: algo isola. eu isolei?: um algarismo por dentro. (Lucida Sans) }
+	%\end{flushright}
 %\end{epigrafe}
 
 
@@ -508,7 +508,7 @@ Em seu livro sobre música e mediação tecnológica, Fernando \citeonline[ p.18
 
 Em experimentos pioneiros da História da música algorítmica , como na \textit{Suíte Illiac} de \citeonline{hiller1957musical}, ainda buscava-se a legitimação de uma computação musical a partir da aplicação estatística de restrições composicionais derivadas das regras de harmonia e contraponto, emulando as técnicas do compositor ocidental tradicional, treinado nas partituras. 
 
-Provada a possibilidade de um \textit{"computador ser usado para compor"}, logo começam expansões de técnicas \textit{muito complexas para serem pensadas sem o auxílio do computador}, através de aplicações de teorias matemáticas mais avançadas sobre a serialização de eventos partituráveis. No entanto este serialismo integral e ortodoxo vai aos poucos sendo permeado por uma música computacional que estimula a busca por sonoridades não-restritas a organização das 12 alturas da escala temperada, estimulado pelos experimentos da era inaugurada pela música eletroacústica e pela música concreta.\footnote{Para um comentário histórico sobre o inicio da influência serialista na música eletrônica ver \cite{stockhausen1996unidade}. } 
+Provada a possibilidade de um \textit{"computador ser usado para compor"}, logo começam expansões de técnicas \textit{muito complexas para serem pensadas sem o auxílio do computador}, através de aplicações de teorias matemáticas mais avançadas sobre a serialização de eventos partituráveis. No entanto este serialismo integral e ortodoxo vai aos poucos sendo permeado por uma música computacional que estimula a busca por sonoridades não-restritas a organização das 12 alturas da escala temperada, estimulado pelos experimentos da era inaugurada pela música eletroacústica e pela música concreta.\footnote{Para um comentário histórico sobre o inicio da influência serialista na música eletrônica ver \citeonline{stockhausen1996unidade}. } 
 
 O computador passa a ser cada vez mais usado para a pesquisa sobre síntese sonora e em dado momento sua capacidade de memória passa a permitir também manipulações muito avançadas em sons gravados. Os experimentos concretos e eletrônicos com todo espectro audível passam a ser \textbf{uma das primeiras coisas que um músico iniciado pela computação terá contato}, já que o uso dos processos partiturados estarão sempre de alguma forma ligados a tradições ocidentais da orquestração ou estudo de instrumentos musicais de um repertorio de prática comum.
 
@@ -1002,6 +1002,7 @@ Na figura 22 um exemplo de 3 possibilidades onde o resultado são tríades maior
 
 
 \section{Células de Altura de Antokoletz}
+\label{celZ}
 
 Elliot Antokoletz fundamenta boa parte de sua argumentação em seu livro \textit{"The music of Béla Bartók: a study of tonality and progression in twentieth-century music."}\cite{antokoletz1984music} em torno da ideia de subdivisão da oitava em um complexo de ciclos intervalares rotacionados, operando identidades motívicas. 
 
@@ -1451,7 +1452,7 @@ Um exemplo interessante desta estratégia de separar as coleções entre um osti
 	\begin{center}
 	    \includegraphics[scale=0.45]{ostinatos/boating_ostinato.png}
 	\end{center}
-	\legend{Fonte: autor }
+	\legend{Fonte: autor }I
 \end{figure}
 
 Na \autoref{m21} fazemos uma análise assistida por computador de Mikrokosmos 41, onde demonstramos uma estatégia de construção polimodal e simultânea a uma melodia de sonoridade pentatônica.
@@ -2588,6 +2589,7 @@ Além da possibilidade de iterar as listas de notas dentro de um loop utilizando
 
 
 \subsubsection{Perfis motívicos}
+\label{perfis}
 
 Uma biblioteca OM interessante para a exploração de contornos e estratégias de perfis motívicos, é a Profile. Abaixo a figura de um patch onde utilizo o objeto compress/expand para gerar uma estrutura de simetria proporcional, baseada na célula Z (vetor de intervalos [0,1,6,7] ) de Antokoletz. 
 
@@ -2715,7 +2717,7 @@ Interessa também como desdobramento desta pesquisa a ampliação dos parâmetro
 
 A teoria de grupos de classes de altura utiliza como base de suas formulações a relação entre os 12 semitons da escala cromática de forma modular: considerando alturas de mesma oitava como sujeitas mesmas propriedades intervalares, podendo argumentar relações independentes de registro. Exemplo: O Dó grave representado no protocolo MIDI pelo valor 24 tem uma relação de equivalência com o Dó agudo de valor 72. A fórmula é simples: ambos quando divididos por 12 apresentam resto 0. A nota Ré, por exemplo, sempre apresentaria o resto 2, e assim por diante. Dizemos portanto que pertencem a uma mesma classe de altura.
 
-Diferente de quando argumentada uma enarmonia funcional\footnote{ver \autoref{solfejo} } (como por exemplo  $Ré\sharp \to Mi\flat$ ) a teoria de grupos e classes de altura não toma como princípio ideias do tipo "terça maior ou menor", "nota sensível" ou "nota de passagem"\ pois vai partir de uma relação direta entre os aglomerados sonoros, buscando similaridades e equivalências sem estar tão presa as formas de prolongamento normatizadas pelo tonalismo clássico. \cite{lerdahl1989atonal,straus1987problem}
+Diferente de quando argumentada uma enarmonia funcional\footnote{Uma discussão aprofundada do problema em seu escopo algorítmico está no conceito de \textit{"solfejo de classe de altura"} de \citeonline[ p.123]{temperley2001cognition}} (como por exemplo  $Ré\sharp \to Mi\flat$ ) a teoria de grupos e classes de altura não toma como princípio ideias do tipo "terça maior ou menor", "nota sensível" ou "nota de passagem"\ pois vai partir de uma relação direta entre os aglomerados sonoros, buscando similaridades e equivalências sem estar tão presa as formas de prolongamento normatizadas pelo tonalismo clássico. \cite{lerdahl1989atonal,straus1987problem}
 
 Os intervalos são, sobretudo, distâncias. Nas teorias de classes de alturas essas distâncias podem estar categorizadas como intervalos ordenados - usando número negativos para os intervalos descendentes, ou não-ordenados - considerando intervalos equivalentes independentes de suas direções.\cite[p. 6]{straus2004}
 
@@ -2992,10 +2994,49 @@ O importante deste estudo foi o uso dos módulos de escalas da biblioteca Music2
 
 Seu script gerador esta no \autoref{scriptescalas}.
 
+\subsection{CosmoBagatella $ \frac{1}{\Phi} $ - Epigrafe }
+
+\begin{figure}[!h]
+	\begin{center}
+	    \includegraphics*[scale=0.4]{score/epigrafe01.png}
+	\end{center}
+\end{figure}
+\pagebreak
+
+\begin{figure}[!h]
+	\begin{center}
+	    \includegraphics*[scale=0.4]{score/epigrafe02.png}
+	\end{center}
+\end{figure}
+
+\begin{figure}[!h]
+	\begin{center}
+	    \includegraphics*[scale=0.4]{score/epigrafe03.png}
+	\end{center}
+\end{figure}
+
+\begin{figure}[!h]
+	\begin{center}
+	    \includegraphics*[scale=0.4]{score/epigrafe04.png}
+	\end{center}
+\end{figure}
 
 
+\begin{figure}[!h]
+	\begin{center}
+	    \includegraphics*[scale=0.4]{score/epigrafe05.png}
+	\end{center}
+\end{figure}
+\pagebreak
 
 
+Esta miniatura aplica os apontamentos de macroforma apontados por \citeonline{lendvai1971bela} e descritos na \autoref{fibo}, construíndo uma peça que tem várias subestruturas segmentadas pela secção áurea para estruturação de um encadeamento entre partes. 
+
+Começando pela escolha das figuras de compasso 3/8 , 5/8, 5+8/8 (e 13/8) e as entradas destas mudanças de figura marcando bem transições de secção entre transições da proporção (entradas nos compassos 5,8,13,21, acabando em 33).
+
+A composição inicia com um esquema baseado entre a variação da célula Z (0,1,6,7 - comentada na \autoref{celZ} ) na suas transposições Dó (Dó, Dó$\sharp$, Fá$\sharp $ e Sol ), Si (Si, Dó, Fá, Fá$\sharp $ ) e Dó$\sharp$ (Dó$\sharp$, Ré, Sol, Sol$\sharp$ ). 
+
+Articula uma ponte com melodias derivadas da séria acústica de Dó$\sharp$ e finaliza construindo uma progressão de simetrias (variando intervalos de 2 e 3 semitons) baseada nos estudos de perfil comentados na \autoref{perfis} .
 
 
 

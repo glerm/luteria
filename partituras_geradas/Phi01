@@ -1,0 +1,149 @@
+\version "2.9"
+
+\score { 
+ { 
+
+\new StaffGroup
+<<
+\new Staff
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%% VOICE : 1 %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\override TupletNumber #'text = #tuplet-number::calc-fraction-text
+
+
+#(set-accidental-style 'modern)
+
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 1 %%%%%%%%%%%%%%%%%%%%%%%
+\time 6/8
+dis'8
+a8
+dis,8
+a,,8
+dis'8
+a8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 2 %%%%%%%%%%%%%%%%%%%%%%%
+dis,8
+ais,,8
+dis'8
+a8
+e,8
+dis,8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 3 %%%%%%%%%%%%%%%%%%%%%%%
+dis'8
+a8
+a,8
+e,8
+dis'8
+ais8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 4 %%%%%%%%%%%%%%%%%%%%%%%
+dis8
+ais,8
+dis'8
+ais8
+dis8
+dis8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 5 %%%%%%%%%%%%%%%%%%%%%%%
+dis'8
+ais8
+e8
+e8
+dis'8
+ais8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 6 %%%%%%%%%%%%%%%%%%%%%%%
+a8
+a8
+dis'8
+dis'8
+dis'8
+dis'8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 7 %%%%%%%%%%%%%%%%%%%%%%%
+dis'8
+dis'8
+dis'8
+dis'8
+dis'8
+dis'8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 8 %%%%%%%%%%%%%%%%%%%%%%%
+e'8
+a'8
+dis'8
+dis'8
+a'8
+ais'8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 9 %%%%%%%%%%%%%%%%%%%%%%%
+dis'8
+dis'8
+dis''8
+dis''8
+dis'8
+dis'8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 10 %%%%%%%%%%%%%%%%%%%%%%%
+dis''8
+e''8
+dis'8
+dis'8
+e''8
+a''8
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 11 %%%%%%%%%%%%%%%%%%%%%%%
+dis'8
+dis'8
+a''8
+dis'''8
+dis'4~
+%%%%%%%%%%%%%%%%%%%%%%% MESURE : 12 %%%%%%%%%%%%%%%%%%%%%%%
+\time 5/8
+dis'2~
+dis'8
+}
+>>
+}
+
+
+\layout {
+indent = 0.0
+\context {\Score 
+	  %% This is if you we use mensural type bars (uncomment next line) :
+	   %%\override BarLine #'transparent = ##t 
+         \override TupletBracket #'staff-padding = #1.5
+         \override TupletBracket #'direction = #1
+         \override TupletBracket #'bracket-visibility = ##t
+          \override Stem #'stemlet-length = #0.75
+	  \remove "Mark_engraver" %%%for the fermata on barline 
+	   \override MetronomeMark #'padding = #2.5
+
+	  \remove "Timing_translator"
+	  \remove "Default_bar_line_engraver"
+
+         }
+\context {\Staff
+	  minimumVerticalExtent = #'(-6 . 6)
+          %%%tupletNumberFormatFunction = #fraction-tuplet-formatter
+          \override TimeSignature #'style = #'()
+          \override NoteHead #'style = #'baroque
+	   \override DynamicLineSpanner #'staff-padding = #3  %%add this by default Should I ??
+	   \consists "Mark_engraver" %%%for the fermata on barline
+
+          \consists "Timing_translator"
+	  \consists "Default_bar_line_engraver"
+
+}
+}
+
+
+\header {
+   breakbefore = ##t
+    title = \markup \center-align { "Da Title" }
+%%    subtitle = "the subtitle,"
+%%    dedication = "toto"
+%%    poet = "tutu"
+    composer =  \markup \center-align { "me" \small "(2006)" }
+%%    meter = \markup { \teeny "m" \tiny "e" \normalsize "t" \large "e" \huge "r" }
+%%    piece = "Piece"
+  }
+
+
+}
+
+
