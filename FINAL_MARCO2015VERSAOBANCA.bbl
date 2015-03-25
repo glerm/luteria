@@ -1,0 +1,303 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[Andreatta, Rahn e Bardez 2013]{aroundset2013}
+\abntrefinfo{Andreatta, Rahn e Bardez}{ANDREATTA; RAHN; BARDEZ}{2013}
+{ANDREATTA, M.; RAHN, J.; BARDEZ, J.~M. \emph{Around set theory}. [S.l.]:
+  Delatour France, 2013.
+ISBN 2752100523.}
+
+\bibitem[Antokoletz 1984]{antokoletz1984music}
+\abntrefinfo{Antokoletz}{ANTOKOLETZ}{1984}
+{ANTOKOLETZ, E. \emph{The music of B{\'e}la Bart{\'o}k: a study of tonality and
+  progression in twentieth-century music}. [S.l.]: Univ of California Press,
+  1984.}
+
+\bibitem[Ariza e Cuthbert 2011]{ariza2011analytical}
+\abntrefinfo{Ariza e Cuthbert}{ARIZA; CUTHBERT}{2011}
+{ARIZA, C.; CUTHBERT, M.~S. \emph{Analytical and compositional applications of
+  a network-based scale model in music21}. [S.l.]: Ann Arbor, MI: MPublishing,
+  University of Michigan Library, 2011.}
+
+\bibitem[Assayag et al. 1999]{assayag1999computer}
+\abntrefinfo{Assayag et al.}{ASSAYAG et al.}{1999}
+{ASSAYAG, G. et al. Computer-assisted composition at ircam: From patchwork to
+  openmusic.
+\emph{Computer Music Journal}, MIT Press, v.~23, n.~3, p. 59--72, 1999.}
+
+\bibitem[Bart{\'o}k e Suchoff 1993]{bartok1993bela}
+\abntrefinfo{Bart{\'o}k e Suchoff}{BART{\'O}K; SUCHOFF}{1993}
+{BART{\'O}K, B.; SUCHOFF, B. \emph{B{\'e}la Bart{\'o}k Essays}. [S.l.]: Univ of
+  Nebraska Pr, 1993.}
+
+\bibitem[Berger 1963]{berger1963problems}
+\abntrefinfo{Berger}{BERGER}{1963}
+{BERGER, A. Problems of pitch organization in stravinsky.
+\emph{Perspectives of New Music}, JSTOR, p. 11--42, 1963.}
+
+\bibitem[Bernard 1986]{bernard1986space}
+\abntrefinfo{Bernard}{BERNARD}{1986}
+{BERNARD, J.~W. Space and symmetry in bart{\'o}k.
+\emph{Journal of Music Theory}, JSTOR, p. 185--201, 1986.}
+
+\bibitem[Bishop et al. 2006]{bishop2006pattern}
+\abntrefinfo{Bishop et al.}{BISHOP et al.}{2006}
+{BISHOP, C.~M. et al. \emph{Pattern recognition and machine learning}. [S.l.]:
+  springer New York, 2006.}
+
+\bibitem[Bresson, Agon e Assayag 2011]{bresson2011openmusic}
+\abntrefinfo{Bresson, Agon e Assayag}{BRESSON; AGON; ASSAYAG}{2011}
+{BRESSON, J.; AGON, C.; ASSAYAG, G. Openmusic: visual programming environment
+  for music composition, analysis and research. In:  ACM. \emph{Proceedings of
+  the 19th ACM international conference on Multimedia}. [S.l.], 2011. p.
+  743--746.}
+
+\bibitem[Bresson e P{\'e}rez-Sancho 2012]{bresson2012new}
+\abntrefinfo{Bresson e P{\'e}rez-Sancho}{BRESSON; P{\'E}REZ-SANCHO}{2012}
+{BRESSON, J.; P{\'E}REZ-SANCHO, C. New framework for score segmentation and
+  analysis in openmusic.
+\emph{Proceedings Sound and Music Computing Conference}, Copenhagen, Denmark,
+  2012.}
+
+\bibitem[Cohn 1988]{cohn1988inversional}
+\abntrefinfo{Cohn}{COHN}{1988}
+{COHN, R. Inversional symmetry and transpositional combination in bart{\'o}k.
+\emph{Music Theory Spectrum}, JSTOR, p. 19--42, 1988.}
+
+\bibitem[Cohn 1991]{cohn1991bartok}
+\abntrefinfo{Cohn}{COHN}{1991}
+{COHN, R. Bartok's octatonic strategies: A motivic approach.
+\emph{Journal of the American musicological society}, JSTOR, p. 262--300,
+  1991.}
+
+\bibitem[Cooper 1998]{cooper1998unfolding}
+\abntrefinfo{Cooper}{COOPER}{1998}
+{COOPER, D. The unfolding of tonality in the music of b{\'e}la bart{\'o}k.
+\emph{Music Analysis}, JSTOR, p. 21--38, 1998.}
+
+\bibitem[Cope 2004]{cope2004virtual}
+\abntrefinfo{Cope}{COPE}{2004}
+{COPE, D. \emph{Virtual Music: Computer Synthesis of Musical Style}. [S.l.]:
+  MIT Press, 2004.}
+
+\bibitem[Dubnov et al. 2003]{dubnov2003using}
+\abntrefinfo{Dubnov et al.}{DUBNOV et al.}{2003}
+{DUBNOV, S. et al. Using machine-learning methods for musical style modeling.
+\emph{Computer}, IEEE, v.~36, n.~10, p. 73--80, 2003.}
+
+\bibitem[Dunsby e Whittall 2011]{dunsby2011analise}
+\abntrefinfo{Dunsby e Whittall}{DUNSBY; WHITTALL}{2011}
+{DUNSBY, J.; WHITTALL, A. \emph{An{\'a}lise musical na teoria e na
+  pr{\'a}tica}. [S.l.: s.n.], 2011.}
+
+\bibitem[Forte 1973]{forte1973structure}
+\abntrefinfo{Forte}{FORTE}{1973}
+{FORTE, A. \emph{The structure of atonal music}. [S.l.]: Yale University Press,
+  1973.}
+
+\bibitem[Forte 1991]{forte1991debussy}
+\abntrefinfo{Forte}{FORTE}{1991}
+{FORTE, A. Debussy and the octatonic.
+\emph{Music Analysis}, JSTOR, p. 125--169, 1991.}
+
+\bibitem[Fosler-Lussier 2007]{fosler2007music}
+\abntrefinfo{Fosler-Lussier}{FOSLER-LUSSIER}{2007}
+{FOSLER-LUSSIER, D. \emph{Music divided: Bart{\'o}k's legacy in cold war
+  culture}. [S.l.]: Univ of California Press, 2007.}
+
+\bibitem[Gillies 1995]{gillies1995bartok}
+\abntrefinfo{Gillies}{GILLIES}{1995}
+{GILLIES, M. Bart{\'o}k analysis and authenticity.
+\emph{Studia Musicologica}, JSTOR, p. 319--327, 1995.}
+
+\bibitem[Guigue 2012]{guigue2012}
+\abntrefinfo{Guigue}{GUIGUE}{2012}
+{GUIGUE, D. \emph{Estética da Sonoridade}. S{\~a}o Paulo: Editora Perpectiva,
+  2012.}
+
+\bibitem[Hiller e Isaacson 1957]{hiller1957musical}
+\abntrefinfo{Hiller e Isaacson}{HILLER; ISAACSON}{1957}
+{HILLER, L.; ISAACSON, L. Musical composition with a high speed digital
+  computer. In:  AUDIO ENGINEERING SOCIETY. \emph{Audio Engineering Society
+  Convention 9}. [S.l.], 1957.}
+
+\bibitem[Huron 2006]{huron2006sweet}
+\abntrefinfo{Huron}{HURON}{2006}
+{HURON, D.~B. \emph{Sweet anticipation: Music and the psychology of
+  expectation}. [S.l.]: MIT press, 2006.}
+
+\bibitem[Iazzetta 2009]{iazzetta2009musica}
+\abntrefinfo{Iazzetta}{IAZZETTA}{2009}
+{IAZZETTA, F. \emph{M{\'u}sica e media{\c{c}}{\~a}o tecnol{\'o}gica}. S{\~a}o
+  Paulo: Perspectiva-Fapesp, 2009.}
+
+\bibitem[K{\'a}rp{\'a}ti 2006]{karpati2006axis}
+\abntrefinfo{K{\'a}rp{\'a}ti}{K{\'A}RP{\'A}TI}{2006}
+{K{\'A}RP{\'A}TI, J. Axis tonality and golden section theory reconsidered.
+\emph{Studia Musicologica Academiae Scientiarum Hungaricae}, Akad{\'e}miai
+  Kiad{\'o}, v.~47, n.~3, p. 417--426, 2006.}
+
+\bibitem[Kroger 2012]{Kroger201208}
+\abntrefinfo{Kroger}{KROGER}{2012}
+{KROGER, P. \emph{Music for Geeks and Nerds}. [S.l.]: CreateSpace Independent
+  Publishing Platform, 2012.}
+
+\bibitem[Krumhansl 1983]{krumhansl1983perceptual}
+\abntrefinfo{Krumhansl}{KRUMHANSL}{1983}
+{KRUMHANSL, C.~L. Perceptual structures for tonal music.
+\emph{Music Perception}, JSTOR, p. 28--62, 1983.}
+
+\bibitem[Krumhansl 1990]{krumhansl1990cognitive}
+\abntrefinfo{Krumhansl}{KRUMHANSL}{1990}
+{KRUMHANSL, C.~L. \emph{Cognitive foundations of musical pitch}. [S.l.]: Oxford
+  University Press New York, 1990.}
+
+\bibitem[Lendvai 1962]{lendvai1962duality}
+\abntrefinfo{Lendvai}{LENDVAI}{1962}
+{LENDVAI, E. \emph{Duality and synthesis in the music of B{\'e}la Bart{\'o}k}.
+  [S.l.: s.n.], 1962.}
+
+\bibitem[Lendvai 1971]{lendvai1971bela}
+\abntrefinfo{Lendvai}{LENDVAI}{1971}
+{LENDVAI, E. \emph{B{\'e}la Bart{\'o}k: an analysis of his music}. [S.l.]: Kahn
+  \& Averill London, 1971.}
+
+\bibitem[Lerdahl 1989]{lerdahl1989atonal}
+\abntrefinfo{Lerdahl}{LERDAHL}{1989}
+{LERDAHL, F. Atonal prolongational structure.
+\emph{Contemporary Music Review}, Taylor \& Francis, v.~4, n.~1, p. 65--87,
+  1989.}
+
+\bibitem[Lerdahl e Jackendoff 1983]{lerdahl1983generative}
+\abntrefinfo{Lerdahl e Jackendoff}{LERDAHL; JACKENDOFF}{1983}
+{LERDAHL, F.; JACKENDOFF, R.~S. \emph{A generative theory of tonal music}.
+  [S.l.]: MIT press, 1983.}
+
+\bibitem[Lester 1989]{lester1989analytic}
+\abntrefinfo{Lester}{LESTER}{1989}
+{LESTER, J. Analytic approaches to twentieth-century music.
+WW Norton \& Company, 1989.}
+
+\bibitem[Meyer 1956]{meyer1956emotion}
+\abntrefinfo{Meyer}{MEYER}{1956}
+{MEYER, L.~B. \emph{Emotion and meaning in music}. [S.l.]: University of
+  Chicago Press, 1956.  (Phoenix books).}
+
+\bibitem[Nierhaus 2009]{nierhaus2009algorithmic}
+\abntrefinfo{Nierhaus}{NIERHAUS}{2009}
+{NIERHAUS, G. \emph{Algorithmic composition: paradigms of automated music
+  generation}. [S.l.]: Springer, 2009.}
+
+\bibitem[Pardo e Birmingham 2002]{pardo2002algorithms}
+\abntrefinfo{Pardo e Birmingham}{PARDO; BIRMINGHAM}{2002}
+{PARDO, B.; BIRMINGHAM, W.~P. Algorithms for chordal analysis.
+\emph{Computer Music Journal}, MIT Press, v.~26, n.~2, p. 27--49, 2002.}
+
+\bibitem[Pearsall 2004]{pearsall2004symmetry}
+\abntrefinfo{Pearsall}{PEARSALL}{2004}
+{PEARSALL, E. Symmetry and goal-directed motion in music by b{\'e}la bart{\'o}k
+  and george crumb.
+\emph{Tempo}, Cambridge Univ Press, v.~58, n.~228, p. 32--40, 2004.}
+
+\bibitem[Perle 1955]{perle1955symmetrical}
+\abntrefinfo{Perle}{PERLE}{1955}
+{PERLE, G. Symmetrical formations in the string quartets of bela bartok.
+\emph{Music Review}, v.~16, n.~4, p.~311, 1955.}
+
+\bibitem[Perle 1981]{perle1981serial}
+\abntrefinfo{Perle}{PERLE}{1981}
+{PERLE, G. \emph{Serial Composition and Atonality: An Introduction to the Music
+  of Schoenberg, Berg, and Webern}. University of California Press, 1981.
+ISBN 9780520074309. Dispon{\'\i}vel em:
+  \url{http://books.google.com.br/books?id=4C8RjEaBRf4C}.}
+
+\bibitem[Perle 1990]{perle1990pitch}
+\abntrefinfo{Perle}{PERLE}{1990}
+{PERLE, G. Pitch-class set analysis: An evaluation.
+\emph{Journal of Musicology}, JSTOR, p. 151--172, 1990.}
+
+\bibitem[Rahn 1980]{rahn1980basic}
+\abntrefinfo{Rahn}{RAHN}{1980}
+{RAHN, J. \emph{Basic atonal theory}. [S.l.]: Longman New York, 1980.}
+
+\bibitem[Rahn 2004]{rahn2004swerve}
+\abntrefinfo{Rahn}{RAHN}{2004}
+{RAHN, J. The swerve and the flow: Music's relationship to mathematics.
+\emph{Perspectives of New Music}, Perspectives of New Music, v.~42, n.~1, p.
+  pp. 130--148, 2004.
+ISSN 00316016.
+Dispon{\'\i}vel em: \url{http://www.jstor.org/stable/25164542}.}
+
+\bibitem[Roads 1979]{roads1979grammars}
+\abntrefinfo{Roads}{ROADS}{1979}
+{ROADS, C. Grammars as representations for music.
+\emph{Computer Music Journal}, JSTOR, p. 48--55, 1979.}
+
+\bibitem[Smalley 1997]{smalley1997spectromorphology}
+\abntrefinfo{Smalley}{SMALLEY}{1997}
+{SMALLEY, D. Spectromorphology: explaining sound-shapes.
+\emph{Organised sound}, Cambridge Univ Press, v.~2, n.~02, p. 107--126, 1997.}
+
+\bibitem[Souza 2013]{de2013simetria}
+\abntrefinfo{Souza}{SOUZA}{2013}
+{SOUZA, R.~C. de. Simetria e outras propriedades estruturais de um conjunto
+  octat{\^o}nico alternativo usado em o livro dos sons.
+\emph{M{\'u}sica em Contexto}, v.~1, p. 144--171, 2013.}
+
+\bibitem[Stockhausen 1996]{stockhausen1996unidade}
+\abntrefinfo{Stockhausen}{STOCKHAUSEN}{1996}
+{STOCKHAUSEN, K. A unidade do tempo musical.
+In:  \underline{\ \ \ \ \ \ \ \ }. S{\~{a}}o Paulo: EDUSP, 1996.}
+
+\bibitem[Straus 1987]{straus1987problem}
+\abntrefinfo{Straus}{STRAUS}{1987}
+{STRAUS, J.~N. The problem of prolongation in post-tonal music.
+\emph{Journal of Music Theory}, JSTOR, p. 1--21, 1987.}
+
+\bibitem[Straus 1999]{straus1999myth}
+\abntrefinfo{Straus}{STRAUS}{1999}
+{STRAUS, J.~N. The myth of serial" tyranny" in the 1950s and 1960s.
+\emph{Musical Quarterly}, JSTOR, p. 301--343, 1999.}
+
+\bibitem[Straus 2004]{straus2004}
+\abntrefinfo{Straus}{STRAUS}{2004}
+{STRAUS, J.~N. \emph{Introduction to Post-Tonal Theory (3rd Edition)}. [S.l.]:
+  Pearson, 2004.}
+
+\bibitem[Suchoff 2004]{suchoff2004bartok}
+\abntrefinfo{Suchoff}{SUCHOFF}{2004}
+{SUCHOFF, B. \emph{Bart{\'o}k's Mikrokosmos: Genesis, Pedagogy, and Style}.
+  [S.l.]: Scarecrow Press, 2004.}
+
+\bibitem[Susanni e Antokoletz 2012]{susanni_antokoletz2012music}
+\abntrefinfo{Susanni e Antokoletz}{SUSANNI; ANTOKOLETZ}{2012}
+{SUSANNI, P.; ANTOKOLETZ, E. \emph{Music and Twentieth-century Tonality:
+  Harmonic Progression Based on Modality and the Interval Cycles}. [S.l.]:
+  Routledge, 2012.}
+
+\bibitem[Temperley 2001]{temperley2001cognition}
+\abntrefinfo{Temperley}{TEMPERLEY}{2001}
+{TEMPERLEY, D. \emph{The cognition of basic musical structures}. [S.l.]: MIT
+  press, 2001.}
+
+\bibitem[Treitler 1959]{treitler1959}
+\abntrefinfo{Treitler}{TREITLER}{1959}
+{TREITLER, L. Harmonic procedure in the" fourth quartet" of bela bart{\'o}k.
+\emph{Journal of Music Theory}, JSTOR, p. 292--298, 1959.}
+
+\bibitem[Xenakis 1992]{xenakis1992formalized}
+\abntrefinfo{Xenakis}{XENAKIS}{1992}
+{XENAKIS, I. \emph{Formalized music: thought and mathematics in composition}.
+  [S.l.]: Pendragon Press, 1992.}
+
+\bibitem[Ziv e Lempel 1977]{ziv1977universal}
+\abntrefinfo{Ziv e Lempel}{ZIV; LEMPEL}{1977}
+{ZIV, J.; LEMPEL, A. A universal algorithm for sequential data compression.
+\emph{IEEE Transactions on information theory}, v.~23, n.~3, p. 337--343,
+  1977.}
+
+\end{thebibliography}

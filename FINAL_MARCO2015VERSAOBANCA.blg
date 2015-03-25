@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: FINAL_MARCO2015VERSAOBANCA.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: mestrado_glerm.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex2.googlecode.com                           |
++---------------------------------------------------------+
+You've used 56 entries,
+            6711 wiz_defined-function locations,
+            1490 strings with 16040 characters,
+and the built_in function-call counts, 41350 in all, are:
+= -- 3245
+> -- 1130
+< -- 143
++ -- 537
+- -- 359
+* -- 2719
+:= -- 5660
+add.period$ -- 177
+call.type$ -- 56
+change.case$ -- 434
+chr.to.int$ -- 89
+cite$ -- 55
+duplicate$ -- 2425
+empty$ -- 3371
+format.name$ -- 1675
+if$ -- 9652
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 1008
+newline$ -- 259
+num.names$ -- 275
+pop$ -- 1243
+preamble$ -- 1
+purify$ -- 186
+quote$ -- 0
+skip$ -- 2474
+stack$ -- 1
+substring$ -- 1784
+swap$ -- 1081
+text.length$ -- 48
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1
+warning$ -- 0
+while$ -- 405
+width$ -- 0
+write$ -- 857

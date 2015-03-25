@@ -1299,33 +1299,83 @@ Para isto parte de uma série de definições para o particionamento das coleç�
 
 \end{itemize}
 
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} Relações de combinação transpositiva. Note-se, por exemplo, que os conjuntos 4-9, 4-25 e 4-28 produzem três combinações transpositivas diferentes, teriam portanto \textbf{"grau de fertilidade"\ 3}, segundo a classificação de \citeonline{cohn1991bartok}  }
+	\begin{center}
+	    \includegraphics[scale=0.35]{octa/trasposiCohn.png}
+	\end{center}
+	\legend{Fonte: \cite{cohn1991bartok} }
+\end{figure}
 
-Baseado nestasrgras, em seu levantamento de octacordes com maior grau de potencia e fertilidade \cite{cohn1991bartok} demonstra que a coleção octatônica (8-28) é a que mais destaca-se.
+
+Baseado nestas regras, e fazendo um levantamento de octacordes com maior grau de \textit{"potência e fertilidade"}, \citeonline[ p.270]{cohn1991bartok} demonstra que a coleção octatônica (8-28) é a que mais destaca-se, permitindo 11 ordenamentos em tétrades férteis e permitindo a partir destas 9 diferentes combinações transpositivas.
 
 
-Observando a partir disto as relações entre tétrades e díades permutadas da coleção octatônica é possível encontrar todas relações transpositivas possíveis (de 1 a 6 semitons).
+Organizando diferentes permutações de elementos de uma coleção octatônica em conjuntos de duas tétrades juntapostas possível encontrar nelas todas relações transpositivas possíveis (de 1 a 6 semitons). \citeonline[ p.271]{cohn1991bartok} constrói uma tabela engenhosa para demonstrar estas permutações. 
 
+Como exemplo, na figura 33 destaquei da tabela original de Cohn a permutação que gera a partir das duas tétrades do \textit{"conjunto Z de Antokoletz"}\footnote{ \autoref{celZ}} grupos de díades que possuem intervalos internos de 1, 5 ou 6 semitons .
 
-Inspirado neste estudo implementei em um patch de OpenMusic (figura 32) um estudo das relações transpositivas das permutações internas na célula 4-9 ( 0167 , ou célula Z de Antokoletz).
+A tabela também mapeia o retorno das díades para as tétrades, indicando em quais tétrades podemos encontrar aquelas díades.
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico} As permutações de díades internas a uma célula Z de Antokoletz, pode ser reduzida a três coleções intervalares de 1, 5 ou 6 semitons. Este patch de OM mede as combinações transpositivas para qualquer tétrade permutada podendo encontrar todas as relações da tabela de \citeonline[ p.271]{cohn1991bartok} }
+	\caption{\label{fig_grafico} Tabela de grupos de tétrades derivadas da coleção octatônica e suas coleções de combinaçoes transpositivas}
 	\begin{center}
-	    \includegraphics[scale=0.5]{strategies/RotacionaZ.png}
+	    \includegraphics[scale=0.28]{octa/Tetrarelations03.png}
+	\end{center}
+	\legend{Fonte: \cite[ grifos nossos]{cohn1991bartok} }
+\end{figure}
+
+Cohn utiliza a reflexão sobre as combinações transpositivas para retirar alguns insights em análises de estratégias octatônicas em Bartók. Destaco aqui da sua observação sobre a peça Mikrokosmos nº109 ( \textit{"From de Island of Bali"} ) o uso simultâneo de dois arranjos da coleção octatônica: a ordenação baseada na justaposição das células Z (intervalos 0, 1, 6, 7 semitons) e a inserção dos arranjos com a justaposição de tétrades da coleção nomeada por Forte como 4-26 - que é formata pela ordenação de distâncias em (0, 3, 5, 8)  semitons. 
+
+Utilizei a sugestão de Cohn para construir dois patches de OpenMusic que fazem a redução das permutações possíveis das tétrades, organizando as díades em sua ordenação de menor para maior classe de alturas e permitindo a audição das sonoridades observadas, facilitando seu uso em procedimentos de composição derivados.
+
+Na figura 34 demonstro as permutações da célula Z. Fica bastante intuitivo também observar no objeto de OpenMusic \textit{"n-cercle"} que a união dos dois conjuntos de tétrades pode formar uma octatônica.
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} As permutações de díades internas a uma célula Z de Antokoletz, pode ser reduzida a três coleções intervalares de 1, 5 ou 6 semitons (ou suas inversões). Este patch de OM mede as combinações transpositivas para qualquer tétrade permutada podendo encontrar todas as relações da tabela de \citeonline[ p.271]{cohn1991bartok} }
+	\begin{center}
+	    \includegraphics[scale=0.55]{octa/permutaCEL_Z.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
-Na figura 33 temos em detalhes todas as permutações transpositivas do tetracorde.
+Em \textit{Mikrokosmos 109} temos de maneira bastante destacada a sonoridade da célula Z de Antokoletz (coleção 4-9 de Forte), que se faz presente já na introdução do tema, de maneira predominante. Cohn sublinha no entanto o fato de que as "notas estranhas" a célula Z (circuladas na figura 35 com a letra X) são já citações para entrada da coleção 4-26, que é usada para destacar os intervalos de 3 e 5 semitons.
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico} Aqui conferimos os três intervalos comuns para a rotação da octatônica que produz a célula Z e todas suas transposições}
+	\caption{\label{fig_grafico} Tétrade da coleção 4-26 citada no ínicio de Mikrokosmos 109. }
 	\begin{center}
-	    \includegraphics[scale=0.3]{strategies/strategieZCELL.png}
+	    \includegraphics[scale=0.3]{octa/mikro_Bali01.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
-\pagebreak
+
+Os compassos finais da peça \textit{Mikrokosmos 109}\footnote{E sobretudo os acordes de resolução - ver figura 36} demostram que Bartók havia usado de fato o apontamento feito por Cohn: a justaposição das duas tétrades da coleção 4-26 formam uma coleção octatônica completa \footnote{Conferir na figura 37}, usada durante toda a composição como uma alternativa a permutação da octatônica formada pela justaposição de duas tétrades da coleção 4-9. 
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} A conjunção das duas tétrades (X e Y) da coleção 4-26 formam uma segunda ordenação da coleção octatônica. Os acordes finais destacam a possibilidade de justaposição de X+Y. As notas Sol e Ré$\flat$ são as únicas que figuram fora das configurações octatônicas como ornamento entre as coleções motívicas.  }
+	\begin{center}
+	    \includegraphics[scale=0.3]{octa/mikro_Bali02.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+Na figura 37 o patch de OpenMusic que faz a redução das permutações da octatônica formada pela justaposição de coleções 4-26 demostra também algumas particularidades: a) É possível formar duas ordenações de octatônicas que são derivadas destas tétrades b) Estas quatro tétrades formam segmentos iniciados pelas notas dos extremos do sistema da eixos apontado por Lendvai\footnote{Rever \autoref{lendvai_eixos}. } [Dó, Mi$\flat$, Sol$\flat$, Lá] c) São consideradas \textit{"combinações transpositivas"}\ apenas os intervalos de 3 e 5 semitons pois encontram pares dentro da própria tétrade. É no entanto interessante observar que a presença de intervalos de terça maior e tom inteiro podem auxiliar na estratégia de uso da coleção.
+
+
+\begin{figure}[!h]
+	\caption{\label{fig_grafico} Coleção 4-26 }
+	\begin{center}
+	    \includegraphics[scale=0.5]{octa/permuta4_26.png}
+	\end{center}
+	\legend{Fonte: autor }
+\end{figure}
+
+
+
+
+
+
 %\subsection{Combinação transpositiva em Mikrokosmos 109}
 
 %resumo e comentários sobre \cite[ 272-275]{cohn1991bartok}
@@ -1436,7 +1486,7 @@ Nas palavras do próprio Bartok, sobre a estratégia de usar acordes com empilha
 \end{citacao}
 
 
-É importante também destacar que muitas vezes Bartók utiliza uma linha pentatônica no baixo que é utilizada para atenuar o cromatismo enquanto introduz estrategicamente com a melodia\footnote{E vice-versa com a pentatônica na melodia e cromatismos no baixo.} notas estranhas a pentatônica criando texturas polimodais, octatônicas ou de maneira mais geral algo que ele próprio chamava de "Cromatismo polimodal"\cite{antokoletz1984music}
+É importante também destacar que muitas vezes Bartók utiliza uma linha pentatônica no baixo que serve para atenuar o cromatismo enquanto introduz estrategicamente com a melodia\footnote{E vice-versa com a pentatônica na melodia e cromatismos no baixo.} notas estranhas a pentatônica criando texturas polimodais, octatônicas ou de maneira mais geral algo que ele próprio chamava de "Cromatismo polimodal"\cite{antokoletz1984music}
 
 
 \begin{citacao}
@@ -1452,7 +1502,7 @@ Um exemplo interessante desta estratégia de separar as coleções entre um osti
 	\begin{center}
 	    \includegraphics[scale=0.45]{ostinatos/boating_ostinato.png}
 	\end{center}
-	\legend{Fonte: autor }I
+	\legend{Fonte: autor }
 \end{figure}
 
 Na \autoref{m21} fazemos uma análise assistida por computador de Mikrokosmos 41, onde demonstramos uma estatégia de construção polimodal e simultânea a uma melodia de sonoridade pentatônica.
@@ -2950,7 +3000,20 @@ Mesmo clichê de segmentação usado na peça anterior, mas utilizando o sorteio
 	\end{center}
 \end{figure}
 
+\subsection{Mikroclichê 03 - PoliModal (Frígio+Mixolídio) + Pentatônica}
 
+Clichê com variações das segmentações rítmicas anteriores que explora as possibilidades melódicas e harmônicas de uso ambíguo de sonoridades pentatônicas com a inserção progressiva de notas de modos vizinhos, descritas aqui na \autoref{pentarota} e na \autoref{polimodal} . A estratégia foi utilizar na melodia notas da pentatônica de Fá maior, que tem como semelhança para a escala de Dó Mixolídio a presença do Si$\flat$. A inserção progressiva do Sol$\flat$ surge como empecilho para a desambiguação da sonoridade de Fá maior e sugere o polimodo Lídio+Mixolídio em Dó.
+
+O acorde final e sua preparação sugerem vagamente a resolução na tonalidade de Fá maior, no entanto o acorde final omite o Fá e evidencia a polarização do Si$\flat$ - o pivô entre a pentatônica de Fá e de uma ainda possível sonoridade modal em Dó Mixolídio (sugerido durante a preparação da cadência final). A ausência/presença das classes de altura consecutivas [Fá $\leftrightarrow$ Sol $\flat$ $\leftrightarrow$ Sol] é o eixo central para definição das sonoridade funcionais que jogam com a ambiguidade da peça.
+
+\begin{figure}[!h]
+	\begin{center}
+	    \includegraphics*[scale=0.35]{score/MikroCliche03.png}
+	\end{center}
+\end{figure}
+
+
+\pagebreak
 \section{CosmoBagatellas}
 
 Partituras derivadas de experimentos livres, surgidos durante a organização dos patches de análise, como possibilidade de invenção. 
@@ -2965,7 +3028,7 @@ Este "mikro-motivo"\ foi gerado a partir de um estudo para composição de eixos
 	\end{center}
 \end{figure}
 
-\pagebreak
+
 \subsection{CosmoBagatella 0.02}
 
 Derivado do estudo sobre simetria literal comentado na \autoref{simetrialiteral}, esta versão usa como tema o arpejo pelo acorde da "simetria em espelho" de Bartók demonstrada no \autoref{fig_simetrialiteral} e possui a inserção de acelerandos e retardandos arbitrários, colocados posteriormente. A busca de um critério de segmentação para a inserção de acelerandos e retardandos nas mudanças de frase fica aqui registrado e sugerido para futura implementação automatizada desta parte.
@@ -2994,6 +3057,7 @@ O importante deste estudo foi o uso dos módulos de escalas da biblioteca Music2
 
 Seu script gerador esta no \autoref{scriptescalas}.
 
+
 \subsection{CosmoBagatella $ \frac{1}{\Phi} $ - Epigrafe }
 
 \begin{figure}[!h]
@@ -3001,7 +3065,6 @@ Seu script gerador esta no \autoref{scriptescalas}.
 	    \includegraphics*[scale=0.4]{score/epigrafe01.png}
 	\end{center}
 \end{figure}
-\pagebreak
 
 \begin{figure}[!h]
 	\begin{center}
@@ -3027,7 +3090,6 @@ Seu script gerador esta no \autoref{scriptescalas}.
 	    \includegraphics*[scale=0.4]{score/epigrafe05.png}
 	\end{center}
 \end{figure}
-\pagebreak
 
 
 Esta miniatura aplica os apontamentos de macroforma apontados por \citeonline{lendvai1971bela} e descritos na \autoref{fibo}, construíndo uma peça que tem várias subestruturas segmentadas pela secção áurea para estruturação de um encadeamento entre partes. 
@@ -3471,6 +3533,211 @@ partitura.show(P)
 
 \end{lstlisting}
 
+\subsection{Clichelib: biblioteca de funções}
+
+Prova de conceito para construção de uma biblioteca de funções que formatam clichês baseados nos livros Mikrokosmos de Bartók.
+
+\begin{lstlisting}
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from music21 import *
+from random import *
+from copy import *
+
+
+
+def clichelize(durations,motivo):
+		# a funcao vai formar um stream com as notas do motivo
+		# posicionadas em cliches de segmentacao dolivro mikrokosmos 01
+		cliche=stream.Stream()
+
+		# para efeito de teste inserida uma funcao que sorteia notas para usar
+		mesmo=choice(motivo)
+
+		# para cada uma das duracoes inseridas na funcao
+		for d in durations:
+
+			# testa se o elemento tem nao tem ligadura
+			if type(d) is float:	
+				nota=note.Note(choice(motivo),quarterLength=d)
+
+			# se tiver ligadura insere 
+			else:	
+				#beam: ligadura de continuacao
+				# convencionamos I para o inicio da ligadura e F para o final
+				if d[1] == 'I':
+					nota=note.Note(mesmo,quarterLength=d[0])
+					nota.tie=tie.Tie("start")
+				
+				if d[1] == 'F':
+					nota=note.Note(mesmo,quarterLength=d[0])
+					nota.tie=tie.Tie("stop")
+
+			# faz uma copia da nota criada para usar no cliche
+			cliche.append(deepcopy(nota))
+
+		# retorna o cliche para a chamada da funcao
+		return cliche
+
+
+
+########## escalas
+
+def escalachoice(escala,tom,inicio,fim):
+	if escala == 'penta':
+
+		pitchList = ["C4","D4","F4","G4","A4"]
+		PentaScale = scale.AbstractScale()
+		PentaScale.buildNetworkFromPitches([pitch.Pitch(p) for p in pitchList])
+		e = PentaScale._net.realizePitch(tom)
+
+	if escala == 'tonsint':
+
+		pitchList = ["C4","D4","E4","F#4","G#4","A#4","C5"]
+		WT = scale.AbstractScale()
+		WT.buildNetworkFromPitches([pitch.Pitch(p) for p in pitchList])
+		e = WT._net.realizePitch(tom)
+
+
+	if escala == ('maior' or 'jonio'):
+		Maior = scale.MajorScale(tom)
+		e = Maior.getPitches()
+
+
+	if escala == 'dorico':
+		Dorian = scale.DorianScale(tom)
+		e = Dorian.getPitches()
+
+
+	if escala == 'frigio':
+		Frigio = scale.PhrygianScale(tom)
+		e = Frigio.getPitches()
+
+	if escala == 'lidio':
+		Lidio = scale.LydianScale(tom)
+		e = Lidio.getPitches()
+
+	if escala == 'mixolidio':
+		MLidio = scale.MixolydianScale(tom)
+		e = MLidio.getPitches()
+
+	if escala == ('menor' or 'eolio'):
+		Menor = scale.MinorScale(tom)
+		e = Menor.getPitches()
+
+	if escala == 'locrio':
+		Locrio = scale.LocrianScale(tom)
+		e = Locrio.getPitches()
+
+	if escala == 'octa':
+		Octa = scale.OctatonicScale(tom)
+		e = Octa.getPitches()
+
+	if escala == 'octa428X':
+
+		pitchList = ["C2","E-2","F2","A-2","C2"]
+		PentaScale = scale.AbstractScale()
+		PentaScale.buildNetworkFromPitches([pitch.Pitch(p) for p in pitchList])
+		e = PentaScale._net.realizePitch(tom)
+
+
+	if escala == 'octa428Y':
+
+		pitchList = ["A2","C2","D2","F2","A2"]
+		PentaScale = scale.AbstractScale()
+		PentaScale.buildNetworkFromPitches([pitch.Pitch(p) for p in pitchList])
+		e = PentaScale._net.realizePitch(tom)
+
+
+	return e[int(inicio):int(fim)]
+
+\end{lstlisting}
+
+\subsubsection{Mikro-clichê: teste de clichelib}
+
+Script de teste da biblioteca clichelib.py
+
+\begin{lstlisting}
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from music21 import *
+from random import *
+from copy import *
+
+
+####################### teste da biblioteca de cliches mikrokosmos
+from clichelib import *
+from sys import argv
+
+# apanhando os argumentos direto do console - rodar com:
+#python mikrocliche.py escala tom inicio fim
+escala=argv[1]
+tom=argv[2]
+inicio=argv[3]
+fim=argv[4]
+
+
+# dados para teste
+# 1. duracoes com ligados
+durs1=[1.0,[1.0,'I'],[1.0,'F'],1.0,1.0]
+durs2=[1.0,[1.5,'I'],[1.5,'F'],2.0]
+durs3=[1.0, 1.0, 2.0,1.0]
+
+
+# 2. uma celula base a partir das escalas
+motivo=escalachoice(escala,tom,inicio,fim)
+
+
+# inicia um cliche vazio
+cliche=stream.Stream()
+
+# variavel de inicio 
+Linicio=0
+
+# loop para o sorteio de 8 compassos
+for x in xrange(32):
+	#sorteia um dos dois motivos
+	c=choice([durs1,durs2,durs3])
+
+	#chama a funcao que cria os cliches a partir da lista de ritmos e notas
+	s=clichelize(c,motivo)
+	
+	#insere os cliches
+	for i in s:
+		cliche.append(deepcopy(i))
+
+	# insere pausa no final do motivo
+	cliche.append(note.Rest())	
+	
+	# insercao da ligadura baseada na primeira e ultima nota do motivo atual
+	l=[cliche[Linicio],cliche[len(cliche)-2]]
+	ligado = spanner.Slur(l)
+	cliche.insert(Linicio,ligado)
+	Linicio=(len(cliche))
+	
+	
+#formatacao de uma metrica padrao para insercao, fazendo os motivos ajustarem
+cliche.makeMeasures(meterStream=meter.TimeSignature('5/4') , inPlace=True)
+
+
+
+#notas debugger
+#
+#s= escalachoice(escala,tom,inicio,fim)
+#for n in s:
+#	print n
+
+	
+
+#vexflow.fromScore(cliche, mode='html') #teste gerador de html no padrao vexflow
+#cliche.show('text') # conferencia da estrutura de dados
+
+
+########## imprime Musicxml e abre Musescore
+cliche.show('musicxml') # o ligado de expressao so aparece no musicxml
+
+\end{lstlisting}
 
 \subsection{Script Lilypond gerado por OM}
 
