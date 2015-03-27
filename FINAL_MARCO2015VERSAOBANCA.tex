@@ -128,7 +128,7 @@ procnamekeys={def,class}}
 \titulo{Luteria Composicional de algoritmos pós-tonais }
 \autor{Guilherme Rafael Soares}
 %\local{Brasil}
-\data{23 de março de 2015, v1.3FINALBANCA}
+\data{27 de março de 2015, v1.2FINALPOSBANCA}
 \orientador{Prof. Dr. Daniel Quaranta}
 %\coorientador{Equipe \abnTeX}
 \instituicao{%
@@ -2151,9 +2151,9 @@ m.show('lily.pdf')
 \pagebreak
 \section{OpenMusic}
 
-OpenMusic é um ambiente de programação com orientação visual criada com o suporte do IRCAM em 1997, derivada do ambiente PatchWork, e está dentro da família de interfaces desenvolvidas para articulação de processos simbólicos, mediados pela representação partitural.\footnote{Um artigo recente e introdutório pode ser encontrado nos escritos de \citeonline{bresson2011openmusic}}
+OpenMusic é um ambiente de programação com orientação visual criada com o suporte do IRCAM em 1997 -  derivado do ambiente PatchWork - e está dentro da família de interfaces desenvolvidas para articulação de processos simbólicos, mediados pela representação partitural.\footnote{Um artigo recente e introdutório pode ser encontrado nos escritos de \citeonline{bresson2011openmusic}}
 
-Em suma, o Open Music teve (pelo menos em seus primeiros anos) uma intenção voltada para processos focados na continuidade dos sistemas derivados dos estudos de intervalos, acordes, harmonia que estavam na base das preocupações do serialismo integral e outras estratégias composicionais (como o espectralismo e o microtonalismo) que necessitavam manipulação de permutações e combinações matemáticas. O OM sempre foi um dos software amplamente utilizados para tal fim, e isto reflete diretamente em sua interface e cultura de uso.
+Em suma, o Open Music teve (pelo menos em seus primeiros anos) uma intenção voltada para processos focados na continuidade dos sistemas derivados dos estudos de intervalos, acordes, harmonia - que estavam na base das preocupações do serialismo integral - e outras estratégias composicionais (como o espectralismo e o microtonalismo) que necessitavam manipulação de permutações e combinações matemáticas. O OM foi um dos softwares amplamente utilizados para tal fim, e isto reflete diretamente em sua interface e cultura de uso.
 
 A grande vantagem do uso do Open Music em procedimentos de análise musical assistida por computador é a de que sua orientação visual de programação por grafos interativos agiliza bastante a experimentação e facilita a organização de esquemas de representação gráfica das ideias algorítmicas de um procedimento.\footnote{Como já utilizamos no presente trabalho em toda a parte de revisão da teoria bartokiana (\autoref{bartokianas})  .} 
 
@@ -2176,10 +2176,10 @@ Vale destacar aqui a vantagem intuitiva do uso de objetos de representação gr�
 
 \subsection{Notação Proporcional}
 
-O objeto de sequênciamento de acordes o \textit{"chord-seq}"\ permite a representação de sequências simbólicas partituradas, montadas através de procedimentos algorítmicos ou derivadas de arquivos como MIDI ou MusicXML. O formato visual é inspirado nas partituras de notação proporcional: onde não há a medida de assinaturas, barras ou figuras de compasso mas sim apenas uma representação visual do posicionamento das notas na altura das pautas e em uma distancia proporcional a posição temporal de seu ataque.
+O objeto de sequênciamento de acordes \textit{"chord-seq}"\ permite a representação de sequências simbólicas partituradas, montadas através de procedimentos algorítmicos ou derivadas de arquivos como MIDI ou MusicXML. O formato visual é inspirado nas partituras de notação proporcional: não há a medida de assinaturas, barras ou figuras de compasso mas sim apenas uma representação visual do posicionamento das notas na altura das pautas e em uma distancia proporcional à posição temporal de seu ataque.
 
 
-Os dados são estruturados em forma de parenteses aninhados, característica da linguagem LISP. Um exemplo de um uso comum dos parenteses é a maneira como o OM filtra notas e acordes: por padrão um objeto como chord-seq recebe uma lista de números em \textit{midicents}\footnote{Número absoluto da nota no padrão MIDI multiplicando por centésimos de semitom.} - números em uma primeira camada da lista serão interpretados como notas, números entre parênteses dentro de parênteses serão interpretados como acordes.
+Os dados são estruturados em forma de parênteses aninhados - característica da linguagem LISP. Um exemplo de uso comum dos parênteses é a maneira como o OM filtra notas e acordes: por padrão um objeto como chord-seq recebe uma lista de números em \textit{midicents}\footnote{Número absoluto da nota no padrão MIDI multiplicando por centésimos de semitom.} - números em uma primeira camada da lista serão interpretados como notas; números entre parênteses dentro de parênteses serão interpretados como acordes.
 
 
 \begin{figure}[!h]
@@ -2216,17 +2216,17 @@ A \autoref{fig_listas} mostra alguns objetos básicos para manipulação de list
 
 O OM também apresenta algumas ferramentas nativas para manipulação de conjuntos de classe de altura que já facilitam a implementação de procedimentos de manipulação, transformação e análise de coleções baseadas na nomenclatura de \citeonline{forte1973structure}. Estas ferramentas estão localizadas em uma biblioteca chamada "Math".
 
-Na Figura 50 demonstramos alguns procedimentos básicos em um patch que faz a análise de todas as tríades dentro de uma oitava reduzida a uma única forma prima\footnote{Para uma introdução a terminologia da TCCA ver o \autoref{pos_tonal}. } de qual podem ser derivadas todas as demais transposições ou inversões possíveis.
+Na Figura 50 demonstramos alguns procedimentos básicos em um \textit{patch} que faz a análise de todas as tríades dentro de uma oitava reduzida a uma única forma prima\footnote{Para uma introdução a terminologia da TCCA ver o \autoref{pos_tonal}. } de qual podem ser derivadas as demais transposições ou inversões possíveis.
 
 Em \textbf{(A)} temos o objeto \textit{"dn orbites"} listando todas as tríades na nomenclatura de Forte, com o objeto \textit{"pc set"} fazendo a conversão em listas de classes de altura. 
 
 A parte \textbf{(B)} da figura figura mostra as classes de alturas convertidas para suas formas geométricas dentro da visualização em \textit{"relógio de semitons"}, do objeto \textit{"n-cercle"}. 
 
-A parte \textbf{(C)} mostra algumas alternativas para a vizualização das classes - a forma prima das classes de altura para cada tríade, as notas respectivas sem oitava definida, o vetor intervalar\footnote{Ver \autoref{pos_tonal}} e com o objeto "n structure" estamos relacionando os intervalos internos do acorde (sendo que da última para primeira novamente considera-se uma distância oitavada em relação a nota raiz). Um detalhe nesta última listagem é de que estamos usando a função genérica \textit{Lisp "mapcar"}\ para fazer a iteração sobre item a item de toda coleção, usando o modo lambda\footnote{Todos objetos de OM podem ser colocados em modo de recursividade utilizados como uma função lambda. Maiores detalhes na documentação em \url{http://support.ircam.fr/docs/om/om6-manual/co/LambdaPatch.html}. Acesso em 28 de fevereiro de 2015.} do objeto "n structure".
+A parte \textbf{(C)} mostra algumas alternativas para a vizualização das classes - a forma prima das classes de altura para cada tríade, as notas respectivas sem oitava definida, o vetor intervalar\footnote{Ver \autoref{pos_tonal}}. E com o objeto \textit{n structure}\ estamos relacionando os intervalos internos do acorde (sendo que da última para primeira novamente considera-se uma distância oitavada em relação a nota raiz). Um detalhe nesta última listagem é de que estamos usando a função genérica \textit{Lisp "mapcar"}\ para fazer a iteração sobre item a item de toda coleção, usando o modo lambda\footnote{Todos objetos de OM podem ser colocados em modo de recursividade utilizados como uma função lambda. Maiores detalhes na documentação em \url{http://support.ircam.fr/docs/om/om6-manual/co/LambdaPatch.html}. Acesso em 28 de fevereiro de 2015.} do objeto "n structure".
 
 Em \textbf{(D)} Selecionamos a 11ª coleção da lista (3-11) com o objeto nth. Observemos que "nth"\footnote{Um objeto que seleciona o n-ésimo elemento de uma lista, começando a contar as posições a partir de zero.} é uma função Lisp primitiva, e não um objeto de OM especializado. Importante notar portanto, que o OM permite o uso de quaisquer funções Lisp que rodem no seu interpretador embarcado.\footnote{A linguagem \textit{Lisp} gerada pelos objetos é processada sob demanda por um ambiente embarcado. Este interpretador é baseado na plataforma \textit{LispWorks}. } Também é possível implementar funções Lisp dentro do próprio ambiente, com o objeto \textit{"lisp"}.
 
-O vetor é transformado primeiro em inversão da sua forma prima (com o objeto \textit{"inv"} ) e em seguida a inversão é novamente reduzida a uma forma prima. Note-se que este exercício demonstra o parentesco entre o acorde maior e o acorde menor - a inversão de todos intervalos do acorde menor resulta um acorde maior.
+O vetor é transformado primeiro em inversão da sua forma prima (com o objeto \textit{"inv"}) e em seguida a inversão é novamente reduzida a uma forma prima. Note-se que este exercício demonstra o parentesco entre o acorde maior e o acorde menor - a inversão de todos os intervalos do acorde menor resulta um acorde maior.
 
 Em \textbf{(E)} vemos a conversão das três formas para uma sequência de acordes com o zero em Dó 4 (nota 60 na notação MIDI).
  
@@ -2242,11 +2242,11 @@ Em \textbf{(E)} vemos a conversão das três formas para uma sequência de acord
 \pagebreak
 \subsection{Segmentação e Análise no OM}
 
-A maior vantagem percebida na prática desta pesquisa, da utilização de procedimentos em OM sobre procedimentos em nosso experimento com Python/Music21 é a possibilidade de testar rapidamente ideias em gestos intuitivos de cópia e cola, numa costura de patches que privelegia um improviso heuristicamente produtivo. 
+A partir da utilização de procedimentos em OM sobre procedimentos em nosso experimento com Python/Music21 a maior vantagem percebida na prática desta pesquisa é a possibilidade de testar rapidamente ideias em gestos intuitivos de cópia e cola, numa costura de \textit{patches} que privilegia um improviso heuristicamente produtivo. 
 
-O módulo de segmentação para análise implementado dentro de objetos sequênciadores do OM, como o \textit{chord-seq}, permite o uso de um processamento carregado de um código Lisp externo ou codificado na janela do editor Lisp embarcada no OM. 
+O módulo de segmentação para análise implementado dentro de objetos sequenciadores do OM, como o \textit{chord-seq}, permite o uso de um processamento carregado de um código Lisp externo ou codificado na janela do editor Lisp embarcada no OM. 
 
-Na figura 57 temos a automatização de uma sequência de acordes de um dos experimentos composicionais derivados dos estudos de simetrias do presente trabalho. No procedimento ilustrado podemos retirar do objeto \textit{chord-seq} as analises individuais de conjuntos de classes de altura para cada segmento e revelar que os acordes que estão em inversões, transposições e âmbitos distintos, revelam-se o mesmo grupo de classes de altura em suas formas primas.
+Na figura 57 temos a automatização de uma sequência de acordes de um dos experimentos composicionais derivados dos estudos de simetrias do presente trabalho. No procedimento ilustrado podemos retirar do objeto \textit{chord-seq} as analises individuais de conjuntos de classes de altura para cada segmento e revelar que os acordes que estão em inversões, transposições e âmbitos distintos revelam-se o mesmo grupo de classes de altura em suas formas primas.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Módulo de segmentação para análise dentro dos objetos chord-seq. }
@@ -2256,7 +2256,7 @@ Na figura 57 temos a automatização de uma sequência de acordes de um dos expe
 	\legend{Fonte: autor }
 \end{figure}	
 		
-Na figura 58 temos um exemplo de uma segmentação feita manualmente, com seleção de mouse, e em seguida analisada automaticamente em interação com a escuta, revelando a escolha de uma coleção octatonica já na primeira frase melódica de oito notas (duas repetidas) de Mikrokosmos 109.
+Na figura 58 temos um exemplo de uma segmentação - feita manualmente, com seleção de mouse, e em seguida analisada automaticamente em interação com a escuta - revelando a escolha de uma coleção octatônica já na primeira frase melódica de oito notas (duas repetidas) de Mikrokosmos 109.
 
 
 \begin{figure}[!h]
@@ -2269,7 +2269,7 @@ Na figura 58 temos um exemplo de uma segmentação feita manualmente, com seleç
 
 O problema para este tipo de segmentação manual são os casos onde gostaríamos de fazer uma análise sem passar pela escuta e manipulação gráfica, gerando resultados diretamente. Para isso temos disponível o procedimento ilustrado na figura 59, situação onde é possível definir funções Lisp dentro do editor embarcado do OM e salvar para usos posteriores como um padrão de análise e segmentação.
 
-Para estes casos é possível desenvolver análises customizadas em linguagem Lisp, podendo também fazer chamadas das bibliotecas OM em seu código escrito. O procedimento mínimo para uma compilação de procedimento customizado de análise e segmentação esta ilustrado na figura 59.
+Para estes casos é possível desenvolver análises customizadas em linguagem Lisp, podendo também fazer chamadas das bibliotecas OM em seu código escrito. O procedimento mínimo para uma compilação de procedimento customizado de análise e segmentação está ilustrado na figura 59.
 
 				
 \begin{figure}[!h]
@@ -2280,7 +2280,7 @@ Para estes casos é possível desenvolver análises customizadas em linguagem Li
 	\legend{Fonte: autor }
 \end{figure}	
 
-No código\footnote{A especificação completa de classes e métodos de analise disponíveis esta em \url{http://repmus.ircam.fr/openmusic/dev-resources/analysis}. Acesso em 3 de março de 2015.} temos: 
+No código\footnote{A especificação completa de classes e métodos de análise disponíveis está em \url{http://repmus.ircam.fr/openmusic/dev-resources/analysis}. Acesso em 3 de março de 2015.} temos: 
 
 \begin{itemize}
 
@@ -2290,7 +2290,7 @@ No código\footnote{A especificação completa de classes e métodos de analise 
 
 \item Um método para iteração dos acordes, determinando que cada acorde sera um segmento de uma cor diferente, cortando os segmentos: \textit{(defmethod compute-analysis-segments ((self nome-da-analise) (object t))))}.
 
-\item Um método para registro da método anterior, fazendo com que apareça no menu da análise: \textit{(defmethod compute-segments-p ((self nome-da-analise)) t)}
+\item Um método para registro do método anterior, fazendo com que apareça no menu da análise: \textit{(defmethod compute-segments-p ((self nome-da-analise)) t)}
 
 \item Um método para a análise com \textit{(defmethod analyse-one-segment ((self pcset-analysis) (seg segment) (object t)))} que itera pelos acordes e converte-os em elementos n-cercle (com o objeto chord2c). A partir deste método a análise já guarda os n-cercles que podem ser retirados pelo mesmo método mostrado na figura 57.
 
@@ -2299,21 +2299,21 @@ No código\footnote{A especificação completa de classes e métodos de analise 
 \end{itemize}
 			
 
-O artigo \textit{"New framework for score segmentation and analysis for Openmusic"}\cite{bresson2012new}, descreve um ambiente de segmentação e análise harmônica supervisionada \footnote{Este projeto tem seu código aberto e está disponível no website \url{http://grfia.dlsi.ua.es/cm/projects/drims/software.php. Acesso 3 de março de 2015.}}, que implementa um processamento externo ao OM com servidor Java baseado no modelo de \citeonline{pardo2002algorithms}.
+O artigo \textit{"New framework for score segmentation and analysis for Openmusic"}\cite{bresson2012new}, descreve um ambiente de segmentação e análise harmônica supervisionada\footnote{Este projeto tem seu código aberto e está disponível no website \url{http://grfia.dlsi.ua.es/cm/projects/drims/software.php.} Acesso 3 de março de 2015.}, que implementa um processamento externo ao OM com servidor Java baseado no modelo de \citeonline{pardo2002algorithms}.
 
 Este servidor utiliza uma comunicação em protocolo OSC\footnote{Open Sound Control - protocolo desenvolvido no CNMAT, da Universidade de Berkeley-EUA, por Adrian Freed e Matt Wright para comunicações entre instrumentos musicais ou controladores de performance. Geralmente usado para envio de dados de parâmetros gestuais ao vivo, o protocolo é considerado uma alternativa ao padrão MIDI. No entanto pela possibilidade de descrição nos parâmetros com texto, em hierarquia de endereços similares aos protocolos de rede ou árvores de diretório unix, facilita o uso em qualquer contexto. Sua comunicação básica utiliza protocolos populares na internet como UDP/IP e TCP/IP, o que permite que as aplicações possam conversar entre si em redes locais ou globais muito facilmente. }
 
 \begin{citacao}
-O software de análise harmônica comunica-se com OpenMusic via mensagens OSC seguindo um simples protocolo cliente/servidor. Quando a classe de análise harmônica é anexada a um objeto chord-seq em OM, uma representação MIDI da sequência e mandada para análise no servidor.\cite[p. 4]{bresson2012new}\footnote{The harmonic analysis software communicates with OpenMusic via OSC messages following a simple client/server protocol. When the harmonic-analysis class is attached to a chord-seq object in OM, a MIDI representation of the sequence is sent to the analysis server.\cite[p. 4]{bresson2012new}}
+O software de análise harmônica comunica-se com OpenMusic via mensagens OSC seguindo um simples protocolo cliente/servidor. Quando a classe de análise harmônica é anexada a um objeto chord-seq em OM, uma representação MIDI da sequência e mandada para análise no servidor. \cite[p. 4]{bresson2012new}\footnote{The harmonic analysis software communicates with OpenMusic via OSC messages following a simple client/server protocol. When the harmonic-analysis class is attached to a chord-seq object in OM, a MIDI representation of the sequence is sent to the analysis server.  \cite[p. 4]{bresson2012new}}
 \end{citacao}		
 
 
-Comparada com a alternativa que testamos em linguagem Python com Music21, citamos esta implementação até o momento mais pela sugestão de arquitetura (OM + um servidor externo OSC) do que pelo que foi possível testar dela até agora. A ideia de integrar o procedimentos analíticos de Music21 já explorados nesta pesquisa, com a segmentação gráfica e possibilidade de interação e tradução das estruturas de dados com o OpenMusic via protocolo OSC nos parece um caminho viável para a continuação do presente trabalho.
+Comparada com a alternativa que testamos em linguagem Python com Music21, citamos esta implementação até o momento mais pela sugestão de arquitetura (OM + um servidor externo OSC) do que pelo que foi possível testar dela até agora. A ideia de integrar o procedimentos analíticos de Music21  explorados nesta pesquisa com a segmentação gráfica e possibilidade de interação e tradução das estruturas de dados com o OpenMusic via protocolo OSC nos parece um caminho viável para a continuação do presente trabalho.
 	
 
-\subsection{Extraçao de contornos}
+\subsection{Extração de contornos}
 
-O uso do objeto x->dx para a extração de contorno de um segmento motívico esta ilustrado na figura 60. Este patch faz a conversão de midicients para uma escala MIDI para a partir dela fazer uma operação de subtração da \textbf{"nota atual menos nota anterior")}. Perceba-se pelo caso demonstrado que podemos usar o procedimento para localizar uma melodia transposta. 
+O uso do objeto x->dx para a extração de contorno de um segmento motívico está ilustrado na figura 60. Este patch faz a conversão de midicients para uma escala MIDI para a partir dela fazer uma operação de subtração da \textbf{"nota atual menos nota anterior"}. Perceba-se pelo caso demonstrado que podemos usar o procedimento para localizar uma melodia transposta. 
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Extração de contorno. }
@@ -2327,14 +2327,14 @@ O uso do objeto x->dx para a extração de contorno de um segmento motívico est
 \subsection{LZ: Extração de motivos e aprendizado de máquina}	
 \label{lz}
 
-A biblioteca de Open Music LZ foi elaborado sobre a pesquisa de \citeonline{dubnov2003using} para aplicação de alguns métodos de "Aprendizado de Máquina"\footnote{Podemos definir de maneira geral a área de "Aprendizado de Máquina" como procedimentos computacionais onde temos algoritmos que "aprendem"\ com a interação do usuário na classificação de re-incidência de padrões, moldando comportamentos que podem solucionar problemas. Para uma abordagem mais específica do tema conferir \citeonline{bishop2006pattern}} para a filtragem de motivos relevantes em uma composição.
+A biblioteca de Open Music LZ foi elaborada sobre a pesquisa de \citeonline{dubnov2003using} para aplicação de alguns métodos de "Aprendizado de Máquina"\footnote{Podemos definir de maneira geral a área de "Aprendizado de Máquina" como procedimentos computacionais onde temos algoritmos que "aprendem"\ com a interação do usuário na classificação de re-incidência de padrões, moldando comportamentos que podem solucionar problemas. Para uma abordagem mais específica do tema conferir \citeonline{bishop2006pattern}} para a filtragem de motivos relevantes em uma composição.
 
-Esta proposta é diferente da formalização de gramáticas gerativas, que precisa ser definida a partir da exaustão de parâmetros buscados em uma musicologia especializada em um estilo. A abordagem baseada em aprendizado de máquina busca a formulação de uma solução mais geral para o problema.
+Esta proposta é diferente da formalização de gramáticas gerativas, que precisa ser definida a partir da exaustão de parâmetros buscados em uma musicologia especializada em estilo. A abordagem baseada em aprendizado de máquina busca a formulação de uma solução mais geral para o problema.
 
-Parte da possibilidade de extrair padrões gestuais singulares de um corpus de arquivos MIDI a partir de de segmentação por proximidade rítmica e melódica \footnote{ \citeonline[p. 73]{dubnov2003using} citam o trabalho de classificação de parâmetros de cognição musical de \citeonline{meyer1956emotion} como base para elaboração dos critérios de segmentação } de uma superfície musical, extraindo dali motivos a partir de iterações recursivas que definem frequência e variações de similaridade.
+O objetivo: extrair padrões gestuais singulares de um corpus de arquivos MIDI a partir de de segmentação por proximidade rítmica e melódica \footnote{ \citeonline[p. 73]{dubnov2003using} citam o trabalho de classificação de parâmetros de cognição musical de \citeonline{meyer1956emotion} como base para elaboração dos critérios de segmentação } de uma superfície musical, extraindo dali motivos a partir de iterações recursivas que definem frequência e variações de similaridade.
 
 \begin{citacao}
-Uma teoria gerativa da música pode ser construída explicitamente codando regras musicais em alguma lógica de gramática formal. Esta abordagem é por vezes chamada de "sistema expert" ou "engenharia de cognição". Apesar destes métodos atingirem resultados impressionantes, eles requerem uma extensiva exploração do conhecimento musical, frequentemente específica para cada compositor ou estilo.\textbf{Uma abordagem contrastante confia em aprendizado estatístico de indução empírica.}\cite[p. 74, grifos nossos]{dubnov2003using}\footnote{A generative theory of music can be constructed by explicitly coding music rules in some logic or formal grammar. This approach is sometimes called an expert system or knowledge engineering. Although these methods achieve impressive results, they require extensive exploitation of musical knowledge, often specific to each composer or style.
+Uma teoria gerativa da música pode ser construída explicitamente codando regras musicais em alguma lógica de gramática formal. Esta abordagem é por vezes chamada de "sistema expert"\ ou "engenharia de cognição". Apesar destes métodos atingirem resultados impressionantes, eles requerem uma extensiva exploração do conhecimento musical, frequentemente específica para cada compositor ou estilo.\textbf{Uma abordagem contrastante confia em aprendizado estatístico de indução empírica.} \cite[p. 74, grifos nossos]{dubnov2003using}\footnote{A generative theory of music can be constructed by explicitly coding music rules in some logic or formal grammar. This approach is sometimes called an expert system or knowledge engineering. Although these methods achieve impressive results, they require extensive exploitation of musical knowledge, often specific to each composer or style.
 \textbf{A contrasting approach relies on statistical learning or empirical induction.}\cite[p. 74, grifos nossos]{dubnov2003using}}
 \end{citacao}
 
@@ -2350,11 +2350,15 @@ A biblioteca LZ tem seu nome inspirado no algoritmo de Lempel-Ziv, desenvolvido 
 
 
 
-Um exemplo ilustrativo é o da redução da palavra \textbf{\textit{"abracadabra"}}: Podemos perceber facilmente que não apenas existem letras repetidas mas também alguns segmentos, o segmento "abra" e suas permutações de duas letras (ab,br,ra) aparecem duas vezes . Existem também probabilidades de ocorrência que podem ser condicionadas - exemplos: o aparecimento da letra "a"\ apenas quando precedida do segmento "br"\ ocorre apenas duas vezes dentre as cinco possíveis, ou existe apenas um único "a"\ totalmente isolado dos segmentos "br" dentre as cinco possíveis, apenas é possível começar em a ou terminar em a e assim por diante.
+Um exemplo ilustrativo é o da redução da palavra \textbf{\textit{"abracadabra"}}: Podemos perceber facilmente que não apenas existem letras repetidas mas também alguns segmentos repetidos. 
+
+O segmento "abra" e suas permutações de duas letras (ab,br,ra) aparecem duas vezes . Existem também probabilidades de ocorrência que podem ser condicionadas.  
+
+Exemplos: o aparecimento da letra "a"\ apenas quando precedida do segmento "br"\ ocorre apenas duas vezes dentre as cinco possíveis, ou existe apenas um único "a"\ totalmente isolado dos segmentos "br" dentre as cinco possíveis, apenas é possível começar em a ou terminar em a e assim por diante.
 
 Utilizamos no presente trabalho alguns segmentos gerados por busca com a biblioteca LZ como filtro para selecionar alguns motivos de trechos de peças dos Mikrokosmos de Béla Bartók, como um auxiliar para destaques da escuta. Consideramos a abordagem com aprendizado de máquina um assunto demasiado amplo e específico para aprofundamento aqui, no entanto aplicamos seu uso para problematizá-lo.
 
-Apesar de realizar uma "re-síntese"\ dos motivos escolhidos a biblioteca LZ parece não preocupar-se em estabelecer critérios de re-organizaçao de uma forma total de composição a partir destes motivos. As aplicações exemplificadas argumentam em torno da concatenação de gestos idiomáticos, algo que pode funcionar para ideias de improviso livre ou para elaboração de catálogos de gestos. 
+Apesar de realizar uma "re-síntese"\ dos motivos escolhidos, a biblioteca LZ parece não preocupar-se em estabelecer critérios de re-organizaçao de uma forma total de composição a partir destes motivos. As aplicações exemplificadas argumentam em torno da concatenação de gestos idiomáticos, algo que pode funcionar para ideias de improviso livre ou para elaboração de catálogos de gestos. 
 
 
 %\section{Especialidade da automação versus especialidade do analista}
@@ -2375,13 +2379,13 @@ Instrumental writing seems to us a field of study which is at the same time prec
 \end{citacao}
 
 
-O presente trabalho almeja também a possibilidade de organizar procedimentos de música generativa a partir de regras fixas retiradas de análises e possibilitando gerar música consistente automatizada a partir de definições algorítmicas precisas. 
+O presente trabalho almeja também a possibilidade de organizar procedimentos de música generativa a partir de regras fixas retiradas de análises e possibilitar a geração de música consistente automatizada a partir de definições algorítmicas precisas. 
 
 No entanto, no atual estado da pesquisa e considerando a imensa gama de opções encontradas, acredito que a prática criativa com estes procedimentos é a melhor maneira de organizar uma didática e uma sistematização consistente do conhecimento. 
 
 Neste capítulo descrevo alguns procedimentos que auxiliaram experimentos composicionais derivados desta pesquisa. 
 
-\section{Tecnicas em Music21}
+\section{Técnicas em Music21}
 
 Nesta parte da pesquisa o Music21 foi utilizado como ferramenta de formatação de clichês partiturados com saída já formatada diretamente em formato MusicXML. Para isso um exemplo singular dos Mikrokosmos serve de inspiração para uma saída já formatada de partitura presente desde a fase de concepção do algoritmo.
 
@@ -2390,7 +2394,7 @@ Nesta parte da pesquisa o Music21 foi utilizado como ferramenta de formatação 
 
 Construí um exemplo de clichê generativo baseado em um padrão bastante comum de segmentação presente em todos livros do Mikrokosmos de Béla Bartók. O clichê consiste em um segmento fechado por uma ligadura de expressão, que por vezes possui alguma ligadura de continuação interna para notas iguais. 
 
-Este modelo permite que o motivo atravesse diferentes conjunções de barras de compasso, compondo contrapontos com polirritmos sincopados por defasagem ou pela troca de clichês na melodia e no baixo. Um exemplo retirado da partitura original de Mikrokosmos 25 está na Figura 62.
+Este modelo permite que o motivo atravesse diferentes conjunções de barras de compasso, compondo contrapontos com polirritmos sincopados por defasagem ou pela troca de clichês na melodia e no baixo. Um exemplo retirado da partitura original de Mikrokosmos 25 está na Figura 65.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Os compassos iniciais de Mikrokosms 25 mostram a ideia de dois clichês ritmos iguais em uma defasagem que faz com que utilizem as barras de compasso de forma distinta. }
@@ -2400,7 +2404,7 @@ Este modelo permite que o motivo atravesse diferentes conjunções de barras de 
 	\legend{Fonte: autor }
 \end{figure}
 
-Elaborei uma função usando a biblioteca music21 para que a partir de um mapeamento de alguns destes clichês rítmicos seja possível coloca-los em qualquer parte da partitura na melodia ou no baixo, criando o mesmo efeito rítmico, ajustando os clichês nos compassos e marcando-os com a ligadura de expressão que caracteriza a escrita dos Mikrokosmos, além de ajudar na segmentação visual dos motivos.
+Elaborei uma função usando a biblioteca Music21 para que a partir de um mapeamento de alguns destes clichês rítmicos seja possível coloca-los em qualquer parte da partitura na melodia ou no baixo, criando o mesmo efeito rítmico, ajustando os clichês nos compassos, e marcando-os com a ligadura de expressão que caracteriza a escrita dos Mikrokosmos - além de ajudar na segmentação visual dos motivos.
 
 \begin{lstlisting}
 from music21 import *
@@ -2445,7 +2449,7 @@ def clichelize(durations,motivo):
 
 \end{lstlisting}
 
-Para a repetição e o posicionamento dos clichês considerando o preenchimento de pausas em compassos que ficam incompletos quando este cai entre duas barras de compasso e também para a inserção das ligaduras de expressão em cada um dos clichês - elaborei o script abaixo que serve como ponto de partida para outras estratégias como a inserção da voz do baixo e o procedimento melódico envolvido na escolha das notas.
+Para a repetição e o posicionamento dos clichês\footnote{Considerando o preenchimento de pausas em compassos que ficam incompletos quando este cai entre duas barras de compasso e também para a inserção das ligaduras de expressão em cada um dos clichês.}, elaborei o script abaixo, que serve como ponto de partida para outras estratégias como a inserção da voz do baixo e o procedimento melódico envolvido na escolha das notas.
 
 \begin{lstlisting}
 
@@ -2512,23 +2516,25 @@ cliche.show('musicxml') # o ligado de expressao so aparece no musicxml
 \end{figure}
 
 
-A questão decisiva no momento em que assume-se um procedimento que será em seguida partiturado em notação tradicional ou próxima desta é sobre em que etapa a partitura entra no processo computacional. 
+No momento em que se assume um procedimento que será em seguida partiturado em notação tradicional (ou próxima desta), a questão decisiva é sobre \textbf{em que etapa} a partitura entra no processo computacional. 
 
-O paradoxo é o seguinte: se adotamos um procedimento onde a partitura já é parte do algoritmo, estaremos por um lado garantindo um possível uso fora do computador, mas por outro limitando a experimentação e perdendo bastante tempo com a preocupação do código do que vai ser impresso em papel, ao invés do como pode soar. 
+O paradoxo é o seguinte: se adotamos um procedimento onde a partitura já é parte do algoritmo, estamos, por um lado, garantindo um possível uso fora do computador. Por outro todavia limitamos a experimentação e perdendo bastante tempo com a preocupação do código do que vai ser impresso em papel, ao invés do como tudo pode soar. 
 
-Considerando no caso de uso de clichês já partiturados: temos uma saída baseada na estrutura tradicional das barras de compasso, indicação métrica, assinatura de tonalidade, claves condizentes com a tessitura do instrumento para qual a partitura está sendo gerada, sinais de expressão conhecidos pelo instrumentista e possibilidade técnica de ser tocada.
+Considerando o caso de uso de clichês já partiturados: temos uma saída baseada na estrutura tradicional das barras de compasso, indicação métrica, assinatura de tonalidade, claves condizentes com a tessitura do instrumento para qual a partitura está sendo gerada, sinais de expressão conhecidos pelo instrumentista e possibilidade técnica de ser tocada.
 
-Por outro lado podemos deixar a partituração para um procedimento posterior: não estaremos contando com a possibilidade de ter uma automatização em lote de um processo (gerar diversas partituras a partir de alguns clichês) e também teremos que contar com o risco (e a potência) de encontrar sonoridades que não saberemos como escrever, pois são imprevistas para na escritura tradicional ou no instrumento para qual supostamente o algoritmo gerou as estruturas.
+Por outro lado podemos deixar a partituração para um procedimento posterior: não estaremos contando com a possibilidade de ter uma automatização em lote de um processo (gerar diversas partituras a partir de alguns clichês) e também teremos que contar com o risco (e a potência) de encontrar sonoridades que não saberemos como escrever, pois são imprevistas na escritura tradicional ou no instrumento para qual supostamente o algoritmo gerou as estruturas.
 
 Nosso caso aqui é bastante voltado para o processo genérico e didático da composição de algoritmos que deem conta de alguns problemas da estética pós-tonal tratada no presente trabalho. 
 
-Assumimos a sonoridade de um "piano" hipotético mais pela tecitura do instrumento do que pela real e imediata possibilidade de peças derivadas desta pesquisa serem tocadas por um pianista, mas interessa aqui apontar as possibilidades.
+Assumimos a sonoridade de um "piano"\ hipotético mais, pela tessitura do instrumento do que pela real e imediata possibilidade de peças derivadas desta pesquisa serem tocadas por um pianista, mas interessa aqui apontar as possibilidades.
 
-A saída do script em Music21 portanto nos serve como um exemplo didático bastante preciso: temos a possibilidade de transformar a função em uma chamada modular dentro de outros scripts, podendo reutilizar aquela estrutura já segmentada e com sinal de expressão específico da escrita para o instrumento hipotético piano. O procedimento seria similar para escrita de articulações, dinâmicas e ornamentos.
+A saída do \textit{script} em Music21 portanto nos serve como um exemplo didático bastante preciso: temos a possibilidade de transformar a função em uma chamada modular dentro de outros \textit{scripts}, podendo reutilizar aquela estrutura já segmentada e com sinal de expressão específico da escrita para o instrumento hipotético piano. O procedimento seria similar para escrita de articulações, dinâmicas e ornamentos.
 
-Já o uso do OpenMusic para tal fim, mostrou algumas necessidades de interação com suas expressões geradas, que para atingir a mesma autonomia necessita interação com suas listas Lisp literais ou no caso da saída Lilypond, interação com o script Lilypond gerado. A possibilidade de interagir com algumas camadas da estrutura de formação das barras de compasso\footnote{Discutida no OM Manual em \url{http://support.ircam.fr/docs/om/om6-manual/co/RT2.html}. Acesso em 05 de fevereiro de 2015.} do objeto \textit{voice} demanda extender patches gráficos de uma maneira que ao final torna-se menos legível do que os scripts.
+Já o uso do OpenMusic para tal fim, mostrou algumas necessidades de interação com suas expressões geradas, que para atingir a mesma autonomia necessita interação com suas listas Lisp literais - ou no caso da saída Lilypond, interação com o script Lilypond gerado. 
 
-No entanto, a saída em Lilypond para o OM (com a biblioteca omlily) mostrou-se também satisfatória e seria uma alternativa, considerando a boa documentação do projeto Lilypond para partituração impressa.\footnote{O script gerado a partir do patch da sessão recombinações está no apendice partituras. O script Lilypond gerado (onde foram inseridas as ligaduras direto no código) esta no \autoref{scripts}. }
+A possibilidade de interagir com algumas camadas da estrutura de formação das barras de compasso\footnote{Discutida no OM Manual em \url{http://support.ircam.fr/docs/om/om6-manual/co/RT2.html}. Acesso em 05 de fevereiro de 2015.} do objeto \textit{voice} demanda estender patches gráficos de uma maneira que ao final torna-se menos legível do que os \textit{scripts}.
+
+No entanto, a saída em Lilypond para o OM (com a biblioteca \textit{omlily}) mostrou-se também satisfatória e seria uma alternativa, considerando a boa documentação do projeto Lilypond para partituração impressa.\footnote{O script gerado a partir do patch da sessão recombinações está no apendice partituras. O script Lilypond gerado (onde foram inseridas as ligaduras direto no código) esta no \autoref{scripts}. }
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}A formatação de uma estrutura similar a estrutura composta com Music21, para a criação de clichês partiturados em OpenMusic. O OM possui a função de ligadura de continuidade (circulada na figura, ativada pelo uso do ponto flutuante), porém não possui nativamente a ligadura de expressão e outras articulações. }
@@ -2544,7 +2550,7 @@ No entanto, a saída em Lilypond para o OM (com a biblioteca omlily) mostrou-se 
 
 \section{Técnicas em OpenMusic}
 
-Para além das questões sobre a formatação de saída, o papel do OM na parte de CAC do presente 
+Para além de questões sobre a formatação de saída, o papel do OM na parte de CAC do presente 
 trabalho foi sobretudo como uma plataforma de testes em tempo de escuta dos algoritmos, além de proporcionar muita inspiração através de suas bibliotecas que acabam por antecipar vários procedimentos de composição algorítmica.
 
 
@@ -2565,12 +2571,12 @@ Fora todos os patches que já foram demonstrados nas partes anteriores como ilus
 
 A biblioteca de crivos\footnote{Conhecidos também como \textit{"cribles"} em francês ou \textit{"sieves"} em inglês. A palavra traduz-se literalmente "peneira".} do OM permite a construção de fórmulas para geradores de escalas "literais"\ baseadas em regras geradoras simples.
 
-Podemos também por união ou intersecção de conjuntos estabelecer algumas restrições de quais oitavas entram determinados intervalos, fazendo que por momentos os intervalos compostos formem novos intervalos intermediários que podem ser independentes de oitava. Iannis \citeonline{xenakis1992formalized} descreve o conceito de crivo em seu livro \textit{"Formalized Music"}.
+Podemos também por união ou intersecção de conjuntos estabelecer algumas restrições de quais oitavas entram determinados intervalos, fazendo que por momentos os intervalos compostos formem novos intervalos intermediários, que podem ser independentes de oitava. Iannis \citeonline{xenakis1992formalized} descreve o conceito de crivo em seu livro \textit{"Formalized Music"}.
  
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}Construção de crivos. A união de dois crivos que geram dois padrões intervalares durante inicio e fim diferentes cria uma terceira região de intersecção dos intervalos, gerando sonoridades com equilíbrios localizados porém independentes de oitava. }
+	\caption{\label{fig_grafico}Construção de crivos. A união de dois crivos que geram dois padrões intervalares durante início e fim diferentes cria uma terceira região de intersecção dos intervalos, produzindo sonoridades com equilíbrios localizados porém independentes de oitava. }
 	\begin{center}
-	    \includegraphics[scale=0.6]{OM_settheory/crivos.png}
+	    \includegraphics[scale=0.5]{OM_settheory/crivos.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
@@ -2578,21 +2584,22 @@ Podemos também por união ou intersecção de conjuntos estabelecer algumas res
 
 \subsubsection{Simetria e coleções }
 
-Estratégias diversas de simetria e seus ciclos foram bastante discutidas na \autoref{simetria} do presente trabalho. Apresento aqui na figura abaixo um patch base usado para gerar um clichê de acordes distanciados progressivamente de um eixo central dado. exemplo: dado o Lá$\sharp$ teremos uma díade Lá$\leftrightarrow$Sol, uma segunda díade Lá$\flat \leftrightarrow$Sol$\sharp$ e assim por diante. O objeto permut-random do OM auxilia o embaralhamento de uma nova sequência baseada nos acordes.
+Estratégias diversas de simetria e seus ciclos foram bastante discutidas na \autoref{simetria} do presente trabalho. Apresento na figura 71 um patch base usado para gerar um clichê de acordes distanciados progressivamente de um eixo central dado. Exemplo: dado o Lá$\sharp$ teremos uma díade Lá$\leftrightarrow$Sol, uma segunda díade Lá$\flat \leftrightarrow$Sol$\sharp$ e assim por diante. O objeto permut-random do OM auxilia o embaralhamento de uma nova sequência baseada nos acordes.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Gerador de eixo de simetria a partir de uma nota dada. }
 	\begin{center}
-	    \includegraphics[scale=0.6]{OMPD/simetricos01.png}
+	    \includegraphics[scale=0.4]{OMPD/simetricos01.png}
 	\end{center}
 	\legend{Fonte: autor }
 \end{figure}
 
+
 \subsubsection{Ostinatos rotacionados}
 
-Entre as estratégias de polarização está também a possibilidade de construir ostinatos que rotacionam seu início defasando com uma melodia ou baixo de acompanhamento. 
+Entre as estratégias de polarização está também a possibilidade de construir ostinatos que rotacionam seu início, defasando com uma melodia ou baixo de acompanhamento. 
 
-O loop deste patch da figura abaixo re-organiza os intervalos rotacionando-os e cria um encadeamento de acordes que pode servir para criar clichês similares e de mesma coleção de intervalos.
+O loop do patch da figura 72 re-organiza os intervalos, rotacionando-os e cria um encadeamento de acordes que pode servir para criar clichês similares e de mesma coleção de intervalos.
 
 
 \begin{figure}[!h]
@@ -2603,7 +2610,7 @@ O loop deste patch da figura abaixo re-organiza os intervalos rotacionando-os e 
 	\legend{Fonte: autor }
 \end{figure}
 
-O procedimento de formatação dos acordes fornece também um exemplo do uso do objeto \textit{omloop} para iteração em listas Lisp. O loop entrelaça os contornos inserindo as notas no mesmo contexto de parênteses e criando com isso acordes.
+O procedimento de formatação dos acordes fornece também um exemplo do uso do objeto \textit{omloop} para iteração em listas Lisp. O loop entrelaça os contornos, inserindo as notas no mesmo contexto de parênteses e criando com isso acordes.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}O loop interno do subpatch "opera listas" que insere a rotação e a permutação da figura anterior em um acorde. }
@@ -2616,10 +2623,14 @@ O procedimento de formatação dos acordes fornece também um exemplo do uso do 
 
 \subsubsection{Lambdas e recursividade no tratamento de acordes}
 
-Além da possibilidade de iterar as listas de notas dentro de um loop utilizando o objeto omloop , o OM traz um recurso interessante herdado da linguagem Lisp que é a possibilidade operar os objetos em "função lambda". O uso da "função lambda" em conjunto com o objeto \textit{mapcar} por exemplo, permite que de maneira similar ao que foi feito pelo loop da figura anterior seja possível aplicar recursivamente funções ou processamento de patches sobre listas de listas recursivamente até chegar em elementos unitários. Desta maneira podemos por exemplo criar uma função onde aplicamos regras de transformação para cada uma das notas de acordes já sequênciados em uma lista de acordes, como feito no patch ilustrado na figura abaixo.
+Além da possibilidade de iterar as listas de notas dentro de um loop utilizando o objeto omloop, o OM traz um recurso interessante herdado da linguagem Lisp que é a possibilidade operar os objetos em "função lambda". 
+
+O uso da "função lambda"\ em conjunto com o objeto \textit{mapcar}, por exemplo, permite que de maneira similar ao que foi feito pelo loop da figura anterior seja possível aplicar recursivamente funções ou processamento de patches sobre listas de listas recursivamente até chegar em elementos unitários. 
+
+Desta maneira, podemos por exemplo criar uma função onde aplicamos regras de transformação para cada uma das notas de acordes já sequênciados em uma lista de acordes, como feito no patch ilustrado na figura 73.
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico}A função lambda permite aplicar recursivamente para cada acorde de um chord-seq uma nova recursividade que busca cada elemento de cada acorde para aplicar nele neste caso um sorteio de oitava. }
+	\caption{\label{fig_grafico}A função lambda permite aplicar recursivamente para cada acorde de um chord-seq uma nova recursividade que busca cada elemento de cada acorde para aplicar nele, neste caso, um sorteio de oitava. }
 	\begin{center}
 	    \includegraphics[scale=0.5]{OMPD/Lambda_randomOitavas.png}
 	\end{center}
@@ -2627,13 +2638,10 @@ Além da possibilidade de iterar as listas de notas dentro de um loop utilizando
 \end{figure}
 
 
-
-
-
 \subsubsection{Perfis motívicos}
 \label{perfis}
 
-Uma biblioteca OM interessante para a exploração de contornos e estratégias de perfis motívicos, é a Profile. Abaixo a figura de um patch onde utilizo o objeto compress/expand para gerar uma estrutura de simetria proporcional, baseada na célula Z (vetor de intervalos [0,1,6,7] ) de Antokoletz. 
+Uma biblioteca OM interessante para a exploração de contornos e estratégias de perfis motívicos, é a Profile. Abaixo, a figura de um patch onde utilizo o objeto compress/expand para gerar uma estrutura de simetria proporcional, baseada na célula Z (vetor de intervalos [0,1,6,7] ) de Antokoletz. 
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Comprime e expande em passos de 3 intervalos simétricos, abrindo e fechando os acordes baseados em uma célula Z. }
@@ -2648,7 +2656,7 @@ Uma biblioteca OM interessante para a exploração de contornos e estratégias d
 
 Na \autoref{lz} discuti a biblioteca de OM LZ, que funciona com alguns conceitos de aprendizado de máquina para retirar contextos de relevância e similaridade de arquivos MIDI.
 
-Com alguns destes blocos construí um procedimento que pode servir de base para construção de clichês retirados dos Mikrokosmos de Béla Bartók. O caso específico da figura 71 é baseado na análise feita do Mikrokosmos 41 na \autoref{mikrocontorno} onde encontramos uma estratégia de rotação da pentatônica.\footnote{Para mais detalhes sobre rotações da pentatônica rever também \autoref{pentarota} }
+Com alguns destes blocos construí um procedimento que pode servir de base para construção de clichês retirados dos Mikrokosmos de Béla Bartók. O caso específico da figura 71 é baseado na análise feita do Mikrokosmos 41 na \autoref{mikrocontorno}, onde encontramos uma estratégia de rotação da pentatônica.\footnote{Para mais detalhes sobre rotações da pentatônica rever também \autoref{pentarota} }
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Recombinação de motivos a partir de segmentos gerados pela biblioteca LZ e estratégia pentatônica retirada da análise de Mikrokosmos 41. }
@@ -2658,7 +2666,7 @@ Com alguns destes blocos construí um procedimento que pode servir de base para 
 	\legend{Fonte: autor }
 \end{figure}
 
-Este patch também serviu como teste do procedimento já descrito anteriormente em \autoref{mikrocliches} , onde trabalhamos a conversão da notação proporcional em um processo de quantização para encaixe numa barra de compasso 7/4, para em seguida salvar em formato Lilypond, permitindo gerar uma partitura em pdf com padrões de impressão.
+Este patch também serviu como teste do procedimento já descrito anteriormente em \autoref{mikrocliches} , ali trabalhamos a conversão da notação proporcional em um processo de quantização para encaixe numa barra de compasso 7/4, para em seguida salvar em formato Lilypond, permitindo gerar uma partitura em pdf com padrões de impressão.
 
 
 \begin{figure}[!h]
@@ -2688,7 +2696,7 @@ Este patch também serviu como teste do procedimento já descrito anteriormente 
 \addcontentsline{toc}{chapter}{Conclusão}
 \label{conclusao}
 
-A revisão da literatura específica sobre o compositor Béla Bartók mostrou-se essencial como referência para construção de procedimentos de estilo pós-tonal sugeridos nos apontamentos. Como já previa o pesquisador de inteligência artificial Douglas Hofstadter na coletânea \textit{Virtual Music}, uma coleção de impressões sobre a pesquisa de geradores de estilo de David \citeonline{cope2004virtual} :
+A revisão da literatura específica sobre o compositor Béla Bartók mostrou-se essencial como referência para construção de procedimentos de estilo pós-tonal sugeridos nos apontamentos. Como já previa o pesquisador de inteligência artificial Douglas Hofstadter na coletânea \textit{Virtual Music} \cite{cope2004virtual} :
 
 \begin{citacao}
 Alguém que fragilmente capture somente as características mais óbvias de um estilo de um compositor - um baixo Alberti, por exemplo, em Mozart - cairia em uma camada externa mas deixaria as camadas mais internas intocadas.
@@ -2699,12 +2707,12 @@ inner rings untouched. A deeper imitator would add other outer layers of style b
 
 A tentativa de usar uma análise assistida por computador ancorada em parâmetros mais genéricos, derivados de investigações sobre cognição musical aplicada na segmentação de elementos básicos, mostrou-se insuficiente e limitada para um repertório pós-tonal estilisticamente idiossincrático como o de Béla Bartók.
 
-Vale relevar que procedimentos baseados em \textit{"aprendizado de máquina"}, como o exemplificado com a bilioteca OpenMusic LZ ( \autoref{lz} ) apontam uma direção viável para auxiliar a segmentação automatizada sem necessidade a priori de uma classificação especializada de parâmetros. O procedimento "treina"\ a máquina para separar segmentos re-incidentes e remonta sequências com estes clichês. 
+Vale relevar que procedimentos baseados em \textit{"aprendizado de máquina"}, como o exemplificado com a biblioteca OpenMusic LZ ( \autoref{lz} ) apontam uma direção viável para auxiliar a segmentação automatizada sem necessidade a priori de uma classificação especializada de parâmetros. O procedimento "treina"\ a máquina para separar segmentos re-incidentes e remonta sequências com estes clichês. 
 
 A remontagem disponível como padrão na biblioteca no entanto não tem como possuir uma consistência como macroforma, pois apenas remonta os clichês por proximidade de similaridade dos segmentos.
 A etapa composicional requer aplicação arbitrária de uma estratégia de encadeamento dos clichês, conectado-os por conduções melódicas e planejando as texturas politonais ou polimodais características.
 
-No presente estágio da pesquisa decidi por separar os dois procedimentos assistidos por computador pesquisados aqui - a análise e composição - buscando uma maior liberdade na experimentação e um registro de ideias derivadas, apontando caminhos para continuidade da pesquisa.
+No presente estágio da pesquisa decidi por separar os dois procedimentos assistidos por computador pesquisados aqui - a análise e composição - buscando uma maior liberdade na experimentação e um registro de ideias derivadas - apontando caminhos para continuidade da pesquisa.
 
 Os exemplos mostrados no capítulo sobre C.A.C. e as partituras anexadas tem antes de um acabamento estético e poético um objetivo didático para demonstração dos procedimentos básicos de aplicação das teorias e ferramentas aqui expostas. Junto a este trabalho anexo\footnote{Disponível para download em \url{http://devolts.org/luteria}.} arquivos com patches, músicas e scripts de caráter ainda experimental derivados deste trabalho e que apontam direções para continuidade da investigação prática.
 
@@ -2712,9 +2720,9 @@ O uso de duas linguagens de programação durante o processo - OpenMusic e Pytho
 
 Ficou claro na prática do processo que \textbf{o legado das bibliotecas e funções de programação disponíveis em código aberto devem ser levados em conta tanto quanto a literatura musical ou computacional disponível ou a escuta das composições de referência.} A possibilidade de ler código aberto\textbf{ é essencial} para o entendimento de teorias que o geraram.
 
-Ficou para uma possível continuação deste trabalho a implementação dos procedimentos de uma maneira mais integrada e sem necessária interação humana em tantas etapas, podendo ser usada em um corpus grande de composições relacionadas (exemplo: livros inteiros dos Mikrokosmos ou relação entre compositores pós-tonais diferentes usados em comparações estatísticas). 
+Ficou para uma possível continuação deste trabalho a implementação dos procedimentos de uma maneira mais integrada e sem necessária interação humana em tantas etapas, podendo ser usada em um \textit{corpus} grande de composições relacionadas (exemplo: livros inteiros dos Mikrokosmos ou relação entre compositores pós-tonais diferentes usados em comparações estatísticas). 
 
-Interessa também como desdobramento desta pesquisa a ampliação dos parâmetros para uma teoria que também especule com a \textit{"sonoridade do piano"}\cite{guigue2012}\ para além do uso "neutro"\ dos timbres e entre em aspectos da \textit{"espectromorfologia das formas sonoras"}.\cite{smalley1997spectromorphology}
+Interessa também como desdobramento desta pesquisa a ampliação dos parâmetros para uma teoria que também especule com a \textit{"sonoridade do piano"} \cite{guigue2012}\ para além do uso "neutro"\ dos timbres e entre em aspectos da \textit{"espectromorfologia das formas sonoras"}. \cite{smalley1997spectromorphology}
 
 
 
@@ -2759,11 +2767,11 @@ Interessa também como desdobramento desta pesquisa a ampliação dos parâmetro
 
 A teoria de grupos de classes de altura utiliza como base de suas formulações a relação entre os 12 semitons da escala cromática de forma modular: considerando alturas de mesma oitava como sujeitas mesmas propriedades intervalares, podendo argumentar relações independentes de registro. Exemplo: O Dó grave representado no protocolo MIDI pelo valor 24 tem uma relação de equivalência com o Dó agudo de valor 72. A fórmula é simples: ambos quando divididos por 12 apresentam resto 0. A nota Ré, por exemplo, sempre apresentaria o resto 2, e assim por diante. Dizemos portanto que pertencem a uma mesma classe de altura.
 
-Diferente de quando argumentada uma enarmonia funcional\footnote{Uma discussão aprofundada do problema em seu escopo algorítmico está no conceito de \textit{"solfejo de classe de altura"} de \citeonline[p. 123]{temperley2001cognition}} (como por exemplo  $Ré\sharp \to Mi\flat$ ) a teoria de grupos e classes de altura não toma como princípio ideias do tipo "terça maior ou menor", "nota sensível" ou "nota de passagem"\ pois vai partir de uma relação direta entre os aglomerados sonoros, buscando similaridades e equivalências sem estar tão presa as formas de prolongamento normatizadas pelo tonalismo clássico. \cite{lerdahl1989atonal,straus1987problem}
+Diferente de quando argumentada uma enarmonia funcional\footnote{Uma discussão aprofundada do problema em seu escopo algorítmico está no conceito de \textit{"solfejo de classe de altura"} de \citeonline[p. 123]{temperley2001cognition}} (como por exemplo  $Ré\sharp \to Mi\flat$ ) a teoria de grupos e classes de altura não toma como princípio ideias do tipo "terça maior ou menor", "nota sensível" ou "nota de passagem",\ pois vai partir de uma relação direta entre os aglomerados sonoros, buscando similaridades e equivalências sem estar tão presa as formas de prolongamento normatizadas pelo tonalismo clássico. \cite{lerdahl1989atonal,straus1987problem}
 
-Os intervalos são, sobretudo, distâncias. Nas teorias de classes de alturas essas distâncias podem estar categorizadas como intervalos ordenados - usando número negativos para os intervalos descendentes, ou não-ordenados - considerando intervalos equivalentes independentes de suas direções.\cite[p. 6]{straus2004}
+Os intervalos são, sobretudo, distâncias. Nas teorias de classes de alturas essas distâncias podem estar categorizadas como intervalos ordenados - usando número negativos para os intervalos descendentes, ou não-ordenados - considerando intervalos equivalentes independentes de suas direções. \cite[p. 6]{straus2004}
 
-Isso cria imediatamente uma relação interessante de parentesco entre pares em todos intervalos da escala cromática - exceto para o trítono, intervalo de sexta ordem que esta equidistante de 0 e 12 e portanto não possui uma inversão propriamente dita, mas sim tem o papel de cortar ao meio este espelhamento.
+Isso cria imediatamente uma relação interessante de parentesco entre pares em todos intervalos da escala cromática - exceto para o trítono, intervalo de sexta ordem que está equidistante de 0 e 12 e portanto não possui uma inversão propriamente dita, mas sim tem o papel de cortar ao meio esse espelhamento.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Equivalência de intervalos por inversão }
@@ -2809,7 +2817,7 @@ $ inversões = \left\{
   \end{array} \right.
 $
 
-O vetor de intervalos pode ser reduzido então a uma contagem que coloca no mesmo grupo os intervalos que são inversões dos primeiros cinco intervalos possíveis, já que seus pares após o trítono são considerados espelhamentos. No exemplo acima temos 10 que é a inversão de 2 e 8 que é a inversão de 4. Nosso vetor fica assim:
+O vetor de intervalos pode ser reduzido então a uma contagem que coloca no mesmo grupo os intervalos que são inversões dos primeiros cinco intervalos possíveis, já que seus pares após o trítono são considerados espelhamentos. No exemplo acima temos 10 que é a inversão de 2; e 8 que é a inversão de 4. Nosso vetor fica assim:
 
 
 \begin{table}[h]
@@ -2844,7 +2852,7 @@ Pode-se dizer então que a classe de alturas [0,2,4,10] possui o vetor intervala
 
 Para a redução de uma forma normal, partimos do \textit{cluster} sem repetições, colocando todas as alturas dentro da mesma oitava. Os passos seguintes são: 
 \textbf{a)} Ordenar de forma ascendente e escolher a sequência que tenha a menor distância da primeira até a última nota.
-\textbf{b)} Se houver empate reduzir pela que seja mais compacta à esquerda, comparando o menor intervalo entre a primeira e penúltima e assim por diante.
+\textbf{b)} Se houver empate, reduzir pela que seja mais compacta à esquerda, comparando o menor intervalo entre a primeira e penúltima e assim por diante.
 \textbf{c)} Havendo ainda empate, escolher aquele grupo que tem a menor altura como início. 
 
 \begin{figure}[h]
@@ -2858,7 +2866,7 @@ Para a redução de uma forma normal, partimos do \textit{cluster} sem repetiç�
 
 \section{Forma Prima} 
 
-A forma prima é um procedimento para simplificar ainda mais a forma normal, encontrando \textit{"a mais normal das normais"}\cite[p. 47]{straus2004} e reduzindo vetores que possuem os mesmos intervalos ou são inversões e transposições a um vetor primário. Para isso uma forma normal é transposta até que possua o zero em sua primeira posição. Assim é feito também com sua inversão. A forma mais compacta à esquerda será a forma prima. Allen \citeonline{forte1973structure} desenvolveu uma taxonomia a partir das formas primas que tem sido utilizada como forma canônica para representação de grupos de classes de altura.\footnote{A biblioteca \textit{"math"}\ do OpenMusic possui o objeto "p-form"\ para encontrar os agrupamentos de Forte. A tabela original está no livro "The Structure of Atonal Music"\ \cite[p.179-181]{forte1973structure}}. Forte organiza agrupamentos pelo número de elementos seguidos por um número que diz qual ordem dentro do conjunto com aquele mesmo número de elementos. Exemplo: |3-1| é composto das alturas (0,1,2), |3-2|  é o cluster (0,1,3), |4-17|  é composto por (0,3,4,7), e assim por diante.
+A forma prima é um procedimento para simplificar ainda mais a forma normal, encontrando \textit{"a mais normal das normais"} \cite[p. 47]{straus2004} e reduzindo vetores que possuem os mesmos intervalos ou são inversões e transposições a um vetor primário. Para isso uma forma normal é transposta até que possua o zero em sua primeira posição. Assim é feito também com sua inversão. A forma mais compacta à esquerda será a forma prima. Allen \citeonline{forte1973structure} desenvolveu uma taxonomia a partir das formas primas que tem sido utilizada como forma canônica para representação de grupos de classes de altura.\footnote{A biblioteca \textit{"math"}\ do OpenMusic possui o objeto "p-form"\ para encontrar os agrupamentos de Forte. A tabela original está no livro "The Structure of Atonal Music"\ \cite[p.179-181]{forte1973structure}}. Forte organiza agrupamentos pelo número de elementos seguidos por um número que diz qual ordem dentro do conjunto com aquele mesmo número de elementos. Exemplo: |3-1| é composto das alturas (0,1,2), |3-2|  é o cluster (0,1,3), |4-17|  é composto por (0,3,4,7), e assim por diante.
 
 \begin{figure}[h]
 	\caption{\label{fig_grafico}Fórmulas de agrupamento de classes de altura. }
@@ -2871,9 +2879,7 @@ A forma prima é um procedimento para simplificar ainda mais a forma normal, enc
 
 \section{Singularidades nos agrupamentos }
 
-Algumas propriedades entre os grupos de classes de alturas são muito interessantes como princípio composicional e, mesmo quando não tão obvias em primeiras audições, ao menos ajudam garantir alguma coerência estrutural conceitual. George Perle argumenta sobre "funções motívicas"\ em grupos de alturas \cite[p. 60-85]{perle1981serial} e observa algumas estratégias de compositores para aproveitar algumas propriedades encontradas em relações internas das series. Perle no entanto mostra-se cético quanto a formalização de nomenclaturas analíticas derivadas da classificação de Allen Forte e sua aplicação em argumentações para análises de composições que tenham sido compostas antes fórmulas tornarem-se ferramentas musicológicas. \cite{perle1990pitch}
-
-Exponho aqui algumas destas propriedades conforme o resumo didático proposto por \citeonline{straus2004}, sem ainda estarmos certos de sua efetividade para analises mas interessados na formalização computacional possível destas para processos composicionais.
+Algumas propriedades entre os grupos de classes de alturas são muito interessantes como princípio composicional e, mesmo quando não tão óbvias em primeiras audições, ao menos ajudam garantir alguma coerência estrutural conceitual. George Perle argumenta sobre "funções motívicas"\ em grupos de alturas \cite[p. 60-85]{perle1981serial} e observa algumas estratégias de compositores para aproveitar algumas propriedades encontradas em relações internas das séries. Perle no entanto mostra-se cético quanto a formalização de nomenclaturas analíticas derivadas da classificação de Allen Forte e sua aplicação em argumentações para análises de composições que tenham sido compostas antes que as fórmulas se tornassem ferramentas musicológicas. \cite{perle1990pitch}
 
 
 \subsection{Notas comuns sob transposição}
@@ -2891,7 +2897,7 @@ Tomemos o seguinte exemplo: Dado um grupo em sua forma prima [0,2,5] - ou "4-10"
 
 Isso acontece porque o vetor de intervalos para esta forma é <1,2,2,0,1,0> e podemos observar a fórmula de \citeonline[p. 68]{straus2004} que prova que o número de incidências comuns de uma determinada classe de alturas em sua transposição será o número de repetições deste intervalo em seu vetor original. Neste caso por exemplo temos duas incidências do intervalo de classe 2 - \textbf{portanto as transposições T2 e T10 tem duas notas em comum com T0.}
 
-Há uma exceção a esta regra (Figura 81):
+Há uma exceção a esta regra (Figura 85):
  
 \begin{figure}[!h]
 	\caption{\label{fig_grafico}Notas comuns na transposição com trítono. }
@@ -2934,7 +2940,7 @@ Na simetria transpositiva temos um padrão de intervalos que funciona como palí
 
 \subsection{Relação Z entre grupos de classes de alturas}
 
-A relação Z é um caso interessante: há uma equivalência sem que os conjuntos sejam transposições ou inversões entre si neste caso produzindo dois conjuntos que possuem os mesmos intervalos na sua constituição.
+A relação Z é um caso interessante: há uma equivalência sem que os conjuntos sejam transposições ou inversões entre si - neste caso produzindo dois conjuntos que possuem os mesmos intervalos na sua constituição.
 
 
 \begin{figure}[!h]
@@ -2961,7 +2967,7 @@ A relação Z é um caso interessante: há uma equivalência sem que os conjunto
 %
 %\end{figure}
 
-Anexamos aqui nesta parte algumas partituras geradas que representam uma amostra de experimentos possíveis. Considere-se também que todos os patches e scripts demonstrados neste trabalho podem potencialmente ser usados para gerar novas partituras, portanto estas peças figuram no presente trabalho sobretudo como um registro técnico do momento, enunciando a possibilidade de automatização desta etapa do procedimento.\footnote{Andamentos, dinâmicas e articulações mesmo quando presentes ainda são sugestões não testadas em instrumento, portanto quando não indicadas também entenda-se que está em aberto a experimentação destas para futuras derivações.}
+Anexamos aqui nesta parte algumas partituras geradas que representam uma amostra de experimentos possíveis. Considere-se também que todos os patches e scripts demonstrados neste trabalho podem potencialmente ser usados para gerar novas partituras, portanto estas peças figuram no presente trabalho sobretudo como um registro técnico do momento, enunciando a possibilidade de automatização desta etapa do procedimento.\footnote{Andamentos, dinâmicas e articulações, mesmo quando presentes, ainda são sugestões não testadas em instrumento - portanto quando não indicadas também entenda-se que está em aberto a experimentação destas para futuras derivações.}
 
 \section{MikroClichês}
 
@@ -3012,7 +3018,7 @@ Partituras derivadas de experimentos livres, surgidos durante a organização do
 
 \subsection{CosmoBagatella 0.01}
 
-Este "mikro-motivo"\ foi gerado a partir de um estudo para composição de eixos de simetria inversiva\footnote{Rever \autoref{simetria}. } a partir do eixo central $Fá \leftrightarrow Fá\sharp  $. No entanto a etapa $Ré \leftrightarrow Lá$ do eixo ficou destacada por sua sonoridade de 5ª justa e inspirou um movimento que prolonga a resolução do primeiro acorde [$Lá\flat$, Sol, Lá] em um Lá Uníssono do acorde final\footnote{Após uma citação passageira do $Dó\sharp$ e do Mi um pouco antes, sugerindo um Lá Maior.}
+Este "mikro-motivo"\ foi gerado a partir de um estudo para composição de eixos de simetria inversiva\footnote{Rever \autoref{simetria}. } a partir do eixo central $Fá \leftrightarrow Fá\sharp  $. No entanto a etapa $Ré \leftrightarrow Lá$ do eixo ficou destacada por sua sonoridade de 5ª justa, e inspirou um movimento que prolonga a resolução do primeiro acorde [$Lá\flat$, Sol, Lá] em um Lá Uníssono do acorde final\footnote{Após uma citação passageira do $Dó\sharp$ e do Mi um pouco antes, sugerindo um Lá Maior.}
 
 \begin{figure}[!h]
 	\begin{center}
@@ -3023,7 +3029,7 @@ Este "mikro-motivo"\ foi gerado a partir de um estudo para composição de eixos
 
 \subsection{CosmoBagatella 0.02}
 
-Derivado do estudo sobre simetria literal comentado na \autoref{simetrialiteral}, esta versão usa como tema o arpejo pelo acorde da "simetria em espelho" de Bartók demonstrada no \autoref{fig_simetrialiteral} e possui a inserção de acelerandos e retardandos arbitrários, colocados posteriormente. A busca de um critério de segmentação para a inserção de acelerandos e retardandos nas mudanças de frase fica aqui registrado e sugerido para futura implementação automatizada desta parte.
+Derivado do estudo sobre simetria literal comentado na \autoref{simetrialiteral}, esta versão usa como tema o arpejo pelo acorde da "simetria em espelho" de Bartók demonstrada no \autoref{fig_simetrialiteral} e possui a inserção de acelerandos e retardandos arbitrários, colocados posteriormente. A busca de um critério de segmentação para a inserção de acelerandos e retardandos nas mudanças de frase fica aqui registrada e sugerida para futura implementação automatizada desta parte.
 
 
 \begin{figure}[!h]
@@ -3045,7 +3051,7 @@ Esta miniatura surgiu durante a formalizações do script para construção dos 
 
 Apesar de encaixada em um compasso quaternário para efeito de registro aqui, poderia ou deveria ser re-escrita de outra forma.
 
-O importante deste estudo foi o uso dos módulos de escalas da biblioteca Music21, para formatação das estratégias de uso da escala pentatônica conjugada com uma escala dórica, buscando aplicar os conceitos de poliomodalismo presentes na \autoref{polimodal}. 
+O importante deste estudo foi o uso dos módulos de escalas da biblioteca Music21, para formatação das estratégias de uso da escala pentatônica conjugada com uma escala dórica, buscando aplicar os conceitos de polimodalismo presentes na \autoref{polimodal}. 
 
 Seu script gerador esta no \autoref{scriptescalas}.
 
@@ -3086,21 +3092,19 @@ Seu script gerador esta no \autoref{scriptescalas}.
 \end{figure}
 
 
-Esta miniatura aplica os apontamentos de macroforma apontados por \citeonline{lendvai1971bela} e descritos na \autoref{fibo}, construíndo uma peça que tem várias subestruturas segmentadas pela secção áurea para estruturação de um encadeamento entre partes. 
+Esta miniatura aplica os apontamentos de macroforma sugeridos por \citeonline{lendvai1971bela} e descritos na \autoref{fibo}, construíndo uma peça que tem várias subestruturas segmentadas pela secção áurea para estruturação de um encadeamento entre partes. 
 
-Começando pela escolha das figuras de compasso 3/8 , 5/8, 5+8/8 (e 13/8) e as entradas destas mudanças de figura marcando bem transições de secção entre transições da proporção (entradas nos compassos 5,8,13,21, acabando em 33).
+Começando pela escolha das figuras de compasso 3/8, 5/8, 5+8/8 (e 13/8) e as entradas destas mudanças de figura marcando bem transições de secção entre transições da proporção (entradas nos compassos 5,8,13,21, acabando em 33).
 
-A composição inicia com um esquema baseado entre a variação da célula Z (0,1,6,7 - comentada na \autoref{celZ} ) na suas transposições Dó (Dó, Dó$\sharp$, Fá$\sharp $ e Sol ), Si (Si, Dó, Fá, Fá$\sharp $ ) e Dó$\sharp$ (Dó$\sharp$, Ré, Sol, Sol$\sharp$ ). 
+A composição inicia com um esquema baseado entre a variação da célula Z (0,1,6,7 - comentada na \autoref{celZ}) na suas transposições Dó (Dó, Dó$\sharp$, Fá$\sharp $ e Sol), Si (Si, Dó, Fá, Fá$\sharp $ ) e Dó$\sharp$ (Dó$\sharp$, Ré, Sol, Sol$\sharp$). 
 
 Articula uma ponte com melodias derivadas da séria acústica de Dó$\sharp$ e finaliza construindo uma progressão de simetrias (variando intervalos de 2 e 3 semitons) baseada nos estudos de perfil comentados na \autoref{perfis} .
-
-
 
 
 \chapter{Scripts}
 \label{scripts}
 
-\section{Analise}
+\section{Análise}
 
 \subsection{Transformações do ciclo de terças maiores}
 \label{ciclotercas}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  27 MAR 2015 00:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  27 MAR 2015 15:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1447,10 +1447,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 3895) has occurred while \output is active []
 
  [8]
-Underfull \vbox (badness 3895) has occurred while \output is active []
+Underfull \vbox (badness 4621) has occurred while \output is active []
 
  [9]
-Underfull \vbox (badness 5548) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10])
 [11] [12
@@ -1459,33 +1459,38 @@ Underfull \vbox (badness 5548) has occurred while \output is active []
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 7.
  [13]
-Overfull \hbox (1.5877pt too wide) detected at line 54
- \T1/lmss/bx/n/12 100
+Overfull \hbox (1.5877pt too wide) detected at line 53
+ \T1/lmss/bx/n/12 101
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 56
+Overfull \hbox (1.5877pt too wide) detected at line 54
  \T1/lmss/bx/n/12 102
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 57
+Overfull \hbox (1.5877pt too wide) detected at line 56
  \T1/lmss/bx/n/12 104
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 66
- \T1/lmss/bx/n/12 113
+Overfull \hbox (1.5877pt too wide) detected at line 57
+ \T1/lmss/bx/n/12 106
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 69
+Overfull \hbox (1.5877pt too wide) detected at line 66
  \T1/lmss/bx/n/12 115
  []
 
 
+Overfull \hbox (1.5877pt too wide) detected at line 69
+ \T1/lmss/bx/n/12 117
+ []
+
+
 Overfull \hbox (1.5877pt too wide) detected at line 77
- \T1/lmss/bx/n/12 121
+ \T1/lmss/bx/n/12 123
  []
 
 
@@ -1495,22 +1500,22 @@ Overfull \hbox (5.17706pt too wide) in paragraph at lines 77--77
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 78
- \T1/lmss/bx/n/12 121
+ \T1/lmss/bx/n/12 123
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 79
- \T1/lmss/bx/n/12 123
+ \T1/lmss/bx/n/12 125
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 80
- \T1/lmss/bx/n/12 123
+ \T1/lmss/bx/n/12 125
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 81
- \T1/lmss/bx/n/12 124
+ \T1/lmss/bx/n/12 126
  []
 
 
@@ -1565,7 +1570,7 @@ Underfull \vbox (badness 1038) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-<axis/axisOM.png, id=713, 749.80125pt x 505.89pt>
+<axis/axisOM.png, id=714, 749.80125pt x 505.89pt>
 File: axis/axisOM.png Graphic file (type png)
  <use axis/axisOM.png>
 Package pdftex.def Info: axis/axisOM.png used on input line 608.
@@ -1584,7 +1589,7 @@ LaTeX Warning: Command \^ invalid in math mode on input line 616.
 
 LaTeX Warning: Command \^ invalid in math mode on input line 625.
 
-<axis/PoloContrapolo.png, id=724, 551.05875pt x 302.12875pt>
+<axis/PoloContrapolo.png, id=725, 551.05875pt x 302.12875pt>
 File: axis/PoloContrapolo.png Graphic file (type png)
 
 <use axis/PoloContrapolo.png>
@@ -1616,7 +1621,7 @@ LaTeX Warning: Command \' invalid in math mode on input line 643.
 
 LaTeX Warning: Command \' invalid in math mode on input line 643.
 
-<axis/sonata2pianos_dofasus.png, id=735, 1364.09625pt x 1158.3275pt>
+<axis/sonata2pianos_dofasus.png, id=736, 1364.09625pt x 1158.3275pt>
 File: axis/sonata2pianos_dofasus.png Graphic file (type png)
 
 <use axis/sonata2pianos_dofasus.png>
@@ -1630,7 +1635,7 @@ Package pdftex.def Info: axis/sonata2pianos_dofasus.png used on input line 648.
                                                   \fi \fi 
 l.656 
        <./axis/sonata2pianos_dofasus.png>]
-<axis/sonata2pianos_mm9-12.png, id=741, 832.10875pt x 395.4775pt>
+<axis/sonata2pianos_mm9-12.png, id=742, 832.10875pt x 395.4775pt>
 File: axis/sonata2pianos_mm9-12.png Graphic file (type png)
 
 <use axis/sonata2pianos_mm9-12.png>
@@ -1640,7 +1645,7 @@ Package pdftex.def Info: axis/sonata2pianos_mm9-12.png used on input line 660.
 
 LaTeX Warning: Command \' invalid in math mode on input line 665.
 
-<axis/temasonata2P.pdf, id=751, 562.1pt x 505.89pt>
+<axis/temasonata2P.pdf, id=752, 562.1pt x 505.89pt>
 File: axis/temasonata2P.pdf Graphic file (type pdf)
 
 <use axis/temasonata2P.pdf>
@@ -1682,7 +1687,7 @@ LaTeX Warning: Command \' invalid in math mode on input line 682.
 l.693 U
        ma revisão na evolução do pensamento harmônico leva-nos a conclus...
  <./axis/sonata2pianos_mm9-12.png>]
-<axis/estagio01.png, id=769, 415.5525pt x 54.2025pt>
+<axis/estagio01.png, id=770, 415.5525pt x 54.2025pt>
 File: axis/estagio01.png Graphic file (type png)
  <use axis/estagio01.png>
 Package pdftex.def Info: axis/estagio01.png used on input line 702.
@@ -1701,20 +1706,20 @@ l.709
                                                   \fi \fi 
 l.709 
        <./axis/temasonata2P.pdf> <./axis/estagio01.png>]
-<axis/estagio02.png, id=863, 418.56375pt x 97.36375pt>
+<axis/estagio02.png, id=864, 418.56375pt x 97.36375pt>
 File: axis/estagio02.png Graphic file (type png)
 
 <use axis/estagio02.png>
 Package pdftex.def Info: axis/estagio02.png used on input line 713.
 (pdftex.def)             Requested size: 209.28136pt x 48.68175pt.
- <axis/estagio03.png, id=868, 421.575pt x 100.375pt>
+ <axis/estagio03.png, id=869, 421.575pt x 100.375pt>
 File: axis/estagio03.png Graphic file (type png)
 
 <use axis/estagio03.png>
 Package pdftex.def Info: axis/estagio03.png used on input line 724.
 (pdftex.def)             Requested size: 210.78697pt x 50.18736pt.
 
-<axis/estagio04.png, id=873, 423.5825pt x 139.52126pt>
+<axis/estagio04.png, id=874, 423.5825pt x 139.52126pt>
 File: axis/estagio04.png Graphic file (type png)
 
 <use axis/estagio04.png>
@@ -1739,14 +1744,14 @@ l.743
                                                   \fi \fi 
 l.743 
        <./axis/estagio02.png> <./axis/estagio03.png> <./axis/estagio04.png>]
-<axis/maiormenor.png, id=882, 669.50125pt x 312.16624pt>
+<axis/maiormenor.png, id=883, 669.50125pt x 312.16624pt>
 File: axis/maiormenor.png Graphic file (type png)
 
 <use axis/maiormenor.png>
 Package pdftex.def Info: axis/maiormenor.png used on input line 747.
 (pdftex.def)             Requested size: 200.85191pt x 93.65059pt.
 
-<axis/serie_harmonica.png, id=891, 625.33624pt x 572.1375pt>
+<axis/serie_harmonica.png, id=892, 625.33624pt x 572.1375pt>
 File: axis/serie_harmonica.png Graphic file (type png)
 
 <use axis/serie_harmonica.png>
@@ -1765,7 +1770,7 @@ l.769
                                                   \fi \fi 
 l.769 
        <./axis/maiormenor.png> <./axis/serie_harmonica.png>]
-<axis/eixo_acustico.png, id=896, 376.40625pt x 650.43pt>
+<axis/eixo_acustico.png, id=897, 376.40625pt x 650.43pt>
 File: axis/eixo_acustico.png Graphic file (type png)
 
 <use axis/eixo_acustico.png>
@@ -1775,7 +1780,7 @@ Package pdftex.def Info: axis/eixo_acustico.png used on input line 780.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<axis/giro_de_eixos.png, id=899, 368.37625pt x 156.585pt>
+<axis/giro_de_eixos.png, id=900, 368.37625pt x 156.585pt>
 File: axis/giro_de_eixos.png Graphic file (type png)
 
 <use axis/giro_de_eixos.png>
@@ -1807,13 +1812,13 @@ ate ignored
 l.799 \subsection
                  {Expectativas de grau sensível} <./axis/eixo_acustico.png> <.
 /axis/giro_de_eixos.png>]
-<axis/resolve.png, id=916, 557.08125pt x 286.06876pt>
+<axis/resolve.png, id=917, 557.08125pt x 286.06876pt>
 File: axis/resolve.png Graphic file (type png)
  <use axis/resolve.png>
 Package pdftex.def Info: axis/resolve.png used on input line 808.
 (pdftex.def)             Requested size: 222.82855pt x 114.42546pt.
 
-<axis/proportionaurea.png, id=920, 952.55875pt x 469.755pt>
+<axis/proportionaurea.png, id=921, 952.55875pt x 469.755pt>
 File: axis/proportionaurea.png Graphic file (type png)
 
 <use axis/proportionaurea.png>
@@ -1832,7 +1837,7 @@ l.844
                                                   \fi \fi 
 l.844 
        <./axis/resolve.png> <./axis/proportionaurea.png>]
-<OM_settheory/aurea.png, id=925, 465.74pt x 527.9725pt>
+<OM_settheory/aurea.png, id=926, 465.74pt x 527.9725pt>
 File: OM_settheory/aurea.png Graphic file (type png)
 
 <use OM_settheory/aurea.png>
@@ -1846,14 +1851,14 @@ Package pdftex.def Info: OM_settheory/aurea.png used on input line 860.
 l.866 \subsubsection
                     {Geometria da Macro-forma com analogias na Micro-forma} <./
 OM_settheory/aurea.png>] [36]
-<axis/GS_maior_menor.png, id=946, 977.6525pt x 243.91125pt>
+<axis/GS_maior_menor.png, id=947, 977.6525pt x 243.91125pt>
 File: axis/GS_maior_menor.png Graphic file (type png)
 
 <use axis/GS_maior_menor.png>
 Package pdftex.def Info: axis/GS_maior_menor.png used on input line 892.
 (pdftex.def)             Requested size: 293.298pt x 73.17393pt.
 
-<ciclos/ciclosOM.png, id=953, 720.6925pt x 592.2125pt>
+<ciclos/ciclosOM.png, id=954, 720.6925pt x 592.2125pt>
 File: ciclos/ciclosOM.png Graphic file (type png)
 
 <use ciclos/ciclosOM.png>
@@ -1879,7 +1884,7 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 926.
 
-<ciclos/5JcrivosOM.png, id=960, 323.2075pt x 552.0625pt>
+<ciclos/5JcrivosOM.png, id=961, 323.2075pt x 552.0625pt>
 File: ciclos/5JcrivosOM.png Graphic file (type png)
 
 <use ciclos/5JcrivosOM.png>
@@ -1896,7 +1901,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
                                                   \fi \fi 
 l.945 
        <./ciclos/ciclosOM.png>]
-<ciclos/sensivel.png, id=967, 522.95375pt x 602.25pt>
+<ciclos/sensivel.png, id=968, 522.95375pt x 602.25pt>
 File: ciclos/sensivel.png Graphic file (type png)
 
 <use ciclos/sensivel.png>
@@ -1906,7 +1911,7 @@ Package pdftex.def Info: ciclos/sensivel.png used on input line 956.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ciclos/setimadominante.png, id=970, 913.4125pt x 604.2575pt>
+<ciclos/setimadominante.png, id=971, 913.4125pt x 604.2575pt>
 File: ciclos/setimadominante.png Graphic file (type png)
 
 <use ciclos/setimadominante.png>
@@ -1927,7 +1932,7 @@ l.977 \end{figure}
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ciclos/transpoe_triades_aumentadas.png, id=979, 1238.6275pt x 281.05pt>
+<ciclos/transpoe_triades_aumentadas.png, id=980, 1238.6275pt x 281.05pt>
 File: ciclos/transpoe_triades_aumentadas.png Graphic file (type png)
 
 <use ciclos/transpoe_triades_aumentadas.png>
@@ -2047,7 +2052,7 @@ LaTeX Warning: Command \' invalid in math mode on input line 1052.
 
 LaTeX Warning: Command \' invalid in math mode on input line 1052.
 
-<intervalar/Lendvai_p52_ZCell.png, id=1028, 1014.79124pt x 182.6825pt>
+<intervalar/Lendvai_p52_ZCell.png, id=1029, 1014.79124pt x 182.6825pt>
 File: intervalar/Lendvai_p52_ZCell.png Graphic file (type png)
 
 <use intervalar/Lendvai_p52_ZCell.png>
@@ -2058,7 +2063,7 @@ Package pdftex.def Info: intervalar/Lendvai_p52_ZCell.png used on input line 10
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43] <axis/simetriainversiva_par.pdf, id=1055, 529.98pt x 481.8pt>
+[43] <axis/simetriainversiva_par.pdf, id=1056, 529.98pt x 481.8pt>
 File: axis/simetriainversiva_par.pdf Graphic file (type pdf)
 
 <use axis/simetriainversiva_par.pdf>
@@ -2072,7 +2077,7 @@ Package pdftex.def Info: axis/simetriainversiva_par.pdf used on input line 1098
                                                   \fi \fi 
 l.1101 \end{figure}
                     <./intervalar/Lendvai_p52_ZCell.png>]
-<axis/simetriainversiva_impar.pdf, id=1062, 264.99pt x 432.81702pt>
+<axis/simetriainversiva_impar.pdf, id=1063, 264.99pt x 432.81702pt>
 File: axis/simetriainversiva_impar.pdf Graphic file (type pdf)
 
 <use axis/simetriainversiva_impar.pdf>
@@ -2095,14 +2100,14 @@ l.1119
 
 pdfTeX warning: pdflatex (file ./axis/simetriainversiva_impar.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] <estudosM21/contornoM109.png, id=1496, 841.1425pt x 318.18875pt>
+>] <estudosM21/contornoM109.png, id=1497, 841.1425pt x 318.18875pt>
 File: estudosM21/contornoM109.png Graphic file (type png)
 
 <use estudosM21/contornoM109.png>
 Package pdftex.def Info: estudosM21/contornoM109.png used on input line 1123.
 (pdftex.def)             Requested size: 336.45103pt x 127.27324pt.
 
-<axis/simetriamikro109.pdf, id=1497, 529.98pt x 401.5pt>
+<axis/simetriamikro109.pdf, id=1498, 529.98pt x 401.5pt>
 File: axis/simetriamikro109.pdf Graphic file (type pdf)
 
 <use axis/simetriamikro109.pdf>
@@ -2121,7 +2126,7 @@ l.1143 \end{citacao}
                                                   \fi \fi 
 l.1143 \end{citacao}
                      <./estudosM21/contornoM109.png> <./axis/simetriamikro109.p
-df>] <axis/TCCohn.png, id=1580, 1149.29375pt x 433.62pt>
+df>] <axis/TCCohn.png, id=1581, 1149.29375pt x 433.62pt>
 File: axis/TCCohn.png Graphic file (type png)
  <use axis/TCCohn.png>
 Package pdftex.def Info: axis/TCCohn.png used on input line 1154.
@@ -2138,7 +2143,7 @@ Overfull \hbox (4.70937pt too wide) in paragraph at lines 1154--1155
                                                   \fi \fi 
 l.1187 
         <./axis/TCCohn.png>]
-<axis/simetria_literal.png, id=1606, 332.24126pt x 480.79625pt>
+<axis/simetria_literal.png, id=1607, 332.24126pt x 480.79625pt>
 File: axis/simetria_literal.png Graphic file (type png)
 
 <use axis/simetria_literal.png>
@@ -2155,7 +2160,7 @@ e.1.29}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.1221 
         <./axis/simetria_literal.png>]
-<axis/colecoes_simetricas.png, id=1642, 650.43pt x 540.0175pt>
+<axis/colecoes_simetricas.png, id=1643, 650.43pt x 540.0175pt>
 File: axis/colecoes_simetricas.png Graphic file (type png)
 
 <use axis/colecoes_simetricas.png>
@@ -2172,7 +2177,7 @@ e.1.30}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.1261 \end{citacao}
                      <./axis/colecoes_simetricas.png>]
-<octa/octaOM.png, id=1692, 722.7pt x 382.42876pt>
+<octa/octaOM.png, id=1693, 722.7pt x 382.42876pt>
 File: octa/octaOM.png Graphic file (type png)
  <use octa/octaOM.png>
 Package pdftex.def Info: octa/octaOM.png used on input line 1274.
@@ -2181,7 +2186,7 @@ Package pdftex.def Info: octa/octaOM.png used on input line 1274.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[52] <octa/trasposiCohn.png, id=1713, 1091.07625pt x 1363.0925pt>
+[52] <octa/trasposiCohn.png, id=1714, 1091.07625pt x 1363.0925pt>
 File: octa/trasposiCohn.png Graphic file (type png)
 
 <use octa/trasposiCohn.png>
@@ -2208,7 +2213,7 @@ Underfull \vbox (badness 2150) has occurred while \output is active []
 l.1310 A
          tabela também mapeia o retorno das díades para as tétrades, indi...
  <./octa/trasposiCohn.png (PNG copy)>]
-<octa/Tetrarelations03.png, id=1734, 1792.6975pt x 618.31pt>
+<octa/Tetrarelations03.png, id=1735, 1792.6975pt x 618.31pt>
 File: octa/Tetrarelations03.png Graphic file (type png)
 
 <use octa/Tetrarelations03.png>
@@ -2219,7 +2224,7 @@ Overfull \hbox (46.95189pt too wide) in paragraph at lines 1315--1316
  [] 
  []
 
-<octa/permutaCEL_Z.png, id=1743, 938.50626pt x 529.98pt>
+<octa/permutaCEL_Z.png, id=1744, 938.50626pt x 529.98pt>
 File: octa/permutaCEL_Z.png Graphic file (type png)
 
 <use octa/permutaCEL_Z.png>
@@ -2233,7 +2238,7 @@ Overfull \hbox (61.18004pt too wide) in paragraph at lines 1330--1331
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<octa/mikro_Bali01.png, id=1744, 832.10875pt x 286.06876pt>
+<octa/mikro_Bali01.png, id=1745, 832.10875pt x 286.06876pt>
 File: octa/mikro_Bali01.png Graphic file (type png)
 
 <use octa/mikro_Bali01.png>
@@ -2263,14 +2268,14 @@ l.1346
                                                   \fi \fi 
 l.1346 
         <./octa/permutaCEL_Z.png> <./octa/mikro_Bali01.png>]
-<octa/mikro_Bali02.png, id=1758, 1274.7625pt x 1003.75pt>
+<octa/mikro_Bali02.png, id=1759, 1274.7625pt x 1003.75pt>
 File: octa/mikro_Bali02.png Graphic file (type png)
 
 <use octa/mikro_Bali02.png>
 Package pdftex.def Info: octa/mikro_Bali02.png used on input line 1350.
 (pdftex.def)             Requested size: 382.4317pt x 301.12732pt.
 
-<octa/permuta4_26.png, id=1761, 547.04375pt x 1218.5525pt>
+<octa/permuta4_26.png, id=1762, 547.04375pt x 1218.5525pt>
 File: octa/permuta4_26.png Graphic file (type png)
 
 <use octa/permuta4_26.png>
@@ -2300,7 +2305,7 @@ LaTeX Warning: Text page 58 contains only floats.
                                                   \fi \fi 
 l.1379 
         <./octa/permuta4_26.png>] [59]
-<modal/modal.png, id=1781, 947.54pt x 633.36626pt>
+<modal/modal.png, id=1782, 947.54pt x 633.36626pt>
 File: modal/modal.png Graphic file (type png)
  <use modal/modal.png>
 Package pdftex.def Info: modal/modal.png used on input line 1397.
@@ -2365,7 +2370,7 @@ LaTeX Warning: Command \' invalid in math mode on input line 1419.
 
 LaTeX Warning: Command \' invalid in math mode on input line 1419.
 
-<OM_settheory/pentarotacoes.png, id=1794, 681.54625pt x 592.2125pt>
+<OM_settheory/pentarotacoes.png, id=1795, 681.54625pt x 592.2125pt>
 File: OM_settheory/pentarotacoes.png Graphic file (type png)
 
 <use OM_settheory/pentarotacoes.png>
@@ -2387,7 +2392,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   \fi \fi 
 l.1452 \end{citacao}
                      <./OM_settheory/pentarotacoes.png>]
-<modal/lidiofrigioOM.png, id=1810, 714.67pt x 508.90125pt>
+<modal/lidiofrigioOM.png, id=1811, 714.67pt x 508.90125pt>
 File: modal/lidiofrigioOM.png Graphic file (type png)
 
 <use modal/lidiofrigioOM.png>
@@ -2400,7 +2405,7 @@ Package pdftex.def Info: modal/lidiofrigioOM.png used on input line 1458.
                                                   \fi \fi 
 l.1472 
         <./modal/lidiofrigioOM.png>] [64]
-<ostinatos/boating_ostinato.png, id=1840, 1096.095pt x 473.77pt>
+<ostinatos/boating_ostinato.png, id=1841, 1096.095pt x 473.77pt>
 File: ostinatos/boating_ostinato.png Graphic file (type png)
 
 <use ostinatos/boating_ostinato.png>
@@ -2429,13 +2434,13 @@ Underfull \hbox (badness 5756) in paragraph at lines 1559--1559
 ttp : / / lilypond . org / doc / v2 . 16 / Documentation / source /
  []
 
-<score/lilypond.pdf, id=1871, 321.2pt x 256.96pt>
+<score/lilypond.pdf, id=1872, 321.2pt x 256.96pt>
 File: score/lilypond.pdf Graphic file (type pdf)
  <use score/lilypond.pdf>
 Package pdftex.def Info: score/lilypond.pdf used on input line 1567.
 (pdftex.def)             Requested size: 240.89941pt x 192.71951pt.
 
-<score/musicxml.pdf, id=1874, 481.8pt x 377.41pt>
+<score/musicxml.pdf, id=1875, 481.8pt x 377.41pt>
 File: score/musicxml.pdf Graphic file (type pdf)
  <use score/musicxml.pdf>
 Package pdftex.def Info: score/musicxml.pdf used on input line 1581.
@@ -2471,7 +2476,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<estudosM21/acorde01.png, id=1948, 283.0575pt x 197.73875pt>
+<estudosM21/acorde01.png, id=1949, 283.0575pt x 197.73875pt>
 File: estudosM21/acorde01.png Graphic file (type png)
 
 <use estudosM21/acorde01.png>
@@ -2484,7 +2489,7 @@ Package pdftex.def Info: estudosM21/acorde01.png used on input line 1624.
                                                   \fi \fi 
 l.1630 
         <./estudosM21/acorde01.png>]
-<estudosM21/pautaM21.png, id=1975, 387.4475pt x 451.6875pt>
+<estudosM21/pautaM21.png, id=1976, 387.4475pt x 451.6875pt>
 File: estudosM21/pautaM21.png Graphic file (type png)
 
 <use estudosM21/pautaM21.png>
@@ -2511,7 +2516,7 @@ Overfull \hbox (4.06061pt too wide) in paragraph at lines 1904--1913
 []$[]$ 
  []
 
-<CBMS/krumhansl_temperley_p174.png, id=2242, 515.9275pt x 411.5375pt>
+<CBMS/krumhansl_temperley_p174.png, id=2243, 515.9275pt x 411.5375pt>
 File: CBMS/krumhansl_temperley_p174.png Graphic file (type png)
 
 <use CBMS/krumhansl_temperley_p174.png>
@@ -2519,7 +2524,7 @@ Package pdftex.def Info: CBMS/krumhansl_temperley_p174.png used on input line 1
 918.
 (pdftex.def)             Requested size: 206.36734pt x 164.61208pt.
 
-<CBMS/probeones_krumhansl_p36.png, id=2251, 368.37625pt x 556.0775pt>
+<CBMS/probeones_krumhansl_p36.png, id=2252, 368.37625pt x 556.0775pt>
 File: CBMS/probeones_krumhansl_p36.png Graphic file (type png)
 
 <use CBMS/probeones_krumhansl_p36.png>
@@ -2537,7 +2542,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
                                                   \fi \fi 
 l.1935 
         <./CBMS/krumhansl_temperley_p174.png>]
-<estudosM21/mikro041Pspace.png, id=2270, 748.7975pt x 568.1225pt>
+<estudosM21/mikro041Pspace.png, id=2271, 748.7975pt x 568.1225pt>
 File: estudosM21/mikro041Pspace.png Graphic file (type png)
 
 <use estudosM21/mikro041Pspace.png>
@@ -2563,7 +2568,7 @@ een already used, duplicate ignored
 l.2005 'i
          ii', 'i', 'II#3', '#iv2', '#iv', 'iii#6', 'iii', 'I'] <./estudosM21/mi
 kro041Pspace.png>]
-<estudosM21/mikro041FinalChords.png, id=2329, 1322.9425pt x 338.26375pt>
+<estudosM21/mikro041FinalChords.png, id=2330, 1322.9425pt x 338.26375pt>
 File: estudosM21/mikro041FinalChords.png Graphic file (type png)
 
 <use estudosM21/mikro041FinalChords.png>
@@ -2571,7 +2576,7 @@ Package pdftex.def Info: estudosM21/mikro041FinalChords.png used on input line
 2027.
 (pdftex.def)             Requested size: 330.73482pt x 84.56572pt.
 
-<estudosM21/mikro041_inicio.png, id=2330, 554.07pt x 278.03876pt>
+<estudosM21/mikro041_inicio.png, id=2331, 554.07pt x 278.03876pt>
 File: estudosM21/mikro041_inicio.png Graphic file (type png)
 
 <use estudosM21/mikro041_inicio.png>
@@ -2582,7 +2587,7 @@ Package pdftex.def Info: estudosM21/mikro041_inicio.png used on input line 2037
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<estudosM21/mikro041Pclass.png, id=2331, 521.95pt x 554.07pt>
+<estudosM21/mikro041Pclass.png, id=2332, 521.95pt x 554.07pt>
 File: estudosM21/mikro041Pclass.png Graphic file (type png)
 
 <use estudosM21/mikro041Pclass.png>
@@ -2600,7 +2605,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
                                                   \fi \fi 
 l.2058 
         <./estudosM21/mikro041FinalChords.png>]
-<estudosM21/mikro041_exercicio.png, id=2346, 885.3075pt x 293.095pt>
+<estudosM21/mikro041_exercicio.png, id=2347, 885.3075pt x 293.095pt>
 File: estudosM21/mikro041_exercicio.png Graphic file (type png)
 
 <use estudosM21/mikro041_exercicio.png>
@@ -2627,7 +2632,7 @@ l.2071
                                                   \fi \fi 
 l.2071 
         <./estudosM21/mikro041_inicio.png> <./estudosM21/mikro041Pclass.png>]
-<estudosM21/mikro041_contorno01.png, id=2353, 890.32625pt x 158.5925pt>
+<estudosM21/mikro041_contorno01.png, id=2354, 890.32625pt x 158.5925pt>
 File: estudosM21/mikro041_contorno01.png Graphic file (type png)
 
 <use estudosM21/mikro041_contorno01.png>
@@ -2635,7 +2640,7 @@ Package pdftex.def Info: estudosM21/mikro041_contorno01.png used on input line
 2077.
 (pdftex.def)             Requested size: 267.09993pt x 47.57811pt.
 
-<estudosM21/mikro041FinalChords_contorno.png, id=2354, 1335.99126pt x 331.2375p
+<estudosM21/mikro041FinalChords_contorno.png, id=2355, 1335.99126pt x 331.2375p
 t>
 File: estudosM21/mikro041FinalChords_contorno.png Graphic file (type png)
  <use estudosM21/mikro041FinalChords_contorno.png>
@@ -2646,8 +2651,11 @@ put line 2086.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[84pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
-2}) has been already used, duplicate ignored
+
+Underfull \vbox (badness 3049) has occurred while \output is active []
+
+ [84pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+52}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2666,7 +2674,7 @@ ure.2.54}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.2127 #
          imprime a partitura em pdf <./estudosM21/mikro041FinalChords_contorno.
-png>] <octa/m109analisem21.png, id=2403, 723.70375pt x 228.855pt>
+png>] <octa/m109analisem21.png, id=2404, 723.70375pt x 228.855pt>
 File: octa/m109analisem21.png Graphic file (type png)
 
 <use octa/m109analisem21.png>
@@ -2682,7 +2690,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   \fi \fi 
 l.2152 \section
                {OpenMusic} <./octa/m109analisem21.png>]
-<estudosM21/ncercle.png, id=2418, 325.215pt x 412.54124pt>
+<estudosM21/ncercle.png, id=2419, 325.215pt x 412.54124pt>
 File: estudosM21/ncercle.png Graphic file (type png)
 
 <use estudosM21/ncercle.png>
@@ -2692,7 +2700,7 @@ Package pdftex.def Info: estudosM21/ncercle.png used on input line 2172.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[87] <OMPD/chord-seq-sem-titulo.png, id=2426, 598.235pt x 583.17876pt>
+[87] <OMPD/chord-seq-sem-titulo.png, id=2427, 598.235pt x 583.17876pt>
 File: OMPD/chord-seq-sem-titulo.png Graphic file (type png)
 
 <use OMPD/chord-seq-sem-titulo.png>
@@ -2707,7 +2715,7 @@ Overfull \hbox (23.58865pt too wide) in paragraph at lines 2188--2189
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<OMPD/OM-listasDELADO.png, id=2428, 690.58pt x 1093.08376pt>
+<OMPD/OM-listasDELADO.png, id=2429, 690.58pt x 1093.08376pt>
 File: OMPD/OM-listasDELADO.png Graphic file (type png)
 
 <use OMPD/OM-listasDELADO.png>
@@ -2717,7 +2725,7 @@ Package pdftex.def Info: OMPD/OM-listasDELADO.png used on input line 2200.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<OMPD/manipulacao02.png, id=2429, 625.33624pt x 693.59125pt>
+<OMPD/manipulacao02.png, id=2430, 625.33624pt x 693.59125pt>
 File: OMPD/manipulacao02.png Graphic file (type png)
 
 <use OMPD/manipulacao02.png>
@@ -2769,7 +2777,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   \fi \fi 
 l.2226 
         <./OMPD/manipulacao02.png (PNG copy)>]
-<OM_settheory/todas_triades.png, id=2460, 867.24pt x 565.11125pt>
+<OM_settheory/todas_triades.png, id=2461, 867.24pt x 565.11125pt>
 File: OM_settheory/todas_triades.png Graphic file (type png)
 
 <use OM_settheory/todas_triades.png>
@@ -2784,7 +2792,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [92]
-<OM_settheory/OMsetAnalise.png, id=2470, 617.30624pt x 1341.01pt>
+<OM_settheory/OMsetAnalise.png, id=2471, 617.30624pt x 1341.01pt>
 File: OM_settheory/OMsetAnalise.png Graphic file (type png)
 
 <use OM_settheory/OMsetAnalise.png>
@@ -2795,7 +2803,7 @@ Package pdftex.def Info: OM_settheory/OMsetAnalise.png used on input line 2254.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<OM_settheory/SegmentaMikro109Octa.png, id=2471, 610.28pt x 463.7325pt>
+<OM_settheory/SegmentaMikro109Octa.png, id=2472, 610.28pt x 463.7325pt>
 File: OM_settheory/SegmentaMikro109Octa.png Graphic file (type png)
 
 <use OM_settheory/SegmentaMikro109Octa.png>
@@ -2825,7 +2833,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   \fi \fi 
 l.2271 
         <./OM_settheory/OMsetAnalise.png>]
-<OM_settheory/Analise_customizada.png, id=2480, 1204.5pt x 497.86pt>
+<OM_settheory/Analise_customizada.png, id=2481, 1204.5pt x 497.86pt>
 File: OM_settheory/Analise_customizada.png Graphic file (type png)
 
 <use OM_settheory/Analise_customizada.png>
@@ -2852,7 +2860,7 @@ e seg-men-ta-tion and analy-sis for Open-mu-sic"\T1/lmr/m/n/12 (-20) ([][]BRESS
 ON;
  []
 
-[96] <OM_settheory/x_dx.png, id=2513, 532.99126pt x 554.07pt>
+[96] <OM_settheory/x_dx.png, id=2514, 532.99126pt x 554.07pt>
 File: OM_settheory/x_dx.png Graphic file (type png)
 
 <use OM_settheory/x_dx.png>
@@ -2863,10 +2871,9 @@ Package pdftex.def Info: OM_settheory/x_dx.png used on input line 2321.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2332 E
-        sta proposta é diferente da formalização de gramáticas gerativas...
- <./OM_settheory/x_dx.png>]
-<OM_settheory/LZfy.png, id=2539, 545.03625pt x 604.2575pt>
+l.2333 
+        <./OM_settheory/x_dx.png>]
+<OM_settheory/LZfy.png, id=2540, 545.03625pt x 604.2575pt>
 File: OM_settheory/LZfy.png Graphic file (type png)
 
 <use OM_settheory/LZfy.png>
@@ -2881,7 +2888,7 @@ e.2.65}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2364 \chapter
+l.2368 \chapter
                {Composição Assistida por Computador} <./OM_settheory/LZfy.png
 >] [100
 
@@ -2889,10 +2896,10 @@ l.2364 \chapter
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [101]
-<score/mikro25.png, id=2572, 1240.635pt x 273.02pt>
+<score/mikro25.png, id=2573, 1240.635pt x 273.02pt>
 File: score/mikro25.png Graphic file (type png)
  <use score/mikro25.png>
-Package pdftex.def Info: score/mikro25.png used on input line 2398.
+Package pdftex.def Info: score/mikro25.png used on input line 2402.
 (pdftex.def)             Requested size: 434.22876pt x 95.55843pt.
 
 [102pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
@@ -2900,14 +2907,14 @@ Package pdftex.def Info: score/mikro25.png used on input line 2398.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2417 	#
+l.2421 	#
           para efeito de teste inserida uma funcao que sorteia notas para usar 
 <./score/mikro25.png>] [103]
-<score/clichelib_musescore.png, id=2641, 1114.1625pt x 209.78375pt>
+<score/clichelib_musescore.png, id=2645, 1114.1625pt x 209.78375pt>
 File: score/clichelib_musescore.png Graphic file (type png)
 
 <use score/clichelib_musescore.png>
-Package pdftex.def Info: score/clichelib_musescore.png used on input line 2509.
+Package pdftex.def Info: score/clichelib_musescore.png used on input line 2513.
 
 (pdftex.def)             Requested size: 445.6571pt x 83.912pt.
  [104pdfTeX warning (ext4): destination with the same identifier (name{figure.3
@@ -2915,13 +2922,14 @@ Package pdftex.def Info: score/clichelib_musescore.png used on input line 2509.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2518 
-        <./score/clichelib_musescore.png>]
-<OMPD/PolirritmoOM.png, id=2680, 571.13374pt x 568.1225pt>
+l.2523 C
+        onsiderando o caso de uso de clichês já partiturados: temos uma sa...
+ <./score/clichelib_musescore.png>]
+<OMPD/PolirritmoOM.png, id=2683, 571.13374pt x 568.1225pt>
 File: OMPD/PolirritmoOM.png Graphic file (type png)
 
 <use OMPD/PolirritmoOM.png>
-Package pdftex.def Info: OMPD/PolirritmoOM.png used on input line 2536.
+Package pdftex.def Info: OMPD/PolirritmoOM.png used on input line 2542.
 (pdftex.def)             Requested size: 342.68289pt x 340.87611pt.
 
 
@@ -2931,11 +2939,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [105]
-<OM_settheory/fibonacci.png, id=2687, 484.81125pt x 589.20125pt>
+<OM_settheory/fibonacci.png, id=2690, 484.81125pt x 589.20125pt>
 File: OM_settheory/fibonacci.png Graphic file (type png)
 
 <use OM_settheory/fibonacci.png>
-Package pdftex.def Info: OM_settheory/fibonacci.png used on input line 2559.
+Package pdftex.def Info: OM_settheory/fibonacci.png used on input line 2565.
 (pdftex.def)             Requested size: 290.88899pt x 353.52347pt.
 
 
@@ -2946,15 +2954,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2568 P
+l.2574 P
         odemos também por união ou intersecção de conjuntos estabelecer ...
  <./OMPD/PolirritmoOM.png>]
-<OM_settheory/crivos.png, id=2695, 286.06876pt x 588.1975pt>
+<OM_settheory/crivos.png, id=2698, 286.06876pt x 588.1975pt>
 File: OM_settheory/crivos.png Graphic file (type png)
 
 <use OM_settheory/crivos.png>
-Package pdftex.def Info: OM_settheory/crivos.png used on input line 2573.
-(pdftex.def)             Requested size: 171.64258pt x 352.92122pt.
+Package pdftex.def Info: OM_settheory/crivos.png used on input line 2579.
+(pdftex.def)             Requested size: 143.03403pt x 294.09802pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2967,14 +2975,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2582 
+l.2588 
         <./OM_settheory/fibonacci.png>]
-<OMPD/simetricos01.png, id=2704, 387.4475pt x 491.8375pt>
+<OMPD/simetricos01.png, id=2707, 387.4475pt x 491.8375pt>
 File: OMPD/simetricos01.png Graphic file (type png)
 
 <use OMPD/simetricos01.png>
-Package pdftex.def Info: OMPD/simetricos01.png used on input line 2586.
-(pdftex.def)             Requested size: 232.47029pt x 295.10477pt.
+Package pdftex.def Info: OMPD/simetricos01.png used on input line 2592.
+(pdftex.def)             Requested size: 154.97624pt x 196.7315pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<OMPD/motivicos01.png, id=2708, 623.32875pt x 573.14125pt>
+File: OMPD/motivicos01.png Graphic file (type png)
+
+<use OMPD/motivicos01.png>
+Package pdftex.def Info: OMPD/motivicos01.png used on input line 2608.
+(pdftex.def)             Requested size: 311.6636pt x 286.56992pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2984,35 +3002,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2596 
+l.2614 
         <./OM_settheory/crivos.png>]
-<OMPD/motivicos01.png, id=2709, 623.32875pt x 573.14125pt>
-File: OMPD/motivicos01.png Graphic file (type png)
-
-<use OMPD/motivicos01.png>
-Package pdftex.def Info: OMPD/motivicos01.png used on input line 2601.
-(pdftex.def)             Requested size: 311.6636pt x 286.56992pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<OMPD/opera_listas.png, id=2710, 451.6875pt x 462.72874pt>
+<OMPD/opera_listas.png, id=2713, 451.6875pt x 462.72874pt>
 File: OMPD/opera_listas.png Graphic file (type png)
 
 <use OMPD/opera_listas.png>
-Package pdftex.def Info: OMPD/opera_listas.png used on input line 2611.
+Package pdftex.def Info: OMPD/opera_listas.png used on input line 2618.
 (pdftex.def)             Requested size: 225.84319pt x 231.3638pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<OMPD/Lambda_randomOitavas.png, id=2711, 609.27625pt x 1164.35pt>
-File: OMPD/Lambda_randomOitavas.png Graphic file (type png)
-
-<use OMPD/Lambda_randomOitavas.png>
-Package pdftex.def Info: OMPD/Lambda_randomOitavas.png used on input line 2624.
-
-(pdftex.def)             Requested size: 304.63737pt x 582.17358pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -3022,28 +3019,49 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2637 
-        <./OMPD/simetricos01.png>]
-
-LaTeX Warning: Text page 110 contains only floats.
-
-
-Overfull \vbox (1.36884pt too high) has occurred while \output is active []
-
-
-[110pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-72}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2637 
+l.2627 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
-.3.73}) has been already used, duplicate ignored
+.3.72}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2637 
-        <./OMPD/motivicos01.png> <./OMPD/opera_listas.png>]
+l.2627 
+        <./OMPD/simetricos01.png> <./OMPD/motivicos01.png>]
+<OMPD/Lambda_randomOitavas.png, id=2718, 609.27625pt x 1164.35pt>
+File: OMPD/Lambda_randomOitavas.png Graphic file (type png)
+
+<use OMPD/Lambda_randomOitavas.png>
+Package pdftex.def Info: OMPD/Lambda_randomOitavas.png used on input line 2635.
+
+(pdftex.def)             Requested size: 304.63737pt x 582.17358pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<OMPD/Profile_celulaZ.png, id=2719, 761.84625pt x 522.95375pt>
+File: OMPD/Profile_celulaZ.png Graphic file (type png)
+
+<use OMPD/Profile_celulaZ.png>
+Package pdftex.def Info: OMPD/Profile_celulaZ.png used on input line 2649.
+(pdftex.def)             Requested size: 457.11128pt x 313.77466pt.
+
+Overfull \hbox (2.11128pt too wide) in paragraph at lines 2649--2650
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [110pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+.73}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2658 
+        <./OMPD/opera_listas.png>]
 
 LaTeX Warning: Text page 111 contains only floats.
 
@@ -3056,68 +3074,72 @@ Overfull \vbox (0.64114pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2637 
+l.2658 
         <./OMPD/Lambda_randomOitavas.png>]
-<OMPD/Profile_celulaZ.png, id=2724, 761.84625pt x 522.95375pt>
-File: OMPD/Profile_celulaZ.png Graphic file (type png)
-
-<use OMPD/Profile_celulaZ.png>
-Package pdftex.def Info: OMPD/Profile_celulaZ.png used on input line 2641.
-(pdftex.def)             Requested size: 457.11128pt x 313.77466pt.
-
-Overfull \hbox (2.11128pt too wide) in paragraph at lines 2641--2642
- [] 
- []
-
-<OMPD/Recombina_Mikros.png, id=2729, 798.985pt x 607.26875pt>
+<OMPD/Recombina_Mikros.png, id=2732, 798.985pt x 607.26875pt>
 File: OMPD/Recombina_Mikros.png Graphic file (type png)
 
 <use OMPD/Recombina_Mikros.png>
-Package pdftex.def Info: OMPD/Recombina_Mikros.png used on input line 2656.
+Package pdftex.def Info: OMPD/Recombina_Mikros.png used on input line 2664.
 (pdftex.def)             Requested size: 319.58833pt x 242.9032pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<OMPD/recombinadoLILY.png, id=2734, 1278.7775pt x 331.2375pt>
+File: OMPD/recombinadoLILY.png Graphic file (type png)
+
+<use OMPD/recombinadoLILY.png>
+Package pdftex.def Info: OMPD/recombinadoLILY.png used on input line 2675.
+(pdftex.def)             Requested size: 383.63622pt x 99.37201pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 6725) has occurred while \output is active []
+
  [112pdfTeX warning (ext4): destination with the same identifier (name{figure.3
 .75}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2659 \end{figure}
-                    <./OMPD/Profile_celulaZ.png>]
-<OMPD/recombinadoLILY.png, id=2735, 1278.7775pt x 331.2375pt>
-File: OMPD/recombinadoLILY.png Graphic file (type png)
-
-<use OMPD/recombinadoLILY.png>
-Package pdftex.def Info: OMPD/recombinadoLILY.png used on input line 2667.
-(pdftex.def)             Requested size: 383.63622pt x 99.37201pt.
- [113pdfTeX warning (ext4): destination with the same identifier (name{figure.3
-.76}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2673 \begin
-             {figure}[!h]pdfTeX warning (ext4): destination with the same ident
-ifier (name{figure.3.77}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2673 \begin
-             {figure}[!h] <./OMPD/Recombina_Mikros.png> <./OMPD/recombinadoLILY
-.png>] <OMPD/OMquantify.png, id=2742, 822.07124pt x 372.39125pt>
+l.2681 \begin
+             {figure}[!h] <./OMPD/Profile_celulaZ.png>]
+<OMPD/OMquantify.png, id=2740, 822.07124pt x 372.39125pt>
 File: OMPD/OMquantify.png Graphic file (type png)
 
 <use OMPD/OMquantify.png>
-Package pdftex.def Info: OMPD/OMquantify.png used on input line 2676.
+Package pdftex.def Info: OMPD/OMquantify.png used on input line 2684.
 (pdftex.def)             Requested size: 534.33998pt x 242.05144pt.
 
-Overfull \hbox (79.33998pt too wide) in paragraph at lines 2676--2677
+Overfull \hbox (79.33998pt too wide) in paragraph at lines 2684--2685
  [] 
  []
 
-[114pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-78}) has been already used, duplicate ignored
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[113pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+76}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2687 \chapter
+l.2695 \chapter
+               *[Conclusão]{Conclusão}pdfTeX warning (ext4): destination with
+ the same identifier (name{figure.3.77}) has been already used, duplicate ignor
+ed
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2695 \chapter
+               *[Conclusão]{Conclusão} <./OMPD/Recombina_Mikros.png> <./OMPD/
+recombinadoLILY.png>] [114pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.3.78}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2695 \chapter
                *[Conclusão]{Conclusão} <./OMPD/OMquantify.png>] [115
 
 ]
@@ -3132,31 +3154,31 @@ bibitemlist
 ] [118] [119]) [120]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 2755.
+(hyperref)                removing `\uppercase' on input line 2763.
 
 [121
 
 
 ] [122]
 
-LaTeX Warning: Command \' invalid in math mode on input line 2762.
+LaTeX Warning: Command \' invalid in math mode on input line 2770.
 
-<algo/equivalencia_inversa.png, id=2968, 1170.3725pt x 239.89626pt>
+<algo/equivalencia_inversa.png, id=2970, 1170.3725pt x 239.89626pt>
 File: algo/equivalencia_inversa.png Graphic file (type png)
 
 <use algo/equivalencia_inversa.png>
-Package pdftex.def Info: algo/equivalencia_inversa.png used on input line 2771.
+Package pdftex.def Info: algo/equivalencia_inversa.png used on input line 2779.
 
 (pdftex.def)             Requested size: 351.11446pt x 71.96942pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<OM_settheory/vetor02410.png, id=2969, 262.9825pt x 121.45375pt>
+<OM_settheory/vetor02410.png, id=2971, 262.9825pt x 121.45375pt>
 File: OM_settheory/vetor02410.png Graphic file (type png)
 
 <use OM_settheory/vetor02410.png>
-Package pdftex.def Info: OM_settheory/vetor02410.png used on input line 2788.
+Package pdftex.def Info: OM_settheory/vetor02410.png used on input line 2796.
 (pdftex.def)             Requested size: 157.7907pt x 72.87279pt.
 
 
@@ -3166,7 +3188,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ]
 
-LaTeX Warning: Command \~ invalid in math mode on input line 2799.
+LaTeX Warning: Command \~ invalid in math mode on input line 2807.
 
 
 Underfull \vbox (badness 6284) has occurred while \output is active []
@@ -3176,27 +3198,27 @@ Underfull \vbox (badness 6284) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2835 
+l.2843 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .A.80}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2835 
+l.2843 
         <./algo/equivalencia_inversa.png> <./OM_settheory/vetor02410.png>]
-<OM_settheory/reducao_acorde.png, id=2977, 292.09125pt x 396.48125pt>
+<OM_settheory/reducao_acorde.png, id=2980, 292.09125pt x 396.48125pt>
 File: OM_settheory/reducao_acorde.png Graphic file (type png)
 
 <use OM_settheory/reducao_acorde.png>
 Package pdftex.def Info: OM_settheory/reducao_acorde.png used on input line 284
-0.
+8.
 (pdftex.def)             Requested size: 204.46246pt x 277.53497pt.
 
-<OM_settheory/forma_normal.png, id=2978, 480.79625pt x 405.515pt>
+<OM_settheory/forma_normal.png, id=2981, 480.79625pt x 405.515pt>
 File: OM_settheory/forma_normal.png Graphic file (type png)
 
 <use OM_settheory/forma_normal.png>
-Package pdftex.def Info: OM_settheory/forma_normal.png used on input line 2853.
+Package pdftex.def Info: OM_settheory/forma_normal.png used on input line 2861.
 
 (pdftex.def)             Requested size: 336.55507pt x 283.85855pt.
 
@@ -3208,13 +3230,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2862 
+l.2870 
         <./OM_settheory/reducao_acorde.png>]
-<OM_settheory/forma_prima_forte_vector.png, id=2991, 424.58624pt x 579.16376pt>
+<OM_settheory/forma_prima_forte_vector.png, id=2994, 424.58624pt x 579.16376pt>
 File: OM_settheory/forma_prima_forte_vector.png Graphic file (type png)
 <use OM_settheory/forma_prima_forte_vector.png>
 Package pdftex.def Info: OM_settheory/forma_prima_forte_vector.png used on inpu
-t line 2866.
+t line 2874.
 (pdftex.def)             Requested size: 297.20834pt x 405.41187pt.
 
 
@@ -3225,282 +3247,275 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2875 
+l.2883 
         <./OM_settheory/forma_normal.png>]
-<OM_settheory/notas_comuns_2e10.png, id=3005, 378.41376pt x 302.12875pt>
+<OM_settheory/notas_comuns_2e10.png, id=3006, 378.41376pt x 302.12875pt>
 File: OM_settheory/notas_comuns_2e10.png Graphic file (type png)
 
 <use OM_settheory/notas_comuns_2e10.png>
 Package pdftex.def Info: OM_settheory/notas_comuns_2e10.png used on input line 
-2886.
+2892.
 (pdftex.def)             Requested size: 264.88782pt x 211.48868pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 2088) has occurred while \output is active []
-
- [127pdfTeX warning (ext4): destination with the same identifier (name{figure.A
-.83}) has been already used, duplicate ignored
+[127pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
+83}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2893 
+l.2899 
         <./OM_settheory/forma_prima_forte_vector.png>]
 <OM_settheory/notas_comuns_tritono.png, id=3012, 446.66875pt x 351.3125pt>
 File: OM_settheory/notas_comuns_tritono.png Graphic file (type png)
 
 <use OM_settheory/notas_comuns_tritono.png>
 Package pdftex.def Info: OM_settheory/notas_comuns_tritono.png used on input li
-ne 2899.
+ne 2905.
 (pdftex.def)             Requested size: 312.66599pt x 245.91707pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<OM_settheory/palindrome1.png, id=3013, 313.17pt x 354.32375pt>
-File: OM_settheory/palindrome1.png Graphic file (type png)
-
-<use OM_settheory/palindrome1.png>
-Package pdftex.def Info: OM_settheory/palindrome1.png used on input line 2916.
-(pdftex.def)             Requested size: 187.90344pt x 212.59589pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4266) has occurred while \output is active []
 
  [128pdfTeX warning (ext4): destination with the same identifier (name{figure.A
 .84}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2924 
-        <./OM_settheory/notas_comuns_2e10.png>]
+l.2911 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.A.85}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2911 
+        <./OM_settheory/notas_comuns_2e10.png> <./OM_settheory/notas_comuns_tri
+tono.png>] <OM_settheory/palindrome1.png, id=3017, 313.17pt x 354.32375pt>
+File: OM_settheory/palindrome1.png Graphic file (type png)
+
+<use OM_settheory/palindrome1.png>
+Package pdftex.def Info: OM_settheory/palindrome1.png used on input line 2922.
+(pdftex.def)             Requested size: 187.90344pt x 212.59589pt.
+
 <OM_settheory/complemento.png, id=3018, 313.17pt x 329.23pt>
 File: OM_settheory/complemento.png Graphic file (type png)
 
 <use OM_settheory/complemento.png>
-Package pdftex.def Info: OM_settheory/complemento.png used on input line 2929.
+Package pdftex.def Info: OM_settheory/complemento.png used on input line 2935.
 (pdftex.def)             Requested size: 187.90344pt x 197.53952pt.
- [129pdfTeX warning (ext4): destination with the same identifier (name{figure.A
-.85}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2932 \end{figure}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.A.86}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2932 \end{figure}
-                    <./OM_settheory/notas_comuns_tritono.png> <./OM_settheory/p
-alindrome1.png>]
-<OM_settheory/Z_related.png, id=3024, 480.79625pt x 367.3725pt>
-File: OM_settheory/Z_related.png Graphic file (type png)
-
-<use OM_settheory/Z_related.png>
-Package pdftex.def Info: OM_settheory/Z_related.png used on input line 2943.
-(pdftex.def)             Requested size: 288.47997pt x 220.42519pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[130pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
-87}) has been already used, duplicate ignored
+
+Underfull \vbox (badness 3088) has occurred while \output is active []
+
+ [129pdfTeX warning (ext4): destination with the same identifier (name{figure.A
+.86}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2956 \chapter
-               {Partituras Generativas} <./OM_settheory/complemento.png>]
-[131pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
-88}) has been already used, duplicate ignored
+l.2944 
+        <./OM_settheory/palindrome1.png>]
+<OM_settheory/Z_related.png, id=3024, 480.79625pt x 367.3725pt>
+File: OM_settheory/Z_related.png Graphic file (type png)
+
+<use OM_settheory/Z_related.png>
+Package pdftex.def Info: OM_settheory/Z_related.png used on input line 2949.
+(pdftex.def)             Requested size: 288.47997pt x 220.42519pt.
+ [130pdfTeX warning (ext4): destination with the same identifier (name{figure.A
+.87}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2956 \chapter
-               {Partituras Generativas} <./OM_settheory/Z_related.png>]
-[132
+l.2962 \chapter
+               {Partituras Generativas}pdfTeX warning (ext4): destination with 
+the same identifier (name{figure.A.88}) has been already used, duplicate ignore
+d
 
-] <score/MikroCliche01.png, id=3040, 1241.63875pt x 538.01pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2962 \chapter
+               {Partituras Generativas} <./OM_settheory/complemento.png> <./OM_
+settheory/Z_related.png>]
+<score/MikroCliche01.png, id=3031, 1241.63875pt x 538.01pt>
 File: score/MikroCliche01.png Graphic file (type png)
 
 <use score/MikroCliche01.png>
-Package pdftex.def Info: score/MikroCliche01.png used on input line 2978.
+Package pdftex.def Info: score/MikroCliche01.png used on input line 2984.
 (pdftex.def)             Requested size: 496.6467pt x 215.20018pt.
 
-Overfull \hbox (41.6467pt too wide) in paragraph at lines 2978--2979
+Overfull \hbox (41.6467pt too wide) in paragraph at lines 2984--2985
  [] 
  []
 
-[133 <./score/MikroCliche01.png>]
-<score/MikroCliche02.png, id=3048, 1249.66875pt x 562.1pt>
+[131
+
+ <./score/MikroCliche01.png>]
+<score/MikroCliche02.png, id=3040, 1249.66875pt x 562.1pt>
 File: score/MikroCliche02.png Graphic file (type png)
 
 <use score/MikroCliche02.png>
-Package pdftex.def Info: score/MikroCliche02.png used on input line 2991.
+Package pdftex.def Info: score/MikroCliche02.png used on input line 2997.
 (pdftex.def)             Requested size: 499.85864pt x 224.83601pt.
 
-Overfull \hbox (44.85864pt too wide) in paragraph at lines 2991--2992
+Overfull \hbox (44.85864pt too wide) in paragraph at lines 2997--2998
  [] 
  []
 
-<score/MikroCliche03.png, id=3052, 1291.82625pt x 529.98pt>
+<score/MikroCliche03.png, id=3044, 1291.82625pt x 529.98pt>
 File: score/MikroCliche03.png Graphic file (type png)
 
 <use score/MikroCliche03.png>
-Package pdftex.def Info: score/MikroCliche03.png used on input line 3003.
+Package pdftex.def Info: score/MikroCliche03.png used on input line 3009.
 (pdftex.def)             Requested size: 452.14597pt x 185.49577pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[134 <./score/MikroCliche02.png>]
+[132 <./score/MikroCliche02.png>]
 
-LaTeX Warning: Command \' invalid in math mode on input line 3015.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 3015.
+LaTeX Warning: Command \' invalid in math mode on input line 3021.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 3015.
+LaTeX Warning: Command \' invalid in math mode on input line 3021.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 3015.
+LaTeX Warning: Command \' invalid in math mode on input line 3021.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 3015.
+LaTeX Warning: Command \' invalid in math mode on input line 3021.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 3015.
+LaTeX Warning: Command \' invalid in math mode on input line 3021.
 
-<score/CosmoBagatella001.png, id=3062, 1247.66125pt x 386.44376pt>
+
+LaTeX Warning: Command \' invalid in math mode on input line 3021.
+
+<score/CosmoBagatella001.png, id=3054, 1247.66125pt x 386.44376pt>
 File: score/CosmoBagatella001.png Graphic file (type png)
 
 <use score/CosmoBagatella001.png>
-Package pdftex.def Info: score/CosmoBagatella001.png used on input line 3019.
+Package pdftex.def Info: score/CosmoBagatella001.png used on input line 3025.
 (pdftex.def)             Requested size: 499.05566pt x 154.57475pt.
 
-Overfull \hbox (44.05566pt too wide) in paragraph at lines 3019--3020
+Overfull \hbox (44.05566pt too wide) in paragraph at lines 3025--3026
  [] 
  []
 
-[135 <./score/MikroCliche03.png> <./score/CosmoBagatella001.png>]
-<score/CosmoBagatella002.png, id=3075, 1256.695pt x 574.145pt>
+[133 <./score/MikroCliche03.png> <./score/CosmoBagatella001.png>]
+<score/CosmoBagatella002.png, id=3067, 1256.695pt x 574.145pt>
 File: score/CosmoBagatella002.png Graphic file (type png)
 
 <use score/CosmoBagatella002.png>
-Package pdftex.def Info: score/CosmoBagatella002.png used on input line 3031.
+Package pdftex.def Info: score/CosmoBagatella002.png used on input line 3037.
 (pdftex.def)             Requested size: 502.6691pt x 229.65393pt.
 
-Overfull \hbox (47.6691pt too wide) in paragraph at lines 3031--3032
+Overfull \hbox (47.6691pt too wide) in paragraph at lines 3037--3038
  [] 
  []
 
-<score/ExperimentoPentatonico.png, id=3077, 1246.6575pt x 540.0175pt>
+<score/ExperimentoPentatonico.png, id=3069, 1246.6575pt x 540.0175pt>
 File: score/ExperimentoPentatonico.png Graphic file (type png)
 
 <use score/ExperimentoPentatonico.png>
 Package pdftex.def Info: score/ExperimentoPentatonico.png used on input line 30
-39.
+45.
 (pdftex.def)             Requested size: 498.65417pt x 216.00316pt.
 
-Overfull \hbox (43.65417pt too wide) in paragraph at lines 3039--3040
+Overfull \hbox (43.65417pt too wide) in paragraph at lines 3045--3046
  [] 
  []
 
-[136 <./score/CosmoBagatella002.png> <./score/ExperimentoPentatonico.png>]
+[134 <./score/CosmoBagatella002.png> <./score/ExperimentoPentatonico.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3053.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 3053.
+(hyperref)                removing `math shift' on input line 3059.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 3053.
+(hyperref)                removing `\begingroup' on input line 3059.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\over' on input line 3053.
+(hyperref)                removing `\endgroup' on input line 3059.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Phi' on input line 3053.
+(hyperref)                removing `\over' on input line 3059.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3053.
+(hyperref)                removing `\Phi' on input line 3059.
 
-<score/epigrafe01.png, id=3086, 1250.6725pt x 578.16pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 3059.
+
+<score/epigrafe01.png, id=3079, 1250.6725pt x 578.16pt>
 File: score/epigrafe01.png Graphic file (type png)
 
 <use score/epigrafe01.png>
-Package pdftex.def Info: score/epigrafe01.png used on input line 3057.
+Package pdftex.def Info: score/epigrafe01.png used on input line 3063.
 (pdftex.def)             Requested size: 437.74194pt x 202.35902pt.
 
-<score/epigrafe02.png, id=3088, 1242.6425pt x 547.04375pt>
+<score/epigrafe02.png, id=3081, 1242.6425pt x 547.04375pt>
 File: score/epigrafe02.png Graphic file (type png)
 
 <use score/epigrafe02.png>
-Package pdftex.def Info: score/epigrafe02.png used on input line 3063.
+Package pdftex.def Info: score/epigrafe02.png used on input line 3069.
 (pdftex.def)             Requested size: 434.9314pt x 191.46817pt.
 
 Underfull \vbox (badness 5578) has occurred while \output is active []
 
- [137 <./score/epigrafe01.png> <./score/epigrafe02.png>]
-<score/epigrafe03.png, id=3097, 1254.6875pt x 349.305pt>
+ [135 <./score/epigrafe01.png> <./score/epigrafe02.png>]
+<score/epigrafe03.png, id=3089, 1254.6875pt x 349.305pt>
 File: score/epigrafe03.png Graphic file (type png)
 
 <use score/epigrafe03.png>
-Package pdftex.def Info: score/epigrafe03.png used on input line 3071.
+Package pdftex.def Info: score/epigrafe03.png used on input line 3077.
 (pdftex.def)             Requested size: 439.1472pt x 122.25858pt.
 
-<score/epigrafe04.png, id=3099, 1236.62pt x 547.04375pt>
+<score/epigrafe04.png, id=3091, 1236.62pt x 547.04375pt>
 File: score/epigrafe04.png Graphic file (type png)
 
 <use score/epigrafe04.png>
-Package pdftex.def Info: score/epigrafe04.png used on input line 3077.
+Package pdftex.def Info: score/epigrafe04.png used on input line 3083.
 (pdftex.def)             Requested size: 432.82349pt x 191.46817pt.
 
-<score/epigrafe05.png, id=3101, 1248.665pt x 514.92375pt>
+<score/epigrafe05.png, id=3093, 1248.665pt x 514.92375pt>
 File: score/epigrafe05.png Graphic file (type png)
 
 <use score/epigrafe05.png>
-Package pdftex.def Info: score/epigrafe05.png used on input line 3084.
+Package pdftex.def Info: score/epigrafe05.png used on input line 3090.
 (pdftex.def)             Requested size: 437.03929pt x 180.226pt.
- [138 <./score/epigrafe03.png> <./score/epigrafe04.png> <./score/epigrafe05.png
->] [139] [140
+ [136 <./score/epigrafe03.png> <./score/epigrafe04.png> <./score/epigrafe05.png
+>] [137] [138
 
-] [141] [142] [143]
-Overfull \hbox (9.10472pt too wide) in paragraph at lines 3333--3334
+] [139] [140] [141]
+Overfull \hbox (9.10472pt too wide) in paragraph at lines 3339--3340
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[144] [145] [146]
+[142] [143] [144]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [147]
-Overfull \hbox (19.30482pt too wide) in paragraph at lines 3561--3562
+ [145]
+Overfull \hbox (19.30482pt too wide) in paragraph at lines 3567--3568
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  
  []
 
-[148]
+[146]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [149]
-[150] [151]
+ [147]
+[148] [149]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [152]
-Overfull \hbox (29.50493pt too wide) in paragraph at lines 3853--3854
+ [150]
+Overfull \hbox (29.50493pt too wide) in paragraph at lines 3859--3860
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][] 
@@ -3508,42 +3523,37 @@ Overfull \hbox (29.50493pt too wide) in paragraph at lines 3853--3854
 
 (./FINAL_MARCO2015VERSAOBANCA.ind) 
 AED: lastpage setting LastPage
-[153]
+[151]
 \tf@lof=\write6
 \openout6 = `FINAL_MARCO2015VERSAOBANCA.lof'.
 
 \tf@toc=\write7
 \openout7 = `FINAL_MARCO2015VERSAOBANCA.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3915.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3915.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3921.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3921.
  (./FINAL_MARCO2015VERSAOBANCA.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3915.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3915.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3921.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3921.
 
+Package rerunfilecheck Info: File `FINAL_MARCO2015VERSAOBANCA.brf' has not chan
+ged.
+(rerunfilecheck)             Checksum: 1963971266539F564E68A17AA8F2E395;12207.
 
-
-Package rerunfilecheck Warning: File `FINAL_MARCO2015VERSAOBANCA.brf' has chang
-ed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `FINAL_MARCO2015VERSAOBANCA.brf':
-(rerunfilecheck)             Before: 4AE06666AE203304F465F713FCE9FDF4;12252
-(rerunfilecheck)             After:  E39A36D8D433A2F2B3AFC1B997ED503A;12255.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3915.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3921.
  ) 
 Here is how much of TeX's memory you used:
- 19428 strings out of 494928
- 290862 string characters out of 6177930
- 571619 words of memory out of 5000000
- 20442 multiletter control sequences out of 15000+600000
- 104133 words of font info for 202 fonts, out of 8000000 for 9000
+ 19430 strings out of 494928
+ 290885 string characters out of 6177930
+ 572654 words of memory out of 5000000
+ 20441 multiletter control sequences out of 15000+600000
+ 104345 words of font info for 204 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
  43i,13n,40p,1630b,1874s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
@@ -3563,10 +3573,10 @@ ts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on FINAL_MARCO2015VERSAOBANCA.pdf (155 pages, 5525634 bytes).
+Output written on FINAL_MARCO2015VERSAOBANCA.pdf (153 pages, 5524913 bytes).
 PDF statistics:
- 4595 PDF objects out of 5155 (max. 8388607)
- 3964 compressed objects within 40 object streams
- 1582 named destinations out of 1728 (max. 500000)
+ 4587 PDF objects out of 5155 (max. 8388607)
+ 3958 compressed objects within 40 object streams
+ 1581 named destinations out of 1728 (max. 500000)
  32562 words of extra memory for PDF output out of 35830 (max. 10000000)
 
