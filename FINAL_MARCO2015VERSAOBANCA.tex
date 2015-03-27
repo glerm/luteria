@@ -1831,23 +1831,23 @@ O Music21 fornece uma série de ferramentas para análise de harmonia funcional,
 
 Em seu artigo \textit{"The unfolding of tonality in the music of Béla Bartók"},\ David \citeonline{cooper1998unfolding} propõe a análise assistida por computador das \textit{"10 Easy Piano Pieces"} de Bartók. 
 
-Após testar os mesmos algoritmos de detecção de tonalidade que usou para analisar as peças do \textit{"Cravo Bem Temperado"} de J. S. Bach, onde obteve uma aproximação muito satisfatória das análises conhecidas da obra, Cooper conclui que mesmo com alguns desvios previstos o mesmo procedimento também ajudaria o analista a inferir ideias sobre ambiguidade ou politonalidade em compositores pós-tonais como Bartók.
+Após testar os mesmos algoritmos de detecção de tonalidade que usou para analisar as peças do \textit{"Cravo Bem Temperado"} de J. S. Bach, onde obteve uma aproximação muito satisfatória das análises conhecidas da obra, Cooper conclui que o mesmo procedimento também ajudaria o analista a inferir ideias sobre ambiguidade ou politonalidade em compositores pós-tonais como Bartók,  mesmo com alguns desvios previstos.
 
-Por ser independente de "estilo"\ o algoritmo poderia ajudar a revelar estruturas implícitas e residuais do condicionamento tonal da escuta, isto é, sua força estaria justamente em revelar mesmo através de "erros"\ formais da funcionalidade estilística, dados que podem gerar ideias para o analista.
+Por ser independente de estilo, o algoritmo poderia ajudar a revelar estruturas implícitas e residuais do condicionamento tonal da escuta, isto é, sua força estaria justamente em revelar, mesmo através de "erros"\ formais da funcionalidade estilística, dados que podem gerar ideias para o analista.
 
 \begin{citacao}
-Apesar de em essência o algoritmo ser fundamentalmente ignorante musicalmente, 'sabendo' pouco sobre estrutura musical e nada de estética, este é capaz de simular de maneira bem sucedida uma habilidade musical específica, que é determinar tonalidade global e local. Contudo, é por causa da ausência de critério artístico que este pode ser uma ferramenta útil para o repertório do analista, providenciando uma medida de tonalidade que seja amplamente independente de conhecimento "dependente de estilo'.\cite[p. 34-35]{cooper1998unfolding}.\footnote{Although in itself the algorithm is fundamentally musically ignorant, 'knowing' little about musical structure and nothing of aesthetics, it is able to simulate quite successfully one particular musical skill, that of determining local and global tonality. Indeed, it is because of its artlessness that it could form a useful tool in the analyst's repertoire, by providing a measure of tonality which is largely independent of 'style dependent' knowledge.\cite[p. 34-35]{cooper1998unfolding}}
+Apesar de em essência o algoritmo ser fundamentalmente ignorante musicalmente, 'sabendo' pouco sobre estrutura musical e nada de estética, este é capaz de simular de maneira bem sucedida uma habilidade musical específica, que é determinar tonalidade global e local. Contudo, é por causa da ausência de critério artístico que este pode ser uma ferramenta útil para o repertório do analista, providenciando uma medida de tonalidade que seja amplamente independente de conhecimento "dependente de estilo'.\cite[p. 34-35]{cooper1998unfolding}.\footnote{Although in itself the algorithm is fundamentally musically ignorant, 'knowing' little about musical structure and nothing of aesthetics, it is able to simulate quite successfully one particular musical skill, that of determining local and global tonality. Indeed, it is because of its artlessness that it could form a useful tool in the analyst's repertoire, by providing a measure of tonality which is largely independent of 'style dependent' knowledge. \cite[p. 34-35]{cooper1998unfolding}}
 \end{citacao}
 
 
 
 \subsubsection{Key Profiles} 
 
-A redução quantitativa para construção de algoritmos para inferência de "estruturas básicas da cognição musical"\cite{temperley2001cognition}\ é uma área de pesquisa interdisciplinar entre os estudos sobre a aquisição psicosocial do repertório musical que normatiza a escuta ocidental e a formalização computacional de "gramáticas gerativas"\cite[p. 83]{nierhaus2009algorithmic}\ que muito influenciou-se pela formalização das disciplinas que deram origem a linguística computacional.\cite{roads1979grammars}    
+A redução quantitativa para construção de algoritmos para inferência de "estruturas básicas da cognição musical" \cite{temperley2001cognition}\ é uma área de pesquisa interdisciplinar entre os estudos sobre a aquisição psicossocial do repertório musical que normatiza a escuta ocidental e a formalização computacional de "gramáticas gerativas" \cite[p. 83]{nierhaus2009algorithmic},\ está muito influenciada pela formalização das disciplinas que deram origem à linguística computacional.\cite{roads1979grammars}    
 
-Como já vimos anteriormente, a observação de parâmetros para uma inferência de cadência e prolongamento da expectativa tonal implica em discussões sobre a aplicabilidade de teorias ambiciosamente "gerais"\ sobre estruturas fundamentais da escuta.\footnote{Rever \autoref{Prolongamento}  }
+Como já vimos anteriormente, a observação de parâmetros para uma inferência de cadência e prolongamento da expectativa tonal implica discussões sobre a aplicabilidade de teorias ambiciosamente "gerais"\ sobre estruturas fundamentais da escuta.\footnote{Rever \autoref{Prolongamento}  }
 
-Por outro lado, uma proposta mais experimental como a de \citeonline{cooper1998unfolding} e a disponibilidade de alguns algoritmos derivados destas reflexões na biblioteca Music21 nos permite especular a partir de algumas experiências práticas que veremos a seguir.
+Por outro lado, uma proposta mais experimental como a de \citeonline{cooper1998unfolding} e a disponibilidade de alguns algoritmos derivados destas reflexões na biblioteca Music21 nos permitem especular a partir de algumas experiências práticas que veremos a seguir.
 
 
 \begin{lstlisting}
@@ -1882,13 +1882,13 @@ Por outro lado, uma proposta mais experimental como a de \citeonline{cooper1998u
 >>> 
 \end{lstlisting}
 
-Os softwares de análise de David Temperley\footnote{http://humdrum.ccarh.org/} e David Huron\footnote{http://www.link.cs.cmu.edu/music-analysis/}  para uma segmentação computacional da expectativa tonal parecem ter colaborado para síntese ferramentas computacionais que inspiraram alguns algoritmos da biblioteca music21, pois alguns destes podem ser encontrados nos módulos de análise.\footnote{https://github.com/cuthbertLab/music21/blob/master/music21/analysis/discrete.py}
+Os softwares de análise de David Temperley\footnote{http://humdrum.ccarh.org/} e David Huron\footnote{http://www.link.cs.cmu.edu/music-analysis/}  para uma segmentação computacional da expectativa tonal parecem ter colaborado para síntese de ferramentas computacionais que inspiraram alguns algoritmos da biblioteca music21, pois alguns destes podem ser encontrados nos módulos de análise.\footnote{https://github.com/cuthbertLab/music21/blob/master/music21/analysis/discrete.py}
 
-Mas apesar de desenvolverem seus próprios algoritmos de detecção de tonalidade\footnote{\cite[p. 173]{temperley2001cognition} e \citeonline[p. 150]{huron2006sweet}}, ambos citam como referência original o algoritmo resultante da pesquisa "Krumhansl-Schmuckler"\footnote{c.f. Discussão na mailing list do Music21 sobre os algoritmos em \url{https://groups.google.com/forum/\#!topic/music21list/lwamYR0o8To}}.Este algoritmo é também utilizado como padrão na biblioteca Music21, por isso vale aqui o comentário.
+Mas apesar de desenvolverem seus próprios algoritmos de detecção de tonalidade\footnote{\cite[p. 173]{temperley2001cognition} e \citeonline[p. 150]{huron2006sweet}}, ambos citam como referência original o algoritmo resultante da pesquisa "Krumhansl-Schmuckler"\footnote{c.f. Discussão na mailing list do Music21 sobre os algoritmos em \url{https://groups.google.com/forum/\#!topic/music21list/lwamYR0o8To}}. Este algoritmo é também utilizado como padrão na biblioteca Music21, por isso vale aqui o comentário.
 
 O algoritmo de "Krumhansl-Schmuckler"\ surge em \textit{"Perceptual Structures of Tonal Music"}\ \cite{krumhansl1983perceptual} e é aprofundado em \textit{"Cognitive foundations of musical pitch"}\ \cite{krumhansl1990cognitive}.
 
-Carol Krumhansl e Mark Schmukler constroem um modelo matemático que chamam "perfis-tonais"\footnote{\textit{"tonal profiles"}} - histogramas que servem como uma referência\footnote{O histograma apresenta valores para uma escala cromática normalizada no contexto de Dó maior e Dó menor. Para ser transposto para outras tonalidades, basta rotacionar a ordem das alturas.} para calculo estatístico a partir de uma amostra de ouvintes pesquisados sobre a tendência a "adaptar"\ cognitivamente \cite[p.  173]{temperley2001cognition} notas de uma escala cromática como ornamentos dentro de um determinado contexto tonal.
+Carol Krumhansl e Mark Schmukler constroem um modelo matemático que chamam "perfis-tonais"\footnote{\textit{"tonal profiles"}} - histogramas que servem como uma referência\footnote{O histograma apresenta valores para uma escala cromática normalizada no contexto de Dó maior e Dó menor. Para ser transposto para outras tonalidades, basta rotacionar a ordem das alturas.} para cálculo estatístico a partir de uma amostra de ouvintes pesquisados sobre a tendência a adaptar cognitivamente \cite[p.  173]{temperley2001cognition} notas de uma escala cromática como ornamentos dentro de um determinado contexto tonal.
 
 A fórmula funciona da seguinte maneira\footnote{C.f. uma prova real detalhada da fórmula original em \cite[p.37]{krumhansl1990cognitive} }:
 
@@ -1929,9 +1929,9 @@ $
 \end{figure}
 
 
-A fórmula de perfis tonais mostra em seus resultados também uma sugestão composicional curiosa para estratégias politonais. Vemos, por exemplo, na exposição orginal das figuras estatísticas da comparação entre tonalidades próximas e distantes (Figura 29) as relações apontadas por Lendvai em seu sistema de eixos\footnote{ Rever \autoref{lendvai_eixos} }. 
+A fórmula de perfis tonais mostra em seus resultados também uma sugestão composicional curiosa para estratégias politonais. Vemos, por exemplo, na exposição original das figuras estatísticas da comparação entre tonalidades próximas e distantes (Figura 29), as relações apontadas por Lendvai em seu sistema de eixos\footnote{ Rever \autoref{lendvai_eixos} }. 
 
-Podemos observar que se a comparação com a tonalidade relativa menor de Dó Maior (Lá menor) possui apenas pequenos desvios possibilitando a geração e ambiguidade, a relação com uma tonalidade de "contra-polo" de Dó Maior (Fá\# Maior) tem também um efeito bastante específico: apoia-se numa expectativa simetricamente oposta de alturas, o que lembra os movimentos politonais de Bartók que buscam estabelecer estratégias de uso do total cromático por mistura de modos ou tonalidades, suspendendo as expectativas e criando vórtices para modulação.
+Podemos observar que se a comparação com a tonalidade relativa menor de Dó Maior (Lá menor) possui apenas pequenos desvios, possibilitando a geração e ambiguidade, a relação com uma tonalidade de "contra-polo"\ de Dó Maior (Fá$\sharp$ Maior) tem também um efeito bastante específico: apoia-se numa expectativa simetricamente oposta de alturas, o que lembra os movimentos politonais de Bartók que buscam estabelecer estratégias de uso do total cromático por mistura de modos ou tonalidades, suspendendo as expectativas e criando vórtices para modulação.
 
 
 O Music21 apresenta também um módulo para plotagem de dados bastante útil. Abaixo demonstramos a plotagem do espaço de alturas da composição Mikrokosmos 41 que revela o panaroma de uso das alturas.
@@ -1959,7 +1959,7 @@ O Music21 apresenta também um módulo para plotagem de dados bastante útil. Ab
 \end{figure}
 
 
-Aplicada então a análise de tonalidade em um segmento cadencial final de Mikrokosmos 41 podemos ter um apoio estatístico para algumas conclusões:
+Aplicada então a análise de tonalidade em um segmento cadencial final de Mikrokosmos 41, podemos ter um apoio estatístico para algumas conclusões:
 
 \begin{lstlisting}
 # Reduzimos as pautas do piano a uma unica pauta feita de acordes,
@@ -2011,18 +2011,18 @@ Aplicada então a análise de tonalidade em um segmento cadencial final de Mikro
 
 \end{lstlisting}
 
-Vemos na Figura 45 a comprovação do que já poderíamos supor pela própria sugestão de Bartók na partitura original (Figura 46) - o sustenido fixo da música é afirmado não como um cromatismo localizado ornamental mas algo que está ali para substituir a expectativa de resolução em Sol maior que o grau sensível Fá$\sharp$ traria. 
+Vemos na Figura 45 a comprovação do que já poderíamos supor pela própria sugestão de Bartók na partitura original (Figura 46) - o sustenido fixo da música é afirmado não como um cromatismo localizado ornamental, mas algo que está ali para substituir a expectativa de resolução em Sol maior que o grau sensível Fá$\sharp$ traria. 
 
-Ao invés deste passo Fá$\sharp \rightarrow $ Sol temos a figura de Dó$\sharp$ atuando na dissonância que desloca a sensação de prolongamento I-V-I possível, figurando como trítono de Sol. Também é incompleta a interpretação de que estaríamos simplesmente num modo Mixolídio de Sol pela ausência do Fá$\sharp$ pois a presença de Dó$\sharp$ desconfigura o modo.
+Ao invés deste passo Fá$\sharp \rightarrow $ Sol temos a figura de Dó$\sharp$ atuando na dissonância que desloca a sensação de prolongamento I-V-I possível, figurando como trítono de Sol. Também é incompleta a interpretação de que estaríamos simplesmente num modo Mixolídio de Sol pela ausência do Fá$\sharp$, pois a presença de Dó$\sharp$ desconfigura o modo.
 
-A figura "desfuncional" de um grau "II$\sharp$" detectada pelo algoritmo chama atenção para a figura do Lá, que quando soando juntamente com o Dó$\sharp$ poderia trazer a interpretação de um acorde de Lá maior incompleto - mas qual seria sua função na cadência? 
+A figura "disfuncional"\ de um grau "II$\sharp$"\ detectada pelo algoritmo chama atenção para a figura do Lá, que quando soando juntamente com o Dó$\sharp$ poderia trazer a interpretação de um acorde de Lá maior incompleto - mas qual seria sua função na cadência? 
 
-A "resolução" da cadência final pelo passo que vai do acorde de Si menor incompleto até o Sol maior nos deixa pistas de que há uma estratégia que atua pelos contornos intervalares internos e que analisar apenas a superfície dos movimentos verticais não é suficiente - não estamos em "Sol Maior", mas também não estamos em "Si menor", que seria a segunda opção do algoritmo. No entanto há um discurso de afirmação da polarização deste acorde de Sol Maior.
+A "resolução"\ da cadência final pelo passo que vai do acorde de Si menor incompleto até o Sol maior nos deixa pistas de que há uma estratégia que atua pelos contornos intervalares internos. E que analisar apenas a superfície dos movimentos verticais não é suficiente - não estamos em "Sol Maior", mas também não estamos em "Si menor", que seria a segunda opção do algoritmo. No entanto, há um discurso de afirmação da polarização deste acorde de Sol Maior.
 
 A análise dos contornos se mostra necessária para que encontremos novas relações. 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico} Aplicação do algoritmo de análise graus de cadência em Mikrokosmos 109 considerando a inferência de tonalidade Sol maior detectada anteriormente.} 
+	\caption{\label{fig_grafico} Aplicação do algoritmo de análise dos graus de cadência em Mikrokosmos 109 considerando a inferência de tonalidade Sol maior detectada anteriormente.} 
 	\begin{center}
 	    \includegraphics[scale=0.25]{estudosM21/mikro041FinalChords.png}
 	\end{center}
@@ -2032,7 +2032,7 @@ A análise dos contornos se mostra necessária para que encontremos novas relaç
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico} "Tonalidade" singular apontada por Bartók - a pauta contém um sustenido em C$\sharp$ ao invés do F$\sharp$ padrão para Sol maior: declaração de uma intenção polimodal em Mikrokosmos 41} 
+	\caption{\label{fig_grafico} "Tonalidade"\ singular apontada por Bartók - a pauta contém um sustenido em C$\sharp$ ao invés do F$\sharp$ padrão para Sol maior: declaração de uma intenção polimodal em Mikrokosmos 41} 
 	\begin{center}
 	    \includegraphics[scale=0.4]{estudosM21/mikro041_inicio.png}
 	\end{center}
@@ -2042,7 +2042,7 @@ A análise dos contornos se mostra necessária para que encontremos novas relaç
 
 
 \begin{figure}[!h]
-	\caption{\label{fig_grafico} Distribuição das classes de altura durante toda composição revelam que apesar da composição estar polarizada em torno da nota Sol essa aparece menos que sua terça maior ( Si ) e sua quinta justa ( Ré ). } 
+	\caption{\label{fig_grafico} Distribuição das classes de altura durante toda composição revelam que apesar da composição estar polarizada em torno da nota Sol essa aparece menos que sua terça maior (Si) e sua quinta justa (Ré). } 
 	\begin{center}
 	    \includegraphics[scale=0.4]{estudosM21/mikro041Pclass.png}
 	\end{center}
@@ -2054,7 +2054,7 @@ A análise dos contornos se mostra necessária para que encontremos novas relaç
 \subsubsection{Contorno Intervalar}
 \label{mikrocontorno}
 
-Uma possibilidade importante de utilização dos scripts para análise é a de retirarmos de um corpus de partituras as relações intervalares de contorno motívico para identificarmos estratégias composicionais reincidentes. Fazer isso sem auxílio do computador é extremamente penoso e sujeito a erros, e para um corpo grande de obras a ser comparado fica inviável.
+Uma possibilidade importante de utilização dos \textit{scripts} para análise é a de retirarmos de um \textit{corpus} de partituras as relações intervalares de um contorno motívico para identificarmos estratégias composicionais reincidentes. Fazer isso sem auxílio do computador é extremamente penoso e sujeito a erros, e para um corpo grande de obras a ser comparado fica inviável.
 
 O exemplo de Mikrokosmos 41 é interessante por conter a necessidade de descoberta sobre as intenções polimodais do compositor.
 
@@ -2067,9 +2067,9 @@ O exemplo de Mikrokosmos 41 é interessante por conter a necessidade de descober
 \end{figure}
 
 
-No ínicio da melodia de Mikrokosmos 41 uma relação motívica "quase"\ pentatônica que polariza a expectativa de emergência da nota Sol por sua ausência no intervalo pentatônico possível de 3-2-3 semitons que faria os passos Si-Ré-Mi-(Sol). A quebra da continuidade pentatônica pela inserção do passo semitonal Fá $ \rightarrow $ Mi e a enunciação do Dó$\sharp$ funcionam como um "resumo" das relações diatônicas essenciais do polimodalismo desta composição. A nota Sol nunca será usada na melodia, mas durante quase toda composição figura no baixo.
+No ínicio da melodia de Mikrokosmos 41 uma relação motívica quase pentatônica que polariza a expectativa de emergência da nota Sol por sua ausência no intervalo pentatônico possível (de 3-2-3 semitons) que faria os passos Si-Ré-Mi-(Sol). A quebra da continuidade pentatônica pela inserção do passo semitonal Fá $ \rightarrow $ Mi e a enunciação do Dó$\sharp$ funcionam como um resumo das relações diatônicas essenciais do polimodalismo desta composição. A nota Sol nunca será usada na melodia, mas durante quase toda composição  ela figura no baixo.
 
-Esta sonoridade quase pentatônica da melodia ou em ostinatos, que traz um caráter de música folclórica ao mesmo tempo que serve de estratégia para inserção gradual de cromatismos que criam polimodos é bastante presente em Bartók, como já discutimos na \autoref{modalismo}.
+Esta sonoridade quase pentatônica da melodia ou em ostinatos - que traz um caráter de música folclórica ao mesmo tempo que serve de estratégia para inserção gradual de cromatismos que criam polimodos - é bastante presente em Bartók, como já discutimos na \autoref{modalismo}.
 
 \begin{figure}[!h]
 	\caption{\label{fig_grafico} Análise de contorno intervalar na melodia inicial de Mikrokosmos 41. Detalhes sobre o script de extração de intervalos no Apêndice.  } 
@@ -2088,11 +2088,11 @@ Esta sonoridade quase pentatônica da melodia ou em ostinatos, que traz um cará
 	\legend{Fonte: autor }
 \end{figure}
 
-O final de Mikrokosmos 41 cita o clichê da sequência de 2-2-2-1 semitons do modo Lídio e "resolve" o acorde de Sol maior sem o uso da sensível Fá$\sharp$, negando-se a uma evidência de tonalidade maior tradicional, mas também negando-se a uma resolução de modo Lídio literal. A estratégia é pela condução da quinta justa Ré através dos passos Dó$\sharp \rightarrow $ Ré e Dó$\sharp \rightarrow $ Si mantendo-se em díade até que uma última entrada da nota Sol no baixo deixe uma impressão vaga de que havia uma polarização em torno do acorde de Sol maior. 
+O final de Mikrokosmos 41 cita o clichê da sequência de 2-2-2-1 semitons do modo Lídio e "resolve"\ o acorde de Sol maior sem o uso da sensível Fá$\sharp$. Nega-se a uma evidência de tonalidade maior tradicional, mas também nega-se a uma resolução de modo Lídio literal. A estratégia é pela condução da quinta justa Ré através dos passos Dó$\sharp \rightarrow $ Ré e Dó$\sharp \rightarrow $ Si mantendo-se em díade até que uma última entrada da nota Sol no baixo deixe uma impressão vaga de que havia uma polarização em torno do acorde de Sol maior. 
 
 \subsubsection{Inferência de escalas e modos}
 
-O Music21 possui um módulo muito útil para a inferência de modos e escalas\footnote{Para maiores detalhes sobre o modulo conferir o artigo \cite{ariza2011analytical}}, o que é muito útil para análises de repertórios como o de Bartók, onde há uma grande necessidade de busca por construções escalares mistas ou originais.
+O Music21 possui um módulo muito útil para a inferência de modos e escalas\footnote{Para maiores detalhes sobre o modulo conferir o artigo \cite{ariza2011analytical}}, o que serve bem para análises de repertórios como o de Bartók, onde há uma grande necessidade de busca por construções escalares mistas ou originais e suas transposições.
 
 Este módulo pode pegar como referência qualquer dos modos gregos, escalas referenciais ou mesmo construções arbitrárias de coleções motívicas ou crivos.\footnote{Demonstramos em mais detalhes a construção de escalas em Music21 para fins composicionais em \autoref{cac} }
 
