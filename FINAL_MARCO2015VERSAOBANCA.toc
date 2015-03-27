@@ -20,8 +20,8 @@
 \contentsline {section}{\numberline {1.4}C\IeC {\'e}lulas de Altura de Antokoletz}{41}{section.1.4}
 \contentsline {section}{\numberline {1.5}Simetria Inversiva}{44}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}Eixo de Simetrias como estrat\IeC {\'e}gia mot\IeC {\'\i }vica}{46}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Simetria Literal}{48}{subsection.1.5.2}
-\contentsline {section}{\numberline {1.6}Cole\IeC {\c c}\IeC {\~o}es referenciais ordenadas por conjuntos de classes de altura}{49}{section.1.6}
+\contentsline {subsection}{\numberline {1.5.2}Simetria Literal}{47}{subsection.1.5.2}
+\contentsline {section}{\numberline {1.6}Cole\IeC {\c c}\IeC {\~o}es referenciais ordenadas por conjuntos de classes de altura}{48}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}Octatonismo e suas parti\IeC {\c c}\IeC {\~o}es}{50}{subsection.1.6.1}
 \contentsline {section}{\numberline {1.7}Modalismo e estrat\IeC {\'e}gias rotacionais}{59}{section.1.7}
 \contentsline {subsection}{\numberline {1.7.1}Modos Gregos}{59}{subsection.1.7.1}
