@@ -1,0 +1,111 @@
+slide 00. resumo
+
+Esta pesquisa sistematiza um catálogo de experimentos constituído de estudos musicais
+e seus algoritmos geradores, organizando procedimentos para composição assistida por
+computador orientados por regras derivadas de análises musicais de contexto pós-tonal.
+
+Problematizam-se aqui os conceitos de ciclos intervalares,
+eixos de simetria, polimodalismo e peculiaridades de coleções referenciais de classes de
+altura.
+
+São detalhadas questões computacionais para esta implementação, utilizando como base
+as ferramentas OpenMusic e biblioteca Python Music21.
+
+
+
+slide 01.
+
+"Considerando este cenário com que depara-se hoje o músico que programa com-
+putadores ou o programador que faz música, decidimos investigar uma situação
+imediatamente anterior a influência dos computadores no processo compo-
+sicional."
+
+slide 02.
+
+O procedimento dividiu-sem em 3 etapas: a) apontamentos da Análise Bartokiana,
+b) formalizações da análise assistida por computador e c) formalizaçoes da composição assistida por computador.
+
+slide 03.
+
+a) apontamentos da Análise Bartokiana
+
+Lendvai: sistema de eixos, série acústica (overtone), pseudo-cadência, secção áurea
+
+Antokoletz: ciclos intervalares, células intervalares , simetria, rotações pentatônica/diatônica
+
+Cohn: octatonica , combinação transpositiva, classificação de conjunto de Forte(1973)
+
+Observações sobre harmonização - bartok/suchoff
+
+
+
+slide 04.---------
+
+b) formalizações da análise 
+
+
+
+slide 05.------------
+
+c) formalizaçoes da composição assistida por computador.
+
+definição
+
+slide 06.
+
+lendvai
+sistema de eixos
+
+slide 07.
+série harmônica
+pseudo-cadência bartokiana
+
+slide 08
+golden section
+
+slide 09
+ciclos intervalares - figura 18
+
+• O intervalo de semitom divide a oitava no ciclo cromático de doze notas
+• O intervalo de tons inteiros produz duas transposições de seis notas
+• O intervalo de terças menores produz três transposições de quatro notas
+• O intervalo de terças maiores produz quatro transposições de três notas
+• O intervalo de trítono produz seis transposições de duas notas
+
+slide 10
+
+ciclo das dominantes patch figura 19
+
+slide 11
+
+celulas X Y Z
+
+slide 12
+
+Simetria Inversiva
+Simetria Literal
+
+slide 13
+
+rotações
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

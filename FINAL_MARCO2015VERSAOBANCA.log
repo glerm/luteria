@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  27 MAR 2015 15:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.11)  27 MAR 2015 15:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3493,7 +3493,7 @@ Package pdftex.def Info: score/epigrafe05.png used on input line 3090.
 >] [137] [138
 
 ] [139] [140] [141]
-Overfull \hbox (9.10472pt too wide) in paragraph at lines 3339--3340
+Overfull \hbox (9.10472pt too wide) in paragraph at lines 3337--3338
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -3501,7 +3501,7 @@ Overfull \hbox (9.10472pt too wide) in paragraph at lines 3339--3340
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [145]
-Overfull \hbox (19.30482pt too wide) in paragraph at lines 3567--3568
+Overfull \hbox (19.30482pt too wide) in paragraph at lines 3565--3566
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  
@@ -3515,7 +3515,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [150]
-Overfull \hbox (29.50493pt too wide) in paragraph at lines 3859--3860
+Overfull \hbox (29.50493pt too wide) in paragraph at lines 3857--3858
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][] 
@@ -3530,11 +3530,11 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `FINAL_MARCO2015VERSAOBANCA.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3921.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3921.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3919.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3919.
  (./FINAL_MARCO2015VERSAOBANCA.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3921.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3921.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3919.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3919.
 
 Package rerunfilecheck Info: File `FINAL_MARCO2015VERSAOBANCA.brf' has not chan
 ged.
@@ -3546,12 +3546,12 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3921.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3919.
  ) 
 Here is how much of TeX's memory you used:
  19430 strings out of 494928
  290885 string characters out of 6177930
- 572654 words of memory out of 5000000
+ 571675 words of memory out of 5000000
  20441 multiletter control sequences out of 15000+600000
  104345 words of font info for 204 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
@@ -3573,7 +3573,7 @@ ts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on FINAL_MARCO2015VERSAOBANCA.pdf (153 pages, 5524913 bytes).
+Output written on FINAL_MARCO2015VERSAOBANCA.pdf (153 pages, 5524920 bytes).
 PDF statistics:
  4587 PDF objects out of 5155 (max. 8388607)
  3958 compressed objects within 40 object streams
