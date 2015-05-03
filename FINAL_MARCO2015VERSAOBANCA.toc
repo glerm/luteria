@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {1.5.1}Eixo de Simetrias como estrat\IeC {\'e}gia mot\IeC {\'\i }vica}{46}{subsection.1.5.1}
 \contentsline {subsection}{\numberline {1.5.2}Simetria Literal}{47}{subsection.1.5.2}
 \contentsline {section}{\numberline {1.6}Cole\IeC {\c c}\IeC {\~o}es referenciais ordenadas por conjuntos de classes de altura}{48}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Octatonismo e suas parti\IeC {\c c}\IeC {\~o}es}{50}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.1}Octatonismo e suas parti\IeC {\c c}\IeC {\~o}es}{51}{subsection.1.6.1}
 \contentsline {section}{\numberline {1.7}Modalismo e estrat\IeC {\'e}gias rotacionais}{59}{section.1.7}
 \contentsline {subsection}{\numberline {1.7.1}Modos Gregos}{59}{subsection.1.7.1}
 \contentsline {subsection}{\numberline {1.7.2}Rota\IeC {\c c}\IeC {\~a}o Pentat\IeC {\^o}nica}{60}{subsection.1.7.2}
@@ -35,10 +35,10 @@
 \contentsline {subsection}{\numberline {2.1.1}MIDI}{69}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Lilypond}{70}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}MusicXML}{70}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Music21}{70}{section.2.2}
+\contentsline {section}{\numberline {2.2}Music21}{71}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Stream}{72}{subsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.1.1}Notas, Acordes e nomenclaturas}{75}{subsubsection.2.2.1.1}
-\contentsline {subsection}{\numberline {2.2.2}Cad\IeC {\^e}ncia e infer\IeC {\^e}ncia de tonalidade}{76}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Cad\IeC {\^e}ncia e infer\IeC {\^e}ncia de tonalidade}{77}{subsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.1}Key Profiles}{77}{subsubsection.2.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2.2}Contorno Intervalar}{82}{subsubsection.2.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.3}Infer\IeC {\^e}ncia de escalas e modos}{85}{subsubsection.2.2.2.3}
